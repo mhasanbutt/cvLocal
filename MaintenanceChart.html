@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="custom.carts2.css" rel="stylesheet">
+    <title>Maintenance Charts</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <div id="column" class="column" style="width:50%; height:50%; float: left; margin-bottom: 20px;">
+            <script>
+                Highcharts.chart('column', {
+                    chart: {
+                        type: 'pie',
+                        borderWidth: 1,
+                        plotBorderWidth: 1,
+                        marginBottom: 100,
+                        shadow: true
+                    },
+                    title: {
+                        text: 'Maintenance Summary',
+                        fontSize: '20'
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.f}</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+
+                    yAxis: {
+                        labels: {
+                            enabled: false
+                        },
+                        title: {
+                            text: ''
+                        }
+                    },
+
+                    xAxis: {
+                        type: 'category',
+                    },
+                    legend: {
+                        align: 'top',
+                        verticalAlign: 'center',
+                        x: 250,
+                        y: 14,
+                        enabled: false
+                    },
+
+                    plotOptions: {
+                        pie: {
+                            size: '80%',
+                            dataLabels: {
+                                enabled: true,
+                                style: {
+                                    textOverflow: 'clip'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Tasks',
+                        dataLabels: {
+                            enabled: true,
+                            rotation: 0,
+                            align: 'center',
+                            format: '{point.name:.f}',
+                            y: 0,
+                            x: 10,
+                        },
+
+                        data: [{
+                                name: 'Total Tasks',
+                                drilldown: 'tnc',
+                                color: '#c32f27',
+                                y: 60,
+                            },
+                            {
+                                name: 'Pending',
+                                y: 10,
+                                drilldown: 'tnc1',
+                                color: '#d8572a',
+                            },
+                            {
+                                y: 30,
+                                name: 'Complete',
+                                drilldown: 'tnc2',
+                                color: '#db7c26',
+                            },
+                            {
+                                name: 'Incomplete',
+                                y: 5,
+                                drilldown: 'tnc3',
+                                color: '#f7b538'
+
+                            },
+                            {
+                                name: 'Based on Priority',
+                                y: 10,
+                                drilldown: 'tnc4',
+                                color: '#780116'
+                            },
+                            {
+                                name: 'Tasks with Photos',
+                                y: 10,
+                                drilldown: 'tnc5',
+                                color: '#780116'
+                            },
+                            {
+                                name: 'Tasks with Handyman Name',
+                                y: 6,
+                                drilldown: 'tnc6',
+                                color: '#780116'
+                            }
+                        ]
+                    }],
+                    drilldown: {
+                        series: [{
+                                id: 'tnc',
+                                name: 'Total Task',
+                                type: 'column',
+                                dataLabels: {
+                                    enabled: false,
+                                    format: '{point.y:.f}Task(s):'
+                                },
+                                data: [{
+                                        name: 'Carer_1',
+                                        y: 10,
+
+                                    },
+                                    {
+                                        name: 'Carer_2',
+                                        y: 15,
+
+                                    },
+                                    {
+                                        name: 'Carer_3',
+                                        y: 5,
+
+                                    },
+                                    {
+                                        name: 'Carer_4',
+                                        y: 20,
+                                    },
+                                    {
+                                        name: 'Carer_5',
+                                        y: 10,
+
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'column',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ist Floor],[8Room]'
+                                        },
+                                        y: 8,
+                                        color: '#4a473e',
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Basement Floor],[6Room]'
+                                        },
+                                        y: 2,
+                                        color: '#38413f',
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Sechule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1Floor],[7Rooms]:'
+                                        },
+                                        y: 5,
+                                        color: '#263c41',
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            }, {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[3Room]'
+                                        },
+                                        y: 6,
+                                        color: '#909497',
+                                        drilldown: 'NOK',
+
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ground Floor],[Dining Rooms]'
+                                        },
+                                        y: 5,
+                                        color: '#34495E',
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Sechdule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[5Floor],[Toilets]:'
+                                        },
+                                        y: 5,
+                                        color: '#85929E',
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor],[5Room]'
+                                        },
+                                        y: 11,
+                                        color: '#909497',
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[6 Floor],[Sitting Area]'
+                                        },
+                                        y: 2,
+                                        color: '#34495E',
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[4Floor],[11Rooms]:'
+                                        },
+                                        y: 5,
+                                        color: '#85929E',
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+                                        color: '#909497',
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+                                        color: '#34495E',
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+                                        color: '#85929E',
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of tasks provided to each Carer w.r.t Area/Rooms',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.y:.f} Task(s) Done:'
+                                },
+                                data: [{
+
+                                        name: 'Carer1',
+                                        y: 10,
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Carer2',
+                                        y: 9,
+                                        drilldown: 'NOK1',
+                                    },
+                                    {
+                                        name: 'Carer3',
+
+                                        y: 16,
+                                        drilldown: 'NOK2',
+                                    },
+                                    {
+                                        name: 'Carer4',
+                                        y: 5,
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Carer5',
+                                        y: 2,
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Carer6',
+                                        y: 8,
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Carer7',
+                                        y: 1,
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Carer8',
+                                        y: 9,
+                                        drilldown: 'NOK3',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ist Floor],[8Room]'
+                                        },
+                                        y: 8,
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Basement Floor],[6Room]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1Floor],[7Rooms]:'
+                                        },
+                                        y: 5,
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            }, {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[3Room]'
+                                        },
+                                        y: 6,
+                                        drilldown: 'NOK',
+
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ground Floor],[Dining Rooms]'
+                                        },
+                                        y: 5,
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[5Floor],[Toilets]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor],[5Room]'
+                                        },
+                                        y: 11,
+
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[6 Floor],[Sitting Area]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[4Floor],[11Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of tasks provided to each Carer w.r.t Area/Rooms',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.y:.f}Task(s) Not Done:'
+                                },
+                                data: [{
+
+                                        name: 'Carer1',
+                                        y: 3,
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Carer2',
+                                        y: 7,
+                                        drilldown: 'NOK1',
+                                    },
+                                    {
+                                        name: 'Carer3',
+
+                                        y: 4,
+                                        drilldown: 'NOK2',
+                                    },
+                                    {
+                                        name: 'Carer4',
+                                        y: 6,
+                                        drilldown: 'NOK3',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ist Floor],[8Room]'
+                                        },
+                                        y: 8,
+
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Basement Floor],[6Room]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1Floor],[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            }, {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[3Room]'
+                                        },
+                                        y: 6,
+
+                                        drilldown: 'NOK',
+
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ground Floor],[Dining Rooms]'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[5Floor],[Toilets]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor],[5Room]'
+                                        },
+                                        y: 11,
+
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[6 Floor],[Sitting Area]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[4Floor],[11Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of tasks provided to each Carer w.r.t Area/Rooms',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.y:.f}Task(s):'
+                                },
+                                data: [{
+
+                                        name: 'Carer1',
+                                        y: 1,
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Carer2',
+                                        y: 4,
+                                        drilldown: 'NOK1',
+                                    },
+                                    {
+                                        name: 'Carer3',
+
+                                        y: 2,
+                                        drilldown: 'NOK2',
+                                    },
+                                    {
+                                        name: 'Carer4',
+                                        y: 1,
+                                        drilldown: 'NOK3',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ist Floor],[8Room]'
+                                        },
+                                        y: 8,
+
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Basement Floor],[6Room]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1Floor],[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            }, {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[3Room]'
+                                        },
+                                        y: 6,
+
+                                        drilldown: 'NOK1',
+
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ground Floor],[Dining Rooms]'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[5Floor],[Toilets]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor],[5Room]'
+                                        },
+                                        y: 11,
+
+                                        drilldown: 'NOK2',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[6 Floor],[Sitting Area]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[4Floor],[11Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK2',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK3',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of tasks provided to each Carer w.r.t Area/Rooms',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.y:.f}Task(s):'
+                                },
+                                data: [{
+
+                                        name: 'Carer1',
+                                        y: 4,
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Carer2',
+                                        y: 2,
+                                        drilldown: 'NOK1',
+                                    },
+                                    {
+                                        name: 'Carer3',
+
+                                        y: 2,
+                                        drilldown: 'NOK2',
+                                    },
+                                    {
+                                        name: 'Carer4',
+                                        y: 2,
+                                        drilldown: 'NOK3',
+                                    },
+                                    {
+                                        name: 'Carer5',
+                                        y: 2,
+                                        drilldown: 'NOK4',
+                                    }
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ist Floor],[8Room]'
+                                        },
+                                        y: 8,
+
+                                        drilldown: 'NOK4',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Basement Floor],[6Room]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1Floor],[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK4',
+                                    },
+                                ]
+                            }, {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[3Room]'
+                                        },
+                                        y: 6,
+
+                                        drilldown: 'NOK',
+
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[Ground Floor],[Dining Rooms]'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[5Floor],[Toilets]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor],[5Room]'
+                                        },
+                                        y: 11,
+
+                                        drilldown: 'NOK',
+                                        x: 1
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[6 Floor],[Sitting Area]'
+                                        },
+                                        y: 2,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[4Floor],[11Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK',
+                                    },
+                                ]
+                            },
+                            {
+                                id: '',
+                                name: 'No of Tasks w.r.t the Company/Floor or Room Selected',
+                                type: 'bar',
+                                dataLabels: {
+                                    format: '{point.y:.0f}',
+                                },
+                                data: [{
+                                        name: 'Report Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[2 Floor],[Assisted Rooms]'
+                                        },
+                                        y: 3,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Damaged to Property',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[1 Floor]'
+                                        },
+                                        y: 1,
+
+                                        drilldown: 'NOK',
+                                    },
+                                    {
+                                        name: 'Schedule Maintenance',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.lable:.f}[7Rooms]:'
+                                        },
+                                        y: 5,
+
+                                        drilldown: 'NOK4',
+                                    },
+                                ]
+                            },
+
+                        ]
+                    },
+                });
+            </script>
+        </div>
+        <div id="container" class="pie" style="width:50%; height:50%; float: left; margin-bottom: 20px;">
+            <script>
+                Highcharts.chart('container', {
+
+                    chart: {
+                        type: 'column',
+                        borderWidth: 1,
+                        plotBorderWidth: 1,
+                        marginBottom: 100,
+                        shadow: true
+                    },
+
+                    title: {
+                        text: 'Maintenace Tasks Log'
+                    },
+
+                    xAxis: {
+                        categories: ['Carer_1', 'Carer_2', 'Carer_3', 'Carer_4', 'Carer_5']
+                    },
+
+                    yAxis: {
+                        labels: {
+                            enabled: false
+                        },
+                        title: {
+                            text: ''
+                        }
+                    },
+
+                    tooltip: {
+                        formatter: function () {
+                            return '<b>' + this.x + '</b><br/>' +
+                                this.series.name + ': ' + this.y + '<br/>'
+                        }
+                    },
+
+                    plotOptions: {
+                        column: {
+                            stacking: 'high'
+                        }
+                    },
+
+                    series: [{
+                        name: 'Total Scheduled Tasks',
+                        color: '#c32f27',
+                        data: [5, 8, 10, 12, 5],
+                        stack: 'Female'
+                    }, {
+                        name: 'Completed Tasks',
+                        color: '#d8572a',
+                        data: [3, 4, 4, 2, 3],
+                        stack: 'male'
+                    }, {
+                        name: 'Incomplete Tasks',
+                        data: [1, 4, 2, 6, 1],
+                        color: '#db7c26',
+                        stack: 'male'
+                    }, {
+                        name: 'Pending Tasks',
+                        data: [1, 0, 4, 4, 1],
+                        stack: 'male',
+                        color: '#780116'
+                    }]
+                });
+            </script>
+        </div>
+        <div id="bar" class="bar" style="width:50%; height:50%; float: left; margin-bottom: 20px;">
+            <script>
+                Highcharts.chart('bar', {
+                    chart: {
+                        type: 'line',
+                        borderWidth: 1,
+                        plotBorderWidth: 1,
+                        marginBottom: 100,
+                        shadow: true
+                    },
+                    title: {
+                        text: 'Report Maintenance Log',
+                    },
+                    tooltip: {
+                        crosshairs: [true, true]
+                    },
+                    yAxis: {
+                        type: 'category',
+                        title: {
+                            enabled: false
+                        },
+                        labels: {
+                            enabled: false
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        backgroundColor: '#FBF8EF',
+                    },
+                    legends: {
+                        layout: 'horizantal'
+                    },
+                    series: [{
+                        name: 'Maintenance Tasks',
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y:.f}[Tasks]',
+                        },
+                        data: [{
+                                name: 'Basement',
+                                drilldown: 'tnc',
+                                color: '#c32f27',
+                                y: 12,
+
+                            },
+                            {
+                                name: 'Ground Floor',
+                                drilldown: 'tnc1',
+                                color: '#c32f27',
+                                y: 12,
+
+                            },
+                            {
+                                name: 'First Floor',
+                                y: 18,
+                                drilldown: 'tnc2',
+                                color: '#d8572a'
+                            },
+                            {
+                                name: ' Second Floor',
+                                y: 7,
+                                drilldown: 'tnc3',
+                                color: '#db7c26'
+
+                            },
+                            {
+                                name: 'Third Floor',
+                                y: 12,
+                                drilldown: 'tnc4',
+                                color: '#f7b538'
+
+                            },
+                            {
+                                name: 'Forth Floor',
+                                y: 11,
+                                drilldown: 'tnc5',
+                                color: '#780116'
+
+                            },
+                        ]
+                    }],
+                    drilldown: {
+                        series: [{
+                                id: 'tnc',
+                                name: 'Total Tasks',
+                                data: [{
+                                        name: 'High Priority',
+                                        y: 1,
+                                        drilldown: 'NOK4',
+                                    },
+                                    {
+                                        name: 'Medium Priority',
+                                        y: 2,
+                                        drilldown: 'NOK4',
+                                    },
+                                    {
+                                        name: 'Low Priority',
+                                        y: 1,
+                                        drilldown: 'NOK4',
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'NOK1',
+                                name: 'Priority Status',
+                                data: [{
+                                        name: 'High Priority',
+                                        y: 1,
+                                        drilldown: 'NOK4',
+                                    },
+                                    {
+                                        name: 'Medium Priority',
+                                        y: 2,
+                                        drilldown: 'NOK4',
+                                    },
+                                    {
+                                        name: 'Low Priority',
+                                        y: 1,
+                                        drilldown: 'NOK4',
+                                    }
+                                ]
+                            },
+                        ]
+                    },
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'vertical',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+                })
+            </script>
+        </div>
+        <div id="line" class="line" style="width:50%; height:49%; float: left; margin-bottom: 20px;">
+            <script>
+                Highcharts.chart('line', {
+                    chart: {
+                        type: 'bar',
+                        borderWidth: 1,
+                        plotBorderWidth: 1,
+                        marginBottom: 100,
+                        shadow: true
+                    },
+                    title: {
+                        text: 'Tasks Based On Priority',
+                        textsize: 22
+                    },
+                    tooltip: {
+                        crosshairs: [true, true]
+                    },
+                    xAxis: {
+                        type: 'category',
+                        tickPosition: 'inside',
+                        tickwidth: 4,
+
+                    },
+                    yAxis: {
+                        labels: {
+                            enabled: false
+                        },
+                        title: {
+                            text: ''
+                        }
+                    },
+
+                    series: [{
+                            name: 'Total Tasks',
+                            color: '#BA262E',
+
+                            data: [{
+                                    name: 'High Priority',
+                                    drilldown:'tnc',
+                                    y: 5,
+                                },
+                                {
+                                    name: 'Medium Priority',
+                                    y: 10,
+                                    
+                                   
+                                },
+                                {
+                                    name: 'Low Priority',
+                                    y: 5,
+                                   
+                                },
+                            ]
+                        },
+                        {
+                            name: 'Total Staff',
+                            color: '#E76154',
+                            data: [{
+                                    name: 'High Priority',
+                                    y: 2,
+                                    drilldown:'tnc'
+
+                                },
+                                {
+                                    name: 'Medium Priority',
+                                    y: 1,
+                                    
+
+                                },
+                                {
+                                    name: 'Low Priority',
+                                    y: 4,
+                                   
+                                },
+                            ]
+                        },
+                    ],
+
+                    drilldown: {
+                        activeDataLabelStyle: {
+                            textDecoration: 'none',
+                            fontStyle: 'bold'
+                        },
+                        id: 'tnc',
+                        series: [{
+                                type: 'column',
+                                id: 'tnc',
+                                name: 'Total Tasks',
+                                data: [{
+                                        name: 'Complete',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.name:.f}:',
+                                        },
+                                        y: 3,
+                                        drilldown: 'tnc1'
+                                    },
+                                    {
+                                        name: 'Incomplete',
+                                        drilldown: 'tnc1',
+                                        y: 2,
+                                    },
+                                    {
+                                        name: 'Pending',
+                                        y: 1,
+                                        drilldown: 'tnc1'
+                                    },
+                                ],
+                            },
+                            {
+                                type: 'column',
+                                id: 'tnc1',
+                                data: [{
+                                        name: 'Staff_1',
+                                        dataLabels: {
+                                            enabled: true,
+                                            format: '{point.name:.f}:',
+                                        },
+                                        y: 3,
+                                        drilldown: 'tnc2'
+                                    },
+                                    {
+                                        name: 'Staff_2',
+                                        drilldown: 'tnc1',
+                                        y: 2,
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+</body>
+
+</html>
