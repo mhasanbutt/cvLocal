@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+.chatModule {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+
+    samp {
+        background-color: rgb(28, 60, 75);
+        display: block;
+        bottom: 50px;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px 0 0 10px;
+        background-image: url("../images/careChatLogo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        box-shadow: -2px 0 0 4px rgba(28, 60, 75, 0.4);
+        overflow: hidden;
+        position: absolute;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -100%;
+            width: 150%;
+            height: 200%;
+            opacity: 0;
+            transform: rotate(30deg);
+            background: rgba(255, 255, 255, 0.13);
+            background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            to {
+                opacity: 1;
+                right: 150%;
+            }
+        }
+    }
+
+    .chatBox {
+        border-radius: 6px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -3.536px 3.536px 3px 0px rgba(63, 66, 83, 0.3);
+        position: absolute;
+        right: 70px;
+        bottom: 10px;
+        width: 300px;
+        height: 430px;
+        padding: 10px;
+
+        &:before {
+            color: rgb(94, 97, 110);
+            position: absolute;
+            left: 50%;
+            top: 14px;
+            z-index: 1;
+            content: "Customer Support";
+            transform: translateX(-50%);
+        }
+
+        .popMsg {
+            border-radius: 6px;
+            background-color: rgba(63, 66, 83, 0.6);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            display: table;
+
+            .popMsgContainer {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                padding: 10px;
+
+                .msg {
+                    border-radius: 6px;
+                    background-color: rgb(255, 255, 255);
+                    padding: 10px;
+                    width: 100%;
+
+                    .msgSection {
+                        margin-bottom: 10px;
+                        padding: 40px 0;
+                    }
+
+                    .bottomBar {
+                        .cta {
+                            background-color: #f5989d;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .topBar {
+            height: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+
+            .closeChat, .minimizeChat {
+                display: inline-block;
+                height: 24px;
+                width: 24px;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: 18px;
+                background-position: center;
+            }
+
+            .closeChat {
+                background-image: url("../images/closeChat.png");
+            }
+
+            .minimizeChat {
+                background-image: url("../images/minimizeChat.png");
+            }
+        }
+
+        .midSection {
+            height: calc(100% - 76px);
+            margin-bottom: 10px;
+            font-size: 12px;
+            position: relative;
+
+            .scrShareStarted {
+                border-radius: 6px;
+                background-color: rgb(220, 222, 222);
+                padding: 10px;
+                margin-top: 10px;
+
+                .names {
+                    height: 24px;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    @keyframes gradient {
+                        0% {
+                            background-position: 0% 50%;
+                        }
+                        50% {
+                            background-position: 100% 50%;
+                        }
+                        100% {
+                            background-position: 0% 50%;
+                        }
+                    }
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 24px;
+                        width: 24px;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+                        background-image: url("../images/onCall.png");
+                        background-repeat: no-repeat;
+                        background-size: 24px;
+                        background-position: center;
+                        z-index: 3;
+                    }
+
+                    &:after {
+                        border-radius: 50%;
+                        background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                        background-size: 400% 400%;
+                        animation: gradient 15s ease infinite;
+                        position: absolute;
+                        left: 50%;
+                        top: -5px;
+                        width: 34px;
+                        height: 34px;
+                        z-index: 2;
+                        content: "";
+                        transform: translateX(-50%);
+                        box-shadow: 0 0 10px 4px #5e616e;
+                    }
+
+                    span {
+                        float: left;
+                        background-color: #5e616e;
+                        line-height: 24px;
+                        color: #FFF;
+                        font-weight: 500;
+                        font-size: 12px;
+                        width: 50%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        &:first-of-type {
+                            border-radius: 6px 0 0 6px;
+                            padding: 0 20px 0 5px;
+                        }
+
+                        &:last-of-type {
+                            border-radius: 0 6px 6px 0;
+                            padding: 0 5px 0 20px;
+                            text-align: right;
+                            direction: rtl;
+                        }
+                    }
+                }
+
+                .bottomBar {
+                    .cta {
+                        background-color: #f5989d;
+                    }
+                }
+            }
+
+            .special {
+                color: #5992bd;
+                display: inline-block;
+                padding-top: 5px;
+            }
+
+            .startChatSection {
+                height: 100%;
+                display: table;
+                width: 100%;
+
+                .chatContainer {
+                    height: 100%;
+                    vertical-align: middle;
+                    display: table-cell;
+                }
+            }
+
+            form {
+                color: #3F4253;
+                font-size: 11px;
+
+                ul {
+                    margin: 0;
+
+                    li {
+                        margin-top: 20px;
+
+                        .title {
+                            font-size: 10px;
+                            color: rgba(#3F4253, 0.6);
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            display: block;
+                            position: relative;
+                            margin-bottom: 5px;
+                        }
+
+                        input[type=text], textarea {
+                            border-width: 1px;
+                            border-color: rgba(#3F4253, 0.3);
+                            border-style: solid;
+                            border-radius: 4px;
+                            box-shadow: 0px 0px 4px 0px rgba(63, 66, 83, 0.1);
+                            width: 100%;
+                            padding: 5px;
+                            font-size: 14px;
+                            color: #3F4253;
+
+                            &:disabled {
+                                color: rgba(#3F4253, 0.6);
+                                background-color: #ebebeb;
+                                padding-right: 34px;
+                                background-repeat: no-repeat;
+                                background-position: right center;
+                                background-image: url("../images/disabledInput.png");
+                                background-size: 34px;
+                            }
+                        }
+
+                        textarea {
+                            height: 66px;
+                            resize: none;
+                        }
+                    }
+                }
+            }
+
+            .scroll-wrapper {
+                height: 100%;
+                top: 0;
+                z-index: 2;
+
+                section {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    padding-right: 15px;
+
+                    ul.sent, ul.recv {
+                        li {
+                            margin-top: 5px;
+                            position: relative;
+
+                            .readStatus {
+                                float: right;
+                                height: 30px;
+                                width: 30px;
+                                background-image: url("../images/chatReadStatusIcon.png");
+                                background-size: 30px 60px;
+                                background-position: 0 0;
+                                background-repeat: no-repeat;
+
+                                &.read {
+                                    background-position: 0 -30px;
+                                }
+                            }
+
+                            .time {
+                                font-size: 12px;
+                                color: rgba(#3f4253, 0.4);
+                                font-weight: 300;
+                                float: right;
+                                text-align: center;
+                                padding: 1px 0 0 0;
+                                width: 50px;
+
+                                strong {
+                                    display: block;
+                                    color: #3f4253;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .text {
+                                float: right;
+                                border-radius: 6px;
+                                background-image: -moz-linear-gradient( 75deg, rgb(71,80,154) 0%, rgb(103,113,230) 100%);
+                                background-image: -webkit-linear-gradient( 75deg, rgb(71,80,154) 0%, rgb(103,113,230) 100%);
+                                background-image: -ms-linear-gradient( 75deg, rgb(71,80,154) 0%, rgb(103,113,230) 100%);
+                                padding: 8px;
+                                color: #FFF;
+                                font-size: 12px;
+                                max-width: calc(100% - 100px);
+                            }
+
+                            .menu {
+                                float: right;
+                                width: 20px;
+                                height: 30px;
+                                cursor: pointer;
+                                background-image: url("../images/chatMenuIcon.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 18px;
+
+                                &+.menuItems {
+                                    position: absolute;
+                                    border-radius: 6px;
+                                    background-color: #e0c8ac;
+                                    padding: 5px 5px 0 5px;
+                                    box-shadow: 0 0 5px 0 rgba(#3f4253, 0.3);
+                                    right: 20px;
+                                    top: 0;
+                                    z-index: 2;
+                                    display: none;
+
+                                    span {
+                                        display: block;
+                                        border-radius: 4px;
+                                        padding: 5px 5px 5px 28px;
+                                        margin-bottom: 5px;
+                                        font-size: 12px;
+                                        white-space: nowrap;
+                                        min-width: 100px;
+                                        background-size: 18px;
+                                        background-repeat: no-repeat;
+                                        background-position: left 5px center;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            background-color: rgba(#FFF, 0.8);
+                                        }
+
+                                        &.copy {
+                                            background-image: url("../images/copy.png");
+                                        }
+
+                                        &.edit {
+                                            background-image: url("../images/edit.png");
+                                        }
+                                    }
+
+                                    &.show {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                .menu {
+                                    &+.menuItems {
+                                        top: auto;
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    ul.recv {
+                        li {
+                            .time, .text, .menu {
+                                float: left;
+                            }
+
+                            .text {
+                                background: #3f4253;
+                            }
+
+                            .menu {
+                                &+.menuItems {
+                                    right: auto;
+                                    left: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .attachmentSent, .attachmentRecv {
+                        margin-top: 5px;
+
+                        article {
+                            border-radius: 6px;
+                            background-color: #3f4253;
+                            width: 180px;
+                            float: right;
+                            padding: 10px 10px 0 10px;
+
+                            .fileName {
+                                font-size: 12px;
+                                color: #e0c8ac;
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+
+                            .fileSize {
+                                font-size: 12px;
+                                color: #CB0000;
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                margin-bottom: 20px;
+                            }
+
+                            .fileType {
+                                font-size: 12px;
+                                color: rgba(#3f4253, 0.4);
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                margin-bottom: 5px;
+                            }
+
+                            .percentage {
+                                background-color: #3f4253;
+                                width: 100%;
+                                height: 2px;
+                                display: block;
+                                position: relative;
+
+                                i {
+                                    position: absolute;
+                                    left: 0;
+                                    height: 2px;
+                                    top: 0;
+                                    background-color: #00a0d2;
+                                    box-shadow: 0 0 5px #0A246A;
+                                }
+                            }
+
+                            button {
+                                font-size: 14px;
+                                color: #FFF;
+                                text-transform: uppercase;
+                                background: transparent;
+                                border: 0;
+                                cursor: pointer;
+                                width: 100%;
+                                height: 34px;
+                            }
+                        }
+                    }
+
+                    .attachmentRecv {
+                        article {
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottomBar {
+            height: 32px;
+
+            .cta {
+                border-radius: 4px;
+                background-color: rgb(163, 211, 156);
+                width: 100%;
+                height: 32px;
+                border: 0;
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                display: block;
+                padding: 3px;
+                line-height: 26px;
+
+                i {
+                    float: left;
+                    font-style: normal;
+                    width: 50%;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:nth-of-type(2) {
+                        background-color: #fdc689;
+                        color: #3f4253;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .sendMsg {
+                position: relative;
+
+                .sendIt, .smileys i, .attachment label {
+                    background-position: center;
+                    background-size: 18px;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                    height: 28px;
+                    width: 28px;
+                }
+
+                .smileys {
+                    right: 58px;
+                    position: absolute;
+                    top: 2px;
+                    height: 28px;
+                    width: 28px;
+
+                    i {
+                        display: block;
+                        background-image: url("../images/smileyIcon.png");
+                    }
+                }
+
+                .attachment {
+                    right: 30px;
+                    position: absolute;
+                    top: 2px;
+                    height: 28px;
+
+                    input[type=file] {
+                        display: none;
+                    }
+
+                    label {
+                        background-image: url("../images/chatAttachment.png");
+                        margin: 0;
+                    }
+                }
+
+                .sendIt {
+                    right: 2px;
+                    background-image: url("../images/sendMsg.png");
+                    border: 0;
+                    top: 2px;
+                    position: absolute;
+                }
+
+                textarea {
+                    border-width: 2px;
+                    border-color: rgb(220, 222, 222);
+                    border-style: solid;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 32px;
+                    padding: 2px 90px 0 5px;
+                    font-size: 12px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
