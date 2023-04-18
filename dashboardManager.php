@@ -14,7 +14,6 @@
 <body>
 	<?php include("header.php");?>
 	<?php include("sideNav.php");?>
-
 	<section class="dashboard"> <!-DO NOT INCLUDE THIS TAG IN DYNAMIC CODE->
 		<div class="covidReload">
 			<span class="title">Dashboard</span>
@@ -211,7 +210,6 @@
 			</div>
 		</div>
 	</section>
-
 	<div class="warningsBG"></div>
 	<div class="warningsRed">
 		<span class="title"><samp>Warnings</samp></span>
@@ -459,6 +457,168 @@
 		</div>
 	</div>
 
+    <div class="chatModule">
+        <samp></samp>
+
+        <div class="chatBox">
+            <div class="popMsg" style="display: none">
+                <div class="popMsgContainer">
+                    <div class="msg">
+                        <div class="topBar">
+                            <span class="closeChat"></span>
+                        </div>
+
+                        <div class="msgSection text-center">
+                            <p><strong>Adam is requesting to share your browser screen.</strong></p>
+                            NOTE: It's a two-way voice communication sharing.
+                        </div>
+
+                        <div class="bottomBar">
+                            <span class="cta" style="background-color: #a3d39c;">
+                                <i>Accept</i>
+                                <i>With Control</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popMsg" style="display: none;">
+                <div class="popMsgContainer">
+                    <div class="msg">
+                        <div class="topBar">
+                            <span class="closeChat"></span>
+                        </div>
+
+                        <div class="msgSection">
+                            Do you really want to close the chat?
+                        </div>
+
+                        <div class="bottomBar">
+                            <button class="cta">Close the Chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topBar">
+                <span class="minimizeChat"></span>
+                <span class="closeChat"></span>
+            </div>
+
+            <div class="midSection">
+                <div class="scrollArea">
+                    <section>
+                        <div class="scrShareStarted">
+                            <div class="names">
+                                <span>Visitor</span>
+                                <span>Adam</span>
+                            </div>
+                            <div class="bottomBar">
+                                <button class="cta">Stop Sharing</button>
+                            </div>
+                        </div>
+
+                        <div class="attachmentRecv clearfix">
+                            <article>
+                                <span class="fileName">filename.jpg</span>
+                                <span class="fileSize">1.1 mb</span>
+                                <span class="fileType">Image File</span>
+                                <span class="percentage"><i style="width:20%"></i></span>
+                                <button>Download</button>
+                            </article>
+                        </div>
+
+                        <div class="attachmentSent clearfix">
+                            <article>
+                                <span class="fileName">filename.jpg</span>
+                                <span class="fileSize">1.1 mb</span>
+                                <span class="fileType">Image File</span>
+                                <span class="percentage"><i style="width:20%"></i></span>
+                                <button>Remove</button>
+                            </article>
+                        </div>
+
+                        <ul class="sent list-unstyled">
+                            <li class="clearfix">
+                                <i class="menu"></i>
+                                <div class="menuItems">
+                                    <span class="copy">Copy</span>
+                                    <span class="edit">Edit</span>
+                                </div>
+                                <span class="text">Hi would love to have a quick solution today.</span>
+                                <span class="time">TUE <strong>16:44</strong></span>
+                            </li>
+                        </ul>
+
+                        <ul class="recv list-unstyled">
+                            <li class="clearfix">
+                                <i class="menu"></i>
+                                <div class="menuItems">
+                                    <span class="copy">Copy</span>
+                                    <span class="edit">Edit</span>
+                                </div>
+                                <span class="text">Thank you for waiting. <strong>Adam</strong> is your support person.</span>
+                                <span class="time">TUE <strong>16:44</strong></span>
+                                <span class="readStatus read"></span>
+                            </li>
+                            <li class="clearfix">
+                                <i class="menu"></i>
+                                <span class="text">Hi visitor, please give me a  minute to go through your question, will be right back.</span>
+                                <span class="time">TUE <strong>16:44</strong></span>
+                                <span class="readStatus"></span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="text-center" style="display: none;">
+                    One of our representatives will be with you shortly. You are number <strong>1</strong> in the queue. Your wait time will be approximately
+                    <strong>5 minute(s)</strong>.
+
+                    <span class="special">Thank you for your patience.</span>
+                </div>
+
+                <div class="startChatSection" style="display: none;">
+                    <div class="chatContainer">
+                        <form>
+                            Please fill in details below to start a support chat.
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="title">Name</span>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <span class="title">Email</span>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <span class="title">Question / description in brief</span>
+                                    <textarea></textarea>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomBar">
+                <button class="cta" style="display: none;">Start Chat</button>
+
+                <form class="sendMsg">
+                    <span class="smileys"><i></i></span>
+                    <span class="attachment">
+                        <input type="file" id="sendAttachment">
+                        <label for="sendAttachment"></label>
+                    </span>
+                    <button class="sendIt"></button>
+                    <textarea placeholder="Write a message..."></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+
 	<script src="js/jquery-1.12.4.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollbar.min.js"></script>
@@ -471,6 +631,7 @@
 		$('.careProvided .filter').click(function(){
 			$('.settings').toggleClass('expand');
 		});
+
 		Highcharts.chart('bar', {
 			chart: {
 				type: 'column',
@@ -566,5 +727,4 @@
 		});
 	</script>
 </body>
-
 </html>

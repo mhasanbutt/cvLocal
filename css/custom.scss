@@ -7,6 +7,7 @@
 @import url('select2.min.css');
 @import "config";
 @import "common";
+@import "chat";
 
 .contentHeader {
 	position: fixed;
@@ -11074,6 +11075,10 @@ hr {
 			z-index: 999;
 		}
 	}
+
+    .fc-day-grid-event .fc-content {
+        color: #333;
+    }
 }
 
 .warningPop {
@@ -23207,7 +23212,7 @@ hr {
 				white-space: nowrap;
 				overflow: hidden;
 				background-color: $grayColor;
-				color: #FFF;
+				color: #1C3C4B;
 			}
 
 			.RotaDuplicateShift {
@@ -38212,7 +38217,7 @@ input[type=checkbox].switch {
 					.gsf {
 						position: absolute;
 						right: 10px;
-						bottom: 10px;
+						bottom: 5px;
 					}
 
 					.newsScore {
@@ -38308,6 +38313,25 @@ input[type=checkbox].switch {
 								&:before {
 									content: "NHS";
 								}
+
+                                .resNursing {
+                                    float: right;
+                                    font-style: normal;
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    padding: 0 5px;
+                                    border-radius: 4px;
+                                    color: #333;
+                                    line-height: 2;
+
+                                    &.residential {
+                                        background-color: #a3d39c;
+                                    }
+
+                                    &.nursing {
+                                        background-color: #6dcff6;
+                                    }
+                                }
 							}
 
 							span {
@@ -43860,6 +43884,7 @@ input[type=checkbox].switch {
             ul {
                 position: relative;
                 padding-top: 2px;
+                margin-top: 25px;
 
                 &:before {
                     position: absolute;
@@ -43874,6 +43899,10 @@ input[type=checkbox].switch {
                     border-radius: 0 0 4px 4px;
                     line-height: 22px;
                     padding: 0 5px;
+                }
+
+                &:first-of-type {
+                    margin-top: 0;
                 }
             }
         }
@@ -43902,6 +43931,16 @@ input[type=checkbox].switch {
         top: 44px;
         width: 18px;
         height: 18px;
+        background-image: url('../images/permissionTick.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 14px;
+    }
+
+    &>input[type=checkbox] {
+        &+label {
+            background-color: $primaryColor;
+        }
     }
 
     &>ul {
@@ -44008,6 +44047,17 @@ input[type=checkbox].switch {
         background-color: rgb(61, 66, 83);
         padding: 10px 10px 0 10px;
         margin-bottom: 10px;
+        position: relative;
+
+        &:before {
+            content: attr(data-cattitle);
+            color: #FFF;
+            left: 10px;
+            top: 10px;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
 
         .chooseOneOption {
             ul {
