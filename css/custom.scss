@@ -11075,6 +11075,10 @@ hr {
 			z-index: 999;
 		}
 	}
+
+    .fc-day-grid-event .fc-content {
+        color: #333;
+    }
 }
 
 .warningPop {
@@ -23208,7 +23212,7 @@ hr {
 				white-space: nowrap;
 				overflow: hidden;
 				background-color: $grayColor;
-				color: #FFF;
+				color: #1C3C4B;
 			}
 
 			.RotaDuplicateShift {
@@ -38213,7 +38217,7 @@ input[type=checkbox].switch {
 					.gsf {
 						position: absolute;
 						right: 10px;
-						bottom: 10px;
+						bottom: 5px;
 					}
 
 					.newsScore {
@@ -38309,6 +38313,25 @@ input[type=checkbox].switch {
 								&:before {
 									content: "NHS";
 								}
+
+                                .resNursing {
+                                    float: right;
+                                    font-style: normal;
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    padding: 0 5px;
+                                    border-radius: 4px;
+                                    color: #333;
+                                    line-height: 2;
+
+                                    &.residential {
+                                        background-color: #a3d39c;
+                                    }
+
+                                    &.nursing {
+                                        background-color: #6dcff6;
+                                    }
+                                }
 							}
 
 							span {
