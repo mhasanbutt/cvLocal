@@ -3793,6 +3793,7 @@ hr {
 	width: 100%;
 
 	.content {
+		overflow-x: hidden;
 
 		.invoice-note {
 			padding: 10px 15px;
@@ -32349,9 +32350,6 @@ hr {
 
                                         .select2-selection__rendered {
                                             height: 32px;
-                                            padding: 0 5px;
-                                            font-size: 12px;
-                                            line-height: 32px;
                                         }
                                     }
                                 }
@@ -36119,10 +36117,6 @@ button.newStyle {
 			&:last-of-type {
 				margin-right: 0;
 			}
-
-            &.active {
-                background-color: $primaryColor;
-            }
 		}
 	}
 }
@@ -43794,7 +43788,6 @@ input[type=checkbox].switch {
                 li {
                     width: calc((100% - 50px) / 11);
                     float: right;
-                    overflow: visible;
 
                     .tTText {
                         width: 250px;
@@ -43884,10 +43877,9 @@ input[type=checkbox].switch {
 
         &.activityReportDetail {
             background-color: #FFF;
-            padding: 0 5px;
+            padding: 0 10px;
             border: 2px solid rgb(220, 222, 222);
             border-radius: 4px 4px 0 0;
-            margin-bottom: 32px;
 
             ul {
                 position: relative;
@@ -43897,8 +43889,8 @@ input[type=checkbox].switch {
                 &:before {
                     position: absolute;
                     content: attr(data-subTitle);
-                    left: -2px;
-                    right: -2px;
+                    left: -7px;
+                    right: -7px;
                     top: 100%;
                     display: block;
                     background-color:rgb(220, 222, 222);
@@ -43911,27 +43903,6 @@ input[type=checkbox].switch {
 
                 &:first-of-type {
                     margin-top: 0;
-                }
-            }
-        }
-    }
-
-    &.activities {
-        section {
-            &.withTitle {
-                &:nth-last-child(-n+3) {
-                    ul {
-                        &.activities {
-                            li {
-                                &.helpTip {
-                                    .tTText {
-                                        top: auto;
-                                        bottom: 15px;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -44615,44 +44586,6 @@ input[type=checkbox].switch {
                         top: 5px;
                     }
                 }
-            }
-        }
-    }
-}
-
-.relishListing {
-    height: 100%;
-    width: calc(100% - 370px);
-    position: relative;
-    float: left;
-
-	@media screen and (min-width: 1600px) {
-		width: calc(100% - 570px);
-	}
-}
-
-.relishGraphs {
-    height: 100%;
-    border-radius: 4px;
-    background-color: $grayColor;
-    width: 360px;
-    float: right;
-    padding: 0 5px;
-
-	@media screen and (min-width: 1600px) {
-		width: 560px;
-	}
-
-    ul {
-        margin: 0;
-        height: 100%;
-
-        li {
-            margin-top: 10px;
-            height: calc((100% - 20px) / 3);
-
-            &:first-child {
-                margin-top: 0;
             }
         }
     }

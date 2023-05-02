@@ -4797,10 +4797,6 @@ hr.BoldHr {
   position: absolute;
   width: 100%;
 }
-.scrollArea .content,
-.scrollAreaChild .content {
-  overflow-x: hidden;
-}
 .scrollArea .content .invoice-note,
 .scrollAreaChild .content .invoice-note {
   padding: 10px 15px;
@@ -10887,6 +10883,9 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+}
+.routaPop .fc-day-grid-event .fc-content {
+  color: #333;
 }
 
 .warningPop {
@@ -21188,7 +21187,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   background-color: #828787;
-  color: #FFF;
+  color: #1C3C4B;
 }
 .rotagrid .rotausertable li .RotaDuplicateShift {
   position: absolute;
@@ -28743,6 +28742,9 @@ body {
 }
 .filtersSearch > .search .allFilters ul li .form-group .select .select2 .selection .select2-selection--single .select2-selection__rendered {
   height: 32px;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 32px;
 }
 .filtersSearch > .search .allFilters ul li .form-group input[type=text] {
   width: 100%;
@@ -31824,6 +31826,9 @@ button.newStyle.green {
 .pagingSorting .sorting button:last-of-type {
   margin-right: 0;
 }
+.pagingSorting .sorting button.active {
+  background-color: #6DC77A;
+}
 
 .auditLegends {
   margin: 0;
@@ -33513,7 +33518,7 @@ input[type=checkbox].switch:checked + label:before {
 .newSUList .listContainer > ul > li article .gsf {
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 5px;
 }
 .newSUList .listContainer > ul > li article .newsScore {
   background-color: #EEE;
@@ -33585,6 +33590,22 @@ input[type=checkbox].switch:checked + label:before {
 }
 .newSUList .listContainer > ul > li article ul li:nth-child(5):before {
   content: "NHS";
+}
+.newSUList .listContainer > ul > li article ul li:nth-child(5) .resNursing {
+  float: right;
+  font-style: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 5px;
+  border-radius: 4px;
+  color: #333;
+  line-height: 2;
+}
+.newSUList .listContainer > ul > li article ul li:nth-child(5) .resNursing.residential {
+  background-color: #a3d39c;
+}
+.newSUList .listContainer > ul > li article ul li:nth-child(5) .resNursing.nursing {
+  background-color: #6dcff6;
 }
 .newSUList .listContainer > ul > li article ul li span {
   border-radius: 4px;
@@ -38097,6 +38118,7 @@ input[type=checkbox].switch:checked + label:before {
 .generalListing section ul.activities li {
   width: calc((100% - 50px) / 11);
   float: right;
+  overflow: visible;
 }
 .generalListing section ul.activities li .tTText {
   width: 250px;
@@ -38166,9 +38188,10 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section.activityReportDetail {
   background-color: #FFF;
-  padding: 0 10px;
+  padding: 0 5px;
   border: 2px solid rgb(220, 222, 222);
   border-radius: 4px 4px 0 0;
+  margin-bottom: 32px;
 }
 .generalListing section.activityReportDetail ul {
   position: relative;
@@ -38178,8 +38201,8 @@ input[type=checkbox].switch:checked + label:before {
 .generalListing section.activityReportDetail ul:before {
   position: absolute;
   content: attr(data-subTitle);
-  left: -7px;
-  right: -7px;
+  left: -2px;
+  right: -2px;
   top: 100%;
   display: block;
   background-color: rgb(220, 222, 222);
@@ -38191,6 +38214,10 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section.activityReportDetail ul:first-of-type {
   margin-top: 0;
+}
+.generalListing.activities section.withTitle:nth-last-child(-n+3) ul.activities li.helpTip .tTText {
+  top: auto;
+  bottom: 15px;
 }
 
 .surveyQuestions {
@@ -38744,6 +38771,43 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 4px;
   right: 5px;
   top: 5px;
+}
+
+.relishListing {
+  height: 100%;
+  width: calc(100% - 370px);
+  position: relative;
+  float: left;
+}
+@media screen and (min-width: 1600px) {
+  .relishListing {
+    width: calc(100% - 570px);
+  }
+}
+
+.relishGraphs {
+  height: 100%;
+  border-radius: 4px;
+  background-color: #828787;
+  width: 360px;
+  float: right;
+  padding: 0 5px;
+}
+@media screen and (min-width: 1600px) {
+  .relishGraphs {
+    width: 560px;
+  }
+}
+.relishGraphs ul {
+  margin: 0;
+  height: 100%;
+}
+.relishGraphs ul li {
+  margin-top: 10px;
+  height: calc((100% - 20px) / 3);
+}
+.relishGraphs ul li:first-child {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=custom.css.map */
