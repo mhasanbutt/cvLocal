@@ -8,6 +8,7 @@
     <title>CareVision - Less Admin, More Caring</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
 <?php include("header.php"); ?>
@@ -85,7 +86,11 @@
 
     <div class="relishGraphs">
         <ul class="list-unstyled">
-            <li></li>
+            <li>
+                <figure class="highcharts-figure" style="height:100%;">
+                    <div id="activityCount" style="height:100%;"></div>
+                </figure>
+            </li>
             <li></li>
             <li></li>
         </ul>
@@ -99,5 +104,67 @@
 <script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 <script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    Highcharts.chart('activityCount', {
+        chart: {
+            backgroundColor: 'transparent',
+            type: 'column'
+        },
+        title: {
+            text: 'Activity Count'
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Activities'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'No. of Activities'
+        },
+        series: [{
+            name: 'Population',
+            colors: [
+                '#9b20d9', '#9215ac', '#861ec9', '#7a17e6', '#7010f9', '#691af3'
+            ],
+            colorByPoint: true,
+            groupPadding: 0,
+            data: [
+                ['Monday', 37.33],
+                ['Tuesday', 31.18],
+                ['Wednesday', 27.79],
+                ['Thursday', 22.23],
+                ['Friday', 21.91],
+                ['Saturday', 21.74],
+                ['Sunday', 21.32]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+</script>
 </body>
 </html>

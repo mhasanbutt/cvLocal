@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="images/favicon.png" rel="shortcut icon">
     <title>CareVision - Less Admin, More Caring</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <?php include("header.php"); ?>
@@ -119,66 +115,44 @@
 
 <section class="contentBody">
     <div class="scrollArea">
-        <div class="content trainingTable">
-            <table class="table training table-bordered">
-                <thead>
-                    <tr>
-                        <th>Qualification <img src="images/right-arrow.svg" class="svg"></th>
-                        <th colspan="2">Fire Safety</th>
-                        <th colspan="2">Sova &amp; Abuse</th>
-                        <th colspan="2">Manual Handling</th>
-                        <th colspan="2">Manual Handling</th>
-                        <th colspan="2">Manual Handling</th>
-                    </tr>
-                    <tr>
-                        <th>Employee <img src="images/right-arrow.svg" class="svg"></th>
-                        <th>Date Completed</th>
-                        <th>Date Due</th>
-                        <th>Date Completed</th>
-                        <th>Date Due</th>
-                        <th>Date Completed</th>
-                        <th>Date Due</th>
-                        <th>Date Completed</th>
-                        <th>Date Due</th><th>Date Completed</th>
-                        <th>Date Due</th>
-                    </tr>
-                </thead>
+        <div class="content" style="padding-right:20px;">
+            <table class="matrixTable">
                 <tbody>
                     <tr>
-                        <td>Laura Ross <span>Receptionist</span></td>
-                        <td class="green">01-01-2019</td>
-                        <td class="green">01-01-2020</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>N/A</td><td>N/A</td>
-                        <td>N/A</td>
+                        <td></td>
+                        <td rowspan="4" class="divider mandatoryTrainings"></td>
+                        <td><span class="completedDue">Completed</span><span class="completedDue">Due</span></td>
+                        <td><span class="completedDue">Completed</span><span class="completedDue">Due</span></td>
+                        <td rowspan="4" class="divider optionalTrainings"></td>
+                        <td><span class="completedDue">Completed</span><span class="completedDue">Due</span></td>
+                        <td><span class="completedDue">Completed</span><span class="completedDue">Due</span></td>
                     </tr>
                     <tr>
-                        <td>Maria Rodrigues <span>Healthcare Assistant</span></td>
-                        <td class="orange">01-01-2019</td>
-                        <td class="orange">01-01-2020</td>
-                        <td class="red">01-01-2020</td>
-                        <td class="red">01-01-2020</td>
-                        <td>01-01-2020</td>
-                        <td>01-01-2020</td>
-                        <td>01-01-2020</td>
-                        <td>01-01-2020</td><td>01-01-2020</td>
-                        <td>01-01-2020</td>
+                        <td></td>
+
+                        <td><span class="trainingName">Sova &amp; Abuse</span></td>
+                        <td><span class="trainingName">Health &amp; safety</span></td>
+
+                        <td><span class="trainingName">Fire Safety</span></td>
+                        <td><span class="trainingName">Infection Control</span></td>
                     </tr>
                     <tr>
-                        <td>Maria Cruz <span>Team Leader</span></td>
-                        <td>01-01-2019</td>
-                        <td>01-01-2020</td>
-                        <td><img src="images/delete.svg" class="svg notCompleted"></td>
-                        <td><img src="images/delete.svg" class="svg notCompleted"></td>
-                        <td class="blue">01-01-2020</td>
-                        <td class="blue">01-01-2020</td>
-                        <td class="blue">01-01-2020</td>
-                        <td class="blue">01-01-2020</td><td class="blue">01-01-2020</td>
-                        <td class="blue">01-01-2020</td>
+                        <td><span class="name">Stone Cold Smith</span><span class="designation">Healthcare Assistant</span> </td>
+
+                        <td class="schedule refusedTraining"><span></span><span></span></td>
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
+
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="name">Stone Cold Smith</span><span class="designation">Healthcare Assistant</span> </td>
+
+                        <td class="schedule refusedTraining"><span></span><span></span></td>
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
+
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
+                        <td class="schedule"><span>02.12.2022</span><span>14.03.2023</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -225,12 +199,11 @@
     </div>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-<script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
