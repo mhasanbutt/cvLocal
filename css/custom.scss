@@ -1,9 +1,3 @@
-
-@import url('perfect-scrollbar.min.css');
-@import url('//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css');
-@import url('ion.rangeSlider.css');
-@import url('jquery.circliful.css');
-@import url('select2.min.css');
 @import "config";
 @import "common";
 @import "chat";
@@ -131,7 +125,7 @@
                     color: #DCDEDE;
                     display: block;
                     font-weight: 500;
-                    font-family: 'Roboto';
+                    font-family: $primaryFont;
                 }
 
                 &:first-child {
@@ -1319,7 +1313,7 @@
         font-size: 18px;
         color: #6e7373;
         font-weight: 500;
-        text-shadow: 0.5px 0.866px 0px rgba(253, 253, 255, 0.4);
+        text-shadow: 0.5px 0.866px 0 rgba(253, 253, 255, 0.4);
 
         i {
             font-family: $secondaryFont;
@@ -1342,7 +1336,7 @@
         font-size: 14px;
         color: #6e7373;
         font-weight: 500;
-        text-shadow: 0.5px 0.866px 0px rgba(253, 253, 255, 0.4);
+        text-shadow: 0.5px 0.866px 0 rgba(253, 253, 255, 0.4);
         position: relative;
         float: right;
         margin: 25px 30px 0 0;
@@ -1387,7 +1381,7 @@
             background-color: #FFCD60;
             border-radius: 4px;
             color: #3F4253;
-            text-shadow: 1px 1px 0px #FFF;
+            text-shadow: 1px 1px 0 #FFF;
             height: 24px;
 
             i {
@@ -1430,7 +1424,6 @@
                     border-width: 3px;
                     height: 18px;
                     width: 18px;
-                    -webkit-transform: rotate(45deg);
                     transform: rotate(45deg);
                 }
 
@@ -1470,7 +1463,7 @@
 
         strong {
             color: #424556;
-            font-family: "Roboto";
+            font-family: $primaryFont;
         }
     }
 
@@ -1497,7 +1490,6 @@
             width: 170px;
             right: 0;
             top: 5px;
-            text-align: center;
         }
 
         li {
@@ -1613,7 +1605,7 @@
                 float: left;
                 margin: 2px 0;
                 color: #333;
-                box-shadow: 0px 0px 8px #e7e7e7 inset;
+                box-shadow: 0 0 8px #e7e7e7 inset;
             }
         }
     }
@@ -1726,7 +1718,6 @@
                 content: '';
                 position: absolute;
                 top: 0;
-                -webkit-transform: translateX(5px) translateY(0);
                 transform: translateX(5px) translateY(0);
                 z-index: 1;
             }
@@ -1739,7 +1730,6 @@
                 content: '';
                 position: absolute;
                 top: 0;
-                -webkit-transform: translateX(5px) translateY(0);
                 transform: translateX(5px) translateY(0);
                 z-index: 1;
                 left: -15px;
@@ -2503,7 +2493,7 @@ hr {
 
     &.directorDb {
         top: 60px !important;
-        left: 0px;
+        left: 0;
         right: 0;
 
         .directorDbTopBar {
@@ -2542,7 +2532,7 @@ hr {
                 img {
                     z-index: 15;
                     position: absolute;
-                    right: 0px;
+                    right: 0;
                     height: 10px;
                     width: 10px;
                     top: 16px;
@@ -2625,7 +2615,6 @@ hr {
                     line-height: 32px;
                     background: $orangeColor;
                     border-radius: 4px;
-                    font-size: 10px;
                     font-size: 10px;
                     text-transform: uppercase;
                     display: inline-block;
@@ -3011,7 +3000,6 @@ hr {
                             font-size: 18px;
                             font-family: $secondaryFont;
                             position: relative;
-                            font-size: 18px;
                             text-align: right;
 
                             a {
@@ -3648,7 +3636,6 @@ hr {
             &>th {
                 background-color: $secondaryColor;
                 color: #FFF;
-                border-bottom: 0;
                 vertical-align: middle;
                 font-size: 12px;
                 text-transform: uppercase;
@@ -3932,7 +3919,6 @@ hr {
                         position: relative;
                         z-index: 10;
                         @extend .appearance;
-                        color: #666;
                         padding-right: 25px;
                     }
 
@@ -5279,7 +5265,6 @@ hr {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    display: inline-block;
     margin-bottom: 30px;
     position: relative;
     display: none;
@@ -5290,7 +5275,7 @@ hr {
         position: absolute;
         z-index: 2;
         background-color: rgb(253, 253, 255);
-        box-shadow: -1.414px 1.414px 4px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: -1.414px 1.414px 4px 0 rgba(0, 0, 0, 0.2);
         padding: 5px 10px;
         font-weight: 400;
         cursor: pointer;
@@ -5540,7 +5525,7 @@ hr {
         height: 42px;
         position: relative;
         z-index: 10;
-        box-shadow: 0px 0px 8px #e7e7e7 inset;
+        box-shadow: 0 0 8px #e7e7e7 inset;
         @extend .transition;
         border-radius: 6px;
         border-left: 5px solid $grayColor;
@@ -6439,28 +6424,24 @@ hr {
 
     @-webkit-keyframes wave-front {
         100% {
-            -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
         }
     }
 
     @keyframes wave-front {
         100% {
-            -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
         }
     }
 
     @-webkit-keyframes wave-back {
         100% {
-            -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
         }
     }
 
     @keyframes wave-back {
         100% {
-            -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
         }
     }
@@ -6529,7 +6510,7 @@ hr {
         border-color: rgb(255, 255, 255);
         border-radius: 50%;
         background-color: rgb(58, 166, 147);
-        box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1.732px 2px 0 rgba(0, 0, 0, 0.2);
         height: 20px;
         width: 20px;
         top: 5px;
@@ -6834,7 +6815,7 @@ hr {
 
 .ios-toggle:checked+.checkbox-label:after {
     content: attr(data-on);
-    left: 0px;
+    left: 0;
     color: #FFF;
 }
 
@@ -7424,7 +7405,7 @@ hr {
             padding: 10px 10px 10px 115px;
             border-radius: 55px 4px 4px 4px;
             background-color: #FFF;
-            box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.2);
             position: relative;
             height: 150px;
 
@@ -8402,7 +8383,6 @@ hr {
     .jqx-scheduler-edit-dialog-field {
         button {
             border: 0;
-            background-color: $grayColor;
             color: #FFF;
             font-size: 12px;
             padding: 5px 10px;
@@ -8574,7 +8554,6 @@ hr {
     h4 {
         margin: 20px 0 10px 0;
         background-color: #CCC !important;
-        print-color-adjust: exact;
         color: #FFF;
         border-radius: 4px;
         padding: 5px;
@@ -8692,11 +8671,10 @@ hr {
                     color: #FFF !important;
                     line-height: 1;
                     padding: 0 20px 0 85px;
-                    text-align: right;
                     position: relative;
 
                     strong {
-                        font-family: 'roboto';
+                        font-family: $primaryFont;
                         font-size: 16px;
                         color: #FFF !important;
                     }
@@ -8819,9 +8797,6 @@ hr {
         background-color: $orangeColor;
         border-radius: 50%;
         padding: 10px;
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         box-shadow: 0 0 0 0 #f0f0f0, 0 0 0 0 rgba(227, 115, 14, 0.7);
 
@@ -9033,202 +9008,6 @@ hr {
             float: left;
             padding: 2px;
             transform-origin: 50% 4px;
-        }
-
-        @-webkit-keyframes ring {
-            0% {
-                -webkit-transform: rotateZ(0);
-            }
-
-            1% {
-                -webkit-transform: rotateZ(30deg);
-            }
-
-            3% {
-                -webkit-transform: rotateZ(-28deg);
-            }
-
-            5% {
-                -webkit-transform: rotateZ(34deg);
-            }
-
-            7% {
-                -webkit-transform: rotateZ(-32deg);
-            }
-
-            9% {
-                -webkit-transform: rotateZ(30deg);
-            }
-
-            11% {
-                -webkit-transform: rotateZ(-28deg);
-            }
-
-            13% {
-                -webkit-transform: rotateZ(26deg);
-            }
-
-            15% {
-                -webkit-transform: rotateZ(-24deg);
-            }
-
-            17% {
-                -webkit-transform: rotateZ(22deg);
-            }
-
-            19% {
-                -webkit-transform: rotateZ(-20deg);
-            }
-
-            21% {
-                -webkit-transform: rotateZ(18deg);
-            }
-
-            23% {
-                -webkit-transform: rotateZ(-16deg);
-            }
-
-            25% {
-                -webkit-transform: rotateZ(14deg);
-            }
-
-            27% {
-                -webkit-transform: rotateZ(-12deg);
-            }
-
-            29% {
-                -webkit-transform: rotateZ(10deg);
-            }
-
-            31% {
-                -webkit-transform: rotateZ(-8deg);
-            }
-
-            33% {
-                -webkit-transform: rotateZ(6deg);
-            }
-
-            35% {
-                -webkit-transform: rotateZ(-4deg);
-            }
-
-            37% {
-                -webkit-transform: rotateZ(2deg);
-            }
-
-            39% {
-                -webkit-transform: rotateZ(-1deg);
-            }
-
-            41% {
-                -webkit-transform: rotateZ(1deg);
-            }
-
-            43% {
-                -webkit-transform: rotateZ(0);
-            }
-
-            100% {
-                -webkit-transform: rotateZ(0);
-            }
-        }
-
-        @-moz-keyframes ring {
-            0% {
-                -moz-transform: rotate(0);
-            }
-
-            1% {
-                -moz-transform: rotate(30deg);
-            }
-
-            3% {
-                -moz-transform: rotate(-28deg);
-            }
-
-            5% {
-                -moz-transform: rotate(34deg);
-            }
-
-            7% {
-                -moz-transform: rotate(-32deg);
-            }
-
-            9% {
-                -moz-transform: rotate(30deg);
-            }
-
-            11% {
-                -moz-transform: rotate(-28deg);
-            }
-
-            13% {
-                -moz-transform: rotate(26deg);
-            }
-
-            15% {
-                -moz-transform: rotate(-24deg);
-            }
-
-            17% {
-                -moz-transform: rotate(22deg);
-            }
-
-            19% {
-                -moz-transform: rotate(-20deg);
-            }
-
-            21% {
-                -moz-transform: rotate(18deg);
-            }
-
-            23% {
-                -moz-transform: rotate(-16deg);
-            }
-
-            25% {
-                -moz-transform: rotate(14deg);
-            }
-
-            27% {
-                -moz-transform: rotate(-12deg);
-            }
-
-            29% {
-                -moz-transform: rotate(10deg);
-            }
-
-            31% {
-                -moz-transform: rotate(-8deg);
-            }
-
-            33% {
-                -moz-transform: rotate(6deg);
-            }
-
-            35% {
-                -moz-transform: rotate(-4deg);
-            }
-
-            37% {
-                -moz-transform: rotate(2deg);
-            }
-
-            39% {
-                -moz-transform: rotate(-1deg);
-            }
-
-            41% {
-                -moz-transform: rotate(1deg);
-            }
-
-            43% {
-                -moz-transform: rotate(0);
-            }
-
-            100% {
-                -moz-transform: rotate(0);
-            }
         }
 
         @keyframes ring {
@@ -9606,7 +9385,7 @@ hr {
 //         article {
 //           border-radius: 10px 4px 4px 4px;
 //           background-color: rgb(255, 255, 255);
-//           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+//           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 //           width: 100%;
 //           position: relative;
 //           padding: 15px;
@@ -9706,7 +9485,7 @@ hr {
 //           button {
 //             border-radius: 4px;
 //             background-color: rgb(100, 142, 174);
-//             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+//             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 //             height: 36px;
 //             padding: 5px 10px;
 //             color: #FFF;
@@ -10032,7 +9811,7 @@ hr {
     bottom: -10px;
     background-color: rgba(#27262B, 0.9);
     z-index: 9000;
-    box-shadow: -2.828px 2.828px 9px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -2.828px 2.828px 9px 0 rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
     width: 200px;
@@ -10229,8 +10008,8 @@ hr {
 }
 
 .scrollArea>.scroll-element.scroll-x {
-    bottom: 0px;
-    height: 0px;
+    bottom: 0;
+    height: 0;
     left: 0;
     min-width: 100%;
     overflow: visible;
@@ -10240,9 +10019,9 @@ hr {
 .scrollArea>.scroll-element.scroll-y {
     height: 100%;
     min-height: 100%;
-    right: 0px;
+    right: 0;
     top: 0;
-    width: 0px;
+    width: 0;
 }
 
 .scrollArea>.scroll-element.scroll-x .scroll-bar {
@@ -11006,7 +10785,7 @@ hr {
 }
 
 .medicationLegends {
-    padding: 15px 0px 0 0px;
+    padding: 15px 0 0 0;
     border-radius: 4px;
     background-color: #EEE;
     position: fixed;
@@ -11026,7 +10805,7 @@ hr {
         display: inline-block;
         position: relative;
         padding-left: 22px;
-        margin: 0 0px 15px 4px;
+        margin: 0 0 15px 4px;
         font-family: $secondaryFont;
         font-size: 11px;
 
@@ -11909,7 +11688,7 @@ hr {
     }
 
     &.printRota {
-        padding-left: 0px;
+        padding-left: 0;
         border: solid 1px #DDD;
         overflow: hidden;
 
@@ -11933,8 +11712,8 @@ hr {
                     ul {
                         li {
                             display: table;
-                            padding-top: 0px;
-                            padding-bottom: 0px;
+                            padding-top: 0;
+                            padding-bottom: 0;
 
                             .info {
                                 padding-left: 5px;
@@ -11955,7 +11734,7 @@ hr {
                         height: 60px;
                         overflow: hidden;
                         display: table;
-                        padding: 0px !important;
+                        padding: 0 !important;
 
                         &:before {
                             display: none;
@@ -11977,7 +11756,7 @@ hr {
                             min-height: 0 !important;
                             max-height: 1000px;
                             //background: #EEE !important;
-                            border-radius: 0px !important;
+                            border-radius: 0 !important;
                         }
 
                         &.rota-shift-border {
@@ -12225,7 +12004,6 @@ hr {
     }
 
     .paginate_button {
-        padding: 0;
         height: 26px;
         width: 26px;
         padding: 5px;
@@ -12695,7 +12473,7 @@ hr {
 
     &.areaSelectionHistory {
         td {
-            padding: 0px;
+            padding: 0;
 
             a {
                 width: 100%;
@@ -13199,7 +12977,7 @@ hr {
     left: 50%;
     @include shift(-50%, 0);
     @extend .transition;
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
     padding: 15px;
     background-color: #FFF;
     opacity: 0;
@@ -13208,7 +12986,7 @@ hr {
 
     .actionPopClose {
         position: absolute;
-        right: 0px;
+        right: 0;
         top: -29px;
         cursor: pointer;
 
@@ -13373,10 +13151,7 @@ hr {
 }
 
 .alertsCentre {
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000;
+    perspective: 1000px;
     border-radius: 4px;
     border: 2px solid #DDD;
     height: 50px;
@@ -13401,25 +13176,13 @@ hr {
     }
 
     &.rotate {
-        -webkit-transform: rotateX(180deg);
-        -moz-transform: rotateX(180deg);
-        -o-transform: rotateX(180deg);
         transform: rotateX(180deg);
         border-color: $orangeColor;
-
-        //background-color: $secondaryColor;
         .title {
-            -webkit-transform: rotateX(180deg);
-            -moz-transform: rotateX(180deg);
-            -o-transform: rotateX(180deg);
             transform: rotateX(180deg);
-            //color: #FFF;
         }
 
         .toggles {
-            -webkit-transform: rotateX(180deg);
-            -moz-transform: rotateX(180deg);
-            -o-transform: rotateX(180deg);
             transform: rotateX(180deg);
         }
     }
@@ -13829,7 +13592,7 @@ hr {
         .search {
             padding: 0 10px;
             display: block;
-            margin: 15px auto 0px auto;
+            margin: 15px auto 0 auto;
             position: relative;
 
             input[type='text'] {
@@ -13900,7 +13663,7 @@ hr {
             ul {
                 display: block;
                 width: 100%;
-                margin: 0px;
+                margin: 0;
 
                 li {
                     position: relative;
@@ -14218,7 +13981,7 @@ hr {
                 padding: 3px 8px;
                 float: left;
                 border-radius: 4px;
-                margin: 5px 5px 0px 0px;
+                margin: 5px 5px 0 0;
             }
         }
 
@@ -14323,7 +14086,7 @@ hr {
 }
 
 .composeMail .modal-title {
-    box-shadow: 0px 0px 6px rgba(0, 0, 5, .4);
+    box-shadow: 0 0 6px rgba(0, 0, 5, .4);
 }
 
 .composeMail .form-group .remainingChar {
@@ -14340,7 +14103,7 @@ hr {
     border-radius: 4px;
     color: #FFF;
     background: $orangeColor;
-    padding: 0px 15px;
+    padding: 0 15px;
     line-height: 42px;
 }
 
@@ -14359,7 +14122,7 @@ hr {
         border-radius: 6px;
         color: #FFFFFF;
         background: #acacac;
-        padding: 0px 15px;
+        padding: 0 15px;
         line-height: 42px;
         margin-left: 10px;
     }
@@ -14370,7 +14133,7 @@ hr {
 
     .form-group {
         min-height: inherit;
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -14476,13 +14239,11 @@ hr {
             width: 80px;
             font-family: $secondaryFont;
             font-size: 16px;
-            padding: 10px;
-            border-radius: 4px;
+            padding: 10px 30px 10px 10px;
             border: 1px solid $grayColor;
             background-color: #FFF;
             height: 36px;
-            padding-right: 30px;
-            box-shadow: 0px 0px 8px #e7e7e7 inset;
+            box-shadow: 0 0 8px #e7e7e7 inset;
             @extend .transition;
             border-radius: 6px;
             border-left: 5px solid $grayColor;
@@ -14656,7 +14417,7 @@ hr {
 
 .cPBuilderButton {
     float: right;
-    margin: 0px 0 0 0;
+    margin: 0 0 0 0;
 
     .btn {
         height: 36px;
@@ -14864,7 +14625,7 @@ hr {
         border: 1px solid #DDD;
         resize: none;
         height: auto;
-        box-shadow: 0px 0px 8px #e7e7e7 inset;
+        box-shadow: 0 0 8px #e7e7e7 inset;
         @extend .transition;
         border-radius: 6px;
         border-left: 5px solid $grayColor;
@@ -14886,7 +14647,7 @@ hr {
         border: 1px solid #DDD;
         color: #666;
         padding: 8px 42px 8px 10px;
-        box-shadow: 0px 0px 8px #e7e7e7 inset;
+        box-shadow: 0 0 8px #e7e7e7 inset;
         @extend .transition;
         border-radius: 6px;
         border-left: 5px solid $grayColor;
@@ -14935,7 +14696,7 @@ hr {
                         border: 1px solid #DDD;
                         resize: none;
                         height: auto;
-                        box-shadow: 0px 0px 8px #e7e7e7 inset;
+                        box-shadow: 0 0 8px #e7e7e7 inset;
                         @extend .transition;
                         border-radius: 6px;
                         border-left: 5px solid $grayColor !important;
@@ -14960,24 +14721,24 @@ hr {
         border: none;
         margin-bottom: 15px;
         display: none;
-        padding-bottom: 0px;
+        padding-bottom: 0;
 
         .group {
-            padding: 0px;
-            left: 0px;
+            padding: 0;
+            left: 0;
             @include shift(0px, 0%);
             background: none;
             color: #333333;
             position: inherit;
             display: block;
-            padding: 15px 0px;
+            padding: 15px 0;
             cursor: pointer;
 
             img.svg,
             .svg {
                 width: 20px;
                 height: 20px;
-                margin: 4px 12px 0px 0px;
+                margin: 4px 12px 0 0;
                 float: left;
                 @include rotate(-180deg);
                 @extend .transition;
@@ -15049,7 +14810,7 @@ hr {
         }
 
         .riskAssessmentToggle {
-            padding: 0px;
+            padding: 0;
             display: none;
         }
     }
@@ -15170,7 +14931,7 @@ hr {
     }
 
     &.careBuilderPreviewRout {
-        padding: 0px;
+        padding: 0;
         border: none;
 
         &:before {
@@ -15351,7 +15112,7 @@ hr {
 
                 i {
                     font-weight: 700;
-                    font-family: "Roboto";
+                    font-family: $primaryFont;
                     font-style: normal;
                     display: block;
                     letter-spacing: 1px;
@@ -15372,7 +15133,7 @@ hr {
                     content: attr(data-title);
                     word-break: initial;
                     font-size: 13px;
-                    font-family: "Roboto";
+                    font-family: $primaryFont;
                     color: #1E1F1F;
                     top: 50%;
                     transform: translateY(-50%);
@@ -15479,7 +15240,7 @@ hr {
                 height: 100%;
                 background-color: rgba(0,0,0,0.1);
                 border-radius: 10px;
-                box-shadow: 2px 3.464px 18px 0px rgba(120, 133, 149, 0.4);
+                box-shadow: 2px 3.464px 18px 0 rgba(120, 133, 149, 0.4);
                 padding-top: 20px;
                 text-align: center;
 
@@ -15542,7 +15303,7 @@ hr {
 
                         span {
                             border-radius: 10px 10px 0 0;
-                            box-shadow: 0px -4px 0px 0px rgba(63, 66, 83, 0.7);
+                            box-shadow: 0 -4px 0 0 rgba(63, 66, 83, 0.7);
                             position: absolute;
                             display: block;
                             width: 100%;
@@ -15695,7 +15456,7 @@ hr {
                             font-style: normal;
                             display: block;
                             font-size: 13px;
-                            font-family: "Roboto";
+                            font-family: $primaryFont;
                             color: #FFF;
                         }
                     }
@@ -16003,7 +15764,7 @@ hr {
                     color: rgba(#FFF, 0.7);
                     top: 5px;
                     left: calc(100% + 5px);
-                    font-family: "Roboto";
+                    font-family: $primaryFont;
                 }
             }
         }
@@ -16109,7 +15870,7 @@ hr {
                         left: calc(100% + 10px);
                         font-size: 15px;
                         color: #828787;
-                        font-family: "Roboto";
+                        font-family: $primaryFont;
                         transform: translateY(-70%);
                         line-height: 1;
                         margin-left: 10px;
@@ -16356,7 +16117,7 @@ hr {
 }
 
 .quickView {
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-color: #FFF;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -16482,9 +16243,9 @@ hr {
     }
 
     ul {
-        margin: 25px 0px 0px 0px;
+        margin: 25px 0 0 0;
         list-style: none;
-        padding: 15px 15px 0px 15px;
+        padding: 15px 15px 0 15px;
         float: left;
         width: 100%;
         background: #f6f6f6;
@@ -16835,7 +16596,7 @@ hr {
 }
 
 .CareRoutines {
-    padding: 0px 0 30px 0;
+    padding: 0 0 30px 0;
     float: left;
     width: 100%;
     height: auto;
@@ -16862,7 +16623,7 @@ hr {
             white-space: nowrap;
 
             li {
-                margin: 0px 0px 0px -4px;
+                margin: 0 0 0 -4px;
                 display: inline-block;
 
                 a {
@@ -16883,36 +16644,36 @@ hr {
         }
 
         &.one {
-            border-radius: 4px 4px 0 0px;
+            border-radius: 4px 4px 0 0;
         }
 
         &.two {
-            left: 0px;
-            top: 0px;
+            left: 0;
+            top: 0;
             margin-top: -77px;
             opacity: 0;
 
             &.show {
-                left: 0px;
+                left: 0;
                 opacity: 1;
-                top: 0px;
-                margin-top: 0px;
+                top: 0;
+                margin-top: 0;
             }
         }
 
         &.three {
-            left: 0px;
-            top: 0px;
+            left: 0;
+            top: 0;
             margin-top: -77px;
             margin-bottom: 20px;
             opacity: 0;
-            border-radius: 0px 0px 5px 5px;
+            border-radius: 0 0 5px 5px;
 
             &.show {
-                left: 0px;
+                left: 0;
                 opacity: 1;
-                top: 0px;
-                margin-top: 0px;
+                top: 0;
+                margin-top: 0;
             }
         }
     }
@@ -17066,7 +16827,7 @@ hr {
         }
 
         &:nth-child(4n+4) {
-            margin: 0px;
+            margin: 0;
         }
 
         &.checkedSCR {
@@ -17121,7 +16882,7 @@ hr {
     top: 70px;
     bottom: 0;
     overflow: hidden;
-    margin: 0px -15px;
+    margin: 0 -15px;
 
     .carePlanBuilderWrapperLeft {
         float: left;
@@ -17130,7 +16891,7 @@ hr {
         height: 100%;
 
         .scrollArea {
-            padding: 0px 15px;
+            padding: 0 15px;
         }
     }
 
@@ -17160,7 +16921,7 @@ hr {
                 height: 18px;
                 border: solid 1px #acb6b6;
                 border-radius: 100%;
-                margin: 0px 7px 0px 0px;
+                margin: 0 7px 0 0;
                 background: #fff;
                 position: absolute;
                 left: 0;
@@ -17201,7 +16962,7 @@ hr {
                     height: 8px;
                     background: $primaryColor;
                     border-radius: 100%;
-                    margin: 0px 7px 0px 0px;
+                    margin: 0 7px 0 0;
                     position: absolute;
                     left: 5px;
                     top: 12px;
@@ -17225,10 +16986,10 @@ hr {
                 height: 18px;
                 border: solid 1px #acb6b6;
                 border-radius: 4px;
-                margin: 0px 7px 0px 0px;
+                margin: 0 7px 0 0;
                 background: #fff;
                 position: absolute;
-                left: 0px;
+                left: 0;
                 top: 6px;
             }
 
@@ -17278,7 +17039,7 @@ hr {
                     content: "\2714";
                     float: left;
                     border-radius: 100%;
-                    margin: 0px 7px 0px 0px;
+                    margin: 0 7px 0 0;
                     position: absolute;
                     left: 4px;
                     top: 7px;
@@ -17563,7 +17324,7 @@ hr {
         width: 19px;
         border-radius: 100%;
         height: 19px;
-        margin: 0px 5px 0 0;
+        margin: 0 5px 0 0;
         vertical-align: middle;
         border: solid 2px #ACB6B6;
         cursor: pointer;
@@ -17611,7 +17372,7 @@ hr {
         width: 19px;
         border-radius: 3px;
         height: 19px;
-        margin: 0px 5px 0 0;
+        margin: 0 5px 0 0;
         vertical-align: middle;
         border: solid 2px #ACB6B6;
         cursor: pointer;
@@ -17645,12 +17406,12 @@ hr {
     float: left;
     text-align: left;
     width: 100%;
-    padding: 0px;
+    padding: 0;
     list-style: none;
 
     li {
         float: left;
-        margin: 0px 8px 8px 0px;
+        margin: 0 8px 8px 0;
         border: solid 1px #f2f2f2;
         padding: 8px 8px;
         font-size: 12px;
@@ -17711,7 +17472,7 @@ hr {
         font-weight: 500;
         text-transform: uppercase;
         padding: 4px 15px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         background: $orangeColor;
     }
 
@@ -17726,7 +17487,7 @@ hr {
 
             &:after {
                 content: ",";
-                padding: 0px 5px 0px 0px;
+                padding: 0 5px 0 0;
             }
         }
 
@@ -17736,7 +17497,7 @@ hr {
     }
 
     &:last-of-type {
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -17774,9 +17535,9 @@ hr {
             font-weight: 500;
             text-transform: uppercase;
             padding: 7px 15px;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             background: $orangeColor;
-            border-radius: 4px 4px 0px 0px;
+            border-radius: 4px 4px 0 0;
         }
 
         .HouseKeepSummaryRooms {
@@ -17784,20 +17545,20 @@ hr {
             border: solid 1px #d7d7d7;
             border-top: none !important;
             padding: 0 15px 15px 15px;
-            border-radius: 0px 0px 4px 4px;
+            border-radius: 0 0 4px 4px;
 
             .HouseKeepSummaryRoomsInfo {
                 display: block;
                 text-align: center;
                 padding: 10px;
-                margin: 15px 0px 0px 0px;
+                margin: 15px 0 0 0;
                 border: solid 1px #ddd;
                 border-radius: 4px;
 
                 ul {
-                    padding: 0px;
+                    padding: 0;
                     list-style: none;
-                    margin: 0px;
+                    margin: 0;
 
                     ol {
                         padding: 0;
@@ -17805,7 +17566,7 @@ hr {
                     }
 
                     li {
-                        margin: 0px 15px;
+                        margin: 0 15px;
                         display: inline-block;
                         border-radius: 4px;
 
@@ -17868,7 +17629,7 @@ hr {
         display: block;
         text-align: center;
         cursor: pointer;
-        margin: 3px 0px;
+        margin: 3px 0;
 
         img,
         img.svg,
@@ -18098,7 +17859,7 @@ hr {
         position: relative;
         top: 0;
         left: 0;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         overflow: hidden;
     }
 }
@@ -18113,7 +17874,7 @@ hr {
         overflow: hidden;
         border-radius: 8px;
         background-color: $secondaryColor;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         position: relative;
 
         &:first-child {
@@ -18302,7 +18063,7 @@ hr {
 
             &:before {
                 content: '';
-                background: url(../images/caret-up-blue.png);
+                background: url('../images/caret-up-blue.png');
                 position: absolute;
                 left: 24px;
                 bottom: -1px;
@@ -18480,7 +18241,7 @@ hr {
 
                     &>li {
                         width: auto;
-                        margin: 0px;
+                        margin: 0;
                         padding: 0 10px;
 
                         &:nth-child(n+2) {
@@ -18535,7 +18296,7 @@ hr {
                             text-align: center;
                             position: relative;
                             padding: 0 10px 0 35px;
-                            margin: 0px;
+                            margin: 0;
                             width: auto;
 
                             a {
@@ -18680,7 +18441,7 @@ hr {
 
 .changeFee-item {
     display: inline-block;
-    box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
     width: 100%;
     padding: 10px;
     border-radius: 4px;
@@ -18705,7 +18466,7 @@ hr {
         }
 
         h2 {
-            margin: 1px 0px;
+            margin: 1px 0;
             color: #333333;
             font-size: 17px;
             clear: both;
@@ -18757,7 +18518,7 @@ hr {
             float: left;
             width: 120px;
             height: 34px;
-            padding: 0px 0px 0px 5px;
+            padding: 0 0 0 5px;
         }
 
         img.svg,
@@ -18775,7 +18536,7 @@ hr {
 
     .form-group {
         min-height: inherit !important;
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -18942,7 +18703,7 @@ hr {
 
         .checkBox {
             height: auto;
-            margin-right: 0px !important;
+            margin-right: 0 !important;
 
             input[type="checkbox"]:checked+label {
                 color: #fff !important;
@@ -19229,12 +18990,12 @@ hr {
                 width: 100%;
                 list-style: none;
                 margin: 10px 0;
-                padding: 0px 0px 0px 25px;
+                padding: 0 0 0 25px;
 
                 li {
                     float: left;
                     width: 25%;
-                    padding: 0px 15px;
+                    padding: 0 15px;
 
                     &:first-child {
                         width: 40%;
@@ -19251,10 +19012,10 @@ hr {
                 clear: both;
                 width: 100%;
                 list-style: none;
-                margin: 0px 0px 15px 0px;
-                padding: 0px 0px 0px 25px;
+                margin: 0 0 15px 0;
+                padding: 0 0 0 25px;
                 background: #fff;
-                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
                 display: table;
                 height: 50px;
                 border-radius: 4px;
@@ -19264,7 +19025,7 @@ hr {
                     display: table-cell;
                     vertical-align: middle;
                     width: 25%;
-                    padding: 0px 15px;
+                    padding: 0 15px;
 
                     &:first-child {
                         position: absolute;
@@ -19300,7 +19061,7 @@ hr {
                 }
 
                 &:last-child {
-                    margin: 0px;
+                    margin: 0;
                 }
             }
         }
@@ -19607,7 +19368,7 @@ hr {
                         p,
                         main,
                         small {
-                            margin: 0px 40px;
+                            margin: 0 40px;
                             font-size: 14px;
                             color: #333333;
                         }
@@ -19623,7 +19384,7 @@ hr {
                             margin: 0 0 0 40px;
                         }
 
-                        &:first-child() {
+                        &:first-child {
                             border-top: 0;
                         }
 
@@ -19712,7 +19473,7 @@ hr {
 
             .bottom-text {
                 position: absolute;
-                bottom: 0px;
+                bottom: 0;
                 left: 0;
                 padding: 17px;
 
@@ -19934,7 +19695,7 @@ hr {
             line-height: 42px;
             position: relative;
             z-index: 10;
-            box-shadow: 0px 0px 8px #e7e7e7 inset;
+            box-shadow: 0 0 8px #e7e7e7 inset;
             border-radius: 6px;
             border-left: 5px solid #ACB6B6;
             font-weight: normal;
@@ -19968,23 +19729,23 @@ hr {
     }
 
     dd {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         position: absolute;
         top: 42px;
         width: 100%;
-        left: 0px;
+        left: 0;
         display: none;
         z-index: 99;
 
         ul {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             background: #fff;
             border-radius: 4px;
             width: 100%;
             list-style: none;
-            box-shadow: 0px 0px 8px #e7e7e7;
+            box-shadow: 0 0 8px #e7e7e7;
             border: solid 1px #DDD;
             overflow: hidden;
             height: 300px;
@@ -20045,7 +19806,7 @@ hr {
         font-size: 20px;
         font-family: $secondaryFont;
         color: $secondaryColor;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     ul {
@@ -20182,7 +19943,7 @@ hr {
                             color: #fff;
                             font-family: $secondaryFont;
                             font-size: 24px;
-                            padding: 0px 14px;
+                            padding: 0 14px;
                             text-align: right;
                         }
 
@@ -20233,7 +19994,7 @@ hr {
                         span {
                             a {
                                 width: 118px;
-                                padding: 0px 15px;
+                                padding: 0 15px;
                             }
                         }
                     }
@@ -20261,7 +20022,7 @@ hr {
     bottom: 0;
 
     .scrollArea {
-        top: 0px;
+        top: 0;
     }
 
     h2.title {
@@ -20342,7 +20103,7 @@ hr {
             h3 {
                 color: $secondaryColor;
                 font-size: 18px;
-                font-weight: 300px;
+                font-weight: 300;
                 margin: 0 0 15px 0;
             }
 
@@ -20656,7 +20417,7 @@ hr {
             article {
                 border-radius: 4px;
                 background-color: #FFF;
-                box-shadow: 2px 3.464px 12px 0px rgba(204, 204, 204, 0.004);
+                box-shadow: 2px 3.464px 12px 0 rgba(204, 204, 204, 0.004);
                 position: relative;
                 padding-bottom: 10px;
                 height: 270px;
@@ -21075,10 +20836,10 @@ hr {
 
 .QAFeedBack {
     position: absolute;
-    bottom: 0px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
 
     .picture {
         overflow: hidden;
@@ -21509,7 +21270,7 @@ hr {
 }
 
 .feedback {
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 0 10px;
 
     .question {
         position: relative;
@@ -21528,7 +21289,7 @@ hr {
             width: calc(100% - 160px);
             display: inline-block;
             padding-left: 50px;
-            margin: 0px;
+            margin: 0;
 
             b {
                 color: $secondaryColor;
@@ -21656,7 +21417,7 @@ hr {
             display: none;
             position: relative;
             margin-top: 15px;
-            padding: 0px 70px;
+            padding: 0 70px;
 
             textarea {
                 border-radius: 4px;
@@ -21722,7 +21483,7 @@ hr {
             text-align: right;
             margin-bottom: 10px;
             position: relative;
-            padding-left: 0px;
+            padding-left: 0;
 
             .dateTime {
                 position: absolute;
@@ -21770,7 +21531,7 @@ hr {
                 }
 
                 &.approveAns {
-                    padding-right: 0px;
+                    padding-right: 0;
                 }
             }
 
@@ -21816,7 +21577,7 @@ hr {
                 }
 
                 label {
-                    padding-right: 0px;
+                    padding-right: 0;
                     padding-left: 0;
 
                     .checkBox {
@@ -21836,7 +21597,7 @@ hr {
             label {
                 width: 100%;
                 font-weight: normal;
-                padding-left: 0px;
+                padding-left: 0;
                 @extend .transition;
 
                 .checkBox {
@@ -22106,7 +21867,7 @@ hr {
             padding-right: 15px;
             margin-right: 30px;
             display: inline-block;
-            padding: 0px 10px;
+            padding: 0 10px;
             text-align: center;
             position: relative;
 
@@ -22146,7 +21907,7 @@ hr {
         text-transform: uppercase;
         background: #ffff;
         padding: 5px 10px;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 5px 5px 0 0;
     }
 
     &.payeeLabel {
@@ -22162,7 +21923,7 @@ hr {
         span {
             &:after {
                 background: #f9f9f9;
-                border-radius: 5px 5px 0px 0px;
+                border-radius: 5px 5px 0 0;
                 content: "Weekly Contribution";
             }
         }
@@ -22170,7 +21931,7 @@ hr {
         label {
             &:before {
                 background: #f9f9f9;
-                border-radius: 5px 5px 0px 0px;
+                border-radius: 5px 5px 0 0;
             }
         }
     }
@@ -22525,7 +22286,7 @@ hr {
             background-color: #FFF;
             border-radius: 4px;
             margin-top: 10px;
-            box-shadow: 2px 3.464px 8px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 3.464px 8px 0 rgba(0, 0, 0, 0.2);
             overflow: hidden;
 
             ul {
@@ -22721,7 +22482,7 @@ hr {
             bottom: 0;
             background-color: #FFF;
             border-radius: 4px;
-            box-shadow: 2px 3.464px 8px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 3.464px 8px 0 rgba(0, 0, 0, 0.2);
 
             ul {
                 margin: 0;
@@ -22731,7 +22492,7 @@ hr {
                 li {
                     background-color: #F9F9F9;
                     border-radius: 8px;
-                    box-shadow: -5px 0px 0px 0px #CCC;
+                    box-shadow: -5px 0 0 0 #CCC;
                     height: 36px;
                     padding: 10px;
                     position: relative;
@@ -22781,7 +22542,7 @@ hr {
         .workers {
             height: 90px;
             background-color: #FFF;
-            box-shadow: 2px 3.464px 8px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 3.464px 8px 0 rgba(0, 0, 0, 0.2);
             border-radius: 4px;
             font-size: 12px;
 
@@ -22796,7 +22557,7 @@ hr {
             background-color: #FFF;
             border-radius: 4px;
             margin-top: 10px;
-            box-shadow: 2px 3.464px 8px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 3.464px 8px 0 rgba(0, 0, 0, 0.2);
 
             .nav-tabs {
                 padding: 10px;
@@ -22865,7 +22626,7 @@ hr {
                         li {
                             background-color: #F9F9F9;
                             border-radius: 8px;
-                            box-shadow: -5px 0px 0px 0px #CCC;
+                            box-shadow: -5px 0 0 0 #CCC;
                             height: 36px;
                             padding: 10px;
                             position: relative;
@@ -22994,7 +22755,7 @@ hr {
     cursor: not-allowed;
     background-color: #EEE;
     border: 1px solid #DDD;
-    box-shadow: 0px 0px 8px #e7e7e7 inset;
+    box-shadow: 0 0 8px #e7e7e7 inset;
     border-radius: 6px;
     border-left: 5px solid #ACB6B6;
     padding: 10px;
@@ -23056,7 +22817,7 @@ hr {
                     width: 50px;
                     height: 50%;
                     border-radius: 25px;
-                    border-radius: 1px solid #DDD;
+                    border: 1px solid #DDD;
                     overflow: hidden;
                     line-height: 50px;
                     text-align: center;
@@ -24096,7 +23857,7 @@ hr {
 .covid {
     background-color: #FFF;
     border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 
     .title {
@@ -24123,7 +23884,7 @@ hr {
             background-image: url('../images/covid-icon.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center middle;
+            background-position: center;
         }
 
         a {
@@ -24425,7 +24186,7 @@ hr {
                     font-weight: 700;
                     display: block;
                     margin-bottom: 1px;
-                    border-radius: 12px 2px 0px 0px;
+                    border-radius: 12px 2px 0 0;
                     background-color: #FFF;
                     padding: 5px;
                 }
@@ -24433,7 +24194,7 @@ hr {
                 .designation {
                     line-height: normal;
                     display: block;
-                    border-radius: 0px 0px 12px 2px;
+                    border-radius: 0 0 12px 2px;
                     background-color: #EEE;
                     padding: 5px;
                 }
@@ -24643,7 +24404,7 @@ hr {
                     position: absolute;
                     content: attr(content);
                     border-radius: 4px;
-                    box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.2);
+                    box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.2);
                     color: #FFF;
                     font-family: $secondaryFont;
                     padding: 10px;
@@ -24998,7 +24759,7 @@ hr {
                         width: 100%;
                         border-radius: 4px;
                         border: 1px solid #DDD;
-                        box-shadow: 0px 0px 8px #e7e7e7 inset;
+                        box-shadow: 0 0 8px #e7e7e7 inset;
                         border-radius: 6px;
                         border-left: 5px solid $grayColor;
                         padding: 8px 15px;
@@ -25057,7 +24818,7 @@ hr {
                 padding: 15px 15px 5px 125px;
                 border-radius: 55px 4px 4px 4px;
                 background-color: #FFF;
-                box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.2);
                 position: relative;
                 margin-bottom: 10px;
 
@@ -25158,7 +24919,7 @@ hr {
         .communication_book {
             border-radius: 4px;
             background-color: #FFF;
-            box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.2);
             margin-bottom: 10px;
             position: relative;
             height: 140px;
@@ -25207,7 +24968,7 @@ hr {
 
                 li {
                     position: relative;
-                    font-style: 18px;
+                    font-size: 18px;
                     color: #333;
                     padding: 5px 100px 5px 30px;
                     border-top: 1px solid #DDD;
@@ -25242,7 +25003,7 @@ hr {
                 border-radius: 4px;
                 border: 1px solid #DDD;
                 resize: none;
-                box-shadow: 0px 0px 8px #e7e7e7 inset;
+                box-shadow: 0 0 8px #e7e7e7 inset;
                 border-radius: 6px;
                 border-left: 5px solid $grayColor;
                 height: 65px !important;
@@ -25253,7 +25014,7 @@ hr {
 }
 
 .device_status {
-    box-shadow: 1px 1.732px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 18px;
     font-family: $secondaryFont;
@@ -25470,7 +25231,7 @@ hr {
             background-color: #F6F6F6;
             padding: 5px;
             border-radius: 4px;
-            box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1.732px 2px 0 rgba(0, 0, 0, 0.2);
             position: relative;
         }
 
@@ -25731,7 +25492,7 @@ hr {
         span {
             display: block;
             font-size: 14px;
-            text-transform: normal;
+            text-transform: none;
             color: #333;
         }
     }
@@ -26160,7 +25921,7 @@ hr {
             &:checked+label {
                 background-color: #3D4D57;
                 color: #FFF;
-                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
             }
         }
 
@@ -26169,7 +25930,7 @@ hr {
             font-family: $secondaryFont;
             color: #252020;
             text-align: center;
-            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
             padding: 5px 15px;
             line-height: 32px;
             background-color: #98C1D9;
@@ -26182,7 +25943,7 @@ hr {
             &.informed_label {
                 background-color: #3D4D57;
                 color: #FFF;
-                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
             }
         }
 
@@ -26226,7 +25987,7 @@ hr {
         padding: 10px 10px;
         margin-right: 30px;
         margin-bottom: 30px;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         height: 100%;
 
         &:nth-child(3n+3) {
@@ -26263,7 +26024,7 @@ hr {
         float: left;
         width: 100%;
         text-align: left;
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: 10px;
 
         .VideoItem {
@@ -26862,7 +26623,7 @@ hr {
             font-family: $secondaryFont;
             border: 0;
             border-radius: 4px;
-            padding-right: 0 10px;
+            padding: 0 10px;
             margin-left: 10px;
         }
 
@@ -27013,7 +26774,7 @@ hr {
                     float: left;
                     width: 12px;
                     height: 12px;
-                    margin: 2px 4px 0px 0;
+                    margin: 2px 4px 0 0;
                 }
             }
         }
@@ -27074,7 +26835,7 @@ hr {
                         float: left;
                         width: 12px;
                         height: 12px;
-                        margin: 2px 4px 0px 0;
+                        margin: 2px 4px 0 0;
                     }
                 }
             }
@@ -27098,12 +26859,12 @@ hr {
     background: -webkit-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
     background: linear-gradient(to bottom, #ebb930 0%, #ffd96a 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebb930', endColorstr='#ffd96a', GradientType=0);
-    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.35);
     position: relative;
     display: table;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
     width: 100%;
     margin-bottom: 30px;
 
@@ -27117,7 +26878,7 @@ hr {
     span {
         font-size: 14px;
         color: rgb(97, 112, 115);
-        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.55);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
         display: block;
     }
 
@@ -27740,10 +27501,7 @@ hr {
     margin: 0;
 
     li {
-        -webkit-perspective: 1000;
-        -moz-perspective: 1000;
-        -o-perspective: 1000;
-        perspective: 1000;
+        perspective: 1000px;
         border-radius: 4px;
         border: 2px solid #DDD;
         height: 50px;
@@ -28258,7 +28016,7 @@ hr {
     &>li {
         border-radius: 4px;
         margin: 0;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         float: left;
         width: 100%;
         background-color: #FFF;
@@ -28363,7 +28121,7 @@ hr {
                     }
 
                     .value {
-                        font-style: 14px;
+                        font-size: 14px;
                         color: #333;
                         font-weight: 400;
                         display: block;
@@ -28856,7 +28614,7 @@ hr {
                     &>li {
                         background-color: #f3f3f3;
                         padding: 10px;
-                        border-radius: 3px solid #000;
+                        border: 3px solid #000;
                         border-radius: 12px;
                         border-left: 5px solid !important;
                         margin-bottom: 5px;
@@ -28998,7 +28756,7 @@ hr {
     h1 {
         margin: 0 0 30px 0;
         font-style: $secondaryFont;
-        font-style: 24px;
+        font-size: 24px;
         color: $grayColor;
         font-weight: 300;
     }
@@ -29142,7 +28900,7 @@ hr {
 
             table {
                 border: 0;
-                border-right: 1px;
+                border-right-width: 1px;
                 border-color: $primaryColor;
                 border-style: solid;
 
@@ -29986,7 +29744,7 @@ hr {
                     height: 40px;
                     width: 100%;
                     padding: 15px 10px;
-                    font-family: 'roboto';
+                    font-family: $primaryFont;
                     font-size: 12px;
                     color: #000;
                     position: relative;
@@ -30046,7 +29804,7 @@ hr {
             }
 
             .status {
-                font-family: 'roboto';
+                font-family: $primaryFont;
                 font-size: 12px;
                 color: #828787;
                 text-align: center;
@@ -30055,7 +29813,7 @@ hr {
                 margin: auto;
 
                 .maintext {
-                    font-family: 'roboto';
+                    font-family: $primaryFont;
                     font-size: 16px;
                     color: #41474e;
                 }
@@ -30563,7 +30321,7 @@ hr {
                         height: 40px;
                         width: 50%;
                         padding: 15px 10px;
-                        font-family: 'roboto';
+                        font-family: $primaryFont;
                         font-size: 12px;
                         color: #000;
                         position: relative;
@@ -31527,7 +31285,7 @@ hr {
                     i {
                         font-style: normal;
                         color: #999;
-                        font-family: "Roboto";
+                        font-family: $primaryFont;
                         font-size: 12px;
                         text-transform: uppercase;
                         font-weight: 700;
@@ -32144,7 +31902,7 @@ hr {
 
                             &:after {
                                 left: -23px;
-                                border: solid transparent;
+                                border-style: solid;
                                 content: "";
                                 height: 0;
                                 width: 0;
@@ -33915,7 +33673,7 @@ hr {
                 position: relative;
                 margin-right: 30px;
                 margin-bottom: 35px;
-                box-shadow: 1.928px 2.298px 6px 0px rgba(31, 38, 42, 0.2);
+                box-shadow: 1.928px 2.298px 6px 0 rgba(31, 38, 42, 0.2);
 
                 img {
                     height: 100%;
@@ -34005,7 +33763,7 @@ hr {
                         margin-left: 10px;
                         border-radius: 4px;
                         background-color: rgb(255, 255, 255);
-                        box-shadow: 1.928px 2.298px 6px 0px rgba(31, 38, 42, 0.2);
+                        box-shadow: 1.928px 2.298px 6px 0 rgba(31, 38, 42, 0.2);
                         padding: 5px 10px;
                         line-height: 1;
                         position: relative;
@@ -34105,7 +33863,7 @@ hr {
                 border-radius: 4px;
                 position: relative;
                 height: 100px;
-                box-shadow: 1.928px 2.298px 6px 0px rgba(31, 38, 42, 0.2);
+                box-shadow: 1.928px 2.298px 6px 0 rgba(31, 38, 42, 0.2);
                 margin-bottom: 10px;
                 padding: 10px;
 
@@ -34175,7 +33933,7 @@ hr {
                 border-radius: 4px;
                 position: relative;
                 height: 50px;
-                box-shadow: 1.928px 2.298px 6px 0px rgba(31, 38, 42, 0.2);
+                box-shadow: 1.928px 2.298px 6px 0 rgba(31, 38, 42, 0.2);
                 border: 0;
                 resize: none !important;
                 font-size: 12px;
@@ -34203,7 +33961,7 @@ hr {
         text-transform: uppercase;
         line-height: 1;
         text-align: center;
-        text-shadow: 0.643px 0.766px 0px rgba(255, 255, 255, 0.3);
+        text-shadow: 0.643px 0.766px 0 rgba(255, 255, 255, 0.3);
         position: relative;
         width: 80px;
         padding-top: 22px;
@@ -34495,7 +34253,7 @@ button.newStyle {
                         border-style: solid;
                         border-radius: 4px;
                         background-color: rgb(253, 253, 255);
-                        box-shadow: 0.643px 0.766px 4px 0px rgba(31, 38, 42, 0.2);
+                        box-shadow: 0.643px 0.766px 4px 0 rgba(31, 38, 42, 0.2);
                         width: 100%;
                         height: 190px;
                         resize: none;
@@ -34521,7 +34279,7 @@ button.newStyle {
                         border-color: rgb(204, 204, 204);
                         border-style: solid;
                         border-radius: 4px;
-                        box-shadow: 0.643px 0.766px 4px 0px rgba(31, 38, 42, 0.2);
+                        box-shadow: 0.643px 0.766px 4px 0 rgba(31, 38, 42, 0.2);
                         height: 34px;
                         width: 100%;
                         font-size: 12px;
@@ -34560,7 +34318,7 @@ button.newStyle {
                 article {
                     border-radius: 4px;
                     background-color: rgb(253, 253, 255);
-                    box-shadow: 1.286px 1.532px 6px 0px rgba(31, 38, 42, 0.2);
+                    box-shadow: 1.286px 1.532px 6px 0 rgba(31, 38, 42, 0.2);
                     width: 150px;
                     padding: 5px;
                     text-align: center;
@@ -34637,7 +34395,7 @@ button.newStyle {
                             text-align: center;
                             padding: 0;
                             background-color: rgb(220, 222, 222);
-                            box-shadow: inset 0px 5px 6px 0px rgba(93, 106, 114, 0.7);
+                            box-shadow: inset 0 5px 6px 0 rgba(93, 106, 114, 0.7);
                             color: #999;
                             cursor: pointer;
                         }
@@ -34647,7 +34405,7 @@ button.newStyle {
                                 & + label {
                                     border-color: rgb(108, 195, 121);
                                     background-color: rgb(109, 199, 122);
-                                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                                     color: #FFF;
                                 }
                             }
@@ -34658,7 +34416,7 @@ button.newStyle {
                                 & + label {
                                     border-color: rgb(97, 132, 158);
                                     background-color: rgb(100, 141, 172);
-                                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                                     color: #FFF;
                                 }
                             }
@@ -34669,7 +34427,7 @@ button.newStyle {
                                 & + label {
                                     border-color: rgb(237, 165, 82);
                                     background-color: rgb(248, 147, 29);
-                                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                                     color: #FFF;
                                 }
                             }
@@ -34680,7 +34438,7 @@ button.newStyle {
                                 & + label {
                                     border-color: rgb(148, 151, 151);
                                     background-color: rgb(130, 135, 135);
-                                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                                     color: #FFF;
                                 }
                             }
@@ -34811,7 +34569,7 @@ button.newStyle {
                 text-align: center;
                 padding: 0;
                 background-color: rgb(220, 222, 222);
-                box-shadow: inset 0px 5px 6px 0px rgba(93, 106, 114, 0.7);
+                box-shadow: inset 0 5px 6px 0 rgba(93, 106, 114, 0.7);
                 color: #999;
                 float: left;
                 font-style: normal;
@@ -34822,7 +34580,7 @@ button.newStyle {
                 i {
                     border-color: rgb(108, 195, 121);
                     background-color: rgb(109, 199, 122);
-                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                     color: #FFF;
                 }
             }
@@ -34831,7 +34589,7 @@ button.newStyle {
                 i {
                     border-color: rgb(97, 132, 158);
                     background-color: rgb(100, 141, 172);
-                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                     color: #FFF;
                 }
             }
@@ -34840,7 +34598,7 @@ button.newStyle {
                 i {
                     border-color: rgb(237, 165, 82);
                     background-color: rgb(248, 147, 29);
-                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                     color: #FFF;
                 }
             }
@@ -34849,7 +34607,7 @@ button.newStyle {
                 i {
                     border-color: rgb(148, 151, 151);
                     background-color: rgb(130, 135, 135);
-                    box-shadow: inset -4.214px -4.83px 3px 0px rgba(85, 100, 109, 0.6);
+                    box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
                     color: #FFF;
                 }
             }
@@ -34947,7 +34705,7 @@ button.newStyle {
             font-size: 18px;
             font-family: $secondaryFont;
             color: rgb(85, 96, 123);
-            text-shadow: 0.643px 0.766px 0px rgba(255, 255, 255, 0.8);
+            text-shadow: 0.643px 0.766px 0 rgba(255, 255, 255, 0.8);
             display: block;
             margin-bottom: 10px;
         }
@@ -35206,8 +34964,7 @@ button.newStyle {
                 background-color: rgba(#fafafc, 0.6);
                 border-radius: 6px;
                 padding: 5px;
-                margin: 0 10px;
-                margin-bottom: 5px;
+                margin: 0 10px 5px 10px;
 
                 li {
                     padding: 5px;
@@ -35470,7 +35227,7 @@ button.newStyle {
                                 font-style: normal;
                                 display: block;
                                 font-size: 13px;
-                                font-family: "Roboto";
+                                font-family: $primaryFont;
                                 color: #c6dbe3;
                             }
                         }
@@ -35784,7 +35541,7 @@ button.newStyle {
                     content: "Employee(s)";
                     font-size: 15px;
                     color: rgba(255, 255, 255, 0.702);
-                    font-family: "Roboto";
+                    font-family: $primaryFont;
                     left: 50%;
                     bottom: -10px;
                     transform: translateX(-50%);
@@ -35868,7 +35625,7 @@ button.newStyle {
 
         span {
             background-color: rgba(#9e0505, 0.9);
-            box-shadow: -2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: -2.5px 4.33px 10px 0 rgba(0, 0, 0, 0.2);
             line-height: 46px;
             display: inline-block;
             padding: 0 30px;
@@ -35892,7 +35649,7 @@ button.newStyle {
 .aboutExpire {
     border-radius: 50%;
     background-color: #1f262a;
-    box-shadow: -8.192px -5.736px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -8.192px -5.736px 25px 0 rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: -262px;
     right: -292px;
@@ -36346,7 +36103,7 @@ button.newStyle {
                 font-size: 24px;
 
                 small {
-                    font-family: 'Roboto';
+                    font-family: $primaryFont;
                     color: #FFF;
                     font-weight: 300;
                 }
@@ -36860,11 +36617,10 @@ button.newStyle {
 
     .paging {
         float: left;
-        margin: 0;
+        margin: 0 10px 0 0;
         background-color: rgb(130, 135, 135);
-        box-shadow: 1px 1.732px 4px 0px rgba(61, 66, 83, 0.4);
+        box-shadow: 1px 1.732px 4px 0 rgba(61, 66, 83, 0.4);
         height: 28px;
-        margin-right: 10px;
 
         li {
             float:left;
@@ -38193,7 +37949,7 @@ input[type=checkbox].switch {
             .img {
                 border-radius: 4px;
                 background-color: rgb(220, 222, 222);
-                box-shadow: 0px 4px 8px 0px rgba(61, 66, 83, 0.6);
+                box-shadow: 0 4px 8px 0 rgba(61, 66, 83, 0.6);
                 width: 140px;
                 height: 140px;
                 margin-bottom: 15px;
@@ -38239,7 +37995,7 @@ input[type=checkbox].switch {
                         font-size: 12px;
                         color: #dcdede;
                         font-weight: 500;
-                        font-family: "Roboto";
+                        font-family: $primaryFont;
                     }
 
                     &:first-child {
@@ -38561,7 +38317,7 @@ input[type=checkbox].switch {
 
                         .title {
                             font-size: 12px;
-                            font-family: 'Roboto';
+                            font-family: $primaryFont;
                             color: #dcdede !important;
                             display: block;
                         }
@@ -38653,7 +38409,7 @@ input[type=checkbox].switch {
 
                         .title {
                             font-size: 12px;
-                            font-family: 'Roboto';
+                            font-family: $primaryFont;
                             color: #dcdede !important;
                             display: block;
                         }
@@ -38840,7 +38596,7 @@ input[type=checkbox].switch {
 
                         .title {
                             font-size: 16px;
-                            font-family: "Roboto";
+                            font-family: $primaryFont;
                             color: rgb(130, 135, 135);
                             font-weight: bold;
                             text-transform: uppercase;
@@ -39383,7 +39139,7 @@ input[type=checkbox].switch {
 
         i {
             font-weight: 700;
-            font-family: "Roboto";
+            font-family: $primaryFont;
             font-style: normal;
             display: block;
             letter-spacing: 1px;
@@ -39407,7 +39163,7 @@ input[type=checkbox].switch {
             content: attr(data-title);
             word-break: initial;
             font-size: 13px;
-            font-family: "Roboto";
+            font-family: $primaryFont;
             color: rgb(130, 135, 135);
             top: 50%;
             transform: translateY(-50%);
@@ -39470,7 +39226,7 @@ input[type=checkbox].switch {
         color: rgb(250, 250, 252);
         font-weight: bold;
         text-align: center;
-        text-shadow: 0.819px 0.574px 0px rgba(63, 66, 83, 0.4);
+        text-shadow: 0.819px 0.574px 0 rgba(63, 66, 83, 0.4);
         display: block;
         line-height: 40px;
     }
@@ -39644,7 +39400,7 @@ input[type=checkbox].switch {
 
                             i {
                                 font-size: 12px;
-                                font-family: "Roboto";
+                                font-family: $primaryFont;
                                 font-weight: 500;
                                 color: #FFCD60;
                                 display: block;
@@ -41601,9 +41357,8 @@ input[type=checkbox].switch {
             margin-left: 15px;
             font-size: 14px;
             color: #FFCD60;
-            font-weight: bold;
             font-style: normal;
-            font-family: "Roboto";
+            font-family: $primaryFont;
             font-weight: 500;
         }
 
@@ -41953,7 +41708,7 @@ input[type=checkbox].switch {
                     color: rgb(148, 152, 152);
                     font-style: normal;
                     display: block;
-                    font-family: 'Roboto';
+                    font-family: $primaryFont;
                 }
 
                 .value {
@@ -42098,7 +41853,7 @@ input[type=checkbox].switch {
 
             &:before {
                 font-size: 10px;
-                font-family: "Roboto";
+                font-family: $primaryFont;
                 color: rgb(255, 255, 255);
                 text-transform: uppercase;
                 content: "Allergies";
@@ -42224,7 +41979,7 @@ input[type=checkbox].switch {
                         float: right;
                         font-weight: 700;
                         color: #3f4253;
-                        font-family: 'Roboto';
+                        font-family: $primaryFont;
                     }
                 }
             }
@@ -42317,10 +42072,10 @@ input[type=checkbox].switch {
                     font-family: $secondaryFont;
                     text-transform: uppercase;
                     color: #828787;
-                    text-shadow: 0.819px 0.574px 0px rgba(255, 255, 255, 1);
+                    text-shadow: 0.819px 0.574px 0 rgba(255, 255, 255, 1);
 
                     strong {
-                        font-family: 'Roboto';
+                        font-family: $primaryFont;
                         font-weight: 500;
                         font-size: 16px;
                         color: #3f4253;
@@ -42556,7 +42311,7 @@ input[type=checkbox].switch {
 
         li {
             background-color: rgba(131, 144, 155, 0.2) !important;
-            box-shadow: -4px 0px 4px 0px rgba(44, 86, 122, 0.3) !important;
+            box-shadow: -4px 0 4px 0 rgba(44, 86, 122, 0.3) !important;
             min-height: 50px;
             margin-bottom: 10px;
             border-radius: 25px;
@@ -42888,7 +42643,7 @@ input[type=checkbox].switch {
                     i {
                         font-style: normal;
                         font-size: 24px;
-                        font-family: 'Roboto';
+                        font-family: $primaryFont;
                         font-weight: 700;
                         color: #FFF !important;
                     }
@@ -43422,7 +43177,7 @@ input[type=checkbox].switch {
 
         button {
             background-color: rgb(67, 75, 89);
-            box-shadow: 1.042px 5.909px 5px 0px rgba(67, 75, 89, 0.3);
+            box-shadow: 1.042px 5.909px 5px 0 rgba(67, 75, 89, 0.3);
             position: absolute;
             right: 10px;
             top: -8px;
@@ -43776,7 +43531,7 @@ input[type=checkbox].switch {
             &>button {
                 border-radius: 4px;
                 background-color: rgba(130, 135, 135, 0.8);
-                box-shadow: 0px 0px 4px 0px rgba(63, 66, 83, 0.1);
+                box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
                 height: 34px;
                 border: 0;
                 padding: 0 10px;
@@ -43846,7 +43601,7 @@ input[type=checkbox].switch {
 
         .addMultiple {
             background-color: rgb(67, 75, 89);
-            box-shadow: 1.042px 5.909px 5px 0px rgba(67, 75, 89, 0.3);
+            box-shadow: 1.042px 5.909px 5px 0 rgba(67, 75, 89, 0.3);
             position: absolute;
             right: 10px;
             top: calc(100% - 8px);
@@ -43976,7 +43731,7 @@ input[type=checkbox].switch {
 
                 .update {
                     background-color: rgb(67, 75, 89);
-                    box-shadow: 1.042px 5.909px 5px 0px rgba(67, 75, 89, 0.3);
+                    box-shadow: 1.042px 5.909px 5px 0 rgba(67, 75, 89, 0.3);
                     position: absolute;
                     left: 10px;
                     top: calc(100% - 8px);
@@ -44036,7 +43791,7 @@ input[type=checkbox].switch {
                 strong {
                     font-size: 14px;
                     color: #3d4253;
-                    font-family: Roboto;
+                    font-family: $primaryFont;
                     display: block;
                 }
             }
@@ -44182,7 +43937,7 @@ input[type=checkbox].switch {
 
         .add {
             background-color: #FFCD60;
-            box-shadow: 1.042px 5.909px 5px 0px rgba(67, 75, 89, 0.3);
+            box-shadow: 1.042px 5.909px 5px 0 rgba(67, 75, 89, 0.3);
             height: 28px;
             line-height: 28px;
             padding: 0 10px;
@@ -44566,7 +44321,7 @@ input[type=checkbox].switch {
                         color: #828787;
                         display: block;
                         font-style: normal;
-                        font-family: 'Roboto';
+                        font-family: $primaryFont;
                     }
                 }
             }
@@ -44636,7 +44391,7 @@ input[type=checkbox].switch {
                     font-size: 12px;
                     color: #828787;
                     text-transform: uppercase;
-                    font-family: "Roboto";
+                    font-family: $primaryFont;
                     display: block;
                     white-space: nowrap;
                     overflow: hidden;
@@ -44729,7 +44484,7 @@ input[type=checkbox].switch {
 
                         i {
                             font-weight: 700;
-                            font-family: "Roboto";
+                            font-family: $primaryFont;
                             float: right;
                             font-style: normal;
                         }
@@ -44937,7 +44692,7 @@ input[type=checkbox].switch {
                 .addMore {
                     border-radius: 4px;
                     background-color: rgba(189, 140, 191, 0.8);
-                    box-shadow: 0px 0px 4px 0px rgba(63, 66, 83, 0.1);
+                    box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
                     position: absolute;
                     right: 5px;
                     bottom: 0;
@@ -44975,7 +44730,7 @@ input[type=checkbox].switch {
             bottom: 10px;
             border-radius: 4px;
             background-color: #a3d39c;
-            box-shadow: 0px 0px 4px 0px rgb(63 66 83 / 10%);
+            box-shadow: 0 0 4px 0 rgb(63 66 83 / 10%);
             height: 34px;
             border: 0;
             padding: 0 10px;
@@ -45156,7 +44911,6 @@ input[type=checkbox].switch {
                         content: '';
                         left: 3px;
                         top: 3px;
-                        content: '';
                         display: none;
                     }
                 }
@@ -45240,6 +44994,7 @@ input[type=checkbox].switch {
 .statsBox {
     display: table;
     margin: 0;
+    width: 100%;
 
     &>li {
         display: table-cell;
@@ -45301,7 +45056,7 @@ input[type=checkbox].switch {
             font-family: $secondaryFont;
 
             strong {
-                font-family: "Roboto";
+                font-family: $primaryFont;
             }
         }
     }
@@ -45349,7 +45104,7 @@ input[type=checkbox].switch {
 
         .add {
             background-color: rgb(67, 75, 89);
-            box-shadow: 1.042px 5.909px 5px 0px rgba(67, 75, 89, 0.3);
+            box-shadow: 1.042px 5.909px 5px 0 rgba(67, 75, 89, 0.3);
             position: absolute;
             right: 10px;
             bottom: calc(100% - 19px);
@@ -45405,7 +45160,7 @@ input[type=checkbox].switch {
         i {
             font-style: normal;
             color: #FFF;
-            font-family: 'Roboto';
+            font-family: $primaryFont;
             font-weight: 700;
             position: relative;
             margin-left: 30px;
@@ -45595,7 +45350,7 @@ input[type=checkbox].switch {
 
         &:first-of-type {
             padding-left: 26px;
-            background-postition: 0 0;
+            background-position: 0 0;
         }
 
         &:nth-of-type(2) {
