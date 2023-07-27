@@ -85,8 +85,8 @@ img.svg {
   position: relative;
 }
 .login article form .logo {
-  width: 100px;
-  height: auto;
+  max-width: 300px;
+  max-height: 100px;
   display: block;
   margin: 0 auto 10px auto;
 }
