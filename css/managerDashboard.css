@@ -3,6 +3,8 @@
   height: calc(100vh - 60px);
   padding: 10px 37px 10px 80px;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
 }
 .managerDashSimplified .dashContainer {
   width: 100%;
@@ -27,6 +29,11 @@
   font-weight: 300;
   line-height: 30px;
   margin-bottom: 20px;
+  color: #707070;
+}
+.managerDashSimplified .dashContainer > section .sections .greetings strong {
+  font-weight: 500;
+  color: #00509D;
 }
 .managerDashSimplified .dashContainer > section .sections .welcome {
   float: right;
@@ -37,13 +44,18 @@
   line-height: 30px;
   margin-bottom: 20px;
 }
+.managerDashSimplified .dashContainer > section .sections .welcome .revert {
+  font-weight: 700;
+  color: #00509D;
+  cursor: pointer;
+}
 .managerDashSimplified .dashContainer > section .sections > ul {
   height: calc(100% - 50px);
   margin: 0 -5px;
 }
 .managerDashSimplified .dashContainer > section .sections > ul > li {
   width: 25%;
-  height: 275px;
+  height: 271px;
   float: left;
   padding: 0 5px;
 }
@@ -62,22 +74,62 @@
 .managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(4) article {
   background-color: #99C1DE;
 }
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(6) article {
+  background-color: #FFCFC6;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(7) article {
+  background-color: #E9EDC9;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(8) article {
+  background-color: #EDDCD2;
+}
 .managerDashSimplified .dashContainer > section .sections > ul > li article {
   border-radius: 10px;
   padding: 10px;
   position: relative;
+  height: 100%;
 }
 .managerDashSimplified .dashContainer > section .sections > ul > li article .subTitle {
-  color: #657787;
+  color: #404455;
   display: block;
   text-align: left;
   line-height: 20px;
   font-size: 14px;
   font-weight: 400;
 }
+.managerDashSimplified .dashContainer > section .sections > ul > li article .extraStat {
+  background-color: #ED1C24;
+  border-radius: 6px;
+  padding: 5px;
+  color: #FDE2E4;
+  font-size: 12px;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 14px;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li article .extraStat span {
+  float: left;
+  border-radius: 4px;
+  background-color: #EDF2F4;
+  line-height: 30px;
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #404455;
+  margin-right: 5px;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li article p {
+  text-align: left;
+  color: #00509D;
+  font-size: 11px;
+  font-weight: 500;
+}
 .managerDashSimplified .dashContainer > section .sections > ul > li article ul {
   margin: 0;
-  width: 100%;
+  width: calc(100% - 20px);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -100,7 +152,7 @@
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
-  color: #828787;
+  color: #404455;
 }
 .managerDashSimplified .dashContainer > section .sections > ul > li article a {
   background-color: #00509D;
@@ -176,6 +228,32 @@
 .managerDashSimplified .dashContainer > section .sections > ul > li article.subSections ul li i {
   font-size: 14px;
 }
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(5) article ul li {
+  font-size: 38px;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(5) article ul li:nth-child(odd) {
+  border-right: 1px solid #D6E2E9;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(5) article ul li:nth-child(1), .managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(5) article ul li:nth-child(2) {
+  border-bottom: 1px solid #D6E2E9;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(5) article ul li i {
+  font-size: 12px;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(6) article ul li {
+  font-size: 44px;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(6) article ul li:nth-child(1) {
+  border-right: none;
+  border-bottom: 1px solid #D6E2E9;
+  width: 100%;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(6) article ul li:nth-child(2) {
+  border-right: 1px solid #D6E2E9;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(6) article ul li i {
+  font-size: 14px;
+}
 .managerDashSimplified .dashContainer > section .sections > ul > li .outerTitle {
   display: block;
   line-height: 20px;
@@ -187,6 +265,70 @@
 }
 .managerDashSimplified .dashContainer > section .sections > ul > li .outerTitle + article {
   height: calc(100% - 25px);
+}
+
+.dashboardOverlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: table;
+  z-index: 1002;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(7px);
+  opacity: 0;
+  visibility: hidden;
+}
+.dashboardOverlay section {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+.dashboardOverlay section .cancel {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url("../images/closeChat.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-20px);
+}
+.dashboardOverlay section ul {
+  display: inline-block;
+}
+.dashboardOverlay section ul li {
+  float: left;
+  width: 210px;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.dashboardOverlay section ul li:first-child {
+  border-right: 1px solid #C4C4C4;
+}
+.dashboardOverlay section ul li:first-child a {
+  background-color: #3361A2;
+}
+.dashboardOverlay section ul li:nth-child(2) a {
+  background-color: #CA8B61;
+}
+.dashboardOverlay section ul li a {
+  display: block;
+  border-radius: 6px;
+  line-height: 45px;
+  font-size: 14px;
+  color: #FFF;
+  margin-top: 5px;
+}
+.dashboardOverlay.showOverlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=managerDashboard.css.map */

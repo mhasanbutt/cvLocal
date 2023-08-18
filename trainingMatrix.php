@@ -111,6 +111,20 @@
             </div>
         </div>
     </div>
+
+    <div class="searchFilterDetails">
+        <div class="selection" id="ShowFilterSelection">
+            <span>Home/Floor <strong>All (3-3 Leander Lodge Home)</strong></span>
+            <span>Date <strong>02-08-2023 - 02-08-2023</strong></span>
+            <span>Service User <strong>Mr Admitted  Resident</strong></span>
+            <span>Carer <strong>Rishi RR R</strong></span>
+            <span>Event Type <strong>Adverse Clinical Event</strong></span>
+            <span>Classification <strong>Therapeutic Process / Procedures</strong></span>
+            <span>Event Grading <strong>No Harm</strong></span>
+            <span>Stage <strong>Reported</strong></span>
+            <span>Status <strong>Active</strong></span>
+        </div>
+    </div>
 </section>
 
 <section class="contentBody">

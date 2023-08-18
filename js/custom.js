@@ -880,17 +880,8 @@ function show_summernote(element, options) {
 
 ////////////
 $('.handle').click(function () {
-    // $('.ticket_list').toggleClass('expand');
-    // $('.ticket_detail').toggleClass('expand');
     $('.leftNav').toggleClass('closed');
     $(this).toggleClass('open');
-    // $('.contentHeader').toggleClass('expand');
-    // $('.contentBody').toggleClass('expand');
-    // $('.contentFooter').toggleClass('expand');
-    // $('.medicationLegends').toggleClass('expand');
-    // $('.dashboard').toggleClass('expand');
-    // $('.newChartDashboard').toggleClass('expand');
-    // $('.auditDashboard').toggleClass('expand');
 
 });
 
@@ -898,12 +889,8 @@ $('.scrollArea').scrollbar({autoUpdate: true});
 
 $(document).ready(function () {
     var contentHeader = $('.contentHeader').height();
-    var alertsList = $('.contentHeader .diseases').height();
-    if (alertsList > 0) {
-        alertsList = alertsList + 30;
-    }
-    $('.contentBody').css("top", contentHeader + alertsList + 95);
-    console.log(contentHeader, alertsList);
+    $('.contentBody').css("top", contentHeader + 80);
+
     $(document).on('change', '#drp_toandfro_jump', function () {
         var val = $(this).val();
         if (val != "") {
@@ -916,6 +903,7 @@ $(document).ready(function () {
             }
         }
     });
+
     $("#selectall").click(function (ev) {
         var is_checked = $(this).is(':checked');
         $('#table-4 tbody tr').each(function (i, el) {
