@@ -57,7 +57,7 @@
                 <article class="floorsRooms newForm">
                     <span class="title">
                         12-12-Basement
-                        <input type="checkbox" name="hasNoK" id="hasNoK" value="1" checked="" hidden="">
+                        <input type="checkbox" name="hasNoK" id="hasNoK" value="1" hidden="">
                         <label for="hasNoK"></label>
                         <button type="button" class="append_panels_button">Add Room(s)</button>
                     </span>
@@ -66,7 +66,7 @@
                         <li>
                             <input type="checkbox" id="room1" hidden>
                             <label for="room1"></label>
-                            <input type="text">
+                            <input type="text" value="155-155-Room 1">
                             <i></i>
                         </li>
                     </ul>

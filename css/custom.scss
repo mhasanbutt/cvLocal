@@ -45964,4 +45964,65 @@ input[type=checkbox].switch {
 
 .floorsRooms {
     padding-top: 10px;
+
+    ul {
+        li {
+            width: 210px;
+
+            input[type=checkbox] {
+                & + label {
+                    height: 18px;
+                    width: 18px;
+                    border: 1px solid #DCDEDE;
+                    background-color: #FFF;
+                    border-radius: 4px;
+                    position: absolute;
+                    margin: 0;
+                    left: 10px;
+                    top: 8px;
+                    z-index: 2;
+                    background-image: url("../images/permissionTick.png");
+                    background-size: 12px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &:checked {
+                    & + label {
+                        background-color: $primaryColor;
+                    }
+                }
+            }
+
+            input[type=text] {
+                padding: 0 28px;
+                font-family: $primaryFont;
+                background-color: #EDEDE9;
+                border-color: transparent;
+
+                &:focus {
+                    background-color: #FFF;
+                }
+            }
+
+            i {
+                display: block;
+                height: 18px;
+                width: 18px;
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                background-image: url("../images/gear.png");
+                background-repeat: no-repeat;
+                background-size: 18px;
+                background-position: center;
+                z-index: 2;
+            }
+        }
+    }
 }
