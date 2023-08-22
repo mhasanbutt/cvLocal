@@ -17,6 +17,7 @@
         }
 
         .contentBody>.scroll-wrapper {
+            top: 42px;
             bottom: 60px;
         }
     </style>
@@ -31,28 +32,43 @@
             <li><a href="#">HR / Management</a></li>
             <li><a href="#">Surveys</a></li>
         </ul>
-        <span class="title"><img src="images/surveyIcon.png"> Survey Statistics</span>
+        <span class="title"><img src="images/surveyIcon.png"> Survey Analysis</span>
     </div>
 
-    <div class="filtersSearch clearfix pull-right" style="margin-right:20px;">
-        <samp class="stats" style="width:100px;"><span>01</span>Average Rating</samp>
-        <samp class="stats" style="width:120px;"><span>01</span>Total Surveys Conducted</samp>
-
-        <form class="search" style="margin-left:10px;">
+    <div class="filtersSearch clearfix autoWidth">
+        <form>
             <div class="byStaff">
-                <input type="text" name="staffname" id="staffname" placeholder="Search by keyword">
+                <input type="text" name="staffname" id="staffname" placeholder="Search by Date">
                 <button>search</button>
             </div>
         </form>
-
-        <a href="#" style="background-image:url('images/print-icon.png');">Print</a>
     </div>
 </section>
 
 <section class="contentBody noFooter">
+    <div class="pageSpecificArea">
+        <div class="counters">
+            <ul class="list-unstyled clearfix">
+                <li>
+                    <article>
+                        <span>01</span><div class="title">Average Rating</div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>01</span><div class="title">Total Surveys Conducted</div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="scrollArea">
-        <div class="content">
+        <div class="content" style="padding-right:20px;">
             <div class="surveyForm">
+                <div class="surveyHeading">Survey Main Heading</div>
+                <span class="surveySubHeading">Survey Sub Heading</span>
+
                 <article class="categoryBLock" data-catTitle="Category Name">
                     <span class="title">Question 1</span>
                     <ul class="list-unstyled clearfix statsBox">

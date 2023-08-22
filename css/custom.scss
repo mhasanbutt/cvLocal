@@ -2131,7 +2131,6 @@ hr {
 
     .counters {
         text-align: right;
-        padding-right: 20px;
 
         ul {
             margin: 0 -5px;
@@ -45072,12 +45071,24 @@ input[type=checkbox].switch {
             margin-left: 0;
         }
     }
+
+    .surveyHeading {
+        font-size: 24px;
+        font-family: $secondaryFont;
+        color: #004664;
+    }
+
+    .surveySubHeading {
+        font-size: 16px;
+        color: #666;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 .statsBox {
     display: table;
     margin: 0;
-    width: 100%;
 
     &>li {
         display: table-cell;

@@ -2870,7 +2870,6 @@ hr.BoldHr {
 }
 .contentBody .counters {
   text-align: right;
-  padding-right: 20px;
 }
 .contentBody .counters ul {
   margin: 0 -5px;
@@ -38026,11 +38025,21 @@ input[type=checkbox].switch:checked + label:before {
 .surveyForm .multiChoice .commentBox {
   margin-left: 0;
 }
+.surveyForm .surveyHeading {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #004664;
+}
+.surveyForm .surveySubHeading {
+  font-size: 16px;
+  color: #666;
+  display: block;
+  margin-bottom: 20px;
+}
 
 .statsBox {
   display: table;
   margin: 0;
-  width: 100%;
 }
 .statsBox > li {
   display: table-cell;
