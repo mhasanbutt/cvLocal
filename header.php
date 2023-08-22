@@ -5,8 +5,7 @@
 			<div class="col-md-8 col-md-offset-2">
 				<form>
 					<span class="closeSearch"><img src="images/close.svg" class="svg"></span>
-					<input type="text" placeholder="Search your keyword..."><button><img src="images/magnifier-tool.svg"
-							class="svg"></button>
+					<input type="text" placeholder="Search your keyword..."><button><img src="images/magnifier-tool.svg" class="svg"></button>
 				</form>
 			</div>
 		</div>
@@ -81,7 +80,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="logo">
-					<a href="#"><img src="images/logo.png" alt="CareVision"></a>
+					<a href="#"><img src="images/headerLogo.webp" alt="CareVision"></a>
 				</div>
 				<ul class="headerNav list-unstyled">
 					<li>

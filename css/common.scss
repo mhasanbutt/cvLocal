@@ -884,6 +884,7 @@ header {
     @extend .transition;
     z-index: 101;
     border-right: 2px solid rgb(255,205,96);
+    backdrop-filter: blur(5px);
 
     .title {
         display: none;
@@ -957,8 +958,8 @@ header {
             &.serviceUser {
                 .main-item {
                     height: 60px;
-                    line-height: 20px;
-                    padding-top: 10px;
+                    line-height: 1;
+                    padding-top: 8px;
 
                     img {
                         position: absolute;
@@ -970,6 +971,15 @@ header {
                         border-radius: 4px;
                         border: 3px solid rgba(#DDD, 0.4);
                         z-index: 4;
+                    }
+
+                    i {
+                        font-style: normal;
+                        font-family: $secondaryFont;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        padding-right: 15px;
+                        display: block;
                     }
 
                     span {
@@ -1000,7 +1010,7 @@ header {
                 position: fixed;
                 left: 0;
                 height: 100vh;
-                background-color: rgba(#2D3144,.9);
+                background-color: rgba(#2D3144,1);
                 top: 0;
                 width: 250px;
                 z-index: 2;
@@ -1014,7 +1024,7 @@ header {
                     left: 100%;
                     top: 11px;
                     border-radius: 0 4px 4px 0;
-                    background-color: rgba(#2D3144,.9);
+                    background-color: rgba(#2D3144,1);
                     cursor: pointer;
                     padding: 10px 0;
                     z-index: 1;
@@ -1138,7 +1148,7 @@ header {
     }
 
     &.closed {
-        width: 250px;
+        width: 280px;
 
         .navList {
             &>li {
@@ -1150,7 +1160,7 @@ header {
                     left: 200px;
 
                     &.show {
-                        left: 250px;
+                        left: 280px;
                     }
                 }
             }

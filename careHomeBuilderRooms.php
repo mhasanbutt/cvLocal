@@ -4,357 +4,73 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="images/favicon.png" rel="shortcut icon"><title>CareVision - Less Admin, More Caring</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>CareVision - Less Admin, More Caring</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
     <?php include("header.php");?>
-
     <?php include("sideNav.php");?>
 
     <section class="contentHeader">
         <div class="breadcrumbTitle">
             <ul class="list-unstyled">
-                <li><a href="#">Reception</a></li>
+                <li><a href="#">Admin</a></li>
                 <li><a href="#">Care Home Builder</a></li>
             </ul>
-            <span class="title">Add Rooms</span>
+            <span class="title"><img src="images/construction.png"> Floors / Rooms</span>
         </div>
-        <div class="pull-right clearfix">
-            <div class="btn-group noAlergy">
-                <button type="button" class="btn orange"><img src="images/settings-work-tool.svg" class="svg">Edit Rooms</button>
-                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Add Floor</a></li>
+        <div class="filtersSearch clearfix autoWidth">
+            <div class="dropMenu">
+                <span class="openDropMenu">Actions</span>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="floor">Edit Floors</a></li>
+                    <li><a href="#" class="room">Edit Bulk Rooms</a></li>
+                    <li><a href="#" class="print">Print</a></li>
                 </ul>
             </div>
+
+            <a class="new icon" href="newHome.php">New Floor</a>
         </div>
     </section>
 
-    <section class="contentBody">
+    <section class="contentBody noFooter">
         <div class="scrollArea">
-            <div class="content specialHR">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class="inBodyForm roomsList">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f11" class="hidden">
-                                                        <label for="f11"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 1 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f12" class="hidden">
-                                                        <label for="f12"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f13" class="hidden">
-                                                        <label for="f13"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f2" class="hidden">
-                                                        <label for="f2"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 2 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f21" class="hidden">
-                                                        <label for="f21"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f22" class="hidden">
-                                                        <label for="f22"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f23" class="hidden">
-                                                        <label for="f23"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f31" class="hidden">
-                                                        <label for="f31"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 3 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f32" class="hidden">
-                                                        <label for="f32"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f33" class="hidden">
-                                                        <label for="f33"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f34" class="hidden">
-                                                        <label for="f34"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f35" class="hidden">
-                                                        <label for="f35"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f41" class="hidden">
-                                                        <label for="f41"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 4 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f42" class="hidden">
-                                                        <label for="f42"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f43" class="hidden">
-                                                        <label for="f43"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f44" class="hidden">
-                                                        <label for="f44"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f45" class="hidden">
-                                                        <label for="f45"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f46" class="hidden">
-                                                        <label for="f46"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            
-                            <hr>
-                            
-                            <div class="row">
-                            	<div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f111" class="hidden">
-                                                        <label for="f111"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 1 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f122" class="hidden">
-                                                        <label for="f122"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f133" class="hidden">
-                                                        <label for="f133"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-3">
-                                    <table class="floorsTable table table-striped table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="3">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f221" class="hidden">
-                                                        <label for="f221"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                    Floor 2 <a href="#"><img src="images/plus.svg" class="svg"></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f222" class="hidden">
-                                                        <label for="f222"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f223" class="hidden">
-                                                        <label for="f223"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td width="30">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox" name="all" id="f223" class="hidden">
-                                                        <label for="f223"><img src="images/checked.svg" class="svg"></label>
-                                                    </div>
-                                                </td>
-                                                <td><input type="text" value="Room 1"></td>
-                                                <td><a href="#" data-toggle="modal" data-target="#addRoom"><img src="images/settings-work-tool.svg" class="svg"></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="content">
+                <div class="pageSpecificArea clearfix">
+                    <form name="add_resident_form" id="residentForm">
+                        <ul class="list-unstyled clearfix">
+                            <li class="incrDecr" data-unit="">
+                                <span class="title">Registered maximum Service Users</span>
+                                <button type="button" class="counterBtn plus"></button>
+                                <button type="button" class="counterBtn minus"></button>
+                                <input type="text" name="cqcbeds" id="cqcbeds" value="50">
+                            </li>
 
-    <section class="contentFooter">
-        <div class="row">
-            <div class="col-md-6">
-                <button type="button">Back</button> <button type="button" class="save">Save</button>
+                            <input type="hidden" name="_token" value="EPjJBtgDsmWN4FqMWCeHXd0TVwdNq9tOmpPlS1M6">
+                        </ul>
+                        <button class="CQCBedUpdate" type="button">Update</button>
+                    </form>
+                </div>
+
+                <article class="floorsRooms newForm">
+                    <span class="title">
+                        12-12-Basement
+                        <input type="checkbox" name="hasNoK" id="hasNoK" value="1" hidden="">
+                        <label for="hasNoK"></label>
+                        <button type="button" class="append_panels_button">Add Room(s)</button>
+                    </span>
+
+                    <ul class="list-unstyled clearfix">
+                        <li>
+                            <input type="checkbox" id="room1" hidden>
+                            <label for="room1"></label>
+                            <input type="text" value="155-155-Room 1">
+                            <i></i>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -481,29 +197,9 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
-    <script src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-    <script src="js/autosize.min.js"></script>
-    <script src="js/jquery.maphilight.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-        $('input[name="dateRange"]').daterangepicker({
-             "opens": "left",
-             autoUpdateInput: false,
-              locale: {
-                  cancelLabel: 'Clear'
-              }
-        });
-        $('input[name="dateRange"]').on('apply.daterangepicker', function(ev, picker) {
-            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-        });
-
-        $('input[name="dateRange"]').on('cancel.daterangepicker', function(ev, picker) {
-            $(this).val('');
-        });
-    </script>
 </body>
 </html>

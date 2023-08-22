@@ -596,91 +596,7 @@ $(document).ready(function () {
         $('.globalSearch').removeClass('active');
     });
     var uiBlocked = false;
-    /*window.setInterval(function () {
-        if (loginpage == 1) {
-            return false;
-        }
-        $.ajax({
-            cache: false,
-            type: 'GET',
-            async: false,
-            url: baseurl + '/is_server_alive',
-            timeout: 3000,
-            success: function (data, textStatus, XMLHttpRequest) {
-                console.log(data);
-                if (data != 'alive') {
-                    if (uiBlocked == false) {
-                        uiBlocked = true;
-                        $.blockUI({
-                            message: 'im trying to connect to the server',
-                            css: {
-                                border: 'none',
-                                padding: '15px',
-                                backgroundColor: '#000',
-                                '-webkit-border-radius': '10px',
-                                '-moz-border-radius': '10px',
-                                opacity: .5,
-                                color: '#fff'
-                            }
-                        });
-                    }
-                } else {
-                    if (uiBlocked == true) {
-                        uiBlocked = false;
-                        $.unblockUI();
-                    }
-                    if (!$('.alerts').hasClass("open")) {
-                        Getalerts(0);
-                    }
-                }
-            },
-            "error": function (response) {
-                console.log(response.responseText);
-                if (response != 'undefined' && response.length > 0) {
-                    var responsetext = jQuery.parseJSON(response.responseText);
-                    if (typeof responsetext == 'object') {
-                        if (responsetext.error == 'Unauthenticated') {
-                            window.location = baseurl;
-                            return false;
-                        }
-                    }
-                }
-                if (uiBlocked == false) {
-                    uiBlocked = true;
-                    $.blockUI({
-                        message: 'im trying to connect to the server',
-                        css: {
-                            border: 'none',
-                            padding: '15px',
-                            backgroundColor: '#000',
-                            '-webkit-border-radius': '10px',
-                            '-moz-border-radius': '10px',
-                            opacity: .5,
-                            color: '#fff'
-                        }
-                    });
-                }
-            },
-        })
-    }, 60000);*/
-    window.setInterval(function () {
-        if (!loginpage) {
-            Getalerts(0);
-        } else {
-            console.log("one minute passed");
-        }
 
-    }, 60000);
-
-    // window.setInterval(function () {
-    //     $.get(baseurl+'/refresh-csrf').done(function(data){
-    //         var csrfToken = data; // the new token
-    //         $('[name="_token"]').each(function(){
-    //             $(this).val(csrfToken); // grab name of original
-    //         });
-    //     });
-    //
-    // }, 600000);//10 minutes
 
     function setCookie(key, value, expiry) {
         var expires = new Date();
@@ -964,17 +880,8 @@ function show_summernote(element, options) {
 
 ////////////
 $('.handle').click(function () {
-    // $('.ticket_list').toggleClass('expand');
-    // $('.ticket_detail').toggleClass('expand');
     $('.leftNav').toggleClass('closed');
     $(this).toggleClass('open');
-    // $('.contentHeader').toggleClass('expand');
-    // $('.contentBody').toggleClass('expand');
-    // $('.contentFooter').toggleClass('expand');
-    // $('.medicationLegends').toggleClass('expand');
-    // $('.dashboard').toggleClass('expand');
-    // $('.newChartDashboard').toggleClass('expand');
-    // $('.auditDashboard').toggleClass('expand');
 
 });
 
@@ -982,12 +889,8 @@ $('.scrollArea').scrollbar({autoUpdate: true});
 
 $(document).ready(function () {
     var contentHeader = $('.contentHeader').height();
-    var alertsList = $('.contentHeader .diseases').height();
-    if (alertsList > 0) {
-        alertsList = alertsList + 30;
-    }
-    $('.contentBody').css("top", contentHeader + alertsList + 95);
-    console.log(contentHeader, alertsList);
+    $('.contentBody').css("top", contentHeader + 80);
+
     $(document).on('change', '#drp_toandfro_jump', function () {
         var val = $(this).val();
         if (val != "") {
@@ -1000,6 +903,7 @@ $(document).ready(function () {
             }
         }
     });
+
     $("#selectall").click(function (ev) {
         var is_checked = $(this).is(':checked');
         $('#table-4 tbody tr').each(function (i, el) {

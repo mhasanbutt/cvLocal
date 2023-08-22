@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .chatModule {
   position: fixed;
   right: 0;
@@ -54,6 +67,7 @@
   width: 300px;
   height: 430px;
   padding: 10px;
+  border: 1px solid #DDD;
 }
 .chatModule .chatBox:before {
   color: rgb(94, 97, 110);
@@ -259,16 +273,16 @@
   top: 0;
   z-index: 2;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section {
+.chatModule .chatBox .midSection section {
   display: flex;
   flex-direction: column-reverse;
   padding-right: 15px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li {
+.chatModule .chatBox .midSection section ul.sent li, .chatModule .chatBox .midSection section ul.recv li {
   margin-top: 5px;
   position: relative;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .readStatus, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .readStatus {
+.chatModule .chatBox .midSection section ul.sent li .readStatus, .chatModule .chatBox .midSection section ul.recv li .readStatus {
   float: right;
   height: 30px;
   width: 30px;
@@ -277,10 +291,10 @@
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .readStatus.read, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .readStatus.read {
+.chatModule .chatBox .midSection section ul.sent li .readStatus.read, .chatModule .chatBox .midSection section ul.recv li .readStatus.read {
   background-position: 0 -30px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .time, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .time {
+.chatModule .chatBox .midSection section ul.sent li .time, .chatModule .chatBox .midSection section ul.recv li .time {
   font-size: 12px;
   color: rgba(63, 66, 83, 0.4);
   font-weight: 300;
@@ -289,12 +303,12 @@
   padding: 1px 0 0 0;
   width: 50px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .time strong, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .time strong {
+.chatModule .chatBox .midSection section ul.sent li .time strong, .chatModule .chatBox .midSection section ul.recv li .time strong {
   display: block;
   color: #3f4253;
   font-weight: 500;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .text, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .text {
+.chatModule .chatBox .midSection section ul.sent li .text, .chatModule .chatBox .midSection section ul.recv li .text {
   float: right;
   border-radius: 6px;
   background-image: -moz-linear-gradient(75deg, rgb(71, 80, 154) 0%, rgb(103, 113, 230) 100%);
@@ -305,7 +319,7 @@
   font-size: 12px;
   max-width: calc(100% - 100px);
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu {
+.chatModule .chatBox .midSection section ul.sent li .menu, .chatModule .chatBox .midSection section ul.recv li .menu {
   float: right;
   width: 20px;
   height: 30px;
@@ -315,7 +329,7 @@
   background-position: center;
   background-size: 18px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems {
   position: absolute;
   border-radius: 6px;
   background-color: #e0c8ac;
@@ -326,7 +340,7 @@
   z-index: 2;
   display: none;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems span, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems span {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems span, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems span {
   display: block;
   border-radius: 4px;
   padding: 5px 5px 5px 28px;
@@ -339,43 +353,43 @@
   background-position: left 5px center;
   cursor: pointer;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems span:hover, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems span:hover {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems span:hover, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems span:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems span.copy, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems span.copy {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems span.copy, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems span.copy {
   background-image: url("../images/copy.png");
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems span.edit, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems span.edit {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems span.edit, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems span.edit {
   background-image: url("../images/edit.png");
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li .menu + .menuItems.show, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems.show {
+.chatModule .chatBox .midSection section ul.sent li .menu + .menuItems.show, .chatModule .chatBox .midSection section ul.recv li .menu + .menuItems.show {
   display: block;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.sent li:last-child .menu + .menuItems, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li:last-child .menu + .menuItems {
+.chatModule .chatBox .midSection section ul.sent li:last-child .menu + .menuItems, .chatModule .chatBox .midSection section ul.recv li:last-child .menu + .menuItems {
   top: auto;
   bottom: 0;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .time, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .text, .chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu {
+.chatModule .chatBox .midSection section ul.recv li .time, .chatModule .chatBox .midSection section ul.recv li .text, .chatModule .chatBox .midSection section ul.recv li .menu {
   float: left;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .text {
+.chatModule .chatBox .midSection section ul.recv li .text {
   background: #3f4253;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section ul.recv li .menu + .menuItems {
+.chatModule .chatBox .midSection section ul.recv li .menu + .menuItems {
   right: auto;
   left: 20px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv {
+.chatModule .chatBox .midSection section .attachmentSent, .chatModule .chatBox .midSection section .attachmentRecv {
   margin-top: 5px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article {
+.chatModule .chatBox .midSection section .attachmentSent article, .chatModule .chatBox .midSection section .attachmentRecv article {
   border-radius: 6px;
   background-color: #3f4253;
   width: 180px;
   float: right;
   padding: 10px 10px 0 10px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article .fileName, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article .fileName {
+.chatModule .chatBox .midSection section .attachmentSent article .fileName, .chatModule .chatBox .midSection section .attachmentRecv article .fileName {
   font-size: 12px;
   color: #e0c8ac;
   display: block;
@@ -383,7 +397,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article .fileSize, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article .fileSize {
+.chatModule .chatBox .midSection section .attachmentSent article .fileSize, .chatModule .chatBox .midSection section .attachmentRecv article .fileSize {
   font-size: 12px;
   color: #CB0000;
   display: block;
@@ -392,7 +406,7 @@
   white-space: nowrap;
   margin-bottom: 20px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article .fileType, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article .fileType {
+.chatModule .chatBox .midSection section .attachmentSent article .fileType, .chatModule .chatBox .midSection section .attachmentRecv article .fileType {
   font-size: 12px;
   color: rgba(63, 66, 83, 0.4);
   display: block;
@@ -401,14 +415,14 @@
   white-space: nowrap;
   margin-bottom: 5px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article .percentage, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article .percentage {
+.chatModule .chatBox .midSection section .attachmentSent article .percentage, .chatModule .chatBox .midSection section .attachmentRecv article .percentage {
   background-color: #3f4253;
   width: 100%;
   height: 2px;
   display: block;
   position: relative;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article .percentage i, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article .percentage i {
+.chatModule .chatBox .midSection section .attachmentSent article .percentage i, .chatModule .chatBox .midSection section .attachmentRecv article .percentage i {
   position: absolute;
   left: 0;
   height: 2px;
@@ -416,7 +430,7 @@
   background-color: #00a0d2;
   box-shadow: 0 0 5px #0A246A;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentSent article button, .chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article button {
+.chatModule .chatBox .midSection section .attachmentSent article button, .chatModule .chatBox .midSection section .attachmentRecv article button {
   font-size: 14px;
   color: #FFF;
   text-transform: uppercase;
@@ -426,7 +440,7 @@
   width: 100%;
   height: 34px;
 }
-.chatModule .chatBox .midSection .scroll-wrapper section .attachmentRecv article {
+.chatModule .chatBox .midSection section .attachmentRecv article {
   float: left;
 }
 .chatModule .chatBox .bottomBar {
@@ -467,6 +481,7 @@
   cursor: pointer;
   height: 28px;
   width: 28px;
+  display: block;
 }
 .chatModule .chatBox .bottomBar .sendMsg .smileys {
   right: 58px;
@@ -498,6 +513,7 @@
   border: 0;
   top: 2px;
   position: absolute;
+  background-color: transparent;
 }
 .chatModule .chatBox .bottomBar .sendMsg textarea {
   border-width: 2px;
@@ -509,6 +525,8 @@
   padding: 2px 90px 0 5px;
   font-size: 12px;
   line-height: 1.2;
+  font-family: inherit;
+  resize: none;
 }
 
 /*# sourceMappingURL=chat.css.map */
