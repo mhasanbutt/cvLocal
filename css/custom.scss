@@ -256,6 +256,12 @@
                         &.room {
                             background-image: url('../images/bad.png');
                         }
+                        &.resolve{
+                            background-image: url('../images/resolve.png');
+                        }
+                        &.dismiss{
+                            background-image: url('../images/dismiss.png');
+                        }
                     }
                 }
             }

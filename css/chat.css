@@ -311,8 +311,6 @@
 .chatModule .chatBox .midSection section ul.sent li .text, .chatModule .chatBox .midSection section ul.recv li .text {
   float: right;
   border-radius: 6px;
-  background-image: -moz-linear-gradient(75deg, rgb(71, 80, 154) 0%, rgb(103, 113, 230) 100%);
-  background-image: -webkit-linear-gradient(75deg, rgb(71, 80, 154) 0%, rgb(103, 113, 230) 100%);
   background-image: -ms-linear-gradient(75deg, rgb(71, 80, 154) 0%, rgb(103, 113, 230) 100%);
   padding: 8px;
   color: #FFF;
@@ -527,6 +525,4 @@
   line-height: 1.2;
   font-family: inherit;
   resize: none;
-}
-
-/*# sourceMappingURL=chat.css.map */
+}/*# sourceMappingURL=chat.css.map */

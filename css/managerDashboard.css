@@ -277,7 +277,8 @@
   display: table;
   z-index: 1002;
   background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   opacity: 0;
   visibility: hidden;
 }
@@ -329,6 +330,4 @@
 .dashboardOverlay.showOverlay {
   opacity: 1;
   visibility: visible;
-}
-
-/*# sourceMappingURL=managerDashboard.css.map */
+}/*# sourceMappingURL=managerDashboard.css.map */
