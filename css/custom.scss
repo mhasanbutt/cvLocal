@@ -39731,6 +39731,11 @@ input[type=checkbox].switch {
                         }
                     }
                 }
+
+                & > img {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
             }
         }
 

@@ -29,6 +29,27 @@
         </section>
     </div>
 
+    <div class="pop" style="display:table">
+        <div>
+            <section>
+                <article style="width:550px;">
+                    <i class="popFuse"></i>
+                    <span class="title">Care plan links - a smarter, more connected way to write care plans is coming to Care Vision</span>
+
+                    <p>We are introducing a new functionality to the support care plan module called Care Plan Links (Not to be confused with care plan linking currently available in the settings). This new update will launch on 15th September 2023.</p>
+
+                    <p>If a user, for example, completes the Medical Condition care plan and selects the option “Service User is on DNARCPR”. If a user then goes to a different heading, for example End of Life Care a user might pick a different option by accident, creating an inconsistent care plan. Care plan links is designed to solve that problem.</p>
+
+                    <img src="images/dashboardNotificationImg.png">
+
+                    <p>Whenever a user moves from one care plan heading to another, they will get this warning message notifying them of options selected from a different care plan heading. A user then has the option to apply an individual change, ignore the change or apply/all the changes in one single go.</p>
+
+                    <p>Currently links are established between individual care plan headings and the alert centre. Whenever you save a care plan, you will be offered to create a follow up as a reminder. We plan to extend the linking functionality to other care plans. The linking functionality can also be disabled if the settings, if you prefer not to use it.</p>
+                </article>
+            </section>
+        </div>
+    </div>
+
     <div class="managerDashSimplified">
         <div class="dashContainer">
             <section>
