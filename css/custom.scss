@@ -31517,20 +31517,7 @@ hr {
                 }
             }
 
-            ul {
-                margin: 0;
 
-                li {
-                    float: left;
-                    height: 18px;
-                    width: 18px;
-                    margin-right: 2px;
-                    background-image: url('../images/star.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-            }
 
             &:first-child {
                 width: 100px;
@@ -44449,10 +44436,10 @@ input[type=checkbox].switch {
         background-color: #FFF;
         margin: 0 0 5px 0;
 
-        ul {
+        & > ul {
             margin: 0 -5px;
 
-            li {
+            & > li {
                 float: left;
                 font-size: 18px;
                 color: #5d6a72;
@@ -44536,6 +44523,38 @@ input[type=checkbox].switch {
                     overflow: auto;
                     text-overflow: unset;
                 }
+
+                small {
+                    font-size: 12px;
+                    color: #FFF;
+                    border-radius: 2px;
+                    padding: 0 5px;
+                    background-color: $grayColor;
+                    display: inline-block;
+
+                    &.serviceuser {
+                        background-color: #22a0d5;
+                    }
+
+                    &.staff {
+                        background-color: #F0A26E;
+                    }
+                }
+
+                .stars {
+                    margin: 0;
+
+                    li {
+                        float: left;
+                        height: 18px;
+                        width: 18px;
+                        margin-right: 2px;
+                        background-image: url('../images/star.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
             }
 
             &.activities {
@@ -44578,7 +44597,7 @@ input[type=checkbox].switch {
                 padding-left: 50px;
                 position: relative;
 
-                li {
+                & > li {
                     &:first-child {
                         position: absolute;
                         width: 50px;

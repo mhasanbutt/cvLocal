@@ -27003,19 +27003,6 @@ body {
 .feedbackListing > ul > li small.staff {
   background-color: #F0A26E;
 }
-.feedbackListing > ul > li ul {
-  margin: 0;
-}
-.feedbackListing > ul > li ul li {
-  float: left;
-  height: 18px;
-  width: 18px;
-  margin-right: 2px;
-  background-image: url("../images/star.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .feedbackListing > ul > li:first-child {
   width: 100px;
 }
@@ -37545,10 +37532,10 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #FFF;
   margin: 0 0 5px 0;
 }
-.generalListing section ul {
+.generalListing section > ul {
   margin: 0 -5px;
 }
-.generalListing section ul li {
+.generalListing section > ul > li {
   float: left;
   font-size: 18px;
   color: #5d6a72;
@@ -37559,7 +37546,7 @@ input[type=checkbox].switch:checked + label:before {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.generalListing section ul li .title {
+.generalListing section > ul > li .title {
   font-size: 12px;
   color: #828787;
   text-transform: uppercase;
@@ -37569,7 +37556,7 @@ input[type=checkbox].switch:checked + label:before {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.generalListing section ul li .iconWithTitle {
+.generalListing section > ul > li .iconWithTitle {
   display: block;
   margin: 5px auto 0 auto;
   width: 24px;
@@ -37579,7 +37566,7 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   position: relative;
 }
-.generalListing section ul li .iconWithTitle:after {
+.generalListing section > ul > li .iconWithTitle:after {
   content: attr(data-title);
   position: absolute;
   top: 100%;
@@ -37589,19 +37576,19 @@ input[type=checkbox].switch:checked + label:before {
   left: 50%;
   transform: translateX(-50%);
 }
-.generalListing section ul li .iconWithTitle.entries {
+.generalListing section > ul > li .iconWithTitle.entries {
   background-image: url("../images/surveyEntries.png");
 }
-.generalListing section ul li .iconWithTitle.analyse {
+.generalListing section > ul > li .iconWithTitle.analyse {
   background-image: url("../images/graphic.png");
 }
-.generalListing section ul li .iconWithTitle.link {
+.generalListing section > ul > li .iconWithTitle.link {
   background-image: url("../images/surveyLink.png");
 }
-.generalListing section ul li .iconWithTitle.conduct {
+.generalListing section > ul > li .iconWithTitle.conduct {
   background-image: url("../images/conductSurvey.png");
 }
-.generalListing section ul li .eye, .generalListing section ul li .view, .generalListing section ul li .delete {
+.generalListing section > ul > li .eye, .generalListing section > ul > li .view, .generalListing section > ul > li .delete {
   float: left;
   width: 24px;
   height: 24px;
@@ -37611,56 +37598,83 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   margin-top: 10px;
 }
-.generalListing section ul li .view {
+.generalListing section > ul > li .view {
   background-image: url("../images/editIcon.png");
 }
-.generalListing section ul li .delete {
+.generalListing section > ul > li .delete {
   background-image: url("../images/trash-bin.png");
 }
-.generalListing section ul li.wrapText {
+.generalListing section > ul > li.wrapText {
   white-space: normal;
   overflow: auto;
   text-overflow: unset;
 }
-.generalListing section ul.activities li {
+.generalListing section > ul > li small {
+  font-size: 12px;
+  color: #FFF;
+  border-radius: 2px;
+  padding: 0 5px;
+  background-color: #828787;
+  display: inline-block;
+}
+.generalListing section > ul > li small.serviceuser {
+  background-color: #22a0d5;
+}
+.generalListing section > ul > li small.staff {
+  background-color: #F0A26E;
+}
+.generalListing section > ul > li .stars {
+  margin: 0;
+}
+.generalListing section > ul > li .stars li {
+  float: left;
+  height: 18px;
+  width: 18px;
+  margin-right: 2px;
+  background-image: url("../images/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.generalListing section > ul.activities li {
   width: calc((100% - 50px) / 11);
   float: right;
   overflow: visible;
 }
-.generalListing section ul.activities li .tTText {
+.generalListing section > ul.activities li .tTText {
   width: 250px;
   left: 20%;
   z-index: 2;
   top: 15px;
 }
-.generalListing section ul.activities li:nth-child(2) .tTText, .generalListing section ul.activities li:nth-child(3) .tTText {
+.generalListing section > ul.activities li:nth-child(2) .tTText, .generalListing section > ul.activities li:nth-child(3) .tTText {
   left: auto;
   right: 20%;
 }
-.generalListing section ul.activities li .subCat {
+.generalListing section > ul.activities li .subCat {
   display: block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   padding-right: 20px;
 }
-.generalListing section ul.activities li .subCat i {
+.generalListing section > ul.activities li .subCat i {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   float: right;
   font-style: normal;
 }
-.generalListing section ul.withCheckbox {
+.generalListing section > ul.withCheckbox {
   padding-left: 50px;
   position: relative;
 }
-.generalListing section ul.withCheckbox li:first-child {
+.generalListing section > ul.withCheckbox > li:first-child {
   position: absolute;
   width: 50px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.generalListing section ul.withCheckbox li:first-child label {
+.generalListing section > ul.withCheckbox > li:first-child label {
   height: 18px;
   width: 18px;
   border-radius: 4px;
@@ -37668,7 +37682,7 @@ input[type=checkbox].switch:checked + label:before {
   float: left;
   margin-right: 10px;
 }
-.generalListing section ul.withCheckbox li:first-child input[type=checkBox]:checked + label {
+.generalListing section > ul.withCheckbox > li:first-child input[type=checkBox]:checked + label {
   background-color: #6DC77A;
   background-image: url("../images/handoverNotecheckbox.png");
   background-position: center;
