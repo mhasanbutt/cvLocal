@@ -38815,4 +38815,8 @@ input[type=checkbox].switch:checked + label:before {
   background-size: 18px;
   background-position: center;
   z-index: 2;
+}
+
+.scroll-element.scroll-x {
+  display: none !important;
 }/*# sourceMappingURL=custom.css.map */
