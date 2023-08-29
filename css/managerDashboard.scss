@@ -277,11 +277,48 @@
                             }
                         }
 
+                        &:nth-child(3) {
+                            article {
+                                ul {
+                                    transform: translate(-50%, -45%);
+
+                                    li {
+                                        font-size: 36px;
+                                        line-height: 36px;
+
+                                        i {
+                                            font-size: 14px;
+                                        }
+
+                                        a {
+                                            position: relative;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            height: 24px;
+                                            line-height: 24px;
+                                            width: 90%;
+                                            margin: 0 auto 10px;
+
+                                            &:before {
+                                                height: 24px;
+                                                font-size: 12px;
+                                                line-height: 24px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                         &:nth-child(5) {
                             article {
                                 ul {
+                                    transform: translate(-50%, -45%);
+
                                     li {
-                                        font-size: 38px;
+                                        font-size: 26px;
+                                        line-height: 26px;
 
                                         &:nth-child(odd) {
                                             border-right: 1px solid #D6E2E9;
@@ -293,6 +330,23 @@
 
                                         i {
                                             font-size: 12px;
+                                        }
+
+                                        a {
+                                            position: relative;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            height: 24px;
+                                            line-height: 24px;
+                                            width: 90%;
+                                            margin: 0 auto 10px;
+
+                                            &:before {
+                                                height: 24px;
+                                                font-size: 12px;
+                                                line-height: 24px;
+                                            }
                                         }
                                     }
                                 }

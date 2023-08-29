@@ -29,7 +29,7 @@
         </section>
     </div>
 
-    <div class="pop" style="display:table">
+    <div class="pop">
         <div>
             <section>
                 <article style="width:550px;">
@@ -67,7 +67,7 @@
                                     <li>77 <i>Active</i></li>
                                     <li>02 <i>Freeze</i></li>
                                 </ul>
-                                <a href="#" data-text="See Service Users"></a>
+                                <a href="#" data-text="Go To Service Users Listing"></a>
                             </article>
                         </li>
                         <li>
@@ -79,7 +79,7 @@
                                     <li>77 <i>Active</i></li>
                                     <li>02 <i>Leavers</i></li>
                                 </ul>
-                                <a href="#" data-text="See Employees"></a>
+                                <a href="#" data-text="Go To Employees Listing"></a>
                             </article>
                         </li>
                         <li>
@@ -87,10 +87,16 @@
                             <article>
                                 <span class="subTitle">Service Users <small>[next 30 days]</small></span>
                                 <ul class="list-unstyled clearfix">
-                                    <li>77 <i>Today</i></li>
-                                    <li>02 <i>Future</i></li>
+                                    <li>
+                                        77 <i>Today</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
+                                    <li>
+                                        02 <i>Future</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
                                 </ul>
-                                <a href="#" data-text="See List"></a>
+                                <a href="#" data-text="See All"></a>
                             </article>
                         </li>
                         <li>
@@ -100,12 +106,12 @@
                                     <li>
                                         <span class="subTitle" style="margin-bottom:20px;">Injury</span>
                                         77 <i>last 3 days</i>
-                                        <a href="#" data-text="See Injury"></a>
+                                        <a href="#" data-text="Quick View"></a>
                                     </li>
                                     <li>
                                         <span class="subTitle" style="margin-bottom:20px;">Pressure Ulcer</span>
                                         02 <i>last 3 days</i>
-                                        <a href="#" data-text="See Ulcer"></a>
+                                        <a href="#" data-text="Quick View"></a>
                                     </li>
                                 </ul>
                             </article>
@@ -115,12 +121,24 @@
                                 <span class="subTitle">Follow Up</span>
                                 <p>Due Today or any Outstanding</p>
                                 <ul class="list-unstyled clearfix">
-                                    <li>77 <i>Injury</i></li>
-                                    <li>02 <i>Pressure Ulcer</i></li>
-                                    <li>77 <i>Catheter</i></li>
-                                    <li>02 <i>Enteral Feeding</i></li>
+                                    <li>
+                                        77 <i>Injury</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
+                                    <li>
+                                        02 <i>Pressure Ulcer</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
+                                    <li>
+                                        77 <i>Catheter</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
+                                    <li>
+                                        02 <i>Enteral Feeding</i>
+                                        <a href="#" data-text="Quick View"></a>
+                                    </li>
                                 </ul>
-                                <a href="#" data-text="See Follow Up"></a>
+                                <a href="#" data-text="Go To Follow Up Listing"></a>
                             </article>
                         </li>
                         <li>
@@ -131,7 +149,7 @@
                                     <li>02 <i>Awaiting Sign Off</i></li>
                                     <li>77 <i>Completed</i></li>
                                 </ul>
-                                <a href="#" data-text="See A &amp; I"></a>
+                                <a href="#" data-text="Go To A & I Listing"></a>
                             </article>
                         </li>
                         <li>
@@ -141,7 +159,7 @@
                                     <li>77 <i>Active</i></li>
                                     <li>02 <i>Over Due</i></li>
                                 </ul>
-                                <a href="#" data-text="See Support Care Plans"></a>
+                                <a href="#" data-text="Go To Support Care Plans Listing"></a>
                             </article>
                         </li>
                         <li>
@@ -151,7 +169,7 @@
                                     <li>77 <i>Active</i></li>
                                     <li>02 <i>Missed<br><small>[last 24 hours]</small></i></li>
                                 </ul>
-                                <a href="#" data-text="See Care Routines"></a>
+                                <a href="#" data-text="Go To Care Routines Listing"></a>
                             </article>
                         </li>
                     </ul>

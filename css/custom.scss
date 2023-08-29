@@ -39565,7 +39565,7 @@ input[type=checkbox].switch {
                             padding: 0 10px;
                             box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
 
-                            &[name=dateRange] {
+                            &[name=dateRange], &.date {
                                 background-image: url('../images/calendar.png');
                                 background-position: right 10px center;
                                 background-repeat: no-repeat;
@@ -46063,6 +46063,194 @@ input[type=checkbox].switch {
                 background-size: 18px;
                 background-position: center;
                 z-index: 2;
+            }
+        }
+    }
+}
+
+.swapProfile {
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 58px;
+    height: 120px;
+    position: relative;
+
+    & > input[type=checkbox] {
+        & + label {
+            position: absolute;
+            left: 20px;
+            height: 18px;
+            width: 18px;
+            border: 1px solid #DDD;
+            border-radius: 4px;
+            cursor: pointer;
+            top: 51px;
+            background-image: url("../images/handoverStepArrow.png");
+            background-repeat: no-repeat;
+            background-size: 14px;
+            background-position: center;
+        }
+
+        &:checked {
+            & + label {
+                background-color: $primaryColor;
+                border-color: transparent;
+            }
+        }
+    }
+
+    & > ul {
+        position: relative;
+        float: left;
+        height: 100px;
+        padding: 0 0 0 110px;
+        width: calc((100% - 240px) / 2);
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100px;
+            width: 100px;
+            border-radius: 8px;
+        }
+
+        li {
+            float: left;
+            font-size: 18px;
+            font-family: $secondaryFont;
+            color: #5D6A72;
+            width: 50%;
+            height: 50px;
+
+            .title {
+                font-size: 12px;
+                font-family: $primaryFont;
+                display: block;
+                color: #828787
+            }
+        }
+
+        &:nth-of-type(2) {
+            &:before {
+                position: absolute;
+                height: 36px;
+                width: 36px;
+                display: block;
+                background-image: url("../images/swapInteractive.png");
+                background-size: 36px;
+                background-repeat: no-repeat;
+                background-position: center;
+                content: '';
+                top: 32px;
+                left: -46px;
+            }
+        }
+    }
+
+    section {
+        float: right;
+
+        ul {
+            float: left;
+            position: relative;
+            margin-left: 10px;
+            padding-top: 16px;
+
+            &:before {
+                position: absolute;
+                content: attr(data-title);
+                font-size: 12px;
+                text-transform: uppercase;
+                line-height: 14px;
+                color: #5D6A72;
+                top: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-family: $secondaryFont;
+            }
+
+            li {
+                width: 100px;
+                margin-bottom: 1px;
+
+                label {
+                    height: 30px;
+                    display: block;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: $secondaryFont;
+                    font-weight: 400;
+                    color: #FFF;
+                    background-color: #ADB0B5;
+                    margin: 0;
+                    cursor: pointer;
+                }
+
+                &:first-child {
+                    label {
+                        border-radius: 10px 10px 4px 4px;
+                    }
+
+                    &.color {
+                        label {
+                            background-color: #18D584;
+                        }
+                    }
+
+                    input[type=radio] {
+                        &:checked {
+                            & + label {
+                                background-color: #18D584;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    label {
+                        border-radius: 4px 4px 10px 10px;
+                    }
+
+                    &.color {
+                        label {
+                            background-color: #ED1C24;
+                        }
+                    }
+
+                    input[type=radio] {
+                        &:checked {
+                            & + label {
+                                background-color: #ED1C24;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:first-of-type {
+                li {
+                    label {
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            &:after {
+                position: absolute;
+                content: attr(data-rejectedBy);
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+                color: #5D6A72;
+                bottom: -18px;
+                right: 0;
+                white-space: nowrap;
+                text-align: right;
+                font-family: $secondaryFont;
             }
         }
     }
