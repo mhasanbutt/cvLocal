@@ -148,6 +148,44 @@
                         <span class="figures">Comments Left - <strong>55</strong></span>
                     </li>
                 </ul>
+
+                <span class="title">Question 4</span>
+                <ul class="list-unstyled clearfix statsBox">
+                    <li style="flex:100%;">
+                        <div class="multiChoice clearfix">
+                            <ul class="list-unstyled clearfix">
+                                <li>
+                                    <input type="checkbox" name="multiChoiceQuest5" id="opt1" hidden>
+                                    <label for="opt1">Aliquam semper egestas venenatis. Donec rutrum mauris ac pellentesque tincidunt.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="multiChoiceQuest5" id="opt2" hidden>
+                                    <label for="opt2">Donec rutrum mauris ac pellentesque tincidunt.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="multiChoiceQuest5" id="opt3" hidden>
+                                    <label for="opt3">Donec rutrum mauris ac pellentesque tincidunt.</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="padding-left:0;">
+                        <span class="figures">Average Rating - <Strong>3.5</Strong></span>
+                        <span class="figures">Comments Left - <strong>55</strong></span>
+                    </li>
+                    <li>
+                        <ul class="list-unstyled clearfix statsProgress dark">
+                            <li><span style="width:20%;"></span></li>
+                            <li><span style="width:30%;"></span></li>
+                            <li><span style="width:50%;"></span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="ratingCent">Yes - <strong>13 (15%)</strong></span>
+                        <span class="ratingCent">No - <strong>21 (17%)</strong></span>
+                        <span class="ratingCent">N /A - <strong>32 (23%)</strong></span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

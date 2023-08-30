@@ -45106,11 +45106,12 @@ input[type=checkbox].switch {
 }
 
 .statsBox {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
+    align-items: center;
 
     &>li {
-        display: table-cell;
         vertical-align: middle;
         padding-left: 30px;
 
@@ -45157,6 +45158,14 @@ input[type=checkbox].switch {
                     height: 2px;
                     background-color: #FFF;
                     top: 7px;
+                }
+            }
+
+            &.dark {
+                li {
+                    span {
+                        background-color: #333;
+                    }
                 }
             }
         }
