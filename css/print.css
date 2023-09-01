@@ -10,11 +10,6 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
   outline: 0 !important;
 }
 
-::-moz-selection {
-  background: #6DC77A;
-  color: #FFF;
-}
-
 ::selection {
   background: #6DC77A;
   color: #FFF;
@@ -30,15 +25,12 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
 }
 
 .appearance {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 @media print and (color) {
   * {
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 body {
@@ -71,7 +63,7 @@ img.svg {
 @media print {
   @page {
     size: A4;
-    margin: 3mm;
+    margin: 2mm;
   }
   thead {
     display: table-header-group;
@@ -91,6 +83,10 @@ body {
   font-size: 8pt;
   padding: 0;
   margin: 0;
+  overflow: auto;
+}
+body.landscape .header, body.landscape .footer, body.landscape .printBody {
+  width: 1030px;
 }
 
 .header {
@@ -267,8 +263,7 @@ body {
   padding: 0 5px;
   border-bottom: 1px solid #DDD !important;
   margin-bottom: 5px;
-  -moz-column-break-inside: avoid !important;
-       break-inside: avoid !important;
+  break-inside: avoid !important;
 }
 .generalListing ul {
   margin: 0 -5px;
@@ -288,4 +283,455 @@ body {
 .generalListing ul li.fullWidth {
   width: 100%;
   font-weight: 400;
-}/*# sourceMappingURL=print.css.map */
+}
+
+.diseases {
+  padding: 25px 5px 5px 5px;
+  background-color: rgba(130, 135, 135, 0.8);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.diseases:before {
+  position: absolute;
+  left: 5px;
+  content: "Alerts";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFF;
+  top: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+}
+.diseases li {
+  float: left;
+  margin: 0 0 2px 12px;
+  padding: 0;
+}
+.diseases li span, .diseases li a {
+  display: block;
+  padding: 2px 5px 2px 34px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
+  font-family: "Roboto Condensed", sans-serif;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: left 5px center;
+  height: 28px;
+  line-height: 24px;
+  position: relative;
+}
+.diseases li span:after, .diseases li a:after {
+  width: 0;
+  height: 0;
+  border-bottom: 28px solid rgba(255, 255, 255, 0.2);
+  border-right: 10px solid transparent;
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(5px) translateY(0);
+  z-index: 1;
+}
+.diseases li span:before, .diseases li a:before {
+  width: 0;
+  height: 0;
+  border-top: 28px solid rgba(255, 255, 255, 0.2);
+  border-left: 10px solid transparent;
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(5px) translateY(0);
+  z-index: 1;
+  left: -15px;
+}
+.diseases li img, .diseases li img.svg, .diseases li svg {
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+}
+.diseases li img path, .diseases li img circle, .diseases li img polygon, .diseases li img.svg path, .diseases li img.svg circle, .diseases li img.svg polygon, .diseases li svg path, .diseases li svg circle, .diseases li svg polygon {
+  fill: #CB0000;
+}
+.diseases li:first-child {
+  margin-left: 0;
+}
+.diseases li:first-child span::before, .diseases li:first-child a::before {
+  display: none;
+}
+.diseases li:last-child span::after, .diseases li:last-child a::after {
+  display: none;
+}
+.diseases.noDisease {
+  padding: 0;
+}
+.diseases.max-ul-width {
+  padding: 0;
+  background-color: transparent;
+}
+.diseases.max-ul-width:before {
+  display: none;
+}
+.diseases.max-ul-width li span, .diseases.max-ul-width li a {
+  background-color: rgba(130, 135, 135, 0.2);
+}
+.diseases.max-ul-width li span:after, .diseases.max-ul-width li a:after {
+  border-bottom: 28px solid rgba(130, 135, 135, 0.2);
+}
+.diseases.max-ul-width li span:before, .diseases.max-ul-width li a:before {
+  border-top: 28px solid rgba(130, 135, 135, 0.2);
+}
+@media print {
+  .diseases li {
+    margin-left: 5px;
+  }
+  .diseases li span, .diseases li a {
+    padding: 0 0 0 2px;
+  }
+  .diseases li span:before, .diseases li a:before {
+    display: none;
+  }
+  .diseases li span:after, .diseases li a:after {
+    display: none;
+  }
+  .diseases li span img, .diseases li span svg, .diseases li a img, .diseases li a svg {
+    display: none !important;
+  }
+}
+
+.marSheetDateInfo {
+  text-align: right;
+  border-radius: 4px;
+  background-color: rgb(255, 205, 96);
+  line-height: 24px;
+  padding-right: 10px;
+}
+.marSheetDateInfo > span {
+  display: inline-block;
+  padding-left: 30px;
+}
+.marSheetDateInfo > span:first-child {
+  padding-left: 0;
+}
+
+.medicinesTable article {
+  margin-top: 30px;
+}
+@media print {
+  .medicinesTable article {
+    break-inside: avoid;
+  }
+}
+.medicinesTable article .medicineNameStatus {
+  margin-bottom: 5px;
+}
+.medicinesTable article .medicineNameStatus .medicineName {
+  float: left;
+  width: 405px;
+  position: relative;
+  padding: 0 10px 0 30px;
+  height: 24px;
+}
+@media print {
+  .medicinesTable article .medicineNameStatus .medicineName {
+    padding: 0 10px 0 0;
+  }
+  .medicinesTable article .medicineNameStatus .medicineName i {
+    display: none;
+  }
+}
+.medicinesTable article .medicineNameStatus .medicineName i {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-image: url("../images/eMarMoreInfo.png");
+  left: 0;
+  display: block;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  top: -2px;
+}
+.medicinesTable article .medicineNameStatus .medicineName samp {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: #3f4253;
+  font-weight: 700;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  display: block;
+}
+.medicinesTable article .medicineNameStatus .medicinesStatus {
+  float: right;
+  width: calc(100% - 405px);
+  height: 24px;
+}
+.medicinesTable article .medicineNameStatus .medicinesStatus span {
+  float: left;
+  margin-right: 2px;
+  border-radius: 4px;
+  background-color: rgb(245, 152, 157);
+  padding: 0 5px;
+  line-height: 24px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+.medicinesTable article .medicineInfo {
+  float: left;
+  width: 295px;
+  margin-top: 30px;
+  position: relative;
+}
+.medicinesTable article .medicineInfo ul li {
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(130, 135, 135);
+  border-top: 1px solid #dcdede;
+  overflow: hidden;
+  line-height: 18px;
+}
+.medicinesTable article .medicineInfo ul li:first-child {
+  border-top: 0;
+}
+.medicinesTable article .medicineInfo ul li i {
+  font-style: normal;
+  width: 80px;
+  float: left;
+}
+.medicinesTable article .medicineInfo ul li span {
+  width: calc(100% - 80px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: right;
+  font-weight: 700;
+  color: #3f4253;
+  font-family: "Roboto", sans-serif;
+}
+.medicinesTable article .medicineInfo .direction {
+  border-radius: 4px;
+  background-color: rgb(63, 66, 83);
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  padding: 5px;
+}
+.medicinesTable article .medicineInfo .direction .scroll-wrapper {
+  bottom: 0;
+}
+.medicinesTable article .medicineInfo .direction .scroll-wrapper .content {
+  padding: 5px 20px 5px 5px;
+  font-size: 12px;
+  color: rgb(220, 222, 222);
+}
+.medicinesTable article .eMarTable {
+  border-radius: 4px;
+  background-color: rgb(228, 228, 221);
+  width: calc(100% - 405px);
+  float: right;
+  padding: 5px;
+}
+.medicinesTable article .eMarTable .weeks {
+  float: left;
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+.medicinesTable article .eMarTable .weeks li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+.medicinesTable article .eMarTable .weeks li:before {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #828787;
+  top: 50%;
+  left: 0;
+  content: "";
+  z-index: 1;
+}
+.medicinesTable article .eMarTable .weeks li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #828787;
+  width: 1px;
+}
+.medicinesTable article .eMarTable .weeks li span {
+  display: inline-block;
+  background-color: rgb(228, 228, 221);
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+}
+.medicinesTable article .eMarTable .weeks li:first-child:after {
+  display: none;
+}
+.medicinesTable article .eMarTable .days {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+.medicinesTable article .eMarTable .days li {
+  float: left;
+  width: 3.5714285714%;
+  text-align: center;
+  border-left: 1px solid #a7b8c6;
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #828787;
+  text-shadow: 0.819px 0.574px 0 rgb(255, 255, 255);
+}
+.medicinesTable article .eMarTable .days li strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3f4253;
+  display: block;
+}
+.medicinesTable article .eMarTable .days li:first-child {
+  border-left: 0;
+}
+.medicinesTable article .eMarTable .days li.current {
+  background-color: #fff799;
+}
+.medicinesTable article .eMarTable .eMarTableData {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.medicinesTable article .eMarTable .eMarTableData:before {
+  position: absolute;
+  content: "";
+  border-width: 2px;
+  border-color: rgb(167, 184, 198);
+  border-style: solid;
+  left: -92px;
+  right: 0;
+  top: -1px;
+  bottom: 0;
+  border-radius: 4px;
+  display: block;
+}
+.medicinesTable article .eMarTable .eMarTableData ul {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  border-top: 1px solid #a7b8c6;
+  height: 30px;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li {
+  float: left;
+  width: 3.5714285714%;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(63, 66, 83);
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 5px 0;
+  border-left: 1px solid #a7b8c6;
+  height: 30px;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li:first-child {
+  position: absolute;
+  right: 100%;
+  width: 90px;
+  border-left: 0;
+  line-height: 13px;
+  padding: 0;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li:first-child:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  left: 5px;
+  top: -1px;
+  background-color: #a7b8c6;
+  width: 100%;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li:first-of-type li:first-child:before {
+  display: none;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li:nth-child(2) {
+  border-left: 0;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #3f4253;
+  color: rgb(220, 222, 222);
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a.red {
+  background-color: #cb0000;
+  color: #dcdede;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a.orange {
+  background-color: #fdc689;
+  color: #3f4253;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a.green {
+  background-color: #a3d39c;
+  color: #3f4253;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a.missedMedicationIcon {
+  background-color: transparent;
+}
+.medicinesTable article .eMarTable .eMarTableData ul li a.initials {
+  border-radius: 2px;
+}
+.medicinesTable article .eMarTable .eMarTableData ul:first-of-type:before {
+  content: "Time & Dosage";
+  position: absolute;
+  right: calc(100% + 23px);
+  width: 54px;
+  text-align: center;
+  background-color: #FFF;
+  display: inline-block;
+  line-height: 1;
+  top: -32px;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 2;
+}
+.medicinesTable article .eMarTable .eMarTableData ul:first-of-type:after {
+  content: "";
+  position: absolute;
+  right: calc(100% + 18px);
+  width: 64px;
+  border: 1px solid #939696;
+  border-width: 1px 1px 0 1px;
+  border-radius: 4px 4px 0 0;
+  height: 16px;
+  z-index: 1;
+  top: -20px;
+}
+.medicinesTable article .eMarTable .stock {
+  border-radius: 4px;
+  background-color: rgb(63, 66, 83);
+  padding: 5px;
+  float: left;
+  margin-top: 5px;
+}
+.medicinesTable article .eMarTable .stock span {
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(255, 205, 96);
+  margin-right: 10px;
+  float: left;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=print.css.map */
