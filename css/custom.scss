@@ -81,7 +81,7 @@
     .ProfileInfo {
         border-radius: 6px;
         background: #474d57;
-        background: linear-gradient(to right,  #474d57 20%,#8d99ae 39%);
+        background: linear-gradient(to right, #474d57 20%, #8d99ae 39%);
         float: right;
         position: relative;
         padding: 0 10px;
@@ -154,7 +154,7 @@
             width: auto;
         }
 
-        & > a {
+        &>a {
             background-color: #697979;
             font-size: 14px;
             color: #FFF;
@@ -199,7 +199,7 @@
             margin-left: 5px;
 
             .openDropMenu {
-                display:block;
+                display: block;
                 border-radius: 6px;
                 line-height: 32px;
                 padding: 0 30px 0 10px;
@@ -256,10 +256,12 @@
                         &.room {
                             background-image: url('../images/bad.png');
                         }
-                        &.resolve{
+
+                        &.resolve {
                             background-image: url('../images/resolve.png');
                         }
-                        &.dismiss{
+
+                        &.dismiss {
                             background-image: url('../images/dismiss.png');
                         }
                     }
@@ -279,7 +281,8 @@
             position: relative;
             margin: 2px 5px 2px 0;
 
-            & > span, & > .select {
+            &>span,
+            &>.select {
                 border-radius: 4px;
                 border: 1px solid #a1adb0;
                 background-color: #FFF;
@@ -321,11 +324,12 @@
                 }
             }
 
-            & > .select {
+            &>.select {
                 padding: 0;
             }
 
-            ul, .scroll {
+            ul,
+            .scroll {
                 margin: 0;
                 border-radius: 4px;
                 background-color: #FFF;
@@ -379,7 +383,8 @@
                 background-color: #FFF;
                 border-radius: 6px 0 0 6px;
 
-                input[type="text"], select {
+                input[type="text"],
+                select {
                     height: 32px;
                     border: 0;
                     padding: 0 0 0 10px;
@@ -515,7 +520,7 @@
                                 width: 100%;
                                 height: 32px;
                                 border: 0;
-                                padding:  0 5px;
+                                padding: 0 5px;
                                 font-size: 12px;
                             }
                         }
@@ -651,6 +656,7 @@
         }
 
         &.select {
+
             img.svg,
             svg,
             img {
@@ -714,7 +720,7 @@
         float: left;
         width: 100%;
 
-        & > li {
+        &>li {
             padding: 0 6px;
             width: 20%;
             float: left;
@@ -803,7 +809,8 @@
         }
     }
 
-    .searchButton, .searchButtonRota {
+    .searchButton,
+    .searchButtonRota {
         background-color: $primaryColor;
         color: #FFF;
         border-radius: 4px;
@@ -1315,7 +1322,8 @@
         }
     }
 
-    .homeFloor, .settings {
+    .homeFloor,
+    .settings {
         float: right;
         line-height: 45px;
         margin-left: 30px;
@@ -1388,7 +1396,8 @@
             display: block;
         }
 
-        &>span, &>i {
+        &>span,
+        &>i {
             float: left;
             padding: 2px 5px;
             background-color: #FFCD60;
@@ -1425,7 +1434,8 @@
                 width: 100%;
                 padding: 3px;
 
-                &:before, &:after {
+                &:before,
+                &:after {
                     content: '';
                     display: block;
                 }
@@ -1452,7 +1462,9 @@
                 }
 
                 @keyframes rotate {
-                    100% { transform: rotate(360deg); }
+                    100% {
+                        transform: rotate(360deg);
+                    }
                 }
             }
 
@@ -1736,13 +1748,14 @@
         margin: 0 0 2px 12px;
         padding: 0;
 
-        span, a {
+        span,
+        a {
             display: block;
             padding: 2px 5px 2px 34px;
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(255, 255, 255, 0.2);
             color: #333;
             font-family: $secondaryFont;
-            text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
             background-repeat: no-repeat;
             background-size: 24px;
             background-position: left 5px center;
@@ -1753,7 +1766,7 @@
             &:after {
                 width: 0;
                 height: 0;
-                border-bottom: 28px solid rgba(255,255,255,0.2);
+                border-bottom: 28px solid rgba(255, 255, 255, 0.2);
                 border-right: 10px solid transparent;
                 content: '';
                 position: absolute;
@@ -1765,7 +1778,7 @@
             &:before {
                 width: 0;
                 height: 0;
-                border-top: 28px solid rgba(255,255,255,0.2);
+                border-top: 28px solid rgba(255, 255, 255, 0.2);
                 border-left: 10px solid transparent;
                 content: '';
                 position: absolute;
@@ -1776,14 +1789,18 @@
             }
         }
 
-        img, img.svg, svg {
+        img,
+        img.svg,
+        svg {
             height: 24px;
             width: 24px;
             left: 5px;
             position: absolute;
             top: 2px;
 
-            path, circle, polygon {
+            path,
+            circle,
+            polygon {
                 fill: #CB0000;
             }
         }
@@ -1791,7 +1808,8 @@
         &:first-child {
             margin-left: 0;
 
-            span, a {
+            span,
+            a {
                 &::before {
                     display: none;
                 }
@@ -1800,7 +1818,8 @@
 
         &:last-child {
 
-            span, a {
+            span,
+            a {
                 &::after {
                     display: none;
                 }
@@ -1821,15 +1840,17 @@
         }
 
         li {
-            span, a {
+
+            span,
+            a {
                 background-color: rgba($grayColor, 0.2);
 
                 &:after {
-                    border-bottom: 28px solid rgba($grayColor,0.2)
+                    border-bottom: 28px solid rgba($grayColor, 0.2)
                 }
 
                 &:before {
-                    border-top: 28px solid rgba($grayColor,0.2);
+                    border-top: 28px solid rgba($grayColor, 0.2);
                 }
             }
         }
@@ -1839,7 +1860,8 @@
         li {
             margin-left: 5px;
 
-            span, a {
+            span,
+            a {
                 padding: 0 0 0 2px;
 
                 &:before {
@@ -1849,7 +1871,9 @@
                 &:after {
                     display: none;
                 }
-                img, svg {
+
+                img,
+                svg {
                     display: none !important;
                 }
             }
@@ -1886,7 +1910,7 @@ hr {
         padding-right: 20px;
 
         .careplan_linked_changes {
-            height:42px;
+            height: 42px;
             position: relative;
             z-index: 2;
 
@@ -1945,7 +1969,8 @@ hr {
             }
         }
 
-        & > button, & > a {
+        &>button,
+        &>a {
             float: right;
             height: 42px;
             border-radius: 6px;
@@ -2037,7 +2062,10 @@ hr {
                         }
                     }
 
-                    input[type=text], select, textarea, .select2 {
+                    input[type=text],
+                    select,
+                    textarea,
+                    .select2 {
                         border-width: 1px;
                         border-color: rgba(161, 173, 176, .8);
                         border-style: solid;
@@ -2050,7 +2078,8 @@ hr {
                         z-index: 1;
                         float: left;
 
-                        &[name=dateRange], &.date {
+                        &[name=dateRange],
+                        &.date {
                             background-image: url('../images/calendar.png');
                             background-position: right 5px center;
                             background-repeat: no-repeat;
@@ -2112,7 +2141,7 @@ hr {
                 }
             }
 
-            & > button {
+            &>button {
                 background-color: #FFCD60;
                 height: 32px;
                 border-radius: 4px;
@@ -2191,7 +2220,9 @@ hr {
         position: relative;
 
         .diseases {
-            &~br, &~hr {
+
+            &~br,
+            &~hr {
                 display: none;
             }
         }
@@ -2221,7 +2252,8 @@ hr {
     .ctas {
         margin-top: 20px;
 
-        button, a {
+        button,
+        a {
             border-radius: 4px;
             background-color: rgba(78, 88, 104, 0.6);
             height: 40px;
@@ -2266,7 +2298,8 @@ hr {
         .group {
             margin-left: 10px;
 
-            button, a {
+            button,
+            a {
                 float: left;
                 border-radius: 0;
                 border-right: 1px solid darken(#7da7d9, 10%);
@@ -2320,12 +2353,13 @@ hr {
             }
         }
 
-        .freezeUser, .testServiceUser {
+        .freezeUser,
+        .testServiceUser {
             border-radius: 4px;
             background-color: rgb(255, 83, 96);
             height: 40px;
             padding: 0 10px;
-            margin:0 10px 0 0;
+            margin: 0 10px 0 0;
             line-height: 40px;
             font-size: 12px;
             font-family: $secondaryFont;
@@ -2398,7 +2432,8 @@ hr {
                 background-color: #6DC77A;
             }
 
-            &:before, &:after {
+            &:before,
+            &:after {
                 font-size: 12px;
                 position: absolute;
                 color: #3d4253;
@@ -3141,7 +3176,8 @@ hr {
         z-index: 2;
         position: relative;
 
-        &>a, &>span {
+        &>a,
+        &>span {
             background-color: #697979;
             font-size: 12px;
             color: #FFF;
@@ -3217,7 +3253,7 @@ hr {
                 height: 24px;
                 width: 36px;
                 border-radius: 12px;
-                background-color: rgba($grayColor,.4);
+                background-color: rgba($grayColor, .4);
                 float: left;
                 position: relative;
 
@@ -3328,7 +3364,8 @@ hr {
             position: relative;
             margin: 2px 5px 2px 0;
 
-            & > span, & > .select {
+            &>span,
+            &>.select {
                 border-radius: 4px;
                 border: 1px solid #a1adb0;
                 background-color: #FFF;
@@ -3370,11 +3407,12 @@ hr {
                 }
             }
 
-            & > .select {
+            &>.select {
                 padding: 0;
             }
 
-            ul, .scroll {
+            ul,
+            .scroll {
                 margin: 0;
                 border-radius: 4px;
                 background-color: #FFF;
@@ -3417,7 +3455,7 @@ hr {
             }
         }
 
-        & > button {
+        &>button {
             height: 28px;
             border-radius: 4px;
             background-color: #999;
@@ -3442,7 +3480,7 @@ hr {
             margin-top: 20px;
         }
 
-        & > .search {
+        &>.search {
             float: left;
             height: 32px;
             position: relative;
@@ -3460,7 +3498,8 @@ hr {
                 float: left;
                 background-color: #FFF;
 
-                input[type="text"], select {
+                input[type="text"],
+                select {
                     height: 32px;
                     border: 0;
                     padding: 0 0 0 10px;
@@ -3593,7 +3632,7 @@ hr {
                                 width: 100%;
                                 height: 32px;
                                 border: 0;
-                                padding:  0 5px;
+                                padding: 0 5px;
                                 font-size: 12px;
                             }
                         }
@@ -4582,11 +4621,11 @@ hr {
     }
 
     &.fixedHeader {
-        table-layout:fixed;
+        table-layout: fixed;
         padding-top: 36px;
 
         thead {
-            display:table;
+            display: table;
             position: fixed;
             z-index: 2;
             width: calc(100% - 305px);
@@ -4638,7 +4677,8 @@ hr {
             padding: 5px;
             border: 1px solid #DDD;
 
-            th, td {
+            th,
+            td {
                 padding: 5px;
                 border: 1px solid #DDD;
             }
@@ -7079,7 +7119,7 @@ hr {
                     }
 
                     &.disabled {
-                        & + label {
+                        &+label {
                             opacity: 0.4;
                         }
                     }
@@ -8687,7 +8727,7 @@ hr {
     }
 
     .staffQR {
-        & > div {
+        &>div {
             width: calc(calc(100% - 70px) / 2);
             margin: 10px;
             float: left;
@@ -8733,7 +8773,7 @@ hr {
                 height: 125px;
                 padding: 5px 75px 5px 5px;
 
-                & > img {
+                &>img {
                     width: auto;
                     height: 75px;
                     position: absolute;
@@ -8759,7 +8799,7 @@ hr {
             &.back {
                 display: table;
 
-                & > div {
+                &>div {
                     display: table-cell;
                     text-align: center;
                     vertical-align: middle;
@@ -9238,7 +9278,8 @@ hr {
                             color: #223e4c;
                         }
 
-                        img, svg {
+                        img,
+                        svg {
                             display: none;
                         }
 
@@ -11871,7 +11912,8 @@ hr {
                                 display: none;
                             }
 
-                            .title, .designation {
+                            .title,
+                            .designation {
                                 display: block;
                                 line-height: 1;
                             }
@@ -11906,12 +11948,12 @@ hr {
                 &.printRota {
                     .board-inner {
                         &.header {
-                            & > li {
+                            &>li {
                                 height: auto;
                             }
                         }
 
-                        & > li {
+                        &>li {
                             height: 50px;
 
                             .info {
@@ -13217,6 +13259,7 @@ hr {
     &.rotate {
         transform: rotateX(180deg);
         border-color: $orangeColor;
+
         .title {
             transform: rotateX(180deg);
         }
@@ -15199,7 +15242,8 @@ hr {
                     margin-left: 30px;
                 }
 
-                &:nth-of-type(3), &:nth-of-type(5) {
+                &:nth-of-type(3),
+                &:nth-of-type(5) {
                     &:after {
                         content: "}";
                     }
@@ -15226,7 +15270,9 @@ hr {
         height: calc(100% - 262px);
         margin-bottom: 15px;
 
-        .careRoutineAnalysis, .andi, .careProvided {
+        .careRoutineAnalysis,
+        .andi,
+        .careProvided {
             height: 100%;
             float: left;
             margin-left: 20px;
@@ -15268,16 +15314,16 @@ hr {
         .careRoutineAnalysis {
             width: calc(calc(100% - 60px) / 100 * 35);
             margin-left: 0;
-            background-color: rgba(#878787,0.7);
+            background-color: rgba(#878787, 0.7);
         }
 
         .andi {
             width: calc(calc(100% - 60px) / 100 * 22);
-            background-color: rgba(#A08794,0.7);
+            background-color: rgba(#A08794, 0.7);
 
             article {
                 height: 100%;
-                background-color: rgba(0,0,0,0.1);
+                background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 10px;
                 box-shadow: 2px 3.464px 18px 0 rgba(120, 133, 149, 0.4);
                 padding-top: 20px;
@@ -15377,7 +15423,7 @@ hr {
 
         .careProvided {
             width: calc(calc(100% - 60px) / 100 * 24);
-            background-color: rgba(#BB7E8C,0.7);
+            background-color: rgba(#BB7E8C, 0.7);
             position: relative;
 
             .settings {
@@ -15508,7 +15554,7 @@ hr {
                         top: 10px;
 
                         i {
-                            position:absolute;
+                            position: absolute;
                             width: 9px;
                             border-radius: 4.5px;
                             bottom: 0;
@@ -15727,7 +15773,8 @@ hr {
             position: relative;
         }
 
-        .upcomingBirthdays, .AnI {
+        .upcomingBirthdays,
+        .AnI {
             background-color: #69BB9F;
             position: relative;
             border-radius: 10px;
@@ -19347,7 +19394,7 @@ hr {
                 font-weight: 500;
             }
 
-            & > div {
+            &>div {
                 color: #666;
                 padding: 15px;
                 height: calc(100% - 60px);
@@ -22047,9 +22094,9 @@ hr {
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
         transition: 0.4s linear;
         transition-property: width,
-        background-color;
+            background-color;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25),
-        inset 0 1px rgba(255, 255, 255, 0.1);
+            inset 0 1px rgba(255, 255, 255, 0.1);
         position: relative;
         width: 10%;
 
@@ -24143,26 +24190,26 @@ hr {
             cursor: pointer;
             list-style: none;
 
-            & > i {
+            &>i {
                 display: none;
                 z-index: 10;
             }
 
             &.absent_sick_leave {
-                & > i {
+                &>i {
                     display: block;
                     position: absolute;
                     left: 0;
                     top: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(#CB0000,0.4);
+                    background-color: rgba(#CB0000, 0.4);
                     pointer-events: none;
                 }
             }
 
             &.annual_leave_type {
-                & > i {
+                &>i {
                     display: block;
                     position: absolute;
                     left: 0;
@@ -25451,6 +25498,7 @@ hr {
         }
     }
 }
+
 .deviceNotChecked {
     border-color: rgba(203, 0, 0, .3);
     background: rgba(203, 0, 0, .1);
@@ -29378,7 +29426,8 @@ hr {
                                 background-size: contain;
                             }
 
-                            &:nth-child(7), &:nth-child(8) {
+                            &:nth-child(7),
+                            &:nth-child(8) {
                                 width: 30px;
                             }
 
@@ -29639,7 +29688,7 @@ hr {
             border-radius: 4px;
             position: relative;
 
-            & > div {
+            &>div {
                 section {
                     padding: 15px;
                 }
@@ -30599,6 +30648,42 @@ hr {
                         }
                     }
 
+                    &:nth-child(15) {
+                        a {
+                            background-image: url("../images/Change-of-details.png");
+                        }
+                    }
+
+                    &:nth-child(16) {
+                        a {
+                            background-image: url("../images/Message-Center.png");
+                        }
+                    }
+
+                    &:nth-child(17) {
+                        a {
+                            background-image: url("../images/House-keeping.png");
+                        }
+                    }
+
+                    &:nth-child(18) {
+                        a {
+                            background-image: url("../images/Maintenance.png");
+                        }
+                    }
+
+                    &:nth-child(19) {
+                        a {
+                            background-image: url("../images/Payrate-Control.png");
+                        }
+                    }
+
+                    &:nth-child(20) {
+                        a {
+                            background-image: url("../images/emloyee-detail-report.png");
+                        }
+                    }
+
                     &.active {
                         a {
                             background-color: rgba(#f9f9f9, 0.1);
@@ -30641,7 +30726,7 @@ hr {
                 li {
                     &:first-child {
                         a {
-                            background-image: linear-gradient( to right, rgb(75,230,207) 0%, rgb(212,248,174) 100%);
+                            background-image: linear-gradient(to right, rgb(75, 230, 207) 0%, rgb(212, 248, 174) 100%);
                             background-size: cover;
                             border-radius: 6px;
                             color: #161D21;
@@ -30775,7 +30860,7 @@ hr {
 
             &:last-of-type {
                 &>span {
-                    background-image: linear-gradient( 45deg, rgb(67,234,128) 0%, rgb(56,248,212) 100%);
+                    background-image: linear-gradient(45deg, rgb(67, 234, 128) 0%, rgb(56, 248, 212) 100%);
                     padding: 0 10px 0 30px;
                     font-weight: 700;
                     color: #333;
@@ -31153,20 +31238,22 @@ hr {
                             display: block;
                         }
 
-                        input[type=text], select {
+                        input[type=text],
+                        select {
                             border-width: 1px;
-                            border-color: rgba(161, 173, 176,.8);
+                            border-color: rgba(161, 173, 176, .8);
                             border-style: solid;
                             border-radius: 4px;
                             width: 100%;
                             height: 34px;
                             padding: 0 10px;
-                            box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                            box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
                             background-color: #FFF;
                             position: relative;
                             z-index: 1;
 
-                            &[name=dateRange], &.date {
+                            &[name=dateRange],
+                            &.date {
                                 background-image: url('../images/calendar.png');
                                 background-position: right 5px center;
                                 background-repeat: no-repeat;
@@ -31224,7 +31311,7 @@ hr {
                 &+table {
                     background-color: #FFF;
                     border-radius: 4px;
-                    margin:0 0 0 10px;
+                    margin: 0 0 0 10px;
                     width: calc(100% - 30px) !important;
                 }
             }
@@ -31678,12 +31765,13 @@ hr {
             opacity: 1;
 
             img {
-                height:100%;
+                height: 100%;
                 width: 100%;
                 display: none;
             }
 
-            &:hover, &:hover~label {
+            &:hover,
+            &:hover~label {
                 opacity: 1;
             }
 
@@ -31841,7 +31929,7 @@ hr {
                 }
             }
 
-            & + section {
+            &+section {
                 height: calc(100% - 490px);
                 overflow: hidden;
                 position: relative;
@@ -31892,7 +31980,9 @@ hr {
                             padding: 5px 34px 5px 0;
                             margin-bottom: 5px;
 
-                            img, img.svg, svg {
+                            img,
+                            img.svg,
+                            svg {
                                 position: absolute;
                                 right: 0;
                                 height: 24px;
@@ -32136,7 +32226,7 @@ hr {
         .buttons {
             height: 50px;
             padding: 5px;
-            background-color: rgba(#FFF,.5);
+            background-color: rgba(#FFF, .5);
             position: relative;
             float: left;
             margin: 0;
@@ -32144,7 +32234,7 @@ hr {
             &:after {
                 width: 0;
                 height: 0;
-                border-bottom: 50px solid rgba(#FFF,.5);
+                border-bottom: 50px solid rgba(#FFF, .5);
                 border-right: 13px solid transparent;
                 content: '';
                 position: absolute;
@@ -32249,7 +32339,7 @@ hr {
                                 left: 3px;
                                 top: 3px;
                                 content: '';
-                                box-shadow: 1px 2px 5px rgba(0, 0, 0,.2);
+                                box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
                             }
                         }
 
@@ -32472,6 +32562,7 @@ hr {
                             }
                         }
                     }
+
                     &:first-child {
                         a {
                             border: 0;
@@ -32480,7 +32571,9 @@ hr {
 
                     &.reviewed {
                         a {
-                            &:before, &:after {
+
+                            &:before,
+                            &:after {
                                 background-color: #d0e9c6;
                             }
                         }
@@ -32489,7 +32582,9 @@ hr {
 
                     &.duetoreview {
                         a {
-                            &:before, &:after {
+
+                            &:before,
+                            &:after {
                                 background-color: #D4AAAC;
                             }
                         }
@@ -32497,7 +32592,9 @@ hr {
 
                     &.notenoughdetail {
                         a {
-                            &:before, &:after {
+
+                            &:before,
+                            &:after {
                                 background-color: #F7E900;
                             }
                         }
@@ -32544,7 +32641,7 @@ hr {
                                 }
 
                                 &:nth-of-type(2) {
-                                    transform: translate(10px ,0);
+                                    transform: translate(10px, 0);
                                     height: 32px;
                                     width: 32px;
                                 }
@@ -32819,7 +32916,8 @@ hr {
                             display: block;
                         }
 
-                        &:first-of-type, &:nth-of-type(2) {
+                        &:first-of-type,
+                        &:nth-of-type(2) {
                             width: 110px;
                         }
 
@@ -32942,7 +33040,9 @@ hr {
                     }
 
                     .scroll-wrapper {
-                        &:nth-of-type(2), &:nth-of-type(3) {
+
+                        &:nth-of-type(2),
+                        &:nth-of-type(3) {
                             height: calc(calc(100% - 40px) / 2);
 
                             .warningsTab {
@@ -33153,7 +33253,8 @@ hr {
                         }
                     }
 
-                    .name, .designation {
+                    .name,
+                    .designation {
                         display: block;
                         padding: 0 0 0 65px;
                         overflow: hidden;
@@ -33257,7 +33358,8 @@ hr {
                         bottom: auto;
                     }
 
-                    .shift, .shiftime {
+                    .shift,
+                    .shiftime {
                         background-color: transparent;
                         padding: 0;
                         margin: 0;
@@ -33337,7 +33439,8 @@ hr {
                             display: none;
                         }
 
-                        .name, .designation {
+                        .name,
+                        .designation {
                             padding: 0;
                         }
 
@@ -33449,7 +33552,7 @@ hr {
 
     .toast {
         background-color: #FFF;
-        box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
         margin: 0 auto 5px;
         width: 400px;
 
@@ -33550,7 +33653,7 @@ hr {
     margin: 0 0 20px;
     position: relative;
 
-    & > .title {
+    &>.title {
         position: absolute;
         top: 9px;
         left: 10px;
@@ -33609,8 +33712,9 @@ hr {
                     color: #1f262a;
                 }
 
-                &:nth-child(1), &:nth-child(2) {
-                    background-color: rgba(0,0,0,.1);
+                &:nth-child(1),
+                &:nth-child(2) {
+                    background-color: rgba(0, 0, 0, .1);
                     padding: 0 5px;
                     margin-right: 20px;
 
@@ -33682,7 +33786,7 @@ hr {
     .handover_residents_new {
         margin: 0;
 
-        & > li {
+        &>li {
             border-top: 1px solid #a4a9a9;
             padding-top: 10px;
             margin-bottom: 10px;
@@ -33779,11 +33883,11 @@ hr {
                 float: left;
                 width: calc(100% - 175px);
 
-                & > ul {
+                &>ul {
                     margin: 0;
                     width: 100%;
 
-                    & > li {
+                    &>li {
                         float: left;
                         width: calc(calc(60% - 30px) / 3);
                         margin-left: 10px;
@@ -33925,7 +34029,7 @@ hr {
 
                         input[type="checkBox"] {
                             &:checked {
-                                & + label {
+                                &+label {
                                     background-color: $primaryColor;
                                     background-image: url('../images/handoverNotecheckbox.png');
                                     background-position: center;
@@ -33968,7 +34072,7 @@ hr {
                 padding: 5px 10px;
 
                 &.hasError {
-                    background-color: rgba(237,28,36,0.4);
+                    background-color: rgba(237, 28, 36, 0.4);
                 }
             }
         }
@@ -34112,7 +34216,7 @@ button.newStyle {
             .form-group {
                 min-height: 0;
 
-                & > label {
+                &>label {
                     display: block;
                     font-size: 12px;
                     text-transform: uppercase;
@@ -34168,7 +34272,7 @@ button.newStyle {
 
                     input[type=radio] {
                         &:checked {
-                            & + label {
+                            &+label {
                                 &:after {
                                     display: block;
                                 }
@@ -34186,27 +34290,28 @@ button.newStyle {
     height: calc(100% - 50px);
     margin-bottom: 10px;
 
-    & > section, & > aside {
+    &>section,
+    &>aside {
         position: absolute;
         top: 0;
         bottom: 0;
     }
 
-    & > section {
+    &>section {
         left: 0;
         width: calc(100% - 285px);
     }
 
-    & > aside {
+    &>aside {
         right: 0;
         width: 275px;
         background-color: rgba(#828787, .3);
 
         .scroll-content {
-            & > div {
+            &>div {
                 padding: 10px 15px;
 
-                & > .title {
+                &>.title {
                     color: #1f262a;
                     font-size: 16px;
                     font-family: $secondaryFont;
@@ -34264,7 +34369,7 @@ button.newStyle {
 
                         input[type="radio"] {
                             &:checked {
-                                & + label {
+                                &+label {
                                     &:after {
                                         display: block;
                                     }
@@ -34300,7 +34405,8 @@ button.newStyle {
                         margin: 0;
                     }
 
-                    input[type="text"], input[type="password"] {
+                    input[type="text"],
+                    input[type="password"] {
                         border-width: 1px;
                         border-color: rgb(204, 204, 204);
                         border-style: solid;
@@ -34355,7 +34461,7 @@ button.newStyle {
                         display: table;
                         margin-bottom: 10px;
 
-                        & > span {
+                        &>span {
                             display: table-cell;
                             vertical-align: middle;
                             height: 40px;
@@ -34380,7 +34486,8 @@ button.newStyle {
                         }
                     }
 
-                    .empName, .serviceUserName {
+                    .empName,
+                    .serviceUserName {
                         background-color: rgba(#1f262a, .8);
                         position: absolute;
                         bottom: 50px;
@@ -34428,7 +34535,7 @@ button.newStyle {
 
                         input[type="radio"]:first-of-type {
                             &:checked {
-                                & + label {
+                                &+label {
                                     border-color: rgb(108, 195, 121);
                                     background-color: rgb(109, 199, 122);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34439,7 +34546,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(2) {
                             &:checked {
-                                & + label {
+                                &+label {
                                     border-color: rgb(97, 132, 158);
                                     background-color: rgb(100, 141, 172);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34450,7 +34557,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(3) {
                             &:checked {
-                                & + label {
+                                &+label {
                                     border-color: rgb(237, 165, 82);
                                     background-color: rgb(248, 147, 29);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34461,7 +34568,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(4) {
                             &:checked {
-                                & + label {
+                                &+label {
                                     border-color: rgb(148, 151, 151);
                                     background-color: rgb(130, 135, 135);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34474,7 +34581,8 @@ button.newStyle {
             }
         }
 
-        &.emps, &.hoServiceUsers {
+        &.emps,
+        &.hoServiceUsers {
             ul {
                 li {
                     article {
@@ -34666,7 +34774,7 @@ button.newStyle {
 
         input[type="checkbox"] {
             &:checked {
-                & + .checkbox-label {
+                &+.checkbox-label {
                     background-color: #5d6a72;
 
                     &:before {
@@ -34772,7 +34880,7 @@ button.newStyle {
         }
     }
 
-    & + .graphCareRoutines {
+    &+.graphCareRoutines {
         position: absolute;
         top: 42px;
         height: calc(100% - 47px);
@@ -34830,7 +34938,8 @@ button.newStyle {
     }
 }
 
-.saveAssessment, .saveAssessment + a  {
+.saveAssessment,
+.saveAssessment+a {
     background-color: $primaryColor;
     border-radius: 4px;
     padding: 2px 5px;
@@ -35266,7 +35375,7 @@ button.newStyle {
                             top: 10px;
 
                             i {
-                                position:absolute;
+                                position: absolute;
                                 width: 9px;
                                 border-radius: 4.5px;
                                 bottom: 0;
@@ -35429,7 +35538,8 @@ button.newStyle {
                     font-size: 14px;
                 }
 
-                &>a, .settings {
+                &>a,
+                .settings {
                     display: none;
                 }
 
@@ -35608,10 +35718,10 @@ button.newStyle {
         transform-style: preserve-3d;
 
         .face {
-            width:100%;
-            height:100%;
-            position:absolute;
-            backface-visibility:hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
 
             &.back {
                 transform: rotateY(180deg);
@@ -35722,7 +35832,8 @@ button.newStyle {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(40, 39, 44, 0.9);;
+    background-color: rgba(40, 39, 44, 0.9);
+    ;
     z-index: 1000;
     display: none;
 
@@ -35739,7 +35850,8 @@ button.newStyle {
             overflow-y: auto;
         }
 
-        .popupContainer, .secondary {
+        .popupContainer,
+        .secondary {
             width: 525px;
             min-height: 325px;
             display: inline-block;
@@ -36069,7 +36181,7 @@ button.newStyle {
 
             &.designation {
                 font-size: 14px;
-                color: rgba(0,0,0,.7);
+                color: rgba(0, 0, 0, .7);
                 text-transform: uppercase;
             }
         }
@@ -36166,7 +36278,8 @@ button.newStyle {
                     border-right: none;
                 }
 
-                &:before, &:after {
+                &:before,
+                &:after {
                     content: '';
                     position: absolute;
                     transition: inherit;
@@ -36228,7 +36341,8 @@ button.newStyle {
         font-style: italic;
     }
 
-    input[type='text'], button {
+    input[type='text'],
+    button {
         float: left;
         margin-right: 5px;
     }
@@ -36505,7 +36619,7 @@ button.newStyle {
     .alertsList {
         border-radius: 6px;
         padding: 5px 10px;
-        background-color: rgba(#828787,.1);
+        background-color: rgba(#828787, .1);
         margin: 0 0 10px 0;
 
         label {
@@ -36545,7 +36659,8 @@ button.newStyle {
                 float: left;
                 padding-right: 20px;
 
-                i, span {
+                i,
+                span {
                     display: block;
                     white-space: nowrap;
                     overflow: hidden;
@@ -36594,33 +36709,33 @@ button.newStyle {
                     border-color: rgb(220, 223, 230);
                     border-style: solid;
                     border-radius: 4px;
-                    background-image: linear-gradient( 90deg, rgb(236,237,234) 0%, rgb(248,248,246) 50%, rgb(220,219,216) 100%);
+                    background-image: linear-gradient(90deg, rgb(236, 237, 234) 0%, rgb(248, 248, 246) 50%, rgb(220, 219, 216) 100%);
                     height: 18px;
                     float: left;
                     margin-top: 4px;
 
                     samp {
                         border-radius: 4px;
-                        background-image: linear-gradient( 45deg, rgba(199,206,216,0.99608) 0%, rgb(159,170,183) 100%);
+                        background-image: linear-gradient(45deg, rgba(199, 206, 216, 0.99608) 0%, rgb(159, 170, 183) 100%);
                         height: 12px;
-                        float:left;
+                        float: left;
                         width: 26px;
                         margin: 1px;
                         opacity: .2;
 
                         &.complete {
                             opacity: 1;
-                            background-image: linear-gradient( 45deg, rgb(119,118,255) 0%, rgb(174,44,241) 100%);
+                            background-image: linear-gradient(45deg, rgb(119, 118, 255) 0%, rgb(174, 44, 241) 100%);
                         }
 
                         &.workingOnIt {
                             opacity: 1;
-                            background-image: linear-gradient( 45deg, rgba(233,199,154,0.99608) 0%, rgb(231,189,136) 100%);
+                            background-image: linear-gradient(45deg, rgba(233, 199, 154, 0.99608) 0%, rgb(231, 189, 136) 100%);
                         }
 
                         &.disabled {
                             opacity: 1;
-                            background-image: linear-gradient( 45deg, rgb(208,146,146) 0%, rgb(200,34,112) 100%);
+                            background-image: linear-gradient(45deg, rgb(208, 146, 146) 0%, rgb(200, 34, 112) 100%);
                         }
                     }
                 }
@@ -36649,7 +36764,7 @@ button.newStyle {
         height: 28px;
 
         li {
-            float:left;
+            float: left;
             border-style: solid;
             border-width: 0 1px;
             border-left-color: #9FA7A7;
@@ -36727,7 +36842,7 @@ button.newStyle {
 
             &:before {
                 border-radius: 4px;
-                background-image: linear-gradient( 45deg, rgb(119,118,255) 0%, rgb(174,44,241) 100%);
+                background-image: linear-gradient(45deg, rgb(119, 118, 255) 0%, rgb(174, 44, 241) 100%);
                 height: 12px;
                 width: 26px;
                 position: absolute;
@@ -36739,19 +36854,19 @@ button.newStyle {
 
             &:nth-child(2) {
                 &:before {
-                    background-image: linear-gradient( 45deg, rgba(233,199,154,0.99608) 0%, rgb(231,189,136) 100%);
+                    background-image: linear-gradient(45deg, rgba(233, 199, 154, 0.99608) 0%, rgb(231, 189, 136) 100%);
                 }
             }
 
             &:nth-child(3) {
                 &:before {
-                    background-image: linear-gradient( 45deg, rgb(208,146,146) 0%, rgb(200,34,112) 100%);
+                    background-image: linear-gradient(45deg, rgb(208, 146, 146) 0%, rgb(200, 34, 112) 100%);
                 }
             }
 
             &:nth-child(4) {
                 &:before {
-                    background-image: linear-gradient( 45deg, rgba(199,206,216,0.99608) 0%, rgb(159,170,183) 100%);
+                    background-image: linear-gradient(45deg, rgba(199, 206, 216, 0.99608) 0%, rgb(159, 170, 183) 100%);
                 }
             }
         }
@@ -36818,27 +36933,31 @@ button.newStyle {
             height: 18px;
             width: 18px;
             left: 0;
-            background-color: rgba(#C3C3C3,0.4);
+            background-color: rgba(#C3C3C3, 0.4);
         }
 
         &:nth-child(2) {
             &:before {
-                background-color: rgba(#FFF753,0.4);
+                background-color: rgba(#FFF753, 0.4);
             }
         }
+
         &:nth-child(3) {
             &:before {
-                background-color: rgba(#F36B72,0.4);
+                background-color: rgba(#F36B72, 0.4);
             }
         }
+
         &:nth-child(4) {
             margin-right: 30px;
 
             &:before {
-                background-color: rgba(#B5E61D,0.4);
+                background-color: rgba(#B5E61D, 0.4);
             }
         }
-        &:nth-child(5), &:nth-child(6) {
+
+        &:nth-child(5),
+        &:nth-child(6) {
             padding-left: 0;
             text-transform: none;
 
@@ -36926,7 +37045,8 @@ button.newStyle {
                     padding: 10px 0;
                     border-top: 1px solid #DDD;
 
-                    &:nth-child(1), &:nth-child(2) {
+                    &:nth-child(1),
+                    &:nth-child(2) {
                         border-top: 0;
                     }
 
@@ -36968,7 +37088,9 @@ button.newStyle {
                         width: 100%;
 
                         tr {
-                            th, td {
+
+                            th,
+                            td {
                                 padding: 5px;
                             }
 
@@ -37039,7 +37161,7 @@ button.newStyle {
             label {
                 float: right;
                 width: 28px;
-                height: 18px ;
+                height: 18px;
                 border-radius: 9px;
                 background-color: #acb6b6;
                 position: relative;
@@ -37710,7 +37832,8 @@ button.newStyle {
                     }
                 }
 
-                input[type="text"], input[type="password"] {
+                input[type="text"],
+                input[type="password"] {
                     border: 1px solid #a1adb0;
                     border-radius: 4px;
                     height: 42px;
@@ -37757,7 +37880,8 @@ button.newStyle {
             margin-top: 10px;
             margin-left: 10px;
 
-            &:nth-of-type(1), &:nth-of-type(2) {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
                 margin-top: 0;
             }
 
@@ -37835,12 +37959,12 @@ button.newStyle {
         vertical-align: middle;
         height: 40px;
         color: #FFF;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         font-weight: 700;
 
         &:first-child {
             width: 150px;
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(255, 255, 255, 0.8);
             font-family: $secondaryFont;
             font-weight: 400;
             color: #666;
@@ -38080,9 +38204,9 @@ input[type=checkbox].switch {
 
                         &:nth-of-type(3) {
                             border-width: 2px;
-                            border-color: rgba(130, 135, 135,0.2);
+                            border-color: rgba(130, 135, 135, 0.2);
                             border-style: solid;
-                            background-color: rgba(242, 242, 242,0.2);
+                            background-color: rgba(242, 242, 242, 0.2);
                         }
 
                         .columns {
@@ -38098,6 +38222,7 @@ input[type=checkbox].switch {
                                     width: calc(100% / 3);
                                 }
                             }
+
                             &.col2 {
                                 li {
                                     width: calc(100% / 2);
@@ -38628,7 +38753,7 @@ input[type=checkbox].switch {
                             text-transform: uppercase;
 
                             &:after {
-                                display:none;
+                                display: none;
                             }
                         }
 
@@ -38646,7 +38771,8 @@ input[type=checkbox].switch {
                                 font-style: normal;
                             }
 
-                            &:nth-of-type(2), &:nth-of-type(3) {
+                            &:nth-of-type(2),
+                            &:nth-of-type(3) {
                                 margin-bottom: 10px;
                             }
 
@@ -38668,7 +38794,9 @@ input[type=checkbox].switch {
                             }
                         }
 
-                        &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                        &:nth-of-type(2),
+                        &:nth-of-type(3),
+                        &:nth-of-type(4) {
                             .title {
                                 color: #FFF;
                             }
@@ -38719,7 +38847,8 @@ input[type=checkbox].switch {
                             .contentTitle {
                                 float: left;
 
-                                &:nth-of-type(2), &:nth-of-type(3) {
+                                &:nth-of-type(2),
+                                &:nth-of-type(3) {
                                     width: 20%;
                                 }
 
@@ -38836,11 +38965,16 @@ input[type=checkbox].switch {
                         }
                     }
 
-                    .listWarnings, .listAlerts, .dnacpr, .newsScore, .respect {
+                    .listWarnings,
+                    .listAlerts,
+                    .dnacpr,
+                    .newsScore,
+                    .respect {
                         display: inline-block;
                     }
 
-                    .listWarnings, .listAlerts {
+                    .listWarnings,
+                    .listAlerts {
                         cursor: pointer;
                         font-size: 16px;
                         font-family: $secondaryFont;
@@ -38872,7 +39006,9 @@ input[type=checkbox].switch {
                         }
                     }
 
-                    .dnacpr, .newsScore, .respect {
+                    .dnacpr,
+                    .newsScore,
+                    .respect {
                         font-size: 16px;
                         color: rgb(250, 250, 252);
                         font-weight: bold;
@@ -39040,7 +39176,9 @@ input[type=checkbox].switch {
                         cursor: pointer;
                     }
 
-                    .postFallAlert, .fluidAlert, .noDailyNotes {
+                    .postFallAlert,
+                    .fluidAlert,
+                    .noDailyNotes {
                         float: left;
                         height: 24px;
                         width: 24px;
@@ -39052,6 +39190,7 @@ input[type=checkbox].switch {
                             width: 100%;
                         }
                     }
+
                     @keyframes blink-animation {
                         to {
                             visibility: hidden;
@@ -39159,7 +39298,7 @@ input[type=checkbox].switch {
         line-height: 14px;
         float: left;
         text-align: center;
-        text-shadow: 0.5px 0.866px 2px rgba(0,0,0, 0.7);
+        text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.7);
         margin-right: 5px;
         padding-top: 8px;
 
@@ -39216,7 +39355,8 @@ input[type=checkbox].switch {
             margin-right: 65px;
         }
 
-        &:nth-of-type(3), &:nth-of-type(5) {
+        &:nth-of-type(3),
+        &:nth-of-type(5) {
             &:after {
                 content: "}";
             }
@@ -39555,17 +39695,22 @@ input[type=checkbox].switch {
                             }
                         }
 
-                        input[type=text], input[type=password], select, textarea, .uploadImg {
+                        input[type=text],
+                        input[type=password],
+                        select,
+                        textarea,
+                        .uploadImg {
                             border-width: 1px;
-                            border-color: rgba(161, 173, 176,.8);
+                            border-color: rgba(161, 173, 176, .8);
                             border-style: solid;
                             border-radius: 4px;
                             width: 100%;
                             height: 34px;
                             padding: 0 10px;
-                            box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                            box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
 
-                            &[name=dateRange], &.date {
+                            &[name=dateRange],
+                            &.date {
                                 background-image: url('../images/calendar.png');
                                 background-position: right 10px center;
                                 background-repeat: no-repeat;
@@ -39718,7 +39863,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                & > img {
+                &>img {
                     width: 100%;
                     margin-bottom: 20px;
                 }
@@ -40074,7 +40219,9 @@ input[type=checkbox].switch {
                             margin: 0;
                         }
 
-                        input[type=text], select, input[type=file]  {
+                        input[type=text],
+                        select,
+                        input[type=file] {
                             border-width: 1px;
                             border-color: $grayColor;
                             border-style: solid;
@@ -40337,7 +40484,8 @@ input[type=checkbox].switch {
                                     font-weight: 400;
                                 }
 
-                                input[type=text], select {
+                                input[type=text],
+                                select {
                                     border-width: 1px;
                                     border-color: $grayColor;
                                     border-style: solid;
@@ -40535,7 +40683,7 @@ input[type=checkbox].switch {
                 display: grid;
                 place-items: center;
                 background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-                conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+                    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: calc(var(--size) / 5);
                 color: var(--fg);
@@ -40743,7 +40891,7 @@ input[type=checkbox].switch {
     article {
         border-radius: 6px;
         padding: 5px 10px;
-        background-color: rgba(#828787,.1);
+        background-color: rgba(#828787, .1);
         margin: 0 0 10px 0;
 
         label {
@@ -40784,7 +40932,8 @@ input[type=checkbox].switch {
                 padding-right: 20px;
                 position: relative;
 
-                i, span {
+                i,
+                span {
                     display: block;
                     white-space: nowrap;
                     overflow: hidden;
@@ -40804,7 +40953,10 @@ input[type=checkbox].switch {
                     font-family: $secondaryFont;
                 }
 
-                .view, .delete, .gear, .print {
+                .view,
+                .delete,
+                .gear,
+                .print {
                     float: left;
                     width: 24px;
                     height: 24px;
@@ -40905,7 +41057,8 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &:nth-last-child(2), &:last-child {
+                &:nth-last-child(2),
+                &:last-child {
                     padding-right: 0;
                 }
             }
@@ -41017,18 +41170,22 @@ input[type=checkbox].switch {
                     top: 27px;
                 }
 
-                input[type=text], select, textarea, .select2 {
+                input[type=text],
+                select,
+                textarea,
+                .select2 {
                     border-width: 1px;
-                    border-color: rgba(161, 173, 176,.8);
+                    border-color: rgba(161, 173, 176, .8);
                     border-style: solid;
                     border-radius: 4px;
                     width: 100%;
                     height: 46px;
                     padding: 0 10px;
-                    box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                    box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
                     background-color: #FFF;
 
-                    &[name=dateRange], &.econsentDateRange {
+                    &[name=dateRange],
+                    &.econsentDateRange {
                         background-image: url('../images/calendar.png');
                         background-position: right 10px center;
                         background-repeat: no-repeat;
@@ -41533,15 +41690,18 @@ input[type=checkbox].switch {
                     top: 27px;
                 }
 
-                input[type=text], select, textarea, .uploadImg {
+                input[type=text],
+                select,
+                textarea,
+                .uploadImg {
                     border-width: 1px;
-                    border-color: rgba(161, 173, 176,.8);
+                    border-color: rgba(161, 173, 176, .8);
                     border-style: solid;
                     border-radius: 4px;
                     width: 100%;
                     height: 34px;
                     padding: 0 10px;
-                    box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                    box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
 
                     &[name=dateRange] {
                         background-image: url('../images/calendar.png');
@@ -42524,10 +42684,10 @@ input[type=checkbox].switch {
 
     li {
         border-width: 2px;
-        border-color: rgba(61, 66, 83,0.2);
+        border-color: rgba(61, 66, 83, 0.2);
         border-style: solid;
         border-radius: 6px;
-        background-color: rgba(132, 136, 137,0.2) !important;
+        background-color: rgba(132, 136, 137, 0.2) !important;
         height: 100%;
         position: absolute;
         left: 0;
@@ -42863,7 +43023,8 @@ input[type=checkbox].switch {
                         background-image: url('../images/note.png');
                     }
 
-                    &.edit, &.edit_all {
+                    &.edit,
+                    &.edit_all {
                         background-image: url('../images/edit.png');
                     }
 
@@ -42935,6 +43096,7 @@ input[type=checkbox].switch {
                         border: 0;
                         padding: 0 5px;
                     }
+
                     label {
                         cursor: pointer;
                         padding: 9px 0 9px 5px;
@@ -43156,7 +43318,8 @@ input[type=checkbox].switch {
 .newForm {
     display: block;
 
-    &>.title, &>div>.title {
+    &>.title,
+    &>div>.title {
         display: block;
         font-size: 14px;
         color: #223E4C;
@@ -43228,7 +43391,8 @@ input[type=checkbox].switch {
                 display: none;
             }
 
-            &:before, &:after {
+            &:before,
+            &:after {
                 position: absolute;
                 width: 0;
                 height: 0;
@@ -43310,20 +43474,26 @@ input[type=checkbox].switch {
                 top: -2px;
             }
 
-            input[type=text], select, textarea, .select2, input[type=email], input[type=password] {
+            input[type=text],
+            select,
+            textarea,
+            .select2,
+            input[type=email],
+            input[type=password] {
                 border-width: 1px;
-                border-color: rgba(161, 173, 176,.8);
+                border-color: rgba(161, 173, 176, .8);
                 border-style: solid;
                 border-radius: 4px;
                 width: 100%;
                 height: 34px;
                 padding: 0 10px;
-                box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
                 background-color: #FFF;
                 position: relative;
                 z-index: 1;
 
-                &[name=dateRange], &.date {
+                &[name=dateRange],
+                &.date {
                     background-image: url('../images/calendar.png');
                     background-position: right 5px center;
                     background-repeat: no-repeat;
@@ -43593,13 +43763,13 @@ input[type=checkbox].switch {
             input[type=file] {
                 display: none;
 
-                & + label {
+                &+label {
                     display: inline-block;
                     border-radius: 4px;
                     height: 34px;
                     line-height: 34px;
                     padding: 0 10px;
-                    box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+                    box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
                     background-color: #414556;
                     color: #DCDEDE;
                     font-size: 14px;
@@ -43640,7 +43810,8 @@ input[type=checkbox].switch {
         padding: 5px 5px 0 5px;
         position: relative;
 
-        &>.title, &>div>.title {
+        &>.title,
+        &>div>.title {
             font-size: 14px;
             font-family: $secondaryFont;
             color: rgb(61, 66, 83);
@@ -43658,7 +43829,10 @@ input[type=checkbox].switch {
             }
         }
 
-        input[type=text], select, textarea, .select2 {
+        input[type=text],
+        select,
+        textarea,
+        .select2 {
             background-color: rgba(#FFF, 0.8);
         }
 
@@ -43679,7 +43853,8 @@ input[type=checkbox].switch {
             text-transform: uppercase;
             text-align: center;
 
-            &:before, &:after {
+            &:before,
+            &:after {
                 position: absolute;
                 width: 0;
                 height: 0;
@@ -43770,6 +43945,7 @@ input[type=checkbox].switch {
     .content {
         padding: 10px 20px 10px 10px;
     }
+
     .formSection {
         float: left;
         width: calc(100% - 170px);
@@ -43813,7 +43989,8 @@ input[type=checkbox].switch {
                         display: none;
                     }
 
-                    &:before, &:after {
+                    &:before,
+                    &:after {
                         position: absolute;
                         width: 0;
                         height: 0;
@@ -43904,7 +44081,8 @@ input[type=checkbox].switch {
                     border-radius: 2px;
                 }
 
-                &:before, &:after {
+                &:before,
+                &:after {
                     font-size: 12px;
                     position: absolute;
                     color: #3d4253;
@@ -44133,7 +44311,7 @@ input[type=checkbox].switch {
         float: right;
         width: 290px;
 
-        .questionsProgress  {
+        .questionsProgress {
             border-width: 2px;
             border-color: rgb(28, 60, 75);
             border-style: solid;
@@ -44246,7 +44424,8 @@ input[type=checkbox].switch {
     border-radius: 6px;
     margin-top: 10px;
 
-    button, a {
+    button,
+    a {
         border-radius: 4px;
         background-color: rgba(78, 88, 104, 0.6);
         height: 40px;
@@ -44307,7 +44486,7 @@ input[type=checkbox].switch {
 
         i {
             display: table-cell;
-            vertical-align:  middle;
+            vertical-align: middle;
             font-style: normal;
         }
     }
@@ -44436,10 +44615,10 @@ input[type=checkbox].switch {
         background-color: #FFF;
         margin: 0 0 5px 0;
 
-        & > ul {
+        &>ul {
             margin: 0 -5px;
 
-            & > li {
+            &>li {
                 float: left;
                 font-size: 18px;
                 color: #5d6a72;
@@ -44499,7 +44678,9 @@ input[type=checkbox].switch {
                     }
                 }
 
-                .eye, .view, .delete {
+                .eye,
+                .view,
+                .delete {
                     float: left;
                     width: 24px;
                     height: 24px;
@@ -44570,7 +44751,8 @@ input[type=checkbox].switch {
                         top: 15px;
                     }
 
-                    &:nth-child(2), &:nth-child(3) {
+                    &:nth-child(2),
+                    &:nth-child(3) {
                         .tTText {
                             left: auto;
                             right: 20%;
@@ -44597,7 +44779,7 @@ input[type=checkbox].switch {
                 padding-left: 50px;
                 position: relative;
 
-                & > li {
+                &>li {
                     &:first-child {
                         position: absolute;
                         width: 50px;
@@ -44616,7 +44798,7 @@ input[type=checkbox].switch {
 
                         input[type="checkBox"] {
                             &:checked {
-                                & + label {
+                                &+label {
                                     background-color: $primaryColor;
                                     background-image: url('../images/handoverNotecheckbox.png');
                                     background-position: center;
@@ -44675,7 +44857,7 @@ input[type=checkbox].switch {
                     right: -2px;
                     top: 100%;
                     display: block;
-                    background-color:rgb(220, 222, 222);
+                    background-color: rgb(220, 222, 222);
                     font-size: 12px;
                     color: rgb(29, 61, 75);
                     border-radius: 0 0 4px 4px;
@@ -44912,51 +45094,51 @@ input[type=checkbox].switch {
                 }
 
                 .fiveStar {
-                    & + label {
+                    &+label {
                         background-position: 0 0;
                     }
 
-                    &:checked + label {
+                    &:checked+label {
                         background-position: 0 -24px;
                     }
                 }
 
                 .fourStar {
-                    & + label {
+                    &+label {
                         background-position: -24px 0;
                     }
 
-                    &:checked + label {
+                    &:checked+label {
                         background-position: -24px -24px;
                     }
                 }
 
                 .threeStar {
-                    & + label {
+                    &+label {
                         background-position: -48px 0;
                     }
 
-                    &:checked + label {
+                    &:checked+label {
                         background-position: -48px -24px;
                     }
                 }
 
                 .twoStar {
-                    & + label {
+                    &+label {
                         background-position: -72px 0;
                     }
 
-                    &:checked + label {
+                    &:checked+label {
                         background-position: -72px -24px;
                     }
                 }
 
                 .oneStar {
-                    & + label {
+                    &+label {
                         background-position: -96px 0;
                     }
 
-                    &:checked + label {
+                    &:checked+label {
                         background-position: -96px -24px;
                     }
                 }
@@ -45031,12 +45213,12 @@ input[type=checkbox].switch {
 
     .commentBox {
         border-width: 1px;
-        border-color: rgba(161, 173, 176,.8);
+        border-color: rgba(161, 173, 176, .8);
         border-style: solid;
         border-radius: 4px;
         height: 34px;
         padding: 0 10px;
-        box-shadow: 0 0 4px 0 rgba(#3f4253,0.1);
+        box-shadow: 0 0 4px 0 rgba(#3f4253, 0.1);
         background-color: #FFF;
         position: relative;
         z-index: 1;
@@ -45242,7 +45424,8 @@ input[type=checkbox].switch {
             text-align: center;
             cursor: pointer;
 
-            &:before, &:after {
+            &:before,
+            &:after {
                 position: absolute;
                 width: 0;
                 height: 0;
@@ -45357,7 +45540,8 @@ input[type=checkbox].switch {
         }
     }
 
-    .weeks, .days {
+    .weeks,
+    .days {
         padding: 0 11px;
         border-top: 1px solid #cad4d6;
         margin: 0;
@@ -45632,7 +45816,7 @@ input[type=checkbox].switch {
     }
 
     i {
-        display:inline-block;
+        display: inline-block;
         height: 46px;
         width: 46px;
         cursor: pointer;
@@ -45799,7 +45983,7 @@ input[type=checkbox].switch {
 .homeBuilderListing {
     margin: 0 -5px;
 
-    & > li {
+    &>li {
         padding: 0 5px;
         margin-top: 10px;
         width: calc(100% / 4);
@@ -45813,7 +45997,7 @@ input[type=checkbox].switch {
             border-radius: 10px;
 
             input[type=checkbox] {
-                & + label {
+                &+label {
                     display: block;
                     height: 18px;
                     width: 18px;
@@ -45824,7 +46008,7 @@ input[type=checkbox].switch {
                 }
 
                 &:checked {
-                    & + label {
+                    &+label {
                         background-color: $primaryColor;
                         background-image: url('../images/permissionTick.png');
                         background-repeat: no-repeat;
@@ -45936,7 +46120,7 @@ input[type=checkbox].switch {
                     text-align: center;
                     float: left;
                     width: calc(100% / 4);
-                    line-height:  14px;
+                    line-height: 14px;
                     padding-top: 26px;
                     background-repeat: no-repeat;
                     background-position: center top 4px;
@@ -46020,7 +46204,7 @@ input[type=checkbox].switch {
             width: 210px;
 
             input[type=checkbox] {
-                & + label {
+                &+label {
                     height: 18px;
                     width: 18px;
                     border: 1px solid #DCDEDE;
@@ -46042,7 +46226,7 @@ input[type=checkbox].switch {
                 }
 
                 &:checked {
-                    & + label {
+                    &+label {
                         background-color: $primaryColor;
                     }
                 }
@@ -46085,8 +46269,8 @@ input[type=checkbox].switch {
     height: 120px;
     position: relative;
 
-    & > input[type=checkbox] {
-        & + label {
+    &>input[type=checkbox] {
+        &+label {
             position: absolute;
             left: 20px;
             height: 18px;
@@ -46102,14 +46286,14 @@ input[type=checkbox].switch {
         }
 
         &:checked {
-            & + label {
+            &+label {
                 background-color: $primaryColor;
                 border-color: transparent;
             }
         }
     }
 
-    & > ul {
+    &>ul {
         position: relative;
         float: left;
         height: 100px;
@@ -46212,7 +46396,7 @@ input[type=checkbox].switch {
 
                     input[type=radio] {
                         &:checked {
-                            & + label {
+                            &+label {
                                 background-color: #18D584;
                             }
                         }
@@ -46232,7 +46416,7 @@ input[type=checkbox].switch {
 
                     input[type=radio] {
                         &:checked {
-                            & + label {
+                            &+label {
                                 background-color: #ED1C24;
                             }
                         }
@@ -46267,4 +46451,8 @@ input[type=checkbox].switch {
 
 .scroll-element.scroll-x {
     display: none !important;
+}
+
+.select2-container {
+    z-index: 5000;
   }
