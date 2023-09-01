@@ -11,6 +11,11 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
   outline: 0 !important;
 }
 
+::-moz-selection {
+  background: #6DC77A;
+  color: #FFF;
+}
+
 ::selection {
   background: #6DC77A;
   color: #FFF;
@@ -54,12 +59,15 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
 
 .appearance, .MessagesContainer aside .searchArea .form-group .select select, .dispensePop form .select select, .medicinePot .potList li .select select, .medicinePot .select select, .residentSelectChange .form-inline .select select, .inBodyForm .select select, .inBodyForm select, .contentFooter .form-inline .select select, .contentFooter .records input[type=text], .contentFooter .listCount .dataTables_length label select, .contentFooter .listCount select, .table > tbody > tr > td .select select, .contentBody.directorDb .directorDbTopBar .HomeSelectBtn select, .contentHeader .sortListing select, .contentHeader .fieldContainer input[type=text],
 .contentHeader .fieldContainer select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @media print and (color) {
   * {
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
 }
 body {
@@ -836,7 +844,8 @@ header.colored section .headerIcons img path {
   background-color: rgba(45, 49, 68, 0.9);
   z-index: 101;
   border-right: 2px solid rgb(255, 205, 96);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .leftNav .title {
   display: none;
@@ -1333,7 +1342,9 @@ header.colored section .headerIcons img path {
   cursor: pointer;
   height: 28px;
   position: relative;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .contentHeader .filtersSearch .dropList > span:after, .contentHeader .filtersSearch .dropList > .select:after {
   content: "";
@@ -1350,7 +1361,9 @@ header.colored section .headerIcons img path {
   pointer-events: none;
 }
 .contentHeader .filtersSearch .dropList > span select, .contentHeader .filtersSearch .dropList > .select select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   height: 26px;
   padding: 0 20px 0 5px;
@@ -1359,7 +1372,8 @@ header.colored section .headerIcons img path {
 .contentHeader .filtersSearch .dropList > .select {
   padding: 0;
 }
-.contentHeader .filtersSearch .dropList ul, .contentHeader .filtersSearch .dropList .scroll {
+.contentHeader .filtersSearch .dropList ul,
+.contentHeader .filtersSearch .dropList .scroll {
   margin: 0;
   border-radius: 4px;
   background-color: #FFF;
@@ -1367,22 +1381,26 @@ header.colored section .headerIcons img path {
   display: none;
   position: absolute;
 }
-.contentHeader .filtersSearch .dropList ul li, .contentHeader .filtersSearch .dropList .scroll li {
+.contentHeader .filtersSearch .dropList ul li,
+.contentHeader .filtersSearch .dropList .scroll li {
   padding: 5px 10px 5px 20px;
   font-size: 12px;
   cursor: pointer;
   border-radius: 4px;
   white-space: nowrap;
 }
-.contentHeader .filtersSearch .dropList ul li:hover, .contentHeader .filtersSearch .dropList .scroll li:hover {
+.contentHeader .filtersSearch .dropList ul li:hover,
+.contentHeader .filtersSearch .dropList .scroll li:hover {
   background-color: #EEE;
 }
-.contentHeader .filtersSearch .dropList ul li.rotaHomeGroup, .contentHeader .filtersSearch .dropList .scroll li.rotaHomeGroup {
+.contentHeader .filtersSearch .dropList ul li.rotaHomeGroup,
+.contentHeader .filtersSearch .dropList .scroll li.rotaHomeGroup {
   pointer-events: none;
   font-weight: 700;
   padding: 5px 10px;
 }
-.contentHeader .filtersSearch .dropList ul li.highlight, .contentHeader .filtersSearch .dropList .scroll li.highlight {
+.contentHeader .filtersSearch .dropList ul li.highlight,
+.contentHeader .filtersSearch .dropList .scroll li.highlight {
   background-color: #DDD;
 }
 .contentHeader .filtersSearch .dropList .scroll {
@@ -1405,7 +1423,8 @@ header.colored section .headerIcons img path {
   background-color: #FFF;
   border-radius: 6px 0 0 6px;
 }
-.contentHeader .filtersSearch form .byStaff input[type=text], .contentHeader .filtersSearch form .byStaff select {
+.contentHeader .filtersSearch form .byStaff input[type=text],
+.contentHeader .filtersSearch form .byStaff select {
   height: 32px;
   border: 0;
   padding: 0 0 0 10px;
@@ -1497,7 +1516,9 @@ header.colored section .headerIcons img path {
   width: 100%;
 }
 .contentHeader .filtersSearch form .allFilters ul li .form-group .select select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   height: 32px;
   border: 0;
@@ -1750,7 +1771,8 @@ header.colored section .headerIcons img path {
 .contentHeader .filteraddition .search li button {
   width: 100%;
 }
-.contentHeader .searchButton, .contentHeader .searchButtonRota {
+.contentHeader .searchButton,
+.contentHeader .searchButtonRota {
   background-color: #6DC77A;
   color: #FFF;
   border-radius: 4px;
@@ -1759,7 +1781,9 @@ header.colored section .headerIcons img path {
   float: left;
   margin-right: 10px;
 }
-.contentHeader .searchButton ~ .defaultButton, .contentHeader .searchButton .defaultButton, .contentHeader .searchButtonRota ~ .defaultButton, .contentHeader .searchButtonRota .defaultButton {
+.contentHeader .searchButton ~ .defaultButton, .contentHeader .searchButton .defaultButton,
+.contentHeader .searchButtonRota ~ .defaultButton,
+.contentHeader .searchButtonRota .defaultButton {
   background-color: #828787;
   color: #FFF;
   border-radius: 4px;
@@ -1767,7 +1791,8 @@ header.colored section .headerIcons img path {
   border: 0;
   margin-right: 10px;
 }
-.contentHeader .searchButton.reset, .contentHeader .searchButtonRota.reset {
+.contentHeader .searchButton.reset,
+.contentHeader .searchButtonRota.reset {
   background-color: #F8931D;
 }
 .contentHeader .defaultButton {
@@ -2181,7 +2206,8 @@ header.colored section .headerIcons img path {
   border: 0;
   background-color: #F8931D;
 }
-.contentHeader .homeFloor, .contentHeader .settings {
+.contentHeader .homeFloor,
+.contentHeader .settings {
   float: right;
   line-height: 45px;
   margin-left: 30px;
@@ -2543,7 +2569,8 @@ header.colored section .headerIcons img path {
   margin: 0 0 2px 12px;
   padding: 0;
 }
-.diseases li span, .diseases li a {
+.diseases li span,
+.diseases li a {
   display: block;
   padding: 2px 5px 2px 34px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -2557,7 +2584,8 @@ header.colored section .headerIcons img path {
   line-height: 24px;
   position: relative;
 }
-.diseases li span:after, .diseases li a:after {
+.diseases li span:after,
+.diseases li a:after {
   width: 0;
   height: 0;
   border-bottom: 28px solid rgba(255, 255, 255, 0.2);
@@ -2568,7 +2596,8 @@ header.colored section .headerIcons img path {
   transform: translateX(5px) translateY(0);
   z-index: 1;
 }
-.diseases li span:before, .diseases li a:before {
+.diseases li span:before,
+.diseases li a:before {
   width: 0;
   height: 0;
   border-top: 28px solid rgba(255, 255, 255, 0.2);
@@ -2580,23 +2609,35 @@ header.colored section .headerIcons img path {
   z-index: 1;
   left: -15px;
 }
-.diseases li img, .diseases li img.svg, .diseases li svg {
+.diseases li img,
+.diseases li img.svg,
+.diseases li svg {
   height: 24px;
   width: 24px;
   left: 5px;
   position: absolute;
   top: 2px;
 }
-.diseases li img path, .diseases li img circle, .diseases li img polygon, .diseases li img.svg path, .diseases li img.svg circle, .diseases li img.svg polygon, .diseases li svg path, .diseases li svg circle, .diseases li svg polygon {
+.diseases li img path,
+.diseases li img circle,
+.diseases li img polygon,
+.diseases li img.svg path,
+.diseases li img.svg circle,
+.diseases li img.svg polygon,
+.diseases li svg path,
+.diseases li svg circle,
+.diseases li svg polygon {
   fill: #CB0000;
 }
 .diseases li:first-child {
   margin-left: 0;
 }
-.diseases li:first-child span::before, .diseases li:first-child a::before {
+.diseases li:first-child span::before,
+.diseases li:first-child a::before {
   display: none;
 }
-.diseases li:last-child span::after, .diseases li:last-child a::after {
+.diseases li:last-child span::after,
+.diseases li:last-child a::after {
   display: none;
 }
 .diseases.noDisease {
@@ -2609,29 +2650,38 @@ header.colored section .headerIcons img path {
 .diseases.max-ul-width:before {
   display: none;
 }
-.diseases.max-ul-width li span, .diseases.max-ul-width li a {
+.diseases.max-ul-width li span,
+.diseases.max-ul-width li a {
   background-color: rgba(130, 135, 135, 0.2);
 }
-.diseases.max-ul-width li span:after, .diseases.max-ul-width li a:after {
+.diseases.max-ul-width li span:after,
+.diseases.max-ul-width li a:after {
   border-bottom: 28px solid rgba(130, 135, 135, 0.2);
 }
-.diseases.max-ul-width li span:before, .diseases.max-ul-width li a:before {
+.diseases.max-ul-width li span:before,
+.diseases.max-ul-width li a:before {
   border-top: 28px solid rgba(130, 135, 135, 0.2);
 }
 @media print {
   .diseases li {
     margin-left: 5px;
   }
-  .diseases li span, .diseases li a {
+  .diseases li span,
+  .diseases li a {
     padding: 0 0 0 2px;
   }
-  .diseases li span:before, .diseases li a:before {
+  .diseases li span:before,
+  .diseases li a:before {
     display: none;
   }
-  .diseases li span:after, .diseases li a:after {
+  .diseases li span:after,
+  .diseases li a:after {
     display: none;
   }
-  .diseases li span img, .diseases li span svg, .diseases li a img, .diseases li a svg {
+  .diseases li span img,
+  .diseases li span svg,
+  .diseases li a img,
+  .diseases li a svg {
     display: none !important;
   }
 }
@@ -2792,7 +2842,10 @@ hr.BoldHr {
   background-color: #6DC77A;
   left: 12px;
 }
-.contentBody .pageSpecificArea form ul li input[type=text], .contentBody .pageSpecificArea form ul li select, .contentBody .pageSpecificArea form ul li textarea, .contentBody .pageSpecificArea form ul li .select2 {
+.contentBody .pageSpecificArea form ul li input[type=text],
+.contentBody .pageSpecificArea form ul li select,
+.contentBody .pageSpecificArea form ul li textarea,
+.contentBody .pageSpecificArea form ul li .select2 {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -2805,17 +2858,29 @@ hr.BoldHr {
   z-index: 1;
   float: left;
 }
-.contentBody .pageSpecificArea form ul li input[type=text][name=dateRange], .contentBody .pageSpecificArea form ul li input[type=text].date, .contentBody .pageSpecificArea form ul li select[name=dateRange], .contentBody .pageSpecificArea form ul li select.date, .contentBody .pageSpecificArea form ul li textarea[name=dateRange], .contentBody .pageSpecificArea form ul li textarea.date, .contentBody .pageSpecificArea form ul li .select2[name=dateRange], .contentBody .pageSpecificArea form ul li .select2.date {
+.contentBody .pageSpecificArea form ul li input[type=text][name=dateRange], .contentBody .pageSpecificArea form ul li input[type=text].date,
+.contentBody .pageSpecificArea form ul li select[name=dateRange],
+.contentBody .pageSpecificArea form ul li select.date,
+.contentBody .pageSpecificArea form ul li textarea[name=dateRange],
+.contentBody .pageSpecificArea form ul li textarea.date,
+.contentBody .pageSpecificArea form ul li .select2[name=dateRange],
+.contentBody .pageSpecificArea form ul li .select2.date {
   background-image: url("../images/calendar.png");
   background-position: right 5px center;
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.contentBody .pageSpecificArea form ul li input[type=text]:focus, .contentBody .pageSpecificArea form ul li select:focus, .contentBody .pageSpecificArea form ul li textarea:focus, .contentBody .pageSpecificArea form ul li .select2:focus {
+.contentBody .pageSpecificArea form ul li input[type=text]:focus,
+.contentBody .pageSpecificArea form ul li select:focus,
+.contentBody .pageSpecificArea form ul li textarea:focus,
+.contentBody .pageSpecificArea form ul li .select2:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
-.contentBody .pageSpecificArea form ul li input[type=text].disabled, .contentBody .pageSpecificArea form ul li select.disabled, .contentBody .pageSpecificArea form ul li textarea.disabled, .contentBody .pageSpecificArea form ul li .select2.disabled {
+.contentBody .pageSpecificArea form ul li input[type=text].disabled,
+.contentBody .pageSpecificArea form ul li select.disabled,
+.contentBody .pageSpecificArea form ul li textarea.disabled,
+.contentBody .pageSpecificArea form ul li .select2.disabled {
   pointer-events: none;
   background-color: #F3F3F3;
 }
@@ -2946,7 +3011,8 @@ hr.BoldHr {
 .contentBody .ctas {
   margin-top: 20px;
 }
-.contentBody .ctas button, .contentBody .ctas a {
+.contentBody .ctas button,
+.contentBody .ctas a {
   border-radius: 4px;
   background-color: rgba(78, 88, 104, 0.6);
   height: 40px;
@@ -2959,20 +3025,25 @@ hr.BoldHr {
   display: inline-block;
   line-height: 40px;
 }
-.contentBody .ctas button.green, .contentBody .ctas a.green {
+.contentBody .ctas button.green,
+.contentBody .ctas a.green {
   background-color: #6DC77A;
 }
-.contentBody .ctas button.blue, .contentBody .ctas a.blue {
+.contentBody .ctas button.blue,
+.contentBody .ctas a.blue {
   background-color: #7da7d9;
 }
-.contentBody .ctas button.orange, .contentBody .ctas a.orange {
+.contentBody .ctas button.orange,
+.contentBody .ctas a.orange {
   background-color: #FFCD60;
   color: #1C3C4B;
 }
-.contentBody .ctas button.print, .contentBody .ctas a.print {
+.contentBody .ctas button.print,
+.contentBody .ctas a.print {
   background-color: #3F4253;
 }
-.contentBody .ctas button.paleOrange, .contentBody .ctas a.paleOrange {
+.contentBody .ctas button.paleOrange,
+.contentBody .ctas a.paleOrange {
   background-color: #fdc588;
   color: #1C3C4B;
 }
@@ -2984,16 +3055,19 @@ hr.BoldHr {
 .contentBody .ctas .group {
   margin-left: 10px;
 }
-.contentBody .ctas .group button, .contentBody .ctas .group a {
+.contentBody .ctas .group button,
+.contentBody .ctas .group a {
   float: left;
   border-radius: 0;
   border-right: 1px solid #568ccd;
   border-left: 1px solid #a4c2e5;
 }
-.contentBody .ctas .group button:first-of-type, .contentBody .ctas .group a:first-of-type {
+.contentBody .ctas .group button:first-of-type,
+.contentBody .ctas .group a:first-of-type {
   border-radius: 4px 0 0 4px;
 }
-.contentBody .ctas .group button:last-of-type, .contentBody .ctas .group a:last-of-type {
+.contentBody .ctas .group button:last-of-type,
+.contentBody .ctas .group a:last-of-type {
   border-radius: 0 4px 4px 0;
 }
 .contentBody .ctas input[type=checkbox] + label {
@@ -3026,7 +3100,8 @@ hr.BoldHr {
   background-color: #6DC77A;
   left: 12px;
 }
-.contentBody .ctas .freezeUser, .contentBody .ctas .testServiceUser {
+.contentBody .ctas .freezeUser,
+.contentBody .ctas .testServiceUser {
   border-radius: 4px;
   background-color: rgb(255, 83, 96);
   height: 40px;
@@ -3039,11 +3114,13 @@ hr.BoldHr {
   text-transform: uppercase;
   display: inline-block;
 }
-.contentBody .ctas .freezeUser input[type=checkbox] + label, .contentBody .ctas .testServiceUser input[type=checkbox] + label {
+.contentBody .ctas .freezeUser input[type=checkbox] + label,
+.contentBody .ctas .testServiceUser input[type=checkbox] + label {
   border-color: #FFF;
   margin: 8px 0 0 5px;
 }
-.contentBody .ctas .freezeUser.publish, .contentBody .ctas .testServiceUser.publish {
+.contentBody .ctas .freezeUser.publish,
+.contentBody .ctas .testServiceUser.publish {
   background-color: #648DAC;
 }
 .contentBody .ctas .testServiceUser {
@@ -3908,7 +3985,9 @@ hr.BoldHr {
   cursor: pointer;
   height: 28px;
   position: relative;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .contentBody .filtersSearch .dropList > span:after, .contentBody .filtersSearch .dropList > .select:after {
   content: "";
@@ -3925,7 +4004,9 @@ hr.BoldHr {
   pointer-events: none;
 }
 .contentBody .filtersSearch .dropList > span select, .contentBody .filtersSearch .dropList > .select select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   height: 26px;
   padding: 0 20px 0 5px;
@@ -3934,7 +4015,8 @@ hr.BoldHr {
 .contentBody .filtersSearch .dropList > .select {
   padding: 0;
 }
-.contentBody .filtersSearch .dropList ul, .contentBody .filtersSearch .dropList .scroll {
+.contentBody .filtersSearch .dropList ul,
+.contentBody .filtersSearch .dropList .scroll {
   margin: 0;
   border-radius: 4px;
   background-color: #FFF;
@@ -3942,22 +4024,26 @@ hr.BoldHr {
   display: none;
   position: absolute;
 }
-.contentBody .filtersSearch .dropList ul li, .contentBody .filtersSearch .dropList .scroll li {
+.contentBody .filtersSearch .dropList ul li,
+.contentBody .filtersSearch .dropList .scroll li {
   padding: 5px 10px 5px 20px;
   font-size: 12px;
   cursor: pointer;
   border-radius: 4px;
   white-space: nowrap;
 }
-.contentBody .filtersSearch .dropList ul li:hover, .contentBody .filtersSearch .dropList .scroll li:hover {
+.contentBody .filtersSearch .dropList ul li:hover,
+.contentBody .filtersSearch .dropList .scroll li:hover {
   background-color: #EEE;
 }
-.contentBody .filtersSearch .dropList ul li.rotaHomeGroup, .contentBody .filtersSearch .dropList .scroll li.rotaHomeGroup {
+.contentBody .filtersSearch .dropList ul li.rotaHomeGroup,
+.contentBody .filtersSearch .dropList .scroll li.rotaHomeGroup {
   pointer-events: none;
   font-weight: 700;
   padding: 5px 10px;
 }
-.contentBody .filtersSearch .dropList ul li.highlight, .contentBody .filtersSearch .dropList .scroll li.highlight {
+.contentBody .filtersSearch .dropList ul li.highlight,
+.contentBody .filtersSearch .dropList .scroll li.highlight {
   background-color: #DDD;
 }
 .contentBody .filtersSearch .dropList .scroll {
@@ -4008,7 +4094,8 @@ hr.BoldHr {
   float: left;
   background-color: #FFF;
 }
-.contentBody .filtersSearch > .search .byStaff input[type=text], .contentBody .filtersSearch > .search .byStaff select {
+.contentBody .filtersSearch > .search .byStaff input[type=text],
+.contentBody .filtersSearch > .search .byStaff select {
   height: 32px;
   border: 0;
   padding: 0 0 0 10px;
@@ -4098,7 +4185,9 @@ hr.BoldHr {
   width: 100%;
 }
 .contentBody .filtersSearch > .search .allFilters ul li .form-group .select select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   height: 32px;
   border: 0;
@@ -4927,7 +5016,8 @@ hr.BoldHr {
   padding: 5px;
   border: 1px solid #DDD;
 }
-.table table tr th, .table table tr td {
+.table table tr th,
+.table table tr td {
   padding: 5px;
   border: 1px solid #DDD;
 }
@@ -5788,7 +5878,9 @@ hr.BoldHr {
   background-color: rgba(203, 0, 0, 0.1);
 }
 .inBodyForm input[type=date] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .inBodyForm input[type=text].dottedLine {
   border-radius: 0;
@@ -6448,17 +6540,9 @@ hr.BoldHr {
   z-index: 3;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
   font-size: 64px;
@@ -6507,29 +6591,17 @@ hr.BoldHr {
 .glassFill .water-jar .water_wave_back {
   right: 0;
   fill: #C7EEFF;
-  -webkit-animation: wave-back 1.4s infinite linear;
   animation: wave-back 1.4s infinite linear;
 }
 .glassFill .water-jar .water_wave_front {
   left: 0;
   fill: #4D6DE3;
   margin-bottom: -1px;
-  -webkit-animation: wave-front 0.7s infinite linear;
   animation: wave-front 0.7s infinite linear;
-}
-@-webkit-keyframes wave-front {
-  100% {
-    transform: translate(-50%, 0);
-  }
 }
 @keyframes wave-front {
   100% {
     transform: translate(-50%, 0);
-  }
-}
-@-webkit-keyframes wave-back {
-  100% {
-    transform: translate(50%, 0);
   }
 }
 @keyframes wave-back {
@@ -6680,7 +6752,6 @@ hr.BoldHr {
   background-color: #828787;
   font-size: 16px;
   line-height: 42px;
-  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
@@ -6805,8 +6876,6 @@ hr.BoldHr {
   line-height: 30px;
   width: 100%;
   height: 30px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   background: #879290;
   cursor: pointer;
@@ -6821,8 +6890,6 @@ hr.BoldHr {
   text-indent: 40px;
   height: 24px;
   width: 24px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   top: 3px;
   left: 3px;
@@ -6907,10 +6974,6 @@ hr.BoldHr {
   left: -120%;
   animation: heartRateOut 2.5s linear infinite;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
   z-index: 2;
 }
@@ -8111,7 +8174,6 @@ hr.BoldHr {
 .jqx-popup {
   border-radius: 4px;
   border-color: #DDD;
-  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .jqx-popup .jqx-window-header {
@@ -8439,7 +8501,7 @@ hr.BoldHr {
 
 @media print {
   html,
-body {
+  body {
     background: none;
   }
   .printButton {
@@ -8559,7 +8621,6 @@ body {
   background-color: rgba(100, 141, 172, 0.2);
   border-radius: 4px;
   overflow: hidden;
-  -webkit-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .graphs .plot-container .svg-container {
@@ -8830,7 +8891,8 @@ body {
   background-color: #6dc77a;
   color: #223e4c;
 }
-.alerts .scrollArea .alertsList > ul > li button img, .alerts .scrollArea .alertsList > ul > li button svg {
+.alerts .scrollArea .alertsList > ul > li button img,
+.alerts .scrollArea .alertsList > ul > li button svg {
   display: none;
 }
 .alerts .scrollArea .alertsList > ul > li button:focus {
@@ -10264,8 +10326,6 @@ body {
   left: 25px;
   top: 5px;
   height: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #F8931D;
   color: #FFF;
@@ -10822,7 +10882,8 @@ body {
 .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .initials {
   display: none;
 }
-.rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .title, .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .designation {
+.rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .title,
+.rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .designation {
   display: block;
   line-height: 1;
 }
@@ -11207,7 +11268,6 @@ body {
   padding: 0 10px;
   border: 5px solid #F8931D;
   background-color: #FFF;
-  -webkit-box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   width: 620px;
 }
@@ -11361,7 +11421,6 @@ body {
   transform: translateX(-50%) translateY(-50%);
   border-radius: 8px;
   border: 5px solid #F8931D;
-  -webkit-box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   opacity: 0;
   overflow: hidden;
@@ -12131,7 +12190,6 @@ body {
   padding: 6px 12px;
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
-  -webkit-box-shadow: -5px 0 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: -5px 0 0 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 5px;
 }
@@ -12453,13 +12511,11 @@ body {
   float: left;
   height: 24px;
   width: 24px;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.4;
 }
 .MessagesContainer .MessageTopbar .messageSubject .starred.active img.svg,
 .MessagesContainer .MessageTopbar .messageSubject .starred.active svg {
-  -webkit-filter: grayscale(0);
   filter: grayscale(0);
   opacity: 1;
 }
@@ -13648,14 +13704,18 @@ body {
   height: calc(100% - 262px);
   margin-bottom: 15px;
 }
-.dashboard .moreStats .careRoutineAnalysis, .dashboard .moreStats .andi, .dashboard .moreStats .careProvided {
+.dashboard .moreStats .careRoutineAnalysis,
+.dashboard .moreStats .andi,
+.dashboard .moreStats .careProvided {
   height: 100%;
   float: left;
   margin-left: 20px;
   padding: 10px;
   border-radius: 10px;
 }
-.dashboard .moreStats .careRoutineAnalysis .title, .dashboard .moreStats .andi .title, .dashboard .moreStats .careProvided .title {
+.dashboard .moreStats .careRoutineAnalysis .title,
+.dashboard .moreStats .andi .title,
+.dashboard .moreStats .careProvided .title {
   font-size: 21px;
   color: #424556;
   font-weight: 500;
@@ -13664,11 +13724,15 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-.dashboard .moreStats .careRoutineAnalysis .title samp, .dashboard .moreStats .andi .title samp, .dashboard .moreStats .careProvided .title samp {
+.dashboard .moreStats .careRoutineAnalysis .title samp,
+.dashboard .moreStats .andi .title samp,
+.dashboard .moreStats .careProvided .title samp {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
 }
-.dashboard .moreStats .careRoutineAnalysis .title:after, .dashboard .moreStats .andi .title:after, .dashboard .moreStats .careProvided .title:after {
+.dashboard .moreStats .careRoutineAnalysis .title:after,
+.dashboard .moreStats .andi .title:after,
+.dashboard .moreStats .careProvided .title:after {
   position: absolute;
   content: attr(data-extra);
   color: #FFF;
@@ -13678,7 +13742,9 @@ body {
   top: calc(100% - 5px);
   text-shadow: none;
 }
-.dashboard .moreStats .careRoutineAnalysis .thisContainer, .dashboard .moreStats .andi .thisContainer, .dashboard .moreStats .careProvided .thisContainer {
+.dashboard .moreStats .careRoutineAnalysis .thisContainer,
+.dashboard .moreStats .andi .thisContainer,
+.dashboard .moreStats .careProvided .thisContainer {
   height: calc(100% - 60px);
   position: relative;
 }
@@ -14056,14 +14122,16 @@ body {
   margin-left: 20px;
   position: relative;
 }
-.dashboard .moreStats .upcomingBirthdays, .dashboard .moreStats .AnI {
+.dashboard .moreStats .upcomingBirthdays,
+.dashboard .moreStats .AnI {
   background-color: #69BB9F;
   position: relative;
   border-radius: 10px;
   padding: 10px;
   height: calc((100% - 10px) / 2);
 }
-.dashboard .moreStats .upcomingBirthdays .title, .dashboard .moreStats .AnI .title {
+.dashboard .moreStats .upcomingBirthdays .title,
+.dashboard .moreStats .AnI .title {
   font-size: 15px;
   font-weight: 500;
   color: #3f4253;
@@ -14072,7 +14140,8 @@ body {
   display: block;
   margin-bottom: 20px;
 }
-.dashboard .moreStats .upcomingBirthdays .title:after, .dashboard .moreStats .AnI .title:after {
+.dashboard .moreStats .upcomingBirthdays .title:after,
+.dashboard .moreStats .AnI .title:after {
   position: absolute;
   content: attr(data-extra);
   color: #5e616e;
@@ -14081,7 +14150,8 @@ body {
   left: 0;
   top: 100%;
 }
-.dashboard .moreStats .upcomingBirthdays .printBday, .dashboard .moreStats .AnI .printBday {
+.dashboard .moreStats .upcomingBirthdays .printBday,
+.dashboard .moreStats .AnI .printBday {
   position: absolute;
   height: 24px;
   width: 24px;
@@ -14095,7 +14165,8 @@ body {
   display: block;
   z-index: 1;
 }
-.dashboard .moreStats .upcomingBirthdays .goTo, .dashboard .moreStats .AnI .goTo {
+.dashboard .moreStats .upcomingBirthdays .goTo,
+.dashboard .moreStats .AnI .goTo {
   position: absolute;
   height: 24px;
   width: 24px;
@@ -14109,7 +14180,8 @@ body {
   display: block;
   z-index: 1;
 }
-.dashboard .moreStats .upcomingBirthdays .digit, .dashboard .moreStats .AnI .digit {
+.dashboard .moreStats .upcomingBirthdays .digit,
+.dashboard .moreStats .AnI .digit {
   font-size: 32px;
   color: #FFF;
   font-family: "Roboto Condensed", sans-serif;
@@ -14121,7 +14193,8 @@ body {
   line-height: 1;
   display: inline-block;
 }
-.dashboard .moreStats .upcomingBirthdays .digit:after, .dashboard .moreStats .AnI .digit:after {
+.dashboard .moreStats .upcomingBirthdays .digit:after,
+.dashboard .moreStats .AnI .digit:after {
   position: absolute;
   content: attr(data-title);
   font-size: 13px;
@@ -17143,12 +17216,7 @@ body {
   height: auto;
   z-index: 2000;
   visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -17166,8 +17234,6 @@ body {
   z-index: 1000;
   opacity: 0;
   background: rgba(172, 182, 182, 0.8);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -17202,54 +17268,22 @@ body {
 }
 
 .md-effect-13.md-modal {
-  -webkit-perspective: 1300px;
-  -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
 .md-effect-13 .md-content {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: translateZ(-3000px) rotateY(90deg);
-  -moz-transform: translateZ(-3000px) rotateY(90deg);
-  -ms-transform: translateZ(-3000px) rotateY(90deg);
   transform: translateZ(-3000px) rotateY(90deg);
   opacity: 0;
 }
 
 .md-show.md-effect-13 .md-content {
-  -webkit-animation: slit 0.7s forwards ease-out;
-  -moz-animation: slit 0.7s forwards ease-out;
   animation: slit 0.7s forwards ease-out;
 }
 
 .md-show ~ .md-overlay {
   opacity: 1;
   visibility: visible;
-}
-
-@-webkit-keyframes slit {
-  50% {
-    -webkit-transform: translateZ(-250px) rotateY(89deg);
-    opacity: 0.5;
-    -webkit-animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotateY(0deg);
-    opacity: 1;
-  }
-}
-@-moz-keyframes slit {
-  50% {
-    -moz-transform: translateZ(-250px) rotateY(89deg);
-    opacity: 0.5;
-    -moz-animation-timing-function: ease-out;
-  }
-  100% {
-    -moz-transform: translateZ(0) rotateY(0deg);
-    opacity: 1;
-  }
 }
 @keyframes slit {
   50% {
@@ -17771,15 +17805,12 @@ body {
 }
 
 .object {
-  -moz-border-radius: 50% 50% 50% 50%;
-  -webkit-border-radius: 50% 50% 50% 50%;
   border-radius: 50% 50% 50% 50%;
   position: absolute;
   border-top: 5px solid #6DC77A;
   border-bottom: 5px solid transparent;
   border-left: 5px solid #6DC77A;
   border-right: 5px solid transparent;
-  -webkit-animation: animate 2s infinite;
   animation: animate 2s infinite;
 }
 
@@ -17795,7 +17826,6 @@ body {
   top: 65px;
   width: 70px;
   height: 70px;
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
@@ -17804,7 +17834,6 @@ body {
   top: 55px;
   width: 90px;
   height: 90px;
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
@@ -17813,21 +17842,10 @@ body {
   top: 45px;
   width: 110px;
   height: 110px;
-  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
-}
-
-@-webkit-keyframes animate {
-  50% {
-    -ms-transform: rotate(360deg) scale(0.8);
-    -webkit-transform: rotate(360deg) scale(0.8);
-    transform: rotate(360deg) scale(0.8);
-  }
 }
 @keyframes animate {
   50% {
-    -ms-transform: rotate(360deg) scale(0.8);
-    -webkit-transform: rotate(360deg) scale(0.8);
     transform: rotate(360deg) scale(0.8);
   }
 }
@@ -18314,8 +18332,6 @@ body {
 .subSection .subModuleList li article {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(255,255,255,0.1)", endColorstr="rgba(0,0,0,0.1)", GradientType=1);
   padding-top: 100%;
@@ -19365,7 +19381,6 @@ body {
   color: #DDD;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -22262,27 +22277,33 @@ body {
   .news_data article .module {
     background-color: #648DAC !important;
     color: rgb(255, 255, 255) !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
   .news_data article .columns > ul li.circle:before {
     background-color: #CB0000 !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color0 {
     background-color: #F2F2F2 !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color1 {
     background-color: #F5E6A5 !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color2 {
     background-color: #ECB680 !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color3 {
     background-color: #E1604B !important;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
 }
 .news_scoring {
@@ -23182,8 +23203,6 @@ body {
   border-radius: 0 6px 6px 6px;
   padding: 15px;
   background: #ebb930;
-  background: -moz-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
-  background: -webkit-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
   background: linear-gradient(to bottom, #ebb930 0%, #ffd96a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebb930", endColorstr="#ffd96a", GradientType=0);
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.35);
@@ -23513,8 +23532,8 @@ body {
 }
 @media print {
   .andireport .occurance ul li,
-.andireport .dates ul li,
-.andireport .total ul li {
+  .andireport .dates ul li,
+  .andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -23526,8 +23545,8 @@ body {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-.andireport .dates ul li:nth-child(odd),
-.andireport .total ul li:nth-child(odd) {
+  .andireport .dates ul li:nth-child(odd),
+  .andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -23789,22 +23808,13 @@ body {
   display: none;
 }
 .convertedAlerts li.rotate {
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
   border-color: #F8931D;
 }
 .convertedAlerts li.rotate .title {
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 .convertedAlerts li.rotate .toggles {
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
@@ -23990,7 +24000,9 @@ body {
   border-radius: 4px;
   border: 0;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 0 32px 0 5px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
@@ -24150,7 +24162,9 @@ body {
 #SBARDtoolandactiontracker article .form-group .textarea {
   width: 100%;
   height: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   padding: 10px;
   font-family: "Roboto Condensed", sans-serif;
@@ -24399,7 +24413,9 @@ body {
 .auditDashboard .selection .filters .groupselects select {
   font-size: 12px;
   color: #979a9f;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   padding: 0 30px 0 5px;
   background-image: url("../images/down-arrow-key.png");
@@ -25359,7 +25375,9 @@ body {
 }
 .enquiryoverview .overviewdetail .paging .select select {
   border: 0;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 5px 36px 5px 10px;
   background-image: url("../images/selectBox-arrow.png");
   background-repeat: no-repeat;
@@ -25444,7 +25462,9 @@ body {
   background-image: url("../images/selectBox-arrow.png");
   background-position: right 12px center;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .enquiryoverview .overviewdetail .enquiryfilter form .calender {
   background-image: url("../images/calendar(1).png");
@@ -25739,7 +25759,9 @@ body {
   background-size: 16px;
   background-position: left 7px center;
   height: 30px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   position: relative;
   z-index: 1;
 }
@@ -25971,7 +25993,9 @@ body {
   background-position: right 15px center;
 }
 .detailenquiry .tabContent .scroll-wrapper section ul li .select select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   border: 0;
   height: 100%;
@@ -26272,6 +26296,24 @@ body {
 }
 .directorDash aside ul.tabs li:nth-child(14) a {
   background-image: url("../images/hrDashboardIcon.png");
+}
+.directorDash aside ul.tabs li:nth-child(15) a {
+  background-image: url("../images/Change-of-details.png");
+}
+.directorDash aside ul.tabs li:nth-child(16) a {
+  background-image: url("../images/Message-Center.png");
+}
+.directorDash aside ul.tabs li:nth-child(17) a {
+  background-image: url("../images/House-keeping.png");
+}
+.directorDash aside ul.tabs li:nth-child(18) a {
+  background-image: url("../images/Maintenance.png");
+}
+.directorDash aside ul.tabs li:nth-child(19) a {
+  background-image: url("../images/Payrate-Control.png");
+}
+.directorDash aside ul.tabs li:nth-child(20) a {
+  background-image: url("../images/emloyee-detail-report.png");
 }
 .directorDash aside ul.tabs li.active a {
   background-color: rgba(249, 249, 249, 0.1);
@@ -26700,7 +26742,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   display: block;
 }
-.directorDash > section .partition .filtersArea ul li input[type=text], .directorDash > section .partition .filtersArea ul li select {
+.directorDash > section .partition .filtersArea ul li input[type=text],
+.directorDash > section .partition .filtersArea ul li select {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -26713,17 +26756,21 @@ body {
   position: relative;
   z-index: 1;
 }
-.directorDash > section .partition .filtersArea ul li input[type=text][name=dateRange], .directorDash > section .partition .filtersArea ul li input[type=text].date, .directorDash > section .partition .filtersArea ul li select[name=dateRange], .directorDash > section .partition .filtersArea ul li select.date {
+.directorDash > section .partition .filtersArea ul li input[type=text][name=dateRange], .directorDash > section .partition .filtersArea ul li input[type=text].date,
+.directorDash > section .partition .filtersArea ul li select[name=dateRange],
+.directorDash > section .partition .filtersArea ul li select.date {
   background-image: url("../images/calendar.png");
   background-position: right 5px center;
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.directorDash > section .partition .filtersArea ul li input[type=text]:focus, .directorDash > section .partition .filtersArea ul li select:focus {
+.directorDash > section .partition .filtersArea ul li input[type=text]:focus,
+.directorDash > section .partition .filtersArea ul li select:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
-.directorDash > section .partition .filtersArea ul li input[type=text].disabled, .directorDash > section .partition .filtersArea ul li select.disabled {
+.directorDash > section .partition .filtersArea ul li input[type=text].disabled,
+.directorDash > section .partition .filtersArea ul li select.disabled {
   pointer-events: none;
   background-color: #F3F3F3;
 }
@@ -26732,7 +26779,9 @@ body {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 9px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding-right: 34px;
 }
 .directorDash > section .partition .filtersArea button {
@@ -26787,7 +26836,9 @@ body {
   border-bottom: 1px solid #828787;
   background-color: transparent;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #FFF;
   background-position: right center;
   background-repeat: no-repeat;
@@ -27295,14 +27346,18 @@ body {
   padding: 5px 34px 5px 0;
   margin-bottom: 5px;
 }
-.newsudashboard .selectedUser .profile + section ul li a img, .newsudashboard .selectedUser .profile + section ul li a img.svg, .newsudashboard .selectedUser .profile + section ul li a svg {
+.newsudashboard .selectedUser .profile + section ul li a img,
+.newsudashboard .selectedUser .profile + section ul li a img.svg,
+.newsudashboard .selectedUser .profile + section ul li a svg {
   position: absolute;
   right: 0;
   height: 24px;
   width: 24px;
   top: 0;
 }
-.newsudashboard .selectedUser .profile + section ul li a img path, .newsudashboard .selectedUser .profile + section ul li a img.svg path, .newsudashboard .selectedUser .profile + section ul li a svg path {
+.newsudashboard .selectedUser .profile + section ul li a img path,
+.newsudashboard .selectedUser .profile + section ul li a img.svg path,
+.newsudashboard .selectedUser .profile + section ul li a svg path {
   fill: #CB0000;
 }
 .newsudashboard .selectedUser .profile + section ul li.showAlergies:hover .alergies {
@@ -28298,7 +28353,8 @@ body {
   width: 50px;
   height: 50px;
 }
-.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .name, .rotaGrid .rotaGridContainer .rotagrid .rotausertable li .designation {
+.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .name,
+.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .designation {
   display: block;
   padding: 0 0 0 65px;
   overflow: hidden;
@@ -28383,7 +28439,8 @@ body {
   right: auto;
   bottom: auto;
 }
-.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .shift, .rotaGrid .rotaGridContainer .rotagrid .rotausertable li .shiftime {
+.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .shift,
+.rotaGrid .rotaGridContainer .rotagrid .rotausertable li .shiftime {
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -28447,7 +28504,8 @@ body {
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .picture {
   display: none;
 }
-.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .name, .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .designation {
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .name,
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .designation {
   padding: 0;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .remove {
@@ -29244,7 +29302,8 @@ button.newStyle.green {
   font-weight: 400;
   margin: 0;
 }
-.handoverColumns > aside .scroll-content > div .credentials input[type=text], .handoverColumns > aside .scroll-content > div .credentials input[type=password] {
+.handoverColumns > aside .scroll-content > div .credentials input[type=text],
+.handoverColumns > aside .scroll-content > div .credentials input[type=password] {
   border-width: 1px;
   border-color: rgb(204, 204, 204);
   border-style: solid;
@@ -29313,7 +29372,8 @@ button.newStyle.green {
 .handoverColumns .devices ul li article img.noMrg {
   margin: 0;
 }
-.handoverColumns .devices ul li article .empName, .handoverColumns .devices ul li article .serviceUserName {
+.handoverColumns .devices ul li article .empName,
+.handoverColumns .devices ul li article .serviceUserName {
   background-color: rgba(31, 38, 42, 0.8);
   position: absolute;
   bottom: 50px;
@@ -29324,7 +29384,8 @@ button.newStyle.green {
   text-align: right;
   line-height: 1;
 }
-.handoverColumns .devices ul li article .empName i, .handoverColumns .devices ul li article .serviceUserName i {
+.handoverColumns .devices ul li article .empName i,
+.handoverColumns .devices ul li article .serviceUserName i {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -29657,7 +29718,8 @@ button.newStyle.green {
   border-radius: 0;
 }
 
-.saveAssessment, .saveAssessment + a {
+.saveAssessment,
+.saveAssessment + a {
   background-color: #6DC77A;
   border-radius: 4px;
   padding: 2px 5px;
@@ -29736,7 +29798,9 @@ button.newStyle.green {
   border-radius: 6px;
   height: 32px;
   padding: 0 27px 0 10px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url("../images/select-arrow.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
@@ -30138,7 +30202,8 @@ button.newStyle.green {
 .hrdashboard .staffPerformance.print article .title {
   font-size: 14px;
 }
-.hrdashboard .staffPerformance.print article > a, .hrdashboard .staffPerformance.print article .settings {
+.hrdashboard .staffPerformance.print article > a,
+.hrdashboard .staffPerformance.print article .settings {
   display: none;
 }
 .hrdashboard .staffPerformance.print article .careProvidedList {
@@ -30403,7 +30468,8 @@ button.newStyle.green {
   overflow: hidden;
   overflow-y: auto;
 }
-.newPopup article .popupContainer, .newPopup article .secondary {
+.newPopup article .popupContainer,
+.newPopup article .secondary {
   width: 525px;
   min-height: 325px;
   display: inline-block;
@@ -30417,12 +30483,14 @@ button.newStyle.green {
   vertical-align: middle;
 }
 @media (max-width: 580px) {
-  .newPopup article .popupContainer, .newPopup article .secondary {
+  .newPopup article .popupContainer,
+  .newPopup article .secondary {
     width: calc(100% - 60px);
     margin-left: -40px;
   }
 }
-.newPopup article .popupContainer > .title, .newPopup article .secondary > .title {
+.newPopup article .popupContainer > .title,
+.newPopup article .secondary > .title {
   display: inline-block;
   height: 50px;
   background-color: #ffcd60;
@@ -30437,7 +30505,8 @@ button.newStyle.green {
   bottom: 146px;
   right: -180px;
 }
-.newPopup article .popupContainer > .title:after, .newPopup article .secondary > .title:after {
+.newPopup article .popupContainer > .title:after,
+.newPopup article .secondary > .title:after {
   width: 0;
   height: 0;
   border-top: 50px solid #ffcd60;
@@ -30447,7 +30516,8 @@ button.newStyle.green {
   top: 0;
   left: 100%;
 }
-.newPopup article .popupContainer > .title .close, .newPopup article .secondary > .title .close {
+.newPopup article .popupContainer > .title .close,
+.newPopup article .secondary > .title .close {
   position: absolute;
   left: 13px;
   top: 13px;
@@ -30461,17 +30531,20 @@ button.newStyle.green {
   cursor: pointer;
   opacity: 1;
 }
-.newPopup article .popupContainer > .title span, .newPopup article .secondary > .title span {
+.newPopup article .popupContainer > .title span,
+.newPopup article .secondary > .title span {
   overflow: hidden;
   display: block;
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.newPopup article .popupContainer .popupBody, .newPopup article .secondary .popupBody {
+.newPopup article .popupContainer .popupBody,
+.newPopup article .secondary .popupBody {
   overflow: hidden;
 }
-.newPopup article .popupContainer > a, .newPopup article .secondary > a {
+.newPopup article .popupContainer > a,
+.newPopup article .secondary > a {
   height: 50px;
   padding: 0 15px;
   color: #FFF;
@@ -30486,7 +30559,8 @@ button.newStyle.green {
   display: inline-block;
   line-height: 50px;
 }
-.newPopup article .popupContainer > a:after, .newPopup article .secondary > a:after {
+.newPopup article .popupContainer > a:after,
+.newPopup article .secondary > a:after {
   width: 0;
   height: 0;
   border-bottom: 50px solid #1d7f55;
@@ -30496,15 +30570,18 @@ button.newStyle.green {
   top: 0;
   left: 100%;
 }
-.newPopup article .popupContainer .userList, .newPopup article .secondary .userList {
+.newPopup article .popupContainer .userList,
+.newPopup article .secondary .userList {
   margin: 0 -5px;
 }
-.newPopup article .popupContainer .userList li, .newPopup article .secondary .userList li {
+.newPopup article .popupContainer .userList li,
+.newPopup article .secondary .userList li {
   float: left;
   padding: 0 5px;
   width: calc((100% - 30px) / 4);
 }
-.newPopup article .popupContainer .userList li a, .newPopup article .secondary .userList li a {
+.newPopup article .popupContainer .userList li a,
+.newPopup article .secondary .userList li a {
   display: block;
   border: 2px solid #666;
   border-radius: 4px;
@@ -30512,14 +30589,16 @@ button.newStyle.green {
   padding-top: 100%;
   overflow: hidden;
 }
-.newPopup article .popupContainer .userList li a img, .newPopup article .secondary .userList li a img {
+.newPopup article .popupContainer .userList li a img,
+.newPopup article .secondary .userList li a img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: auto;
 }
-.newPopup article .popupContainer .userList li a span, .newPopup article .secondary .userList li a span {
+.newPopup article .popupContainer .userList li a span,
+.newPopup article .secondary .userList li a span {
   display: block;
   padding: 2px 5px;
   text-align: center;
@@ -30531,21 +30610,25 @@ button.newStyle.green {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
 }
-.newPopup article .popupContainer .alertsCheckboxes, .newPopup article .secondary .alertsCheckboxes {
+.newPopup article .popupContainer .alertsCheckboxes,
+.newPopup article .secondary .alertsCheckboxes {
   margin: 0;
 }
-.newPopup article .popupContainer .alertsCheckboxes li, .newPopup article .secondary .alertsCheckboxes li {
+.newPopup article .popupContainer .alertsCheckboxes li,
+.newPopup article .secondary .alertsCheckboxes li {
   float: left;
   width: 33.3333333333%;
 }
-.newPopup article .popupContainer .alertsCheckboxes li .title, .newPopup article .secondary .alertsCheckboxes li .title {
+.newPopup article .popupContainer .alertsCheckboxes li .title,
+.newPopup article .secondary .alertsCheckboxes li .title {
   font-size: 14px;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 5px;
 }
-.newPopup article .popupContainer .alertsCheckboxes li label, .newPopup article .secondary .alertsCheckboxes li label {
+.newPopup article .popupContainer .alertsCheckboxes li label,
+.newPopup article .secondary .alertsCheckboxes li label {
   display: block;
   width: 36px;
   height: 24px;
@@ -30553,7 +30636,8 @@ button.newStyle.green {
   background-color: #a1adb0;
   position: relative;
 }
-.newPopup article .popupContainer .alertsCheckboxes li label:before, .newPopup article .secondary .alertsCheckboxes li label:before {
+.newPopup article .popupContainer .alertsCheckboxes li label:before,
+.newPopup article .secondary .alertsCheckboxes li label:before {
   position: absolute;
   height: 18px;
   width: 18px;
@@ -30563,16 +30647,20 @@ button.newStyle.green {
   border-radius: 9px;
   content: "";
 }
-.newPopup article .popupContainer .alertsCheckboxes li input[type=checkbox]:checked + label, .newPopup article .secondary .alertsCheckboxes li input[type=checkbox]:checked + label {
+.newPopup article .popupContainer .alertsCheckboxes li input[type=checkbox]:checked + label,
+.newPopup article .secondary .alertsCheckboxes li input[type=checkbox]:checked + label {
   background-color: #3C7970;
 }
-.newPopup article .popupContainer .alertsCheckboxes li input[type=checkbox]:checked + label:before, .newPopup article .secondary .alertsCheckboxes li input[type=checkbox]:checked + label:before {
+.newPopup article .popupContainer .alertsCheckboxes li input[type=checkbox]:checked + label:before,
+.newPopup article .secondary .alertsCheckboxes li input[type=checkbox]:checked + label:before {
   left: 15px;
 }
-.newPopup article .popupContainer.moveLeft, .newPopup article .secondary.moveLeft {
+.newPopup article .popupContainer.moveLeft,
+.newPopup article .secondary.moveLeft {
   transform: translateX(-25%);
 }
-.newPopup article .popupContainer .form-group .checkbox, .newPopup article .secondary .form-group .checkbox {
+.newPopup article .popupContainer .form-group .checkbox,
+.newPopup article .secondary .form-group .checkbox {
   display: block;
   width: 36px;
   height: 24px;
@@ -30580,7 +30668,8 @@ button.newStyle.green {
   background-color: #a1adb0;
   position: relative;
 }
-.newPopup article .popupContainer .form-group .checkbox:before, .newPopup article .secondary .form-group .checkbox:before {
+.newPopup article .popupContainer .form-group .checkbox:before,
+.newPopup article .secondary .form-group .checkbox:before {
   position: absolute;
   height: 18px;
   width: 18px;
@@ -30590,17 +30679,21 @@ button.newStyle.green {
   border-radius: 9px;
   content: "";
 }
-.newPopup article .popupContainer .form-group label, .newPopup article .secondary .form-group label {
+.newPopup article .popupContainer .form-group label,
+.newPopup article .secondary .form-group label {
   font-size: 12px;
   font-weight: 400;
 }
-.newPopup article .popupContainer .form-group input[type=checkbox]:checked + .checkbox, .newPopup article .secondary .form-group input[type=checkbox]:checked + .checkbox {
+.newPopup article .popupContainer .form-group input[type=checkbox]:checked + .checkbox,
+.newPopup article .secondary .form-group input[type=checkbox]:checked + .checkbox {
   background-color: #3C7970;
 }
-.newPopup article .popupContainer .form-group input[type=checkbox]:checked + .checkbox:before, .newPopup article .secondary .form-group input[type=checkbox]:checked + .checkbox:before {
+.newPopup article .popupContainer .form-group input[type=checkbox]:checked + .checkbox:before,
+.newPopup article .secondary .form-group input[type=checkbox]:checked + .checkbox:before {
   left: 15px;
 }
-.newPopup article .popupContainer .form-group input[type=text], .newPopup article .secondary .form-group input[type=text] {
+.newPopup article .popupContainer .form-group input[type=text],
+.newPopup article .secondary .form-group input[type=text] {
   border-width: 1px;
   border-color: rgb(161, 173, 176);
   border-style: solid;
@@ -30610,10 +30703,12 @@ button.newStyle.green {
   font-size: 12px;
   padding: 0 5px;
 }
-.newPopup article .popupContainer .deactiveMilestone, .newPopup article .secondary .deactiveMilestone {
+.newPopup article .popupContainer .deactiveMilestone,
+.newPopup article .secondary .deactiveMilestone {
   margin: 0;
 }
-.newPopup article .popupContainer .deactiveMilestone li label, .newPopup article .secondary .deactiveMilestone li label {
+.newPopup article .popupContainer .deactiveMilestone li label,
+.newPopup article .secondary .deactiveMilestone li label {
   display: block;
   border: 2px solid #c6cfcf;
   border-radius: 6px;
@@ -30621,13 +30716,15 @@ button.newStyle.green {
   font-weight: 400;
   cursor: pointer;
 }
-.newPopup article .popupContainer .deactiveMilestone li label strong, .newPopup article .secondary .deactiveMilestone li label strong {
+.newPopup article .popupContainer .deactiveMilestone li label strong,
+.newPopup article .secondary .deactiveMilestone li label strong {
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.newPopup article .popupContainer .deactiveMilestone li input[type=checkbox]:checked + label, .newPopup article .secondary .deactiveMilestone li input[type=checkbox]:checked + label {
+.newPopup article .popupContainer .deactiveMilestone li input[type=checkbox]:checked + label,
+.newPopup article .secondary .deactiveMilestone li input[type=checkbox]:checked + label {
   background-color: #388cb3;
 }
 
@@ -30806,7 +30903,8 @@ button.newStyle.green {
   top: -22px;
   font-style: italic;
 }
-.auditCTA input[type=text], .auditCTA button {
+.auditCTA input[type=text],
+.auditCTA button {
   float: left;
   margin-right: 5px;
 }
@@ -31067,7 +31165,8 @@ button.newStyle.green {
   float: left;
   padding-right: 20px;
 }
-.alertsHistory .alertsList ul li i, .alertsHistory .alertsList ul li span {
+.alertsHistory .alertsList ul li i,
+.alertsHistory .alertsList ul li span {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -31413,7 +31512,8 @@ button.newStyle.green {
   table-layout: fixed;
   width: 100%;
 }
-.newOutcome .milestones.view > ul li table tr th, .newOutcome .milestones.view > ul li table tr td {
+.newOutcome .milestones.view > ul li table tr th,
+.newOutcome .milestones.view > ul li table tr td {
   padding: 5px;
 }
 .newOutcome .milestones.view > ul li table tr th {
@@ -32004,7 +32104,8 @@ button.newStyle.green {
   background-color: #82CA9C;
   left: 15px;
 }
-.serviceUserDay article .formSection .formElement input[type=text], .serviceUserDay article .formSection .formElement input[type=password] {
+.serviceUserDay article .formSection .formElement input[type=text],
+.serviceUserDay article .formSection .formElement input[type=password] {
   border: 1px solid #a1adb0;
   border-radius: 4px;
   height: 42px;
@@ -32910,17 +33011,23 @@ input[type=checkbox].switch:checked + label:before {
 .newSUList .listContainer > ul > li article .picture.fAlert a {
   pointer-events: none;
 }
-.newSUList .listContainer > ul > li article .listWarnings, .newSUList .listContainer > ul > li article .listAlerts, .newSUList .listContainer > ul > li article .dnacpr, .newSUList .listContainer > ul > li article .newsScore, .newSUList .listContainer > ul > li article .respect {
+.newSUList .listContainer > ul > li article .listWarnings,
+.newSUList .listContainer > ul > li article .listAlerts,
+.newSUList .listContainer > ul > li article .dnacpr,
+.newSUList .listContainer > ul > li article .newsScore,
+.newSUList .listContainer > ul > li article .respect {
   display: inline-block;
 }
-.newSUList .listContainer > ul > li article .listWarnings, .newSUList .listContainer > ul > li article .listAlerts {
+.newSUList .listContainer > ul > li article .listWarnings,
+.newSUList .listContainer > ul > li article .listAlerts {
   cursor: pointer;
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   position: relative;
   margin-bottom: 3px;
 }
-.newSUList .listContainer > ul > li article .listWarnings:before, .newSUList .listContainer > ul > li article .listAlerts:before {
+.newSUList .listContainer > ul > li article .listWarnings:before,
+.newSUList .listContainer > ul > li article .listAlerts:before {
   content: attr(data);
   border-radius: 4px;
   background-color: #a186be;
@@ -32937,7 +33044,9 @@ input[type=checkbox].switch:checked + label:before {
 .newSUList .listContainer > ul > li article .listAlerts.blink {
   animation: blink-animation 1s steps(5, start) infinite;
 }
-.newSUList .listContainer > ul > li article .dnacpr, .newSUList .listContainer > ul > li article .newsScore, .newSUList .listContainer > ul > li article .respect {
+.newSUList .listContainer > ul > li article .dnacpr,
+.newSUList .listContainer > ul > li article .newsScore,
+.newSUList .listContainer > ul > li article .respect {
   font-size: 16px;
   color: rgb(250, 250, 252);
   font-weight: bold;
@@ -32949,7 +33058,9 @@ input[type=checkbox].switch:checked + label:before {
   padding: 0 5px;
 }
 @media screen and (max-width: 1600px) {
-  .newSUList .listContainer > ul > li article .dnacpr, .newSUList .listContainer > ul > li article .newsScore, .newSUList .listContainer > ul > li article .respect {
+  .newSUList .listContainer > ul > li article .dnacpr,
+  .newSUList .listContainer > ul > li article .newsScore,
+  .newSUList .listContainer > ul > li article .respect {
     font-size: 9px;
   }
 }
@@ -33071,14 +33182,18 @@ input[type=checkbox].switch:checked + label:before {
   padding: 0 10px;
   cursor: pointer;
 }
-.newSUList .listContainer > ul > li article .postFallAlert, .newSUList .listContainer > ul > li article .fluidAlert, .newSUList .listContainer > ul > li article .noDailyNotes {
+.newSUList .listContainer > ul > li article .postFallAlert,
+.newSUList .listContainer > ul > li article .fluidAlert,
+.newSUList .listContainer > ul > li article .noDailyNotes {
   float: left;
   height: 24px;
   width: 24px;
   margin-right: 5px;
   animation: blink-animation 1s steps(5, start) infinite;
 }
-.newSUList .listContainer > ul > li article .postFallAlert img, .newSUList .listContainer > ul > li article .fluidAlert img, .newSUList .listContainer > ul > li article .noDailyNotes img {
+.newSUList .listContainer > ul > li article .postFallAlert img,
+.newSUList .listContainer > ul > li article .fluidAlert img,
+.newSUList .listContainer > ul > li article .noDailyNotes img {
   height: 100%;
   width: 100%;
 }
@@ -33511,7 +33626,11 @@ input[type=checkbox].switch:checked + label:before {
   visibility: visible;
   opacity: 1;
 }
-.pop > div > section > article ul.form li input[type=text], .pop > div > section > article ul.form li input[type=password], .pop > div > section > article ul.form li select, .pop > div > section > article ul.form li textarea, .pop > div > section > article ul.form li .uploadImg {
+.pop > div > section > article ul.form li input[type=text],
+.pop > div > section > article ul.form li input[type=password],
+.pop > div > section > article ul.form li select,
+.pop > div > section > article ul.form li textarea,
+.pop > div > section > article ul.form li .uploadImg {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -33521,13 +33640,25 @@ input[type=checkbox].switch:checked + label:before {
   padding: 0 10px;
   box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
 }
-.pop > div > section > article ul.form li input[type=text][name=dateRange], .pop > div > section > article ul.form li input[type=text].date, .pop > div > section > article ul.form li input[type=password][name=dateRange], .pop > div > section > article ul.form li input[type=password].date, .pop > div > section > article ul.form li select[name=dateRange], .pop > div > section > article ul.form li select.date, .pop > div > section > article ul.form li textarea[name=dateRange], .pop > div > section > article ul.form li textarea.date, .pop > div > section > article ul.form li .uploadImg[name=dateRange], .pop > div > section > article ul.form li .uploadImg.date {
+.pop > div > section > article ul.form li input[type=text][name=dateRange], .pop > div > section > article ul.form li input[type=text].date,
+.pop > div > section > article ul.form li input[type=password][name=dateRange],
+.pop > div > section > article ul.form li input[type=password].date,
+.pop > div > section > article ul.form li select[name=dateRange],
+.pop > div > section > article ul.form li select.date,
+.pop > div > section > article ul.form li textarea[name=dateRange],
+.pop > div > section > article ul.form li textarea.date,
+.pop > div > section > article ul.form li .uploadImg[name=dateRange],
+.pop > div > section > article ul.form li .uploadImg.date {
   background-image: url("../images/calendar.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: 18px;
 }
-.pop > div > section > article ul.form li input[type=text]:focus, .pop > div > section > article ul.form li input[type=password]:focus, .pop > div > section > article ul.form li select:focus, .pop > div > section > article ul.form li textarea:focus, .pop > div > section > article ul.form li .uploadImg:focus {
+.pop > div > section > article ul.form li input[type=text]:focus,
+.pop > div > section > article ul.form li input[type=password]:focus,
+.pop > div > section > article ul.form li select:focus,
+.pop > div > section > article ul.form li textarea:focus,
+.pop > div > section > article ul.form li .uploadImg:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
@@ -33923,7 +34054,9 @@ input[type=checkbox].switch:checked + label:before {
   display: block;
   margin: 0;
 }
-.groupActivity .formSide .scroll-wrapper .form > ul > li input[type=text], .groupActivity .formSide .scroll-wrapper .form > ul > li select, .groupActivity .formSide .scroll-wrapper .form > ul > li input[type=file] {
+.groupActivity .formSide .scroll-wrapper .form > ul > li input[type=text],
+.groupActivity .formSide .scroll-wrapper .form > ul > li select,
+.groupActivity .formSide .scroll-wrapper .form > ul > li input[type=file] {
   border-width: 1px;
   border-color: #828787;
   border-style: solid;
@@ -34145,7 +34278,8 @@ input[type=checkbox].switch:checked + label:before {
   margin-bottom: 0;
   font-weight: 400;
 }
-.groupActivity .chooseServiceUsers .scroll-wrapper .scrollArea > ul > li .form > li input[type=text], .groupActivity .chooseServiceUsers .scroll-wrapper .scrollArea > ul > li .form > li select {
+.groupActivity .chooseServiceUsers .scroll-wrapper .scrollArea > ul > li .form > li input[type=text],
+.groupActivity .chooseServiceUsers .scroll-wrapper .scrollArea > ul > li .form > li select {
   border-width: 1px;
   border-color: #828787;
   border-style: solid;
@@ -34495,7 +34629,8 @@ input[type=checkbox].switch:checked + label:before {
   padding-right: 20px;
   position: relative;
 }
-.aniListing article ul li i, .aniListing article ul li span {
+.aniListing article ul li i,
+.aniListing article ul li span {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -34512,7 +34647,10 @@ input[type=checkbox].switch:checked + label:before {
   color: #5d6a72;
   font-family: "Roboto Condensed", sans-serif;
 }
-.aniListing article ul li .view, .aniListing article ul li .delete, .aniListing article ul li .gear, .aniListing article ul li .print {
+.aniListing article ul li .view,
+.aniListing article ul li .delete,
+.aniListing article ul li .gear,
+.aniListing article ul li .print {
   float: left;
   width: 24px;
   height: 24px;
@@ -34695,7 +34833,10 @@ input[type=checkbox].switch:checked + label:before {
   right: 34px;
   top: 27px;
 }
-.aniSection aside ul li input[type=text], .aniSection aside ul li select, .aniSection aside ul li textarea, .aniSection aside ul li .select2 {
+.aniSection aside ul li input[type=text],
+.aniSection aside ul li select,
+.aniSection aside ul li textarea,
+.aniSection aside ul li .select2 {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -34706,17 +34847,29 @@ input[type=checkbox].switch:checked + label:before {
   box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
   background-color: #FFF;
 }
-.aniSection aside ul li input[type=text][name=dateRange], .aniSection aside ul li input[type=text].econsentDateRange, .aniSection aside ul li select[name=dateRange], .aniSection aside ul li select.econsentDateRange, .aniSection aside ul li textarea[name=dateRange], .aniSection aside ul li textarea.econsentDateRange, .aniSection aside ul li .select2[name=dateRange], .aniSection aside ul li .select2.econsentDateRange {
+.aniSection aside ul li input[type=text][name=dateRange], .aniSection aside ul li input[type=text].econsentDateRange,
+.aniSection aside ul li select[name=dateRange],
+.aniSection aside ul li select.econsentDateRange,
+.aniSection aside ul li textarea[name=dateRange],
+.aniSection aside ul li textarea.econsentDateRange,
+.aniSection aside ul li .select2[name=dateRange],
+.aniSection aside ul li .select2.econsentDateRange {
   background-image: url("../images/calendar.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.aniSection aside ul li input[type=text]:focus, .aniSection aside ul li select:focus, .aniSection aside ul li textarea:focus, .aniSection aside ul li .select2:focus {
+.aniSection aside ul li input[type=text]:focus,
+.aniSection aside ul li select:focus,
+.aniSection aside ul li textarea:focus,
+.aniSection aside ul li .select2:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
-.aniSection aside ul li input[type=text].disabled, .aniSection aside ul li select.disabled, .aniSection aside ul li textarea.disabled, .aniSection aside ul li .select2.disabled {
+.aniSection aside ul li input[type=text].disabled,
+.aniSection aside ul li select.disabled,
+.aniSection aside ul li textarea.disabled,
+.aniSection aside ul li .select2.disabled {
   pointer-events: none;
   background-color: #F3F3F3;
 }
@@ -35120,7 +35273,10 @@ input[type=checkbox].switch:checked + label:before {
   right: 34px;
   top: 27px;
 }
-.injuryUlcerMgmt .formSide ul li input[type=text], .injuryUlcerMgmt .formSide ul li select, .injuryUlcerMgmt .formSide ul li textarea, .injuryUlcerMgmt .formSide ul li .uploadImg {
+.injuryUlcerMgmt .formSide ul li input[type=text],
+.injuryUlcerMgmt .formSide ul li select,
+.injuryUlcerMgmt .formSide ul li textarea,
+.injuryUlcerMgmt .formSide ul li .uploadImg {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -35130,13 +35286,19 @@ input[type=checkbox].switch:checked + label:before {
   padding: 0 10px;
   box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
 }
-.injuryUlcerMgmt .formSide ul li input[type=text][name=dateRange], .injuryUlcerMgmt .formSide ul li select[name=dateRange], .injuryUlcerMgmt .formSide ul li textarea[name=dateRange], .injuryUlcerMgmt .formSide ul li .uploadImg[name=dateRange] {
+.injuryUlcerMgmt .formSide ul li input[type=text][name=dateRange],
+.injuryUlcerMgmt .formSide ul li select[name=dateRange],
+.injuryUlcerMgmt .formSide ul li textarea[name=dateRange],
+.injuryUlcerMgmt .formSide ul li .uploadImg[name=dateRange] {
   background-image: url("../images/calendar.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: 18px;
 }
-.injuryUlcerMgmt .formSide ul li input[type=text]:focus, .injuryUlcerMgmt .formSide ul li select:focus, .injuryUlcerMgmt .formSide ul li textarea:focus, .injuryUlcerMgmt .formSide ul li .uploadImg:focus {
+.injuryUlcerMgmt .formSide ul li input[type=text]:focus,
+.injuryUlcerMgmt .formSide ul li select:focus,
+.injuryUlcerMgmt .formSide ul li textarea:focus,
+.injuryUlcerMgmt .formSide ul li .uploadImg:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
@@ -36106,8 +36268,10 @@ input[type=checkbox].switch:checked + label:before {
 }
 
 .permissions {
-  column-count: 2;
-  column-gap: 20px;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .permissions article {
   overflow: hidden;
@@ -36284,7 +36448,8 @@ input[type=checkbox].switch:checked + label:before {
   opacity: 0.4;
 }
 .permissions.modules {
-  column-count: 1;
+  -moz-column-count: 1;
+       column-count: 1;
 }
 .permissions.modules article .title {
   background-image: none;
@@ -36582,7 +36747,12 @@ input[type=checkbox].switch:checked + label:before {
   right: 0;
   top: -2px;
 }
-.newForm ul li input[type=text], .newForm ul li select, .newForm ul li textarea, .newForm ul li .select2, .newForm ul li input[type=email], .newForm ul li input[type=password] {
+.newForm ul li input[type=text],
+.newForm ul li select,
+.newForm ul li textarea,
+.newForm ul li .select2,
+.newForm ul li input[type=email],
+.newForm ul li input[type=password] {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -36595,17 +36765,37 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   z-index: 1;
 }
-.newForm ul li input[type=text][name=dateRange], .newForm ul li input[type=text].date, .newForm ul li select[name=dateRange], .newForm ul li select.date, .newForm ul li textarea[name=dateRange], .newForm ul li textarea.date, .newForm ul li .select2[name=dateRange], .newForm ul li .select2.date, .newForm ul li input[type=email][name=dateRange], .newForm ul li input[type=email].date, .newForm ul li input[type=password][name=dateRange], .newForm ul li input[type=password].date {
+.newForm ul li input[type=text][name=dateRange], .newForm ul li input[type=text].date,
+.newForm ul li select[name=dateRange],
+.newForm ul li select.date,
+.newForm ul li textarea[name=dateRange],
+.newForm ul li textarea.date,
+.newForm ul li .select2[name=dateRange],
+.newForm ul li .select2.date,
+.newForm ul li input[type=email][name=dateRange],
+.newForm ul li input[type=email].date,
+.newForm ul li input[type=password][name=dateRange],
+.newForm ul li input[type=password].date {
   background-image: url("../images/calendar.png");
   background-position: right 5px center;
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.newForm ul li input[type=text]:focus, .newForm ul li select:focus, .newForm ul li textarea:focus, .newForm ul li .select2:focus, .newForm ul li input[type=email]:focus, .newForm ul li input[type=password]:focus {
+.newForm ul li input[type=text]:focus,
+.newForm ul li select:focus,
+.newForm ul li textarea:focus,
+.newForm ul li .select2:focus,
+.newForm ul li input[type=email]:focus,
+.newForm ul li input[type=password]:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
-.newForm ul li input[type=text].disabled, .newForm ul li select.disabled, .newForm ul li textarea.disabled, .newForm ul li .select2.disabled, .newForm ul li input[type=email].disabled, .newForm ul li input[type=password].disabled {
+.newForm ul li input[type=text].disabled,
+.newForm ul li select.disabled,
+.newForm ul li textarea.disabled,
+.newForm ul li .select2.disabled,
+.newForm ul li input[type=email].disabled,
+.newForm ul li input[type=password].disabled {
   pointer-events: none;
   background-color: #F3F3F3;
 }
@@ -36614,7 +36804,9 @@ input[type=checkbox].switch:checked + label:before {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 9px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding-right: 34px;
 }
 .newForm ul li textarea {
@@ -36867,7 +37059,10 @@ input[type=checkbox].switch:checked + label:before {
   font-family: "Roboto Condensed", sans-serif;
   padding: 5px;
 }
-.newForm article input[type=text], .newForm article select, .newForm article textarea, .newForm article .select2 {
+.newForm article input[type=text],
+.newForm article select,
+.newForm article textarea,
+.newForm article .select2 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .newForm article .addMultiple {
@@ -37370,7 +37565,8 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 6px;
   margin-top: 10px;
 }
-.superDirectorSection button, .superDirectorSection a {
+.superDirectorSection button,
+.superDirectorSection a {
   border-radius: 4px;
   background-color: rgba(78, 88, 104, 0.6);
   height: 40px;
@@ -37383,17 +37579,21 @@ input[type=checkbox].switch:checked + label:before {
   display: inline-block;
   line-height: 40px;
 }
-.superDirectorSection button.green, .superDirectorSection a.green {
+.superDirectorSection button.green,
+.superDirectorSection a.green {
   background-color: #6DC77A;
 }
-.superDirectorSection button.blue, .superDirectorSection a.blue {
+.superDirectorSection button.blue,
+.superDirectorSection a.blue {
   background-color: #7da7d9;
 }
-.superDirectorSection button.orange, .superDirectorSection a.orange {
+.superDirectorSection button.orange,
+.superDirectorSection a.orange {
   background-color: #FFCD60;
   color: #1C3C4B;
 }
-.superDirectorSection button.print, .superDirectorSection a.print {
+.superDirectorSection button.print,
+.superDirectorSection a.print {
   background-color: #3F4253;
 }
 
@@ -37588,7 +37788,9 @@ input[type=checkbox].switch:checked + label:before {
 .generalListing section > ul > li .iconWithTitle.conduct {
   background-image: url("../images/conductSurvey.png");
 }
-.generalListing section > ul > li .eye, .generalListing section > ul > li .view, .generalListing section > ul > li .delete {
+.generalListing section > ul > li .eye,
+.generalListing section > ul > li .view,
+.generalListing section > ul > li .delete {
   float: left;
   width: 24px;
   height: 24px;
@@ -38267,15 +38469,18 @@ input[type=checkbox].switch:checked + label:before {
   right: 10px;
   background-position: -24px 0;
 }
-.newCalendar .weeks, .newCalendar .days {
+.newCalendar .weeks,
+.newCalendar .days {
   padding: 0 11px;
   border-top: 1px solid #cad4d6;
   margin: 0;
 }
-.newCalendar .weeks li, .newCalendar .days li {
+.newCalendar .weeks li,
+.newCalendar .days li {
   float: left;
 }
-.newCalendar .weeks li button, .newCalendar .days li button {
+.newCalendar .weeks li button,
+.newCalendar .days li button {
   width: 54px;
   height: 54px;
   font-size: 12px;
@@ -38429,7 +38634,8 @@ input[type=checkbox].switch:checked + label:before {
   color: #FFF;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 .album .tabPanel ul li article .img {
@@ -39019,4 +39225,6 @@ input[type=checkbox].switch:checked + label:before {
   display: none !important;
 }
 
-/*# sourceMappingURL=custom.css.map */
+.select2-container {
+  z-index: 5000;
+}/*# sourceMappingURL=custom.css.map */
