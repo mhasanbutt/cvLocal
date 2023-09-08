@@ -29,6 +29,36 @@
         </section>
     </div>
 
+    <div class="pop" style="display:table;">
+        <div>
+            <section>
+                <article style="width:550px;">
+                    <i class="popFuse"></i>
+                    <span class="title">Nutrition Daily Report</span>
+                    <div class="counters">
+                        <ul class="list-unstyled clearfix">
+                            <li>
+                                <article>
+                                    <span>1.85 / 0</span><div class="title">Protein<br>Target</div>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <span>0.03 / 14</span><div class="title">Vitamin C<br>Target</div>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <span>-</span><div class="title">Energy<br>Target</div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
     <div class="pop">
         <div>
             <section>

@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
 </head>
-<body class="overflow">
+<body>
     <div class="header">
         <div class="logo">
             <img src="images/logo.webp">

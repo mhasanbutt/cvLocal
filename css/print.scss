@@ -804,3 +804,231 @@ body {
         }
     }
 }
+
+.printReady {
+    font-size: 12px;
+    background: #FFF;
+
+    .container {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        padding: 15px 0;
+
+        .logo {
+            height: 80px;
+        }
+
+        .printButton {
+            border: 0;
+            border-radius: 4px;
+            background-color: $primaryColor;
+            padding: 5px 10px;
+            color: #FFF;
+            margin-bottom: 15px;
+
+            img.svg,
+            svg,
+            img {
+
+                height: 18px;
+                width: 18px;
+                float: left;
+                margin-right: 10px;
+
+                path {
+                    fill: #FFF;
+                }
+            }
+        }
+
+        .date {
+            font-family: $secondaryFont;
+        }
+    }
+
+    h4 {
+        margin: 20px 0 10px 0;
+        background-color: #CCC !important;
+        color: #FFF;
+        border-radius: 4px;
+        padding: 5px;
+        font-weight: 400;
+    }
+
+    .formInfo {
+        display: block;
+        padding: 5px 0;
+        border-top: 1px solid #CCC;
+    }
+
+    .listing {
+        margin-bottom: 0;
+
+        li {
+            border-top: 1px solid #CCC;
+            padding: 15px 0;
+
+            .printInfo {
+                display: block;
+                margin-bottom: 15px;
+
+                small {
+                    font-weight: 700;
+                }
+            }
+
+            .inlineInfo {
+                display: inline-block;
+                margin-right: 15px;
+
+                strong {
+                    font-weight: 500;
+                }
+
+                &:last-of-type {
+                    padding-top: 15px;
+                }
+
+                .smilies_table {
+                    tbody {
+                        tr {
+                            td {
+                                padding: 0 10px 0 0;
+                                line-height: 30px;
+                                text-align: center;
+
+                                img.svg,
+                                svg,
+                                img {
+                                    height: 30px;
+                                    width: 30px;
+                                    float: left;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .profileImg {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .serviceUserMiniProfile {
+        padding: 10px 0;
+        border-bottom: 1px solid #DDD;
+        margin-bottom: 10px;
+
+        small {
+            display: block;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+    }
+
+    .desc {
+        padding: 10px 0;
+        word-break: break-word;
+
+        small {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .staffQR {
+        &>div {
+            width: calc(calc(100% - 70px) / 2);
+            margin: 10px;
+            float: left;
+            height: 200px;
+            border: 1px solid #DDD;
+
+            .name {
+                display: table;
+                width: 100%;
+                height: 75px;
+                background-color: $primaryColor !important;
+
+                span {
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                    height: 75px;
+                    font-size: 24px;
+                    font-family: $secondaryFont;
+                    color: #FFF !important;
+                    line-height: 1;
+                    padding: 0 20px 0 85px;
+                    position: relative;
+
+                    strong {
+                        font-family: $primaryFont;
+                        font-size: 16px;
+                        color: #FFF !important;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 75px;
+                        width: 75px;
+                    }
+                }
+            }
+
+            .logo {
+                position: relative;
+                height: 125px;
+                padding: 5px 75px 5px 5px;
+
+                &>img {
+                    width: auto;
+                    height: 75px;
+                    position: absolute;
+                    left: 10px;
+                    top: 25px;
+                }
+
+                i {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    height: 115px;
+                    width: 115px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &.back {
+                display: table;
+
+                &>div {
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

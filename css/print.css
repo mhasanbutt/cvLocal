@@ -734,4 +734,190 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   line-height: 1;
 }
 
+.printReady {
+  font-size: 12px;
+  background: #FFF;
+}
+.printReady .container {
+  width: 100%;
+}
+.printReady table {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.printReady .header {
+  padding: 15px 0;
+}
+.printReady .header .logo {
+  height: 80px;
+}
+.printReady .header .printButton {
+  border: 0;
+  border-radius: 4px;
+  background-color: #6DC77A;
+  padding: 5px 10px;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+.printReady .header .printButton img.svg,
+.printReady .header .printButton svg,
+.printReady .header .printButton img {
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin-right: 10px;
+}
+.printReady .header .printButton img.svg path,
+.printReady .header .printButton svg path,
+.printReady .header .printButton img path {
+  fill: #FFF;
+}
+.printReady .header .date {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.printReady h4 {
+  margin: 20px 0 10px 0;
+  background-color: #CCC !important;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 5px;
+  font-weight: 400;
+}
+.printReady .formInfo {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px solid #CCC;
+}
+.printReady .listing {
+  margin-bottom: 0;
+}
+.printReady .listing li {
+  border-top: 1px solid #CCC;
+  padding: 15px 0;
+}
+.printReady .listing li .printInfo {
+  display: block;
+  margin-bottom: 15px;
+}
+.printReady .listing li .printInfo small {
+  font-weight: 700;
+}
+.printReady .listing li .inlineInfo {
+  display: inline-block;
+  margin-right: 15px;
+}
+.printReady .listing li .inlineInfo strong {
+  font-weight: 500;
+}
+.printReady .listing li .inlineInfo:last-of-type {
+  padding-top: 15px;
+}
+.printReady .listing li .inlineInfo .smilies_table tbody tr td {
+  padding: 0 10px 0 0;
+  line-height: 30px;
+  text-align: center;
+}
+.printReady .listing li .inlineInfo .smilies_table tbody tr td img.svg,
+.printReady .listing li .inlineInfo .smilies_table tbody tr td svg,
+.printReady .listing li .inlineInfo .smilies_table tbody tr td img {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+.printReady .profileImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.printReady .serviceUserMiniProfile {
+  padding: 10px 0;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 10px;
+}
+.printReady .serviceUserMiniProfile small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.printReady .desc {
+  padding: 10px 0;
+  word-break: break-word;
+}
+.printReady .desc small {
+  font-size: 16px;
+  font-weight: 700;
+}
+.printReady .staffQR > div {
+  width: calc((100% - 70px) / 2);
+  margin: 10px;
+  float: left;
+  height: 200px;
+  border: 1px solid #DDD;
+}
+.printReady .staffQR > div .name {
+  display: table;
+  width: 100%;
+  height: 75px;
+  background-color: #6DC77A !important;
+}
+.printReady .staffQR > div .name span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 75px;
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFF !important;
+  line-height: 1;
+  padding: 0 20px 0 85px;
+  position: relative;
+}
+.printReady .staffQR > div .name span strong {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FFF !important;
+}
+.printReady .staffQR > div .name span img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 75px;
+  width: 75px;
+}
+.printReady .staffQR > div .logo {
+  position: relative;
+  height: 125px;
+  padding: 5px 75px 5px 5px;
+}
+.printReady .staffQR > div .logo > img {
+  width: auto;
+  height: 75px;
+  position: absolute;
+  left: 10px;
+  top: 25px;
+}
+.printReady .staffQR > div .logo i {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 115px;
+  width: 115px;
+  overflow: hidden;
+}
+.printReady .staffQR > div .logo i img {
+  width: 100%;
+  height: 100%;
+}
+.printReady .staffQR > div.back {
+  display: table;
+}
+.printReady .staffQR > div.back > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
 /*# sourceMappingURL=print.css.map */

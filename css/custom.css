@@ -11,11 +11,6 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
   outline: 0 !important;
 }
 
-::-moz-selection {
-  background: #6DC77A;
-  color: #FFF;
-}
-
 ::selection {
   background: #6DC77A;
   color: #FFF;
@@ -59,15 +54,12 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
 
 .appearance, .MessagesContainer aside .searchArea .form-group .select select, .dispensePop form .select select, .medicinePot .potList li .select select, .medicinePot .select select, .residentSelectChange .form-inline .select select, .inBodyForm .select select, .inBodyForm select, .contentFooter .form-inline .select select, .contentFooter .records input[type=text], .contentFooter .listCount .dataTables_length label select, .contentFooter .listCount select, .table > tbody > tr > td .select select, .contentBody.directorDb .directorDbTopBar .HomeSelectBtn select, .contentHeader .sortListing select, .contentHeader .fieldContainer input[type=text],
 .contentHeader .fieldContainer select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 @media print and (color) {
   * {
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 body {
@@ -844,8 +836,7 @@ header.colored section .headerIcons img path {
   background-color: rgba(45, 49, 68, 0.9);
   z-index: 101;
   border-right: 2px solid rgb(255, 205, 96);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .leftNav .title {
   display: none;
@@ -1342,9 +1333,7 @@ header.colored section .headerIcons img path {
   cursor: pointer;
   height: 28px;
   position: relative;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .contentHeader .filtersSearch .dropList > span:after, .contentHeader .filtersSearch .dropList > .select:after {
   content: "";
@@ -1361,9 +1350,7 @@ header.colored section .headerIcons img path {
   pointer-events: none;
 }
 .contentHeader .filtersSearch .dropList > span select, .contentHeader .filtersSearch .dropList > .select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   height: 26px;
   padding: 0 20px 0 5px;
@@ -1516,9 +1503,7 @@ header.colored section .headerIcons img path {
   width: 100%;
 }
 .contentHeader .filtersSearch form .allFilters ul li .form-group .select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 100%;
   height: 32px;
   border: 0;
@@ -2667,21 +2652,21 @@ header.colored section .headerIcons img path {
     margin-left: 5px;
   }
   .diseases li span,
-  .diseases li a {
+.diseases li a {
     padding: 0 0 0 2px;
   }
   .diseases li span:before,
-  .diseases li a:before {
+.diseases li a:before {
     display: none;
   }
   .diseases li span:after,
-  .diseases li a:after {
+.diseases li a:after {
     display: none;
   }
   .diseases li span img,
-  .diseases li span svg,
-  .diseases li a img,
-  .diseases li a svg {
+.diseases li span svg,
+.diseases li a img,
+.diseases li a svg {
     display: none !important;
   }
 }
@@ -2693,6 +2678,55 @@ hr.BoldHr {
   border-width: 5px;
   margin-top: 40px;
   border-color: #F8931D;
+}
+
+.counters {
+  text-align: right;
+}
+.counters ul {
+  margin: 0 -5px;
+  display: inline-block;
+}
+.counters ul li {
+  float: left;
+  padding: 0 5px;
+}
+.counters ul li article {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: #828787;
+  padding: 2px 10px 2px 2px;
+  background-color: #F0EFF4;
+  border: 1px solid #C5C3CA;
+  border-radius: 6px;
+  height: 36px;
+  text-align: left;
+  line-height: 1.1;
+}
+.counters ul li article span {
+  float: left;
+  background-color: #FFCD60;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1C3C4B;
+  padding: 0 6px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.counters ul li article .title {
+  display: table;
+  height: 32px;
+}
+.counters ul li article .title i {
+  font-style: normal;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+.counters.whiteBg {
+  padding-top: 10px;
 }
 
 .contentBody {
@@ -2933,56 +2967,8 @@ hr.BoldHr {
   margin-left: 30px;
   line-height: 32px;
 }
-.contentBody .counters {
-  text-align: right;
-}
-.contentBody .counters ul {
-  margin: 0 -5px;
-  display: inline-block;
-}
-.contentBody .counters ul li {
-  float: left;
-  padding: 0 5px;
-}
-.contentBody .counters ul li article {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 12px;
-  color: #828787;
-  padding: 2px 10px 2px 2px;
-  background-color: #F0EFF4;
-  border: 1px solid #C5C3CA;
-  border-radius: 6px;
-  height: 36px;
-  text-align: left;
-  line-height: 1.1;
-}
-.contentBody .counters ul li article span {
-  float: left;
-  background-color: #FFCD60;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #1C3C4B;
-  padding: 0 6px;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 5px;
-}
-.contentBody .counters ul li article .title {
-  display: table;
-  height: 32px;
-}
-.contentBody .counters ul li article .title i {
-  font-style: normal;
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-}
-.contentBody .counters.whiteBg {
-  padding-top: 10px;
-}
 .contentBody .content {
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   height: 100%;
   position: relative;
 }
@@ -3985,9 +3971,7 @@ hr.BoldHr {
   cursor: pointer;
   height: 28px;
   position: relative;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .contentBody .filtersSearch .dropList > span:after, .contentBody .filtersSearch .dropList > .select:after {
   content: "";
@@ -4004,9 +3988,7 @@ hr.BoldHr {
   pointer-events: none;
 }
 .contentBody .filtersSearch .dropList > span select, .contentBody .filtersSearch .dropList > .select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   height: 26px;
   padding: 0 20px 0 5px;
@@ -4185,9 +4167,7 @@ hr.BoldHr {
   width: 100%;
 }
 .contentBody .filtersSearch > .search .allFilters ul li .form-group .select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 100%;
   height: 32px;
   border: 0;
@@ -5878,9 +5858,7 @@ hr.BoldHr {
   background-color: rgba(203, 0, 0, 0.1);
 }
 .inBodyForm input[type=date] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .inBodyForm input[type=text].dottedLine {
   border-radius: 0;
@@ -6540,9 +6518,17 @@ hr.BoldHr {
   z-index: 3;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
   font-size: 64px;
@@ -6591,17 +6577,29 @@ hr.BoldHr {
 .glassFill .water-jar .water_wave_back {
   right: 0;
   fill: #C7EEFF;
+  -webkit-animation: wave-back 1.4s infinite linear;
   animation: wave-back 1.4s infinite linear;
 }
 .glassFill .water-jar .water_wave_front {
   left: 0;
   fill: #4D6DE3;
   margin-bottom: -1px;
+  -webkit-animation: wave-front 0.7s infinite linear;
   animation: wave-front 0.7s infinite linear;
+}
+@-webkit-keyframes wave-front {
+  100% {
+    transform: translate(-50%, 0);
+  }
 }
 @keyframes wave-front {
   100% {
     transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes wave-back {
+  100% {
+    transform: translate(50%, 0);
   }
 }
 @keyframes wave-back {
@@ -6752,6 +6750,7 @@ hr.BoldHr {
   background-color: #828787;
   font-size: 16px;
   line-height: 42px;
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
@@ -6876,6 +6875,8 @@ hr.BoldHr {
   line-height: 30px;
   width: 100%;
   height: 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   background: #879290;
   cursor: pointer;
@@ -6890,6 +6891,8 @@ hr.BoldHr {
   text-indent: 40px;
   height: 24px;
   width: 24px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   top: 3px;
   left: 3px;
@@ -6974,6 +6977,10 @@ hr.BoldHr {
   left: -120%;
   animation: heartRateOut 2.5s linear infinite;
   background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
   z-index: 2;
 }
@@ -8174,6 +8181,7 @@ hr.BoldHr {
 .jqx-popup {
   border-radius: 4px;
   border-color: #DDD;
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .jqx-popup .jqx-window-header {
@@ -8316,206 +8324,6 @@ hr.BoldHr {
   transform: translateX(0) translateY(-50%);
 }
 
-.printReady {
-  font-size: 12px;
-  background: #FFF;
-}
-.printReady table {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.printReady .header {
-  padding: 15px 0;
-}
-.printReady .header .logo {
-  height: 80px;
-}
-.printReady .header .printButton {
-  border: 0;
-  border-radius: 4px;
-  background-color: #6DC77A;
-  padding: 5px 10px;
-  color: #FFF;
-  margin-bottom: 15px;
-}
-.printReady .header .printButton img.svg,
-.printReady .header .printButton svg,
-.printReady .header .printButton img {
-  height: 18px;
-  width: 18px;
-  float: left;
-  margin-right: 10px;
-}
-.printReady .header .printButton img.svg path,
-.printReady .header .printButton svg path,
-.printReady .header .printButton img path {
-  fill: #FFF;
-}
-.printReady .header .date {
-  font-family: "Roboto Condensed", sans-serif;
-}
-.printReady h4 {
-  margin: 20px 0 10px 0;
-  background-color: #CCC !important;
-  color: #FFF;
-  border-radius: 4px;
-  padding: 5px;
-  font-weight: 400;
-}
-.printReady .formInfo {
-  display: block;
-  padding: 5px 0;
-  border-top: 1px solid #CCC;
-}
-.printReady .listing {
-  margin-bottom: 0;
-}
-.printReady .listing li {
-  border-top: 1px solid #CCC;
-  padding: 15px 0;
-}
-.printReady .listing li .printInfo {
-  display: block;
-  margin-bottom: 15px;
-}
-.printReady .listing li .printInfo small {
-  font-weight: 700;
-}
-.printReady .listing li .inlineInfo {
-  display: inline-block;
-  margin-right: 15px;
-}
-.printReady .listing li .inlineInfo strong {
-  font-weight: 500;
-}
-.printReady .listing li .inlineInfo:last-of-type {
-  padding-top: 15px;
-}
-.printReady .listing li .inlineInfo .smilies_table tbody tr td {
-  padding: 0 10px 0 0;
-  line-height: 30px;
-  text-align: center;
-}
-.printReady .listing li .inlineInfo .smilies_table tbody tr td img.svg,
-.printReady .listing li .inlineInfo .smilies_table tbody tr td svg,
-.printReady .listing li .inlineInfo .smilies_table tbody tr td img {
-  height: 30px;
-  width: 30px;
-  float: left;
-  margin-right: 10px;
-}
-.printReady .profileImg {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.printReady .serviceUserMiniProfile {
-  padding: 10px 0;
-  border-bottom: 1px solid #DDD;
-  margin-bottom: 10px;
-}
-.printReady .serviceUserMiniProfile small {
-  display: block;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-.printReady .desc {
-  padding: 10px 0;
-  word-break: break-word;
-}
-.printReady .desc small {
-  font-size: 16px;
-  font-weight: 700;
-}
-.printReady .staffQR > div {
-  width: calc((100% - 70px) / 2);
-  margin: 10px;
-  float: left;
-  height: 200px;
-  border: 1px solid #DDD;
-}
-.printReady .staffQR > div .name {
-  display: table;
-  width: 100%;
-  height: 75px;
-  background-color: #6DC77A !important;
-}
-.printReady .staffQR > div .name span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  height: 75px;
-  font-size: 24px;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #FFF !important;
-  line-height: 1;
-  padding: 0 20px 0 85px;
-  position: relative;
-}
-.printReady .staffQR > div .name span strong {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #FFF !important;
-}
-.printReady .staffQR > div .name span img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 75px;
-  width: 75px;
-}
-.printReady .staffQR > div .logo {
-  position: relative;
-  height: 125px;
-  padding: 5px 75px 5px 5px;
-}
-.printReady .staffQR > div .logo > img {
-  width: auto;
-  height: 75px;
-  position: absolute;
-  left: 10px;
-  top: 25px;
-}
-.printReady .staffQR > div .logo i {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  height: 115px;
-  width: 115px;
-  overflow: hidden;
-}
-.printReady .staffQR > div .logo i img {
-  width: 100%;
-  height: 100%;
-}
-.printReady .staffQR > div.back {
-  display: table;
-}
-.printReady .staffQR > div.back > div {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-@media print {
-  html,
-  body {
-    background: none;
-  }
-  .printButton {
-    display: none;
-  }
-  .printBodyMapImage {
-    height: 900px;
-    width: auto;
-  }
-  @page {
-    margin: 0.5in 0;
-    size: A4 portrait;
-  }
-}
 .chart {
   position: absolute;
   right: 15px;
@@ -8621,6 +8429,7 @@ hr.BoldHr {
   background-color: rgba(100, 141, 172, 0.2);
   border-radius: 4px;
   overflow: hidden;
+  -webkit-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .graphs .plot-container .svg-container {
@@ -10326,6 +10135,8 @@ hr.BoldHr {
   left: 25px;
   top: 5px;
   height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #F8931D;
   color: #FFF;
@@ -11268,6 +11079,7 @@ hr.BoldHr {
   padding: 0 10px;
   border: 5px solid #F8931D;
   background-color: #FFF;
+  -webkit-box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   width: 620px;
 }
@@ -11421,6 +11233,7 @@ hr.BoldHr {
   transform: translateX(-50%) translateY(-50%);
   border-radius: 8px;
   border: 5px solid #F8931D;
+  -webkit-box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
   opacity: 0;
   overflow: hidden;
@@ -12190,6 +12003,7 @@ hr.BoldHr {
   padding: 6px 12px;
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
+  -webkit-box-shadow: -5px 0 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: -5px 0 0 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 5px;
 }
@@ -12511,11 +12325,13 @@ hr.BoldHr {
   float: left;
   height: 24px;
   width: 24px;
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.4;
 }
 .MessagesContainer .MessageTopbar .messageSubject .starred.active img.svg,
 .MessagesContainer .MessageTopbar .messageSubject .starred.active svg {
+  -webkit-filter: grayscale(0);
   filter: grayscale(0);
   opacity: 1;
 }
@@ -17216,7 +17032,12 @@ hr.BoldHr {
   height: auto;
   z-index: 2000;
   visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -17234,6 +17055,8 @@ hr.BoldHr {
   z-index: 1000;
   opacity: 0;
   background: rgba(172, 182, 182, 0.8);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -17268,22 +17091,54 @@ hr.BoldHr {
 }
 
 .md-effect-13.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
 .md-effect-13 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: translateZ(-3000px) rotateY(90deg);
+  -moz-transform: translateZ(-3000px) rotateY(90deg);
+  -ms-transform: translateZ(-3000px) rotateY(90deg);
   transform: translateZ(-3000px) rotateY(90deg);
   opacity: 0;
 }
 
 .md-show.md-effect-13 .md-content {
+  -webkit-animation: slit 0.7s forwards ease-out;
+  -moz-animation: slit 0.7s forwards ease-out;
   animation: slit 0.7s forwards ease-out;
 }
 
 .md-show ~ .md-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+@-webkit-keyframes slit {
+  50% {
+    -webkit-transform: translateZ(-250px) rotateY(89deg);
+    opacity: 0.5;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slit {
+  50% {
+    -moz-transform: translateZ(-250px) rotateY(89deg);
+    opacity: 0.5;
+    -moz-animation-timing-function: ease-out;
+  }
+  100% {
+    -moz-transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
 }
 @keyframes slit {
   50% {
@@ -17805,12 +17660,15 @@ hr.BoldHr {
 }
 
 .object {
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
   border-radius: 50% 50% 50% 50%;
   position: absolute;
   border-top: 5px solid #6DC77A;
   border-bottom: 5px solid transparent;
   border-left: 5px solid #6DC77A;
   border-right: 5px solid transparent;
+  -webkit-animation: animate 2s infinite;
   animation: animate 2s infinite;
 }
 
@@ -17826,6 +17684,7 @@ hr.BoldHr {
   top: 65px;
   width: 70px;
   height: 70px;
+  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
@@ -17834,6 +17693,7 @@ hr.BoldHr {
   top: 55px;
   width: 90px;
   height: 90px;
+  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
@@ -17842,10 +17702,21 @@ hr.BoldHr {
   top: 45px;
   width: 110px;
   height: 110px;
+  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8);
+  }
 }
 @keyframes animate {
   50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
     transform: rotate(360deg) scale(0.8);
   }
 }
@@ -18332,6 +18203,8 @@ hr.BoldHr {
 .subSection .subModuleList li article {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(255,255,255,0.1)", endColorstr="rgba(0,0,0,0.1)", GradientType=1);
   padding-top: 100%;
@@ -19381,6 +19254,7 @@ hr.BoldHr {
   color: #DDD;
   left: 50%;
   top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -22277,33 +22151,27 @@ hr.BoldHr {
   .news_data article .module {
     background-color: #648DAC !important;
     color: rgb(255, 255, 255) !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .news_data article .columns > ul li.circle:before {
     background-color: #CB0000 !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color0 {
     background-color: #F2F2F2 !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color1 {
     background-color: #F5E6A5 !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color2 {
     background-color: #ECB680 !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .news_data article .columns > ul li.color3 {
     background-color: #E1604B !important;
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 .news_scoring {
@@ -23203,6 +23071,8 @@ hr.BoldHr {
   border-radius: 0 6px 6px 6px;
   padding: 15px;
   background: #ebb930;
+  background: -moz-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
+  background: -webkit-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
   background: linear-gradient(to bottom, #ebb930 0%, #ffd96a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebb930", endColorstr="#ffd96a", GradientType=0);
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.35);
@@ -23532,8 +23402,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li,
-  .andireport .dates ul li,
-  .andireport .total ul li {
+.andireport .dates ul li,
+.andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -23545,8 +23415,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-  .andireport .dates ul li:nth-child(odd),
-  .andireport .total ul li:nth-child(odd) {
+.andireport .dates ul li:nth-child(odd),
+.andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -23808,13 +23678,22 @@ hr.BoldHr {
   display: none;
 }
 .convertedAlerts li.rotate {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
   border-color: #F8931D;
 }
 .convertedAlerts li.rotate .title {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 .convertedAlerts li.rotate .toggles {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
@@ -24000,9 +23879,7 @@ hr.BoldHr {
   border-radius: 4px;
   border: 0;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 0 32px 0 5px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
@@ -24162,9 +24039,7 @@ hr.BoldHr {
 #SBARDtoolandactiontracker article .form-group .textarea {
   width: 100%;
   height: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   padding: 10px;
   font-family: "Roboto Condensed", sans-serif;
@@ -24413,9 +24288,7 @@ hr.BoldHr {
 .auditDashboard .selection .filters .groupselects select {
   font-size: 12px;
   color: #979a9f;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   padding: 0 30px 0 5px;
   background-image: url("../images/down-arrow-key.png");
@@ -25375,9 +25248,7 @@ hr.BoldHr {
 }
 .enquiryoverview .overviewdetail .paging .select select {
   border: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 5px 36px 5px 10px;
   background-image: url("../images/selectBox-arrow.png");
   background-repeat: no-repeat;
@@ -25462,9 +25333,7 @@ hr.BoldHr {
   background-image: url("../images/selectBox-arrow.png");
   background-position: right 12px center;
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .enquiryoverview .overviewdetail .enquiryfilter form .calender {
   background-image: url("../images/calendar(1).png");
@@ -25759,9 +25628,7 @@ hr.BoldHr {
   background-size: 16px;
   background-position: left 7px center;
   height: 30px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: relative;
   z-index: 1;
 }
@@ -25993,9 +25860,7 @@ hr.BoldHr {
   background-position: right 15px center;
 }
 .detailenquiry .tabContent .scroll-wrapper section ul li .select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 100%;
   border: 0;
   height: 100%;
@@ -26779,9 +26644,7 @@ hr.BoldHr {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 9px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding-right: 34px;
 }
 .directorDash > section .partition .filtersArea button {
@@ -26836,9 +26699,7 @@ hr.BoldHr {
   border-bottom: 1px solid #828787;
   background-color: transparent;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   color: #FFF;
   background-position: right center;
   background-repeat: no-repeat;
@@ -29798,9 +29659,7 @@ button.newStyle.green {
   border-radius: 6px;
   height: 32px;
   padding: 0 27px 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-image: url("../images/select-arrow.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
@@ -30484,7 +30343,7 @@ button.newStyle.green {
 }
 @media (max-width: 580px) {
   .newPopup article .popupContainer,
-  .newPopup article .secondary {
+.newPopup article .secondary {
     width: calc(100% - 60px);
     margin-left: -40px;
   }
@@ -33059,8 +32918,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 @media screen and (max-width: 1600px) {
   .newSUList .listContainer > ul > li article .dnacpr,
-  .newSUList .listContainer > ul > li article .newsScore,
-  .newSUList .listContainer > ul > li article .respect {
+.newSUList .listContainer > ul > li article .newsScore,
+.newSUList .listContainer > ul > li article .respect {
     font-size: 9px;
   }
 }
@@ -33630,7 +33489,8 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=password],
 .pop > div > section > article ul.form li select,
 .pop > div > section > article ul.form li textarea,
-.pop > div > section > article ul.form li .uploadImg {
+.pop > div > section > article ul.form li .uploadImg,
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -33648,7 +33508,9 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li textarea[name=dateRange],
 .pop > div > section > article ul.form li textarea.date,
 .pop > div > section > article ul.form li .uploadImg[name=dateRange],
-.pop > div > section > article ul.form li .uploadImg.date {
+.pop > div > section > article ul.form li .uploadImg.date,
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered[name=dateRange],
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.date {
   background-image: url("../images/calendar.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
@@ -33658,9 +33520,19 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=password]:focus,
 .pop > div > section > article ul.form li select:focus,
 .pop > div > section > article ul.form li textarea:focus,
-.pop > div > section > article ul.form li .uploadImg:focus {
+.pop > div > section > article ul.form li .uploadImg:focus,
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
+}
+.pop > div > section > article ul.form li input[type=text].disabled,
+.pop > div > section > article ul.form li input[type=password].disabled,
+.pop > div > section > article ul.form li select.disabled,
+.pop > div > section > article ul.form li textarea.disabled,
+.pop > div > section > article ul.form li .uploadImg.disabled,
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.disabled {
+  pointer-events: none;
+  background-color: #EEE;
 }
 .pop > div > section > article ul.form li .uploadImg {
   line-height: 34px;
@@ -33703,6 +33575,66 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=checkbox]:checked + label:before {
   background-color: #6DC77A;
   left: 12px;
+}
+.pop > div > section > article ul.form li .select2 {
+  transform: none;
+  padding: 0;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple {
+  border: 0;
+  height: 42px;
+  padding: 0;
+  background-color: transparent;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-selection__rendered {
+  display: block;
+  height: 34px;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  border-width: 1px;
+  border-color: rgba(161, 173, 176, 0.8);
+  border-style: solid;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+  margin: 5px 0 0 5px;
+  background-color: #FFCD60;
+  color: #1C3C4B;
+  padding: 0 20px 0 5px;
+  font-size: 12px;
+  position: relative;
+  border-radius: 2px;
+  height: auto;
+  width: auto;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left: 1px solid #999;
+  border-radius: 0;
+  position: absolute;
+  display: block;
+  color: #1C3C4B;
+  padding: 0 5px;
+  margin: 0;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
+  background-color: #f1f1f1;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-selection__rendered .select2-search--inline {
+  margin-top: 0;
+  min-height: auto;
+  height: 34px;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-search__field {
+  float: right;
+  width: 20px;
+  height: 34px;
+}
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--multiple .select2-search__field textarea {
+  height: 100%;
+  width: 100%;
 }
 .pop > div > section > article ul.form.col2 li {
   width: 50%;
@@ -36268,10 +36200,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 
 .permissions {
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
 }
 .permissions article {
   overflow: hidden;
@@ -36448,8 +36378,7 @@ input[type=checkbox].switch:checked + label:before {
   opacity: 0.4;
 }
 .permissions.modules {
-  -moz-column-count: 1;
-       column-count: 1;
+  column-count: 1;
 }
 .permissions.modules article .title {
   background-image: none;
@@ -36804,9 +36733,7 @@ input[type=checkbox].switch:checked + label:before {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 9px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding-right: 34px;
 }
 .newForm ul li textarea {
@@ -38634,8 +38561,7 @@ input[type=checkbox].switch:checked + label:before {
   color: #FFF;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 .album .tabPanel ul li article .img {
@@ -39221,10 +39147,445 @@ input[type=checkbox].switch:checked + label:before {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.subDivisionMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 220px;
+  bottom: 0;
+  border-radius: 0 0 6px 0;
+  background: #f8f9fa;
+  box-shadow: 2px 0 2px rgba(130, 147, 157, 0.16);
+}
+.subDivisionMenu li a {
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #797f8a;
+  display: block;
+  padding: 0 10px;
+}
+.subDivisionMenu li a:hover, .subDivisionMenu li a.active {
+  background-color: #073c55;
+  color: #FFF;
+}
+
+.subDivision {
+  width: calc(100% - 230px);
+  min-height: 100%;
+  margin-left: 230px;
+}
+.subDivision .informedSection {
+  padding: 10px;
+  width: 320px;
+  float: right;
+  border-radius: 6px;
+  background-color: #EEE;
+}
+.subDivision .informedSection > .title {
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(28, 60, 75);
+}
+.subDivision .informedSection ul {
+  margin: 0;
+}
+.subDivision .informedSection ul li {
+  padding-top: 20px;
+  border-top: 1px solid #848889;
+  margin-top: 10px;
+}
+.subDivision .informedSection ul li .title {
+  font-size: 16px;
+  color: rgb(63, 66, 83);
+  display: block;
+  margin-bottom: 5px;
+}
+.subDivision .informedSection ul li .title i {
+  font-style: normal;
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: rgb(217, 89, 89);
+  position: absolute;
+  padding: 0 5px;
+  margin-left: 10px;
+}
+.subDivision .informedSection ul li .btnGroup {
+  border-radius: 4px;
+  background-color: rgb(172, 182, 182);
+  height: 36px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.subDivision .informedSection ul li .btnGroup label {
+  float: left;
+  width: 33.3333333333%;
+  text-align: center;
+  color: #3f4253;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  border-left: 1px solid #DCDEDE;
+  border-right: 1px solid #838787;
+  cursor: pointer;
+}
+.subDivision .informedSection ul li .btnGroup label:first-of-type {
+  border-left: 0;
+}
+.subDivision .informedSection ul li .btnGroup label:last-of-type {
+  border-right: 0;
+}
+.subDivision .informedSection ul li .btnGroup input[type=radio]:checked + label {
+  background-color: #6dc77a;
+  color: #FFF;
+}
+.subDivision .informedSection ul li input[type=text] {
+  border-width: 1px;
+  border-color: rgb(172, 182, 182);
+  border-style: solid;
+  border-radius: 4px;
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  background-image: url("../images/calendar.png");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  display: none;
+}
+.subDivision .informedSection ul li:first-child {
+  border-top: 0;
+  margin-top: 0;
+}
+.subDivision .newForm {
+  float: left;
+  width: calc(100% - 330px);
+}
+
+.createForm {
+  width: 710px;
+  margin: 0 auto;
+}
+.createForm section {
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.createForm section.columnSelection:before {
+  content: "Select the number of columns for the form";
+  display: block;
+  font-size: 12px;
+  color: rgb(130, 135, 135);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.createForm section.columnSelection > ul {
+  margin: 0;
+}
+.createForm section.columnSelection > ul > li {
+  width: calc((100% - 80px) / 5);
+  height: 46px;
+  border-radius: 6px;
+  background: #fff;
+  border: 2px solid #eee;
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 10px 15px;
+}
+.createForm section.columnSelection > ul > li:first-child {
+  margin-left: 0;
+}
+.createForm section.columnSelection > ul > li input[type=radio] {
+  display: none;
+}
+.createForm section.columnSelection > ul > li input[type=radio] + label {
+  display: block;
+  height: 22px;
+  margin: 0;
+  cursor: pointer;
+}
+.createForm section.columnSelection > ul > li input[type=radio] + label ul {
+  margin: 0;
+}
+.createForm section.columnSelection > ul > li input[type=radio] + label ul li {
+  float: left;
+  border-radius: 4px;
+  background-color: #404455;
+  width: 100%;
+  height: 22px;
+  margin-left: 2px;
+}
+.createForm section.columnSelection > ul > li input[type=radio] + label ul li:first-child {
+  margin-left: 0;
+}
+.createForm section.columnSelection > ul > li input[type=radio]:checked + label ul li {
+  background-color: #6DC77A;
+}
+.createForm section.columnSelection > ul > li:nth-child(2) input[type=radio] + label ul li {
+  width: calc((100% - 2px) / 2);
+}
+.createForm section.columnSelection > ul > li:nth-child(3) input[type=radio] + label ul li {
+  width: calc((100% - 4px) / 3);
+}
+.createForm section.columnSelection > ul > li:nth-child(4) input[type=radio] + label ul li {
+  width: calc((100% - 6px) / 4);
+}
+.createForm section.columnSelection > ul > li:nth-child(5) input[type=radio] + label ul li {
+  width: calc((100% - 8px) / 5);
+}
+.createForm section .sortOrder {
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+  background-color: #AA2478;
+}
+.createForm section .sortOrder:before {
+  content: "Sort Order";
+  font-size: 12px;
+  color: #EDF2F4;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 14px;
+  display: inline-block;
+}
+.createForm section .sortOrder input[type=number] {
+  width: 100%;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #1C3C4B;
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 0;
+  appearance: textfield;
+  text-align: center;
+  box-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.16);
+}
+.createForm section .sortButtons {
+  position: absolute;
+  left: calc(100% + 10px);
+  width: 40px;
+  bottom: 0;
+}
+.createForm section .sortButtons .buttons {
+  padding-top: 10px;
+}
+.createForm section .sortButtons .buttons button {
+  background-color: #6DC77A;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+.createForm section .sortButtons .buttons button:only-of-type {
+  border-radius: 6px;
+}
+.createForm section .sortButtons .buttons button:first-of-type {
+  border-radius: 6px 6px 0 0;
+  background-image: url("../images/sectionTitle.png");
+}
+.createForm section .sortButtons .buttons button:last-of-type {
+  border-radius: 0 0 6px 6px;
+  background-image: url("../images/addSection.png");
+}
+.createForm section > ul {
+  margin-bottom: 0;
+}
+.createForm section > ul > li {
+  margin-top: 20px;
+}
+.createForm section > ul > li:first-child {
+  margin-top: 0;
+}
+.createForm section > ul > li.elementSelector {
+  width: 220px;
+}
+.createForm section > ul > li.elementSelector + li {
+  width: calc(100% - 220px);
+  margin-top: 0;
+}
+.createForm section .options {
+  margin-top: 20px;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  padding: 10px;
+}
+.createForm section .options ul {
+  margin: 0 0 10px 0;
+}
+.createForm section .options ul li {
+  padding: 0 30px 0 15px;
+  margin: 0;
+  position: relative;
+  height: 36px;
+}
+.createForm section .options ul li:before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-size: 14px;
+  color: #404455;
+  content: attr(data-number);
+}
+.createForm section .options ul li input[type=radio] {
+  display: none;
+}
+.createForm section .options ul li input[type=radio] + label {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  border-radius: 4px;
+  background-color: #ADB0B5;
+  line-height: 18px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #EEE;
+  cursor: pointer;
+  z-index: 2;
+  font-weight: 400;
+}
+.createForm section .options ul li input[type=radio]:checked + label {
+  background-color: #F6D461;
+  color: #004563;
+}
+.createForm section .options ul li input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #DDDDDD;
+  height: 32px;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #404455;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0 50px 0 0;
+  z-index: 1;
+}
+.createForm section .options ul li .remove {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  right: 0;
+  top: 8px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  background-image: url("../images/cross.png");
+}
+.createForm section .options button {
+  height: 28px;
+  border-radius: 4px;
+  background-color: #004563;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #EDF2F4;
+  border: 0;
+}
+.createForm section .controls {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #DDD;
+}
+.createForm section .controls input[type=text] {
+  border-width: 1px;
+  border-color: rgba(161, 173, 176, 0.8);
+  border-style: solid;
+  border-radius: 4px;
+  width: 430px;
+  height: 34px;
+  padding: 0 10px;
+  box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
+  background-color: #FFF;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.createForm section .controls input[type=text].setDefaultValue {
+  width: 210px;
+}
+.createForm section .controls input[type=text].setDefaultValue + input[type=text] {
+  width: 210px;
+  margin-left: 10px;
+}
+.createForm section .controls span {
+  float: right;
+  height: 34px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 24px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 5px 0;
+}
+.createForm section .controls span.delete {
+  background-image: url("../images/garbageRed.png");
+}
+.createForm section .controls span.duplicate {
+  background-image: url("../images/duplicate.png");
+}
+.createForm section .controls input[type=checkbox] {
+  display: none;
+}
+.createForm section .controls input[type=checkbox] + label {
+  float: right;
+  color: #ADB0B5;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  height: 34px;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  padding-right: 39px;
+  position: relative;
+}
+.createForm section .controls input[type=checkbox] + label:before {
+  height: 20px;
+  width: 34px;
+  border-radius: 10px;
+  background-color: #666;
+  right: 0;
+  top: 7px;
+  display: block;
+  content: "";
+  position: absolute;
+}
+.createForm section .controls input[type=checkbox] + label:after {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #fff;
+  right: 16px;
+  top: 10px;
+  display: block;
+  content: "";
+  position: absolute;
+}
+.createForm section .controls input[type=checkbox]:checked + label:before {
+  background-color: #6DC77A;
+}
+.createForm section .controls input[type=checkbox]:checked + label:after {
+  right: 3px;
+}
+
 .scroll-element.scroll-x {
   display: none !important;
 }
 
 .select2-container {
   z-index: 5000;
-}/*# sourceMappingURL=custom.css.map */
+}
+
+/*# sourceMappingURL=custom.css.map */
