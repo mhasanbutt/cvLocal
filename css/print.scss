@@ -1032,3 +1032,76 @@ body {
         }
     }
 }
+
+.eMarLegends {
+    position: relative;
+    padding-right: 180px;
+    width: 100%;
+    text-align: right;
+    padding-top: 20px;
+
+    &::after {
+        border-radius: 4px;
+        background-color: rgb(246, 150, 121);
+        position: absolute;
+        padding: 10px;
+        font-size: 12px;
+        font-family: $secondaryFont;
+        color: rgb(28, 60, 75);
+        line-height: 1.5;
+        text-align: center;
+        content: "Codes C, D, K, M, N, S, F and G do not effect the quantity levels";
+        width: 170px;
+        right: 0;
+        top: 25px;
+    }
+
+    li {
+        display: inline-block;
+        line-height: 20px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 25px;
+        position: relative;
+        font-size: 12px;
+        font-family: $secondaryFont;
+        color: rgb(63, 66, 83);
+
+        &:before {
+            background-color: #3f4253;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            color: rgb(220, 222, 222);
+            content: attr(data-point);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        &.red {
+            &:before {
+                background-color: #cb0000;
+                color: #dcdede;
+            }
+        }
+
+        &.orange {
+            &:before {
+                background-color: #fdc689;
+                color: #3f4253;
+            }
+        }
+
+        &.green {
+            &:before {
+                background-color: #a3d39c;
+                color: #3f4253;
+            }
+        }
+    }
+}
