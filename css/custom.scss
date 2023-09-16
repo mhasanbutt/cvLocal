@@ -43505,16 +43505,17 @@ input[type=checkbox].switch {
                             }
 
                             .select2-search--inline {
-                                margin-top: 0;
+                                margin-top: 5px;
                                 min-height: auto;
-                                height: 34px;
+                                height: 17px;
                             }
                         }
 
                         .select2-search__field {
                             float: right;
                             width: 20px;
-                            height: 34px;
+                            height: 17px;
+                            margin-top: 0;
 
                             textarea {
                                 height: 100%;
@@ -43669,6 +43670,10 @@ input[type=checkbox].switch {
                     font-weight: 500;
                     cursor: pointer;
                 }
+            }
+
+            &.textarea {
+                height: auto;
             }
         }
 

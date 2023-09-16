@@ -31,6 +31,34 @@
         <tbody>
             <tr>
                 <td>
+                    <article class="profile">
+                        <ul class="list-unstyled clearfix">
+                            <li>
+                                <img src="https://jawa.linksdev.co.uk/getattachmentdata?path=UHJvZmlsZUltYWdlcy9yZXNpZGVudF8zNTE5XzE2OTM5MTI5MTQucG5n" onerror="imgError(this);">
+                            </li>
+                            <li style="width:calc(100% - 270pt);">
+                                <span class="title">Service User</span>
+                                Ms Cora TESTER TEST <strong>(coraASDADSADAD)</strong>
+                            </li>
+                            <li style="width:100pt">
+                                <span class="title">Service User ID</span>
+                                46
+                            </li>
+                            <li style="width:100pt">
+                                <span class="title">Date of Birth</span>
+                                25-12-1900
+                            </li>
+                            <li style="width: 200pt;">
+                                <span class="title">Location</span>
+                                Basement Floor
+                            </li>
+                            <li style="width: 100pt">
+                                <span class="title">NHS Number</span>
+                                123 454 3211
+                            </li>
+                        </ul>
+                    </article>
+
                     <article class="staffQR">
                         <div class="front">
                             <div class="name">

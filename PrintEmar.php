@@ -40,6 +40,159 @@
     <tbody>
     <tr>
         <td>
+            <div class="profileAllergies">
+                <article class="profile">
+                    <ul class="list-unstyled clearfix">
+                        <li>
+                            <img src="https://jawa.linksdev.co.uk/getattachmentdata?path=UHJvZmlsZUltYWdlcy9yZXNpZGVudF8zNTE5XzE2OTM5MTI5MTQucG5n" onerror="imgError(this);">
+                        </li>
+                        <li style="width:calc(100% - 270pt);">
+                            <span class="title">Service User</span>
+                            Ms Cora TESTER TEST <strong>(coraASDADSADAD)</strong>
+                        </li>
+                        <li style="width:100pt">
+                            <span class="title">Service User ID</span>
+                            46
+                        </li>
+                        <li style="width:100pt">
+                            <span class="title">Date of Birth</span>
+                            25-12-1900
+                        </li>
+                        <li style="width: 200pt;">
+                            <span class="title">Location</span>
+                            Basement Floor
+                        </li>
+                        <li style="width: 100pt">
+                            <span class="title">NHS Number</span>
+                            123 454 3211
+                        </li>
+                    </ul>
+                </article>
+                <div class="allergies">
+                    <ul class="diseases list-unstyled">
+                        <li>
+                            <a residentid="1616" class="global_resident_allergies_popup_click" href="javascript:void(0)">
+                                <img src="https://carehome1.care-vision.co.uk/images/alerticon/allergy-icon.png">
+                                Allergy
+                            </a>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/bloodpressure.png">
+                                        Blood Pressure
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/pulse.png">
+                                        PULSE
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/ais.png">
+                                        AIS
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/uti.png">
+                                        UTI
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/aiw.png">
+                                        AWI
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/sova.png">
+                                        SOVA
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/section_117.png">
+                                        Section 117
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/norovirus.png">
+                                        Norovirus
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/mwc.png">
+                                        MWC
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/dnacpr.png">
+                                        DNACPR
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/risk_absconding.png">
+                                        Absconding
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/respect.png">
+                                        RESPECT
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/pressure_sore.png">
+                                        Pressure Ulcer
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/transferequipmentalert.png">
+                                        Transfer Equipment
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/riskofchoking.png">
+                                        Risk Of Choking
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/genderpreference.png">
+                                        Gender Preference
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/nobloodtransfusion.png">
+                                        No Blood Transfusion
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/gsf-blue.png">
+                                        GSF Prognostic Indicator
+                </span>
+                        </li>
+                        <li>
+                <span>
+                                            <img src="https://carehome1.care-vision.co.uk/images/alerticon/SAFEHOLDING.png">
+                                        Safe Holding
+                </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <ul class="diseases list-unstyled">
                 <li>
                     <a residentid="1616" class="global_resident_allergies_popup_click" href="javascript:void(0)">

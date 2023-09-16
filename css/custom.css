@@ -36860,14 +36860,15 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #f1f1f1;
 }
 .newForm ul li .select2 .selection .select2-selection--multiple .select2-selection__rendered .select2-search--inline {
-  margin-top: 0;
+  margin-top: 5px;
   min-height: auto;
-  height: 34px;
+  height: 17px;
 }
 .newForm ul li .select2 .selection .select2-selection--multiple .select2-search__field {
   float: right;
   width: 20px;
-  height: 34px;
+  height: 17px;
+  margin-top: 0;
 }
 .newForm ul li .select2 .selection .select2-selection--multiple .select2-search__field textarea {
   height: 100%;
@@ -36996,6 +36997,9 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+}
+.newForm ul li.textarea {
+  height: auto;
 }
 .newForm ul.col3 > li {
   width: 33.3333333333%;

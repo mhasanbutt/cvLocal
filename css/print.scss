@@ -48,7 +48,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 50px;
-    background-color: #FFF;
+    background-color: #FFF !important;
     z-index: 2;
 
     .logo {
@@ -71,8 +71,8 @@ body {
         &>span {
             display: block;
             border-radius: 6px;
-            background-color: #000;
-            color: #FFF;
+            background-color: #000 !important;
+            color: #FFF !important;
             font-size: 14px;
             font-family: $secondaryFont;
             padding: 0 5px;
@@ -89,7 +89,7 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 24px;
-                background-color: transparent;
+                background-color: transparent !important;
 
                 &.back {
                     background-image: url("../images/back.png");
@@ -109,7 +109,7 @@ body {
     line-height: 20px;
     text-align: center;
     width: 730px;
-    background-color: #FFF;
+    background-color: #FFF !important;
     z-index: 2;
 
     i {
@@ -157,7 +157,7 @@ body {
                 left: 5px;
                 width: calc(100% - 10px);
                 border-radius: 0 0 4px 4px;
-                background-color: #000;
+                background-color: #000 !important;
                 height: 16pt;
                 display: table;
 
@@ -168,7 +168,7 @@ body {
                     font-style: normal;
                     font-size: 6pt;
                     line-height: 8pt;
-                    color: #FFF;
+                    color: #FFF !important;
                 }
             }
         }
@@ -181,8 +181,8 @@ body {
     thead {
         tr {
             th {
-                background-color: #333;
-                color: #FFF;
+                background-color: #333 !important;
+                color: #FFF !important;
                 font-size: 6pt;
                 padding: 2px 5px;
             }
@@ -198,7 +198,7 @@ body {
 
             &:nth-child(even) {
                 td {
-                    background-color: #DDD;
+                    background-color: #DDD !important;
                 }
             }
         }
@@ -206,7 +206,7 @@ body {
 }
 
 .profile {
-    background-color: #333;
+    background-color: #333 !important;
     border-radius: 6px;
     padding: 0 5px;
     margin-bottom: 10px;
@@ -217,16 +217,16 @@ body {
         li {
             float: left;
             padding: 5px;
-            color: #FFF;
+            color: #FFF !important;
 
             .title {
                 display: block;
-                color: #DDD;
+                color: #DDD !important;
                 margin-bottom: 5px;
             }
 
             strong {
-                color: #FFF;
+                color: #FFF !important;
             }
 
             &:first-child {
@@ -259,7 +259,7 @@ body {
 
             .title {
                 display: block;
-                color: #333;
+                color: #333 !important;
                 font-weight: 400;
                 margin-bottom: 2px;
             }
@@ -274,7 +274,7 @@ body {
 
 .diseases {
     padding: 25px 5px 5px 5px;
-    background-color: rgba($grayColor, 0.8);
+    background-color: rgba($grayColor, 0.8) !important;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -285,7 +285,7 @@ body {
         content: "Alerts";
         font-size: 12px;
         text-transform: uppercase;
-        color: #FFF;
+        color: #FFF !important;
         top: 5px;
         font-family: $secondaryFont;
         font-weight: 700;
@@ -300,8 +300,8 @@ body {
         span, a {
             display: block;
             padding: 2px 5px 2px 34px;
-            background-color: rgba(255,255,255,0.2);
-            color: #333;
+            background-color: rgba(255,255,255,0.2) !important;
+            color: #333 !important;
             font-family: $secondaryFont;
             text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
             background-repeat: no-repeat;
@@ -375,7 +375,7 @@ body {
 
     &.max-ul-width {
         padding: 0;
-        background-color: transparent;
+        background-color: transparent !important;
 
         &:before {
             display: none;
@@ -383,14 +383,14 @@ body {
 
         li {
             span, a {
-                background-color: rgba($grayColor, 0.2);
+                background-color: rgba($grayColor, 0.2) !important;
 
                 &:after {
-                    border-bottom: 28px solid rgba($grayColor,0.2)
+                    border-bottom: 28px solid rgba($grayColor,0.2) !important;
                 }
 
                 &:before {
-                    border-top: 28px solid rgba($grayColor,0.2);
+                    border-top: 28px solid rgba($grayColor,0.2) !important;
                 }
             }
         }
@@ -419,205 +419,22 @@ body {
 }
 
 .profileAllergies {
-    height: 80px;
     margin-bottom: 10px;
 
-    @media print {
-        height: auto;
-    }
-
-    .profile {
-        height: 80px;
-        float: left;
-        width: calc(100% - 385px);
-
-        @media print {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .img {
-            float: left;
-            height: 80px;
-            width: 80px;
-            border-width: 2px;
-            border-color: rgb(167, 184, 198);
-            border-style: solid;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-right: 10px;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        ul {
-            margin: 0 -5px;
-            width: calc(100% - 90px);
-            float: left;
-
-            li {
-                padding: 0 5px;
-                float: left;
-                font-size: 14px;
-                font-family: $secondaryFont;
-                line-height: 16px;
-                position: relative;
-
-                i {
-                    font-size: 12px;
-                    color: rgb(148, 152, 152);
-                    font-style: normal;
-                    display: block;
-                    font-family: $primaryFont;
-                }
-
-                .value {
-                    display: block;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    width: 100%;
-                }
-
-                .covert {
-                    border-radius: 4px;
-                    background-color: rgb(246, 150, 121);
-                    font-size: 10px;
-                    color: rgb(255, 255, 255);
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    padding: 2px 5px;
-                }
-
-                .helpTip {
-                    z-index: 2;
-                    position: relative;
-
-                    .tTText {
-                        position: absolute;
-                        left: 100%;
-                        top: 0;
-                        border-radius: 4px;
-                        padding: 5px 10px;
-                        background-color: #3F4253;
-                        color: #FFF;
-                        font-size: 12px;
-                        font-weight: 500;
-                        visibility: hidden;
-                        opacity: 0;
-
-                        .scroll-wrapper {
-                            left: 10px;
-                            right: 10px;
-                            top: 5px;
-                            bottom: 5px;
-                            width: auto;
-
-                            .scrollArea {
-                                &>article {
-                                    padding-right: 20px;
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        .tTText {
-                            visibility: visible;
-                            opacity: 1;
-                        }
-                    }
-                }
-
-                &:first-child {
-                    width: 180px;
-
-                    .value {
-                        width: calc(100% - 50px);
-                    }
-
-                    .covert {
-                        position: absolute;
-                        right: 5px;
-                        bottom: 5px;
-                    }
-                }
-
-                &:nth-child(2) {
-                    width: 80px;
-                }
-
-                &:nth-child(3) {
-                    width: 100px;
-                }
-
-                &:nth-child(4) {
-                    width: calc(100% - 500px);
-                }
-
-                &:nth-child(5) {
-                    width: 140px;
-                }
-
-                &:nth-child(6) {
-                    width: 180px;
-                }
-
-                &:nth-child(7) {
-                    width: calc(100% - 320px);
-                }
-
-                &:nth-child(8) {
-                    width: 140px;
-                }
-
-                &:nth-child(-n + 5) {
-                    border-bottom: 1px solid #a7b8c6;
-                    padding-bottom: 5px;
-                    margin-bottom: 5px;
-                }
-            }
-        }
-    }
-
     .allergies {
-        float: right;
-        width: 370px;
-        height: 80px;
         padding: 0 5px 5px 5px;
-        background-color: #a7b8c6;
+        background-color: #a7b8c6 !important;
         border-radius: 4px;
         position: relative;
 
-        @media print {
-            width: 100%;
-            height: auto;
-            background-color: #a7b8c6 !important;
-        }
-
-        .scroll-wrapper {
-            bottom: 5px;
-            lefT: 5px;
-            right: 5px;
-            width: auto;
-
-            .content {
-                padding: 0 20px 0 0;
-            }
-        }
-
         ul {
             margin: 0;
-            background-color: transparent;
-            height: 100%;
+            background-color: transparent !important;
 
             &:before {
                 font-size: 10px;
                 font-family: $primaryFont;
-                color: rgb(255, 255, 255);
+                color: rgb(255, 255, 255) !important;
                 text-transform: uppercase;
                 content: "Allergies";
             }
@@ -628,7 +445,7 @@ body {
 .marSheetDateInfo {
     text-align: right;
     border-radius: 4px;
-    background-color: rgb(255, 205, 96);
+    background-color: rgb(255, 205, 96) !important;
     line-height: 24px;
     padding-right: 10px;
 
@@ -685,7 +502,7 @@ body {
                 samp {
                     font-family: $secondaryFont;
                     font-size: 14px;
-                    color: #3f4253;
+                    color: #3f4253 !important;
                     font-weight: 700;
                     width: 100%;
                     overflow: hidden;
@@ -703,7 +520,7 @@ body {
                     float: left;
                     margin-right: 2px;
                     border-radius: 4px;
-                    background-color: rgb(245, 152, 157);
+                    background-color: rgb(245, 152, 157) !important;
                     padding: 0 5px;
                     line-height: 24px;
                     font-size: 12px;
@@ -722,7 +539,7 @@ body {
                 li {
                     font-size: 12px;
                     font-family: $secondaryFont;
-                    color: rgb(130, 135, 135);
+                    color: rgb(130, 135, 135) !important;
                     border-top: 1px solid #dcdede;
                     overflow: hidden;
                     line-height: 18px;
@@ -744,7 +561,7 @@ body {
                         white-space: nowrap;
                         float: right;
                         font-weight: 700;
-                        color: #3f4253;
+                        color: #3f4253 !important;
                         font-family: $primaryFont;
                     }
                 }
@@ -752,12 +569,12 @@ body {
 
             .direction {
                 border-radius: 4px;
-                background-color: rgb(63, 66, 83);
+                background-color: rgb(63, 66, 83) !important;
                 width: 100%;
                 height: 50px;
                 position: relative;
                 overflow: hidden;
-                color: #FFF;
+                color: #FFF !important;
                 padding: 5px;
 
                 .scroll-wrapper {
@@ -766,7 +583,7 @@ body {
                     .content {
                         padding: 5px 20px 5px 5px;
                         font-size: 12px;
-                        color: rgb(220, 222, 222);
+                        color: rgb(220, 222, 222) !important;
                     }
                 }
             }
@@ -774,7 +591,7 @@ body {
 
         .eMarTable {
             border-radius: 4px;
-            background-color: rgb(228, 228, 221);
+            background-color: rgb(228, 228, 221) !important;
             width: calc(100% - 405px);
             float: right;
             padding: 5px;
@@ -794,7 +611,7 @@ body {
                         position: absolute;
                         height: 1px;
                         width: 100%;
-                        background-color: #828787;
+                        background-color: #828787 !important;
                         top: 50%;
                         left: 0;
                         content: "";
@@ -806,13 +623,13 @@ body {
                         position: absolute;
                         left: 0;
                         height: 100%;
-                        background-color: #828787;
+                        background-color: #828787 !important;
                         width: 1px;
                     }
 
                     span {
                         display: inline-block;
-                        background-color: rgb(228, 228, 221);
+                        background-color: rgb(228, 228, 221) !important;
                         padding: 0 10px;
                         position: relative;
                         z-index: 2;
@@ -839,7 +656,7 @@ body {
                     font-size: 12px;
                     font-family: $secondaryFont;
                     text-transform: uppercase;
-                    color: #828787;
+                    color: #828787 !important;
                     text-shadow: 0.819px 0.574px 0 rgba(255, 255, 255, 1);
 
                     strong {
@@ -855,7 +672,7 @@ body {
                     }
 
                     &.current {
-                        background-color: #fff799;
+                        background-color: #fff799 !important;
                     }
                 }
             }
@@ -892,7 +709,7 @@ body {
                         width: calc(100% / 28);
                         text-align: center;
                         font-size: 12px;
-                        color: rgb(63, 66, 83);
+                        color: rgb(63, 66, 83) !important;
                         text-transform: uppercase;
                         line-height: 20px;
                         padding: 5px 0;
@@ -913,7 +730,7 @@ body {
                                 height: 1px;
                                 left: 5px;
                                 top: -1px;
-                                background-color: #a7b8c6;
+                                background-color: #a7b8c6 !important;
                                 width: 100%;
                             }
                         }
@@ -937,26 +754,26 @@ body {
                             height: 20px;
                             width: 20px;
                             border-radius: 10px;
-                            background-color: #3f4253;
-                            color: rgb(220, 222, 222);
+                            background-color: #3f4253 !important;
+                            color: rgb(220, 222, 222) !important;
 
                             &.red {
-                                background-color: #cb0000;
-                                color: #dcdede;
+                                background-color: #cb0000 !important;
+                                color: #dcdede !important;
                             }
 
                             &.orange {
-                                background-color: #fdc689;
-                                color: #3f4253;
+                                background-color: #fdc689 !important;
+                                color: #3f4253 !important;
                             }
 
                             &.green {
-                                background-color: #a3d39c;
-                                color: #3f4253;
+                                background-color: #a3d39c !important;
+                                color: #3f4253 !important;
                             }
 
                             &.missedMedicationIcon {
-                                background-color: transparent;
+                                background-color: transparent !important;
                             }
 
                             &.initials {
@@ -972,7 +789,7 @@ body {
                             right: calc(100% + 23px);
                             width: 54px;
                             text-align: center;
-                            background-color: #FFF;
+                            background-color: #FFF !important;
                             display: inline-block;
                             line-height: 1;
                             top: -32px;
@@ -1007,7 +824,7 @@ body {
                 span {
                     font-size: 12px;
                     font-family: $secondaryFont;
-                    color: rgb(255, 205, 96);
+                    color: rgb(255, 205, 96) !important;
                     margin-right: 10px;
                     float: left;
                     line-height: 1;
@@ -1019,7 +836,7 @@ body {
 
 .printReady {
     font-size: 12px;
-    background: #FFF;
+    background: #FFF !important;
 
     .container {
         width: 100%;
@@ -1041,7 +858,7 @@ body {
         .printButton {
             border: 0;
             border-radius: 4px;
-            background-color: $primaryColor;
+            background-color: $primaryColor !important;
             padding: 5px 10px;
             color: #FFF;
             margin-bottom: 15px;
@@ -1068,8 +885,8 @@ body {
 
     h4 {
         margin: 20px 0 10px 0;
-        background-color: #CCC;
-        color: #FFF;
+        background-color: #CCC !important;
+        color: #FFF !important;
         border-radius: 4px;
         padding: 5px;
         font-weight: 400;
@@ -1174,7 +991,7 @@ body {
                 display: table;
                 width: 100%;
                 height: 75px;
-                background-color: $primaryColor;
+                background-color: $primaryColor !important;
 
                 span {
                     display: table-cell;
@@ -1254,12 +1071,12 @@ body {
 
     &::after {
         border-radius: 4px;
-        background-color: rgb(246, 150, 121);
+        background-color: rgb(246, 150, 121) !important;
         position: absolute;
         padding: 10px;
         font-size: 12px;
         font-family: $secondaryFont;
-        color: rgb(28, 60, 75);
+        color: rgb(28, 60, 75) !important;
         line-height: 1.5;
         text-align: center;
         content: "Codes C, D, K, M, N, S, F and G do not effect the quantity levels";
@@ -1280,7 +1097,7 @@ body {
         color: rgb(63, 66, 83);
 
         &:before {
-            background-color: #3f4253;
+            background-color: #3f4253 !important;
             height: 20px;
             width: 20px;
             border-radius: 10px;
@@ -1289,7 +1106,7 @@ body {
             text-align: center;
             line-height: 20px;
             font-size: 14px;
-            color: rgb(220, 222, 222);
+            color: rgb(220, 222, 222) !important;
             content: attr(data-point);
             text-transform: uppercase;
             font-weight: 500;
@@ -1297,22 +1114,22 @@ body {
 
         &.red {
             &:before {
-                background-color: #cb0000;
-                color: #dcdede;
+                background-color: #cb0000 !important;
+                color: #dcdede !important;
             }
         }
 
         &.orange {
             &:before {
-                background-color: #fdc689;
-                color: #3f4253;
+                background-color: #fdc689 !important;
+                color: #3f4253 !important;
             }
         }
 
         &.green {
             &:before {
-                background-color: #a3d39c;
-                color: #3f4253;
+                background-color: #a3d39c !important;
+                color: #3f4253 !important;
             }
         }
     }
@@ -1352,8 +1169,8 @@ body {
                 height: auto;
                 padding: 10px;
                 margin: 0;
-                background-color: #EEE;
-                color: #FFF;
+                background-color: #EEE !important;
+                color: #FFF !important;
                 border: 0;
                 border-radius: 0;
 
@@ -1361,7 +1178,7 @@ body {
                     margin: 0;
                     font-family: $secondaryFont;
                     font-weight: 400;
-                    color: #666;
+                    color: #666 !important;
                 }
 
                 .perDateInfo {
@@ -1389,7 +1206,7 @@ body {
                         position: absolute;
                         right: 0;
                         bottom: calc(100% + 5px);
-                        background-color: #333;
+                        background-color: #333 !important;
                         border-radius: 4px;
                         padding: 5px;
                         opacity: 0;
@@ -1454,7 +1271,7 @@ body {
                         }
 
                         .staff {
-                            color: $secondaryColor;
+                            color: $secondaryColor !important;
                             margin: 0;
                         }
 
@@ -1504,8 +1321,8 @@ body {
                             -webkit-border-radius: 10px;
                             -moz-border-radius: 10px;
                             border-radius: 10px;
-                            background-color: $orangeColor;
-                            color: #FFF;
+                            background-color: $orangeColor !important;
+                            color: #FFF !important;
                             font-family: $secondaryFont;
                             line-height: 20px;
                             font-size: 12px;
@@ -1527,7 +1344,7 @@ body {
                             @extend .transition;
                             opacity: 0;
                             visibility: hidden;
-                            background-color: #CB0000;
+                            background-color: #CB0000 !important;
                             border-radius: 4px;
 
                             img.svg,
@@ -1583,7 +1400,7 @@ body {
                             opacity: 0;
                             visibility: hidden;
                             @extend .transition;
-                            background-color: #333;
+                            background-color: #333 !important;
                             border-radius: 4px;
                             padding: 10px;
                             position: absolute;
@@ -1591,7 +1408,7 @@ body {
                             top: -25px;
                             display: block;
                             white-space: nowrap;
-                            color: #FFF;
+                            color: #FFF !important;
                             font-family: $secondaryFont;
                             font-size: 12px;
                             z-index: 2;
@@ -1628,15 +1445,15 @@ body {
                     }
 
                     .rotaLess {
-                        background-color: #CB0000;
+                        background-color: #CB0000 !important;
                     }
 
                     .rotaOver {
-                        background-color: $orangeColor;
+                        background-color: $orangeColor !important;
                     }
 
                     .rotaNormal {
-                        background-color: $primaryColor;
+                        background-color: $primaryColor !important;
                     }
 
                     &:before {
@@ -1646,13 +1463,13 @@ body {
                         left: 5px;
                         bottom: 5px;
                         width: 3px;
-                        background-color: #DDD;
+                        background-color: #DDD !important;
                         @extend .transition;
                         z-index: 11;
                     }
 
                     &.empty {
-                        background-color: #EEE;
+                        background-color: #EEE !important;
                         background-image: url('../images/routaListTexture.gif');
                         background-blend-mode: darken;
 
@@ -1670,8 +1487,8 @@ body {
                         }
 
                         &.fullOff {
-                            background-color: #CB000077;
-                            color: #FFF;
+                            background-color: #CB000077 !important;
+                            color: #FFF !important;
                             text-align: center;
                             line-height: 70px;
 
@@ -1681,8 +1498,8 @@ body {
                         }
 
                         &.shiftOff {
-                            background-color: opacify($orangeColor, .70);
-                            color: #FFF;
+                            background-color: opacify($orangeColor, .70) !important;
+                            color: #FFF !important;
                             text-align: center;
                             line-height: 70px;
 
@@ -1700,7 +1517,7 @@ body {
 
                     &.published {
                         &:before {
-                            background-color: $primaryColor;
+                            background-color: $primaryColor !important;
                         }
                     }
                 }
@@ -1715,7 +1532,7 @@ body {
 
                 ul {
                     li {
-                        background-color: #F6F6F6;
+                        background-color: #F6F6F6 !important;
 
                         .info {
                             position: relative;
@@ -1786,7 +1603,7 @@ body {
 
                         &.hourswarn {
                             &:before {
-                                background-color: $orangeColor;
+                                background-color: $orangeColor !important;
                             }
                         }
                     }
@@ -1814,7 +1631,7 @@ body {
                         span {
                             font-size: 14px;
                             text-transform: uppercase;
-                            color: $secondaryColor;
+                            color: $secondaryColor !important;
                             display: block;
                         }
                     }
@@ -1822,7 +1639,7 @@ body {
 
                 &:first-child {
                     header {
-                        background-color: #EEE;
+                        background-color: #EEE !important;
                     }
 
                     ul {
@@ -1836,7 +1653,7 @@ body {
                                 width: 100%;
                                 height: 100%;
                                 position: absolute;
-                                background-color: rgba(0, 0, 0, 0.3);
+                                background-color: rgba(0, 0, 0, 0.3) !important;
                                 display: block;
                                 z-index: 10;
                             }
@@ -1866,10 +1683,10 @@ body {
                                 }
 
                                 &>p {
-                                    background-color: $orangeColor;
+                                    background-color: $orangeColor !important;
                                     padding: 0 5px;
                                     border-radius: 5px;
-                                    color: #333;
+                                    color: #333 !important;
                                     display: inline-block;
                                 }
                             }
@@ -1907,7 +1724,7 @@ body {
                         min-height: 150px;
                         height: auto;
                         padding-top: 25px;
-                        background-color: #FFF;
+                        background-color: #FFF !important;
                         position: relative;
                         border-color: #EEE;
 
@@ -1917,12 +1734,12 @@ body {
                         }
 
                         &:before {
-                            background-color: #FFF;
+                            background-color: #FFF !important;
                         }
 
                         &.published {
                             &:before {
-                                background-color: $primaryColor;
+                                background-color: $primaryColor !important;
                             }
                         }
 
@@ -1968,12 +1785,12 @@ body {
 
                             &>span {
                                 display: block;
-                                background-color: #F36C7C;
+                                background-color: #F36C7C !important;
                                 border-radius: 4px;
                                 padding: 0 5px;
                                 font-family: $secondaryFont;
                                 font-size: 12px;
-                                color: #FFF;
+                                color: #FFF !important;
                                 font-weight: 400;
                                 margin-top: 5px;
                                 width: 100%;
@@ -2001,8 +1818,8 @@ body {
                 border-radius: 0 0 4px 4px;
                 width: 12.5%;
                 padding: 10px 0;
-                background-color: $orangeColor;
-                color: #FFF;
+                background-color: $orangeColor !important;
+                color: #FFF !important;
                 font-family: $secondaryFont;
                 font-size: 16px;
                 text-transform: uppercase;
@@ -2012,17 +1829,17 @@ body {
                 border: 0;
                 height: auto;
                 border-radius: 4px;
-                background-color: $secondaryColor;
+                background-color: $secondaryColor !important;
 
                 .info {
                     &>span {
                         display: block;
-                        background-color: #FFF;
+                        background-color: #FFF !important;
                         border-radius: 4px;
                         padding: 0 5px;
                         font-family: $secondaryFont;
                         font-size: 12px;
-                        color: #666;
+                        color: #666 !important;
                         font-weight: 400;
                         margin-top: 5px;
                         width: 100%;
@@ -2156,7 +1973,7 @@ body {
                                 left: 0;
                                 right: 0;
                                 height: 1px;
-                                background: #DDD;
+                                background: #DDD !important;
                             }
                         }
 
