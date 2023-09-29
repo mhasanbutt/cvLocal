@@ -6,13 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="images/favicon.png" rel="shortcut icon">
     <title>CareVision - Less Admin, More Caring</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.circliful.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <?php include("header.php"); ?>
@@ -22,14 +18,17 @@
     <div class="breadcrumbTitle">
         <ul class="list-unstyled">
             <li>
-                <a href="#">Dashboard</a>
+                <a href="#">Admin</a>
+            </li>
+            <li>
+                <a href="#">Employee / User</a>
             </li>
         </ul>
-        <span class="title"><img src="images/dashboard.png"> Dashboard</span>
+        <span class="title"><img src="https://jawa.linksdev.co.uk/images/emmployee-icon.png"> Dashboard</span>
     </div>
 </section>
 
-<section class="contentBody noFooter">
+<section class="contentBody noBg noFooter">
     <div class="empDash">
         <aside class="left">
             <article class="profilePic"><img src="images/emp-profile.jpg"></article>
@@ -59,10 +58,6 @@
                         </li>
                     </ul>
                 </div>
-            </article>
-            <article class="qrCode">
-                <span>QR Code</span>
-                <img src="images/qrcode.jpg">
             </article>
         </aside>
         <section class="middle">
@@ -205,51 +200,48 @@
             </article>
         </section>
         <aside class="right">
-            <canvas id="myChart" height="150"></canvas>
-            <article class="attendance">
-                <span>Attendance</span>
-                <div class="scrollArea">
-                    <ul class="list-unstyled">
-                        <li>
-                            Monday [<small>10-02-2020</small>] <span>8:30hrs</span>
-                        </li>
-                        <li class="late">
-                            Tuesday [<small>10-02-2020</small>] <span>2hrs late</span>
-                        </li>
-                        <li class="absent">
-                            Wednesday [<small>10-02-2020</small>] <span>Absent</span>
-                        </li>
-                        <li>
-                            Thursday [<small>10-02-2020</small>] <span>8:30hrs</span>
-                        </li>
-                        <li>
-                            Friday [<small>10-02-2020</small>] <span>8:30hrs</span>
-                        </li>
-                        <li>
-                            Saturday [<small>10-02-2020</small>] <span>8:30hrs</span>
-                        </li>
-                        <li>
-                            Sunday [<small>10-02-2020</small>] <span>8:30hrs</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="statusContainer"></div>
+            <div class="clockingInfo">
+                <span class="title">Clocking Information</span>
+                <ul class="list-unstyled">
+                    <li class="done">
+                        Face Recognition
+                    </li>
+                    <li class="notAvailable">
+                        Pin Code <i class="revealHide"></i> <br><input type="password" class="passW" value="pass">
+                    </li>
+                    <li class="notAvailable">
+                        First Picture <br><small>Preview</small>
+                    </li>
+                    <li class="notAvailable">
+                        Second Picture <br><small>Preview</small>
+                    </li>
+                </ul>
+            </div>
+            <article class="qrCode">
+                <span>QR Code</span>
+                <img src="images/qrcode.jpg">
             </article>
         </aside>
     </div>
 </section>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
-<script src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-<script src="js/autosize.min.js"></script>
-<script src="js/jquery.circliful.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
  $( document ).ready(function() {
+     $('.revealHide').click(function(){
+         if($(this).hasClass("revealed")) {
+             $('.passW').attr('type', 'password');
+             $(this).removeClass("revealed");
+         } else {
+             $('.passW').attr('type', 'text');
+             $(this).addClass("revealed");
+         }
+     });
 	$(".status").circliful({
             animationStep: 5,
             percent: 75,
@@ -258,8 +250,8 @@
             foregroundBorderWidth: 30,
             responsive: true
         });
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
             type: 'bar',
             responsive: true,
             data: {

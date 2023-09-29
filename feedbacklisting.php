@@ -32,7 +32,7 @@
                                 <input type="checkbox" class="gridcheckbox historyCheckBox" data-id="57" data-invoice="57" id="57" hidden="">
                                 <label for="57"></label>
                             </li>
-                            <li style="width: 100px;">
+                            <li style="width: 130px;" class="prevDate" title="Previous Date: 25.05.2021">
                                 <span class="title">Date</span> 28-05-2021
                             </li>
                             <li style="width:220px;">
@@ -53,7 +53,7 @@
                             <li style="width:150px;">
                                 <span class="title">Source of Feedback</span>
                             </li>
-                            <li style="width:calc(100% - 1040px);">
+                            <li style="width:calc(100% - 1070px);">
                                 <span class="title">Attachment</span>
                             </li>
                             <li>

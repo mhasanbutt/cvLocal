@@ -98,7 +98,7 @@
             <aside>
                 <section class="tabs">
                     <ul class="buttons list-unstyled">
-                        <li data-link="quickLinks" class="selected"><span>Quick<br>Links</span></li>
+                        <li data-link="quickLinks" class="selected"><span>Details</span></li>
                         <li data-link="careplanning"><span>Care<br>Planning</span></li>
                         <li data-link="care"><span>Care</span></li>
                         <li data-link="healthstats"><span>Health<br>Stats</span></li>

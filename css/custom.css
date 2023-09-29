@@ -20559,6 +20559,82 @@ hr.BoldHr {
   width: 100%;
   height: 100%;
 }
+.empDash .clockingInfo {
+  border-radius: 4px;
+  position: relative;
+  padding: 10px;
+  background-color: #FFF;
+  margin-bottom: 10px;
+}
+.empDash .clockingInfo .title {
+  display: block;
+  color: #004564;
+  font-size: 14px;
+  font-weight: 500;
+}
+.empDash .clockingInfo ul {
+  margin: 0;
+}
+.empDash .clockingInfo ul li {
+  position: relative;
+  font-weight: 300;
+  color: #404455;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.empDash .clockingInfo ul li .revealHide {
+  display: block;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  background-size: 32px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  top: 1px;
+  background-image: url("../images/passReveal.png");
+  left: 60px;
+}
+.empDash .clockingInfo ul li .revealHide.revealed {
+  background-position: right center;
+}
+.empDash .clockingInfo ul li small, .empDash .clockingInfo ul li .passW {
+  display: block;
+  color: #72caf3;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.empDash .clockingInfo ul li .passW {
+  appearance: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+  border: 0;
+}
+.empDash .clockingInfo ul li:before {
+  display: block;
+  height: 18px;
+  width: 18px;
+  border-radius: 6px;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  content: "";
+  position: absolute;
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.empDash .clockingInfo ul li.done:before {
+  background-color: #4cb44a;
+  background-image: url("../images/permissionTick.png");
+}
+.empDash .clockingInfo ul li.notAvailable:before {
+  background-color: #ed1c24;
+  background-image: url("../images/crossWhite.png");
+}
 
 .bloodOxy {
   width: 115px;
@@ -26086,7 +26162,7 @@ hr.BoldHr {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.directorDash aside {
+.directorDash > aside {
   width: 250px;
   height: 100%;
   position: relative;
@@ -26095,20 +26171,20 @@ hr.BoldHr {
   background-repeat: no-repeat;
   background-size: 100px auto;
 }
-.directorDash aside article {
+.directorDash > aside article {
   padding: 10px;
   position: relative;
   font-size: 18px;
   color: #6DC77A;
   line-height: 1;
 }
-.directorDash aside article:before {
+.directorDash > aside article:before {
   display: inline-block;
   content: "Welcome,";
   font-size: 14px;
   color: #939999;
 }
-.directorDash aside article .home {
+.directorDash > aside article .home {
   font-size: 24px;
   color: #e5e6e7;
   font-family: "Roboto Condensed", sans-serif;
@@ -26116,23 +26192,23 @@ hr.BoldHr {
   padding: 5px 0 10px 0;
   border-bottom: 1px solid #323f48;
 }
-.directorDash aside article i {
+.directorDash > aside article i {
   font-style: normal;
   font-size: 12px;
   color: #828787;
   font-weight: 300;
 }
-.directorDash aside .scroll-wrapper {
+.directorDash > aside .scroll-wrapper {
   bottom: 170px;
 }
-.directorDash aside .scroll-wrapper .dashSideNav {
+.directorDash > aside .scroll-wrapper .dashSideNav {
   padding: 0 20px 0 0;
 }
-.directorDash aside ul {
+.directorDash > aside ul {
   margin: 0;
   padding: 10px;
 }
-.directorDash aside ul li a {
+.directorDash > aside ul li a {
   display: block;
   line-height: 38px;
   color: #e5e6e7;
@@ -26143,7 +26219,7 @@ hr.BoldHr {
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.directorDash aside ul li a i {
+.directorDash > aside ul li a i {
   font-size: 14px;
   color: #0c1013;
   float: right;
@@ -26156,80 +26232,80 @@ hr.BoldHr {
   font-weight: 700;
   padding: 0 5px;
 }
-.directorDash aside ul.tabs {
+.directorDash > aside ul.tabs {
   padding: 0 0 10px 10px;
 }
-.directorDash aside ul.tabs li a {
+.directorDash > aside ul.tabs li a {
   line-height: 42px;
   border-radius: 12px 0 0 12px;
   position: relative;
   padding-right: 10px;
 }
-.directorDash aside ul.tabs li:first-child a {
+.directorDash > aside ul.tabs li:first-child a {
   background-image: url("../images/overview-icon.png");
 }
-.directorDash aside ul.tabs li:nth-child(2) a {
+.directorDash > aside ul.tabs li:nth-child(2) a {
   background-image: url("../images/graphs-icon.png");
 }
-.directorDash aside ul.tabs li:nth-child(3) a {
+.directorDash > aside ul.tabs li:nth-child(3) a {
   background-image: url("../images/chefMenu.png");
 }
-.directorDash aside ul.tabs li:nth-child(4) a {
+.directorDash > aside ul.tabs li:nth-child(4) a {
   background-image: url("../images/policies.png");
 }
-.directorDash aside ul.tabs li:nth-child(5) a {
+.directorDash > aside ul.tabs li:nth-child(5) a {
   background-image: url("../images/audit.png");
 }
-.directorDash aside ul.tabs li:nth-child(6) a {
+.directorDash > aside ul.tabs li:nth-child(6) a {
   background-image: url("../images/asset.png");
 }
-.directorDash aside ul.tabs li:nth-child(7) a {
+.directorDash > aside ul.tabs li:nth-child(7) a {
   background-image: url("../images/comparison-icon.png");
 }
-.directorDash aside ul.tabs li:nth-child(8) a {
+.directorDash > aside ul.tabs li:nth-child(8) a {
   background-image: url("../images/data-structure-icon.png");
 }
-.directorDash aside ul.tabs li:nth-child(9) a {
+.directorDash > aside ul.tabs li:nth-child(9) a {
   background-image: url("../images/account.png");
 }
-.directorDash aside ul.tabs li:nth-child(10) a {
+.directorDash > aside ul.tabs li:nth-child(10) a {
   background-image: url("../images/group.png");
 }
-.directorDash aside ul.tabs li:nth-child(11) a {
+.directorDash > aside ul.tabs li:nth-child(11) a {
   background-image: url("../images/deptPosition.png");
 }
-.directorDash aside ul.tabs li:nth-child(12) a {
+.directorDash > aside ul.tabs li:nth-child(12) a {
   background-image: url("../images/permissionsDashIcon.png");
 }
-.directorDash aside ul.tabs li:nth-child(13) a {
+.directorDash > aside ul.tabs li:nth-child(13) a {
   background-image: url("../images/starterLeaverIcon.png");
 }
-.directorDash aside ul.tabs li:nth-child(14) a {
+.directorDash > aside ul.tabs li:nth-child(14) a {
   background-image: url("../images/hrDashboardIcon.png");
 }
-.directorDash aside ul.tabs li:nth-child(15) a {
+.directorDash > aside ul.tabs li:nth-child(15) a {
   background-image: url("../images/Change-of-details.png");
 }
-.directorDash aside ul.tabs li:nth-child(16) a {
+.directorDash > aside ul.tabs li:nth-child(16) a {
   background-image: url("../images/Message-Center.png");
 }
-.directorDash aside ul.tabs li:nth-child(17) a {
+.directorDash > aside ul.tabs li:nth-child(17) a {
   background-image: url("../images/House-keeping.png");
 }
-.directorDash aside ul.tabs li:nth-child(18) a {
+.directorDash > aside ul.tabs li:nth-child(18) a {
   background-image: url("../images/Maintenance.png");
 }
-.directorDash aside ul.tabs li:nth-child(19) a {
+.directorDash > aside ul.tabs li:nth-child(19) a {
   background-image: url("../images/Payrate-Control.png");
 }
-.directorDash aside ul.tabs li:nth-child(20) a {
+.directorDash > aside ul.tabs li:nth-child(20) a {
   background-image: url("../images/emloyee-detail-report.png");
 }
-.directorDash aside ul.tabs li.active a {
+.directorDash > aside ul.tabs li.active a {
   background-color: rgba(249, 249, 249, 0.1);
   border-radius: 6px;
 }
-.directorDash aside ul.tabs li.active a:before, .directorDash aside ul.tabs li.active a:after {
+.directorDash > aside ul.tabs li.active a:before, .directorDash > aside ul.tabs li.active a:after {
   position: absolute;
   display: block;
   height: 10px;
@@ -26241,21 +26317,21 @@ hr.BoldHr {
   right: 0;
   display: none;
 }
-.directorDash aside ul.tabs li.active a:before {
+.directorDash > aside ul.tabs li.active a:before {
   background-image: url("../images/directoorDash-menuCorner1.png");
   top: -10px;
 }
-.directorDash aside ul.tabs li.active a:after {
+.directorDash > aside ul.tabs li.active a:after {
   background-image: url("../images/directoorDash-menuCorner2.png");
   bottom: -10px;
 }
-.directorDash aside ul.menu {
+.directorDash > aside ul.menu {
   position: absolute;
   left: 0;
   bottom: 35px;
   width: 100%;
 }
-.directorDash aside ul.menu li:first-child a {
+.directorDash > aside ul.menu li:first-child a {
   background-image: linear-gradient(to right, rgb(75, 230, 207) 0%, rgb(212, 248, 174) 100%);
   background-size: cover;
   border-radius: 6px;
@@ -26263,7 +26339,7 @@ hr.BoldHr {
   background-position: left center;
   position: relative;
 }
-.directorDash aside ul.menu li:first-child a:before {
+.directorDash > aside ul.menu li:first-child a:before {
   position: absolute;
   display: block;
   background-position: center;
@@ -26276,10 +26352,10 @@ hr.BoldHr {
   width: 24px;
   top: 7px;
 }
-.directorDash aside ul.menu li:nth-child(2) a {
+.directorDash > aside ul.menu li:nth-child(2) a {
   background-image: url("../images/messages-icon.png");
 }
-.directorDash aside ul.menu li:nth-child(3) a {
+.directorDash > aside ul.menu li:nth-child(3) a {
   background-image: url("../images/logout-icon.png");
 }
 .directorDash .allStat {
@@ -27484,7 +27560,20 @@ hr.BoldHr {
   border-left: 2px solid rgba(153, 153, 153, 0.2);
 }
 .newsudashboard .tabs .buttons li:first-child {
+  background-color: #e69642;
   border: 0;
+}
+.newsudashboard .tabs .buttons li:nth-child(2) {
+  background-color: #ace9b7;
+}
+.newsudashboard .tabs .buttons li:nth-child(3) {
+  background-color: #78c2f0;
+}
+.newsudashboard .tabs .buttons li:nth-child(4) {
+  background-color: #ffe48c;
+}
+.newsudashboard .tabs .buttons li:nth-child(5) {
+  background-color: #c4bae4;
 }
 .newsudashboard .tabs .buttons li span {
   position: relative;
@@ -27503,7 +27592,7 @@ hr.BoldHr {
 .newsudashboard .tabs .buttons li:last-child:after {
   width: 0;
   height: 0;
-  border-bottom: 40px solid rgba(153, 153, 153, 0.3);
+  border-bottom: 40px solid #c4bae4;
   border-right: 10px solid transparent;
   content: "";
   position: absolute;
@@ -37731,6 +37820,13 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.generalListing section > ul > li.prevDate {
+  background-image: url("../images/return-to-the-past.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 29px;
 }
 .generalListing section > ul > li .iconWithTitle {
   display: block;

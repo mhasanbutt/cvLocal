@@ -22,6 +22,12 @@
             right: 0;
             margin-top: 0;
         }
+
+        .generalListing .newForm ul li .title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
@@ -109,9 +115,9 @@
                             </li>
                         </ul>
                         <div class="row">
-                            <div class="col-md-offset-1 col-md-10">
+                            <div class="col-md-12">
                                 <div class="newForm">
-                                    <ul class="list-unstyled clearfix col2" style="margin-bottom:0;">
+                                    <ul class="list-unstyled clearfix col4" style="margin-bottom:0;">
                                         <li>
                                             <span class="title">REFERRALS MADE: GP / SALT/ DIETITIAN / DENTIST NELL-SAR NUTRITIONIST</span>
                                             <select class="select2" multiple>
@@ -128,13 +134,13 @@
                                                 <option>Option 1</option>
                                             </select>
                                         </li>
-                                        <li class="textarea">
+                                        <li>
                                             <span class="title">ACTION TAKEN IN HOUSE</span>
-                                            <textarea placeholder="(i.e., Food first approach)"></textarea>
+                                            <input type="text" placeholder="(i.e., Food first approach)">
                                         </li>
-                                        <li class="textarea">
+                                        <li>
                                             <span class="title">REASONS FOR WEIGHT LOSS</span>
-                                            <textarea></textarea>
+                                            <input type="text">
                                         </li>
                                     </ul>
                                 </div>

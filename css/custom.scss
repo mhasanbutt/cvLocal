@@ -23614,6 +23614,97 @@ hr {
             height: 100%;
         }
     }
+
+    .clockingInfo {
+        border-radius: 4px;
+        position: relative;
+        padding: 10px;
+        background-color: #FFF;
+        margin-bottom: 10px;
+
+        .title {
+            display: block;
+            color: #004564;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                position: relative;
+                font-weight: 300;
+                color: #404455;
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 10px;
+
+                .revealHide {
+                    display: block;
+                    position: absolute;
+                    height: 16px;
+                    width: 16px;
+                    cursor: pointer;
+                    background-size: 32px 16px;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    top: 1px;
+                    background-image: url('../images/passReveal.png');
+                    left: 60px;
+
+                    &.revealed {
+                        background-position: right center;
+                    }
+                }
+
+                small, .passW {
+                    display: block;
+                    color: #72caf3;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+
+                .passW {
+                    appearance: none;
+                    padding: 0;
+                    height: auto;
+                    width: auto;
+                    border: 0;
+                }
+
+                &:before {
+                    display: block;
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 6px;
+                    top: 0;
+                    right: 0;
+                    background-color: #333;
+                    content: "";
+                    position: absolute;
+                    background-size: 9px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &.done {
+                    &:before {
+                        background-color: #4cb44a;
+                        background-image: url('../images/permissionTick.png');
+                    }
+                }
+
+                &.notAvailable {
+                    &:before {
+                        background-color: #ed1c24;
+                        background-image: url('../images/crossWhite.png');
+                    }
+                }
+            }
+        }
+    }
 }
 
 .bloodOxy {
@@ -30289,7 +30380,7 @@ hr {
         background-size: contain;
     }
 
-    aside {
+    & > aside {
         width: 250px;
         height: 100%;
         position: relative;
@@ -30712,7 +30803,7 @@ hr {
         }
     }
 
-    &>section {
+    & > section {
         position: absolute;
         right: 5px;
         top: 5px;
@@ -32074,9 +32165,21 @@ hr {
                 border-left: 2px solid rgba(#999, 0.2);
 
                 &:first-child {
+                    background-color: #e69642;
                     border: 0;
                 }
-
+                &:nth-child(2) {
+                    background-color: #ace9b7;
+                }
+                &:nth-child(3) {
+                    background-color: #78c2f0;
+                }
+                &:nth-child(4) {
+                    background-color: #ffe48c;
+                }
+                &:nth-child(5) {
+                    background-color: #c4bae4;
+                }
                 span {
                     position: relative;
                     top: 50%;
@@ -32098,7 +32201,7 @@ hr {
                     &:after {
                         width: 0;
                         height: 0;
-                        border-bottom: 40px solid rgba(#999, 0.3);
+                        border-bottom: 40px solid #c4bae4;
                         border-right: 10px solid transparent;
                         content: '';
                         position: absolute;
@@ -44536,6 +44639,14 @@ input[type=checkbox].switch {
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                }
+
+                &.prevDate {
+                    background-image: url('../images/return-to-the-past.png');
+                    background-size: 24px;
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    padding-left: 29px;
                 }
 
                 .iconWithTitle {

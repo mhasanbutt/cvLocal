@@ -2347,3 +2347,328 @@ body {
         }
     }
 }
+
+.andireport {
+    .occurance,
+    .dates,
+    .total {
+        ul {
+            margin: 0;
+
+            li {
+                line-height: 27px;
+                height: 27px;
+                text-align: right;
+                color: #849090;
+                font-family: $secondaryFont;
+
+                @media print {
+                    height: 22px;
+                    line-height: 22px;
+                }
+
+                &:nth-child(odd) {
+                    background-color: rgba(0, 0, 0, .05);
+
+                    @media print {
+                        background-color: rgba(0, 0, 0, .05) !important;
+                    }
+                }
+
+                &:first-child {
+                    font-size: 12px;
+                    color: $grayColor;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .occurance {
+        float: left;
+        width: 205px;
+
+        ul {
+            li {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .dates {
+        float: left;
+        width: calc(100% - 245px);
+
+        ul {
+            width: calc(100% / 31);
+            float: left;
+
+            li {
+                text-align: center;
+                background-color: rgba(#dcdede, 0.3);
+                position: relative;
+
+                @media print {
+                    background-color: rgba(#dcdede, 0.3) !important;
+                }
+
+                span {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    border-radius: 4px;
+                    text-align: center;
+                    color: #333;
+                    //background-color: #DCDCDC;
+                    line-height: 17px;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+
+                &:nth-child(odd) {
+                    background-color: #EBECEC;
+
+                    @media print {
+                        background-color: #EBECEC !important;
+                    }
+                }
+
+                &:first-child {
+                    background-color: transparent;
+
+                    span {
+                        background-color: #EEE;
+                        color: #666;
+                        cursor: unset;
+
+                        @media print {
+                            background-color: #EEE !important;
+                        }
+                    }
+
+                    &.data {
+                        span {
+                            cursor: pointer;
+                            background-color: $primaryColor;
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(even) {
+                li {
+                    background-color: transparent;
+
+                    @media print {
+                        background-color: transparent !important;
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: rgba(0, 0, 0, .05);
+
+                        @media print {
+                            background-color: rgba(0, 0, 0, .05) !important;
+                        }
+                    }
+
+                    &:first-child {
+                        background-color: transparent;
+
+                        @media print {
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .total {
+        float: left;
+        width: 40px;
+
+        ul {
+            li {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.eventListing {
+    &>li {
+        border-radius: 4px;
+        margin: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        float: left;
+        width: 100%;
+        background-color: #FFF;
+        margin-bottom: 50px;
+        position: relative;
+
+        article {
+            position: relative;
+            padding-left: 70px;
+            min-height: 80px;
+
+            .status {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                @include rotate(180deg);
+                height: 100%;
+                text-align: center;
+                width: 20px;
+                background-color: #EEE;
+                border-radius: 0 4px 4px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #FFF;
+                font-size: 12px;
+                line-height: 20px;
+                padding: 5px 0;
+                font-family: $secondaryFont;
+            }
+
+            .checkbox {
+                position: absolute;
+                width: 50px;
+                height: 100%;
+                left: 20px;
+                top: 0;
+                margin: 0;
+
+                label {
+                    display: block;
+                    position: relative;
+                    height: 100%;
+                    padding: 0;
+
+                    &:before {
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 4px;
+                        border: 2px solid #DDD;
+                        left: 50%;
+                        top: 50%;
+                        @include shift(-50%, -50%);
+                        content: '';
+                        position: absolute;
+                        background-color: #EEE;
+                        background-image: url('../images/checked.svg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 12px;
+                    }
+                }
+
+                input[type='checkbox'] {
+                    &:checked {
+                        &+label {
+                            &:before {
+                                background-color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul {
+                margin: 0;
+                width: calc(100% - 90px);
+                padding-top: 10px;
+
+                li {
+                    float: left;
+                    width: calc(100% / 5);
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        width: 100%;
+                    }
+
+                    .title {
+                        font-style: normal;
+                        font-size: 12px;
+                        color: #999;
+                        font-family: $secondaryFont;
+                        text-transform: uppercase;
+                        display: block;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .value {
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 400;
+                        display: block;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .ctas {
+                position: absolute;
+                top: 50%;
+                @include shift(0, -50%);
+
+                &.view {
+                    right: 15px;
+                }
+
+                &.edit {
+                    right: 50px;
+                }
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                    float: left;
+                }
+            }
+        }
+
+        .informed {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #EEE;
+            width: 100%;
+            margin: 0;
+            border-radius: 0 0 8px 8px;
+
+            li {
+                float: left;
+                width: calc(100% / 17);
+                text-align: center;
+                font-family: $secondaryFont;
+                font-size: 12px;
+
+                span {
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }
+
+                i {
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
