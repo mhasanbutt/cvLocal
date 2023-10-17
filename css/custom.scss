@@ -152,6 +152,11 @@
 
         &.autoWidth {
             width: auto;
+
+            & + .searchFilterDetails {
+                float: right;
+                width: 100%;
+            }
         }
 
         &>a {
@@ -1653,7 +1658,7 @@
         margin-bottom: 10px;
         text-align: right;
 
-        .selection {
+        .selection, .balance {
             display: inline-block;
             padding: 5px;
             background-color: #FFCD60;
@@ -1671,6 +1676,24 @@
                     font-size: 14px;
                     color: #3F4253;
                     margin-left: 3px;
+                }
+
+                &:first-of-type, &:only-of-type {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .balance {
+            background-color: #404455;
+
+            span {
+                color: #EDF2F4;
+
+                strong {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 500;
                 }
             }
         }
@@ -14890,10 +14913,10 @@ hr {
                 text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
                 position: absolute;
                 content: "Covid Tracker";
-                right: 100%;
-                border-radius: 10px 0 0 10px;
+                right: calc(100% - -5px);
+                border-radius: 10px;
                 white-space: nowrap;
-                top: 1px;
+                top: 2px;
                 display: inline-block;
                 line-height: 24px;
                 padding: 0 5px;
@@ -14990,93 +15013,83 @@ hr {
         }
 
         .stats {
-            border-radius: 20px;
-            background-color: rgba(192, 206, 222, 0.8);
             height: 64px;
-            padding: 15px 15px 15px 30px;
             position: relative;
             float: right;
             width: 700px;
 
-            .title {
-                font-family: $secondaryFont;
-                color: #424556;
-                font-size: 17px;
-                line-height: 17px;
-                float: left;
-                text-align: center;
-                text-shadow: 0.5px 0.866px 2px rgba(255, 255, 255, 0.7);
-                margin-right: 30px;
+            ul {
+                margin-bottom: 0;
+                font-family: "Poppins", sans-serif;
 
-                i {
-                    font-weight: 700;
-                    font-family: $primaryFont;
-                    font-style: normal;
-                    display: block;
-                    letter-spacing: 1px;
-                }
-            }
+                li {
+                    border-radius: 8px;
+                    height: 64px;
+                    background-color: #404455;
+                    margin-left: 5px;
+                    float: left;
+                    padding: 5px;
+                    position: relative;
 
-            .stat {
-                font-size: 48px;
-                font-family: $secondaryFont;
-                color: #1F2029;
-                letter-spacing: -2px;
-                line-height: 34px;
-                position: relative;
-                margin-right: 80px;
-
-                &:before {
-                    position: absolute;
-                    content: attr(data-title);
-                    word-break: initial;
-                    font-size: 13px;
-                    font-family: $primaryFont;
-                    color: #1E1F1F;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: calc(100% + 10px);
-                    line-height: normal;
-                    letter-spacing: 0;
-                }
-
-                &:after {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: calc(100% + 60px);
-                    font-size: 52px;
-                    color: #FFF;
-                    font-family: $secondaryFont;
-                    font-weight: 300;
-                    content: "{";
-                    top: 26px;
-
-                }
-
-                &:nth-of-type(4) {
-                    margin-left: 30px;
-                }
-
-                &:nth-of-type(3),
-                &:nth-of-type(5) {
-                    &:after {
-                        content: "}";
+                    &:first-child {
+                        margin-left: 0;
+                        background-color: #08B2D3;
                     }
-                }
 
-                samp {
-                    position: absolute;
-                    content: "";
-                    height: 18px;
-                    width: 18px;
-                    background-image: url('../images/formLabelInfo.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    cursor: pointer;
-                    left: -12px;
-                    top: 0;
+                    &.medicationOrder {
+                        margin-right: 5px;
+
+                        & > span {
+                            i {
+                                color: #DCDEDE;
+                            }
+
+                            &:nth-of-type(2) {
+                                background-color: #CCB7A8;
+                            }
+                        }
+
+                        &:before {
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 14px;
+                            color: #404455;
+                            content: attr(data-title);
+                            right: calc(100% + 5px);
+                            position: absolute;
+                            text-align: right;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    & > span {
+                        padding: 5px 10px;
+                        float: left;
+                        height: 100%;
+                        border-radius: 6px;
+                        text-align: center;
+                        font-size: 28px;
+                        color: #404455;
+                        line-height: 1;
+
+                        &:first-of-type {
+                            color: #FFF;
+                        }
+
+                        &:nth-of-type(2) {
+                            background-color: #DCDEDE;
+                        }
+
+                        i {
+                            display: block;
+                            font-size: 12px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            color: #A5A7A7;
+                            font-style: normal;
+                        }
+                    }
                 }
             }
         }
@@ -43475,7 +43488,8 @@ input[type=checkbox].switch {
             textarea,
             .select2,
             input[type=email],
-            input[type=password] {
+            input[type=password],
+            input[type=number] {
                 border-width: 1px;
                 border-color: rgba(161, 173, 176, .8);
                 border-style: solid;
@@ -43487,13 +43501,19 @@ input[type=checkbox].switch {
                 background-color: #FFF;
                 position: relative;
                 z-index: 1;
+                font-family: $primaryFont;
 
                 &[name=dateRange],
-                &.date {
+                &.date, &.time {
                     background-image: url('../images/calendar.png');
                     background-position: right 5px center;
                     background-repeat: no-repeat;
                     background-size: 24px;
+                    padding-right: 34px;
+                }
+
+                &.time {
+                    background-image: url('../images/clock.png');
                 }
 
                 &:focus {
@@ -44641,6 +44661,11 @@ input[type=checkbox].switch {
                     text-overflow: ellipsis;
                 }
 
+                .differentNote {
+                    font-weight: 500;
+                    color: #4BBAED;
+                }
+
                 &.prevDate {
                     background-image: url('../images/return-to-the-past.png');
                     background-size: 24px;
@@ -44898,6 +44923,14 @@ input[type=checkbox].switch {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.doubleShade {
+        section {
+            &:nth-of-type(even) {
+                background-color: #E8E8E4;
             }
         }
     }
@@ -46465,7 +46498,7 @@ input[type=checkbox].switch {
     width: 220px;
     bottom: 0;
     border-radius: 0 0 6px 0;
-    background: #f8f9fa;
+    background: #bee1e6;
     box-shadow: 2px 0 2px rgba(130, 147, 157, 0.16);
 
     li {
@@ -47007,6 +47040,254 @@ input[type=checkbox].switch {
                 }
             }
         }
+    }
+}
+
+.fundsList {
+    margin: 0 -5px;
+
+    li {
+        padding: 5px;
+        width: calc(100% / 5);
+        float: left;
+
+        article {
+            background-color: #FFF;
+            border-radius: 10px;
+            padding: 5px;
+
+            a {
+                display: block;
+
+                img {
+                    display: block;
+                    float: left;
+                    border-radius: 8px;
+                    height: 90px;
+                    width: 90px;
+                    margin-right: 10px;
+                }
+
+                .name {
+                    display: block;
+                    font-size: 17px;
+                    font-family: $secondaryFont;
+                    color: #404455;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: calc(100% - 100px);
+                }
+
+                .nickName {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #10BEDD;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: calc(100% - 100px);
+                    margin-bottom: 20px;
+                }
+
+                .room {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #404455;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: calc(100% - 100px);
+
+                    &:before {
+                        font-size: 14px;
+                        font-family: $secondaryFont;
+                        color: #828787;
+                        content: "Room";
+                        margin-right: 5px;
+                    }
+                }
+
+                .balance {
+                    border-radius: 8px;
+                    background-color: #D8E2DC;
+                    padding: 5px 10px;
+                    float: left;
+                    width: 100%;
+                    margin-top: 5px;
+
+                    span {
+                        float: left;
+                        width: 50%;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #404455;
+
+                        &:nth-of-type(2) {
+                            border-left: 1px solid #EDF2F4;
+                            text-align: right;
+
+                            &.red {
+                                color: #ED1C24;
+                            }
+
+                            &.green {
+                                color: #25b898;
+                            }
+                        }
+
+                        i {
+                            font-style: normal;
+                            color: #404455;
+                            font-size: 12px;
+                            font-family: $secondaryFont;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.usrBalance {
+    height: 46px;
+    border-radius: 6px;
+    background-color: #CEB4A8;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    .user {
+        float: left;
+        height: 36px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FFF;
+        line-height: 36px;
+
+        img {
+            float: left;
+            height: 36px;
+            width: 36px;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    }
+
+    .balance {
+        background-color: #404455;
+        border-radius: 4px;
+        padding: 0 10px;
+        line-height: 36px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 300;
+        float: right;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+}
+
+.daysFilter {
+    height: 50px;
+    background-color: #ADB0B5;
+    border-radius: 6px;
+    padding: 5px 10px;
+
+    .fixedFilter {
+        float: left;
+        height: 40px;
+
+        ul {
+            margin: 0;
+            float: left;
+
+            li {
+                float: left;
+                padding: 10px 0;
+                margin-right: 30px;
+
+                label {
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #404455;
+                    position: relative;
+                    padding-left: 30px;
+                    font-weight: normal;
+
+                    &:before {
+                        content: "";
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 10px;
+                        background-color: #FFF;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &:after {
+                        content: "";
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 5px;
+                        background-color: #404455;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        opacity: 0;
+                        transition: opacity 200ms linear;
+                    }
+                }
+
+                input[type=radio] {
+                    &:checked {
+                        & + label {
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dateRangeFilter {
+        float: right;
+        height: 40px;
+
+        input[type=text] {
+            height: 40px;
+            width: 285px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 0;
+            font-family: inherit;
+            font-size: 14px;
+            padding-left: 44px;
+            padding-right: 10px;
+            background-image: url('../images/calendar.png');
+            background-size: 24px;
+            background-repeat: no-repeat;
+            background-position: left 10px top 8px;
+        }
+    }
+
+    button {
+        height: 40px;
+        border-radius: 4px;
+        background-color: #004664;
+        border: 0;
+        font-family: $secondaryFont;
+        color: #FFF;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 20px;
     }
 }
 

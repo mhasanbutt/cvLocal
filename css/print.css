@@ -108,10 +108,15 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   float: left;
   height: 50px;
   width: 170px;
+  position: relative;
 }
 .header .logo img {
   max-width: 170px;
   max-height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .header .title {
   float: right;
@@ -264,30 +269,262 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   border-radius: 4px;
 }
 
-.generalListing {
+.homeInformation {
+  background-color: #AEAEAE !important;
+  border-radius: 6px;
+  height: 24px;
+  line-height: 24px;
   padding: 0 5px;
-  border-bottom: 1px solid #DDD;
-  margin-bottom: 5px;
-  break-inside: avoid;
+  color: #FFF !important;
 }
-.generalListing ul {
+.homeInformation ul {
+  margin: 0;
+}
+.homeInformation ul li {
+  float: left;
+  margin-left: 20px;
+}
+.homeInformation ul li:first-child {
+  margin-left: 0;
+}
+.homeInformation ul li i {
+  font-style: normal;
+  color: #DDD !important;
+}
+
+.generalListing > .title {
+  border-radius: 4px;
+  background-color: rgb(255, 205, 96);
+  line-height: 24px;
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(29, 61, 75);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+.generalListing section {
+  border-radius: 6px;
+  padding: 5px 0;
+  background-color: #FFF;
+  margin: 0 0 5px 0;
+}
+.generalListing section > ul {
   margin: 0 -5px;
 }
-.generalListing ul li {
+.generalListing section > ul > li {
   float: left;
+  color: #5d6a72;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 0 5px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-.generalListing ul li .title {
   display: block;
-  color: #333 !important;
-  font-weight: 400;
-  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10pt;
 }
-.generalListing ul li.fullWidth {
-  width: 100%;
-  font-weight: 400;
+.generalListing section > ul > li .title {
+  color: #828787;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 8pt;
+}
+.generalListing section > ul > li.prevDate {
+  background-image: url("../images/return-to-the-past.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 29px;
+}
+.generalListing section > ul > li .iconWithTitle {
+  display: block;
+  margin: 5px auto 0 auto;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.generalListing section > ul > li .iconWithTitle:after {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%;
+  font-size: 10px;
+  color: #828787;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.generalListing section > ul > li .iconWithTitle.entries {
+  background-image: url("../images/surveyEntries.png");
+}
+.generalListing section > ul > li .iconWithTitle.analyse {
+  background-image: url("../images/graphic.png");
+}
+.generalListing section > ul > li .iconWithTitle.link {
+  background-image: url("../images/surveyLink.png");
+}
+.generalListing section > ul > li .iconWithTitle.conduct {
+  background-image: url("../images/conductSurvey.png");
+}
+.generalListing section > ul > li .eye,
+.generalListing section > ul > li .view,
+.generalListing section > ul > li .delete {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/eye.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10px;
+}
+.generalListing section > ul > li .view {
+  background-image: url("../images/editIcon.png");
+}
+.generalListing section > ul > li .delete {
+  background-image: url("../images/trash-bin.png");
+}
+.generalListing section > ul > li.wrapText {
+  white-space: normal;
+  overflow: auto;
+  text-overflow: unset;
+}
+.generalListing section > ul > li small {
+  font-size: 12px;
+  color: #FFF;
+  border-radius: 2px;
+  padding: 0 5px;
+  background-color: #828787;
+  display: inline-block;
+}
+.generalListing section > ul > li small.serviceuser {
+  background-color: #22a0d5;
+}
+.generalListing section > ul > li small.staff {
+  background-color: #F0A26E;
+}
+.generalListing section > ul > li .stars {
+  margin: 0;
+}
+.generalListing section > ul > li .stars li {
+  float: left;
+  height: 18px;
+  width: 18px;
+  margin-right: 2px;
+  background-image: url("../images/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.generalListing section > ul.activities li {
+  width: calc((100% - 50px) / 11);
+  float: right;
+  overflow: visible;
+}
+.generalListing section > ul.activities li .tTText {
+  width: 250px;
+  left: 20%;
+  z-index: 2;
+  top: 15px;
+}
+.generalListing section > ul.activities li:nth-child(2) .tTText, .generalListing section > ul.activities li:nth-child(3) .tTText {
+  left: auto;
+  right: 20%;
+}
+.generalListing section > ul.activities li .subCat {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  padding-right: 20px;
+}
+.generalListing section > ul.activities li .subCat i {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  float: right;
+  font-style: normal;
+}
+.generalListing section > ul.withCheckbox {
+  padding-left: 50px;
+  position: relative;
+}
+.generalListing section > ul.withCheckbox > li:first-child {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.generalListing section > ul.withCheckbox > li:first-child label {
+  height: 18px;
+  width: 18px;
+  border-radius: 4px;
+  background-color: #dcdede;
+  float: left;
+  margin-right: 10px;
+}
+.generalListing section > ul.withCheckbox > li:first-child input[type=checkBox]:checked + label {
+  background-color: #6DC77A;
+  background-image: url("../images/handoverNotecheckbox.png");
+  background-position: center;
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+.generalListing section.blue {
+  background-color: rgba(122, 204, 200, 0.3);
+}
+.generalListing section.red {
+  background-color: rgba(188, 140, 191, 0.3);
+}
+.generalListing section.withTitle {
+  background-color: rgba(130, 135, 135, 0.1);
+  padding: 5px;
+}
+.generalListing section.withTitle > .title {
+  border-radius: 4px;
+  background-color: rgb(131, 147, 202);
+  line-height: 18px;
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.generalListing section.activityReportDetail {
+  background-color: #FFF;
+  padding: 0 5px;
+  border: 2px solid rgb(220, 222, 222);
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 32px;
+}
+.generalListing section.activityReportDetail ul {
+  position: relative;
+  padding-top: 2px;
+  margin-top: 25px;
+}
+.generalListing section.activityReportDetail ul:before {
+  position: absolute;
+  content: attr(data-subTitle);
+  left: -2px;
+  right: -2px;
+  top: 100%;
+  display: block;
+  background-color: rgb(220, 222, 222);
+  font-size: 12px;
+  color: rgb(29, 61, 75);
+  border-radius: 0 0 4px 4px;
+  line-height: 22px;
+  padding: 0 5px;
+}
+.generalListing section.activityReportDetail ul:first-of-type {
+  margin-top: 0;
 }
 
 .diseases {
@@ -2248,6 +2485,43 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .eventListing > li .informed li i {
   font-style: normal;
+}
+
+.data {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+.data thead tr th {
+  background-color: #333 !important;
+  color: #DDD !important;
+  padding: 5px;
+}
+.data tbody tr td {
+  color: #333 !important;
+  padding: 5px;
+}
+
+.plannedHours .listingProfile {
+  height: 100%;
+  background-color: #EEE !important;
+}
+.plannedHours .listingProfile .profileImg {
+  Float: left;
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+}
+.plannedHours .listingProfile span {
+  display: block;
+  padding-top: 10px;
+}
+.plannedHours table thead tr th, .plannedHours table thead tr td, .plannedHours table tbody tr th, .plannedHours table tbody tr td {
+  text-align: center;
+}
+.plannedHours table tfoot tr td {
+  background-color: #EEE !important;
 }
 
 /*# sourceMappingURL=print.css.map */

@@ -20,7 +20,7 @@
 			<span class="title">Dashboard</span>
 
 			<div class="covidStatus">
-				Service Users Displaying Symptoms 0 <strong>(0 Positive)</strong> - Staff Displaying Symptoms 0 <strong>(0 Positive)</strong>
+				Service Users - 0 <strong>(0 Positive)</strong> - Staff - 0 <strong>(0 Positive)</strong>
 			</div>
 
 			<div class="reload">
@@ -42,12 +42,21 @@
 				</div>
 			</div>
 
-			<div class="stats">
-				<span class="title">Overall <i>Stats</i></span>
-				<span class="stat" data-title="Service Users">65</span>
-				<span class="stat other" data-title="Freeze Status">07<samp></samp></span>
-				<span class="stat" data-title="Staff">58</span>
-				<span class="stat other" data-title="Leavers">03</span>
+			<div class="stats clearfix">
+				<ul class="list-unstyled clearfix pull-right">
+                    <li data-title="Medication Orders" class="medicationOrder">
+                        <span>93 <i>Pending</i></span>
+                        <span>03 <i>Interim</i></span>
+                    </li>
+                    <li>
+                        <span>93 <i>Service Users</i></span>
+                        <span>03 <i>Freeze</i></span>
+                    </li>
+                    <li>
+                        <span>93 <i>Staff</i></span>
+                        <span>03 <i>Leavers</i></span>
+                    </li>
+                </ul>
 			</div>
 		</div>
 
@@ -211,6 +220,7 @@
 			</div>
 		</div>
 	</section>
+
 	<div class="warningsBG"></div>
 	<div class="warningsRed">
 		<span class="title"><samp>Warnings</samp></span>
@@ -458,8 +468,7 @@
 		</div>
 	</div>
 
-
-    <div class="chatModule">
+    <div class="chatModule" hidden>
         <samp></samp>
 
         <div class="chatBox">
@@ -620,11 +629,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 
 	<script src="js/jquery-1.12.4.js"></script>
 	<script src="js/bootstrap.min.js"></script>
