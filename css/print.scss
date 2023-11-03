@@ -1265,85 +1265,87 @@ body {
             font-weight: 700;
         }
     }
+}
 
-    .staffQR {
-        &>div {
-            width: calc(calc(100% - 70px) / 2);
-            margin: 10px;
-            float: left;
-            height: 200px;
-            border: 1px solid #DDD;
+.staffQR {
+    page-break-inside: avoid;
 
-            .name {
-                display: table;
-                width: 100%;
+    &>div {
+        width: calc(calc(100% - 70px) / 2);
+        margin: 10px;
+        float: left;
+        height: 200px;
+        border: 1px solid #DDD !important;
+
+        .name {
+            display: table;
+            width: 100%;
+            height: 75px;
+            background-color: $primaryColor !important;
+
+            span {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
                 height: 75px;
-                background-color: $primaryColor !important;
-
-                span {
-                    display: table-cell;
-                    text-align: center;
-                    vertical-align: middle;
-                    height: 75px;
-                    font-size: 24px;
-                    font-family: $secondaryFont;
-                    color: #FFF;
-                    line-height: 1;
-                    padding: 0 20px 0 85px;
-                    position: relative;
-
-                    strong {
-                        font-family: $primaryFont;
-                        font-size: 16px;
-                        color: #FFF;
-                    }
-
-                    img {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        height: 75px;
-                        width: 75px;
-                    }
-                }
-            }
-
-            .logo {
+                font-size: 24px;
+                font-family: $secondaryFont;
+                color: #FFF !important;
+                line-height: 1;
+                padding: 0 20px 0 85px;
                 position: relative;
-                height: 125px;
-                padding: 5px 75px 5px 5px;
 
-                &>img {
-                    width: auto;
-                    height: 75px;
-                    position: absolute;
-                    left: 10px;
-                    top: 25px;
+                strong {
+                    font-family: $primaryFont;
+                    font-size: 16px;
+                    color: #FFF !Important;
                 }
 
-                i {
+                img {
                     position: absolute;
-                    right: 5px;
-                    top: 5px;
-                    height: 115px;
-                    width: 115px;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
+                    left: 0;
+                    top: 0;
+                    height: 75px;
+                    width: 75px;
                 }
             }
+        }
 
-            &.back {
-                display: table;
+        .logo {
+            position: relative;
+            height: 125px;
+            padding: 5px 75px 5px 5px;
 
-                &>div {
-                    display: table-cell;
-                    text-align: center;
-                    vertical-align: middle;
+            &>img {
+                width: auto;
+                height: 75px;
+                position: absolute;
+                left: 10px;
+                top: 25px;
+            }
+
+            i {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                height: 115px;
+                width: 115px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
+            }
+        }
+
+        &.back {
+            display: table;
+
+            &>div {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
             }
         }
     }

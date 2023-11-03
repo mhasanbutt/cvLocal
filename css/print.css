@@ -1113,56 +1113,60 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-size: 16px;
   font-weight: 700;
 }
-.printReady .staffQR > div {
+
+.staffQR {
+  page-break-inside: avoid;
+}
+.staffQR > div {
   width: calc((100% - 70px) / 2);
   margin: 10px;
   float: left;
   height: 200px;
-  border: 1px solid #DDD;
+  border: 1px solid #DDD !important;
 }
-.printReady .staffQR > div .name {
+.staffQR > div .name {
   display: table;
   width: 100%;
   height: 75px;
   background-color: #6DC77A !important;
 }
-.printReady .staffQR > div .name span {
+.staffQR > div .name span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   height: 75px;
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
-  color: #FFF;
+  color: #FFF !important;
   line-height: 1;
   padding: 0 20px 0 85px;
   position: relative;
 }
-.printReady .staffQR > div .name span strong {
+.staffQR > div .name span strong {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #FFF;
+  color: #FFF !important;
 }
-.printReady .staffQR > div .name span img {
+.staffQR > div .name span img {
   position: absolute;
   left: 0;
   top: 0;
   height: 75px;
   width: 75px;
 }
-.printReady .staffQR > div .logo {
+.staffQR > div .logo {
   position: relative;
   height: 125px;
   padding: 5px 75px 5px 5px;
 }
-.printReady .staffQR > div .logo > img {
+.staffQR > div .logo > img {
   width: auto;
   height: 75px;
   position: absolute;
   left: 10px;
   top: 25px;
 }
-.printReady .staffQR > div .logo i {
+.staffQR > div .logo i {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -1170,14 +1174,14 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   width: 115px;
   overflow: hidden;
 }
-.printReady .staffQR > div .logo i img {
+.staffQR > div .logo i img {
   width: 100%;
   height: 100%;
 }
-.printReady .staffQR > div.back {
+.staffQR > div.back {
   display: table;
 }
-.printReady .staffQR > div.back > div {
+.staffQR > div.back > div {
   display: table-cell;
   text-align: center;
   vertical-align: middle;

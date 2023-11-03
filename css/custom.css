@@ -4979,6 +4979,10 @@ hr.BoldHr {
 .table.training > tbody > tr > td.blue {
   color: #899AE4;
 }
+.table.training > tbody > tr > td:nth-last-child(-n+4) .helpTip.forTable .tTText {
+  right: 50%;
+  left: auto;
+}
 .table.supervision thead tr td {
   white-space: unset;
 }
@@ -26168,6 +26172,7 @@ hr.BoldHr {
   background-position: right 50px center;
   background-repeat: no-repeat;
   background-size: contain;
+  display: none;
 }
 .directorDash > aside {
   width: 250px;
@@ -26307,6 +26312,9 @@ hr.BoldHr {
 }
 .directorDash > aside ul.tabs li:nth-child(20) a {
   background-image: url("../images/emloyee-detail-report.png");
+}
+.directorDash > aside ul.tabs li:nth-child(21) a {
+  background-image: url("../images/accident-report.png");
 }
 .directorDash > aside ul.tabs li.active a {
   background-color: rgba(249, 249, 249, 0.1);
@@ -26900,6 +26908,30 @@ hr.BoldHr {
 }
 .directorDash > section .assetList li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.directorDash .andireport .dates ul li {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.directorDash .andireport .dates ul li span {
+  color: #FFF;
+}
+.directorDash .andireport .dates ul li:first-child {
+  background-color: transparent;
+}
+.directorDash .andireport .dates ul li:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.directorDash .andireport .dates ul:nth-of-type(2n) li {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.directorDash .andireport .dates ul:nth-of-type(2n) li span {
+  color: #FFF;
+}
+.directorDash .andireport .dates ul:nth-of-type(2n) li:first-child {
+  background-color: transparent;
+}
+.directorDash .andireport .dates ul:nth-of-type(2n) li:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .popmodal {
@@ -27896,6 +27928,16 @@ hr.BoldHr {
   width: 36px;
   display: block;
   margin: 0 auto 10px;
+}
+.newsudashboard .tabs .tabContent .quickLinks li.companyLogo .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 90%;
+  max-height: 90%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
 }
 .newsudashboard .tabs .tabContent .dailyNotes li {
   font-size: 12px;
@@ -35469,6 +35511,14 @@ input[type=checkbox].switch:checked + label:before {
   visibility: visible;
   opacity: 1;
 }
+.helpTip.forTable {
+  display: block;
+}
+.helpTip.forTable .tTText {
+  white-space: normal;
+  text-align: left;
+  left: 50%;
+}
 
 .profileAllergies {
   height: 80px;
@@ -39973,6 +40023,10 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 12px;
   text-transform: uppercase;
   padding: 0 20px;
+}
+
+#VideoPopTutorial .modal-body {
+  pointer-events: none;
 }
 
 .scroll-element.scroll-x {

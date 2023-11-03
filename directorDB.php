@@ -1734,7 +1734,6 @@
                                     </span>
                                 </li>
                             </ul>
-
                         </section>
                         <aside class="total">
                             <ul class="list-unstyled">

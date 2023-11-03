@@ -583,6 +583,12 @@
                                     </a>
 
                                     </li>
+
+                                    <li class="companyLogo">
+                                        <a href="#" style="background-color:#074d65;">
+                                            <img class="logo" src="images/OneLondon_LCR%20logo_White.png">
+                                        </a>
+                                    </li>
                                 </ul>
                             </article>
                             <article id="careplanningtab">

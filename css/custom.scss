@@ -4635,6 +4635,17 @@ hr {
                     &.blue {
                         color: #899AE4;
                     }
+
+                    &:nth-last-child(-n + 4) {
+                        .helpTip {
+                            &.forTable {
+                                .tTText {
+                                    right: 50%;
+                                    left: auto;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -30391,6 +30402,7 @@ hr {
         background-position: right 50px center;
         background-repeat: no-repeat;
         background-size: contain;
+        display: none;
     }
 
     & > aside {
@@ -30601,6 +30613,12 @@ hr {
                     &:nth-child(20) {
                         a {
                             background-image: url("../images/emloyee-detail-report.png");
+                        }
+                    }
+
+                    &:nth-child(21) {
+                        a {
+                            background-image: url("../images/accident-report.png");
                         }
                     }
 
@@ -31354,6 +31372,46 @@ hr {
 
                 &:hover {
                     background-color: rgba(#FFF, 0.1);
+                }
+            }
+        }
+    }
+
+    .andireport {
+        .dates {
+            ul {
+                li {
+                    span {
+                        color: #FFF;
+                    }
+
+                    background-color: rgba(#FFF, 0.1);
+
+                    &:first-child {
+                        background-color: transparent;
+                    }
+
+                    &:nth-child(even) {
+                        background-color: rgba(#000, 0.3);
+                    }
+                }
+
+                &:nth-of-type(2n) {
+                    li {
+                        span {
+                            color: #FFF;
+                        }
+
+                        background-color: rgba(#FFF, 0.1);
+
+                        &:first-child {
+                            background-color: transparent;
+                        }
+
+                        &:nth-child(even) {
+                            background-color: rgba(#000, 0.3);
+                        }
+                    }
                 }
             }
         }
@@ -32598,6 +32656,19 @@ hr {
                         width: 36px;
                         display: block;
                         margin: 0 auto 10px;
+                    }
+
+                    &.companyLogo {
+                        .logo {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            max-width: 90%;
+                            max-height: 90%;
+                            transform: translate(-50%, -50%);
+                            height: auto;
+                            width: auto;
+                        }
                     }
                 }
             }
@@ -41853,6 +41924,16 @@ input[type=checkbox].switch {
             opacity: 1;
         }
     }
+
+    &.forTable {
+        display: block;
+
+        .tTText {
+            white-space: normal;
+            text-align: left;
+            left: 50%;
+        }
+    }
 }
 
 .profileAllergies {
@@ -47288,6 +47369,12 @@ input[type=checkbox].switch {
         font-size: 12px;
         text-transform: uppercase;
         padding: 0 20px;
+    }
+}
+
+#VideoPopTutorial {
+    .modal-body {
+        pointer-events: none;
     }
 }
 
