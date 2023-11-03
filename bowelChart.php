@@ -10,13 +10,13 @@
     <link href="css/custom.css" rel="stylesheet">
     <style>
         .contentBody .scroll-wrapper {
-            top: 46px;
+            top: 95px;
         }
         .contentBody .ctas {
             position: absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
     </style>
 </head>
@@ -102,42 +102,59 @@
     </section>
 
     <section class="contentBody noBg noFooter">
-        <div class="counters clearfix"><ul class="list-unstyled clearfix pull-right">
-            <li><article><span>214</span><div class="title"><i>Total Accidents</i></div> </article></li>
-            <li><article><span>189</span><div class="title"><i>Total Incidents</i></div> </article></li>
-            <li><article><span>47</span><div class="title"><i>Total Positive Behaviour Incident</i></div> </article></li>
-            <li><article><span>538</span><div class="title"><i>Active A&amp;I's</i></div> </article></li>
-            <li><article><span>136</span><div class="title"><i>A&amp;I's Missing Follow Up</i></div> </article></li>
-            <li><article><span>402</span><div class="title"><i> A&amp;I's Awaiting Sign Off</i></div> </article></li>
-            <li><article><span>173</span><div class="title"><i>A&amp;I's with Pending Informed Section</i></div> </article></li>
-        </ul>
+        <div class="counters clearfix">
+            <ul class="list-unstyled clearfix pull-right">
+                <li><article><span>INC</span><div class="title"><i>Incontinent</i></div> </article></li>
+                <li><article><span>PU</span><div class="title"><i>Passed Urine</i></div> </article></li>
+                <li><article><span>N/A</span><div class="title"><i>No Bowel Movement Recorded</i></div> </article></li>
+                <li><article><span>0</span><div class="title"><i>No Stool Passed</i></div> </article></li>
+                <li><article><span>7</span><div class="title"><i>Type 7</i></div> </article></li>
+                <li><article><span>6</span><div class="title"><i> Type 6</i></div> </article></li>
+                <li><article><span>5</span><div class="title"><i>Type 5</i></div> </article></li>
+                <li><article><span>4</span><div class="title"><i>Type 4</i></div> </article></li>
+                <li><article><span>3</span><div class="title"><i> Type 3</i></div> </article></li>
+                <li><article><span>2</span><div class="title"><i>Type 2</i></div> </article></li>
+                <li><article><span>1</span><div class="title"><i>Type 1</i></div> </article></li>
+            </ul>
+        </div>
+        <div class="weekRotation">
+            <div>
+                <button></button>
+                <span>6 Aug-12 Aug <i>, 2023</i></span>
+                <button></button>
+            </div>
         </div>
         <div class="scrollArea">
             <div class="content">
                 <article class="generalListing">
                     <section>
-                        <ul class="list-unstyled clearfix withCheckbox">
-                            <li>
-                                <input type="checkbox" class="gridcheckbox historyCheckBox" data-id="57" data-invoice="57" id="57" hidden="">
-                                <label for="57"></label>
+                        <ul class="list-unstyled clearfix">
+                            <li style="width: 150px;">
+                                <span class="title">Room</span> Test_A
                             </li>
-                            <li style="width: 220px;">
-                                <span class="title">Form Name</span> My Custom Form
+                            <li style="width: calc(100% - 990px);">
+                                <span class="title">Service User</span>AD'S Resident
                             </li>
                             <li style="width:120px;">
-                                <span class="title">Created On</span>15.03.2023
+                                <span class="title dot">30 MON</span> -
                             </li>
-                            <li style="width:220px;">
-                                <span class="title">Created By</span> Kristine Bagherbilli
+                            <li style="width:120px;">
+                                <span class="title dot">31 TUE</span> -
                             </li>
-                            <li>
-                                <i class="eye"></i>
+                            <li style="width:120px;">
+                                <span class="title dot">01 WED</span> -
                             </li>
-                            <li>
-                                <i class="view"></i>
+                            <li style="width:120px;">
+                                <span class="title dot">02 THU</span> -
                             </li>
-                            <li>
-                                <i class="delete"></i>
+                            <li style="width:120px;">
+                                <span class="title dot">03 FRI</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title ">04 SAT</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title ">05 SUN</span> -
                             </li>
                         </ul>
                     </section>

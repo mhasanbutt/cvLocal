@@ -2792,6 +2792,54 @@ hr.BoldHr {
   padding-top: 10px;
 }
 
+.weekRotation {
+  height: 52px;
+  padding-top: 20px;
+}
+.weekRotation > div {
+  float: left;
+  border: #DDDDDD 1px solid;
+  border-radius: 6px;
+  padding: 7px 8px;
+  background-image: url("../images/calendarIconWeekRotation.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: left 34px center;
+  background-color: #FFF;
+  height: 32px;
+}
+.weekRotation > div button {
+  float: left;
+  height: 18px;
+  width: 18px;
+  border: 0;
+  background-color: transparent;
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-image: url("../images/leftArrowWeekRotation.png");
+  cursor: pointer;
+}
+.weekRotation > div button:first-of-type {
+  margin-right: 35px;
+}
+.weekRotation > div button:nth-of-type(2) {
+  float: right;
+  background-image: url("../images/rightArrowWeekRotation.png");
+  margin-left: 10px;
+}
+.weekRotation > div > span {
+  float: left;
+  line-height: 18px;
+  color: #404455;
+  font-size: 12px;
+  font-weight: 500;
+}
+.weekRotation > div > span i {
+  font-style: normal;
+  color: #778DA9;
+}
+
 .contentBody {
   border-radius: 4px;
   background-color: #FFF;
@@ -37899,6 +37947,18 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.generalListing section > ul > li .title.dot {
+  position: relative;
+}
+.generalListing section > ul > li .title.dot:after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #F06C6C;
+  border-radius: 5px;
+  content: "";
+  transform: translateX(5px);
 }
 .generalListing section > ul > li .differentNote {
   font-weight: 500;

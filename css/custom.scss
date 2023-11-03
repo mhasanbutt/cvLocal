@@ -2030,6 +2030,60 @@ hr {
     }
 }
 
+.weekRotation {
+    height: 52px;
+    padding-top: 20px;
+
+    & > div {
+        float: left;
+        border: #DDDDDD 1px solid;
+        border-radius: 6px;
+        padding: 7px 8px;
+        background-image: url("../images/calendarIconWeekRotation.png");
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: left 34px center;
+        background-color: #FFF;
+        height: 32px;
+
+        button {
+            float: left;
+            height: 18px;
+            width: 18px;
+            border: 0;
+            background-color: transparent;
+            background-position: center;
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-image: url("../images/leftArrowWeekRotation.png");
+            cursor: pointer;
+
+            &:first-of-type {
+                margin-right: 35px;
+            }
+
+            &:nth-of-type(2) {
+                float: right;
+                background-image: url("../images/rightArrowWeekRotation.png");
+                margin-left: 10px;
+            }
+        }
+
+        & > span {
+            float: left;
+            line-height: 18px;
+            color: #404455;
+            font-size: 12px;
+            font-weight: 500;
+
+            i {
+                font-style: normal;
+                color: #778DA9;
+            }
+        }
+    }
+}
+
 .contentBody {
     border-radius: 4px;
     background-color: #FFF;
@@ -44740,6 +44794,20 @@ input[type=checkbox].switch {
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+
+                    &.dot {
+                        position: relative;
+
+                        &:after {
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #F06C6C;
+                            border-radius: 5px;
+                            content: "";
+                            transform: translateX(5px);
+                        }
+                    }
                 }
 
                 .differentNote {
@@ -44851,6 +44919,8 @@ input[type=checkbox].switch {
                         background-size: contain;
                     }
                 }
+
+
             }
 
             &.activities {
