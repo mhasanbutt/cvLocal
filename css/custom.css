@@ -37036,9 +37036,13 @@ input[type=checkbox].switch:checked + label:before {
   transform: none;
   padding: 0;
 }
+.newForm ul li .select2 .selection {
+  display: block;
+  height: 34px;
+}
 .newForm ul li .select2 .selection .select2-selection--multiple {
   border: 0;
-  height: 42px;
+  height: 34px;
   padding: 0;
   background-color: transparent;
 }

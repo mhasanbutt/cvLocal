@@ -43720,9 +43720,12 @@ input[type=checkbox].switch {
                 padding: 0;
 
                 .selection {
+                    display: block;
+                    height: 34px;
+
                     .select2-selection--multiple {
                         border: 0;
-                        height: 42px;
+                        height: 34px;
                         padding: 0;
                         background-color: transparent;
 
