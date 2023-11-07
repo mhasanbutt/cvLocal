@@ -1,4 +1,5 @@
 @import "config";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 @media print {
     @page {
@@ -20,8 +21,15 @@
 }
 
 * {
+    box-sizing: border-box;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -98,6 +106,17 @@ body {
 
                 &.back {
                     background-image: url("../images/back.png");
+                }
+
+                &.downloadPDF {
+                    font-size: 14px;
+                    font-family: $secondaryFont;
+                    color: #FFF;
+                    width: auto;
+                    background-position: right center;
+                    padding-right: 25px;
+                    background-size: 20px;
+                    background-image: url("../images/pdf-file.png");
                 }
             }
         }
@@ -3020,6 +3039,272 @@ body {
                 td {
                     background-color: #EEE !important;
                 }
+            }
+        }
+    }
+}
+
+.invoice {
+    font-family: 'Poppins', sans-serif;
+
+    .addressTo {
+        float: left;
+        background-color: #F5F5F5 !important;
+        border-radius: 6px;
+        padding: 5px;
+        width: 220px;
+
+        .title {
+            font-size: 10px;
+            color: #004766 !important;
+            font-weight: 500;
+            display: block;
+            line-height: 16px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #E4E4E4 !important;
+        }
+
+        ul {
+            li {
+                color: #62737A !important;
+                font-size: 8px;
+                font-weight: 500;
+                line-height: 12px;
+                margin-top: 6px;
+                padding: 1px 0 1px 19px;
+                background-size: 14px;
+                background-position: left top;
+                background-repeat: no-repeat;
+
+                &:first-child {
+                    background-image: url("../images/addressIconLight.png") !important;
+                }
+
+                &:nth-child(2) {
+                    background-image: url("../images/callIconLight.png") !important;
+                }
+
+                &:nth-child(3) {
+                    background-image: url("../images/emailIconLight.png") !important;
+                }
+            }
+        }
+    }
+
+    .invoiceInfo {
+        float: right;
+        width: calc(100% - 225px);
+        padding-top: 10px;
+        margin-bottom: 10px;
+
+        li {
+            float: right;
+            margin-left: 30px;
+            font-size: 8px;
+            color: #62737A;
+            font-weight: 500;
+            text-align: right;
+            line-height: 12px;
+
+            .title {
+                font-size: 6px;
+                line-height: 9px;
+                color: #88989F;
+                display: block;
+            }
+        }
+    }
+
+    .addressFrom {
+        border: 1px solid #F5F5F5;
+        border-radius: 6px;
+        float: right;
+        width: calc(100% - 225px);
+        padding: 10px 5px;
+        text-align: right;
+
+        .title {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: #384E55;
+            line-height: 18px;
+        }
+
+        ul {
+            padding-left: 50%;
+            position: relative;
+
+            li {
+                margin-top: 10px;
+                width: calc(100% - 5px);
+                margin-left: 5px;
+                text-align: right;
+                line-height: 12px;
+                font-size: 8px;
+                color: #455357;
+                padding: 1px 19px 1px 0;
+                background-size: 14px;
+                background-position: right top;
+                background-repeat: no-repeat;
+
+                &:first-child {
+                    background-image: url("../images/addressIconDark.png") !important;
+                    position: absolute;
+                    left: 0;
+                    width: calc(50% - 5px);
+                }
+
+                &:nth-child(3) {
+                    background-image: url("../images/callIconDark.png") !important;
+                }
+
+                &:nth-child(2) {
+                    background-image: url("../images/emailIconDark.png") !important;
+                }
+            }
+        }
+    }
+
+    .table {
+        padding: 10px 0;
+        margin: 0;
+
+        ul {
+            padding: 2px;
+            border: 1px solid #E3E3E3 !important;
+            border-radius: 6px;
+            width: 100%;
+
+            li {
+                height: 20px;
+
+                span {
+                    float: left;
+                    height: 20px;
+                    padding: 4px 5px;
+                    line-height: 12px;
+                    font-size: 8px;
+                    color: #68787D !important;
+
+                    &:first-of-type {
+                        width: 110px;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 200px;
+                    }
+
+                    &:nth-of-type(3) {
+                        width: calc(100% - 470px);
+                    }
+
+                    &:nth-of-type(4), &:nth-of-type(5) {
+                        width: 80px;
+                        text-align: right;
+                    }
+                }
+
+                &:first-child {
+                    span {
+                        color: #F5F5F5;
+                        font-weight: 500;
+                        background-color: #004766;
+
+                        &:first-of-type {
+                            border-radius: 4px 0 0 2px;
+                        }
+
+                        &:last-of-type {
+                            border-radius: 0 4px 2px 0;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    span {
+                        color: #68787D !important;
+                        font-weight: 500;
+                        background-color: #F5F5F5 !important;
+
+                        &:first-of-type {
+                            border-radius: 2px 0 0 4px;
+                            width: calc(100% - 80px);
+                            text-align: right;
+                        }
+
+                        &:last-of-type {
+                            border-radius: 0 2px 4px 0;
+                            width: 80px;
+                            text-align: right;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.secondaryTable {
+            padding-left: 225px;
+
+            ul {
+                li {
+                    span {
+                        &:first-of-type {
+                            width: 50%;
+                        }
+
+                        &:nth-of-type(2), &:last-of-type {
+                            width: 25%;
+                            text-align: right;
+                        }
+                    }
+
+                    &:first-child {
+                        span {
+                            background-color: #68787D !important;
+                        }
+                    }
+
+                    &:last-child {
+                        span {
+                            background-color: rgba(#F1786B, 48%) !important;
+
+                            &:first-of-type {
+                                border-radius: 2px 0 0 4px;
+                                width: 50%;
+                            }
+
+                            &:nth-of-type(2), &:last-of-type {
+                                font-weight: 700;
+                            }
+
+                            &:last-of-type {
+                                border-radius: 0 2px 4px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bankInfo {
+        background-color: #70BBEE !important;
+        border-radius: 6px;
+        padding: 5px;
+
+        li {
+            float: left;
+            font-size: 8px;
+            color: #FFF;
+            font-weight: 500;
+            margin-right: 20px;
+
+            .title {
+                display: block;
+                font-size: 6px;
+                color: #F5F5F5 !important;
             }
         }
     }

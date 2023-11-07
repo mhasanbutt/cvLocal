@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 a:hover, a:active, a:focus {
   text-decoration: none;
 }
@@ -76,8 +77,15 @@ img.svg {
   }
 }
 * {
+  box-sizing: border-box;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -149,6 +157,16 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .header .title > span button.back {
   background-image: url("../images/back.png");
+}
+.header .title > span button.downloadPDF {
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFF;
+  width: auto;
+  background-position: right center;
+  padding-right: 25px;
+  background-size: 20px;
+  background-image: url("../images/pdf-file.png");
 }
 
 .footer {
@@ -2526,6 +2544,215 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .plannedHours table tfoot tr td {
   background-color: #EEE !important;
+}
+
+.invoice {
+  font-family: "Poppins", sans-serif;
+}
+.invoice .addressTo {
+  float: left;
+  background-color: #F5F5F5 !important;
+  border-radius: 6px;
+  padding: 5px;
+  width: 220px;
+}
+.invoice .addressTo .title {
+  font-size: 10px;
+  color: #004766 !important;
+  font-weight: 500;
+  display: block;
+  line-height: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E4E4E4 !important;
+}
+.invoice .addressTo ul li {
+  color: #62737A !important;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-top: 6px;
+  padding: 1px 0 1px 19px;
+  background-size: 14px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.invoice .addressTo ul li:first-child {
+  background-image: url("../images/addressIconLight.png") !important;
+}
+.invoice .addressTo ul li:nth-child(2) {
+  background-image: url("../images/callIconLight.png") !important;
+}
+.invoice .addressTo ul li:nth-child(3) {
+  background-image: url("../images/emailIconLight.png") !important;
+}
+.invoice .invoiceInfo {
+  float: right;
+  width: calc(100% - 225px);
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.invoice .invoiceInfo li {
+  float: right;
+  margin-left: 30px;
+  font-size: 8px;
+  color: #62737A;
+  font-weight: 500;
+  text-align: right;
+  line-height: 12px;
+}
+.invoice .invoiceInfo li .title {
+  font-size: 6px;
+  line-height: 9px;
+  color: #88989F;
+  display: block;
+}
+.invoice .addressFrom {
+  border: 1px solid #F5F5F5;
+  border-radius: 6px;
+  float: right;
+  width: calc(100% - 225px);
+  padding: 10px 5px;
+  text-align: right;
+}
+.invoice .addressFrom .title {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #384E55;
+  line-height: 18px;
+}
+.invoice .addressFrom ul {
+  padding-left: 50%;
+  position: relative;
+}
+.invoice .addressFrom ul li {
+  margin-top: 10px;
+  width: calc(100% - 5px);
+  margin-left: 5px;
+  text-align: right;
+  line-height: 12px;
+  font-size: 8px;
+  color: #455357;
+  padding: 1px 19px 1px 0;
+  background-size: 14px;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.invoice .addressFrom ul li:first-child {
+  background-image: url("../images/addressIconDark.png") !important;
+  position: absolute;
+  left: 0;
+  width: calc(50% - 5px);
+}
+.invoice .addressFrom ul li:nth-child(3) {
+  background-image: url("../images/callIconDark.png") !important;
+}
+.invoice .addressFrom ul li:nth-child(2) {
+  background-image: url("../images/emailIconDark.png") !important;
+}
+.invoice .table {
+  padding: 10px 0;
+  margin: 0;
+}
+.invoice .table ul {
+  padding: 2px;
+  border: 1px solid #E3E3E3 !important;
+  border-radius: 6px;
+  width: 100%;
+}
+.invoice .table ul li {
+  height: 20px;
+}
+.invoice .table ul li span {
+  float: left;
+  height: 20px;
+  padding: 4px 5px;
+  line-height: 12px;
+  font-size: 8px;
+  color: #68787D !important;
+}
+.invoice .table ul li span:first-of-type {
+  width: 110px;
+}
+.invoice .table ul li span:nth-of-type(2) {
+  width: 200px;
+}
+.invoice .table ul li span:nth-of-type(3) {
+  width: calc(100% - 470px);
+}
+.invoice .table ul li span:nth-of-type(4), .invoice .table ul li span:nth-of-type(5) {
+  width: 80px;
+  text-align: right;
+}
+.invoice .table ul li:first-child span {
+  color: #F5F5F5;
+  font-weight: 500;
+  background-color: #004766;
+}
+.invoice .table ul li:first-child span:first-of-type {
+  border-radius: 4px 0 0 2px;
+}
+.invoice .table ul li:first-child span:last-of-type {
+  border-radius: 0 4px 2px 0;
+}
+.invoice .table ul li:last-child span {
+  color: #68787D !important;
+  font-weight: 500;
+  background-color: #F5F5F5 !important;
+}
+.invoice .table ul li:last-child span:first-of-type {
+  border-radius: 2px 0 0 4px;
+  width: calc(100% - 80px);
+  text-align: right;
+}
+.invoice .table ul li:last-child span:last-of-type {
+  border-radius: 0 2px 4px 0;
+  width: 80px;
+  text-align: right;
+  font-weight: 700;
+}
+.invoice .table.secondaryTable {
+  padding-left: 225px;
+}
+.invoice .table.secondaryTable ul li span:first-of-type {
+  width: 50%;
+}
+.invoice .table.secondaryTable ul li span:nth-of-type(2), .invoice .table.secondaryTable ul li span:last-of-type {
+  width: 25%;
+  text-align: right;
+}
+.invoice .table.secondaryTable ul li:first-child span {
+  background-color: #68787D !important;
+}
+.invoice .table.secondaryTable ul li:last-child span {
+  background-color: rgba(241, 120, 107, 0.48) !important;
+}
+.invoice .table.secondaryTable ul li:last-child span:first-of-type {
+  border-radius: 2px 0 0 4px;
+  width: 50%;
+}
+.invoice .table.secondaryTable ul li:last-child span:nth-of-type(2), .invoice .table.secondaryTable ul li:last-child span:last-of-type {
+  font-weight: 700;
+}
+.invoice .table.secondaryTable ul li:last-child span:last-of-type {
+  border-radius: 0 2px 4px 0;
+}
+.invoice .bankInfo {
+  background-color: #70BBEE !important;
+  border-radius: 6px;
+  padding: 5px;
+}
+.invoice .bankInfo li {
+  float: left;
+  font-size: 8px;
+  color: #FFF;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.invoice .bankInfo li .title {
+  display: block;
+  font-size: 6px;
+  color: #F5F5F5 !important;
 }
 
 /*# sourceMappingURL=print.css.map */
