@@ -43936,6 +43936,20 @@ input[type=checkbox].switch {
             &.textarea {
                 height: auto;
             }
+
+            &.sova {
+                input[type=checkbox] {
+                    &:checked {
+                        &+label {
+                            border-color: #CB0000;
+
+                            &:before {
+                                background-color: #CB0000;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &.col3 {
