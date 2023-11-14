@@ -148,13 +148,55 @@
                                 <span class="title dot">02 THU</span> -
                             </li>
                             <li style="width:120px;">
-                                <span class="title dot">03 FRI</span> -
+                                <span class="title dot">03 FRI</span> <i class="greendot helpTip">
+                                <div class="tTText" style="width:150px;height:120px;">
+                                    <div class="scrollArea">
+                                        <ul class="puBox">
+                                            <li>
+                                                <span>3, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span> <small>0</small>, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span>N/A, PU</span><i>08:47</i>
+                                            </li>
+                                            <li>
+                                                <span>5, PU</span><i>08:49</i>
+                                            </li>
+                                            
+                                        </ul>
+                                     
+                                    </div>
+                                </div>
+                                           
+                                </i>
                             </li>
                             <li style="width:120px;">
                                 <span class="title ">04 SAT</span> -
                             </li>
                             <li style="width:120px;">
-                                <span class="title ">05 SUN</span> -
+                            <span class="title dot">05,  SUN</span>
+                                <i class="greendot helpTip">
+                                    <div class="tTText" style="width:150px;height:120px;">
+                                        <div class="scrollArea">
+                                            <ul class="puBox">
+                                                <li>
+                                                    <span>3, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span> <small>0</small>, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span>N/A, PU</span><i>08:47</i>
+                                                </li>
+                                                <li>
+                                                    <span>5, PU</span><i>08:49</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </i>
                             </li>
                         </ul>
                     </section>
@@ -170,5 +212,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".generalListing .greendot").on('mouseover', function(){
+                
+                let offset = $(this).offset();
+                $(this).children('div').css({top: offset.top, left: offset.left});
+            });
+        });
+    </script>
 </body>
 </html>

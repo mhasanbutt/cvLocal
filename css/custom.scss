@@ -44811,6 +44811,80 @@ input[type=checkbox].switch {
                             transform: translateX(5px);
                         }
                     }
+ 
+                }
+
+                .greendot {
+                    width: 16px;
+                    height: 16px;
+                    background-color: #18D984;
+                    display: block;
+                    border-radius: 8px;
+                    margin-bottom:3px;
+
+                    &.helpTip {
+                        .tTText {
+                            border-radius: 6px; 
+                            padding: 5px 10px;
+                            background-color: #FFFFFF;
+                            width: 150px;
+                            height: 120px;
+                            display: block;
+                            box-shadow: 2px 2x 0 #404455;
+                            border: 1px solid #E4E4E4;
+                            color: #000;
+                            position:fixed;
+                            transform:translate(5px, 5px);
+                            
+
+                            .puBox{
+                                margin: 0;
+                                padding: 0 20px 0 0;
+
+                                 &>li{
+                                     list-style: none;
+                                     margin: 0;
+                                     height: 30px;
+                                     border-bottom: 1px solid #F5F5F5;
+                                     line-height: 30px;
+
+                                     span{
+                                         color: #404455;
+                                         font-weight: 700;
+                                         font-style: normal;
+
+                                         small{
+                                             font: 12px;
+                                             color: #F06C6C;
+                                             background-color: #fff;
+                                             padding-left: 0;
+                                             
+                                         }
+                                     }
+
+                                     i{
+                                         float: right;
+                                         font-style: normal;
+                                         color: #7B8B92;
+                                     }
+                                 }
+                             }
+
+                            
+                    
+                }
+            }
+                }
+
+                &:last-child {
+                    .greendot {
+                        &.helpTip {
+                            .tTText {
+                                transform:translate(-95%, 5px);
+                            }
+                        }
+
+                    }
                 }
 
                 .differentNote {
@@ -44923,7 +44997,8 @@ input[type=checkbox].switch {
                     }
                 }
 
-
+                
+                
             }
 
             &.activities {
