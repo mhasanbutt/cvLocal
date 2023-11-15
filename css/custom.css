@@ -2791,6 +2791,10 @@ hr.BoldHr {
 .counters.whiteBg {
   padding-top: 10px;
 }
+.counters + .scroll-wrapper {
+  top: 50px !important;
+  bottom: 40px;
+}
 
 .weekRotation {
   height: 52px;
@@ -3352,6 +3356,11 @@ hr.BoldHr {
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   padding: 5px 10px;
+}
+.contentBody.noBg .pagingSorting {
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .contentBody .scrollArea {
   top: 0;
@@ -38066,7 +38075,7 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section > ul > li .eye,
 .generalListing section > ul > li .view,
-.generalListing section > ul > li .delete {
+.generalListing section > ul > li .delete, .generalListing section > ul > li .question {
   float: left;
   width: 24px;
   height: 24px;
@@ -38075,12 +38084,16 @@ input[type=checkbox].switch:checked + label:before {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 10px;
+  cursor: pointer;
 }
 .generalListing section > ul > li .view {
   background-image: url("../images/editIcon.png");
 }
 .generalListing section > ul > li .delete {
   background-image: url("../images/trash-bin.png");
+}
+.generalListing section > ul > li .question {
+  background-image: url("../images/formLabelInfo.png");
 }
 .generalListing section > ul > li.wrapText {
   white-space: normal;
@@ -38167,6 +38180,49 @@ input[type=checkbox].switch:checked + label:before {
   background-size: 8px;
   background-repeat: no-repeat;
 }
+.generalListing section .extraInfoList {
+  margin: 0 -5px;
+  position: fixed;
+  transform: translate(-100%, 15px);
+  background-color: #99A0A5;
+  padding: 10px;
+  border-radius: 4px;
+  width: 800px;
+  display: none;
+}
+.generalListing section .extraInfoList li {
+  float: left;
+  font-size: 18px;
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0 5px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generalListing section .extraInfoList li .title {
+  font-size: 12px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generalListing section .extraInfoList li .title.dot {
+  position: relative;
+}
+.generalListing section .extraInfoList li .title.dot:after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #F06C6C;
+  border-radius: 5px;
+  content: "";
+  transform: translateX(5px);
+}
 .generalListing section.blue {
   background-color: rgba(122, 204, 200, 0.3);
 }
@@ -38240,6 +38296,111 @@ input[type=checkbox].switch:checked + label:before {
   transform: translate(10px, 10px);
   left: auto;
   top: auto;
+}
+.generalListing section .informedSection, .generalListing section .status {
+  height: 32px;
+  float: left;
+}
+.generalListing section .informedSection {
+  width: calc(100% - 265px);
+  position: relative;
+}
+.generalListing section .informedSection:before {
+  position: absolute;
+  content: "Informed Section";
+  line-height: 32px;
+  display: inline-block;
+  font-size: 16px;
+  color: #004664;
+  bottom: 0;
+  z-index: 2;
+  right: 40px;
+}
+.generalListing section .informedSection ul {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 78, 137, 0.2);
+  backdrop-filter: blur(7px);
+  border-color: #004E89;
+  max-height: 32px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  margin: 0 -5px;
+  z-index: 1;
+  background-image: url("../images/informedSectionArrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px bottom 8px;
+  background-size: 16px;
+  overflow: hidden;
+  padding: 10px;
+}
+.generalListing section .informedSection ul > li {
+  float: left;
+  font-size: 18px;
+  color: #093d59;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0 5px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  visibility: hidden;
+}
+.generalListing section .informedSection ul > li .title {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generalListing section .informedSection ul > li i {
+  display: none;
+}
+.generalListing section .informedSection ul > li.greenBullet {
+  position: relative;
+}
+.generalListing section .informedSection ul > li.greenBullet i {
+  height: 14px;
+  width: 14px;
+  background-color: #28E595;
+  border-radius: 7px;
+  display: inline-block;
+}
+.generalListing section .informedSection ul > li:last-child {
+  margin-bottom: 42px;
+}
+.generalListing section .informedSection:hover ul {
+  max-height: 300px;
+}
+.generalListing section .informedSection:hover ul > li {
+  opacity: 1;
+  visibility: visible;
+}
+.generalListing section .informedSection + .status {
+  width: 245px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #404455;
+  line-height: 26px;
+  padding: 3px 0;
+  text-align: center;
+  font-weight: 500;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+.generalListing section .informedSection + .status.orange {
+  border-color: #F8931D;
+}
+.generalListing section .informedSection + .status.red {
+  border-color: #CB0000;
 }
 .generalListing.activities section.withTitle.drawUpwards ul.activities li.helpTip .tTText {
   top: auto;

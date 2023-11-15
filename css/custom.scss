@@ -2028,6 +2028,11 @@ hr {
     &.whiteBg {
         padding-top: 10px;
     }
+
+    & + .scroll-wrapper {
+        top: 50px !important;
+        bottom: 40px;
+    }
 }
 
 .weekRotation {
@@ -2669,6 +2674,12 @@ hr {
                 font-family: $secondaryFont;
                 padding: 5px 10px;
             }
+        }
+
+        .pagingSorting {
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
     }
 
@@ -44954,7 +44965,7 @@ input[type=checkbox].switch {
 
                 .eye,
                 .view,
-                .delete {
+                .delete, .question {
                     float: left;
                     width: 24px;
                     height: 24px;
@@ -44963,6 +44974,7 @@ input[type=checkbox].switch {
                     background-repeat: no-repeat;
                     background-position: center;
                     margin-top: 10px;
+                    cursor: pointer;
                 }
 
                 .view {
@@ -44971,6 +44983,10 @@ input[type=checkbox].switch {
 
                 .delete {
                     background-image: url('../images/trash-bin.png');
+                }
+
+                .question {
+                    background-image: url('../images/formLabelInfo.png');
                 }
 
                 &.wrapText {
@@ -45010,9 +45026,6 @@ input[type=checkbox].switch {
                         background-size: contain;
                     }
                 }
-
-                
-                
             }
 
             &.activities {
@@ -45086,6 +45099,55 @@ input[type=checkbox].switch {
                         }
                     }
                 }
+            }
+        }
+
+        .extraInfoList {
+            margin: 0 -5px;
+            position: fixed;
+            transform: translate(-100%, 15px);
+            background-color: #99A0A5;
+            padding: 10px;
+            border-radius: 4px;
+            width: 800px;
+            display: none;
+
+            li {
+            float: left;
+            font-size: 18px;
+            color: #FFF;
+            font-family: $secondaryFont;
+            padding: 0 5px;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .title {
+                font-size: 12px;
+                color: #F5F5F5;
+                text-transform: uppercase;
+                font-family: $primaryFont;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &.dot {
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #F06C6C;
+                        border-radius: 5px;
+                        content: "";
+                        transform: translateX(5px);
+                    }
+                }
+
+            }
             }
         }
 
@@ -45170,6 +45232,128 @@ input[type=checkbox].switch {
                             top: auto;
                         }
                     }
+                }
+            }
+        }
+
+        .informedSection, .status {
+            height: 32px;
+            float: left;
+        }
+
+        .informedSection {
+            width: calc(100% - 265px);
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "Informed Section";
+                line-height: 32px;
+                display: inline-block;
+                font-size: 16px;
+                color: #004664;
+                bottom: 0;
+                z-index: 2;
+                right: 40px;
+            }
+
+            ul {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(#004E89, 0.2);
+                backdrop-filter: blur(7px);
+                border-color: #004E89;
+                max-height: 32px;
+                width: 100%;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 4px;
+                margin: 0 -5px;
+                z-index: 1;
+                background-image: url("../images/informedSectionArrow.png");
+                background-repeat: no-repeat;
+                background-position: right 10px bottom 8px;
+                background-size: 16px;
+                overflow: hidden;
+                padding: 10px;
+
+                &>li {
+                    float: left;
+                    font-size: 18px;
+                    color: #093d59;
+                    font-family: $secondaryFont;
+                    padding: 0 5px;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    .title {
+                        font-size: 12px;
+                        color: #666;
+                        text-transform: uppercase;
+                        font-family: $primaryFont;
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    i {
+                        display: none;
+                    }
+
+                    &.greenBullet {
+                        position: relative;
+
+                        i {
+                            height: 14px;
+                            width: 14px;
+                            background-color: #28E595;
+                            border-radius: 7px;
+                            display: inline-block;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 42px;
+                    }
+                }
+            }
+
+            &:hover {
+                ul {
+                    max-height: 300px;
+
+                    & > li {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            & + .status {
+                width: 245px;
+                margin-left: 20px;
+                font-size: 16px;
+                color: #404455;
+                line-height: 26px;
+                padding: 3px 0;
+                text-align: center;
+                font-weight: 500;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 4px;
+
+                &.orange {
+                    border-color: #F8931D;
+                }
+
+                &.red {
+                    border-color: #CB0000;
                 }
             }
         }
