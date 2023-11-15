@@ -38218,6 +38218,29 @@ input[type=checkbox].switch:checked + label:before {
 .generalListing section.activityReportDetail ul:first-of-type {
   margin-top: 0;
 }
+.generalListing section.activityReportDetail ul li {
+  position: relative;
+}
+.generalListing section.activityReportDetail ul li .helpTip {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../images/formLabelInfo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  left: 74px;
+  top: -3px;
+  white-space: normal;
+}
+.generalListing section.activityReportDetail ul li .helpTip .tTText {
+  position: fixed;
+  transform: translate(10px, 10px);
+  left: auto;
+  top: auto;
+}
 .generalListing.activities section.withTitle.drawUpwards ul.activities li.helpTip .tTText {
   top: auto;
   bottom: 15px;

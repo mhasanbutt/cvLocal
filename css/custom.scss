@@ -45145,6 +45145,32 @@ input[type=checkbox].switch {
                 &:first-of-type {
                     margin-top: 0;
                 }
+
+                li {
+                    position: relative;
+
+                    .helpTip {
+                        position: absolute;
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        background-image: url('../images/formLabelInfo.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 18px;
+                        left: 74px;
+                        top: -3px;
+                        white-space: normal;
+
+                        .tTText {
+                            position: fixed;
+                            transform: translate(10px, 10px);
+                            left: auto;
+                            top: auto;
+                        }
+                    }
+                }
             }
         }
     }

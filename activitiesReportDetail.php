@@ -45,6 +45,13 @@
                             09-03-2023 01:50pm
                         </li>
                         <li>
+                            <span class="helpTip">
+                                <div class="tTText" style="height:60px;width: 250px;">
+                                    <div class="scrollArea">
+                                        Activity name: Bepus Activities done: Arts &amp; Crafts appeared to be Surprised ( shocked ,dismayed)
+                                    </div>
+                                </div>
+                            </span>
                             <span class="title">Comments</span>
                             Elizabeth Betty played a round of the Care Vision memory game
                         </li>
@@ -65,5 +72,11 @@
 <script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 <script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    $(".helpTip").on('mouseover', function(){
+        let offset = $(this).offset();
+        $(this).children('.tTText').css({top: offset.top, left: offset.left});
+    });
+</script>
 </body>
 </html>
