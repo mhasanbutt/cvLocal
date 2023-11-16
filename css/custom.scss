@@ -45300,21 +45300,31 @@ input[type=checkbox].switch {
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        position: relative;
                     }
 
                     i {
                         display: none;
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 7px;
+                    }
+
+                    &.greenBullet, &.warningBullet {
+                        i {
+                            display: inline-block;
+                        }
                     }
 
                     &.greenBullet {
-                        position: relative;
-
                         i {
-                            height: 14px;
-                            width: 14px;
-                            background-color: #28E595;
-                            border-radius: 7px;
-                            display: inline-block;
+                            background-color: #B4F7C3;
+                        }
+                    }
+
+                    &.warningBullet {
+                        i {
+                            background-color: #FFF5BA;
                         }
                     }
 
@@ -45348,12 +45358,16 @@ input[type=checkbox].switch {
                 border-style: solid;
                 border-radius: 4px;
 
-                &.orange {
+                &.awaiting {
                     border-color: #F8931D;
                 }
 
-                &.red {
-                    border-color: #CB0000;
+                &.signed {
+                    border-color: #6DC77A;
+                }
+
+                &.active {
+                    border-color: #FF0000;
                 }
             }
         }

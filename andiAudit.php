@@ -171,7 +171,6 @@
                         <li style="width:100%;" class="wrapText"><span class="title">MANAGER's FOLLOW UP ACTION TAKEN</span>-</li>
                         <li style="width:100%;" class="wrapText"><span class="title">LESSONS LEARNED</span>-</li>
                     </ul>
-
                     <div class="informedSection">
                         <ul class="list-unstyled clearfix">
                             <li class="greenBullet">
@@ -252,7 +251,175 @@
                             </li>
                         </ul>
                     </div>
-                    <span class="status orange">Awaiting Sign Off</span>
+                    <span class="status awaiting">Awaiting Sign Off</span>
+                </section>
+                <section class="clearfix">
+                    <ul class="list-unstyled clearfix">
+                        <li style="width:200px;"><span class="title">HOME</span>3-3 Leander Lodge</li>
+                        <li style="width:180px;"><span class="title">FLOOR</span>Basement Floor</li>
+                        <li style="width:150px;"><span class="title">ROOM</span>Basement Room 1</li>
+                        <li style="width:220px;"><span class="title">SERVICE USER</span>Cora TEST</li>
+                        <li style="width:calc(100% - 850px);"><span class="title">LOCATION</span>Other service users bedroom</li>
+                        <li style="width:50px;">
+                            <span class="question"></span>
+                            <ul class="extraInfoList list-unstyled clearfix">
+                                <li>
+                                    <span class="title">Witnessed</span>
+                                    Yes
+                                </li>
+                                <li>
+                                    <span class="title">GP Name</span>
+                                    5
+                                </li>
+                                <li>
+                                    <span class="title">Description</span>
+                                    bh
+                                </li>
+                                <li>
+                                    <span class="title">Service User's Circumstances Prior</span>
+                                    gh
+                                </li>
+                                <li>
+                                    <span class="title">Triggering Factors</span>
+                                    yy
+                                </li>
+                                <li>
+                                    <span class="title">Actions taken to prevent recurrence</span>
+                                    hh
+                                </li>
+                                <li>
+                                    <span class="title">Describe injuries</span>
+                                    yu
+                                </li>
+                                <li>
+                                    <span class="title">Injury Sustained?</span>
+                                    No
+                                </li>
+                                <li>
+                                    <span class="title">Other Service Users Involved?</span>
+                                    No
+                                </li>
+                                <li>
+                                    <span class="title">Staff Involved?</span>
+                                    No
+                                </li>
+                                <li>
+                                    <span class="title">Anyone Else Involved?</span>
+                                    -
+                                </li>
+                                <li>
+                                    <span class="title">Admitted to Hospital?</span>
+                                    No
+                                </li>
+                                <li>
+                                    <span class="title">Open Body Map</span>
+                                    No
+                                </li>
+                                <li>
+                                    <span class="title">Form Completed By</span>
+                                    Tyler T
+                                </li>
+                                <li>
+                                    <span class="title">Create Follow Up</span>
+                                    No
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="width:50px;"><a href="#" class="eye"></a> </li>
+                        <li style="width:180px;"><span class="title">TIME / DATE</span>(2:30 am) 15-11-2023</li>
+                        <li style="width:220px;"><span class="title">ADDED By</span>Tyler T</li>
+                        <li style="width:calc((100% - 970px) / 2);"><span class="title">TYPE</span>-</li>
+                        <li style="width:calc((100% - 970px) / 2);"><span class="title">SUB TYPE</span>-</li>
+                        <li style="width:140px;"><span class="title">HOSPITAL ADMISSION</span>No</li>
+                        <li style="width:140px;"><span class="title">SAFEGUARDING</span>Yes</li>
+                        <li style="width:140px;"><span class="title">RIDDOR?</span>No</li>
+                        <li style="width:150px;"><span class="title">ACCIDENT/INCIDENT </span>Behaviour Incident</li>
+                        <li style="width:100%;" class="wrapText"><span class="title">DETAIL</span>bh</li>
+                        <li style="width:100%;" class="wrapText"><span class="title">MANAGER's FOLLOW UP ACTION</span>An automatic manager's follow up has been created to complete all the necessary actions required for this accident and incident form: i.e. updating the necessary care planning documents and informing any parties involved.</li>
+                        <li style="width:100%;" class="wrapText"><span class="title">MANAGER's FOLLOW UP ACTION TAKEN</span>-</li>
+                        <li style="width:100%;" class="wrapText"><span class="title">LESSONS LEARNED</span>-</li>
+                    </ul>
+                    <div class="informedSection">
+                        <ul class="list-unstyled clearfix">
+                            <li class="greenBullet">
+                                <span class="title">Manager/Deputy Manager</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li class="greenBullet">
+                                <span class="title">Regional Manager</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li class="greenBullet">
+                                <span class="title">Senior Nurse/Carer</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li class="greenBullet">
+                                <span class="title">Admin Office</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li class="greenBullet">
+                                <span class="title">Family Informed</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li class="greenBullet">
+                                <span class="title">Safeguarding</span>
+                                <i></i> 15-11-2023
+                            </li>
+                            <li>
+                                <span class="title">Mental Health Team</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Local Authority</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Statutory Notification (CQC)</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Police</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">GP</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">District Nurse</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Tissue Viability Nurse</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Ambulance</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Fire Brigade</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Rapid Response Team</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">M-Doc</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">RIDDOR</span>
+                                <i></i> -
+                            </li>
+                            <li>
+                                <span class="title">Therapy Team</span>
+                                <i></i> -
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="status awaiting">Awaiting Sign Off</span>
                 </section>
             </div>
         </div>
@@ -295,6 +462,7 @@
 <script src="js/custom.js"></script>
 <script>
     $(".question").on('click', function(){
+        $(".question").next('ul').not($(this).next('ul')).hide();
         let offset = $(this).offset();
         $(this).next('ul').css({top: offset.top, left: offset.left}).fadeToggle();
     });

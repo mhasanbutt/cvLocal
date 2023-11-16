@@ -38359,19 +38359,22 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
 }
 .generalListing section .informedSection ul > li i {
   display: none;
-}
-.generalListing section .informedSection ul > li.greenBullet {
-  position: relative;
-}
-.generalListing section .informedSection ul > li.greenBullet i {
   height: 14px;
   width: 14px;
-  background-color: #28E595;
   border-radius: 7px;
+}
+.generalListing section .informedSection ul > li.greenBullet i, .generalListing section .informedSection ul > li.warningBullet i {
   display: inline-block;
+}
+.generalListing section .informedSection ul > li.greenBullet i {
+  background-color: #B4F7C3;
+}
+.generalListing section .informedSection ul > li.warningBullet i {
+  background-color: #FFF5BA;
 }
 .generalListing section .informedSection ul > li:last-child {
   margin-bottom: 42px;
@@ -38396,11 +38399,14 @@ input[type=checkbox].switch:checked + label:before {
   border-style: solid;
   border-radius: 4px;
 }
-.generalListing section .informedSection + .status.orange {
+.generalListing section .informedSection + .status.awaiting {
   border-color: #F8931D;
 }
-.generalListing section .informedSection + .status.red {
-  border-color: #CB0000;
+.generalListing section .informedSection + .status.signed {
+  border-color: #6DC77A;
+}
+.generalListing section .informedSection + .status.active {
+  border-color: #FF0000;
 }
 .generalListing.activities section.withTitle.drawUpwards ul.activities li.helpTip .tTText {
   top: auto;
