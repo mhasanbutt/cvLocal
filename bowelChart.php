@@ -201,6 +201,156 @@
                         </ul>
                     </section>
                 </article>
+                <article class="generalListing">
+                    <section>
+                        <ul class="list-unstyled clearfix">
+                            <li style="width: 150px;">
+                                <span class="title">Room</span> Test_A
+                            </li>
+                            <li style="width: calc(100% - 990px);">
+                                <span class="title">Service User</span>AD'S Resident
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">30 MON</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">31 TUE</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">01 WED</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">02 THU</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">03 FRI</span> <i class="greendot helpTip">
+                                <div class="tTText" style="width:150px;height:120px;">
+                                    <div class="scrollArea">
+                                        <ul class="puBox">
+                                            <li>
+                                                <span>3, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span> <small>0</small>, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span>N/A, PU</span><i>08:47</i>
+                                            </li>
+                                            <li>
+                                                <span>5, PU</span><i>08:49</i>
+                                            </li>
+                                            
+                                        </ul>
+                                     
+                                    </div>
+                                </div>
+                                           
+                                </i>
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title ">04 SAT</span> -
+                            </li>
+                            <li style="width:120px;">
+                            <span class="title dot">05,  SUN</span>
+                                <i class="greendot helpTip">
+                                    <div class="tTText" style="width:150px;height:120px;">
+                                        <div class="scrollArea">
+                                            <ul class="puBox">
+                                                <li>
+                                                    <span>3, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span> <small>0</small>, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span>N/A, PU</span><i>08:47</i>
+                                                </li>
+                                                <li>
+                                                    <span>5, PU</span><i>08:49</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </i>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="generalListing">
+                    <section>
+                        <ul class="list-unstyled clearfix">
+                            <li style="width: 150px;">
+                                <span class="title">Room</span> Test_A
+                            </li>
+                            <li style="width: calc(100% - 990px);">
+                                <span class="title">Service User</span>AD'S Resident
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">30 MON</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">31 TUE</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">01 WED</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">02 THU</span> -
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title dot">03 FRI</span> <i class="greendot helpTip">
+                                <div class="tTText" style="width:150px;height:120px;">
+                                    <div class="scrollArea">
+                                        <ul class="puBox">
+                                            <li>
+                                                <span>3, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span> <small>0</small>, PU</span><i>08:03</i>
+                                            </li>
+                                            <li>
+                                                <span>N/A, PU</span><i>08:47</i>
+                                            </li>
+                                            <li>
+                                                <span>5, PU</span><i>08:49</i>
+                                            </li>
+                                            
+                                        </ul>
+                                     
+                                    </div>
+                                </div>
+                                           
+                                </i>
+                            </li>
+                            <li style="width:120px;">
+                                <span class="title ">04 SAT</span> -
+                            </li>
+                            <li style="width:120px;">
+                            <span class="title dot">05,  SUN</span>
+                                <i class="greendot helpTip">
+                                    <div class="tTText" style="width:150px;height:120px;">
+                                        <div class="scrollArea">
+                                            <ul class="puBox">
+                                                <li>
+                                                    <span>3, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span> <small>0</small>, PU</span><i>08:03</i>
+                                                </li>
+                                                <li>
+                                                    <span>N/A, PU</span><i>08:47</i>
+                                                </li>
+                                                <li>
+                                                    <span>5, PU</span><i>08:49</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </i>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
             </div>
         </div>
         <div class="ctas">
