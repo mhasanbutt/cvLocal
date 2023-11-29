@@ -10,9 +10,9 @@
     <link href="css/print.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header logoPtr">
+    <div class="header">
         <div class="logo">
-            <img src="images/horizontalCVLogo.png">
+            <img src="images/horizontalCVLogo.webp">
         </div>
         <div class="title">
             <span>
@@ -25,7 +25,7 @@
     <table class="printBody">
         <thead>
             <tr>
-                <td><div class="headerSpacer invoiceDetail"></div></td>
+                <td><div class="headerSpacer"></div></td>
             </tr>
         </thead>
         <tbody>
@@ -51,20 +51,20 @@
 
                         <ul class="invoiceInfo clearfix">
                             <li>
-                                <span class="title">Reference.</span>
-                                BR08342
-                            </li>
-                            <li>
-                                <span class="title">Due Date.</span>
-                                24.02.2024
-                            </li>
-                            <li>
-                                <span class="title">Invoice Date.</span>
-                                24.11.2023
+                                <span class="title">Invoice No.</span>
+                                31.01.2023
                             </li>
                             <li>
                                 <span class="title">Invoice No.</span>
-                                32t83285
+                                31.01.2023
+                            </li>
+                            <li>
+                                <span class="title">Invoice No.</span>
+                                31.01.2023
+                            </li>
+                            <li>
+                                <span class="title">Invoice No.</span>
+                                31.01.2023
                             </li>
                         </ul>
 

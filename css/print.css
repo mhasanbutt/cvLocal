@@ -11,6 +11,11 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
   outline: 0 !important;
 }
 
+::-moz-selection {
+  background: #6DC77A;
+  color: #FFF;
+}
+
 ::selection {
   background: #6DC77A;
   color: #FFF;
@@ -26,12 +31,15 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
 }
 
 .appearance {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @media print and (color) {
   * {
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
   }
 }
 body {
@@ -108,13 +116,13 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   width: 730px;
   left: 50%;
   transform: translateX(-50%);
-  height: 50px;
+  height: 120px;
   background-color: #FFF !important;
   z-index: 2;
 }
 .header .logo {
   float: left;
-  height: 50px;
+  height: 60px;
   width: 170px;
   position: relative;
 }
@@ -130,7 +138,6 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   float: right;
   height: 50px;
   width: calc(100% - 180px);
-  padding: 11px 0;
 }
 .header .title > span {
   display: block;
@@ -168,6 +175,13 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-size: 20px;
   background-image: url("../images/pdf-file.png");
 }
+.header.logoPtr .logo {
+  height: 120px;
+}
+.header.logoPtr .title {
+  padding: 46px 0;
+  height: 120px;
+}
 
 .footer {
   position: fixed;
@@ -190,6 +204,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 
 .headerSpacer, .footerSpacer {
   height: 60px;
+}
+.headerSpacer.invoiceDetail, .footerSpacer.invoiceDetail {
+  height: 120px;
 }
 
 .printBody {
@@ -703,7 +720,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .medicinesTable article {
-    break-inside: avoid;
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
   }
 }
 .medicinesTable article .medicineNameStatus {
@@ -1423,8 +1441,6 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   left: 25px;
   top: 5px;
   height: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #F8931D !important;
   color: #FFF !important;
@@ -2240,8 +2256,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li,
-.andireport .dates ul li,
-.andireport .total ul li {
+  .andireport .dates ul li,
+  .andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -2253,8 +2269,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-.andireport .dates ul li:nth-child(odd),
-.andireport .total ul li:nth-child(odd) {
+  .andireport .dates ul li:nth-child(odd),
+  .andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -2688,6 +2704,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   color: #F5F5F5;
   font-weight: 500;
   background-color: #004766;
+  color: #F5F5F5 !important;
 }
 .invoice .table ul li:first-child span:first-of-type {
   border-radius: 4px 0 0 2px;
@@ -2723,6 +2740,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .table.secondaryTable ul li:first-child span {
   background-color: #68787D !important;
+  color: #F5F5F5 !important;
 }
 .invoice .table.secondaryTable ul li:last-child span {
   background-color: rgba(241, 120, 107, 0.48) !important;
@@ -2730,6 +2748,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .invoice .table.secondaryTable ul li:last-child span:first-of-type {
   border-radius: 2px 0 0 4px;
   width: 50%;
+  text-align: left;
 }
 .invoice .table.secondaryTable ul li:last-child span:nth-of-type(2), .invoice .table.secondaryTable ul li:last-child span:last-of-type {
   font-weight: 700;
@@ -2753,6 +2772,4 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   display: block;
   font-size: 6px;
   color: #F5F5F5 !important;
-}
-
-/*# sourceMappingURL=print.css.map */
+}/*# sourceMappingURL=print.css.map */
