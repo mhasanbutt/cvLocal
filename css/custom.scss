@@ -43637,7 +43637,8 @@ input[type=checkbox].switch {
             .select2,
             input[type=email],
             input[type=password],
-            input[type=number] {
+            input[type=number],
+            input[type=date]{
                 border-width: 1px;
                 border-color: rgba(161, 173, 176, .8);
                 border-style: solid;
@@ -47758,6 +47759,90 @@ input[type=checkbox].switch {
         font-size: 12px;
         text-transform: uppercase;
         padding: 0 20px;
+    }
+}
+
+.newLeave {
+    display: flex;
+    align-items: stretch;
+    column-gap: 10px;
+
+    & > div {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .leavesAllocated {
+        border: 1px solid #BCC3CB;
+        padding: 10px;
+        background-color: #F5F5F5;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #707070;
+
+        small {
+            font-weight: 500;
+        }
+
+        .hours {
+            text-align: center;
+            font-size: 14px;
+            color: #404455;
+            line-height: 24px;
+            padding: 10px 0 0 0;
+
+            & > span {
+                font-size: 24px;
+                color: #09B2D5;
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            li {
+                &:nth-child(odd) {
+                    width: 150px;
+                }
+
+                &:nth-child(even) {
+                    width: calc(100% - 150px);
+                }
+            }
+        }
+    }
+
+    .otherStaffLeaves {
+        font-size: 14px;
+        font-weight: 500;
+        color: #707070;
+
+        article {
+            margin-top: 10px;
+
+            .date {
+                background-color: #63707A;
+                border-radius: 6px;
+                line-height: 32px;
+                font-size: 16px;
+                color: #F5F5F5;
+                font-weight: 500;
+                padding: 0 10px;
+                display: block;
+            }
+
+            ul {
+                li {
+                    font-size: 14px;
+                    color: #707070;
+                    line-height: 18px;
+                    padding: 5px 0;
+                    border-top: 1px solid #CEB7AA;
+
+                    &:first-child {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
