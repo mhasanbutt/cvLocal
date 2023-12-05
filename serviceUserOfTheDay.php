@@ -76,7 +76,7 @@
                 <section class="serviceUserDay">
                     <h3>Catering</h3>
 
-                    <span class="addComments">Add Comments</span>
+                    <span class="addComments hideinPrint">Add Comments</span>
 
                     <article>
                         <span class="title">Likes and Dislikes</span>

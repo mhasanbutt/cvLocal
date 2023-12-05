@@ -10,11 +10,6 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
   outline: 0 !important;
 }
 
-::-moz-selection {
-  background: #6DC77A;
-  color: #FFF;
-}
-
 ::selection {
   background: #6DC77A;
   color: #FFF;
@@ -30,15 +25,17 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
 }
 
 .appearance {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 @media print and (color) {
   * {
-    -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+@media print {
+  .hideinPrint {
+    display: none;
   }
 }
 body {
@@ -66,4 +63,6 @@ img.svg {
 
 .clearboth {
   clear: both;
-}/*# sourceMappingURL=config.css.map */
+}
+
+/*# sourceMappingURL=config.css.map */

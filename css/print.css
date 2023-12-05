@@ -34,6 +34,11 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
     print-color-adjust: exact;
   }
 }
+@media print {
+  .hideinPrint {
+    display: none;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #404455;

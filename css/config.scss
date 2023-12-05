@@ -44,6 +44,12 @@ input, select, textarea, button {
     }
 }
 
+@media print {
+    .hideinPrint {
+        display: none;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #404455;

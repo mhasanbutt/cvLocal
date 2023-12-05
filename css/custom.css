@@ -62,6 +62,11 @@ input:focus, input:active, input:visited, select:focus, select:active, select:vi
     print-color-adjust: exact;
   }
 }
+@media print {
+  .hideinPrint {
+    display: none;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #404455;
@@ -32054,6 +32059,7 @@ button.newStyle.green {
   color: rgb(29, 61, 74);
   line-height: 42px;
   padding: 0 15px;
+  margin: 0 0 10px 0;
 }
 .serviceUserDay .addComments {
   position: absolute;
