@@ -2483,13 +2483,15 @@ header.colored section .headerIcons img path {
   margin-bottom: 10px;
   text-align: right;
 }
-.contentHeader .searchFilterDetails .selection, .contentHeader .searchFilterDetails .balance {
+.contentHeader .searchFilterDetails .selection,
+.contentHeader .searchFilterDetails .balance {
   display: inline-block;
   padding: 5px;
   background-color: #FFCD60;
   border-radius: 4px;
 }
-.contentHeader .searchFilterDetails .selection span, .contentHeader .searchFilterDetails .balance span {
+.contentHeader .searchFilterDetails .selection span,
+.contentHeader .searchFilterDetails .balance span {
   white-space: nowrap;
   line-height: 18px;
   font-size: 12px;
@@ -2497,12 +2499,15 @@ header.colored section .headerIcons img path {
   color: #828787;
   margin-left: 20px;
 }
-.contentHeader .searchFilterDetails .selection span strong, .contentHeader .searchFilterDetails .balance span strong {
+.contentHeader .searchFilterDetails .selection span strong,
+.contentHeader .searchFilterDetails .balance span strong {
   font-size: 14px;
   color: #3F4253;
   margin-left: 3px;
 }
-.contentHeader .searchFilterDetails .selection span:first-of-type, .contentHeader .searchFilterDetails .selection span:only-of-type, .contentHeader .searchFilterDetails .balance span:first-of-type, .contentHeader .searchFilterDetails .balance span:only-of-type {
+.contentHeader .searchFilterDetails .selection span:first-of-type, .contentHeader .searchFilterDetails .selection span:only-of-type,
+.contentHeader .searchFilterDetails .balance span:first-of-type,
+.contentHeader .searchFilterDetails .balance span:only-of-type {
   margin-left: 0;
 }
 .contentHeader .searchFilterDetails .balance {
@@ -20594,7 +20599,8 @@ hr.BoldHr {
 .empDash .clockingInfo ul li .revealHide.revealed {
   background-position: right center;
 }
-.empDash .clockingInfo ul li small, .empDash .clockingInfo ul li .passW {
+.empDash .clockingInfo ul li small,
+.empDash .clockingInfo ul li .passW {
   display: block;
   color: #72caf3;
   font-size: 12px;
@@ -36945,6 +36951,23 @@ input[type=checkbox].switch:checked + label:before {
   pointer-events: none;
   background-color: #F3F3F3;
 }
+.newForm ul li .revealPassword {
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  background-image: url("../images/passReveal.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 48px 24px;
+  cursor: pointer;
+  transform: translateY(-42px);
+  z-index: 2;
+}
+.newForm ul li .revealPassword.revert {
+  background-position: -24px 0;
+}
 .newForm ul li select {
   background-image: url("../images/newFormSelectArrrow.png");
   background-repeat: no-repeat;
@@ -38025,7 +38048,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section > ul > li .eye,
 .generalListing section > ul > li .view,
-.generalListing section > ul > li .delete, .generalListing section > ul > li .question {
+.generalListing section > ul > li .delete,
+.generalListing section > ul > li .question {
   float: left;
   width: 24px;
   height: 24px;
@@ -38247,7 +38271,8 @@ input[type=checkbox].switch:checked + label:before {
   left: auto;
   top: auto;
 }
-.generalListing section .informedSection, .generalListing section .status {
+.generalListing section .informedSection,
+.generalListing section .status {
   height: 32px;
   float: left;
 }
