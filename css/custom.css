@@ -37017,6 +37017,23 @@ input[type=checkbox].switch:checked + label:before {
   pointer-events: none;
   background-color: #F3F3F3;
 }
+.newForm ul li .revealPassword {
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  background-image: url("../images/passReveal.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 48px 24px;
+  cursor: pointer;
+  transform: translateY(-30px);
+  z-index: 2;
+}
+.newForm ul li .revealPassword.revert {
+  background-position: -24px 0;
+}
 .newForm ul li select {
   background-image: url("../images/newFormSelectArrrow.png");
   background-repeat: no-repeat;
