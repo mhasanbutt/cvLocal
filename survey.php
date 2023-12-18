@@ -93,7 +93,10 @@
                             <a href="#" class="iconWithTitle conduct" data-title="Conduct Survey"></a>
                         </li>
                         <li style="width:50px;">
-                            <a href="#" class="view"></a>
+                            <span class="assocMap" data-id="963" data-residentid="3519" style="margin-top:10px;"></span>
+                            <div class="mapChoice" id="mapChoice963">
+                                <a href="#" class="openBodyMApList" data-type="injury">Injury Management</a> <a href="#" class="openBodyMApList" data-type="ulcer">Pressure Ulcer Management</a> <i></i>
+                            </div>
                         </li>
                         <li style="width:50px;">
                             <a href="#" class="delete"></a>
@@ -111,5 +114,14 @@
 <script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 <script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    $('.assocMap').on('click',function(){
+        $(this).next('div').addClass('show');
+    });
+
+    $('.mapChoice i').on('click', function(){
+        $(this).parent().removeClass('show');
+    });
+</script>
 </body>
 </html>
