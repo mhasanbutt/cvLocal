@@ -328,6 +328,12 @@ body {
         padding: 5px 0;
         background-color: #FFF;
         margin: 0 0 5px 0;
+        border-radius: 0 !important;
+        border-top:1px solid #333;
+
+        &:first-of-type{
+            border-top:0;
+        }
 
         &>ul {
             margin: 0 -5px;
@@ -342,6 +348,7 @@ body {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-size: 10pt;
+                margin-bottom:10px;
 
                 .title {
                     color: #828787;
