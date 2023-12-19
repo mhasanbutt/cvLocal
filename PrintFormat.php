@@ -165,6 +165,7 @@
                             </div>
                         </li>
                     </ul>
+                    <hr>
                 </td>
             </tr>
         </tbody>
