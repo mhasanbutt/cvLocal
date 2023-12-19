@@ -55,7 +55,7 @@ body {
     width: 730px;
     left: 50%;
     transform: translateX(-50%);
-    height: 120px;
+    height: 60px;
     background-color: #FFF !important;
     z-index: 2;
 
@@ -74,7 +74,6 @@ body {
             transform: translate(-50%, -50%);
         }
     }
-
 
     .title {
         float: right;
@@ -122,7 +121,9 @@ body {
         }
     }
 
-    &.logoPtr{
+    &.logoPtr {
+        height: 120px;
+
         .logo {
             height: 120px;
         }
@@ -430,7 +431,7 @@ body {
 
                 &.wrapText {
                     white-space: normal;
-                    overflow: auto;
+                    overflow: visible;
                     text-overflow: unset;
                 }
 

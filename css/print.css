@@ -113,7 +113,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   width: 730px;
   left: 50%;
   transform: translateX(-50%);
-  height: 120px;
+  height: 60px;
   background-color: #FFF !important;
   z-index: 2;
 }
@@ -171,6 +171,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   padding-right: 25px;
   background-size: 20px;
   background-image: url("../images/pdf-file.png");
+}
+.header.logoPtr {
+  height: 120px;
 }
 .header.logoPtr .logo {
   height: 120px;
@@ -340,6 +343,11 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   padding: 5px 0;
   background-color: #FFF;
   margin: 0 0 5px 0;
+  border-radius: 0 !important;
+  border-top: 1px solid #333;
+}
+.generalListing section:first-of-type {
+  border-top: 0;
 }
 .generalListing section > ul {
   margin: 0 -5px;
@@ -354,6 +362,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 10pt;
+  margin-bottom: 10px;
 }
 .generalListing section > ul > li .title {
   color: #828787;
@@ -424,7 +433,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .generalListing section > ul > li.wrapText {
   white-space: normal;
-  overflow: auto;
+  overflow: visible;
   text-overflow: unset;
 }
 .generalListing section > ul > li small {
