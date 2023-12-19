@@ -2465,23 +2465,35 @@ hr {
                     &:nth-of-type(1){
                         height: 5px;
                         margin-top: 17px;
-                        background-color: #eea25b;
+
+                        &.active {
+                            background-color: #eea25b;
+                        }
                     }
 
                     &:nth-of-type(2){
                         height: 10px;
                         margin-top: 12px;
-                        background-color: #cd782f;
+
+                        &.active {
+                            background-color: #cd782f;
+                        }
                     }
 
                     &:nth-of-type(3){
                         height: 15px;
                         margin-top: 7px;
-                        background-color: #f14444;
+
+                        &.active {
+                            background-color: #f14444;
+                        }
                     }
 
                     &:nth-of-type(4){
-                        background-color: #cb0000;
+
+                        &.active {
+                            background-color: #cb0000;
+                        }
                     }
 
                 }
