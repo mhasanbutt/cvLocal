@@ -2619,7 +2619,7 @@ header.colored section .headerIcons img path {
 }
 .diseases li {
   float: left;
-  margin: 0 0 2px 12px;
+  margin: 0 0 2px 2px;
   padding: 0;
 }
 .diseases li span,
@@ -2628,48 +2628,25 @@ header.colored section .headerIcons img path {
   padding: 2px 5px 2px 34px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #333;
-  font-family: "Roboto Condensed", sans-serif;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: left 5px center;
   height: 28px;
   line-height: 24px;
   position: relative;
-}
-.diseases li span:after,
-.diseases li a:after {
-  width: 0;
-  height: 0;
-  border-bottom: 28px solid rgba(255, 255, 255, 0.2);
-  border-right: 10px solid transparent;
-  content: "";
-  position: absolute;
-  top: 0;
-  transform: translateX(5px) translateY(0);
-  z-index: 1;
-}
-.diseases li span:before,
-.diseases li a:before {
-  width: 0;
-  height: 0;
-  border-top: 28px solid rgba(255, 255, 255, 0.2);
-  border-left: 10px solid transparent;
-  content: "";
-  position: absolute;
-  top: 0;
-  transform: translateX(5px) translateY(0);
-  z-index: 1;
-  left: -15px;
+  font-family: "Poppins";
+  font-size: 12px;
+  border-radius: 2px;
 }
 .diseases li img,
 .diseases li img.svg,
 .diseases li svg {
-  height: 24px;
-  width: 24px;
-  left: 5px;
+  height: 18px;
+  width: 18px;
+  left: 8px;
   position: absolute;
-  top: 2px;
+  top: 5px;
 }
 .diseases li img path,
 .diseases li img circle,
@@ -2681,17 +2658,6 @@ header.colored section .headerIcons img path {
 .diseases li svg circle,
 .diseases li svg polygon {
   fill: #CB0000;
-}
-.diseases li:first-child {
-  margin-left: 0;
-}
-.diseases li:first-child span::before,
-.diseases li:first-child a::before {
-  display: none;
-}
-.diseases li:last-child span::after,
-.diseases li:last-child a::after {
-  display: none;
 }
 .diseases.noDisease {
   padding: 0;
@@ -2720,21 +2686,21 @@ header.colored section .headerIcons img path {
     margin-left: 5px;
   }
   .diseases li span,
-  .diseases li a {
+.diseases li a {
     padding: 0 0 0 2px;
   }
   .diseases li span:before,
-  .diseases li a:before {
+.diseases li a:before {
     display: none;
   }
   .diseases li span:after,
-  .diseases li a:after {
+.diseases li a:after {
     display: none;
   }
   .diseases li span img,
-  .diseases li span svg,
-  .diseases li a img,
-  .diseases li a svg {
+.diseases li span svg,
+.diseases li a img,
+.diseases li a svg {
     display: none !important;
   }
 }
@@ -23690,8 +23656,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li,
-  .andireport .dates ul li,
-  .andireport .total ul li {
+.andireport .dates ul li,
+.andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -23703,8 +23669,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-  .andireport .dates ul li:nth-child(odd),
-  .andireport .total ul li:nth-child(odd) {
+.andireport .dates ul li:nth-child(odd),
+.andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -30691,7 +30657,7 @@ button.newStyle.green {
 }
 @media (max-width: 580px) {
   .newPopup article .popupContainer,
-  .newPopup article .secondary {
+.newPopup article .secondary {
     width: calc(100% - 60px);
     margin-left: -40px;
   }
@@ -33267,8 +33233,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 @media screen and (max-width: 1600px) {
   .newSUList .listContainer > ul > li article .dnacpr,
-  .newSUList .listContainer > ul > li article .newsScore,
-  .newSUList .listContainer > ul > li article .respect {
+.newSUList .listContainer > ul > li article .newsScore,
+.newSUList .listContainer > ul > li article .respect {
     font-size: 9px;
   }
 }

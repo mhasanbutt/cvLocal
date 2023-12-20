@@ -1828,7 +1828,7 @@
 
     li {
         float: left;
-        margin: 0 0 2px 12px;
+        margin: 0 0 2px 2px;
         padding: 0;
 
         span,
@@ -1837,75 +1837,31 @@
             padding: 2px 5px 2px 34px;
             background-color: rgba(255, 255, 255, 0.2);
             color: #333;
-            font-family: $secondaryFont;
-            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
             background-repeat: no-repeat;
             background-size: 24px;
             background-position: left 5px center;
             height: 28px;
             line-height: 24px;
             position: relative;
-
-            &:after {
-                width: 0;
-                height: 0;
-                border-bottom: 28px solid rgba(255, 255, 255, 0.2);
-                border-right: 10px solid transparent;
-                content: '';
-                position: absolute;
-                top: 0;
-                transform: translateX(5px) translateY(0);
-                z-index: 1;
-            }
-
-            &:before {
-                width: 0;
-                height: 0;
-                border-top: 28px solid rgba(255, 255, 255, 0.2);
-                border-left: 10px solid transparent;
-                content: '';
-                position: absolute;
-                top: 0;
-                transform: translateX(5px) translateY(0);
-                z-index: 1;
-                left: -15px;
-            }
+            font-family: "Poppins";
+            font-size: 12px;
+            border-radius: 2px;
         }
 
         img,
         img.svg,
         svg {
-            height: 24px;
-            width: 24px;
-            left: 5px;
+            height: 18px;
+            width: 18px;
+            left: 8px;
             position: absolute;
-            top: 2px;
+            top: 5px;
 
             path,
             circle,
             polygon {
                 fill: #CB0000;
-            }
-        }
-
-        &:first-child {
-            margin-left: 0;
-
-            span,
-            a {
-                &::before {
-                    display: none;
-                }
-            }
-        }
-
-        &:last-child {
-
-            span,
-            a {
-                &::after {
-                    display: none;
-                }
             }
         }
     }
