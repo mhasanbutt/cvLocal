@@ -10,7 +10,7 @@
     <link href="css/print.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header logoPtr">
+    <div class="header logoPtr forInvoice">
         <div class="logo">
             <img src="images/horizontalCVLogo.png">
         </div>
@@ -167,7 +167,7 @@
         </tfoot>
     </table>
 
-    <div class="footer">
+    <div class="footer forInvoice">
 	    <i><?php echo date('M dS, Y - H:i');?></i>
         &copy; <?php echo date('Y');?> CareVision Management Ltd. All Rights Reserved.
     </div>

@@ -178,9 +178,31 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .header.logoPtr .logo {
   height: 120px;
 }
+.header.logoPtr .logo img {
+  max-height: 110px;
+}
 .header.logoPtr .title {
   padding: 46px 0;
   height: 120px;
+}
+@media print {
+  .header.forInvoice {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+  .header.forInvoice .logo img {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+  .header.forInvoice .title {
+    height: 28px;
+    padding: 0;
+  }
 }
 
 .footer {
@@ -196,6 +218,15 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-color: #FFF !important;
   z-index: 2;
 }
+@media print {
+  .footer.forInvoice {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+}
 .footer i {
   font-style: normal;
   position: absolute;
@@ -207,6 +238,11 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .headerSpacer.invoiceDetail, .footerSpacer.invoiceDetail {
   height: 120px;
+}
+@media print {
+  .headerSpacer.invoiceDetail, .footerSpacer.invoiceDetail {
+    height: 0;
+  }
 }
 
 .printBody {
@@ -2595,9 +2631,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   line-height: 12px;
   margin-top: 6px;
   padding: 1px 0 1px 19px;
-  background-size: 14px;
-  background-position: left top;
-  background-repeat: no-repeat;
+  background-size: 14px !important;
+  background-position: left top !important;
+  background-repeat: no-repeat !important;
 }
 .invoice .addressTo ul li:first-child {
   background-image: url("../images/addressIconLight.png") !important;
@@ -2617,16 +2653,16 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .invoice .invoiceInfo li {
   float: right;
   margin-left: 30px;
-  font-size: 8px;
-  color: #62737A;
+  font-size: 9px;
+  color: #000;
   font-weight: 500;
   text-align: right;
   line-height: 12px;
 }
 .invoice .invoiceInfo li .title {
-  font-size: 6px;
+  font-size: 9px;
   line-height: 9px;
-  color: #88989F;
+  color: #000;
   display: block;
 }
 .invoice .addressFrom {
@@ -2657,9 +2693,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-size: 8px;
   color: #455357;
   padding: 1px 19px 1px 0;
-  background-size: 14px;
-  background-position: right top;
-  background-repeat: no-repeat;
+  background-size: 14px !important;
+  background-position: right top !important;
+  background-repeat: no-repeat !important;
 }
 .invoice .addressFrom ul li:first-child {
   background-image: url("../images/addressIconDark.png") !important;
@@ -2684,15 +2720,15 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   width: 100%;
 }
 .invoice .table ul li {
-  height: 20px;
+  height: 25px;
 }
 .invoice .table ul li span {
   float: left;
   height: 20px;
   padding: 4px 5px;
   line-height: 12px;
-  font-size: 8px;
-  color: #68787D !important;
+  font-size: 9px;
+  color: #000 !important;
 }
 .invoice .table ul li span:first-of-type {
   width: 110px;
@@ -2749,8 +2785,19 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-color: #68787D !important;
   color: #F5F5F5 !important;
 }
+@media print {
+  .invoice .table.secondaryTable ul li:first-child span {
+    background-color: #004766 !important;
+  }
+}
 .invoice .table.secondaryTable ul li:last-child span {
   background-color: rgba(241, 120, 107, 0.48) !important;
+}
+@media print {
+  .invoice .table.secondaryTable ul li:last-child span {
+    background-color: #004766 !important;
+    color: #FFF !important;
+  }
 }
 .invoice .table.secondaryTable ul li:last-child span:first-of-type {
   border-radius: 2px 0 0 4px;
@@ -2767,6 +2814,11 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-color: #70BBEE !important;
   border-radius: 6px;
   padding: 5px;
+}
+@media print {
+  .invoice .bankInfo {
+    background-color: #004766 !important;
+  }
 }
 .invoice .bankInfo li {
   float: left;
