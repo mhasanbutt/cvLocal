@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 a:hover, a:active, a:focus {
   text-decoration: none;
 }
@@ -1562,6 +1563,46 @@ header.colored section .headerIcons img path {
   position: absolute;
   bottom: calc(100% - 2px);
 }
+.contentHeader .filtersSearch form .rotaSearch {
+  background-color: #FFF;
+  border-radius: 6px;
+  padding: 0 0 0 40px;
+  background-image: url("../images/rotaSearch.png");
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+  background-size: 18px;
+  height: 32px;
+}
+.contentHeader .filtersSearch form .rotaSearch select {
+  border: 0;
+  height: 32px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #3F4253;
+  background-color: transparent;
+  float: left;
+}
+.contentHeader .filtersSearch form .rotaSearch select.selected {
+  appearance: none;
+  pointer-events: none;
+}
+.contentHeader .filtersSearch form .rotaSearch select:nth-of-type(2) {
+  border-left: 1px solid #DDD;
+  margin-left: 5px;
+}
+.contentHeader .filtersSearch form .rotaSearch button {
+  border-radius: 4px;
+  background-color: #404455;
+  font-size: 8px;
+  font-weight: 500;
+  color: #EDF2F4;
+  padding: 0 5px;
+  border: 0;
+  height: 14px;
+  float: left;
+  margin-top: 9px;
+  margin-left: 5px;
+}
 .contentHeader .filtersSearch > samp {
   float: left;
   font-size: 12px;
@@ -1645,6 +1686,85 @@ header.colored section .headerIcons img path {
 }
 .contentHeader .filtersSearch .checkbox.hideDirector label:before {
   content: "Hide Director";
+}
+.contentHeader .staffRotaCategory {
+  float: right;
+  margin: 0;
+  padding-top: 14px;
+}
+.contentHeader .staffRotaCategory li {
+  float: left;
+  border-bottom: 1px solid #DDD;
+}
+.contentHeader .staffRotaCategory li a {
+  display: block;
+  line-height: 24px;
+  padding: 0 10px 0 33px;
+  font-size: 12px;
+  color: #5E616E;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+}
+.contentHeader .staffRotaCategory li a.overall {
+  background-image: url("../images/calendarRota.png");
+}
+.contentHeader .staffRotaCategory li a.holidays {
+  background-image: url("../images/holidaysRota.png");
+}
+.contentHeader .staffRotaCategory li a.payroll {
+  background-image: url("../images/payrollRota.png");
+}
+.contentHeader .staffRotaCategory li a.active:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #404455;
+  bottom: -2px;
+}
+.contentHeader .weekSelector {
+  float: right;
+  padding-top: 10px;
+  position: relative;
+  height: 42px;
+  margin-left: 20px;
+}
+.contentHeader .weekSelector input[type=text] {
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px 30px 7px 60px;
+  line-height: 18px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/calendarIconWeekRotation.png");
+  background-repeat: no-repeat;
+  background-position: left 29px center;
+  background-size: 24px;
+}
+.contentHeader .weekSelector button {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border: 0;
+  top: 17px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
+  background-image: url("../images/leftArrowWeekRotation.png");
+  left: 6px;
+}
+.contentHeader .weekSelector button:nth-of-type(2) {
+  background-image: url("../images/rightArrowWeekRotation.png");
+  right: 6px;
+  left: auto;
 }
 .contentHeader .fieldContainer {
   border-radius: 4px;
@@ -2635,7 +2755,7 @@ header.colored section .headerIcons img path {
   height: 28px;
   line-height: 24px;
   position: relative;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   border-radius: 2px;
 }
@@ -40585,8 +40705,9 @@ input[type=checkbox].switch:checked + label:before {
   color: #EDF2F4;
   font-weight: 500;
   font-size: 12px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   line-height: 20px;
+  transition: all 200ms linear;
 }
 .newRota .rotaDays ul li i {
   float: left;
@@ -40627,7 +40748,7 @@ input[type=checkbox].switch:checked + label:before {
   padding: 6px 10px;
   font-weight: 500;
   color: #FFF;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 .newRota .openShifts .title i {
   font-size: 10px;
@@ -40645,27 +40766,28 @@ input[type=checkbox].switch:checked + label:before {
 .newRota .roster {
   overflow: hidden;
 }
-.newRota .roster ul {
+.newRota .roster > ul {
   margin: 0;
   display: flex;
 }
-.newRota .roster ul li {
+.newRota .roster > ul > li {
   margin-left: 5px;
   width: calc((100% - 30px) / 7);
   float: left;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
-.newRota .roster ul li .shiftInfo {
+.newRota .roster > ul > li .shiftInfo {
   height: 90px;
   margin-bottom: 5px;
   background-color: #E9EDC9;
   border-radius: 6px;
   position: relative;
+  cursor: pointer;
 }
-.newRota .roster ul li .shiftInfo.restHidden {
+.newRota .roster > ul > li .shiftInfo.restHidden {
   margin-bottom: 52.5px;
 }
-.newRota .roster ul li .shiftInfo.restHidden:after {
+.newRota .roster > ul > li .shiftInfo.restHidden:after {
   height: 42.5px;
   line-height: 42.5px;
   width: 100%;
@@ -40682,10 +40804,10 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 400;
   text-align: center;
 }
-.newRota .roster ul li .shiftInfo.restHidden ~ .toAdd {
+.newRota .roster > ul > li .shiftInfo.restHidden ~ .toAdd {
   min-height: 42.5px;
 }
-.newRota .roster ul li .shiftInfo .hours {
+.newRota .roster > ul > li .shiftInfo > .hours {
   display: block;
   height: 45px;
   padding: 10px;
@@ -40693,12 +40815,12 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 16px;
   font-weight: 500;
 }
-.newRota .roster ul li .shiftInfo .hours i {
+.newRota .roster > ul > li .shiftInfo > .hours i {
   font-weight: 300;
   font-style: normal;
   color: #778DA9;
 }
-.newRota .roster ul li .shiftInfo .location {
+.newRota .roster > ul > li .shiftInfo .location {
   height: 45px;
   border-radius: 0 0 6px 6px;
   font-size: 14px;
@@ -40709,10 +40831,10 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #CCD5AE;
   display: block;
 }
-.newRota .roster ul li .shiftInfo + .toAdd {
+.newRota .roster > ul > li .shiftInfo + .toAdd {
   height: auto;
 }
-.newRota .roster ul li .toAdd {
+.newRota .roster > ul > li .toAdd {
   display: block;
   height: 100%;
   min-height: 90px;
@@ -40723,7 +40845,7 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   cursor: pointer;
 }
-.newRota .roster ul li .toAdd:before {
+.newRota .roster > ul > li .toAdd:before {
   position: absolute;
   content: "+";
   left: 50%;
@@ -40734,11 +40856,81 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
   font-weight: 300;
 }
-.newRota .roster ul li:first-child {
+.newRota .roster > ul > li:first-child {
   margin-left: 0;
 }
 .newRota .staffShifts {
   padding-right: 15px;
+}
+.newRota .staffShifts .infoPop {
+  position: absolute;
+  background-color: #EDF2F4;
+  border: 2px solid #778DA9;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 2;
+  left: -10px;
+  bottom: calc(100% - 5px);
+  transition: all 200ms linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.newRota .staffShifts .infoPop ul {
+  margin: 0;
+  display: flex;
+}
+.newRota .staffShifts .infoPop ul li {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  border-left: 1px solid #BDE0FE;
+  white-space: normal;
+}
+.newRota .staffShifts .infoPop ul li:first-child {
+  border-left: 0;
+}
+.newRota .staffShifts .infoPop ul li > span {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  color: #778DA9;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.newRota .staffShifts .infoPop ul li > span.hours {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-transform: none;
+}
+.newRota .staffShifts .infoPop ul li ul {
+  background-color: #778DA9;
+  border-radius: 4px;
+}
+.newRota .staffShifts .infoPop ul li ul li > span {
+  color: #EDF2F4;
+}
+.newRota .staffShifts .infoPop ul li ul li:last-child {
+  padding: 5px 10px;
+  border-left: 1px solid #BDE0FE;
+}
+.newRota .staffShifts .infoPop ul > li:last-child {
+  padding: 0;
+  border-left: 0;
+}
+.newRota .staffShifts .infoPop:after {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: calc(100% - 3px);
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/rotaMoreInfoArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 }
 .newRota .staffShifts .staffInfo {
   background-color: #004564;
@@ -40746,7 +40938,7 @@ input[type=checkbox].switch:checked + label:before {
   height: 50px;
   padding-right: 10px;
   text-align: right;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
 }
 .newRota .staffShifts .staffInfo .staff {
@@ -40794,6 +40986,11 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   cursor: pointer;
 }
+.newRota .staffShifts .staffInfo .staff .moreInfo:hover .infoPop {
+  bottom: 100%;
+  visibility: visible;
+  opacity: 1;
+}
 .newRota .staffShifts .staffInfo .hoursInfo, .newRota .staffShifts .staffInfo .conflicts {
   color: #E26D5C;
   font-size: 14px;
@@ -40817,9 +41014,6 @@ input[type=checkbox].switch:checked + label:before {
 .newRota .staffShifts .roster ul li .shiftInfo .location {
   background-color: #A2D2FF;
 }
-.newRota .staffShifts .roster ul li .shiftInfo:last-of-type {
-  margin-bottom: 0;
-}
 .newRota .staffShifts .roster ul li .shiftInfo.onLeave {
   position: relative;
   overflow: hidden;
@@ -40837,6 +41031,81 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 24px;
   padding-top: 33px;
   text-align: center;
+}
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop {
+  left: 155px;
+  bottom: auto;
+  top: 10px;
+}
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop:after {
+  left: auto;
+  right: calc(100% - 3px);
+  top: 15px;
+  transform: rotate(90deg);
+}
+.newRota .staffShifts .roster ul li .shiftInfo:hover .infoPop {
+  left: 150px;
+  visibility: visible;
+  opacity: 1;
+}
+.newRota.resident .rotaDays {
+  padding-left: 205px;
+}
+.newRota.resident .staffShifts .roster > ul {
+  margin-top: 5px;
+}
+.newRota.resident .staffShifts .roster > ul:first-of-type {
+  margin-top: 0;
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child {
+  width: calc((100% - 30px) / 7 + 205px);
+  padding-left: 205px;
+  position: relative;
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  padding: 2px;
+  border-radius: 6px;
+  background-color: #004564;
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident img {
+  border-radius: 4px;
+  height: 50px;
+  width: 50px;
+  float: left;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #F5F5F5;
+  line-height: 18px;
+  float: left;
+  margin: 5px 0 5px 5px;
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime {
+  font-size: 10px;
+  color: #F5F5F5;
+  font-weight: 300;
+  float: left;
+  line-height: 16px;
+  margin: 0 0 0 5px;
+}
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i {
+  display: inline-block;
+  font-weight: 500;
+  color: #004564;
+  font-style: normal;
+  background-color: #FFCD60;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+.newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i {
+  font-style: normal;
+  font-weight: 300;
 }
 
 #VideoPopTutorial .modal-body {
