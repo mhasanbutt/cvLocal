@@ -58,16 +58,10 @@
             <input type="text" value="24 DEC - 30 DEC">
             <button class="prev"></button>
         </div>
-
-        <ul class="staffRotaCategory list-unstyled clearfix">
-            <li><a href="#" class="overall active">Overall</a></li>
-            <li><a href="#" class="holidays">Holidays</a></li>
-            <li><a href="#" class="payroll">Payroll</a></li>
-        </ul>
 	</section>
 
 	<section class="contentBody noBg noFooter">
-        <div class="newRota">
+        <div class="newRota resident">
             <div class="rotaDays">
                 <ul class="list-unstyled clearfix">
                     <li><i>18</i> Monday</li>
@@ -81,26 +75,55 @@
             </div>
 
             <div class="scrollArea">
-                <div class="openShifts">
-                    <span class="title">Open Shifts <i>Show All</i></span>
-
+                <div class="staffShifts">
                     <div class="roster">
                         <ul class="list-unstyled clearfix">
                             <li>
+                                <div class="resident">
+                                    <img src="images/temp-picture.jpg">
+                                    <span class="name">Mr Tim Shermin</span>
+                                    <span class="allocTime">Allocation <i>46 / 80</i> hours</span>
+                                </div>
+
+                                <div class="shiftInfo" data-siblings="">
+                                    <span class="hours">Rishi R.</span>
+                                    <span class="location">6:30am  <i>(2hrs)</i></span>
+                                    <div class="infoPop">
+                                        <ul class="list-unstyled clearfix">
+                                            <li>
+                                                <span class="hours">00:15hrs</span>
+                                                <span>Break<br>Time</span>
+                                            </li>
+                                            <li>
+                                                <span class="hours">00:00hrs</span>
+                                                <span>Over<br>Time</span>
+                                            </li>
+                                            <li>
+                                                <span class="hours">1-Administrator</span>
+                                                <span>Payroll<br>(Rate)</span>
+                                            </li>
+                                            <li>
+                                                <ul class="list-unstyled clearfix">
+                                                    <li>
+                                                        <span class="hours">06:00hrs</span>
+                                                        <span>Over<br>Time</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shiftInfo">
+                                    <span class="hours">Steve Buckner</span>
+                                    <span class="location">9:00am <i>(4hrs)</i></span>
+                                </div>
+
                                 <i class="toAdd"></i>
                             </li>
                             <li>
-                                <div class="shiftInfo" data-siblings="">
+                                <div class="shiftInfo onLeave">
                                     <span class="hours">08:00-17:00 <i>9h</i></span>
-                                    <span class="location">N-Edwardes Square</span>
-                                </div>
-                                <div class="shiftInfo">
-                                    <span class="hours">08:00-17:00 <i>9h</i></span>
-                                    <span class="location">N-Edwardes Square</span>
-                                </div>
-                                <div class="shiftInfo">
-                                    <span class="hours">08:00-17:00 <i>9h</i></span>
-                                    <span class="location">N-Edwardes Square</span>
+                                    <span class="location">DRI</span>
                                 </div>
 
                                 <i class="toAdd"></i>
@@ -121,60 +144,14 @@
                                 <i class="toAdd"></i>
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="staffShifts">
-                    <div class="staffInfo">
-                        <div class="staff">
-                            <span class="picture"><img src="images/temp-picture.jpg"></span>
-                            <span class="name">Peter M</span>
-                            <span class="designation">Driver</span>
-                            <div class="moreInfo">
-                                <i></i>
-                                <div class="infoPop">
-                                    <ul class="list-unstyled clearfix">
-                                        <li>
-                                            <span class="hours">14:00hrs</span>
-                                            <span>Allocated<br>Hours</span>
-                                        </li>
-                                        <li>
-                                            <span class="hours">8:30hrs</span>
-                                            <span>Other<br>Floors</span>
-                                        </li>
-                                        <li>
-                                            <span class="hours">22:30hrs</span>
-                                            <span>Total<br>Hours</span>
-                                        </li>
-                                        <li>
-                                            <span class="hours">26:00hrs</span>
-                                            <span>Contract<br>Hours</span>
-                                        </li>
-                                        <li>
-                                            <ul class="list-unstyled clearfix">
-                                                <li>
-                                                    <span class="hours">06:00hrs</span>
-                                                    <span>Over<br>Time</span>
-                                                </li>
-                                                <li>
-                                                    <span class="hours">00:00hrs</span>
-                                                    <span>Early<br>Leave</span>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <span class="hoursInfo">Below Contracted Hours</span>
-
-                        <span class="conflicts">1 conflicts(s)</span>
-                    </div>
-
-                    <div class="roster">
                         <ul class="list-unstyled clearfix">
                             <li>
+                                <div class="resident">
+                                    <img src="images/temp-picture.jpg">
+                                    <span class="name">Mr Tim Shermin</span>
+                                    <span class="allocTime">Allocation <i>46 / 80</i> hours</span>
+                                </div>
+
                                 <div class="shiftInfo" data-siblings="">
                                     <span class="hours">08:00-17:00 <i>9h</i></span>
                                     <span class="location">HM1</span>

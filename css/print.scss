@@ -126,6 +126,10 @@ body {
 
         .logo {
             height: 120px;
+
+            img {
+                max-height: 110px;
+            }
         }
     
         .title {
@@ -133,9 +137,31 @@ body {
             height: 120px
         }
     }
+
+    &.forInvoice {
+        @media print {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            margin: 0 auto;
+
+            .logo {
+                img {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    transform: none;
+                }
+            }
+
+            .title {
+                height: 28px;
+                padding: 0;
+            }
+        }
+    }
 }
-
-
 
 .footer {
     position: fixed;
@@ -150,6 +176,16 @@ body {
     background-color: #FFF !important;
     z-index: 2;
 
+    &.forInvoice {
+        @media print {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            transform: none;
+            margin: 0 auto;
+        }
+    }
+
     i {
         font-style: normal;
         position: absolute;
@@ -161,7 +197,11 @@ body {
     height: 60px;
 
     &.invoiceDetail{
-       height: 120px; 
+       height: 120px;
+
+        @media print {
+            height: 0;
+        }
     }
 }
 
@@ -3097,9 +3137,9 @@ body {
                 line-height: 12px;
                 margin-top: 6px;
                 padding: 1px 0 1px 19px;
-                background-size: 14px;
-                background-position: left top;
-                background-repeat: no-repeat;
+                background-size: 14px !Important;
+                background-position: left top !Important;
+                background-repeat: no-repeat !Important;
 
                 &:first-child {
                     background-image: url("../images/addressIconLight.png") !important;
@@ -3128,16 +3168,16 @@ body {
         li {
             float: right;
             margin-left: 30px;
-            font-size: 8px;
-            color: #62737A;
+            font-size: 9px;
+            color: #000;
             font-weight: 500;
             text-align: right;
             line-height: 12px;
 
             .title {
-                font-size: 6px;
+                font-size: 9px;
                 line-height: 9px;
-                color: #88989F;
+                color: #000;
                 display: block;
             }
         }
@@ -3172,9 +3212,9 @@ body {
                 font-size: 8px;
                 color: #455357;
                 padding: 1px 19px 1px 0;
-                background-size: 14px;
-                background-position: right top;
-                background-repeat: no-repeat;
+                background-size: 14px !important;
+                background-position: right top !important;
+                background-repeat: no-repeat !important;
 
                 &:first-child {
                     background-image: url("../images/addressIconDark.png") !important;
@@ -3205,15 +3245,15 @@ body {
             width: 100%;
 
             li {
-                height: 20px;
+                height: 25px;
 
                 span {
                     float: left;
                     height: 20px;
                     padding: 4px 5px;
                     line-height: 12px;
-                    font-size: 8px;
-                    color: #68787D !important;
+                    font-size: 9px;
+                    color: #000 !important;
 
                     &:first-of-type {
                         width: 110px;
@@ -3293,12 +3333,21 @@ body {
                         span {
                             background-color: #68787D !important;
                             color: #F5F5F5 !important;
+
+                            @media print {
+                                background-color: #004766 !important;
+                            }
                         }
                     }
 
                     &:last-child {
                         span {
                             background-color: rgba(#F1786B, 48%) !important;
+
+                            @media print {
+                                background-color: #004766 !important;
+                                color: #FFF !important;
+                            }
 
                             &:first-of-type {
                                 border-radius: 2px 0 0 4px;
@@ -3324,6 +3373,10 @@ body {
         background-color: #70BBEE !important;
         border-radius: 6px;
         padding: 5px;
+
+        @media print {
+            background-color: #004766 !important;
+        }
 
         li {
             float: left;
