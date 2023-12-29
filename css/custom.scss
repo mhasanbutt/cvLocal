@@ -2504,7 +2504,7 @@ hr {
                 display: block;
                 text-align: center;
                 font-size: 26px;
-                font-family: 'Roboto';
+                font-family: $primaryFont;
                 font-weight: 100;
                 margin-bottom: 15px;
             }
@@ -2524,7 +2524,7 @@ hr {
                 font-size: 14px;
 
                 &::placeholder {
-                    font-family: 'Roboto';
+                    font-family: $primaryFont;
                     font-size: 18px;
                     color: #868d8d;
                 }
@@ -3807,7 +3807,7 @@ hr {
                     padding: 0 8px;
                     font-size: 12px;
                     color: #333;
-                    font-family: Poppins;
+                    font-family: $poppins;
                 }
 
                 ul {
@@ -42808,7 +42808,6 @@ input[type=checkbox].switch {
                 }
             }
 
-
             .stock {
                 border-radius: 4px;
                 background-color: rgb(63, 66, 83);
@@ -42823,6 +42822,37 @@ input[type=checkbox].switch {
                     margin-right: 10px;
                     float: left;
                     line-height: 1;
+                }
+            }
+
+            &.extended {
+               .weeks {
+                   li {
+                       width: calc((100% / 30) * 7);
+
+                       &:last-child {
+                           width: calc((100% / 30) * 2);
+                       }
+
+                       span {
+                           font-size: 10px;
+                           font-weight: 500;
+                       }
+                   }
+               }
+
+                .days {
+                    li {
+                        width: calc(100% / 30);
+                    }
+                }
+
+                .eMarTableData {
+                    ul {
+                        li {
+                            width: calc(100% / 30);
+                        }
+                    }
                 }
             }
         }
@@ -45114,7 +45144,7 @@ input[type=checkbox].switch {
                             width: 150px;
                             height: 120px;
                             display: block;
-                            box-shadow: 2px 2x 0 #404455;
+                            box-shadow: 2px 2px 0 #404455;
                             border: 1px solid #E4E4E4;
                             color: #000;
                             position:fixed;
@@ -45139,7 +45169,7 @@ input[type=checkbox].switch {
                                          font-style: normal;
 
                                          small{
-                                             font: 12px;
+                                             font-size: 12px;
                                              color: #F06C6C;
                                              background-color: #fff;
                                              padding-left: 0;
@@ -45404,8 +45434,9 @@ input[type=checkbox].switch {
                             height: 18px;
                             width: 18px;
                             border-radius: 4px;
-                            background-color: #dcdede;
+                            background-color: #FFF;
                             float: left;
+                            border: 1px solid #DDD;
                             margin-right: 10px;
                         }
 

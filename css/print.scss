@@ -1,5 +1,4 @@
 @import "config";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 @media print {
     @page {
@@ -1184,7 +1183,6 @@ body {
                 }
             }
 
-
             .stock {
                 border-radius: 4px;
                 background-color: rgb(63, 66, 83);
@@ -1199,6 +1197,37 @@ body {
                     margin-right: 10px;
                     float: left;
                     line-height: 1;
+                }
+            }
+
+            &.extended {
+                .weeks {
+                    li {
+                        width: calc((100% / 30) * 7);
+
+                        &:last-child {
+                            width: calc((100% / 30) * 2);
+                        }
+
+                        span {
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .days {
+                    li {
+                        width: calc(100% / 30);
+                    }
+                }
+
+                .eMarTableData {
+                    ul {
+                        li {
+                            width: calc(100% / 30);
+                        }
+                    }
                 }
             }
         }
