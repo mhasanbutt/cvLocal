@@ -947,6 +947,10 @@ body {
                 color: #FFF !important;
                 padding: 5px;
 
+                strong {
+                    color: #FFF !important;
+                }
+
                 .scroll-wrapper {
                     bottom: 0;
 
@@ -1226,6 +1230,10 @@ body {
                     ul {
                         li {
                             width: calc(100% / 30);
+
+                            &:first-child {
+                                width: 90px;
+                            }
                         }
                     }
                 }

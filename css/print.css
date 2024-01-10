@@ -863,6 +863,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   color: #FFF !important;
   padding: 5px;
 }
+.medicinesTable article .medicineInfo .direction strong {
+  color: #FFF !important;
+}
 .medicinesTable article .medicineInfo .direction .scroll-wrapper {
   bottom: 0;
 }
@@ -1088,6 +1091,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .medicinesTable article .eMarTable.extended .eMarTableData ul li {
   width: 3.3333333333%;
+}
+.medicinesTable article .eMarTable.extended .eMarTableData ul li:first-child {
+  width: 90px;
 }
 
 .printReady {
