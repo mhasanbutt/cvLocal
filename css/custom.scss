@@ -45474,7 +45474,7 @@ input[type=checkbox].switch {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                background-color: #CB0000;
+                background-color: $secondaryColor;
               }
 
               & > li {

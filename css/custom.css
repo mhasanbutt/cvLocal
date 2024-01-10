@@ -38497,7 +38497,7 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background-color: #CB0000;
+  background-color: #648DAC;
 }
 .generalListing section > ul.infoStatus > li:first-child {
   left: 36px;
