@@ -31,8 +31,10 @@
         <div class="content">
 
             <div class="generalListing">
+            <div class="generalListing">
                 <section>
-                    <ul class="list-unstyled withCheckbox infoStatus clearfix" data-status="Bag Changed">
+                    <span class="infoStatus"> Bag Changed </span>
+                    <ul class="list-unstyled withCheckbox statusChanges clearfix">
                         <li>
                             <input type="checkbox" id="checkbox" hidden>
                             <label for="checkbox"></label>

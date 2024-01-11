@@ -5678,20 +5678,17 @@ hr.BoldHr {
   color: #FFF;
 }
 
-.scrollArea,
 .scrollAreaChild {
   height: 100%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
-.scrollArea .content .invoice-note,
 .scrollAreaChild .content .invoice-note {
   padding: 10px 15px;
   border-radius: 5px;
   border: solid 1px;
 }
-.scrollArea .content h4,
 .scrollAreaChild .content h4 {
   color: #F8931D;
   font-size: 16px;
@@ -5703,26 +5700,22 @@ hr.BoldHr {
   background-position: 0 23px;
   padding: 15px 0 0 30px;
 }
-.scrollArea .content h4 span,
 .scrollAreaChild .content h4 span {
   display: inline-block;
   padding: 0 10px 0 0;
   background-color: #FFF;
   position: relative;
 }
-.scrollArea .content h4 span + small,
 .scrollAreaChild .content h4 span + small {
   display: inline-block;
   background-color: #FFF;
   padding: 0 10px 0 0;
 }
-.scrollArea .content h4 button,
 .scrollAreaChild .content h4 button {
   position: absolute;
   top: 7px;
   box-shadow: 0 0 0 10px #FFF;
 }
-.scrollArea .content h4 a.Btn,
 .scrollAreaChild .content h4 a.Btn {
   position: absolute;
   top: 7px;
@@ -5737,9 +5730,6 @@ hr.BoldHr {
   color: #FFF;
   line-height: 24px;
 }
-.scrollArea .content h4 a.Btn img.svg,
-.scrollArea .content h4 a.Btn svg,
-.scrollArea .content h4 a.Btn img,
 .scrollAreaChild .content h4 a.Btn img.svg,
 .scrollAreaChild .content h4 a.Btn svg,
 .scrollAreaChild .content h4 a.Btn img {
@@ -5748,20 +5738,15 @@ hr.BoldHr {
   width: 24px;
   margin-right: 5px;
 }
-.scrollArea .content h4 a.Btn img.svg path,
-.scrollArea .content h4 a.Btn svg path,
-.scrollArea .content h4 a.Btn img path,
 .scrollAreaChild .content h4 a.Btn img.svg path,
 .scrollAreaChild .content h4 a.Btn svg path,
 .scrollAreaChild .content h4 a.Btn img path {
   fill: #FFF;
 }
-.scrollArea .content h4 a.Btn.RemoveRows,
 .scrollAreaChild .content h4 a.Btn.RemoveRows {
   background: #CB0000 !important;
   right: 20px;
 }
-.scrollArea .content .ProfileInfo,
 .scrollAreaChild .content .ProfileInfo {
   border-radius: 4px;
   position: relative;
@@ -5769,7 +5754,6 @@ hr.BoldHr {
   margin-bottom: 30px;
   border-bottom: 1px solid #DDD;
 }
-.scrollArea .content .ProfileInfo img.picture,
 .scrollAreaChild .content .ProfileInfo img.picture {
   position: absolute;
   height: 75px;
@@ -5780,7 +5764,6 @@ hr.BoldHr {
   border-radius: 8px;
   z-index: 2;
 }
-.scrollArea .content .ProfileInfo .profileImg,
 .scrollAreaChild .content .ProfileInfo .profileImg {
   position: absolute;
   height: 75px;
@@ -5793,9 +5776,6 @@ hr.BoldHr {
   border: 1px solid #DDD;
   z-index: 1;
 }
-.scrollArea .content .ProfileInfo .profileImg img.svg,
-.scrollArea .content .ProfileInfo .profileImg svg,
-.scrollArea .content .ProfileInfo .profileImg img,
 .scrollAreaChild .content .ProfileInfo .profileImg img.svg,
 .scrollAreaChild .content .ProfileInfo .profileImg svg,
 .scrollAreaChild .content .ProfileInfo .profileImg img {
@@ -5806,20 +5786,15 @@ hr.BoldHr {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.scrollArea .content .ProfileInfo .profileImg img.svg path,
-.scrollArea .content .ProfileInfo .profileImg svg path,
-.scrollArea .content .ProfileInfo .profileImg img path,
 .scrollAreaChild .content .ProfileInfo .profileImg img.svg path,
 .scrollAreaChild .content .ProfileInfo .profileImg svg path,
 .scrollAreaChild .content .ProfileInfo .profileImg img path {
   fill: #FFF;
 }
-.scrollArea .content .ProfileInfo ul,
 .scrollAreaChild .content .ProfileInfo ul {
   margin: 0 -15px;
   overflow: hidden;
 }
-.scrollArea .content .ProfileInfo ul li,
 .scrollAreaChild .content .ProfileInfo ul li {
   float: left;
   padding: 0 15px;
@@ -5827,7 +5802,6 @@ hr.BoldHr {
   font-size: 16px;
   padding-top: 3px;
 }
-.scrollArea .content .ProfileInfo ul li span,
 .scrollAreaChild .content .ProfileInfo ul li span {
   font-size: 12px;
   text-transform: uppercase;
@@ -5836,7 +5810,6 @@ hr.BoldHr {
   display: inline-block;
   position: relative;
 }
-.scrollArea .content .ProfileInfo button,
 .scrollAreaChild .content .ProfileInfo button {
   background-color: #648DAC;
   color: #FFF;
@@ -5844,7 +5817,6 @@ hr.BoldHr {
   border-radius: 4px;
   border: 0;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser {
   padding: 15px 15px 15px 100px;
   border: 0;
@@ -5852,7 +5824,6 @@ hr.BoldHr {
   height: 80px;
   border-radius: 40px 4px 4px 40px;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser img.picture,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser img.picture {
   height: 80px;
   width: 80px;
@@ -5860,29 +5831,23 @@ hr.BoldHr {
   border: 3px solid #6f7575;
   overflow: hidden;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser ul li,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser ul li {
   color: #FFF;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser ul li span,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser ul li span {
   color: #EEE;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser button,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser button {
   background-color: #F8931D;
   padding: 0 10px;
   margin: 7px 0 0 15px;
 }
-.scrollArea .content .ProfileInfo.chefServiceUser button:first-of-type,
 .scrollAreaChild .content .ProfileInfo.chefServiceUser button:first-of-type {
   background-color: #648DAC;
 }
-.scrollArea .content.specialHR hr,
 .scrollAreaChild .content.specialHR hr {
   border-color: #F8931D;
 }
-.scrollArea .content.trainingTable,
 .scrollAreaChild .content.trainingTable {
   overflow-x: visible;
 }
@@ -34688,7 +34653,6 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #FFF;
   height: auto;
 }
-
 .employeeList {
   margin: 0 -5px;
   padding-right: 20px;
@@ -38452,8 +38416,8 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
 }
 .generalListing section > ul.withCheckbox {
-  padding-left: 50px;
   position: relative;
+  padding-left: 65px;
 }
 .generalListing section > ul.withCheckbox > li:first-child {
   position: absolute;
@@ -38462,7 +38426,7 @@ input[type=checkbox].switch:checked + label:before {
   top: 50%;
   transform: translateY(-50%);
 }
-.generalListing section > ul.withCheckbox > li:first-child label {
+.generalListing section > ul.withCheckbox > li:first-child > label {
   height: 18px;
   width: 18px;
   border-radius: 4px;
@@ -38478,11 +38442,13 @@ input[type=checkbox].switch:checked + label:before {
   background-size: 8px;
   background-repeat: no-repeat;
 }
-.generalListing section > ul.infoStatus {
-  padding-left: 86px;
+.generalListing section > ul.withCheckbox > li > li:first-child {
+  left: 65px;
 }
-.generalListing section > ul.infoStatus:before {
-  content: attr(data-status);
+.generalListing section > ul.statusChanges {
+  margin-left: 25px;
+}
+.generalListing section .infoStatus {
   text-orientation: mixed;
   font-size: 12px;
   color: #fff;
@@ -38491,16 +38457,13 @@ input[type=checkbox].switch:checked + label:before {
   text-align: center;
   transform: rotate(270deg);
   position: absolute;
-  top: 10px;
-  left: -42px;
+  top: 30px;
+  left: -28px;
   border-radius: 5px 8px 0 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: #648DAC;
-}
-.generalListing section > ul.infoStatus > li:first-child {
-  left: 36px;
 }
 .generalListing section .extraInfoList {
   margin: 0 -5px;
