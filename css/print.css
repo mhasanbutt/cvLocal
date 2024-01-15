@@ -1071,7 +1071,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .medicinesTable article .eMarTable .stock span {
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
-  color: rgb(255, 205, 96) !important;
+  color: #FFF !important;
   margin-right: 10px;
   float: left;
   line-height: 1;
