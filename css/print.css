@@ -2321,8 +2321,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li,
-.andireport .dates ul li,
-.andireport .total ul li {
+  .andireport .dates ul li,
+  .andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -2334,8 +2334,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-.andireport .dates ul li:nth-child(odd),
-.andireport .total ul li:nth-child(odd) {
+  .andireport .dates ul li:nth-child(odd),
+  .andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -2659,12 +2659,15 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .addressTo ul li:first-child {
   background-image: url("../images/addressIconLight.png") !important;
+  background-repeat: no-repeat;
 }
 .invoice .addressTo ul li:nth-child(2) {
   background-image: url("../images/callIconLight.png") !important;
+  background-repeat: no-repeat;
 }
 .invoice .addressTo ul li:nth-child(3) {
   background-image: url("../images/emailIconLight.png") !important;
+  background-repeat: no-repeat;
 }
 .invoice .invoiceInfo {
   float: right;
@@ -2766,7 +2769,6 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   text-align: right;
 }
 .invoice .table ul li:first-child span {
-  color: #F5F5F5;
   font-weight: 500;
   background-color: #004766;
   color: #F5F5F5 !important;

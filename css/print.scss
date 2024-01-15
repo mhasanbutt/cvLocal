@@ -3180,14 +3180,17 @@ body {
 
                 &:first-child {
                     background-image: url("../images/addressIconLight.png") !important;
+                    background-repeat: no-repeat;
                 }
 
                 &:nth-child(2) {
                     background-image: url("../images/callIconLight.png") !important;
+                    background-repeat: no-repeat;
                 }
 
                 &:nth-child(3) {
                     background-image: url("../images/emailIconLight.png") !important;
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -3309,7 +3312,6 @@ body {
 
                 &:first-child {
                     span {
-                        color: #F5F5F5;
                         font-weight: 500;
                         background-color: #004766;
                         color: #F5F5F5 !important;

@@ -2118,6 +2118,39 @@ hr {
         }
     }
 
+    & .mainName{
+        margin: 0 0 6px 0 ;
+
+      & > li{
+        display: block;
+        width:100%;
+        text-align: left;
+
+        span{
+          font-size: 18px;
+          color: #404455;
+          font-family: "Roboto", sans-serif;
+
+          .redEdit{
+            background-color: #F87C7C;
+            font-size: 12px;
+            width: 40px;
+            height: 19px;
+            border-radius: 4px;
+            padding:3px 10px;
+            color: #fff;
+            font-family: $poppins;
+          }
+        }
+
+        &.smallNotice{
+          text-decoration:0;
+          font-size: 12px;
+          font-family: $poppins;
+        }
+      }
+    }
+
     &.whiteBg {
         padding-top: 10px;
     }
@@ -3097,12 +3130,8 @@ hr {
             z-index: 5;
             top: 94px;
 
-            .scroll-wrapper {
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: auto;
-            }
+
+
 
             .full-height {
                 height: 100%;
@@ -5510,7 +5539,9 @@ hr {
     }
 }
 
-.scrollArea,
+
+
+
 .scrollAreaChild {
     height: 100%;
     overflow: hidden;
@@ -9320,6 +9351,8 @@ hr {
         height: auto;
         top: 42px;
         bottom: 0;
+
+
 
         .alertsList {
             &>ul {
@@ -39873,7 +39906,7 @@ input[type=checkbox].switch {
                                 font-style: normal;
                             }
 
-                            &:last-child {
+                            &:last-child, &.longText {
                                 text-overflow: clip;
                                 white-space: normal;
                             }
@@ -40923,6 +40956,49 @@ input[type=checkbox].switch {
         }
     }
 }
+
+  .employeeInfo {
+    height: 100%;
+    padding-right: 15px;
+
+    .detailHeading {
+      font-size: 14px;
+      background-color: #FFCD60;
+      height: 24px;
+      width: 100%;
+      display: block;
+      margin: 0 0 10px 0;
+      font-family: $poppins;
+      color: #404455;
+      line-height: 22px;
+      padding-left: 5px;
+      font-weight: 400;
+      border-radius: 6px;
+    }
+
+    .detailViews {
+      width: 100%;
+
+      span {
+        width: calc((100% - 40px) / 5);
+        height: 42px;
+        background-color: #FFFFFF;
+        border: 1px dashed #C6D2D6;
+        margin-right: 10px;
+        float: left;
+        padding: 8px;
+        font-family: $poppins;
+        font-size: 12px;
+        color: #ADAFB4;
+        margin-bottom: 10px;
+        line-height: 18px;
+
+        &:nth-of-type(5n+5){
+          margin-right:0;
+        }
+      }
+    }
+  }
 
 .employeeList {
     margin: 0 -5px;
@@ -45068,6 +45144,7 @@ input[type=checkbox].switch {
 .generalListing {
     padding-right: 20px !important;
 
+
     &>.title {
         border-radius: 4px;
         background-color: rgb(255, 205, 96);
@@ -45125,7 +45202,7 @@ input[type=checkbox].switch {
                             transform: translateX(5px);
                         }
                     }
- 
+
                 }
 
                 .greendot {
@@ -45138,7 +45215,7 @@ input[type=checkbox].switch {
 
                     &.helpTip {
                         .tTText {
-                            border-radius: 6px; 
+                            border-radius: 6px;
                             padding: 5px 10px;
                             background-color: #FFFFFF;
                             width: 150px;
@@ -45150,7 +45227,7 @@ input[type=checkbox].switch {
                             position:fixed;
                             transform:translate(5px, 5px);
                             z-index: 10;
-                            
+
 
                             .puBox{
                                 margin: 0;
@@ -45173,7 +45250,7 @@ input[type=checkbox].switch {
                                              color: #F06C6C;
                                              background-color: #fff;
                                              padding-left: 0;
-                                             
+
                                          }
                                      }
 
@@ -45185,8 +45262,8 @@ input[type=checkbox].switch {
                                  }
                              }
 
-                            
-                    
+
+
                 }
             }
                 }
@@ -45419,18 +45496,18 @@ input[type=checkbox].switch {
             }
 
             &.withCheckbox {
-                padding-left: 50px;
                 position: relative;
+                padding-left: 65px;
 
                 &>li {
                     &:first-child {
                         position: absolute;
                         width: 50px;
-                        left: 0;
+                        left:0;
                         top: 50%;
                         transform: translateY(-50%);
 
-                        label {
+                        &>label {
                             height: 18px;
                             width: 18px;
                             border-radius: 4px;
@@ -45452,8 +45529,133 @@ input[type=checkbox].switch {
                             }
                         }
                     }
+
+                  & > li {
+                    &:first-child {
+                      left: 65px;
+                    }
+                  }
                 }
             }
+
+            &.statusChanges{
+              margin-left:25px;
+            }
+        }
+
+      & > .employeeStats{
+        width: 100%;
+        margin:auto 0;
+
+        .scrollArea {
+          left: 0;
+          top: 0;
+        }
+
+        &>li{
+          width: calc((100% - 60px) / 5);
+          padding:10px;
+          background-color: #FFFFFF;
+          position: relative;
+          margin-left: 10px;
+          float:left;
+          border: 1px solid #C9D3D6;
+          border-radius: 6px;
+          cursor: pointer;
+
+          &:before {
+            width: 93px;
+            height:93px;
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            background-image: url("../images/Group 2.png");
+            background-repeat: no-repeat;
+            background-size: 55px;
+            border-radius: 4px;
+            border:1px solid #EDF2F4;
+            padding: 9px 19px;
+            background-position: center;
+          }
+
+          .percentageBar{
+            width: 100%;
+            background-color: #EDF2F4;
+            float: left;
+            border-radius: 4px;
+            font-family:"Poppins", sans-serif;
+            height:24px;
+            margin-bottom: 10px;
+
+            &>i{
+              float: left;
+              background-color: #FFA500;
+              width: 50%;
+              text-decoration:none;
+              border-radius: 4px;
+              font-size: 12px;
+              padding: 5px 0;
+              text-align: center;
+              box-shadow: 0 0 4px 0 rgb(2 2 4 / 20%);
+              font-family: $poppins;
+              margin: 2px 0 2px 2px;
+              height: 20px;
+              line-height: 10px;
+            }
+          }
+
+          .empNames{
+            float: left;
+            padding-left: 116px;
+            font-size: 16px;
+            color: #404455;
+            line-height: 25px;
+            font-family: $poppins;
+
+            .smallName{
+              text-align: left;
+              color: #004E89;
+              font-size: 12px;
+              display: block;
+              width:100%;
+              margin-bottom: 34px;
+
+            }
+          }
+        }
+      }
+
+      &.statSummary{
+        height: 100%;
+
+          &>li{
+            width:calc((100% - 40px) / 5 );
+            background-color: #fff;
+
+            &> input[type=text]{
+              width: 100%;
+            }
+          }
+        }
+
+
+        .infoStatus {
+          text-orientation: mixed;
+          font-size: 12px;
+          color: #fff;
+          line-height: 26px;
+          padding: 0 5px;
+          text-align: center;
+          transform: rotate(270deg);
+          position: absolute;
+          top: 30px;
+          left: -28px;
+          border-radius: 5px 8px 0 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          background-color: $secondaryColor;
         }
 
         .extraInfoList {
@@ -45756,6 +45958,8 @@ input[type=checkbox].switch {
         }
     }
 }
+
+
 
 .surveyQuestions {
     padding: 0 0 0 30px;
