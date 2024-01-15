@@ -79,19 +79,104 @@
         </ul>
     </div>
     <div class="scrollArea">
-        <div class="employeeStats">
-            <div class="generalListing">
+            <div class="generalListing ">
                 <section class="clearfix">
-                    <ul class="list-unstyled clearfix">
-                        <li style="width:246.4px;"><span class="title">HOME</span>3-3 Leander Lodge</li>
-                        <li style="width:246.4px;"><span class="title">FLOOR</span>Basement Floor</li>
-                        <li style="width:246.4px;"><span class="title">ROOM</span>Basement Room 1</li>
-                        <li style="width:246.4px;"><span class="title">SERVICE USER</span>Cora TEST</li>
-                        <li style="width:246.4px;"><span class="title">LOCATION</span>Other service users bedroom</li>
-                    </ul>
+                    <ul class="list-unstyled employeeStats clearfix">
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                </section>
+                <section class="clearfix">
+                    <ul class="list-unstyled employeeStats clearfix">
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="percentageBar">
+                            <i>47%</i>
+                            </span>
+                            <span class="empNames">Kahsu Adhina
+                            <span class="smallName">(Kahsu)</span>
+                            </span>
+
+                        </li>
                 </section>
             </div>
-        </div>
     </div>
 
     <div class="pagingSorting">

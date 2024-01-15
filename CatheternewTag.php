@@ -31,9 +31,75 @@
         <div class="content">
 
             <div class="generalListing">
-            <div class="generalListing">
                 <section>
+                    <div>
+
+                    </div>
                     <span class="infoStatus"> Bag Changed </span>
+                    <ul class="list-unstyled withCheckbox statusChanges clearfix">
+                        <li>
+                            <input type="checkbox" id="checkbox" hidden>
+                            <label for="checkbox"></label>
+                        </li>
+                        <li>
+                            <span class="title">title</span>
+                            Test heading
+                        </li>
+                        <li>
+                            <span class="title">Date / Time</span>
+                            09-03-2023 01:50pm
+                        </li>
+                        <li>
+                            <span class="helpTip">
+                                <div class="tTText" style="height:60px;width: 250px;">
+                                    <div class="scrollArea">
+                                        Activity name: Bepus Activities done: Arts &amp; Crafts appeared to be Surprised ( shocked ,dismayed)
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="title">Comments</span>
+                            Elizabeth Betty played a round of the Care Vision memory game
+                        </li>
+                        <li>
+                            <span class="title">Added By</span>
+                            Rishi R.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <span class="infoStatus"> Bag Changed Catheter</span>
+                    <ul class="list-unstyled withCheckbox statusChanges clearfix">
+                        <li>
+                            <input type="checkbox" id="checkbox" hidden>
+                            <label for="checkbox"></label>
+                        </li>
+                        <li>
+                            <span class="title">title</span>
+                            Test heading
+                        </li>
+                        <li>
+                            <span class="title">Date / Time</span>
+                            09-03-2023 01:50pm
+                        </li>
+                        <li>
+                            <span class="helpTip">
+                                <div class="tTText" style="height:60px;width: 250px;">
+                                    <div class="scrollArea">
+                                        Activity name: Bepus Activities done: Arts &amp; Crafts appeared to be Surprised ( shocked ,dismayed)
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="title">Comments</span>
+                            Elizabeth Betty played a round of the Care Vision memory game
+                        </li>
+                        <li>
+                            <span class="title">Added By</span>
+                            Rishi R.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <span class="infoStatus"> No Bag Changed </span>
                     <ul class="list-unstyled withCheckbox statusChanges clearfix">
                         <li>
                             <input type="checkbox" id="checkbox" hidden>

@@ -2879,6 +2879,34 @@ hr.BoldHr {
   vertical-align: middle;
   height: 100%;
 }
+.counters .mainName {
+  margin: 0 0 6px 0;
+}
+.counters .mainName > li {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.counters .mainName > li span {
+  font-size: 18px;
+  color: #404455;
+  font-family: "Roboto", sans-serif;
+}
+.counters .mainName > li span .redEdit {
+  background-color: #F87C7C;
+  font-size: 12px;
+  width: 40px;
+  height: 19px;
+  border-radius: 4px;
+  padding: 3px 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.counters .mainName > li.smallNotice {
+  text-decoration: 0;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
 .counters.whiteBg {
   padding-top: 10px;
 }
@@ -3721,12 +3749,6 @@ hr.BoldHr {
   position: absolute;
   z-index: 5;
   top: 94px;
-}
-.contentBody.directorDb .directorDbWrap .scroll-wrapper {
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: auto;
 }
 .contentBody.directorDb .directorDbWrap .full-height {
   height: 100%;
@@ -33784,7 +33806,7 @@ input[type=checkbox].switch:checked + label:before {
   display: block;
   font-style: normal;
 }
-.pop > div > section > article .alertDetail ul li:last-child {
+.pop > div > section > article .alertDetail ul li:last-child, .pop > div > section > article .alertDetail ul li.longText {
   text-overflow: clip;
   white-space: normal;
 }
@@ -34653,6 +34675,46 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #FFF;
   height: auto;
 }
+
+.employeeInfo {
+  height: 100%;
+  padding-right: 15px;
+}
+.employeeInfo .detailHeading {
+  font-size: 14px;
+  background-color: #FFCD60;
+  height: 24px;
+  width: 100%;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: "Poppins", sans-serif;
+  color: #404455;
+  line-height: 22px;
+  padding-left: 5px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.employeeInfo .detailViews {
+  width: 100%;
+}
+.employeeInfo .detailViews span {
+  width: calc((100% - 40px) / 5);
+  height: 42px;
+  background-color: #FFFFFF;
+  border: 1px dashed #C6D2D6;
+  margin-right: 10px;
+  float: left;
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #ADAFB4;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+.employeeInfo .detailViews span:nth-of-type(5n+5) {
+  margin-right: 0;
+}
+
 .employeeList {
   margin: 0 -5px;
   padding-right: 20px;
@@ -38447,6 +38509,90 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section > ul.statusChanges {
   margin-left: 25px;
+}
+.generalListing section > .employeeStats {
+  width: 100%;
+  margin: auto 0;
+}
+.generalListing section > .employeeStats .scrollArea {
+  left: 0;
+  top: 0;
+}
+.generalListing section > .employeeStats > li {
+  width: calc((100% - 60px) / 5);
+  padding: 10px;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-left: 10px;
+  float: left;
+  border: 1px solid #C9D3D6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.generalListing section > .employeeStats > li:before {
+  width: 93px;
+  height: 93px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  background-image: url("../images/Group 2.png");
+  background-repeat: no-repeat;
+  background-size: 55px;
+  border-radius: 4px;
+  border: 1px solid #EDF2F4;
+  padding: 9px 19px;
+  background-position: center;
+}
+.generalListing section > .employeeStats > li .percentageBar {
+  width: 100%;
+  background-color: #EDF2F4;
+  float: left;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.generalListing section > .employeeStats > li .percentageBar > i {
+  float: left;
+  background-color: #FFA500;
+  width: 50%;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0 0 4px 0 rgba(2, 2, 4, 0.2);
+  font-family: "Poppins", sans-serif;
+  margin: 2px 0 2px 2px;
+  height: 20px;
+  line-height: 10px;
+}
+.generalListing section > .employeeStats > li .empNames {
+  float: left;
+  padding-left: 116px;
+  font-size: 16px;
+  color: #404455;
+  line-height: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.generalListing section > .employeeStats > li .empNames .smallName {
+  text-align: left;
+  color: #004E89;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  margin-bottom: 34px;
+}
+.generalListing section.statSummary {
+  height: 100%;
+}
+.generalListing section.statSummary > li {
+  width: calc((100% - 40px) / 5);
+  background-color: #fff;
+}
+.generalListing section.statSummary > li > input[type=text] {
+  width: 100%;
 }
 .generalListing section .infoStatus {
   text-orientation: mixed;
