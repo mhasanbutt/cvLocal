@@ -172,6 +172,11 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-size: 20px;
   background-image: url("../images/pdf-file.png");
 }
+@media print {
+  .header .title > span button.downloadPDF {
+    display: none;
+  }
+}
 .header.logoPtr {
   height: 120px;
 }
@@ -1063,7 +1068,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .medicinesTable article .eMarTable .stock {
   border-radius: 4px;
-  background-color: rgb(63, 66, 83);
+  background-color: rgb(63, 66, 83) !important;
   padding: 5px;
   float: left;
   margin-top: 5px;
@@ -2321,8 +2326,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li,
-  .andireport .dates ul li,
-  .andireport .total ul li {
+.andireport .dates ul li,
+.andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -2334,8 +2339,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-  .andireport .dates ul li:nth-child(odd),
-  .andireport .total ul li:nth-child(odd) {
+.andireport .dates ul li:nth-child(odd),
+.andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -2638,7 +2643,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   width: 220px;
 }
 .invoice .addressTo .title {
-  font-size: 10px;
+  font-size: 12px;
   color: #004766 !important;
   font-weight: 500;
   display: block;
@@ -2648,7 +2653,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .addressTo ul li {
   color: #62737A !important;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   margin-top: 6px;
@@ -2678,8 +2683,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .invoice .invoiceInfo li {
   float: right;
   margin-left: 30px;
-  font-size: 9px;
-  color: #000;
+  font-size: 11px;
+  color: #000 !important;
   font-weight: 500;
   text-align: right;
   line-height: 12px;
@@ -2687,7 +2692,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .invoice .invoiceInfo li .title {
   font-size: 9px;
   line-height: 9px;
-  color: #000;
+  color: #000 !important;
   display: block;
 }
 .invoice .addressFrom {
@@ -2700,9 +2705,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .addressFrom .title {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
-  color: #384E55;
+  color: #384E55 !important;
   line-height: 18px;
 }
 .invoice .addressFrom ul {
@@ -2715,8 +2720,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   margin-left: 5px;
   text-align: right;
   line-height: 12px;
-  font-size: 8px;
-  color: #455357;
+  font-size: 10px;
+  color: #455357 !important;
   padding: 1px 19px 1px 0;
   background-size: 14px !important;
   background-position: right top !important;
@@ -2752,7 +2757,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   height: 20px;
   padding: 4px 5px;
   line-height: 12px;
-  font-size: 9px;
+  font-size: 11px;
   color: #000 !important;
 }
 .invoice .table ul li span:first-of-type {
@@ -2770,7 +2775,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .table ul li:first-child span {
   font-weight: 500;
-  background-color: #004766;
+  background-color: #004766 !important;
   color: #F5F5F5 !important;
 }
 .invoice .table ul li:first-child span:first-of-type {
@@ -2846,15 +2851,16 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .invoice .bankInfo li {
   float: left;
-  font-size: 8px;
-  color: #FFF;
+  font-size: 10px;
+  color: #FFF !important;
   font-weight: 500;
   margin-right: 20px;
 }
 .invoice .bankInfo li .title {
   display: block;
-  font-size: 6px;
+  font-size: 8px;
   color: #F5F5F5 !important;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=print.css.map */
