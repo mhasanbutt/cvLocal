@@ -2806,21 +2806,21 @@ header.colored section .headerIcons img path {
     margin-left: 5px;
   }
   .diseases li span,
-  .diseases li a {
+.diseases li a {
     padding: 0 0 0 2px;
   }
   .diseases li span:before,
-  .diseases li a:before {
+.diseases li a:before {
     display: none;
   }
   .diseases li span:after,
-  .diseases li a:after {
+.diseases li a:after {
     display: none;
   }
   .diseases li span img,
-  .diseases li span svg,
-  .diseases li a img,
-  .diseases li a svg {
+.diseases li span svg,
+.diseases li a img,
+.diseases li a svg {
     display: none !important;
   }
 }
@@ -23763,8 +23763,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li,
-  .andireport .dates ul li,
-  .andireport .total ul li {
+.andireport .dates ul li,
+.andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -23776,8 +23776,8 @@ hr.BoldHr {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-  .andireport .dates ul li:nth-child(odd),
-  .andireport .total ul li:nth-child(odd) {
+.andireport .dates ul li:nth-child(odd),
+.andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -26549,7 +26549,7 @@ hr.BoldHr {
   background-image: url("../images/emloyee-detail-report.png");
 }
 .directorDash > aside ul.tabs li:nth-child(23) a {
-  background-image: url("../images/accident-report.png");
+  background-image: url("../images/key-indicator.png");
 }
 .directorDash > aside ul.tabs li:nth-child(24) a {
   background-image: url("../images/dd-contractl.png");
@@ -30764,7 +30764,7 @@ button.newStyle.green {
 }
 @media (max-width: 580px) {
   .newPopup article .popupContainer,
-  .newPopup article .secondary {
+.newPopup article .secondary {
     width: calc(100% - 60px);
     margin-left: -40px;
   }
@@ -33340,8 +33340,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 @media screen and (max-width: 1600px) {
   .newSUList .listContainer > ul > li article .dnacpr,
-  .newSUList .listContainer > ul > li article .newsScore,
-  .newSUList .listContainer > ul > li article .respect {
+.newSUList .listContainer > ul > li article .newsScore,
+.newSUList .listContainer > ul > li article .respect {
     font-size: 9px;
   }
 }

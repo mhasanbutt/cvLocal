@@ -159,7 +159,7 @@
             }
         }
 
-        &>a {
+        & > a {
             background-color: #697979;
             font-size: 14px;
             color: #FFF;
@@ -286,8 +286,8 @@
             position: relative;
             margin: 2px 5px 2px 0;
 
-            &>span,
-            &>.select {
+            & > span,
+            & > .select {
                 border-radius: 4px;
                 border: 1px solid #a1adb0;
                 background-color: #FFF;
@@ -329,7 +329,7 @@
                 }
             }
 
-            &>.select {
+            & > .select {
                 padding: 0;
             }
 
@@ -600,7 +600,7 @@
             }
         }
 
-        &>samp {
+        & > samp {
             float: left;
             font-size: 12px;
             font-family: $secondaryFont;
@@ -684,7 +684,7 @@
 
             input[type="checkbox"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #3DA492;
 
                         &:after {
@@ -710,7 +710,7 @@
         padding-top: 14px;
 
         li {
-            float:left;
+            float: left;
             border-bottom: 1px solid #DDD;
 
             a {
@@ -922,7 +922,7 @@
         float: left;
         width: 100%;
 
-        &>li {
+        & > li {
             padding: 0 6px;
             width: 20%;
             float: left;
@@ -1021,7 +1021,7 @@
         float: left;
         margin-right: 10px;
 
-        &~.defaultButton,
+        & ~ .defaultButton,
         & .defaultButton {
             background-color: $grayColor;
             color: #FFF;
@@ -1433,7 +1433,7 @@
         display: inline-block;
         padding: 5px 0 0 30px;
 
-        &>a {
+        & > a {
             background-color: $primaryColor;
             font-size: 12px;
             color: #1f262a;
@@ -1598,8 +1598,8 @@
             display: block;
         }
 
-        &>span,
-        &>i {
+        & > span,
+        & > i {
             float: left;
             padding: 2px 5px;
             background-color: #FFCD60;
@@ -1619,7 +1619,7 @@
             }
         }
 
-        &>i {
+        & > i {
             width: 24px;
             margin-left: 0;
             border-radius: 0 4px 4px 0;
@@ -1851,7 +1851,7 @@
         font-size: 12px;
         text-transform: uppercase;
 
-        &>span {
+        & > span {
             background-color: $orangeColor;
             color: #FFF;
             font-family: $secondaryFont;
@@ -1887,7 +1887,7 @@
             width: 180px;
             padding-left: 55px;
 
-            &>span {
+            & > span {
                 background: none;
                 right: calc(100% - 50px);
                 padding: 0;
@@ -2118,37 +2118,37 @@ hr {
         }
     }
 
-    & .mainName{
-        margin: 0 0 6px 0 ;
+    & .mainName {
+        margin: 0 0 6px 0;
 
-      & > li{
-        display: block;
-        width:100%;
-        text-align: left;
+        & > li {
+            display: block;
+            width: 100%;
+            text-align: left;
 
-        span{
-          font-size: 18px;
-          color: #404455;
-          font-family: "Roboto", sans-serif;
+            span {
+                font-size: 18px;
+                color: #404455;
+                font-family: "Roboto", sans-serif;
 
-          .redEdit{
-            background-color: #F87C7C;
-            font-size: 12px;
-            width: 40px;
-            height: 19px;
-            border-radius: 4px;
-            padding:3px 10px;
-            color: #fff;
-            font-family: $poppins;
-          }
+                .redEdit {
+                    background-color: #F87C7C;
+                    font-size: 12px;
+                    width: 40px;
+                    height: 19px;
+                    border-radius: 4px;
+                    padding: 3px 10px;
+                    color: #fff;
+                    font-family: $poppins;
+                }
+            }
+
+            &.smallNotice {
+                text-decoration: 0;
+                font-size: 12px;
+                font-family: $poppins;
+            }
         }
-
-        &.smallNotice{
-          text-decoration:0;
-          font-size: 12px;
-          font-family: $poppins;
-        }
-      }
     }
 
     &.whiteBg {
@@ -2293,8 +2293,8 @@ hr {
             }
         }
 
-        &>button,
-        &>a {
+        & > button,
+        & > a {
             float: right;
             height: 42px;
             border-radius: 6px;
@@ -2349,7 +2349,7 @@ hr {
                     input[type=checkbox] {
                         float: left;
 
-                        &+label {
+                        & + label {
                             border-width: 2px;
                             border-color: rgb(161, 173, 176);
                             border-style: solid;
@@ -2375,7 +2375,7 @@ hr {
                         }
 
                         &:checked {
-                            &+label {
+                            & + label {
                                 border-color: $primaryColor;
 
                                 &:before {
@@ -2465,7 +2465,7 @@ hr {
                 }
             }
 
-            &>button {
+            & > button {
                 background-color: #FFCD60;
                 height: 32px;
                 border-radius: 4px;
@@ -2483,7 +2483,6 @@ hr {
     }
 
 
-
     .content {
         padding: 10px 20px 10px 10px;
         height: 100%;
@@ -2491,8 +2490,8 @@ hr {
 
         .diseases {
 
-            &~br,
-            &~hr {
+            & ~ br,
+            & ~ hr {
                 display: none;
             }
         }
@@ -2523,7 +2522,7 @@ hr {
         height: 100%;
 
 
-        &>div {
+        & > div {
             float: left;
             width: calc((100% - 10px) / 2);
             height: 100%;
@@ -2533,7 +2532,7 @@ hr {
                 float: right;
             }
 
-            &>.title {
+            & > .title {
                 display: block;
                 text-align: center;
                 font-size: 26px;
@@ -2568,13 +2567,13 @@ hr {
             }
 
 
-            .painChek{
-                width:24px;
-                height:22px;
+            .painChek {
+                width: 24px;
+                height: 22px;
                 display: inline-block;
                 transform: translateY(5px);
 
-                .painCheckBar{
+                .painCheckBar {
                     width: 5px;
                     background-color: #cedada;
                     height: 22px;
@@ -2587,7 +2586,7 @@ hr {
                         margin-left: 0;
                     }
 
-                    &:nth-of-type(1){
+                    &:nth-of-type(1) {
                         height: 5px;
                         margin-top: 17px;
 
@@ -2596,7 +2595,7 @@ hr {
                         }
                     }
 
-                    &:nth-of-type(2){
+                    &:nth-of-type(2) {
                         height: 10px;
                         margin-top: 12px;
 
@@ -2605,7 +2604,7 @@ hr {
                         }
                     }
 
-                    &:nth-of-type(3){
+                    &:nth-of-type(3) {
                         height: 15px;
                         margin-top: 7px;
 
@@ -2614,7 +2613,7 @@ hr {
                         }
                     }
 
-                    &:nth-of-type(4){
+                    &:nth-of-type(4) {
 
                         &.active {
                             background-color: #cb0000;
@@ -2694,7 +2693,7 @@ hr {
         }
 
         input[type=checkbox] {
-            &+label {
+            & + label {
                 border-width: 2px;
                 border-color: rgb(161, 173, 176);
                 border-style: solid;
@@ -2720,7 +2719,7 @@ hr {
             }
 
             &:checked {
-                &+label {
+                & + label {
                     border-color: $primaryColor;
 
                     &:before {
@@ -2746,7 +2745,7 @@ hr {
             display: inline-block;
 
             input[type=checkbox] {
-                &+label {
+                & + label {
                     border-color: #FFF;
                     margin: 8px 0 0 5px;
                 }
@@ -2763,7 +2762,7 @@ hr {
             color: #828787;
 
             input[type=checkbox] {
-                &+label {
+                & + label {
                     background-color: #828787;
 
                     &:before {
@@ -2772,7 +2771,7 @@ hr {
                 }
 
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: $primaryColor;
                     }
                 }
@@ -2798,7 +2797,7 @@ hr {
             width: 150px;
             margin-right: 75px;
 
-            &>span {
+            & > span {
                 float: left;
                 line-height: 28px;
                 text-align: center;
@@ -2885,7 +2884,7 @@ hr {
                 }
             }
 
-            &>div {
+            & > div {
                 height: auto;
                 border: 0;
                 border-radius: 4px;
@@ -3129,8 +3128,6 @@ hr {
             position: absolute;
             z-index: 5;
             top: 94px;
-
-
 
 
             .full-height {
@@ -3556,8 +3553,8 @@ hr {
         z-index: 2;
         position: relative;
 
-        &>a,
-        &>span {
+        & > a,
+        & > span {
             background-color: #697979;
             font-size: 12px;
             color: #FFF;
@@ -3664,7 +3661,7 @@ hr {
 
             input[type="checkbox"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #3DA492;
 
                         &:after {
@@ -3744,8 +3741,8 @@ hr {
             position: relative;
             margin: 2px 5px 2px 0;
 
-            &>span,
-            &>.select {
+            & > span,
+            & > .select {
                 border-radius: 4px;
                 border: 1px solid #a1adb0;
                 background-color: #FFF;
@@ -3787,7 +3784,7 @@ hr {
                 }
             }
 
-            &>.select {
+            & > .select {
                 padding: 0;
             }
 
@@ -3847,7 +3844,7 @@ hr {
             }
         }
 
-        &>button {
+        & > button {
             height: 28px;
             border-radius: 4px;
             background-color: #999;
@@ -3872,7 +3869,7 @@ hr {
             margin-top: 20px;
         }
 
-        &>.search {
+        & > .search {
             float: left;
             height: 32px;
             position: relative;
@@ -4049,7 +4046,7 @@ hr {
             }
         }
 
-        &>samp {
+        & > samp {
             float: left;
             font-size: 12px;
             font-family: $secondaryFont;
@@ -4101,9 +4098,9 @@ hr {
     position: relative;
     border-collapse: separate;
 
-    &>thead {
-        &>tr {
-            &>th {
+    & > thead {
+        & > tr {
+            & > th {
                 background-color: $secondaryColor;
                 color: #FFF;
                 vertical-align: middle;
@@ -4143,16 +4140,16 @@ hr {
                     background-image: url('../images/sort_desc.png');
                 }
 
-                &>a {
+                & > a {
                     color: #FFF;
                 }
             }
         }
     }
 
-    &>tbody {
-        &>tr {
-            &>td {
+    & > tbody {
+        & > tr {
+            & > td {
                 vertical-align: middle;
                 border-top-color: $grayColor;
                 position: relative;
@@ -4246,7 +4243,7 @@ hr {
                     }
                 }
 
-                &>a {
+                & > a {
                     display: inline-block;
 
                     &.view {
@@ -4410,12 +4407,12 @@ hr {
                     }
                 }
 
-                &>input[type='text'] {
+                & > input[type='text'] {
                     border: 2px solid $primaryColor;
                     float: left;
                     width: auto;
 
-                    &+.select {
+                    & + .select {
                         float: left;
                         width: auto;
                         margin-left: 10px;
@@ -4429,7 +4426,7 @@ hr {
                     }
                 }
 
-                &>button {
+                & > button {
                     border-radius: 4px;
                     background-color: $orangeColor;
                     padding: 5px;
@@ -4631,7 +4628,7 @@ hr {
             }
 
             &.danger {
-                &>td {
+                & > td {
                     position: relative;
 
                     &.desc {
@@ -4647,7 +4644,7 @@ hr {
                 }
 
                 &.active {
-                    &>td {
+                    & > td {
                         .checkBox {
                             label {
                                 cursor: default;
@@ -4659,24 +4656,24 @@ hr {
             }
 
             &.overDue {
-                &>td {
+                & > td {
                     background-color: rgba(246, 178, 132, 0.7);
                 }
 
                 &:hover {
-                    &>td {
+                    & > td {
                         background-color: rgba(246, 178, 132, 1);
                     }
                 }
             }
 
             &.completed {
-                &>td {
+                & > td {
                     background-color: rgba(187, 225, 188, 0.7);
                 }
 
                 &:hover {
-                    &>td {
+                    & > td {
                         background-color: rgba(187, 225, 188, 1);
                     }
                 }
@@ -4690,7 +4687,7 @@ hr {
             }
 
             &.cPlan {
-                &>td {
+                & > td {
                     background-color: fade-out($secondaryColor, 0.8);
 
                     .cPlanIcon {
@@ -4706,7 +4703,7 @@ hr {
             }
 
             &:last-of-type {
-                &>td {
+                & > td {
                     border-bottom: 3px solid $secondaryColor;
 
                     &:first-child {
@@ -4744,9 +4741,9 @@ hr {
     &.graph {
         width: 50% !important;
 
-        &>tbody {
-            &>tr {
-                &>td {
+        & > tbody {
+            & > tr {
+                & > td {
                     &.desc {
                         width: 300px;
                     }
@@ -4840,9 +4837,9 @@ hr {
         border-collapse: separate;
         display: table !important;
 
-        &>thead {
-            &>tr:first-of-type {
-                &>th:first-child {
+        & > thead {
+            & > tr:first-of-type {
+                & > th:first-child {
                     text-align: left;
 
                     img.svg,
@@ -4859,14 +4856,14 @@ hr {
                     }
                 }
 
-                &>th {
+                & > th {
                     text-align: center;
                     white-space: nowrap;
                 }
             }
 
-            &>tr:nth-of-type(2) {
-                &>th {
+            & > tr:nth-of-type(2) {
+                & > th {
                     background-color: $grayColor;
                     text-align: center;
                     white-space: nowrap;
@@ -4897,11 +4894,11 @@ hr {
             }
         }
 
-        &>tbody {
+        & > tbody {
             overflow-x: scroll;
 
-            &>tr {
-                &>td {
+            & > tr {
+                & > td {
                     text-align: center;
                     width: 120px;
                     white-space: nowrap;
@@ -5122,7 +5119,7 @@ hr {
         }
     }
 
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         background-color: $primaryColor;
 
         img.svg,
@@ -5140,7 +5137,7 @@ hr {
         border-radius: 4px;
 
 
-        &>label {
+        & > label {
             height: 34px;
             width: 34px;
             border-radius: 4px;
@@ -5167,7 +5164,7 @@ hr {
             }
         }
 
-        &>input[type="checkbox"]:checked+label {
+        & > input[type="checkbox"]:checked + label {
             background-color: $orangeColor;
             display: block;
 
@@ -5417,13 +5414,13 @@ hr {
 
         .dataTables_paginate {
 
-            &>a,
-            &>span {
+            & > a,
+            & > span {
                 float: left;
                 position: relative;
             }
 
-            &>a {
+            & > a {
                 font-size: 0;
                 height: 24px;
                 width: 24px;
@@ -5449,7 +5446,7 @@ hr {
                 }
             }
 
-            &>span {
+            & > span {
                 margin: 0 15px;
 
                 a {
@@ -5540,8 +5537,6 @@ hr {
 }
 
 
-
-
 .scrollAreaChild {
     height: 100%;
     overflow: hidden;
@@ -5573,7 +5568,7 @@ hr {
                 background-color: #FFF;
                 position: relative;
 
-                &+small {
+                & + small {
                     display: inline-block;
                     background-color: #FFF;
                     padding: 0 10px 0 0;
@@ -5814,7 +5809,7 @@ hr {
 .generalInfo {
     margin-bottom: 30px;
 
-    &>span {
+    & > span {
         display: inline-block;
         padding-right: 30px;
         color: #666;
@@ -5971,7 +5966,7 @@ hr {
 
         input[type="checkbox"] {
             &:checked {
-                &+label {
+                & + label {
                     background-color: #5D6A72;
 
                     &:before {
@@ -6103,7 +6098,7 @@ hr {
 
         &.select2 {
             &.disabled {
-                &+.select2 {
+                & + .select2 {
                     cursor: not-allowed;
                     background-color: #EEE;
 
@@ -6122,7 +6117,7 @@ hr {
         margin-bottom: 0;
         right: 5px;
 
-        &+input {
+        & + input {
             padding-right: 75px
         }
 
@@ -6141,7 +6136,7 @@ hr {
         position: relative;
         min-height: 64px;
 
-        &>label:not([class]) {
+        & > label:not([class]) {
             height: 17px;
         }
 
@@ -6217,7 +6212,7 @@ hr {
         .counter {
             position: relative;
 
-            &>label {
+            & > label {
                 position: absolute;
                 top: -25px;
                 left: 0;
@@ -6414,7 +6409,7 @@ hr {
         .form-group {
             min-height: 0;
 
-            &>label {
+            & > label {
                 padding-top: 0;
                 line-height: 42px;
 
@@ -6486,7 +6481,7 @@ hr {
                     }
                 }
 
-                input[type="radio"]:checked+label {
+                input[type="radio"]:checked + label {
                     background-color: $primaryColor;
 
                     img.svg,
@@ -7285,19 +7280,19 @@ hr {
     line-height: 1;
 }
 
-.ios-toggle:checked+.checkbox-label {
+.ios-toggle:checked + .checkbox-label {
     background: $primaryColor;
 }
 
-.ios-toggle:checked+.checkbox-label.red {
+.ios-toggle:checked + .checkbox-label.red {
     background: #CB0000;
 }
 
-.ios-toggle:checked+.checkbox-label:before {
+.ios-toggle:checked + .checkbox-label:before {
     left: calc(100% - 27px);
 }
 
-.ios-toggle:checked+.checkbox-label:after {
+.ios-toggle:checked + .checkbox-label:after {
     content: attr(data-on);
     left: 0;
     color: #FFF;
@@ -7507,7 +7502,7 @@ hr {
                 input[type="radio"] {
                     display: none;
 
-                    &:checked+label {
+                    &:checked + label {
                         &:before {
                             border: 2px solid #56b364;
                             top: 0;
@@ -7524,7 +7519,7 @@ hr {
                     }
 
                     &.disabled {
-                        &+label {
+                        & + label {
                             opacity: 0.4;
                         }
                     }
@@ -7721,7 +7716,7 @@ hr {
         }
     }
 
-    &+div {
+    & + div {
         position: relative;
         z-index: 2;
     }
@@ -7820,7 +7815,7 @@ hr {
 
             input[type="radio"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         img {
                             filter: none;
                             opacity: 1;
@@ -7842,14 +7837,14 @@ hr {
 .serviceUsers {
     margin: 0 -10px;
 
-    &>li {
+    & > li {
         width: 33.33333333333333%;
         padding: 0 10px;
         margin-top: 30px;
         float: left;
         position: relative;
 
-        @media screen and (max-width:1500px) {
+        @media screen and (max-width: 1500px) {
             width: 50%;
 
             &:nth-child(-n+2) {
@@ -7857,7 +7852,7 @@ hr {
             }
         }
 
-        @media screen and (min-width:1600px) {
+        @media screen and (min-width: 1600px) {
             &:nth-child(-n+3) {
                 margin-top: 0;
             }
@@ -8031,7 +8026,7 @@ hr {
                     }
                 }
 
-                &>img {
+                & > img {
                     position: absolute;
                     right: 0;
                     bottom: -2px;
@@ -8095,7 +8090,7 @@ hr {
             .residentNumber {
                 color: $secondaryColor;
 
-                &+.residentNumber {
+                & + .residentNumber {
                     padding-right: 70px;
                     overflow: hidden;
                 }
@@ -8110,7 +8105,7 @@ hr {
                 font-family: $secondaryFont;
             }
 
-            &>a {
+            & > a {
                 position: absolute;
                 right: 15px;
                 bottom: 15px;
@@ -8343,7 +8338,7 @@ hr {
     }
 
     &.medAuth {
-        &>li {
+        & > li {
             width: 50%;
 
             @media screen and (min-width: 1500px) {
@@ -8395,7 +8390,7 @@ hr {
             margin-top: 10px;
             padding: 0;
 
-            &>span {
+            & > span {
                 height: 24px;
                 line-height: 14px;
                 float: left;
@@ -8424,7 +8419,7 @@ hr {
             }
 
             &.allowed {
-                &>span {
+                & > span {
 
                     img.svg,
                     svg,
@@ -8675,7 +8670,7 @@ hr {
                         color: #FFF;
                         border: 0;
 
-                        &>div {
+                        & > div {
                             span {
                                 font-size: 12px;
                                 text-transform: uppercase;
@@ -8686,7 +8681,7 @@ hr {
             }
 
             .jqx-grid-content {
-                &>div {
+                & > div {
                     .jqx-grid-table {
                         border: 0;
                         font-size: 14px;
@@ -8698,7 +8693,7 @@ hr {
                                     border-color: #DDD;
                                     @extend .transition;
 
-                                    &>div {
+                                    & > div {
                                         background: $grayColor;
                                         color: #FFF;
                                         border: 0;
@@ -8719,7 +8714,7 @@ hr {
                                     }
 
                                     &.jqx-scheduler-month-weekend-cell {
-                                        &>div {
+                                        & > div {
                                             background: #FFF;
                                             color: #999;
                                         }
@@ -8732,7 +8727,7 @@ hr {
                                         &.jqx-scheduler-cell-selected {
                                             background-color: $grayColor !important;
 
-                                            &>div {
+                                            & > div {
                                                 background-color: $grayColor;
                                                 color: #FFF;
                                             }
@@ -8749,7 +8744,7 @@ hr {
                                         background-color: $grayColor !important;
                                         border-color: #DDD !important;
 
-                                        &>div {
+                                        & > div {
                                             color: #FFF;
                                         }
                                     }
@@ -8767,12 +8762,12 @@ hr {
                 box-shadow: none !important;
                 padding: 0 10px;
 
-                &>div {
+                & > div {
                     //background-color: $secondaryColor;
                     border-radius: 4px;
                     padding: 2px 5px;
 
-                    &>div {
+                    & > div {
                         color: #FFF;
                         font-size: 12px;
                         font-family: $secondaryFont;
@@ -8795,7 +8790,7 @@ hr {
             background: none;
             border-top: 1px solid #DDD;
 
-            &>div {
+            & > div {
                 margin: 0 !important;
                 padding: 10px 0 0 0;
 
@@ -8878,7 +8873,7 @@ hr {
             &:first-of-type {
                 background-color: $grayColor;
 
-                &+button {
+                & + button {
                     background-color: $grayColor;
                 }
             }
@@ -8897,7 +8892,7 @@ hr {
     width: 313px;
     overflow: hidden;
 
-    &>button {
+    & > button {
         position: relative;
         z-index: 100;
     }
@@ -9220,7 +9215,7 @@ hr {
 
             input[type="checkbox"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #223e4c;
 
                         &:before {
@@ -9353,12 +9348,11 @@ hr {
         bottom: 0;
 
 
-
         .alertsList {
-            &>ul {
+            & > ul {
                 margin-bottom: 0;
 
-                &>li {
+                & > li {
                     padding: 10px;
                     border-top: 1px solid #999;
 
@@ -9460,7 +9454,7 @@ hr {
             background: none;
             right: 5px;
 
-            &>div {
+            & > div {
                 background-color: #FFF;
             }
         }
@@ -9932,7 +9926,7 @@ hr {
             overflow: hidden;
             padding: 7px 10px;
 
-            &>span {
+            & > span {
                 float: left;
                 position: relative;
                 padding-left: 30px;
@@ -10076,7 +10070,7 @@ hr {
             display: block;
         }
 
-        &>div {
+        & > div {
             margin-bottom: 15px;
         }
 
@@ -10142,7 +10136,7 @@ hr {
     bottom: 0;
     width: 100%;
 
-    &>.scroll-content {
+    & > .scroll-content {
         border: none !important;
         box-sizing: content-box !important;
         height: auto;
@@ -10188,11 +10182,11 @@ hr {
     border-top-color: #999999;
 }
 
-.scroll-textarea>.scroll-content {
+.scroll-textarea > .scroll-content {
     overflow: hidden !important;
 }
 
-.scroll-textarea>.scroll-content>textarea {
+.scroll-textarea > .scroll-content > textarea {
     border: none !important;
     box-sizing: border-box;
     height: 100% !important;
@@ -10207,13 +10201,13 @@ hr {
     width: 100% !important;
 }
 
-.scroll-textarea>.scroll-content>textarea::-webkit-scrollbar {
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
     height: 0;
     width: 0;
 }
 
-.scrollArea>.scroll-element,
-.scrollArea>.scroll-element div {
+.scrollArea > .scroll-element,
+.scrollArea > .scroll-element div {
     background: none;
     border: none;
     margin: 0;
@@ -10222,7 +10216,7 @@ hr {
     z-index: 10;
 }
 
-.scrollArea>.scroll-element div {
+.scrollArea > .scroll-element div {
     display: block;
     height: 100%;
     left: 0;
@@ -10231,11 +10225,11 @@ hr {
 }
 
 /*specific Style*/
-.scrollArea>.scroll-element .scroll-element_track {
+.scrollArea > .scroll-element .scroll-element_track {
     display: none;
 }
 
-.scrollArea>.scroll-element .scroll-bar {
+.scrollArea > .scroll-element .scroll-bar {
     background-color: #6C6E71;
     display: block;
     opacity: 0.7;
@@ -10243,12 +10237,12 @@ hr {
     transition: opacity 0.2s linear;
 }
 
-.scrollArea:hover>.scroll-element .scroll-bar,
-.scrollArea>.scroll-element.scroll-draggable .scroll-bar {
+.scrollArea:hover > .scroll-element .scroll-bar,
+.scrollArea > .scroll-element.scroll-draggable .scroll-bar {
     opacity: 1;
 }
 
-.scrollArea>.scroll-element.scroll-x {
+.scrollArea > .scroll-element.scroll-x {
     bottom: 0;
     height: 0;
     left: 0;
@@ -10257,7 +10251,7 @@ hr {
     width: 100%;
 }
 
-.scrollArea>.scroll-element.scroll-y {
+.scrollArea > .scroll-element.scroll-y {
     height: 100%;
     min-height: 100%;
     right: 0;
@@ -10265,39 +10259,39 @@ hr {
     width: 0;
 }
 
-.scrollArea>.scroll-element.scroll-x .scroll-bar {
+.scrollArea > .scroll-element.scroll-x .scroll-bar {
     height: 7px;
     min-width: 10px;
     top: -9px;
 }
 
-.scrollArea>.scroll-element.scroll-y .scroll-bar {
+.scrollArea > .scroll-element.scroll-y .scroll-bar {
     left: -11px;
     min-height: 10px;
     width: 10px;
 }
 
-.scrollArea>.scroll-element.scroll-x .scroll-element_outer {
+.scrollArea > .scroll-element.scroll-x .scroll-element_outer {
     left: 2px;
 }
 
-.scrollArea>.scroll-element.scroll-x .scroll-element_size {
+.scrollArea > .scroll-element.scroll-x .scroll-element_size {
     left: -4px;
 }
 
-.scrollArea>.scroll-element.scroll-y .scroll-element_outer {
+.scrollArea > .scroll-element.scroll-y .scroll-element_outer {
     top: 2px;
 }
 
-.scrollArea>.scroll-element.scroll-y .scroll-element_size {
+.scrollArea > .scroll-element.scroll-y .scroll-element_size {
     top: -4px;
 }
 
-.scrollArea>.scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+.scrollArea > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
     left: -11px;
 }
 
-.scrollArea>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+.scrollArea > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     top: -11px;
 }
 
@@ -10602,7 +10596,7 @@ hr {
         .select2-selection--multiple {
             height: 84px;
 
-            &>ul {
+            & > ul {
                 height: 84px;
             }
         }
@@ -10751,7 +10745,7 @@ hr {
     position: relative;
     z-index: 5;
 
-    &>li {
+    & > li {
         padding: 10px;
         border-top: 1px solid #DDD;
         position: relative;
@@ -10774,7 +10768,7 @@ hr {
             padding: 15px 0 15px 30px;
             position: relative;
 
-            &>span {
+            & > span {
                 display: inline-block;
                 width: auto;
                 position: absolute;
@@ -10796,7 +10790,7 @@ hr {
                 }
             }
 
-            &>.marSheetAct {
+            & > .marSheetAct {
                 font-size: 18px !important;
                 color: #fff;
                 position: static;
@@ -10884,8 +10878,8 @@ hr {
 
         .table {
             thead {
-                &>tr {
-                    &>th {
+                & > tr {
+                    & > th {
                         border: 0;
                         border-radius: 0;
                         padding: 5px 0;
@@ -10893,7 +10887,7 @@ hr {
                     }
 
                     &:first-of-type {
-                        &>th {
+                        & > th {
                             background-color: $grayColor;
                             color: #FFF;
 
@@ -10902,21 +10896,21 @@ hr {
                             }
                         }
 
-                        &>th:first-of-type {
+                        & > th:first-of-type {
                             background: none;
                         }
 
-                        &>th:nth-of-type(2) {
+                        & > th:nth-of-type(2) {
                             border-top-left-radius: 4px;
                         }
 
-                        &>th:last-of-type {
+                        & > th:last-of-type {
                             border-top-right-radius: 4px;
                         }
                     }
 
                     &:nth-of-type(2) {
-                        &>th:first-child {
+                        & > th:first-child {
                             border-radius: 4px 0 0 0;
                             background-color: $primaryColor;
                             color: #FFF;
@@ -10924,7 +10918,7 @@ hr {
                             font-family: $secondaryFont;
                         }
 
-                        &>th:nth-child(even) {
+                        & > th:nth-child(even) {
                             background-color: darken($secondaryColor, 5%);
                         }
                     }
@@ -10932,8 +10926,8 @@ hr {
             }
 
             tbody {
-                &>tr {
-                    &>td {
+                & > tr {
+                    & > td {
                         padding: 5px 0;
                         font-family: $secondaryFont;
                         font-size: 12px;
@@ -10992,7 +10986,7 @@ hr {
                     }
 
                     &:first-child {
-                        &>td {
+                        & > td {
                             border: 0;
                         }
                     }
@@ -11110,7 +11104,7 @@ hr {
 .marSheetIninfo {
     text-align: right;
 
-    &>span {
+    & > span {
         display: inline-block;
         padding-left: 30px;
 
@@ -11119,7 +11113,7 @@ hr {
         }
     }
 
-    &>div {
+    & > div {
         width: 50%;
 
         .diseases {
@@ -11129,7 +11123,6 @@ hr {
         }
     }
 }
-
 
 
 .covertWarning {
@@ -11190,7 +11183,7 @@ hr {
         border: 1px solid #DDD;
         border-radius: 4px;
 
-        &>li {
+        & > li {
             width: calc(calc(100% - 100px) / 8);
             padding: 0;
             margin: 0;
@@ -11232,7 +11225,7 @@ hr {
                         display: block;
 
                         &:hover {
-                            &+span {
+                            & + span {
                                 opacity: 1;
                                 visibility: visible;
                             }
@@ -11287,7 +11280,7 @@ hr {
                             margin: 0;
                             padding-left: 20px;
 
-                            &>span:first-of-type:not(.delete) {
+                            & > span:first-of-type:not(.delete) {
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
@@ -11313,7 +11306,7 @@ hr {
                         }
 
                         input[type="checkbox"]:checked {
-                            &+label {
+                            & + label {
 
                                 img.svg,
                                 svg,
@@ -11404,12 +11397,12 @@ hr {
                             }
                         }
 
-                        &>p.time {
+                        & > p.time {
                             margin: 0;
                         }
                     }
 
-                    &>button {
+                    & > button {
                         position: absolute;
                         right: 5px;
                         top: 10px;
@@ -11460,7 +11453,7 @@ hr {
                             z-index: 1;
 
                             &:hover {
-                                &+.rotaTooltip {
+                                & + .rotaTooltip {
                                     opacity: 1;
                                     visibility: visible;
                                 }
@@ -11653,7 +11646,7 @@ hr {
             border-color: $orangeColor;
             overflow: hidden;
 
-            &>li {
+            & > li {
                 width: 12.5% !important;
                 border-color: #EEE;
                 float: left;
@@ -11709,7 +11702,7 @@ hr {
                                 text-align: center;
                                 z-index: 11;
 
-                                &>span {
+                                & > span {
                                     background: none;
                                     font-size: 16px;
                                     text-transform: uppercase;
@@ -11719,7 +11712,7 @@ hr {
                                     margin-bottom: 5px;
                                 }
 
-                                &>p {
+                                & > p {
                                     background-color: $orangeColor;
                                     padding: 0 5px;
                                     border-radius: 5px;
@@ -11820,7 +11813,7 @@ hr {
                             z-index: 10;
                             position: relative;
 
-                            &>span {
+                            & > span {
                                 display: block;
                                 background-color: #F36C7C;
                                 border-radius: 4px;
@@ -11850,7 +11843,7 @@ hr {
                 }
             }
 
-            &+input[type="button"] {
+            & + input[type="button"] {
                 border: 0;
                 border-radius: 0 0 4px 4px;
                 width: 12.5%;
@@ -11862,14 +11855,14 @@ hr {
                 text-transform: uppercase;
             }
 
-            &~.ui-draggable-dragging {
+            & ~ .ui-draggable-dragging {
                 border: 0;
                 height: auto;
                 border-radius: 4px;
                 background-color: $secondaryColor;
 
                 .info {
-                    &>span {
+                    & > span {
                         display: block;
                         background-color: #FFF;
                         border-radius: 4px;
@@ -11939,7 +11932,7 @@ hr {
             position: relative;
             padding-left: 200px;
 
-            &>li {
+            & > li {
                 width: calc(100% / 7);
 
                 &:first-child {
@@ -12036,14 +12029,14 @@ hr {
                     position: relative;
 
                     &.header {
-                        &>li {
+                        & > li {
                             height: auto;
                             background-color: #6E7271 !important;
                             color: #E2E2E2 !important;
                         }
                     }
 
-                    &>li {
+                    & > li {
                         height: 30px;
                         width: calc(100% / 7);
                         float: left;
@@ -12109,12 +12102,12 @@ hr {
                 &.printRota {
                     .board-inner {
                         &.header {
-                            &>li {
+                            & > li {
                                 height: auto;
                             }
                         }
 
-                        &>li {
+                        & > li {
                             height: 50px;
 
                             .info {
@@ -12289,7 +12282,7 @@ hr {
         }
     }
 
-    &>div {
+    & > div {
         float: left;
         margin-right: 10px;
 
@@ -12486,7 +12479,7 @@ hr {
                 height: calc(100% - 65px);
                 overflow: hidden;
 
-                &>div {
+                & > div {
                     height: 50%;
                     position: relative;
                     overflow: hidden;
@@ -12645,7 +12638,7 @@ hr {
                 }
             }
 
-            input[type="checkbox"]:checked+label {
+            input[type="checkbox"]:checked + label {
 
                 img.svg,
                 svg,
@@ -12675,7 +12668,7 @@ hr {
                 }
             }
 
-            &>img {
+            & > img {
                 width: 100%;
                 //height: 100%;
                 border-radius: 8px;
@@ -12755,7 +12748,7 @@ hr {
         z-index: 5;
     }
 
-    &>span {
+    & > span {
         position: absolute;
         right: 15px;
         top: 15px;
@@ -13010,7 +13003,7 @@ hr {
     position: relative;
     margin-bottom: 20px;
 
-    &>span:first-of-type {
+    & > span:first-of-type {
         background-color: #FFF;
         font-family: $secondaryFont;
         right: 10px;
@@ -13311,7 +13304,7 @@ hr {
     input {
         display: none;
 
-        &:checked+label {
+        &:checked + label {
             border-color: $orangeColor;
 
             &:before {
@@ -13371,7 +13364,7 @@ hr {
         }
 
         input[type="checkbox"]:checked {
-            &+label {
+            & + label {
                 background-color: $primaryColor;
                 color: #FFF;
                 border: 0;
@@ -13545,7 +13538,7 @@ hr {
             display: table;
             width: 100%;
 
-            &>div {
+            & > div {
                 display: table-cell;
                 vertical-align: middle;
                 height: 100%;
@@ -13574,7 +13567,7 @@ hr {
         z-index: 2;
         position: relative;
 
-        &>ul {
+        & > ul {
             margin: 0 5px 0;
             float: left;
 
@@ -13643,7 +13636,7 @@ hr {
                 background-color: $primaryColor;
             }
 
-            &+.dropdown-menu {
+            & + .dropdown-menu {
                 padding: 5px;
 
                 form {
@@ -13678,7 +13671,7 @@ hr {
                     }
                 }
 
-                &>ul {
+                & > ul {
                     margin: 0;
 
                     li {
@@ -13881,7 +13874,7 @@ hr {
                 border: 0;
             }
 
-            &+div {
+            & + div {
                 padding: 15px;
 
                 .checkBox {
@@ -13889,7 +13882,7 @@ hr {
                 }
             }
 
-            &+span {
+            & + span {
                 padding: 20px 0 0 10px;
                 height: 40px;
 
@@ -13943,7 +13936,7 @@ hr {
                         z-index: 15;
                     }
 
-                    &>div {
+                    & > div {
                         position: relative;
                         z-index: 10;
 
@@ -14304,7 +14297,7 @@ hr {
         bottom: 0;
         width: 100%;
 
-        &>a {
+        & > a {
             display: block;
             width: calc(50% - 1px);
             text-align: center;
@@ -14455,7 +14448,7 @@ hr {
     display: inline-block;
     height: 36px;
 
-    &>span {
+    & > span {
         display: inline-block;
         line-height: 36px;
         margin-right: 10px;
@@ -14548,7 +14541,7 @@ hr {
         }
     }
 
-    &>button {
+    & > button {
         height: 36px;
         border-radius: 4px;
         background-color: $orangeColor;
@@ -14608,11 +14601,11 @@ hr {
     .percent {
         position: relative;
 
-        &>div {
+        & > div {
             text-align: center;
             height: 110px;
 
-            &>span {
+            & > span {
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -14782,7 +14775,7 @@ hr {
         display: inline-block;
     }
 
-    &>div {
+    & > div {
         padding-top: 15px;
         position: relative;
 
@@ -14841,7 +14834,7 @@ hr {
                 input[type="radio"] {
                     display: none;
 
-                    &:checked+label {
+                    &:checked + label {
                         color: #FFF;
                         background-color: $grayColor;
                     }
@@ -15650,7 +15643,7 @@ hr {
                 margin: 0;
                 padding-right: 15px;
 
-                &>li {
+                & > li {
                     border-radius: 10px;
                     height: 90px;
                     margin-top: 5px;
@@ -16012,7 +16005,7 @@ hr {
             padding: 0;
             margin-top: 10px;
 
-            &>article {
+            & > article {
                 width: calc(calc(100% - 10px) / 2);
                 float: left;
                 height: 100%;
@@ -16330,7 +16323,7 @@ hr {
                     border-bottom: 0;
                     border-radius: 4px 4px 0 0;
 
-                    &+span {
+                    & + span {
                         display: block;
                         text-align: center;
                         font-size: 12px;
@@ -16365,12 +16358,12 @@ hr {
     font-family: $secondaryFont;
     line-height: 20px;
 
-    &>span:first-of-type {
+    & > span:first-of-type {
         font-size: 12px;
         color: #666;
     }
 
-    &>span:last-of-type {
+    & > span:last-of-type {
         font-size: 24px;
         color: $orangeColor;
         width: 90px;
@@ -16406,7 +16399,7 @@ hr {
     padding: 0 0 0 220px;
     position: relative;
 
-    &>img {
+    & > img {
         position: absolute;
         left: 0;
         top: 0;
@@ -16415,8 +16408,8 @@ hr {
         border-radius: 4px;
     }
 
-    &>ul {
-        &>li {
+    & > ul {
+        & > li {
             width: 16.66666666% !important;
             margin-bottom: 8px;
         }
@@ -17052,7 +17045,7 @@ hr {
         }
 
         input[type="radio"] {
-            &:checked+label {
+            &:checked + label {
                 background-color: $primaryColor;
 
                 span {
@@ -17148,7 +17141,7 @@ hr {
     .assessmentCheckBox {
         position: relative;
 
-        input[type="radio"]+label {
+        input[type="radio"] + label {
             padding: 7px 40px 7px 30px;
 
             &:before {
@@ -17184,7 +17177,7 @@ hr {
         }
 
         input[type="radio"] {
-            &:checked+label {
+            &:checked + label {
                 color: #666 !important;
                 background-color: transparent !important;
 
@@ -17213,7 +17206,7 @@ hr {
             }
         }
 
-        input[type="checkbox"]+label {
+        input[type="checkbox"] + label {
             padding: 7px 40px 7px 30px;
 
             &:before {
@@ -17264,7 +17257,7 @@ hr {
                 }
             }
 
-            &:checked+label {
+            &:checked + label {
                 color: #666 !important;
                 background-color: transparent !important;
 
@@ -17317,7 +17310,7 @@ hr {
     &.CareRoutinesboxAsses {
         .assessmentCheckBox {
             input[type="checkbox"] {
-                &:checked+label {
+                &:checked + label {
                     &:after {
                         top: 7px;
                     }
@@ -17346,7 +17339,7 @@ hr {
             position: absolute;
             bottom: -17px;
             left: 50%;
-            @include shift (-50%, 0);
+            @include shift(-50%, 0);
 
             img.svg,
             .svg {
@@ -17480,7 +17473,7 @@ hr {
         }
     }
 
-    &>div {
+    & > div {
         display: table-cell;
         vertical-align: middle;
         padding: 100px 10%;
@@ -17556,7 +17549,7 @@ hr {
         display: none;
     }
 
-    input[type="radio"]+label span {
+    input[type="radio"] + label span {
         display: inline-block;
         width: 19px;
         border-radius: 100%;
@@ -17568,7 +17561,7 @@ hr {
         @extend .transition;
     }
 
-    input[type="radio"]:checked+label span {
+    input[type="radio"]:checked + label span {
         background: #3DA492;
         border-color: #3DA492;
         position: relative;
@@ -17600,12 +17593,12 @@ hr {
         display: none;
     }
 
-    input[type="checkbox"]+label {
+    input[type="checkbox"] + label {
         font-weight: normal;
         cursor: pointer;
     }
 
-    input[type="checkbox"]+label span {
+    input[type="checkbox"] + label span {
         width: 19px;
         border-radius: 3px;
         height: 19px;
@@ -17617,7 +17610,7 @@ hr {
         @extend .transition;
     }
 
-    input[type="checkbox"]:checked+label span {
+    input[type="checkbox"]:checked + label span {
         background: #3DA492;
         position: relative;
         @extend .transition;
@@ -18105,7 +18098,7 @@ hr {
     margin: 0;
     width: calc(100% - 15px);
 
-    &>li {
+    & > li {
         margin-top: 10px;
         max-height: 110px;
         overflow: hidden;
@@ -18138,7 +18131,7 @@ hr {
             }
         }
 
-        &>article {
+        & > article {
             width: calc(100% - 30px);
             position: relative;
             z-index: 3;
@@ -18171,7 +18164,7 @@ hr {
                         width: 100%;
                     }
 
-                    &>span {
+                    & > span {
                         font-size: 14px;
                         color: #333;
                         line-height: 24px;
@@ -18197,7 +18190,7 @@ hr {
                             }
                         }
 
-                        &+span {
+                        & + span {
                             line-height: 20px;
                             margin-top: -5px;
                         }
@@ -18313,7 +18306,7 @@ hr {
     }
 
     &.accountListing {
-        &>li {
+        & > li {
             min-height: 80px;
             max-height: 80px;
             border-radius: 4px;
@@ -18325,7 +18318,7 @@ hr {
                     }
                 }
 
-                &>article {
+                & > article {
                     background: #b6cfe2;
 
                     ul {
@@ -18374,7 +18367,7 @@ hr {
                     }
                 }
 
-                &>article {
+                & > article {
                     background: #e48a89;
 
                     ul {
@@ -18423,7 +18416,7 @@ hr {
                     }
                 }
 
-                &>article {
+                & > article {
                     background: #93ccc2;
 
                     ul {
@@ -18465,18 +18458,18 @@ hr {
                 }
             }
 
-            &>article {
+            & > article {
                 min-height: 80px;
                 border-radius: 4px;
                 width: auto !important;
                 padding-left: 60px;
 
-                &>ul {
+                & > ul {
                     float: left;
                     margin: 0 -10px;
                     width: calc(100% - 300px);
 
-                    &>li {
+                    & > li {
                         width: auto;
                         margin: 0;
                         padding: 0 10px;
@@ -18871,7 +18864,7 @@ hr {
 .calLegends {
     float: left;
 
-    &>span {
+    & > span {
         display: inline-block;
         margin-right: 30px;
         padding-left: 20px;
@@ -18942,7 +18935,7 @@ hr {
             height: auto;
             margin-right: 0 !important;
 
-            input[type="checkbox"]:checked+label {
+            input[type="checkbox"]:checked + label {
                 color: #fff !important;
 
                 img.svg,
@@ -19007,10 +19000,10 @@ hr {
         }
     }
 
-    &>ul {
+    & > ul {
         margin: 0 -15px;
 
-        &>li {
+        & > li {
             padding: 0 15px;
             width: 33.33333333333333%;
             float: left;
@@ -19023,7 +19016,7 @@ hr {
                 padding: 0 10px;
                 position: relative;
 
-                &>span {
+                & > span {
                     position: absolute;
                     right: 10px;
                     top: 10px;
@@ -19036,7 +19029,7 @@ hr {
                     font-size: 12px;
                 }
 
-                &>label {
+                & > label {
                     position: relative;
                     margin-bottom: 0;
                     font-size: 14px;
@@ -19071,7 +19064,7 @@ hr {
                 }
 
                 input[type="checkbox"]:checked {
-                    &+label {
+                    & + label {
                         &:before {
                             background-color: $primaryColor;
                         }
@@ -19143,7 +19136,7 @@ hr {
                     }
 
                     input[type="checkbox"]:checked {
-                        &+label {
+                        & + label {
                             background-color: $primaryColor;
 
                             svg {
@@ -19430,7 +19423,7 @@ hr {
             color: #FFF;
         }
 
-        &>div {
+        & > div {
             color: #666;
 
             .scroll-wrapper {
@@ -19489,7 +19482,7 @@ hr {
                     }
                 }
 
-                input[type="checkbox"]:checked+label {
+                input[type="checkbox"]:checked + label {
                     background-color: $primaryColor;
                 }
 
@@ -19517,7 +19510,7 @@ hr {
                 background-color: $secondaryColor;
             }
 
-            &>div {
+            & > div {
                 button {
                     background-color: $secondaryColor;
 
@@ -19545,7 +19538,7 @@ hr {
                 font-weight: 500;
             }
 
-            &>div {
+            & > div {
                 color: #666;
                 padding: 15px;
                 height: calc(100% - 60px);
@@ -19586,7 +19579,7 @@ hr {
                             right: 15px;
                         }
 
-                        &>span {
+                        & > span {
                             font-family: $secondaryFont;
                             padding: 0 0 0 40px;
                             width: calc(100% - 15px);
@@ -19630,7 +19623,7 @@ hr {
                             height: 26px;
                             width: 100%;
 
-                            &>span {
+                            & > span {
                                 background-color: #ed1c24;
                                 width: calc(100% - 40px);
                                 color: #FFF;
@@ -19681,7 +19674,7 @@ hr {
                                 font-size: 14px;
                             }
 
-                            input[type="checkbox"]:checked+label {
+                            input[type="checkbox"]:checked + label {
                                 background-color: $primaryColor;
                             }
 
@@ -19730,7 +19723,7 @@ hr {
                 background-color: $secondaryColor;
             }
 
-            &>div {
+            & > div {
                 button {
                     background-color: $secondaryColor;
 
@@ -19791,7 +19784,7 @@ hr {
     margin: 0 auto;
 
     &.memorandum {
-        &>div {
+        & > div {
             padding: 360px 40px 30px;
             height: 450px;
         }
@@ -19809,7 +19802,7 @@ hr {
     border-radius: 3px 3px 0 0;
 }
 
-.md-content>div {
+.md-content > div {
     padding: 15px 40px 30px;
     margin: 0;
     font-weight: 300;
@@ -19840,7 +19833,7 @@ hr {
 
 }
 
-.md-show~.md-overlay {
+.md-show ~ .md-overlay {
     opacity: 1;
     visibility: visible;
 }
@@ -19951,9 +19944,9 @@ hr {
             }
         }
 
-        &>img.svg,
-        &>svg,
-        &>img {
+        & > img.svg,
+        & > svg,
+        & > img {
             z-index: 15;
             position: absolute;
             right: 10px;
@@ -20915,7 +20908,7 @@ hr {
     top: 120px;
     overflow: hidden;
 
-    &>div {
+    & > div {
         margin: 0 -15px;
         height: 100%;
     }
@@ -21181,7 +21174,7 @@ hr {
                     }
 
                     .activityDetails {
-                        &>span {
+                        & > span {
                             color: #FFF;
                         }
 
@@ -21225,7 +21218,7 @@ hr {
                     text-align: left;
                     font-size: 14px;
 
-                    &>span {
+                    & > span {
                         display: block;
                         color: #666;
                     }
@@ -21401,7 +21394,7 @@ hr {
                     }
                 }
 
-                &[aria-expanded="true"]+.dropdown-menu {
+                &[aria-expanded="true"] + .dropdown-menu {
                     display: block;
 
                     a {
@@ -21650,7 +21643,7 @@ hr {
             }
         }
 
-        &~.textarea {
+        & ~ .textarea {
             display: none;
             position: relative;
             margin-top: 15px;
@@ -21824,7 +21817,7 @@ hr {
                 }
 
                 input[type="checkbox"] {
-                    &:checked+label {
+                    &:checked + label {
                         padding-right: 50px;
                         padding-left: 0;
                     }
@@ -21857,7 +21850,7 @@ hr {
             }
 
             input[type="checkbox"] {
-                &:checked+label {
+                &:checked + label {
                     padding-left: 50px;
                     @extend .transition;
 
@@ -21905,7 +21898,7 @@ hr {
         }
     }
 
-    &~input[type="text"] {
+    & ~ input[type="text"] {
         width: 350px;
         border-radius: 18px;
         height: 36px;
@@ -22039,7 +22032,7 @@ hr {
         position: relative;
         margin: 0 15px 20px;
 
-        &>span {
+        & > span {
             font-size: 22px;
             font-family: $secondaryFont;
             color: #666;
@@ -22245,9 +22238,9 @@ hr {
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
         transition: 0.4s linear;
         transition-property: width,
-            background-color;
+        background-color;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25),
-            inset 0 1px rgba(255, 255, 255, 0.1);
+        inset 0 1px rgba(255, 255, 255, 0.1);
         position: relative;
         width: 10%;
 
@@ -22285,7 +22278,7 @@ hr {
 
     .table {
         tr:last-child {
-            &>td {
+            & > td {
                 padding-bottom: 15px;
             }
         }
@@ -22413,7 +22406,7 @@ hr {
                 font-family: $secondaryFont;
                 font-size: 16px;
 
-                &+span {
+                & + span {
                     font-size: 12px;
                     font-family: $secondaryFont;
                 }
@@ -22519,7 +22512,7 @@ hr {
             }
         }
 
-        &>section {
+        & > section {
             background-color: #FFF;
             border-radius: 4px;
             margin-top: 10px;
@@ -22789,7 +22782,7 @@ hr {
             }
         }
 
-        &>section {
+        & > section {
             height: calc(100% - 90px - 10px);
             background-color: #FFF;
             border-radius: 4px;
@@ -23006,8 +22999,6 @@ hr {
         margin-right: 10px;
     }
 }
-
-
 
 
 .superVisionInfo {
@@ -23238,7 +23229,7 @@ hr {
         font-size: 12px;
         text-transform: uppercase;
 
-        &>span {
+        & > span {
             background-color: $orangeColor;
             color: #FFF;
             font-family: $secondaryFont;
@@ -23273,9 +23264,9 @@ hr {
             cursor: pointer;
         }
 
-        &>input[type='radio'] {
+        & > input[type='radio'] {
             &:checked {
-                &~label {
+                & ~ label {
                     background-color: $orangeColor;
                     color: #FFF;
                 }
@@ -23303,7 +23294,7 @@ hr {
     width: auto;
     margin: 0;
 
-    &>a {
+    & > a {
         background: #648DAC;
         border-color: #648DAC;
     }
@@ -23331,17 +23322,17 @@ hr {
         width: calc(100% - 390px);
         margin-right: 10px;
 
-        &>div {
+        & > div {
             height: 100%;
             float: left;
             position: relative;
 
-            &>.scroll-wrapper,
-            &>article {
+            & > .scroll-wrapper,
+            & > article {
                 height: calc(calc(100% - 10px) / 2);
             }
 
-            &>.scroll-wrapper {
+            & > .scroll-wrapper {
                 left: 0;
                 right: 0;
                 top: 0;
@@ -23353,7 +23344,7 @@ hr {
                 }
             }
 
-            &>article {
+            & > article {
                 position: relative;
             }
 
@@ -23457,7 +23448,7 @@ hr {
         position: relative;
         background-color: #FFF;
 
-        &>span {
+        & > span {
             display: block;
             background-color: #edf1f3;
             padding: 0 10px;
@@ -23551,7 +23542,7 @@ hr {
         position: relative;
         background-color: #FFF;
 
-        &>span {
+        & > span {
             display: block;
             background-color: #edf1f3;
             padding: 0 10px;
@@ -23576,11 +23567,11 @@ hr {
                 font-size: 14px;
                 color: #1f262a;
 
-                &>small {
+                & > small {
                     color: #575f64;
                 }
 
-                &>span {
+                & > span {
                     position: absolute;
                     right: 0;
                     font-family: $secondaryFont;
@@ -23594,7 +23585,7 @@ hr {
                     }
                 }
 
-                &>div {
+                & > div {
                     padding: 2px 5px;
                     text-align: right;
                     font-size: 14px;
@@ -23634,7 +23625,7 @@ hr {
         position: relative;
         background-color: #FFF;
 
-        &>span {
+        & > span {
             display: block;
             background-color: #edf1f3;
             padding: 0 10px;
@@ -23792,7 +23783,7 @@ hr {
         position: relative;
         background-color: #FFF;
 
-        &>span {
+        & > span {
             display: block;
             background-color: #edf1f3;
             padding: 0 10px;
@@ -23892,7 +23883,7 @@ hr {
         background-color: #FFF;
         margin-bottom: 10px;
 
-        &>span {
+        & > span {
             display: block;
             background-color: #CB0000;
             padding: 0 10px;
@@ -24052,7 +24043,7 @@ hr {
     background-position: left bottom;
     position: relative;
 
-    &>span {
+    & > span {
         position: absolute;
         left: 60px;
         top: 69px;
@@ -24073,7 +24064,7 @@ hr {
     padding: 10px;
     border: 0;
 
-    &>li {
+    & > li {
         padding: 5px 10px;
         float: left;
         text-align: center;
@@ -24093,7 +24084,7 @@ hr {
             border-radius: 4px;
         }
 
-        &>a {
+        & > a {
             border: 0;
             font-family: $secondaryFont;
             font-size: 12px;
@@ -24124,18 +24115,18 @@ hr {
     height: calc(100% - 56px);
     padding: 10px;
 
-    &>.tab-pane {
+    & > .tab-pane {
         height: 100%;
         overflow: hidden;
         position: relative;
 
-        &>.inBodyForm {
+        & > .inBodyForm {
             height: 100%;
 
-            &>.freeze-table {
+            & > .freeze-table {
 
 
-                &>.table {
+                & > .table {
                     overflow: auto;
                 }
             }
@@ -24290,7 +24281,7 @@ hr {
         border-radius: 4px;
         font-style: $secondaryFont;
 
-        &~table {
+        & ~ table {
             margin-bottom: 4px;
 
             tbody {
@@ -24383,7 +24374,7 @@ hr {
                     display: block;
 
                     &:hover {
-                        &+span {
+                        & + span {
                             opacity: 1;
                             visibility: visible;
                         }
@@ -24432,13 +24423,13 @@ hr {
             cursor: pointer;
             list-style: none;
 
-            &>i {
+            & > i {
                 display: none;
                 z-index: 10;
             }
 
             &.absent_sick_leave {
-                &>i {
+                & > i {
                     display: block;
                     position: absolute;
                     left: 0;
@@ -24451,7 +24442,7 @@ hr {
             }
 
             &.annual_leave_type {
-                &>i {
+                & > i {
                     display: block;
                     position: absolute;
                     left: 0;
@@ -24607,7 +24598,7 @@ hr {
                     position: relative;
                     z-index: 0;
 
-                    &+span {
+                    & + span {
                         position: absolute;
                         right: calc(100% + 5px);
                         bottom: 50%;
@@ -24624,7 +24615,7 @@ hr {
                     }
 
                     &:hover {
-                        &+span {
+                        & + span {
                             visibility: visible;
                             opacity: 1;
                         }
@@ -24790,7 +24781,7 @@ hr {
         }
     }
 
-    &+.ui-draggable-dragging {
+    & + .ui-draggable-dragging {
         width: calc(calc(100% - 140px) / 8);
         float: left;
         border-left: 1px solid #DDD;
@@ -24920,7 +24911,7 @@ hr {
                 position: relative;
                 z-index: 0;
 
-                &+span {
+                & + span {
                     position: absolute;
                     left: calc(100% + 5px);
                     bottom: 100%;
@@ -24937,7 +24928,7 @@ hr {
                 }
 
                 &:hover {
-                    &+span {
+                    & + span {
                         visibility: visible;
                         opacity: 1;
                     }
@@ -25045,7 +25036,7 @@ hr {
     margin: 0 -15px;
     height: 100%;
 
-    &>li {
+    & > li {
         height: 100%;
         width: calc(100% / 3);
         padding: 0 15px;
@@ -25082,7 +25073,7 @@ hr {
 
                     }
 
-                    &>li {
+                    & > li {
                         margin-bottom: 5px;
                         width: 100%;
                         border-radius: 4px;
@@ -25326,7 +25317,7 @@ hr {
                 }
             }
 
-            &+textarea {
+            & + textarea {
                 width: 100%;
                 border-radius: 4px;
                 border: 1px solid #DDD;
@@ -25375,7 +25366,7 @@ hr {
                 border-radius: 4px 0 0 4px;
 
                 input[type="radio"]:checked {
-                    &+label {
+                    & + label {
                         background-color: $primaryColor;
                     }
                 }
@@ -25387,7 +25378,7 @@ hr {
                 border-color: #FFF;
 
                 input[type="radio"]:checked {
-                    &+label {
+                    & + label {
                         background-color: $secondaryColor;
                     }
                 }
@@ -25397,7 +25388,7 @@ hr {
                 border-radius: 0 4px 4px 0;
 
                 input[type="radio"]:checked {
-                    &+label {
+                    & + label {
                         background-color: $orangeColor;
                     }
                 }
@@ -25410,7 +25401,7 @@ hr {
 .roomkey {
     position: relative;
 
-    &>label {
+    & > label {
         display: block;
         font-size: 18px;
         font-family: $secondaryFont;
@@ -25421,7 +25412,6 @@ hr {
     .toggles {
         position: relative;
     }
-
 
 
     .radio {
@@ -25460,7 +25450,7 @@ hr {
         }
 
         input[type="radio"] {
-            &:checked+label {
+            &:checked + label {
                 &:before {
                     background-color: $primaryColor;
                 }
@@ -25611,7 +25601,7 @@ hr {
             top: 15px;
             border-radius: 4px;
 
-            &>span {
+            & > span {
                 float: left;
 
                 label {
@@ -25633,7 +25623,7 @@ hr {
                     }
 
                     input[type="radio"]:checked {
-                        &+label {
+                        & + label {
                             background-color: $primaryColor;
                         }
                     }
@@ -25641,7 +25631,7 @@ hr {
 
                 &:nth-of-type(2) {
                     input[type="radio"]:checked {
-                        &+label {
+                        & + label {
                             background-color: $secondaryColor;
                         }
                     }
@@ -25649,7 +25639,7 @@ hr {
 
                 &:nth-of-type(3) {
                     input[type="radio"]:checked {
-                        &+label {
+                        & + label {
                             background-color: $orangeColor;
                         }
                     }
@@ -25657,7 +25647,7 @@ hr {
 
                 &:nth-of-type(4) {
                     input[type="radio"]:checked {
-                        &+label {
+                        & + label {
                             background-color: $grayColor;
                         }
                     }
@@ -25685,7 +25675,7 @@ hr {
         opacity: 1;
     }
 
-    &>div {
+    & > div {
         background-color: #FFF;
         padding: 2px 5px;
         border-radius: 4px;
@@ -25704,7 +25694,7 @@ hr {
     padding-right: 0;
 }
 
-.xscroller .full.tab-content>.tab-pane {
+.xscroller .full.tab-content > .tab-pane {
     overflow: unset !important;
 }
 
@@ -25735,7 +25725,7 @@ hr {
             height: 100%;
         }
 
-        .handoverResidents>.scroll-wrapper {
+        .handoverResidents > .scroll-wrapper {
             top: 0 !important;
         }
     }
@@ -25890,7 +25880,7 @@ hr {
                 }
             }
 
-            &>ul {
+            & > ul {
                 margin: 0;
                 width: calc(calc(100% - 80px) / 15);
                 float: left;
@@ -25993,7 +25983,7 @@ hr {
             }
 
             .columns {
-                &>ul {
+                & > ul {
                     width: calc(100% / 15);
 
                     &:first-of-type {
@@ -26029,7 +26019,7 @@ hr {
             }
 
             .columns {
-                &>ul {
+                & > ul {
                     li {
                         &.circle {
                             &:before {
@@ -26247,7 +26237,7 @@ hr {
         input[type="radio"] {
             display: none;
 
-            &:checked+label {
+            &:checked + label {
                 background-color: #3D4D57;
                 color: #FFF;
                 text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
@@ -26436,7 +26426,7 @@ hr {
                 padding: 10px 10px 10px 0;
                 margin-bottom: 10px;
 
-                &>span {
+                & > span {
                     float: left;
                     font-size: 14px;
                     color: #333;
@@ -26598,7 +26588,7 @@ hr {
 
             ul {
                 li {
-                    &>span {
+                    & > span {
                         &:nth-of-type(2) {
                             width: 60px;
                         }
@@ -26682,7 +26672,7 @@ hr {
                 input[type="radio"] {
                     display: none;
 
-                    &:checked+label {
+                    &:checked + label {
                         &:before {
                             border-color: $orangeColor;
                         }
@@ -26816,7 +26806,7 @@ hr {
             }
         }
 
-        &>div {
+        & > div {
             height: auto;
             border: 0;
             border-radius: 4px;
@@ -26911,7 +26901,7 @@ hr {
             }
         }
 
-        &~span {
+        & ~ span {
             display: inline-block;
             color: #666;
             font-weight: 300;
@@ -27197,7 +27187,7 @@ hr {
     width: 100%;
     margin-bottom: 30px;
 
-    &>a {
+    & > a {
         vertical-align: bottom;
         height: 100px;
         display: table-cell;
@@ -27236,7 +27226,6 @@ hr {
     }
 
 }
-
 
 
 .handoverSearch {
@@ -27558,7 +27547,7 @@ hr {
                 }
             }
 
-            &+section {
+            & + section {
                 width: calc(100% - 200px);
                 height: calc(100% - 105px);
             }
@@ -27732,7 +27721,7 @@ hr {
     fill: #EEE !important;
     stroke: #DDD !important;
 
-    &+text {
+    & + text {
         fill: #666 !important;
     }
 }
@@ -27757,7 +27746,7 @@ hr {
             margin-left: 20px;
         }
 
-        &>span {
+        & > span {
             position: absolute;
             height: 46px;
             width: 46px;
@@ -27993,7 +27982,7 @@ hr {
         }
     }
 
-    &>span {
+    & > span {
         font-size: 22px;
         font-family: $secondaryFont;
         color: #666;
@@ -28056,11 +28045,11 @@ hr {
         left: 45px;
     }
 
-    &>ul {
+    & > ul {
         margin: 0 -10px;
         height: 50%;
 
-        &>li {
+        & > li {
             padding: 10px;
             width: 40%;
             height: 100%;
@@ -28188,7 +28177,7 @@ hr {
                 overflow: hidden;
                 width: 100%;
 
-                &>div {
+                & > div {
                     height: 100%;
                     position: absolute;
                     left: 0;
@@ -28211,7 +28200,7 @@ hr {
                     width: 100%;
                     margin: 0;
 
-                    &>li {
+                    & > li {
                         height: calc(calc(100% - 20px) / 2);
                         margin-top: 20px;
 
@@ -28342,7 +28331,7 @@ hr {
 }
 
 .eventListing {
-    &>li {
+    & > li {
         border-radius: 4px;
         margin: 0;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -28414,7 +28403,7 @@ hr {
 
                 input[type='checkbox'] {
                     &:checked {
-                        &+label {
+                        & + label {
                             &:before {
                                 background-color: $primaryColor;
                             }
@@ -28518,13 +28507,13 @@ hr {
 .historyArticle {
     margin-bottom: 20px;
 
-    &>img {
+    & > img {
         float: right;
         height: 150px;
         width: auto;
     }
 
-    &>span {
+    & > span {
         display: block;
         margin-bottom: 10px;
         font-size: 14px;
@@ -28568,7 +28557,7 @@ hr {
     .selection {
         height: 50px;
 
-        &>span {
+        & > span {
             font-size: 24px;
             color: $secondaryColor;
             font-family: $secondaryFont;
@@ -28618,7 +28607,7 @@ hr {
         .formgroup {
             padding-right: 50px;
 
-            &>label {
+            & > label {
                 text-align: right;
                 font-size: 12px;
                 text-transform: uppercase;
@@ -28634,7 +28623,7 @@ hr {
                 margin: 0;
                 top: 5px;
 
-                &>label {
+                & > label {
                     position: relative;
                     width: 40px;
                     height: 24px;
@@ -28667,8 +28656,8 @@ hr {
                     }
                 }
 
-                &>input[type="checkbox"] {
-                    &:checked+label {
+                & > input[type="checkbox"] {
+                    &:checked + label {
                         background-color: $primaryColor;
 
                         &:before {
@@ -28691,7 +28680,7 @@ hr {
         position: relative;
         border-radius: 4px;
 
-        &>div {
+        & > div {
             height: 100%;
             float: left;
             position: relative;
@@ -28712,18 +28701,18 @@ hr {
         }
 
         .chartsdisplay {
-            &>ul {
+            & > ul {
                 padding-top: 10px;
                 height: 100%;
                 margin-bottom: 0;
 
-                &>li {
+                & > li {
                     margin-bottom: 10px;
                     border: 1px solid #CCC;
                     border-radius: 4px;
                     position: relative;
 
-                    &>span {
+                    & > span {
                         height: 40px;
                         background-color: #f5f6f8;
                         display: block;
@@ -28825,7 +28814,7 @@ hr {
                 }
             }
 
-            &>div {
+            & > div {
                 height: calc(100% - 160px);
                 position: relative;
 
@@ -28846,7 +28835,7 @@ hr {
                         background-color: #FFF;
                         position: relative;
 
-                        &+small {
+                        & + small {
                             display: inline-block;
                             background-color: #FFF;
                             padding: 0 10px 0 0;
@@ -28863,7 +28852,7 @@ hr {
                         min-height: 100%;
                         margin-bottom: 0;
 
-                        &>li {
+                        & > li {
                             background-color: #f3c89c;
                             border-radius: 4px;
                             padding: 5px 10px;
@@ -28874,11 +28863,11 @@ hr {
                                 width: calc(100% - 50px);
                                 margin-bottom: 0;
 
-                                &>li {
+                                & > li {
                                     float: left;
                                     width: 25%;
 
-                                    &>span {
+                                    & > span {
                                         display: block;
                                         overflow: hidden;
                                         text-overflow: ellipsis;
@@ -28896,7 +28885,7 @@ hr {
                                 }
                             }
 
-                            &>a {
+                            & > a {
                                 position: absolute;
                                 right: 10px;
                                 top: 50%;
@@ -28916,7 +28905,7 @@ hr {
             padding: 10px 10px 10px 0;
             position: relative;
 
-            &>span {
+            & > span {
                 height: 40px;
                 display: block;
                 background-color: #0b6396;
@@ -28940,7 +28929,7 @@ hr {
                     border-top: 0;
                     padding: 10px;
 
-                    &>li {
+                    & > li {
                         background-color: #f3f3f3;
                         padding: 10px;
                         border: 3px solid #000;
@@ -28952,7 +28941,7 @@ hr {
                             display: block;
                             color: #333;
 
-                            &>span {
+                            & > span {
                                 width: 70%;
                                 display: block;
                                 overflow: hidden;
@@ -28962,7 +28951,7 @@ hr {
                                 line-height: 20px;
                             }
 
-                            &>small {
+                            & > small {
                                 width: 30%;
                                 display: block;
                                 overflow: hidden;
@@ -29112,9 +29101,9 @@ hr {
         position: relative;
         border-collapse: separate;
 
-        &>thead {
-            &>tr {
-                &>th {
+        & > thead {
+            & > tr {
+                & > th {
                     background-color: $orangeColor;
                     color: #FFF;
                     border-bottom: 0;
@@ -29142,9 +29131,9 @@ hr {
             }
         }
 
-        &>tbody {
-            &>tr {
-                &>td {
+        & > tbody {
+            & > tr {
+                & > td {
                     vertical-align: middle;
                     border-top-color: $grayColor;
                     padding: 5px;
@@ -29164,13 +29153,13 @@ hr {
                 }
 
                 &:nth-of-type(even) {
-                    &>td {
+                    & > td {
                         background-color: rgba(#41474e, 0.1);
                     }
                 }
 
                 &:last-of-type {
-                    &>td {
+                    & > td {
                         border-bottom: 2px solid $orangeColor;
 
                         &:first-child {
@@ -29233,9 +29222,9 @@ hr {
                 border-color: $primaryColor;
                 border-style: solid;
 
-                &>tbody {
-                    &>tr {
-                        &>td {
+                & > tbody {
+                    & > tr {
+                        & > td {
                             border-width: 0 0 1px 1px !important;
                             border-color: $primaryColor;
                             border-radius: 0 !important;
@@ -29298,7 +29287,7 @@ hr {
     padding-top: 100%;
     position: relative;
 
-    &>svg {
+    & > svg {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -29411,7 +29400,7 @@ hr {
     z-index: 2;
 
 
-    &>div {
+    & > div {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
@@ -29486,7 +29475,7 @@ hr {
             }
         }
 
-        &>span {
+        & > span {
             float: left;
         }
 
@@ -29633,7 +29622,7 @@ hr {
                 margin: 0;
                 width: 100%;
 
-                &>li {
+                & > li {
                     display: none;
                     height: 100%;
                     position: relative;
@@ -29824,7 +29813,7 @@ hr {
                 margin-bottom: 10px;
                 padding: 10px;
 
-                &>span {
+                & > span {
                     font-size: 12px;
                     color: #494e4e;
                     text-transform: uppercase;
@@ -29930,7 +29919,7 @@ hr {
             border-radius: 4px;
             position: relative;
 
-            &>div {
+            & > div {
                 section {
                     padding: 15px;
                 }
@@ -30096,7 +30085,7 @@ hr {
                 line-height: 24px;
                 padding: 6px 0;
 
-                &>label {
+                & > label {
                     float: left;
                     height: 24px;
                     width: 42px;
@@ -30120,10 +30109,10 @@ hr {
                     }
                 }
 
-                &>input[type="checkbox"] {
+                & > input[type="checkbox"] {
                     display: none;
 
-                    &:checked+label {
+                    &:checked + label {
                         &:before {
                             left: auto;
                             right: 2px;
@@ -30170,7 +30159,7 @@ hr {
             margin-bottom: 20px;
             padding: 10px;
 
-            &>span {
+            & > span {
                 font-family: $secondaryFont;
                 color: #1f262a;
                 font-size: 18px;
@@ -30438,7 +30427,7 @@ hr {
 
                         .togglegroup {
 
-                            &>label {
+                            & > label {
                                 float: left;
                                 height: 24px;
                                 width: 42px;
@@ -30459,10 +30448,10 @@ hr {
                                 }
                             }
 
-                            &>input[type="checkbox"] {
+                            & > input[type="checkbox"] {
                                 visibility: hidden;
 
-                                &:checked+label {
+                                &:checked + label {
                                     &:before {
                                         left: auto;
                                         right: 2px;
@@ -30536,7 +30525,7 @@ hr {
                 .emojies {
                     margin: 0;
 
-                    &>li {
+                    & > li {
                         width: 20%;
                         height: 80px;
                         float: left;
@@ -30547,7 +30536,7 @@ hr {
                             display: none;
 
                             &:checked {
-                                &+label {
+                                & + label {
                                     background-color: #c4df9b;
                                     color: #6c7373;
                                 }
@@ -30645,7 +30634,7 @@ hr {
                         margin-bottom: 10px;
                     }
 
-                    &>input[type="text"] {
+                    & > input[type="text"] {
                         border: 1px solid #acb6b6;
                         border-radius: 4px;
                         height: 40px;
@@ -30691,7 +30680,6 @@ hr {
         }
     }
 }
-
 
 
 .directorDash {
@@ -30928,9 +30916,9 @@ hr {
                     }
 
                     &:nth-child(21) {
-                      a {
-                        background-image: url("../images/attendance-warning.png");
-                      }
+                        a {
+                            background-image: url("../images/attendance-warning.png");
+                        }
                     }
 
                     &:nth-child(22) {
@@ -30941,14 +30929,14 @@ hr {
 
                     &:nth-child(23) {
                         a {
-                            background-image: url("../images/accident-report.png");
+                            background-image: url("../images/key-indicator.png");
                         }
                     }
 
                     &:nth-child(24) {
-                      a {
-                        background-image: url("../images/dd-contractl.png");
-                      }
+                        a {
+                            background-image: url("../images/dd-contractl.png");
+                        }
                     }
 
                     &.active {
@@ -31071,7 +31059,7 @@ hr {
         top: 22px;
         z-index: 2;
 
-        &>li {
+        & > li {
             float: left;
             margin-left: 5px;
             position: relative;
@@ -31105,7 +31093,7 @@ hr {
                 overflow-y: visible;
                 width: 230px;
 
-                &>li {
+                & > li {
                     float: left;
                     border-top-color: transparent;
                     border-radius: 4px;
@@ -31126,7 +31114,7 @@ hr {
             }
 
             &:last-of-type {
-                &>span {
+                & > span {
                     background-image: linear-gradient(45deg, rgb(67, 234, 128) 0%, rgb(56, 248, 212) 100%);
                     padding: 0 10px 0 30px;
                     font-weight: 700;
@@ -31151,7 +31139,7 @@ hr {
 
             &:hover {
                 span {
-                    &+.drop-down-list {
+                    & + .drop-down-list {
                         visibility: visible;
                         opacity: 1;
                     }
@@ -31188,7 +31176,7 @@ hr {
                 }
             }
 
-            &>ul {
+            & > ul {
                 margin: 0;
                 width: 445px;
                 float: left;
@@ -31575,7 +31563,7 @@ hr {
                     background-color: rgba(#FFF, 0.2);
                 }
 
-                &+table {
+                & + table {
                     background-color: #FFF;
                     border-radius: 4px;
                     margin: 0 0 0 10px;
@@ -31767,7 +31755,7 @@ hr {
         vertical-align: middle;
         text-align: center;
 
-        &>section {
+        & > section {
             width: 500px;
             display: inline-block;
             background-color: #FFF;
@@ -31792,7 +31780,7 @@ hr {
                     input[type="checkbox"] {
                         display: none;
 
-                        &:checked+label {
+                        &:checked + label {
                             background-color: $primaryColor;
 
                             &:before {
@@ -31860,17 +31848,16 @@ hr {
 }
 
 
-
 .feedbackListing {
     margin: 0 0 10px 0;
     background-color: #FFF;
     border-radius: 6px;
 
-    &>ul {
+    & > ul {
         margin: 0 -5px;
         padding: 5px 10px;
 
-        &>li {
+        & > li {
             white-space: nowrap;
             float: left;
             padding: 0 5px 5px 5px;
@@ -31910,7 +31897,6 @@ hr {
                     background-color: #F0A26E;
                 }
             }
-
 
 
             &:first-child {
@@ -31963,8 +31949,8 @@ hr {
     }
 
     &.survey {
-        &>ul {
-            &>li {
+        & > ul {
+            & > li {
                 i {
                     margin-bottom: 5px;
                 }
@@ -31999,21 +31985,21 @@ hr {
     border: 0;
     padding: 9px 0;
 
-    &>input {
+    & > input {
         display: none;
 
-        &:checked~label {
+        &:checked ~ label {
             opacity: 0.6;
         }
 
-        &:checked+label:hover,
-        &:checked~label:hover,
-        &:checked~label:hover~label {
+        &:checked + label:hover,
+        &:checked ~ label:hover,
+        &:checked ~ label:hover ~ label {
             opacity: 1;
         }
     }
 
-    &>label {
+    & > label {
         float: right;
         height: 24px;
         width: 24px;
@@ -32026,11 +32012,11 @@ hr {
         padding: 3px;
 
         &:hover,
-        &:hover~label {
+        &:hover ~ label {
             opacity: 0.6;
         }
 
-        &:hover~input:checked~label {
+        &:hover ~ input:checked ~ label {
             opacity: 1;
         }
     }
@@ -32040,7 +32026,7 @@ hr {
         padding: 10px 20px;
         border-radius: 8px;
 
-        &>label {
+        & > label {
             width: 42px;
             height: 42px;
             background-size: 36px;
@@ -32050,9 +32036,9 @@ hr {
     &.print {
         padding: 2px;
 
-        &>input {
+        & > input {
 
-            &:checked~label {
+            &:checked ~ label {
                 opacity: 1;
 
                 img {
@@ -32060,14 +32046,14 @@ hr {
                 }
             }
 
-            &:checked+label:hover,
-            &:checked~label:hover,
-            &:checked~label:hover~label {
+            &:checked + label:hover,
+            &:checked ~ label:hover,
+            &:checked ~ label:hover ~ label {
                 opacity: 1;
             }
         }
 
-        &>label {
+        & > label {
             background: none;
             opacity: 1;
 
@@ -32078,11 +32064,11 @@ hr {
             }
 
             &:hover,
-            &:hover~label {
+            &:hover ~ label {
                 opacity: 1;
             }
 
-            &:hover~input:checked~label {
+            &:hover ~ input:checked ~ label {
                 opacity: 1;
             }
         }
@@ -32099,7 +32085,7 @@ hr {
         input[type="radio"] {
             display: none;
 
-            &+label {
+            & + label {
                 font-size: 16px;
                 font-family: $secondaryFont;
                 position: relative;
@@ -32129,7 +32115,7 @@ hr {
             }
 
             &:checked {
-                &+label {
+                & + label {
                     &:after {
                         display: block;
                     }
@@ -32236,7 +32222,7 @@ hr {
                 }
             }
 
-            &+section {
+            & + section {
                 height: calc(100% - 490px);
                 overflow: hidden;
                 position: relative;
@@ -32393,8 +32379,8 @@ hr {
             }
         }
 
-        &>span,
-        &>a {
+        & > span,
+        & > a {
             line-height: 30px;
             height: 30px;
             margin-bottom: 10px;
@@ -32496,7 +32482,7 @@ hr {
             width: 170px;
             padding: 2px;
 
-            &>span {
+            & > span {
                 float: left;
                 height: 14px;
                 border-radius: 7px;
@@ -32509,7 +32495,7 @@ hr {
 
         &:first-of-type {
             .percent {
-                &>span {
+                & > span {
                     background-color: #A864A8;
                 }
             }
@@ -32519,7 +32505,7 @@ hr {
             margin-bottom: 10px;
 
             .percent {
-                &>span {
+                & > span {
                     background-color: #448CCB;
                 }
             }
@@ -32568,18 +32554,23 @@ hr {
                     background-color: #e69642;
                     border: 0;
                 }
+
                 &:nth-child(2) {
                     background-color: #ace9b7;
                 }
+
                 &:nth-child(3) {
                     background-color: #78c2f0;
                 }
+
                 &:nth-child(4) {
                     background-color: #ffe48c;
                 }
+
                 &:nth-child(5) {
                     background-color: #c4bae4;
                 }
+
                 span {
                     position: relative;
                     top: 50%;
@@ -32625,7 +32616,7 @@ hr {
                 top: -46px;
 
                 .sort_alphabetically {
-                    &>span {
+                    & > span {
                         display: block;
                         font-size: 14px;
                         font-family: $secondaryFont;
@@ -32664,7 +32655,7 @@ hr {
 
                         input[type="checkbox"] {
                             &:checked {
-                                &+span {
+                                & + span {
                                     background-color: #223e4c;
 
                                     &:before {
@@ -32812,7 +32803,7 @@ hr {
                             z-index: 1;
                         }
 
-                        &>img {
+                        & > img {
                             position: absolute;
                             left: 10px;
                             height: 24px;
@@ -33456,7 +33447,7 @@ hr {
                 float: left;
                 border-bottom: 0;
 
-                &+span {
+                & + span {
                     display: block;
                     width: calc(100% - 4px);
                     text-align: center;
@@ -33488,7 +33479,7 @@ hr {
                 width: 85px;
 
                 img {
-                    &+span {
+                    & + span {
                         width: 100%;
                         margin-left: 0;
                     }
@@ -33985,7 +33976,7 @@ hr {
     margin: 0 0 20px;
     position: relative;
 
-    &>.title {
+    & > .title {
         position: absolute;
         top: 9px;
         left: 10px;
@@ -34118,7 +34109,7 @@ hr {
     .handover_residents_new {
         margin: 0;
 
-        &>li {
+        & > li {
             border-top: 1px solid #a4a9a9;
             padding-top: 10px;
             margin-bottom: 10px;
@@ -34215,11 +34206,11 @@ hr {
                 float: left;
                 width: calc(100% - 175px);
 
-                &>ul {
+                & > ul {
                     margin: 0;
                     width: 100%;
 
-                    &>li {
+                    & > li {
                         float: left;
                         width: calc(calc(60% - 30px) / 3);
                         margin-left: 10px;
@@ -34361,7 +34352,7 @@ hr {
 
                         input[type="checkBox"] {
                             &:checked {
-                                &+label {
+                                & + label {
                                     background-color: $primaryColor;
                                     background-image: url('../images/handoverNotecheckbox.png');
                                     background-position: center;
@@ -34548,7 +34539,7 @@ button.newStyle {
             .form-group {
                 min-height: 0;
 
-                &>label {
+                & > label {
                     display: block;
                     font-size: 12px;
                     text-transform: uppercase;
@@ -34604,7 +34595,7 @@ button.newStyle {
 
                     input[type=radio] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 &:after {
                                     display: block;
                                 }
@@ -34622,28 +34613,28 @@ button.newStyle {
     height: calc(100% - 50px);
     margin-bottom: 10px;
 
-    &>section,
-    &>aside {
+    & > section,
+    & > aside {
         position: absolute;
         top: 0;
         bottom: 0;
     }
 
-    &>section {
+    & > section {
         left: 0;
         width: calc(100% - 285px);
     }
 
-    &>aside {
+    & > aside {
         right: 0;
         width: 275px;
         background-color: rgba(#828787, .3);
 
         .scroll-content {
-            &>div {
+            & > div {
                 padding: 10px 15px;
 
-                &>.title {
+                & > .title {
                     color: #1f262a;
                     font-size: 16px;
                     font-family: $secondaryFont;
@@ -34701,7 +34692,7 @@ button.newStyle {
 
                         input[type="radio"] {
                             &:checked {
-                                &+label {
+                                & + label {
                                     &:after {
                                         display: block;
                                     }
@@ -34793,7 +34784,7 @@ button.newStyle {
                         display: table;
                         margin-bottom: 10px;
 
-                        &>span {
+                        & > span {
                             display: table-cell;
                             vertical-align: middle;
                             height: 40px;
@@ -34867,7 +34858,7 @@ button.newStyle {
 
                         input[type="radio"]:first-of-type {
                             &:checked {
-                                &+label {
+                                & + label {
                                     border-color: rgb(108, 195, 121);
                                     background-color: rgb(109, 199, 122);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34878,7 +34869,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(2) {
                             &:checked {
-                                &+label {
+                                & + label {
                                     border-color: rgb(97, 132, 158);
                                     background-color: rgb(100, 141, 172);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34889,7 +34880,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(3) {
                             &:checked {
-                                &+label {
+                                & + label {
                                     border-color: rgb(237, 165, 82);
                                     background-color: rgb(248, 147, 29);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -34900,7 +34891,7 @@ button.newStyle {
 
                         input[type="radio"]:nth-of-type(4) {
                             &:checked {
-                                &+label {
+                                & + label {
                                     border-color: rgb(148, 151, 151);
                                     background-color: rgb(130, 135, 135);
                                     box-shadow: inset -4.214px -4.83px 3px 0 rgba(85, 100, 109, 0.6);
@@ -35106,7 +35097,7 @@ button.newStyle {
 
         input[type="checkbox"] {
             &:checked {
-                &+.checkbox-label {
+                & + .checkbox-label {
                     background-color: #5d6a72;
 
                     &:before {
@@ -35212,7 +35203,7 @@ button.newStyle {
         }
     }
 
-    &+.graphCareRoutines {
+    & + .graphCareRoutines {
         position: absolute;
         top: 42px;
         height: calc(100% - 47px);
@@ -35252,12 +35243,12 @@ button.newStyle {
             }
 
             .tabContent {
-                &>div {
+                & > div {
                     display: none;
 
                     .table {
-                        &>thead {
-                            &>tr {
+                        & > thead {
+                            & > tr {
                                 th:first-child {
                                     border-radius: 0;
                                 }
@@ -35271,7 +35262,7 @@ button.newStyle {
 }
 
 .saveAssessment,
-.saveAssessment+a {
+.saveAssessment + a {
     background-color: $primaryColor;
     border-radius: 4px;
     padding: 2px 5px;
@@ -35333,7 +35324,7 @@ button.newStyle {
     height: calc(100% - 85px);
     margin-bottom: 10px;
 
-    &>div {
+    & > div {
         height: 100%;
         display: none;
 
@@ -35379,7 +35370,7 @@ button.newStyle {
                 margin-left: 0;
             }
 
-            &>.title {
+            & > .title {
                 font-size: 21px;
                 font-family: $secondaryFont;
                 color: rgb(66, 69, 86);
@@ -35482,14 +35473,14 @@ button.newStyle {
                 &:nth-of-type(3) {
                     background-color: rgba(#d7bfbf, 0.7);
 
-                    &>.title {
+                    & > .title {
                         &:before {
                             color: #fafafc;
                         }
                     }
                 }
 
-                &>.title {
+                & > .title {
                     font-size: 21px;
                     color: rgb(66, 69, 86);
                     text-shadow: 0.5px 0.866px 2px rgba(255, 255, 255, 0.7);
@@ -35550,7 +35541,7 @@ button.newStyle {
                 }
             }
 
-            &>a {
+            & > a {
                 display: inline-block;
                 position: absolute;
                 border-radius: 4px;
@@ -35642,10 +35633,10 @@ button.newStyle {
                 display: table;
                 width: 100%;
 
-                &>div {
+                & > div {
                     display: table-row;
 
-                    &>article {
+                    & > article {
                         border-radius: 6px;
                         height: 70px;
                         margin-top: 5px;
@@ -35836,19 +35827,19 @@ button.newStyle {
                     }
 
                     &:nth-child(odd) {
-                        &>article:nth-child(even) {
+                        & > article:nth-child(even) {
                             background-color: rgba(#223e4c, 0.4);
                         }
                     }
 
                     &:nth-child(even) {
-                        &>article:nth-child(odd) {
+                        & > article:nth-child(odd) {
                             background-color: rgba(#223e4c, 0.4);
                         }
                     }
 
                     &:last-child {
-                        &>article {
+                        & > article {
                             .moreInfo {
                                 top: auto;
                                 bottom: 0;
@@ -35870,7 +35861,7 @@ button.newStyle {
                     font-size: 14px;
                 }
 
-                &>a,
+                & > a,
                 .settings {
                     display: none;
                 }
@@ -35878,8 +35869,8 @@ button.newStyle {
                 .careProvidedList {
                     padding: 0;
 
-                    &>div {
-                        &>article {
+                    & > div {
+                        & > article {
                             width: 100%;
                             background-color: #DDD !important;
                             margin-left: 0;
@@ -36164,8 +36155,7 @@ button.newStyle {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(40, 39, 44, 0.9);
-    ;
+    background-color: rgba(40, 39, 44, 0.9);;
     z-index: 1000;
     display: none;
 
@@ -36176,7 +36166,7 @@ button.newStyle {
         text-align: center;
         width: 100%;
 
-        &>div {
+        & > div {
             height: 100%;
             overflow: hidden;
             overflow-y: auto;
@@ -36196,12 +36186,12 @@ button.newStyle {
             padding: 10px;
             vertical-align: middle;
 
-            @media (max-width:580px) {
+            @media (max-width: 580px) {
                 width: calc(100% - 60px);
                 margin-left: -40px;
             }
 
-            &>.title {
+            & > .title {
                 display: inline-block;
                 height: 50px;
                 background-color: #ffcd60;
@@ -36255,7 +36245,7 @@ button.newStyle {
                 overflow: hidden;
             }
 
-            &>a {
+            & > a {
                 height: 50px;
                 padding: 0 15px;
                 color: #FFF;
@@ -36359,7 +36349,7 @@ button.newStyle {
 
                     input[type="checkbox"] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 background-color: #3C7970;
 
                                 &:before {
@@ -36403,7 +36393,7 @@ button.newStyle {
 
                 input[type="checkbox"] {
                     &:checked {
-                        &+.checkbox {
+                        & + .checkbox {
                             background-color: #3C7970;
 
                             &:before {
@@ -36447,7 +36437,7 @@ button.newStyle {
 
                     input[type="checkbox"] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 background-color: #388cb3;
                             }
                         }
@@ -36543,14 +36533,14 @@ button.newStyle {
     z-index: 1000;
     display: table;
 
-    &>div {
+    & > div {
         display: table-cell;
         width: 100%;
         height: 100%;
         text-align: center;
         vertical-align: middle;
 
-        &>article {
+        & > article {
             display: inline-block;
             text-align: left;
             position: relative;
@@ -36745,7 +36735,7 @@ button.newStyle {
 
         input[type=checkbox] {
             &:checked {
-                &+label {
+                & + label {
                     &:after {
                         background-color: $orangeColor;
                         right: 4px;
@@ -36791,7 +36781,7 @@ button.newStyle {
 
         input[type="checkbox"] {
             &:checked {
-                &+label {
+                & + label {
                     background-color: $primaryColor;
                 }
             }
@@ -36913,7 +36903,7 @@ button.newStyle {
 
             input[type="checkbox"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #5D6A72;
 
                         &:before {
@@ -36978,7 +36968,7 @@ button.newStyle {
 
         input[type="checkbox"] {
             &:checked {
-                &+label {
+                & + label {
                     background-color: $primaryColor;
                 }
             }
@@ -37134,7 +37124,7 @@ button.newStyle {
             }
         }
 
-        &~a {
+        & ~ a {
             display: inline-block;
             color: #3d4253;
             font-size: 12px;
@@ -37360,14 +37350,14 @@ button.newStyle {
             width: 100%;
             height: 100%;
 
-            &>button {
+            & > button {
                 position: absolute;
                 left: 0;
                 top: calc(100% + 10px);
                 background-color: #ACB6B6;
             }
 
-            &>ul {
+            & > ul {
                 margin: 0;
 
                 li {
@@ -37513,7 +37503,7 @@ button.newStyle {
 
             input[type="checkbox"] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #5D6A71;
 
                         &:after {
@@ -37586,7 +37576,7 @@ button.newStyle {
     float: right;
     margin-right: 250px;
 
-    &+.dashLegends {
+    & + .dashLegends {
         position: absolute;
         right: 30px;
         padding-top: 50px;
@@ -37910,7 +37900,7 @@ button.newStyle {
         }
     }
 
-    &>p {
+    & > p {
         padding-top: 20px;
         color: #333;
 
@@ -38061,7 +38051,7 @@ button.newStyle {
             margin: 0;
             overflow: hidden;
 
-            &+.formSection {
+            & + .formSection {
                 padding-top: 20px;
             }
 
@@ -38153,7 +38143,7 @@ button.newStyle {
 
                     input[type="checkbox"] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 border-color: #82CA9C;
 
                                 &:before {
@@ -38224,7 +38214,7 @@ button.newStyle {
         }
     }
 
-    &~button {
+    & ~ button {
         border-radius: 4px;
         background-color: rgb(131, 135, 135);
         height: 36px;
@@ -38326,7 +38316,7 @@ button.newStyle {
 }
 
 input[type=checkbox].switch {
-    &+label {
+    & + label {
         position: absolute;
         height: 22px !important;
         width: 34px;
@@ -38348,7 +38338,7 @@ input[type=checkbox].switch {
     }
 
     &:checked {
-        &+label {
+        & + label {
             border-color: #34b35e;
 
             &:before {
@@ -38390,7 +38380,7 @@ input[type=checkbox].switch {
 
     input[type=radio] {
         &:checked {
-            &+label {
+            & + label {
                 background-color: #9EC5AB;
                 color: rgb(41, 69, 108);
             }
@@ -38497,12 +38487,12 @@ input[type=checkbox].switch {
             &.print {
                 height: auto;
 
-                &>div {
+                & > div {
                     height: 100%;
                 }
             }
 
-            &>div {
+            & > div {
                 height: 100px;
                 margin-top: 10px;
                 position: relative;
@@ -38708,7 +38698,7 @@ input[type=checkbox].switch {
                         width: 100%;
                         height: 100%;
 
-                        &+span {
+                        & + span {
                             display: block;
                             width: 36px;
                             text-align: center;
@@ -38716,31 +38706,31 @@ input[type=checkbox].switch {
                         }
 
                         &[src*="blue"] {
-                            &+span {
+                            & + span {
                                 color: #25ADE3;
                             }
                         }
 
                         &[src*="yellow"] {
-                            &+span {
+                            & + span {
                                 color: #F0EA1B;
                             }
                         }
 
                         &[src*="red"] {
-                            &+span {
+                            & + span {
                                 color: #EC2027;
                             }
                         }
 
                         &[src*="green"] {
-                            &+span {
+                            & + span {
                                 color: #28B250;
                             }
                         }
 
                         &[src*="purple"] {
-                            &+span {
+                            & + span {
                                 color: #9F63A8;
                             }
                         }
@@ -38775,7 +38765,7 @@ input[type=checkbox].switch {
                 &.print {
                     height: auto;
 
-                    &>div {
+                    & > div {
                         height: auto;
 
                         article {
@@ -38784,7 +38774,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>ul {
+                & > ul {
                     border-radius: 6px;
                     background-color: rgb(132, 136, 137) !important;
                     height: 50px;
@@ -38818,7 +38808,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>div {
+                & > div {
                     &:first-of-type {
                         article {
                             &:first-of-type {
@@ -38828,7 +38818,7 @@ input[type=checkbox].switch {
                             }
 
                             &:nth-of-type(3) {
-                                &>div {
+                                & > div {
                                     font-size: 16px;
                                     font-weight: 500;
                                     color: #828787;
@@ -38873,7 +38863,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>ul {
+                & > ul {
                     border-radius: 6px;
                     background-color: rgb(132, 136, 137) !important;
                     height: 50px;
@@ -38910,7 +38900,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>article {
+                & > article {
                     height: 50px;
                     border-radius: 6px;
                     padding: 5px 10px 0 10px;
@@ -38921,7 +38911,7 @@ input[type=checkbox].switch {
                     background-color: #EEE !important;
                     text-align: center;
 
-                    &>div {
+                    & > div {
                         font-size: 14px;
                     }
                 }
@@ -38929,7 +38919,7 @@ input[type=checkbox].switch {
                 .allalerts {
                     width: 100%;
 
-                    &>div {
+                    & > div {
                         article {
                             width: calc((100% - 10px) / 2);
                         }
@@ -38962,7 +38952,7 @@ input[type=checkbox].switch {
                 width: calc(100% - 125px);
                 height: 115px;
 
-                &>ul {
+                & > ul {
                     height: 30px;
                     padding: 0 10px;
                     margin: 0 0 5px 0;
@@ -38977,7 +38967,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>div {
+                & > div {
                     height: 80px;
 
                     article {
@@ -39022,7 +39012,7 @@ input[type=checkbox].switch {
                         &:first-of-type {
                             width: calc(30% - 30px);
 
-                            &>div {
+                            & > div {
                                 float: left;
                                 width: calc(100% / 3);
                                 color: #848889;
@@ -39033,7 +39023,7 @@ input[type=checkbox].switch {
                             width: 20%;
                             background-color: #a7b8c6;
 
-                            &>div {
+                            & > div {
                                 color: #3d4253;
                             }
                         }
@@ -39042,7 +39032,7 @@ input[type=checkbox].switch {
                             width: 25%;
                             background-color: rgba(#3d4253, 0.6);
 
-                            &>div {
+                            & > div {
                                 color: #FFF !important;
                                 text-shadow: 0.766px 0.643px 1px rgba(61, 66, 83, 0.7) !important;
                             }
@@ -39052,7 +39042,7 @@ input[type=checkbox].switch {
                             width: 25%;
                             background-color: rgba(#848889, 0.7);
 
-                            &>div {
+                            & > div {
                                 color: #FFF !important;
                                 text-shadow: 0.766px 0.643px 1px rgba(61, 66, 83, 0.7) !important;
                             }
@@ -39072,7 +39062,7 @@ input[type=checkbox].switch {
             .allalerts {
                 height: 270px;
 
-                &>div {
+                & > div {
                     height: 235px;
 
                     article {
@@ -39170,7 +39160,7 @@ input[type=checkbox].switch {
                     width: calc(100% - 60px);
                     height: auto;
 
-                    &>div {
+                    & > div {
                         height: auto;
 
                         article {
@@ -39216,8 +39206,8 @@ input[type=checkbox].switch {
         width: 100%;
 
         .listContainer {
-            &>ul {
-                &>li {
+            & > ul {
+                & > li {
                     width: calc(100% / 5);
 
                     &:nth-child(-n + 5) {
@@ -39231,10 +39221,10 @@ input[type=checkbox].switch {
     .listContainer {
         margin-right: 20px;
 
-        &>ul {
+        & > ul {
             margin: 0 -5px;
 
-            &>li {
+            & > li {
                 padding: 0 5px;
                 float: left;
                 width: calc(100% / 4);
@@ -39352,7 +39342,7 @@ input[type=checkbox].switch {
                         line-height: 22px;
                         padding: 0 5px;
 
-                        @media screen and (max-width:1600px) {
+                        @media screen and (max-width: 1600px) {
                             font-size: 9px;
                         }
                     }
@@ -39800,19 +39790,19 @@ input[type=checkbox].switch {
     top: 0;
     display: none;
 
-    &>div {
+    & > div {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
         padding: 20px 0;
         height: 100vh;
 
-        &>section {
+        & > section {
             overflow: hidden;
             overflow-y: auto;
             height: 100%;
 
-            &>article {
+            & > article {
                 border-radius: 6px;
                 background-color: #FFF;
                 padding: 10px;
@@ -39837,7 +39827,7 @@ input[type=checkbox].switch {
                     cursor: pointer;
                 }
 
-                &>.title {
+                & > .title {
                     display: block;
                     background-color: #FFCD60;
                     border-radius: 4px;
@@ -40013,7 +40003,7 @@ input[type=checkbox].switch {
                                     width: auto;
 
                                     .scrollArea {
-                                        &>article {
+                                        & > article {
                                             padding-right: 20px;
                                         }
                                     }
@@ -40077,7 +40067,7 @@ input[type=checkbox].switch {
                         }
 
                         input[type=checkbox] {
-                            &+label {
+                            & + label {
                                 border-width: 2px;
                                 border-color: rgb(161, 173, 176);
                                 border-style: solid;
@@ -40103,7 +40093,7 @@ input[type=checkbox].switch {
                             }
 
                             &:checked {
-                                &+label {
+                                & + label {
                                     border-color: $primaryColor;
 
                                     &:before {
@@ -40250,7 +40240,7 @@ input[type=checkbox].switch {
 
                         input[type=checkbox] {
                             &:checked {
-                                &+label {
+                                & + label {
                                     &:before {
                                         background-image: url('../images/employeeSelect.png');
                                         background-size: 12px;
@@ -40273,7 +40263,7 @@ input[type=checkbox].switch {
                     }
                 }
 
-                &>img {
+                & > img {
                     width: 100%;
                     margin-bottom: 20px;
                 }
@@ -40298,14 +40288,14 @@ input[type=checkbox].switch {
         padding-top: 10px;
         margin-bottom: 0;
 
-        &>li {
+        & > li {
             float: left;
             margin: 0 10px 10px 0;
             border-radius: 19px;
             border: 2px solid #DDD;
             overflow: hidden;
 
-            &>span {
+            & > span {
                 height: 34px;
                 display: block;
                 padding: 5px 10px 5px 44px;
@@ -40338,7 +40328,7 @@ input[type=checkbox].switch {
             }
 
             &.active {
-                &>span {
+                & > span {
                     &:before {
                         display: block;
                     }
@@ -40352,7 +40342,7 @@ input[type=checkbox].switch {
             }
 
             &.new {
-                &>span {
+                & > span {
                     animation: blink-animation 1s steps(5, start) infinite;
                 }
             }
@@ -40395,7 +40385,7 @@ input[type=checkbox].switch {
                 border-bottom: 0;
                 border-radius: 4px 4px 0 0;
 
-                &+span {
+                & + span {
                     display: block;
                     text-align: center;
                     font-size: 12px;
@@ -40529,7 +40519,7 @@ input[type=checkbox].switch {
 
         input[type=radio] {
             &:checked {
-                &+label {
+                & + label {
                     border-color: #FFCC60;
                     background-color: #FFCC60;
                 }
@@ -40582,7 +40572,7 @@ input[type=checkbox].switch {
 
         input[type=checkbox] {
             &:checked {
-                &+label {
+                & + label {
                     &:before {
                         background-color: $primaryColor;
                     }
@@ -40612,10 +40602,10 @@ input[type=checkbox].switch {
                 padding-right: 20px;
                 overflow: hidden;
 
-                &>ul {
+                & > ul {
                     margin: 0 -5px;
 
-                    &>li {
+                    & > li {
                         float: left;
                         width: calc(calc(100% - 10px) / 2);
                         margin-bottom: 10px;
@@ -40672,7 +40662,7 @@ input[type=checkbox].switch {
                                         position: relative;
                                         border-radius: 2px;
 
-                                        &>span {
+                                        & > span {
                                             color: #1C3C4B;
                                             padding: 0 0 0 5px;
                                             margin: 0;
@@ -40773,7 +40763,7 @@ input[type=checkbox].switch {
 
             input[type=checkbox] {
                 &:checked {
-                    &+label {
+                    & + label {
                         &:before {
                             background-color: rgb(63, 66, 83);
                         }
@@ -40795,11 +40785,11 @@ input[type=checkbox].switch {
             bottom: 10px;
 
             .scrollArea {
-                &>ul {
+                & > ul {
                     margin: 0;
                     padding-right: 20px;
 
-                    &>li {
+                    & > li {
                         margin-top: 5px;
                         border-width: 1px;
                         border-color: rgb(105, 121, 121);
@@ -40873,7 +40863,7 @@ input[type=checkbox].switch {
                             visibility: hidden;
                             width: calc(100% - 220px);
 
-                            &>li {
+                            & > li {
                                 float: left;
                                 width: calc(calc(100% - 10px) / 2);
                                 margin-top: 10px;
@@ -40928,7 +40918,7 @@ input[type=checkbox].switch {
 
                                         input[type=radio] {
                                             &:checked {
-                                                &+label {
+                                                & + label {
                                                     border-width: 1px;
                                                     border-color: rgb(220, 222, 222);
                                                     border-style: solid;
@@ -40957,54 +40947,54 @@ input[type=checkbox].switch {
     }
 }
 
-  .employeeInfo {
+.employeeInfo {
     height: 100%;
     padding-right: 15px;
 
     .detailHeading {
-      font-size: 14px;
-      background-color: #FFCD60;
-      height: 24px;
-      width: 100%;
-      display: block;
-      margin: 0 0 10px 0;
-      font-family: $poppins;
-      color: #404455;
-      line-height: 22px;
-      padding-left: 5px;
-      font-weight: 400;
-      border-radius: 6px;
+        font-size: 14px;
+        background-color: #FFCD60;
+        height: 24px;
+        width: 100%;
+        display: block;
+        margin: 0 0 10px 0;
+        font-family: $poppins;
+        color: #404455;
+        line-height: 22px;
+        padding-left: 5px;
+        font-weight: 400;
+        border-radius: 6px;
     }
 
     .detailViews {
-      width: 100%;
+        width: 100%;
 
-      span {
-        width: calc((100% - 40px) / 5);
-        height: 42px;
-        background-color: #FFFFFF;
-        border: 1px dashed #C6D2D6;
-        margin-right: 10px;
-        float: left;
-        padding: 8px;
-        font-family: $poppins;
-        font-size: 12px;
-        color: #ADAFB4;
-        margin-bottom: 10px;
-        line-height: 18px;
+        span {
+            width: calc((100% - 40px) / 5);
+            height: 42px;
+            background-color: #FFFFFF;
+            border: 1px dashed #C6D2D6;
+            margin-right: 10px;
+            float: left;
+            padding: 8px;
+            font-family: $poppins;
+            font-size: 12px;
+            color: #ADAFB4;
+            margin-bottom: 10px;
+            line-height: 18px;
 
-        &:nth-of-type(5n+5){
-          margin-right:0;
+            &:nth-of-type(5n+5) {
+                margin-right: 0;
+            }
         }
-      }
     }
-  }
+}
 
 .employeeList {
     margin: 0 -5px;
     padding-right: 20px;
 
-    &>li {
+    & > li {
         padding: 0 5px;
         float: left;
         width: calc(100% / 5);
@@ -41015,7 +41005,7 @@ input[type=checkbox].switch {
             margin-top: 0;
         }
 
-        &>label {
+        & > label {
             border-width: 2px;
             border-color: rgb(250, 250, 252);
             border-style: solid;
@@ -41063,7 +41053,7 @@ input[type=checkbox].switch {
 
         input[type=checkbox] {
             &:checked {
-                &+label {
+                & + label {
                     &:after {
                         display: block;
                     }
@@ -41136,7 +41126,7 @@ input[type=checkbox].switch {
                 display: grid;
                 place-items: center;
                 background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-                    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+                conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: calc(var(--size) / 5);
                 color: var(--fg);
@@ -41371,7 +41361,7 @@ input[type=checkbox].switch {
 
         input[type="checkbox"] {
             &:checked {
-                &+label {
+                & + label {
                     background-color: $primaryColor;
                 }
             }
@@ -41530,7 +41520,7 @@ input[type=checkbox].switch {
         }
     }
 
-    &>.selection {
+    & > .selection {
         margin-top: 5px;
         padding: 5px;
         border-radius: 4px;
@@ -41666,13 +41656,13 @@ input[type=checkbox].switch {
                     background-color: #F78B8B;
 
                     .scrollArea {
-                        &>article {
+                        & > article {
                             padding: 5px 20px 5px 5px;
                             color: #3F4253;
                         }
                     }
 
-                    &>.scroll-element {
+                    & > .scroll-element {
                         .scroll-bar {
                             background-color: #FFF;
                         }
@@ -41686,7 +41676,7 @@ input[type=checkbox].switch {
                 }
 
                 input[type=checkbox] {
-                    &+label {
+                    & + label {
                         border-width: 2px;
                         border-color: rgb(161, 173, 176);
                         border-style: solid;
@@ -41712,7 +41702,7 @@ input[type=checkbox].switch {
                     }
 
                     &:checked {
-                        &+label {
+                        & + label {
                             border-color: $primaryColor;
 
                             &:before {
@@ -41793,19 +41783,19 @@ input[type=checkbox].switch {
             }
 
             &.col3 {
-                &>li {
+                & > li {
                     width: calc(100% / 3);
                 }
             }
 
             &.col2 {
-                &>li {
+                & > li {
                     width: 50%;
                 }
             }
 
             &.col4 {
-                &>li {
+                & > li {
                     width: calc(100% / 4);
                 }
             }
@@ -41837,7 +41827,7 @@ input[type=checkbox].switch {
         .informedSection {
             padding: 10px 20px 10px 10px;
 
-            &>.title {
+            & > .title {
                 font-size: 18px;
                 font-family: $secondaryFont;
                 color: rgb(28, 60, 75);
@@ -41901,7 +41891,7 @@ input[type=checkbox].switch {
 
                         input[type=radio] {
                             &:checked {
-                                &+label {
+                                & + label {
                                     background-color: #6dc77a;
                                     color: #FFF;
                                 }
@@ -41943,7 +41933,7 @@ input[type=checkbox].switch {
                 width: 100%;
             }
 
-            &>.title {
+            & > .title {
                 border-radius: 4px;
                 padding: 2px 5px;
                 float: left;
@@ -42021,8 +42011,8 @@ input[type=checkbox].switch {
     margin-top: 30px;
     position: relative;
 
-    &>input[type=checkbox] {
-        &+label {
+    & > input[type=checkbox] {
+        & + label {
             display: inline-block;
             background-color: #FFF;
             font-size: 16px;
@@ -42065,7 +42055,7 @@ input[type=checkbox].switch {
         }
 
         &:checked {
-            &+label {
+            & + label {
                 &:before {
                     background-color: #FECC60;
                     left: 14px;
@@ -42076,7 +42066,7 @@ input[type=checkbox].switch {
                 }
             }
 
-            &~.injuryUlcerMgmt {
+            & ~ .injuryUlcerMgmt {
                 display: block;
             }
         }
@@ -42184,7 +42174,7 @@ input[type=checkbox].switch {
                 }
 
                 input[type=checkbox] {
-                    &+label {
+                    & + label {
                         border-width: 2px;
                         border-color: rgb(161, 173, 176);
                         border-style: solid;
@@ -42210,7 +42200,7 @@ input[type=checkbox].switch {
                     }
 
                     &:checked {
-                        &+label {
+                        & + label {
                             border-color: $primaryColor;
 
                             &:before {
@@ -42284,7 +42274,7 @@ input[type=checkbox].switch {
             width: auto;
 
             .scrollArea {
-                &>article {
+                & > article {
                     padding-right: 20px;
                 }
             }
@@ -42399,7 +42389,7 @@ input[type=checkbox].switch {
                         font-weight: 500;
                         visibility: hidden;
                         opacity: 0;
-                       
+
 
                         .scroll-wrapper {
                             left: 10px;
@@ -42407,10 +42397,10 @@ input[type=checkbox].switch {
                             top: 5px;
                             bottom: 5px;
                             width: auto;
-                           
+
 
                             .scrollArea {
-                                &>article {
+                                & > article {
                                     padding-right: 20px;
                                 }
                             }
@@ -42525,7 +42515,7 @@ input[type=checkbox].switch {
     line-height: 24px;
     padding-right: 10px;
 
-    &>span {
+    & > span {
         display: inline-block;
         padding-left: 30px;
 
@@ -42902,20 +42892,20 @@ input[type=checkbox].switch {
             }
 
             &.extended {
-               .weeks {
-                   li {
-                       width: calc((100% / 30) * 7);
+                .weeks {
+                    li {
+                        width: calc((100% / 30) * 7);
 
-                       &:last-child {
-                           width: calc((100% / 30) * 2);
-                       }
+                        &:last-child {
+                            width: calc((100% / 30) * 2);
+                        }
 
-                       span {
-                           font-size: 10px;
-                           font-weight: 500;
-                       }
-                   }
-               }
+                        span {
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                }
 
                 .days {
                     li {
@@ -42958,7 +42948,7 @@ input[type=checkbox].switch {
     .profileInfo {
         text-align: right;
 
-        &>span {
+        & > span {
             background-image: url('../images/thisIsMeProfileInfo.png') !important;
             height: 90px;
             width: 413px;
@@ -43148,7 +43138,7 @@ input[type=checkbox].switch {
                 left: 50%;
                 transform: translatex(-50%);
 
-                &>span {
+                & > span {
                     height: 78px;
                     width: 330px;
                     background-size: contain;
@@ -43281,7 +43271,7 @@ input[type=checkbox].switch {
         }
     }
 
-    &>ul {
+    & > ul {
         margin: 0 -5px;
 
         li {
@@ -43394,7 +43384,7 @@ input[type=checkbox].switch {
             overflow: hidden;
         }
 
-        &>.title {
+        & > .title {
             display: block;
             font-size: 12px;
             color: #223E4C;
@@ -43456,7 +43446,7 @@ input[type=checkbox].switch {
 
                 input[type=checkbox] {
                     &:checked {
-                        &+label {
+                        & + label {
                             &:before {
                                 background-color: #3F4454;
                                 border: 0;
@@ -43482,7 +43472,7 @@ input[type=checkbox].switch {
 
                 input[type=checkbox] {
                     &:checked {
-                        &+label {
+                        & + label {
                             background-color: $primaryColor;
                             color: #1C3C4B;
                         }
@@ -43637,7 +43627,7 @@ input[type=checkbox].switch {
                     width: 100%;
                 }
 
-                &>ul {
+                & > ul {
                     margin: 0;
                     padding: 10px;
                     border: 2px solid #e9ebef;
@@ -43645,7 +43635,7 @@ input[type=checkbox].switch {
                     float: left;
                     width: 100%;
 
-                    &>li {
+                    & > li {
                         margin: 0 0 10px 0;
                         width: 100%;
                         min-height: auto;
@@ -43713,7 +43703,7 @@ input[type=checkbox].switch {
     padding: 10px;
     margin-top: 30px;
 
-    &>.title {
+    & > .title {
         font-weight: 500;
         font-size: 18px;
         color: #3d4253;
@@ -43738,7 +43728,7 @@ input[type=checkbox].switch {
             overflow: hidden;
         }
 
-        &>.title {
+        & > .title {
             display: block;
             font-size: 12px;
             color: #223E4C;
@@ -43775,9 +43765,9 @@ input[type=checkbox].switch {
                 cursor: pointer;
             }
 
-            &>input[type=checkbox] {
+            & > input[type=checkbox] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: #3F4454;
                         border: 0;
                         background-image: url('../images/permissionTick.png');
@@ -43805,7 +43795,7 @@ input[type=checkbox].switch {
 
             input[type=checkbox] {
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: $primaryColor;
                     }
                 }
@@ -43817,8 +43807,8 @@ input[type=checkbox].switch {
 .newForm {
     display: block;
 
-    &>.title,
-    &>div>.title {
+    & > .title,
+    & > div > .title {
         display: block;
         font-size: 14px;
         color: #223E4C;
@@ -43831,7 +43821,7 @@ input[type=checkbox].switch {
         position: relative;
 
         input[type=checkbox] {
-            &+label {
+            & + label {
                 border-width: 6px;
                 border-color: #FFF;
                 border-style: solid;
@@ -43858,7 +43848,7 @@ input[type=checkbox].switch {
             }
 
             &:checked {
-                &+label {
+                & + label {
                     background-color: $primaryColor;
 
                     &:before {
@@ -43980,7 +43970,7 @@ input[type=checkbox].switch {
             input[type=email],
             input[type=password],
             input[type=number],
-            input[type=date]{
+            input[type=date] {
                 border-width: 1px;
                 border-color: rgba(161, 173, 176, .8);
                 border-style: solid;
@@ -44053,7 +44043,7 @@ input[type=checkbox].switch {
             }
 
             input[type=checkbox] {
-                &+label {
+                & + label {
                     border-width: 2px;
                     border-color: rgb(161, 173, 176);
                     border-style: solid;
@@ -44079,7 +44069,7 @@ input[type=checkbox].switch {
                 }
 
                 &:checked {
-                    &+label {
+                    & + label {
                         border-color: $primaryColor;
 
                         &:before {
@@ -44273,7 +44263,7 @@ input[type=checkbox].switch {
                 }
             }
 
-            &>button {
+            & > button {
                 border-radius: 4px;
                 background-color: rgba(130, 135, 135, 0.8);
                 box-shadow: 0 0 4px 0 rgba(63, 66, 83, 0.1);
@@ -44293,7 +44283,7 @@ input[type=checkbox].switch {
             input[type=file] {
                 display: none;
 
-                &+label {
+                & + label {
                     display: inline-block;
                     border-radius: 4px;
                     height: 34px;
@@ -44315,7 +44305,7 @@ input[type=checkbox].switch {
             &.sova {
                 input[type=checkbox] {
                     &:checked {
-                        &+label {
+                        & + label {
                             border-color: #CB0000;
 
                             &:before {
@@ -44328,25 +44318,25 @@ input[type=checkbox].switch {
         }
 
         &.col3 {
-            &>li {
+            & > li {
                 width: calc(100% / 3);
             }
         }
 
         &.col2 {
-            &>li {
+            & > li {
                 width: 50%;
             }
         }
 
         &.col4 {
-            &>li {
+            & > li {
                 width: calc(100% / 4);
             }
         }
 
         &.col5 {
-            &>li {
+            & > li {
                 width: calc(100% / 5);
             }
         }
@@ -44358,8 +44348,8 @@ input[type=checkbox].switch {
         padding: 5px 5px 0 5px;
         position: relative;
 
-        &>.title,
-        &>div>.title {
+        & > .title,
+        & > div > .title {
             font-size: 14px;
             font-family: $secondaryFont;
             color: rgb(61, 66, 83);
@@ -44570,7 +44560,7 @@ input[type=checkbox].switch {
                 }
             }
 
-            &>p {
+            & > p {
                 font-size: 12px;
                 font-family: $secondaryFont;
                 color: #828787;
@@ -44618,7 +44608,7 @@ input[type=checkbox].switch {
                 position: relative;
                 margin-top: 30px;
 
-                &>span {
+                & > span {
                     float: left;
                     line-height: 22px;
                     text-align: center;
@@ -44757,7 +44747,7 @@ input[type=checkbox].switch {
         article {
             padding-right: 20px;
 
-            &>.title {
+            & > .title {
                 display: block;
                 font-size: 14px;
                 color: #223E4C;
@@ -44801,7 +44791,7 @@ input[type=checkbox].switch {
             border-radius: 4px;
             padding: 5px;
 
-            &>.title {
+            & > .title {
                 display: block;
                 font-size: 14px;
                 color: #223E4C;
@@ -44886,7 +44876,7 @@ input[type=checkbox].switch {
 
             }
 
-            &>span {
+            & > span {
                 float: left;
                 line-height: 22px;
                 text-align: center;
@@ -45009,7 +44999,7 @@ input[type=checkbox].switch {
     padding-right: 20px;
     position: relative;
 
-    &>article {
+    & > article {
         border-top: 2px solid rgb(172, 182, 182);
         margin-top: 4px;
         padding-top: 10px;
@@ -45075,7 +45065,7 @@ input[type=checkbox].switch {
     }
 
     &.all {
-        &>article {
+        & > article {
             padding: 10px;
             border-width: 2px;
             border-color: rgb(130, 135, 135);
@@ -45145,7 +45135,7 @@ input[type=checkbox].switch {
     padding-right: 20px !important;
 
 
-    &>.title {
+    & > .title {
         border-radius: 4px;
         background-color: rgb(255, 205, 96);
         line-height: 24px;
@@ -45164,11 +45154,11 @@ input[type=checkbox].switch {
         background-color: #FFF;
         margin: 0 0 5px 0;
 
-        &>ul {
+        & > ul {
             margin: 0 -5px;
             position: relative;
 
-            &>li {
+            & > li {
                 float: left;
                 font-size: 18px;
                 color: #5d6a72;
@@ -45211,7 +45201,7 @@ input[type=checkbox].switch {
                     background-color: #18D984;
                     display: block;
                     border-radius: 8px;
-                    margin-bottom:3px;
+                    margin-bottom: 3px;
 
                     &.helpTip {
                         .tTText {
@@ -45224,55 +45214,54 @@ input[type=checkbox].switch {
                             box-shadow: 2px 2px 0 #404455;
                             border: 1px solid #E4E4E4;
                             color: #000;
-                            position:fixed;
-                            transform:translate(5px, 5px);
+                            position: fixed;
+                            transform: translate(5px, 5px);
                             z-index: 10;
 
 
-                            .puBox{
+                            .puBox {
                                 margin: 0;
                                 padding: 0 20px 0 0;
 
-                                 &>li{
-                                     list-style: none;
-                                     margin: 0;
-                                     height: 30px;
-                                     border-bottom: 1px solid #F5F5F5;
-                                     line-height: 30px;
+                                & > li {
+                                    list-style: none;
+                                    margin: 0;
+                                    height: 30px;
+                                    border-bottom: 1px solid #F5F5F5;
+                                    line-height: 30px;
 
-                                     span{
-                                         color: #404455;
-                                         font-weight: 700;
-                                         font-style: normal;
+                                    span {
+                                        color: #404455;
+                                        font-weight: 700;
+                                        font-style: normal;
 
-                                         small{
-                                             font-size: 12px;
-                                             color: #F06C6C;
-                                             background-color: #fff;
-                                             padding-left: 0;
+                                        small {
+                                            font-size: 12px;
+                                            color: #F06C6C;
+                                            background-color: #fff;
+                                            padding-left: 0;
 
-                                         }
-                                     }
+                                        }
+                                    }
 
-                                     i{
-                                         float: right;
-                                         font-style: normal;
-                                         color: #7B8B92;
-                                     }
-                                 }
-                             }
+                                    i {
+                                        float: right;
+                                        font-style: normal;
+                                        color: #7B8B92;
+                                    }
+                                }
+                            }
 
 
-
-                }
-            }
+                        }
+                    }
                 }
 
                 &:last-child {
                     .greendot {
                         &.helpTip {
                             .tTText {
-                                transform:translate(-95%, 5px);
+                                transform: translate(-95%, 5px);
                             }
                         }
 
@@ -45499,15 +45488,15 @@ input[type=checkbox].switch {
                 position: relative;
                 padding-left: 65px;
 
-                &>li {
+                & > li {
                     &:first-child {
                         position: absolute;
                         width: 50px;
-                        left:0;
+                        left: 0;
                         top: 50%;
                         transform: translateY(-50%);
 
-                        &>label {
+                        & > label {
                             height: 18px;
                             width: 18px;
                             border-radius: 4px;
@@ -45519,7 +45508,7 @@ input[type=checkbox].switch {
 
                         input[type="checkBox"] {
                             &:checked {
-                                &+label {
+                                & + label {
                                     background-color: $primaryColor;
                                     background-image: url('../images/handoverNotecheckbox.png');
                                     background-position: center;
@@ -45530,132 +45519,132 @@ input[type=checkbox].switch {
                         }
                     }
 
-                  & > li {
-                    &:first-child {
-                      left: 65px;
+                    & > li {
+                        &:first-child {
+                            left: 65px;
+                        }
                     }
-                  }
                 }
             }
 
-            &.statusChanges{
-              margin-left:25px;
+            &.statusChanges {
+                margin-left: 25px;
             }
         }
 
-      & > .employeeStats{
-        width: 100%;
-        margin:auto 0;
-
-        .scrollArea {
-          left: 0;
-          top: 0;
-        }
-
-        &>li{
-          width: calc((100% - 60px) / 5);
-          padding:10px;
-          background-color: #FFFFFF;
-          position: relative;
-          margin-left: 10px;
-          float:left;
-          border: 1px solid #C9D3D6;
-          border-radius: 6px;
-          cursor: pointer;
-
-          &:before {
-            width: 93px;
-            height:93px;
-            display: block;
-            content: "";
-            position: absolute;
-            bottom: 5px;
-            background-image: url("../images/Group 2.png");
-            background-repeat: no-repeat;
-            background-size: 55px;
-            border-radius: 4px;
-            border:1px solid #EDF2F4;
-            padding: 9px 19px;
-            background-position: center;
-          }
-
-          .percentageBar{
+        & > .employeeStats {
             width: 100%;
-            background-color: #EDF2F4;
-            float: left;
-            border-radius: 4px;
-            font-family:"Poppins", sans-serif;
-            height:24px;
-            margin-bottom: 10px;
+            margin: auto 0;
 
-            &>i{
-              float: left;
-              background-color: #FFA500;
-              width: 50%;
-              text-decoration:none;
-              border-radius: 4px;
-              font-size: 12px;
-              padding: 5px 0;
-              text-align: center;
-              box-shadow: 0 0 4px 0 rgb(2 2 4 / 20%);
-              font-family: $poppins;
-              margin: 2px 0 2px 2px;
-              height: 20px;
-              line-height: 10px;
+            .scrollArea {
+                left: 0;
+                top: 0;
             }
-          }
 
-          .empNames{
-            float: left;
-            padding-left: 116px;
-            font-size: 16px;
-            color: #404455;
-            line-height: 25px;
-            font-family: $poppins;
+            & > li {
+                width: calc((100% - 60px) / 5);
+                padding: 10px;
+                background-color: #FFFFFF;
+                position: relative;
+                margin-left: 10px;
+                float: left;
+                border: 1px solid #C9D3D6;
+                border-radius: 6px;
+                cursor: pointer;
 
-            .smallName{
-              text-align: left;
-              color: #004E89;
-              font-size: 12px;
-              display: block;
-              width:100%;
-              margin-bottom: 34px;
+                &:before {
+                    width: 93px;
+                    height: 93px;
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    bottom: 5px;
+                    background-image: url("../images/Group 2.png");
+                    background-repeat: no-repeat;
+                    background-size: 55px;
+                    border-radius: 4px;
+                    border: 1px solid #EDF2F4;
+                    padding: 9px 19px;
+                    background-position: center;
+                }
 
+                .percentageBar {
+                    width: 100%;
+                    background-color: #EDF2F4;
+                    float: left;
+                    border-radius: 4px;
+                    font-family: "Poppins", sans-serif;
+                    height: 24px;
+                    margin-bottom: 10px;
+
+                    & > i {
+                        float: left;
+                        background-color: #FFA500;
+                        width: 50%;
+                        text-decoration: none;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        padding: 5px 0;
+                        text-align: center;
+                        box-shadow: 0 0 4px 0 rgb(2 2 4 / 20%);
+                        font-family: $poppins;
+                        margin: 2px 0 2px 2px;
+                        height: 20px;
+                        line-height: 10px;
+                    }
+                }
+
+                .empNames {
+                    float: left;
+                    padding-left: 116px;
+                    font-size: 16px;
+                    color: #404455;
+                    line-height: 25px;
+                    font-family: $poppins;
+
+                    .smallName {
+                        text-align: left;
+                        color: #004E89;
+                        font-size: 12px;
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 34px;
+
+                    }
+                }
             }
-          }
         }
-      }
 
-      &.statSummary{
-        height: 100%;
+        &.statSummary {
+            height: 100%;
 
-          &>li{
-            width:calc((100% - 40px) / 5 );
-            background-color: #fff;
+            & > li {
+                width: calc((100% - 40px) / 5);
+                background-color: #fff;
 
-            &> input[type=text]{
-              width: 100%;
+                & > input[type=text] {
+                    width: 100%;
+                }
             }
-          }
         }
 
 
         .infoStatus {
-          text-orientation: mixed;
-          font-size: 12px;
-          color: #fff;
-          line-height: 26px;
-          padding: 0 5px;
-          text-align: center;
-          transform: rotate(270deg);
-          position: absolute;
-          top: 30px;
-          left: -28px;
-          border-radius: 5px 8px 0 0;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          background-color: $secondaryColor;
+            text-orientation: mixed;
+            font-size: 12px;
+            color: #fff;
+            line-height: 26px;
+            padding: 0 5px;
+            text-align: center;
+            transform: rotate(270deg);
+            position: absolute;
+            top: 30px;
+            left: -28px;
+            border-radius: 5px 8px 0 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: $secondaryColor;
         }
 
         .extraInfoList {
@@ -45669,41 +45658,41 @@ input[type=checkbox].switch {
             display: none;
 
             li {
-            float: left;
-            font-size: 18px;
-            color: #FFF;
-            font-family: $secondaryFont;
-            padding: 0 5px;
-            display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            .title {
-                font-size: 12px;
-                color: #F5F5F5;
-                text-transform: uppercase;
-                font-family: $primaryFont;
+                float: left;
+                font-size: 18px;
+                color: #FFF;
+                font-family: $secondaryFont;
+                padding: 0 5px;
                 display: block;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
 
-                &.dot {
-                    position: relative;
+                .title {
+                    font-size: 12px;
+                    color: #F5F5F5;
+                    text-transform: uppercase;
+                    font-family: $primaryFont;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
-                    &:after {
-                        position: absolute;
-                        width: 10px;
-                        height: 10px;
-                        background-color: #F06C6C;
-                        border-radius: 5px;
-                        content: "";
-                        transform: translateX(5px);
+                    &.dot {
+                        position: relative;
+
+                        &:after {
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #F06C6C;
+                            border-radius: 5px;
+                            content: "";
+                            transform: translateX(5px);
+                        }
                     }
-                }
 
-            }
+                }
             }
         }
 
@@ -45719,7 +45708,7 @@ input[type=checkbox].switch {
             background-color: rgba(#828787, 0.1);
             padding: 5px;
 
-            &>.title {
+            & > .title {
                 border-radius: 4px;
                 background-color: rgb(131, 147, 202);
                 line-height: 18px;
@@ -45834,7 +45823,7 @@ input[type=checkbox].switch {
                 overflow: hidden;
                 padding: 10px;
 
-                &>li {
+                & > li {
                     float: left;
                     font-size: 18px;
                     color: #093d59;
@@ -45960,7 +45949,6 @@ input[type=checkbox].switch {
 }
 
 
-
 .surveyQuestions {
     padding: 0 0 0 30px;
     position: relative;
@@ -45972,7 +45960,7 @@ input[type=checkbox].switch {
         margin-top: 0;
     }
 
-    &>label {
+    & > label {
         border-width: 2px;
         border-color: rgb(172, 182, 182);
         border-style: solid;
@@ -45989,13 +45977,13 @@ input[type=checkbox].switch {
         background-size: 14px;
     }
 
-    &>input[type=checkbox] {
-        &+label {
+    & > input[type=checkbox] {
+        & + label {
             background-color: $primaryColor;
         }
     }
 
-    &>ul {
+    & > ul {
         margin-bottom: 10px;
 
         li {
@@ -46074,7 +46062,7 @@ input[type=checkbox].switch {
             }
         }
 
-        &>button {
+        & > button {
             position: absolute;
             right: 10px;
             bottom: 10px;
@@ -46161,51 +46149,51 @@ input[type=checkbox].switch {
                 }
 
                 .fiveStar {
-                    &+label {
+                    & + label {
                         background-position: 0 0;
                     }
 
-                    &:checked+label {
+                    &:checked + label {
                         background-position: 0 -24px;
                     }
                 }
 
                 .fourStar {
-                    &+label {
+                    & + label {
                         background-position: -24px 0;
                     }
 
-                    &:checked+label {
+                    &:checked + label {
                         background-position: -24px -24px;
                     }
                 }
 
                 .threeStar {
-                    &+label {
+                    & + label {
                         background-position: -48px 0;
                     }
 
-                    &:checked+label {
+                    &:checked + label {
                         background-position: -48px -24px;
                     }
                 }
 
                 .twoStar {
-                    &+label {
+                    & + label {
                         background-position: -72px 0;
                     }
 
-                    &:checked+label {
+                    &:checked + label {
                         background-position: -72px -24px;
                     }
                 }
 
                 .oneStar {
-                    &+label {
+                    & + label {
                         background-position: -96px 0;
                     }
 
-                    &:checked+label {
+                    &:checked + label {
                         background-position: -96px -24px;
                     }
                 }
@@ -46267,7 +46255,7 @@ input[type=checkbox].switch {
 
                 input[type=radio] {
                     &:checked {
-                        &+label {
+                        & + label {
                             &:after {
                                 display: block;
                             }
@@ -46327,7 +46315,7 @@ input[type=checkbox].switch {
 
                 input[type=checkbox] {
                     &:checked {
-                        &+label {
+                        & + label {
                             background-color: #6DC77A;
                         }
                     }
@@ -46360,7 +46348,7 @@ input[type=checkbox].switch {
     margin: 0;
     align-items: center;
 
-    &>li {
+    & > li {
         vertical-align: middle;
         padding-left: 30px;
 
@@ -46436,7 +46424,7 @@ input[type=checkbox].switch {
 .allSubscriptions {
     padding-right: 20px;
 
-    &>.title {
+    & > .title {
         background-image: url('../images/dualArrow.png');
         background-size: 16px;
         background-repeat: no-repeat;
@@ -46587,7 +46575,7 @@ input[type=checkbox].switch {
             }
         }
 
-        &>button {
+        & > button {
             position: absolute;
             height: 24px;
             width: 24px;
@@ -46709,7 +46697,7 @@ input[type=checkbox].switch {
     margin-bottom: 20px;
     padding: 10px 10px 0 10px;
 
-    &>i {
+    & > i {
         font-style: normal;
         background-image: url('../images/SCPlanLinkArrows.png');
         float: left;
@@ -46733,7 +46721,7 @@ input[type=checkbox].switch {
         }
     }
 
-    &>ul {
+    & > ul {
         margin: 0;
         width: calc(100% - 120px);
         float: left;
@@ -46741,7 +46729,7 @@ input[type=checkbox].switch {
         border-radius: 4px;
         background-color: #828787;
 
-        &>li {
+        & > li {
             float: left;
 
             span {
@@ -47050,7 +47038,7 @@ input[type=checkbox].switch {
 .homeBuilderListing {
     margin: 0 -5px;
 
-    &>li {
+    & > li {
         padding: 0 5px;
         margin-top: 10px;
         width: calc(100% / 4);
@@ -47064,7 +47052,7 @@ input[type=checkbox].switch {
             border-radius: 10px;
 
             input[type=checkbox] {
-                &+label {
+                & + label {
                     display: block;
                     height: 18px;
                     width: 18px;
@@ -47075,7 +47063,7 @@ input[type=checkbox].switch {
                 }
 
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: $primaryColor;
                         background-image: url('../images/permissionTick.png');
                         background-repeat: no-repeat;
@@ -47271,7 +47259,7 @@ input[type=checkbox].switch {
             width: 210px;
 
             input[type=checkbox] {
-                &+label {
+                & + label {
                     height: 18px;
                     width: 18px;
                     border: 1px solid #DCDEDE;
@@ -47293,7 +47281,7 @@ input[type=checkbox].switch {
                 }
 
                 &:checked {
-                    &+label {
+                    & + label {
                         background-color: $primaryColor;
                     }
                 }
@@ -47336,8 +47324,8 @@ input[type=checkbox].switch {
     height: 120px;
     position: relative;
 
-    &>input[type=checkbox] {
-        &+label {
+    & > input[type=checkbox] {
+        & + label {
             position: absolute;
             left: 20px;
             height: 18px;
@@ -47353,14 +47341,14 @@ input[type=checkbox].switch {
         }
 
         &:checked {
-            &+label {
+            & + label {
                 background-color: $primaryColor;
                 border-color: transparent;
             }
         }
     }
 
-    &>ul {
+    & > ul {
         position: relative;
         float: left;
         height: 100px;
@@ -47463,7 +47451,7 @@ input[type=checkbox].switch {
 
                     input[type=radio] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 background-color: #18D584;
                             }
                         }
@@ -47483,7 +47471,7 @@ input[type=checkbox].switch {
 
                     input[type=radio] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 background-color: #ED1C24;
                             }
                         }
@@ -47555,7 +47543,7 @@ input[type=checkbox].switch {
         border-radius: 6px;
         background-color: #EEE;
 
-        &>.title {
+        & > .title {
             font-size: 18px;
             font-family: $secondaryFont;
             color: rgb(28, 60, 75);
@@ -47619,7 +47607,7 @@ input[type=checkbox].switch {
 
                     input[type=radio] {
                         &:checked {
-                            &+label {
+                            & + label {
                                 background-color: #6dc77a;
                                 color: #FFF;
                             }
@@ -47810,7 +47798,7 @@ input[type=checkbox].switch {
                 border: 0;
                 appearance: textfield;
                 text-align: center;
-                box-shadow: inset 2px 3px 2px rgba(0,0,0,0.16);
+                box-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.16);
             }
         }
 
@@ -47939,7 +47927,7 @@ input[type=checkbox].switch {
                     .remove {
                         position: absolute;
                         height: 18px;
-                        width:18px;
+                        width: 18px;
                         cursor: pointer;
                         right: 0;
                         top: 8px;
@@ -48058,6 +48046,7 @@ input[type=checkbox].switch {
                         &:before {
                             background-color: $primaryColor;
                         }
+
                         &:after {
                             right: 3px;
                         }
@@ -48928,4 +48917,4 @@ input[type=checkbox].switch {
 
 .select2-container {
     z-index: 5000;
-  }
+}
