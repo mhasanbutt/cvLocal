@@ -469,9 +469,8 @@ header {
             span {
                 display: block;
                 border-radius: 4px;
-                background-color: $secondaryColor;
-                color: #FFF;
-                font-family: $secondaryFont;
+                color: #404455;
+                font-family: "Poppins";
                 padding: 2px 5px;
             }
         }
@@ -917,10 +916,12 @@ header {
                 position: relative;
                 z-index: 3;
                 color: #FFF;
-                font-size: 16px;
+                font-size: 14px;
+                font-weight: 500;
                 height: 40px;
                 line-height: 30px;
                 overflow: hidden;
+                font-family: $poppins;
 
                 img {
                     position: absolute;

@@ -292,6 +292,9 @@ header .headerNav > li > a {
   padding: 20px 10px 10px 10px;
   border-radius: 0 0 4px 4px;
   position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 1440px) {
   header .headerNav > li > a {
@@ -498,9 +501,8 @@ header section .date {
 header section .date span {
   display: block;
   border-radius: 4px;
-  background-color: #648DAC;
-  color: #FFF;
-  font-family: "Roboto Condensed", sans-serif;
+  color: #404455;
+  font-family: "Poppins";
   padding: 2px 5px;
 }
 header section .headerIcons {
@@ -871,10 +873,12 @@ header.colored section .headerIcons img path {
   position: relative;
   z-index: 3;
   color: #FFF;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
   height: 40px;
   line-height: 30px;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 .leftNav .navList > li .main-item img {
   position: absolute;
@@ -5700,18 +5704,18 @@ hr.BoldHr {
   color: #FFF;
 }
 
-.scrollAreaChild {
+.scrollArea, .scrollAreaChild {
   height: 100%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
-.scrollAreaChild .content .invoice-note {
+.scrollArea .content .invoice-note, .scrollAreaChild .content .invoice-note {
   padding: 10px 15px;
   border-radius: 5px;
   border: solid 1px;
 }
-.scrollAreaChild .content h4 {
+.scrollArea .content h4, .scrollAreaChild .content h4 {
   color: #F8931D;
   font-size: 16px;
   font-weight: 400;
@@ -5722,23 +5726,23 @@ hr.BoldHr {
   background-position: 0 23px;
   padding: 15px 0 0 30px;
 }
-.scrollAreaChild .content h4 span {
+.scrollArea .content h4 span, .scrollAreaChild .content h4 span {
   display: inline-block;
   padding: 0 10px 0 0;
   background-color: #FFF;
   position: relative;
 }
-.scrollAreaChild .content h4 span + small {
+.scrollArea .content h4 span + small, .scrollAreaChild .content h4 span + small {
   display: inline-block;
   background-color: #FFF;
   padding: 0 10px 0 0;
 }
-.scrollAreaChild .content h4 button {
+.scrollArea .content h4 button, .scrollAreaChild .content h4 button {
   position: absolute;
   top: 7px;
   box-shadow: 0 0 0 10px #FFF;
 }
-.scrollAreaChild .content h4 a.Btn {
+.scrollArea .content h4 a.Btn, .scrollAreaChild .content h4 a.Btn {
   position: absolute;
   top: 7px;
   box-shadow: 0 0 0 10px #FFF;
@@ -5752,7 +5756,9 @@ hr.BoldHr {
   color: #FFF;
   line-height: 24px;
 }
-.scrollAreaChild .content h4 a.Btn img.svg,
+.scrollArea .content h4 a.Btn img.svg,
+.scrollArea .content h4 a.Btn svg,
+.scrollArea .content h4 a.Btn img, .scrollAreaChild .content h4 a.Btn img.svg,
 .scrollAreaChild .content h4 a.Btn svg,
 .scrollAreaChild .content h4 a.Btn img {
   float: left;
@@ -5760,23 +5766,25 @@ hr.BoldHr {
   width: 24px;
   margin-right: 5px;
 }
-.scrollAreaChild .content h4 a.Btn img.svg path,
+.scrollArea .content h4 a.Btn img.svg path,
+.scrollArea .content h4 a.Btn svg path,
+.scrollArea .content h4 a.Btn img path, .scrollAreaChild .content h4 a.Btn img.svg path,
 .scrollAreaChild .content h4 a.Btn svg path,
 .scrollAreaChild .content h4 a.Btn img path {
   fill: #FFF;
 }
-.scrollAreaChild .content h4 a.Btn.RemoveRows {
+.scrollArea .content h4 a.Btn.RemoveRows, .scrollAreaChild .content h4 a.Btn.RemoveRows {
   background: #CB0000 !important;
   right: 20px;
 }
-.scrollAreaChild .content .ProfileInfo {
+.scrollArea .content .ProfileInfo, .scrollAreaChild .content .ProfileInfo {
   border-radius: 4px;
   position: relative;
   padding: 0 15px 15px 100px;
   margin-bottom: 30px;
   border-bottom: 1px solid #DDD;
 }
-.scrollAreaChild .content .ProfileInfo img.picture {
+.scrollArea .content .ProfileInfo img.picture, .scrollAreaChild .content .ProfileInfo img.picture {
   position: absolute;
   height: 75px;
   width: 75px;
@@ -5786,7 +5794,7 @@ hr.BoldHr {
   border-radius: 8px;
   z-index: 2;
 }
-.scrollAreaChild .content .ProfileInfo .profileImg {
+.scrollArea .content .ProfileInfo .profileImg, .scrollAreaChild .content .ProfileInfo .profileImg {
   position: absolute;
   height: 75px;
   width: 75px;
@@ -5798,7 +5806,9 @@ hr.BoldHr {
   border: 1px solid #DDD;
   z-index: 1;
 }
-.scrollAreaChild .content .ProfileInfo .profileImg img.svg,
+.scrollArea .content .ProfileInfo .profileImg img.svg,
+.scrollArea .content .ProfileInfo .profileImg svg,
+.scrollArea .content .ProfileInfo .profileImg img, .scrollAreaChild .content .ProfileInfo .profileImg img.svg,
 .scrollAreaChild .content .ProfileInfo .profileImg svg,
 .scrollAreaChild .content .ProfileInfo .profileImg img {
   height: 24px;
@@ -5808,23 +5818,25 @@ hr.BoldHr {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.scrollAreaChild .content .ProfileInfo .profileImg img.svg path,
+.scrollArea .content .ProfileInfo .profileImg img.svg path,
+.scrollArea .content .ProfileInfo .profileImg svg path,
+.scrollArea .content .ProfileInfo .profileImg img path, .scrollAreaChild .content .ProfileInfo .profileImg img.svg path,
 .scrollAreaChild .content .ProfileInfo .profileImg svg path,
 .scrollAreaChild .content .ProfileInfo .profileImg img path {
   fill: #FFF;
 }
-.scrollAreaChild .content .ProfileInfo ul {
+.scrollArea .content .ProfileInfo ul, .scrollAreaChild .content .ProfileInfo ul {
   margin: 0 -15px;
   overflow: hidden;
 }
-.scrollAreaChild .content .ProfileInfo ul li {
+.scrollArea .content .ProfileInfo ul li, .scrollAreaChild .content .ProfileInfo ul li {
   float: left;
   padding: 0 15px;
   color: #333;
   font-size: 16px;
   padding-top: 3px;
 }
-.scrollAreaChild .content .ProfileInfo ul li span {
+.scrollArea .content .ProfileInfo ul li span, .scrollAreaChild .content .ProfileInfo ul li span {
   font-size: 12px;
   text-transform: uppercase;
   color: #999;
@@ -5832,45 +5844,45 @@ hr.BoldHr {
   display: inline-block;
   position: relative;
 }
-.scrollAreaChild .content .ProfileInfo button {
+.scrollArea .content .ProfileInfo button, .scrollAreaChild .content .ProfileInfo button {
   background-color: #648DAC;
   color: #FFF;
   height: 36px;
   border-radius: 4px;
   border: 0;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser {
+.scrollArea .content .ProfileInfo.chefServiceUser, .scrollAreaChild .content .ProfileInfo.chefServiceUser {
   padding: 15px 15px 15px 100px;
   border: 0;
   background-color: #ACB6B6;
   height: 80px;
   border-radius: 40px 4px 4px 40px;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser img.picture {
+.scrollArea .content .ProfileInfo.chefServiceUser img.picture, .scrollAreaChild .content .ProfileInfo.chefServiceUser img.picture {
   height: 80px;
   width: 80px;
   border-radius: 40px;
   border: 3px solid #6f7575;
   overflow: hidden;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser ul li {
+.scrollArea .content .ProfileInfo.chefServiceUser ul li, .scrollAreaChild .content .ProfileInfo.chefServiceUser ul li {
   color: #FFF;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser ul li span {
+.scrollArea .content .ProfileInfo.chefServiceUser ul li span, .scrollAreaChild .content .ProfileInfo.chefServiceUser ul li span {
   color: #EEE;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser button {
+.scrollArea .content .ProfileInfo.chefServiceUser button, .scrollAreaChild .content .ProfileInfo.chefServiceUser button {
   background-color: #F8931D;
   padding: 0 10px;
   margin: 7px 0 0 15px;
 }
-.scrollAreaChild .content .ProfileInfo.chefServiceUser button:first-of-type {
+.scrollArea .content .ProfileInfo.chefServiceUser button:first-of-type, .scrollAreaChild .content .ProfileInfo.chefServiceUser button:first-of-type {
   background-color: #648DAC;
 }
-.scrollAreaChild .content.specialHR hr {
+.scrollArea .content.specialHR hr, .scrollAreaChild .content.specialHR hr {
   border-color: #F8931D;
 }
-.scrollAreaChild .content.trainingTable {
+.scrollArea .content.trainingTable, .scrollAreaChild .content.trainingTable {
   overflow-x: visible;
 }
 
@@ -13657,13 +13669,13 @@ hr.BoldHr {
 .dashboard .covidReload .reload {
   display: inline-block;
   color: #1c3c4b;
-  font-size: 14px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-family: "Poppins";
   margin-left: 20px;
   padding: 10px 0;
 }
 .dashboard .covidReload .reload button {
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #1E4457;
   height: 18px;
   border: 0;
@@ -13671,6 +13683,7 @@ hr.BoldHr {
   color: #FFF;
   text-transform: uppercase;
   margin-left: 5px;
+  padding: 0 5px;
 }
 .dashboard .statLinks {
   padding: 10px 30px 10px 0;
@@ -13756,6 +13769,12 @@ hr.BoldHr {
   margin-left: 0;
   background-color: #08B2D3;
 }
+.dashboard .statLinks .stats ul li:first-child > span:first-of-type {
+  color: #16191B;
+}
+.dashboard .statLinks .stats ul li:first-child > span:first-of-type i {
+  color: #16191B;
+}
 .dashboard .statLinks .stats ul li.medicationOrder {
   margin-right: 5px;
 }
@@ -13793,12 +13812,15 @@ hr.BoldHr {
 .dashboard .statLinks .stats ul li > span:nth-of-type(2) {
   background-color: #DCDEDE;
 }
+.dashboard .statLinks .stats ul li > span:nth-of-type(2) i {
+  color: #16191B;
+}
 .dashboard .statLinks .stats ul li > span i {
   display: block;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #A5A7A7;
+  color: #FFF;
   font-style: normal;
 }
 .dashboard .moreStats {
@@ -14177,7 +14199,7 @@ hr.BoldHr {
 .dashboard .moreStats .attendanceWarning .title {
   font-size: 15px;
   font-weight: 500;
-  color: #3f4253;
+  color: #27211B;
   text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
   position: relative;
   display: block;
@@ -14186,7 +14208,7 @@ hr.BoldHr {
 .dashboard .moreStats .attendanceWarning .title:after {
   position: absolute;
   content: attr(data-extra);
-  color: #5e616e;
+  color: #463c35;
   font-size: 11px;
   font-family: "Roboto Condensed", sans-serif;
   left: 0;
@@ -14201,10 +14223,10 @@ hr.BoldHr {
 }
 .dashboard .moreStats .attendanceWarning ul li {
   font-size: 13px;
-  color: #FFF;
+  color: #27211B;
   line-height: 18px;
   font-family: "Roboto Condensed", sans-serif;
-  border-top: 1px solid #dcdede;
+  border-top: 1px solid #c3765f;
   padding: 0 2px;
 }
 .dashboard .moreStats .attendanceWarning ul li i {
@@ -14235,7 +14257,7 @@ hr.BoldHr {
 .dashboard .moreStats .AnI .title {
   font-size: 15px;
   font-weight: 500;
-  color: #3f4253;
+  color: #202127;
   text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
   position: relative;
   display: block;
@@ -14284,7 +14306,7 @@ hr.BoldHr {
 .dashboard .moreStats .upcomingBirthdays .digit,
 .dashboard .moreStats .AnI .digit {
   font-size: 32px;
-  color: #FFF;
+  color: #0F231D;
   font-family: "Roboto Condensed", sans-serif;
   position: absolute;
   left: 50%;
@@ -17041,15 +17063,42 @@ hr.BoldHr {
   background-color: #666;
 }
 
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Poppins", sans-serif;
+}
 .md-modal .md-content {
   background-color: #FFF;
+  color: #fff;
+  position: relative;
+  border-radius: 3px;
+  margin: 0 auto;
 }
 .md-modal .md-content h3 {
-  background-color: #F8931D;
-  color: #FFF;
+  background-color: #ffcd60;
+  color: #52525e;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  border-radius: 4px 4px 0 0;
 }
 .md-modal .md-content > div {
-  color: #666;
+  color: #404455;
+  padding: 10px;
+  margin: 0;
+  font-size: 12px;
 }
 .md-modal .md-content > div .scroll-wrapper {
   width: auto;
@@ -17128,6 +17177,10 @@ hr.BoldHr {
   background-color: transparent;
   color: #666;
 }
+.md-modal .md-content.memorandum > div {
+  padding: 360px 40px 30px;
+  height: 450px;
+}
 .md-modal.red .md-content {
   background-color: #FFF;
   height: 600px;
@@ -17135,14 +17188,13 @@ hr.BoldHr {
 .md-modal.red .md-content h3 {
   background-color: #f26d7d;
   font-size: 24px;
-  font-family: "Roboto Condensed", sans-serif;
   width: 100%;
   text-align: left;
   padding: 20px 15px;
   font-weight: 500;
+  color: #1E1E2A;
 }
 .md-modal.red .md-content > div {
-  color: #666;
   padding: 15px;
   height: calc(100% - 60px);
   color: #333333;
@@ -17179,7 +17231,6 @@ hr.BoldHr {
   right: 15px;
 }
 .md-modal.red .md-content > div .list-unstyled li > span {
-  font-family: "Roboto Condensed", sans-serif;
   padding: 0 0 0 40px;
   width: calc(100% - 15px);
   display: block;
@@ -17190,7 +17241,6 @@ hr.BoldHr {
   font-weight: 600;
   color: #333333;
   font-style: normal;
-  font-family: "Roboto Condensed", sans-serif;
 }
 .md-modal.red .md-content > div .list-unstyled li p,
 .md-modal.red .md-content > div .list-unstyled li main,
@@ -17223,7 +17273,6 @@ hr.BoldHr {
   margin: 0 0 0 40px;
   padding: 5px 10px;
   font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   height: 26px;
   line-height: 1;
@@ -17262,13 +17311,9 @@ hr.BoldHr {
   color: #333333;
   font-size: 14px;
 }
-.md-modal.red .md-content > div .list-unstyled li .agreement input[type=checkbox]:checked + label {
-  background-color: #6DC77A;
-}
 .md-modal.red .md-content > div .list-unstyled li .agreement span {
   line-height: 20px;
   padding: 0 0 0 10px;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
 }
 .md-modal.red .md-content > div .list-unstyled li .agreement .md-dismiss {
@@ -17276,7 +17321,6 @@ hr.BoldHr {
   background-color: #ca2026;
   border-radius: 4px;
   color: #FFF;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
@@ -17307,25 +17351,6 @@ hr.BoldHr {
   color: #666;
 }
 
-.md-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  max-width: 630px;
-  min-width: 320px;
-  height: auto;
-  z-index: 2000;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .md-show {
   visibility: visible;
 }
@@ -17339,40 +17364,9 @@ hr.BoldHr {
   left: 0;
   z-index: 1000;
   opacity: 0;
-  background: rgba(172, 182, 182, 0.8);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.4);
   transition: all 0.3s;
-}
-
-.md-content {
-  color: #fff;
-  background: #e74c3c;
-  position: relative;
-  border-radius: 3px;
-  margin: 0 auto;
-}
-.md-content.memorandum > div {
-  padding: 360px 40px 30px;
-  height: 450px;
-}
-
-.md-content h3 {
-  margin: 0;
-  padding: 0.4em;
-  text-align: center;
-  font-size: 2.4em;
-  font-weight: 300;
-  opacity: 0.8;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px 3px 0 0;
-}
-
-.md-content > div {
-  padding: 15px 40px 30px;
-  margin: 0;
-  font-weight: 300;
-  font-size: 1.15em;
+  backdrop-filter: blur(7px);
 }
 
 .md-effect-13.md-modal {
@@ -17403,28 +17397,6 @@ hr.BoldHr {
   visibility: visible;
 }
 
-@-webkit-keyframes slit {
-  50% {
-    -webkit-transform: translateZ(-250px) rotateY(89deg);
-    opacity: 0.5;
-    -webkit-animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotateY(0deg);
-    opacity: 1;
-  }
-}
-@-moz-keyframes slit {
-  50% {
-    -moz-transform: translateZ(-250px) rotateY(89deg);
-    opacity: 0.5;
-    -moz-animation-timing-function: ease-out;
-  }
-  100% {
-    -moz-transform: translateZ(0) rotateY(0deg);
-    opacity: 1;
-  }
-}
 @keyframes slit {
   50% {
     transform: translateZ(-250px) rotateY(89deg);
@@ -41265,10 +41237,6 @@ input[type=checkbox].switch:checked + label:before {
 .newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i {
   font-style: normal;
   font-weight: 300;
-}
-
-#VideoPopTutorial .modal-body {
-  pointer-events: none;
 }
 
 .scroll-element.scroll-x {

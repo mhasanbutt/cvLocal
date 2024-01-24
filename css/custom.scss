@@ -5537,14 +5537,13 @@ hr {
 }
 
 
-.scrollAreaChild {
+.scrollArea, .scrollAreaChild {
     height: 100%;
     overflow: hidden;
     position: absolute;
     width: 100%;
 
     .content {
-
         .invoice-note {
             padding: 10px 15px;
             border-radius: 5px;
@@ -15241,13 +15240,13 @@ hr {
         .reload {
             display: inline-block;
             color: #1c3c4b;
-            font-size: 14px;
-            font-family: $secondaryFont;
+            font-size: 12px;
+            font-family: "Poppins";
             margin-left: 20px;
             padding: 10px 0;
 
             button {
-                border-radius: 2px;
+                border-radius: 4px;
                 background-color: #1E4457;
                 height: 18px;
                 border: 0;
@@ -15255,6 +15254,7 @@ hr {
                 color: #FFF;
                 text-transform: uppercase;
                 margin-left: 5px;
+	            padding: 0 5px;
             }
         }
     }
@@ -15349,6 +15349,16 @@ hr {
                     &:first-child {
                         margin-left: 0;
                         background-color: #08B2D3;
+
+	                    & > span {
+		                    &:first-of-type {
+			                    color: #16191B;
+
+			                    i {
+				                    color: #16191B;
+			                    }
+		                    }
+	                    }
                     }
 
                     &.medicationOrder {
@@ -15394,6 +15404,10 @@ hr {
 
                         &:nth-of-type(2) {
                             background-color: #DCDEDE;
+
+	                        i {
+		                        color: #16191B;
+	                        }
                         }
 
                         i {
@@ -15401,7 +15415,7 @@ hr {
                             font-size: 12px;
                             font-weight: 500;
                             text-transform: uppercase;
-                            color: #A5A7A7;
+                            color: #FFF;
                             font-style: normal;
                         }
                     }
@@ -15862,7 +15876,7 @@ hr {
             .title {
                 font-size: 15px;
                 font-weight: 500;
-                color: #3f4253;
+                color: #27211B;
                 text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
                 position: relative;
                 display: block;
@@ -15871,7 +15885,7 @@ hr {
                 &:after {
                     position: absolute;
                     content: attr(data-extra);
-                    color: #5e616e;
+                    color: #463c35;
                     font-size: 11px;
                     font-family: $secondaryFont;
                     left: 0;
@@ -15889,10 +15903,10 @@ hr {
 
                 li {
                     font-size: 13px;
-                    color: #FFF;
+                    color: #27211B;
                     line-height: 18px;
                     font-family: $secondaryFont;
-                    border-top: 1px solid #dcdede;
+                    border-top: 1px solid #c3765f;
                     padding: 0 2px;
 
                     i {
@@ -15928,7 +15942,7 @@ hr {
             .title {
                 font-size: 15px;
                 font-weight: 500;
-                color: #3f4253;
+                color: #202127;
                 text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
                 position: relative;
                 display: block;
@@ -15977,7 +15991,7 @@ hr {
 
             .digit {
                 font-size: 32px;
-                color: #FFF;
+                color: #0F231D; 
                 font-family: $secondaryFont;
                 position: absolute;
                 left: 50%;
@@ -19415,16 +19429,42 @@ hr {
 }
 
 .md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: $poppins;
+
     .md-content {
         background-color: #FFF;
+	    color: #fff;
+	    position: relative;
+	    border-radius: 3px;
+	    margin: 0 auto;
 
         h3 {
-            background-color: $orangeColor;
-            color: #FFF;
+            background-color: #ffcd60;
+            color: #52525e;
+	        margin: 0;
+	        padding: 10px 0;
+	        text-align: center;
+	        font-size: 24px;
+	        font-weight: 300;
+	        border-radius: 4px 4px 0 0;
         }
 
         & > div {
-            color: #666;
+            color: #404455;
+	        padding: 10px;
+	        margin: 0;
+	        font-size: 12px;
 
             .scroll-wrapper {
                 width: auto;
@@ -19521,6 +19561,13 @@ hr {
                 }
             }
         }
+
+	    &.memorandum {
+		    & > div {
+			    padding: 360px 40px 30px;
+			    height: 450px;
+		    }
+	    }
     }
 
     &.red {
@@ -19531,15 +19578,14 @@ hr {
             h3 {
                 background-color: #f26d7d;
                 font-size: 24px;
-                font-family: $secondaryFont;
                 width: 100%;
                 text-align: left;
                 padding: 20px 15px;
                 font-weight: 500;
+	            color: #1E1E2A;
             }
 
             & > div {
-                color: #666;
                 padding: 15px;
                 height: calc(100% - 60px);
                 color: #333333;
@@ -19580,7 +19626,6 @@ hr {
                         }
 
                         & > span {
-                            font-family: $secondaryFont;
                             padding: 0 0 0 40px;
                             width: calc(100% - 15px);
                             display: block;
@@ -19592,7 +19637,6 @@ hr {
                             font-weight: 600;
                             color: #333333;
                             font-style: normal;
-                            font-family: $secondaryFont;
                         }
 
                         p,
@@ -19630,7 +19674,6 @@ hr {
                                 margin: 0 0 0 40px;
                                 padding: 5px 10px;
                                 font-size: 18px;
-                                font-family: $secondaryFont;
                                 font-weight: 500;
                                 height: 26px;
                                 line-height: 1;
@@ -19675,13 +19718,11 @@ hr {
                             }
 
                             input[type="checkbox"]:checked + label {
-                                background-color: $primaryColor;
                             }
 
                             span {
                                 line-height: 20px;
                                 padding: 0 0 0 10px;
-                                font-family: $secondaryFont;
                                 font-size: 14px;
                             }
 
@@ -19690,7 +19731,6 @@ hr {
                                 background-color: #ca2026;
                                 border-radius: 4px;
                                 color: #FFF;
-                                font-family: $secondaryFont;
                                 font-size: 16px;
                                 text-transform: uppercase;
                                 font-weight: 500;
@@ -19738,25 +19778,6 @@ hr {
     }
 }
 
-.md-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    max-width: 630px;
-    min-width: 320px;
-    height: auto;
-    z-index: 2000;
-    visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
 .md-show {
     visibility: visible;
 }
@@ -19770,43 +19791,9 @@ hr {
     left: 0;
     z-index: 1000;
     opacity: 0;
-    background: #ACB6B6CC;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    background-color: rgba(255,255,255,0.4);
     transition: all 0.3s;
-}
-
-.md-content {
-    color: #fff;
-    background: #e74c3c;
-    position: relative;
-    border-radius: 3px;
-    margin: 0 auto;
-
-    &.memorandum {
-        & > div {
-            padding: 360px 40px 30px;
-            height: 450px;
-        }
-    }
-}
-
-.md-content h3 {
-    margin: 0;
-    padding: 0.4em;
-    text-align: center;
-    font-size: 2.4em;
-    font-weight: 300;
-    opacity: 0.8;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 3px 3px 0 0;
-}
-
-.md-content > div {
-    padding: 15px 40px 30px;
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.15em;
+	backdrop-filter: blur(7px);
 }
 
 .md-effect-13.md-modal {
@@ -19836,32 +19823,6 @@ hr {
 .md-show ~ .md-overlay {
     opacity: 1;
     visibility: visible;
-}
-
-@-webkit-keyframes slit {
-    50% {
-        -webkit-transform: translateZ(-250px) rotateY(89deg);
-        opacity: .5;
-        -webkit-animation-timing-function: ease-out;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0) rotateY(0deg);
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes slit {
-    50% {
-        -moz-transform: translateZ(-250px) rotateY(89deg);
-        opacity: .5;
-        -moz-animation-timing-function: ease-out;
-    }
-
-    100% {
-        -moz-transform: translateZ(0) rotateY(0deg);
-        opacity: 1;
-    }
 }
 
 @keyframes slit {
@@ -48911,12 +48872,6 @@ input[type=checkbox].switch {
                 }
             }
         }
-    }
-}
-
-#VideoPopTutorial {
-    .modal-body {
-        pointer-events: none;
     }
 }
 
