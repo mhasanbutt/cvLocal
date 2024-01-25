@@ -15212,8 +15212,8 @@ hr {
             border-radius: 10px;
             background-color: rgb(220, 222, 222);
             height: 30px;
-            font-size: 16px;
-            font-family: $secondaryFont;
+            font-size: 14px;
+            font-family: $poppins;
             color: #2D2F2F;
             padding: 0 10px;
             line-height: 26px;
@@ -15222,7 +15222,7 @@ hr {
             &:before {
                 background-color: rgb(249, 173, 129);
                 height: 24px;
-                font-size: 13px;
+                font-size: 12px;
                 color: #121317;
                 text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
                 position: absolute;
@@ -15267,7 +15267,7 @@ hr {
             height: 64px;
             position: relative;
             float: left;
-            width: calc(100% - 720px);
+            width: calc(100% - 600px);
 
             .scroll-wrapper {
                 top: 0;
@@ -15280,48 +15280,50 @@ hr {
                     float: left;
                     border-radius: 10px;
                     background-color: rgb(255, 255, 255);
-                    width: 64px;
-                    height: 44px;
+                    width: 80px;
+                    height: 64px;
                     margin-right: 5px;
-                    padding: 5px 15px;
-                    margin-bottom: 20px;
+                    padding: 5px;
                     position: relative;
+	                font-family: $poppins;
+	                border: 1px solid #cfb8ac;
+	                cursor: pointer;
 
                     &:before {
                         position: absolute;
                         content: attr(data-count);
-                        top: 0;
-                        right: 0;
-                        font-size: 12px;
-                        font-family: $secondaryFont;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 10px;
                         color: #FFF;
                         white-space: nowrap;
                         border-radius: 4px;
                         background-color: #CB0000;
                         display: inline-block;
                         padding: 0 5px;
+	                    z-index: 2;
                     }
 
                     &:after {
                         position: absolute;
                         content: attr(data-title);
-                        top: calc(100% + 3px);
-                        left: 50%;
-                        transform: translateX(-50%);
-                        font-size: 12px;
-                        font-family: $secondaryFont;
+                        bottom: 5px;
+                        font-size: 10px;
+	                    line-height: 12px;
                         color: #2E2E2E;
-                        white-space: nowrap;
-                        width: 100%;
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         text-align: center;
+	                    z-index: 2;
+	                    width: calc(100% - 10px);
+	                    font-weight: 500;
                     }
 
                     img {
-                        height: 34px;
-                        width: 34px;
-                        display: block;
+                        height: 24px;
+                        width: 24px;
+	                    position: absolute;
+	                    left: 28px;
+	                    z-index: 1;
                     }
                 }
             }
@@ -15331,7 +15333,7 @@ hr {
             height: 64px;
             position: relative;
             float: right;
-            width: 700px;
+            width: 600px;
 
             ul {
                 margin-bottom: 0;
@@ -15929,6 +15931,7 @@ hr {
             width: calc(calc(100% - 60px) / 100 * 19);
             margin-left: 20px;
             position: relative;
+	        font-family: $poppins;
         }
 
         .upcomingBirthdays,
@@ -15936,26 +15939,24 @@ hr {
             background-color: #69BB9F;
             position: relative;
             border-radius: 10px;
-            padding: 10px;
+            padding: 5px 10px;
             height: calc(calc(100% - 10px) / 2);
 
             .title {
-                font-size: 15px;
+                font-size: 13px;
                 font-weight: 500;
                 color: #202127;
                 text-shadow: 0.5px 0.866px 2px rgba(220, 222, 222, 0.7);
                 position: relative;
                 display: block;
-                margin-bottom: 20px;
 
                 &:after {
                     position: absolute;
                     content: attr(data-extra);
                     color: #5e616e;
-                    font-size: 11px;
-                    font-family: $secondaryFont;
+                    font-size: 10px;
                     left: 0;
-                    top: 100%;
+                    top: calc(100% - 3px);
                 }
             }
 
@@ -15990,27 +15991,41 @@ hr {
             }
 
             .digit {
-                font-size: 32px;
-                color: #0F231D; 
-                font-family: $secondaryFont;
+                font-size: 28px;
+                color: #0F231D;
                 position: absolute;
                 left: 50%;
-                top: 55%;
-                transform: translate(-100%, 0);
-                font-weight: 700;
+                top: 50%;
+                transform: translate(-250%, 0);
                 line-height: 1;
                 display: inline-block;
+	            font-weight: 300;
 
                 &:after {
                     position: absolute;
                     content: attr(data-title);
-                    font-size: 13px;
-                    color: rgba(#FFF, 0.7);
-                    top: 5px;
+                    font-size: 12px;
+                    color: #404455;
+                    top: 2px;
                     left: calc(100% + 5px);
-                    font-family: $primaryFont;
+	                font-weight: 500;
                 }
             }
+
+	        .digit_today {
+		        position: absolute;
+		        top: calc(50% + 2px);
+		        left: 55%;
+		        font-size: 16px;
+		        background-color: #52525e;
+		        border-radius: 8px;
+		        padding: 0 5px;
+		        color: #FFF;
+
+		        &:after {
+			        content: " Today"
+		        }
+	        }
         }
 
         .AnI {
@@ -16024,7 +16039,7 @@ hr {
                 float: left;
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.8);
-                padding: 10px;
+                padding: 5px 10px;
                 border-radius: 10px;
                 position: relative;
 
@@ -16054,24 +16069,25 @@ hr {
             height: 100%;
             float: left;
             padding: 20px;
+	        font-family: $poppins;
 
             .title {
-                font-size: 21px;
+                font-size: 18px;
                 font-weight: 500;
                 color: #424556;
                 position: relative;
                 float: left;
                 line-height: 1;
                 padding-top: 10px;
+	            width: 110px;
 
                 &:after {
                     content: "Due Today Or Any Outstanding";
                     position: absolute;
                     top: calc(100% + 5px);
                     left: 0;
-                    font-family: $secondaryFont;
                     color: #828787;
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
 
@@ -16083,7 +16099,6 @@ hr {
                 li {
                     float: left;
                     font-size: 48px;
-                    font-family: $secondaryFont;
                     color: #4F3F2B;
                     position: relative;
                     height: 100%;
@@ -16114,7 +16129,6 @@ hr {
                         left: calc(100% + 10px);
                         font-size: 15px;
                         color: #828787;
-                        font-family: $primaryFont;
                         transform: translateY(-70%);
                         line-height: 1;
                         margin-left: 10px;
@@ -16133,6 +16147,7 @@ hr {
             float: left;
             padding: 10px;
             overflow: hidden;
+	        font-family: $poppins;
 
             .title {
                 font-size: 21px;
@@ -16190,6 +16205,7 @@ hr {
     background-color: rgba(#FFF, 0.8);
     z-index: 200;
     display: none;
+	backdrop-filter: blur(7px);
 
     &.active {
         display: block;
@@ -16197,7 +16213,7 @@ hr {
 }
 
 .warningsRed {
-    background-color: #E53C48;
+    background-color: #8C3F44;
     border-radius: 10px;
     padding: 10px;
     position: fixed;
@@ -16206,10 +16222,11 @@ hr {
     width: calc(100% - 90px);
     z-index: 201;
     height: 340px;
+	font-family: $poppins;
 
     .title {
         position: absolute;
-        background-color: #E53C48;
+        background-color: #8C3F44;
         border-radius: 10px 10px 0 0;
         bottom: 100%;
         left: 50%;
@@ -16245,12 +16262,12 @@ hr {
             color: #FFF;
             font-size: 21px;
             font-weight: 300;
-            font-family: $secondaryFont;
             padding-left: 30px;
             background-image: url('../images/warningsArrow.png');
             background-position: left center;
             background-repeat: no-repeat;
             background-size: 20px;
+	        font-family: inherit;
         }
     }
 
@@ -16272,8 +16289,9 @@ hr {
         li {
             float: left;
             width: calc(100% / 9);
-            border-left: 1px solid #e9686a;
-            border-top: 1px solid #e9686a;
+	        border: 0;
+            border-left: 1px solid #b45c62;
+            border-top: 1px solid #b45c62;
 
             &:nth-child(9n + 1) {
                 border-left: 0;
@@ -16298,10 +16316,10 @@ hr {
 
                 span {
                     font-size: 12px;
-                    font-family: $secondaryFont;
                     color: #FFF;
                     display: block;
                     text-transform: uppercase;
+	                font-family: $poppins;
                 }
             }
         }
@@ -19539,9 +19557,10 @@ hr {
             button {
                 border-radius: 4px;
                 border: 0;
-                background-color: $orangeColor;
+                background-color: #404455;
                 color: #FFF;
-                padding: 5px 15px;
+                padding: 5px 10px;
+	            font-size: 14px;
             }
         }
 
