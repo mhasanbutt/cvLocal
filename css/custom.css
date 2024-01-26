@@ -398,6 +398,8 @@ header .headerNav > li .subMenu > li span {
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
 }
 header .headerNav > li .subMenu > li a:hover,
 header .headerNav > li .subMenu > li span:hover {
@@ -8754,6 +8756,7 @@ hr.BoldHr {
   visibility: hidden;
   left: 0;
   top: 0;
+  backdrop-filter: blur(7px);
 }
 .overlay:before,
 .largeImgOverlay:before {
@@ -8761,7 +8764,7 @@ hr.BoldHr {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   left: 100%;
   top: 100%;
 }
@@ -8771,7 +8774,7 @@ hr.BoldHr {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   right: 100%;
   bottom: 100%;
 }
@@ -8799,6 +8802,7 @@ hr.BoldHr {
   color: #FFF;
   z-index: 1000;
   box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
 }
 .alerts article {
   position: absolute;
@@ -8929,40 +8933,42 @@ hr.BoldHr {
     transform: rotate(0);
   }
 }
-.alerts .scrollArea {
+.alerts .scroll-wrapper {
   height: auto;
   top: 42px;
   bottom: 0;
 }
-.alerts .scrollArea .alertsList > ul {
+.alerts .scroll-wrapper > .scroll-element.scroll-y .scroll-element_outer .scroll-bar {
+  background-color: #FFF;
+}
+.alerts .scroll-wrapper .alertsList > ul {
   margin-bottom: 0;
 }
-.alerts .scrollArea .alertsList > ul > li {
+.alerts .scroll-wrapper .alertsList > ul > li {
   padding: 10px;
   border-top: 1px solid #999;
 }
-.alerts .scrollArea .alertsList > ul > li:first-child {
+.alerts .scroll-wrapper .alertsList > ul > li:first-child {
   border-top: 0;
 }
-.alerts .scrollArea .alertsList > ul > li ul {
+.alerts .scroll-wrapper .alertsList > ul > li ul {
   margin: 0 -10px;
   overflow: hidden;
 }
-.alerts .scrollArea .alertsList > ul > li ul li {
+.alerts .scroll-wrapper .alertsList > ul > li ul li {
   margin-bottom: 15px;
   padding: 0 10px;
   width: 50%;
   float: left;
 }
-.alerts .scrollArea .alertsList > ul > li ul li i {
+.alerts .scroll-wrapper .alertsList > ul > li ul li i {
   font-style: normal;
-  font-family: "Roboto Condensed", sans-serif;
   color: #CCC;
   display: block;
   font-size: 12px;
   text-transform: uppercase;
 }
-.alerts .scrollArea .alertsList > ul > li ul li .goToModule {
+.alerts .scroll-wrapper .alertsList > ul > li ul li .goToModule {
   display: inline-block;
   height: 17px;
   width: 17px;
@@ -8971,14 +8977,13 @@ hr.BoldHr {
   background-repeat: no-repeat;
   background-size: 17px;
 }
-.alerts .scrollArea .alertsList > ul > li .action {
+.alerts .scroll-wrapper .alertsList > ul > li .action {
   padding: 10px 0 0 0;
   font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   display: none;
 }
-.alerts .scrollArea .alertsList > ul > li .action input[type=text] {
+.alerts .scroll-wrapper .alertsList > ul > li .action input[type=text] {
   width: calc(100% - 70px);
   float: left;
   border: 0;
@@ -8986,49 +8991,39 @@ hr.BoldHr {
   border-radius: 4px;
   color: #333;
 }
-.alerts .scrollArea .alertsList > ul > li .action button {
+.alerts .scroll-wrapper .alertsList > ul > li .action button {
   float: right;
   width: 60px;
   background-color: #F8931D;
   color: #FFF;
   font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
   margin: 0 0 0 10px;
 }
-.alerts .scrollArea .alertsList > ul > li button {
+.alerts .scroll-wrapper .alertsList > ul > li button {
   background: none;
   border: 0;
   padding: 5px 10px;
   margin-right: 10px;
   font-size: 12px;
   color: #b3bfc1;
-  font-family: "Roboto Condensed", sans-serif;
 }
-.alerts .scrollArea .alertsList > ul > li button.complete {
+.alerts .scroll-wrapper .alertsList > ul > li button.complete {
   background-color: #6dc77a;
   color: #223e4c;
 }
-.alerts .scrollArea .alertsList > ul > li button img,
-.alerts .scrollArea .alertsList > ul > li button svg {
+.alerts .scroll-wrapper .alertsList > ul > li button img,
+.alerts .scroll-wrapper .alertsList > ul > li button svg {
   display: none;
 }
-.alerts .scrollArea .alertsList > ul > li button:focus {
+.alerts .scroll-wrapper .alertsList > ul > li button:focus {
   outline: 0;
 }
-.alerts .scrollArea .alertsList > ul > li.newAlert {
+.alerts .scroll-wrapper .alertsList > ul > li.newAlert {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.alerts .scrollArea .ps__scrollbar-y-rail {
-  background: none;
-  right: 5px;
-}
-.alerts .scrollArea .ps__scrollbar-y-rail > div {
-  background-color: #FFF;
-}
 .alerts .title {
-  font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
-  padding: 0 15px;
+  font-size: 16px;
+  padding: 0 10px;
   position: relative;
   background-color: #ffcd60;
   line-height: 42px;
@@ -26480,7 +26475,7 @@ hr.BoldHr {
   background-image: url("../images/graphs-icon.png");
 }
 .directorDash > aside ul.tabs li:nth-child(3) a {
-  background-image: url("../images/accident-report.png");
+  background-image: url("../images/key-indicator.png");
 }
 .directorDash > aside ul.tabs li:nth-child(4) a {
   background-image: url("../images/chefMenu.png");
@@ -26540,7 +26535,7 @@ hr.BoldHr {
   background-image: url("../images/emloyee-detail-report.png");
 }
 .directorDash > aside ul.tabs li:nth-child(23) a {
-  background-image: url("../images/key-indicator.png");
+  background-image: url("../images/accident-report.png");
 }
 .directorDash > aside ul.tabs li:nth-child(24) a {
   background-image: url("../images/dd-contractl.png");
@@ -38234,6 +38229,11 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 5px;
   content: "";
   transform: translateX(5px);
+}
+.generalListing section > ul > li.wrapText {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
 }
 .generalListing section > ul .greendot {
   width: 16px;

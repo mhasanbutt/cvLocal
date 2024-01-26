@@ -9127,13 +9127,14 @@ hr {
     @extend .transition;
     left: 0;
     top: 0;
+	backdrop-filter: blur(7px);
 
     &:before {
         position: absolute;
         content: '';
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(255,255,255, 0.3);
         left: 100%;
         top: 100%;
         @extend .transition;
@@ -9144,7 +9145,7 @@ hr {
         content: '';
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(255,255,255, 0.3);
         right: 100%;
         bottom: 100%;
         @extend .transition;
@@ -9175,6 +9176,7 @@ hr {
     z-index: 1000;
     box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
     @extend .transition;
+	font-family: $poppins;
 
     article {
         position: absolute;
@@ -9341,11 +9343,20 @@ hr {
         }
     }
 
-    .scrollArea {
+    .scroll-wrapper {
         height: auto;
         top: 42px;
         bottom: 0;
 
+	    & > .scroll-element {
+		    &.scroll-y {
+			    .scroll-element_outer {
+				    .scroll-bar {
+					    background-color: #FFF;
+				    }
+			    }
+		    }
+	    }
 
         .alertsList {
             & > ul {
@@ -9371,7 +9382,6 @@ hr {
 
                             i {
                                 font-style: normal;
-                                font-family: $secondaryFont;
                                 color: #CCC;
                                 display: block;
                                 font-size: 12px;
@@ -9393,7 +9403,6 @@ hr {
                     .action {
                         padding: 10px 0 0 0;
                         font-size: 12px;
-                        font-family: $secondaryFont;
                         text-transform: uppercase;
                         display: none;
 
@@ -9412,7 +9421,6 @@ hr {
                             background-color: $orangeColor;
                             color: #FFF;
                             font-size: 12px;
-                            font-family: $secondaryFont;
                             margin: 0 0 0 10px;
                         }
                     }
@@ -9424,8 +9432,6 @@ hr {
                         margin-right: 10px;
                         font-size: 12px;
                         color: #b3bfc1;
-
-                        font-family: $secondaryFont;
 
                         &.complete {
                             background-color: #6dc77a;
@@ -9448,21 +9454,11 @@ hr {
                 }
             }
         }
-
-        .ps__scrollbar-y-rail {
-            background: none;
-            right: 5px;
-
-            & > div {
-                background-color: #FFF;
-            }
-        }
     }
 
     .title {
-        font-size: 18px;
-        font-family: $secondaryFont;
-        padding: 0 15px;
+        font-size: 16px;
+        padding: 0 10px;
         position: relative;
         background-color: #ffcd60;
         line-height: 42px;
@@ -30789,7 +30785,7 @@ hr {
 
                     &:nth-child(3) {
                         a {
-                            background-image: url('../images/accident-report.png');
+                            background-image: url('../images/key-indicator.png');
                         }
                     }
 
@@ -30909,7 +30905,7 @@ hr {
 
                     &:nth-child(23) {
                         a {
-                            background-image: url("../images/key-indicator.png");
+                            background-image: url("../images/accident-report.png");
                         }
                     }
 
@@ -45172,6 +45168,12 @@ input[type=checkbox].switch {
                         }
                     }
                 }
+
+	            &.wrapText {
+		            white-space: normal;
+		            overflow: visible;
+		            text-overflow: unset;
+	            }
 
             }
 

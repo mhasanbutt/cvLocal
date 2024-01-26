@@ -336,6 +336,8 @@ header {
                         position: relative;
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        font-family: $poppins;
+                        font-size: 12px;
 
                         &:hover {
                             background-color: #EEE;
