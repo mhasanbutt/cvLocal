@@ -1091,16 +1091,16 @@ header.colored section .headerIcons img path {
 }
 .contentHeader .breadcrumbTitle {
   float: left;
+  font-family: "Poppins", sans-serif;
 }
 .contentHeader .breadcrumbTitle ul {
   overflow: hidden;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .contentHeader .breadcrumbTitle ul li {
   float: left;
   padding-left: 16px;
   position: relative;
-  font-size: 12px;
   color: #828787;
 }
 .contentHeader .breadcrumbTitle ul li:before {
@@ -1124,36 +1124,24 @@ header.colored section .headerIcons img path {
 }
 .contentHeader .breadcrumbTitle ul li a {
   color: #666;
-  font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  display: block;
 }
 .contentHeader .breadcrumbTitle .title {
-  font-size: 18px;
+  font-size: 16px;
   color: #1f262a;
-  font-family: "Roboto Condensed", sans-serif;
-  height: 30px;
   position: relative;
   padding-left: 25px;
+  display: inline-block;
+  line-height: 18px;
 }
-.contentHeader .breadcrumbTitle .title img.svg,
-.contentHeader .breadcrumbTitle .title svg,
 .contentHeader .breadcrumbTitle .title img {
   width: 18px;
   height: 18px;
   position: absolute;
   left: 0;
-  top: 2px;
-}
-.contentHeader .breadcrumbTitle .title img.svg path,
-.contentHeader .breadcrumbTitle .title img.svg polygon,
-.contentHeader .breadcrumbTitle .title img.svg circle,
-.contentHeader .breadcrumbTitle .title svg path,
-.contentHeader .breadcrumbTitle .title svg polygon,
-.contentHeader .breadcrumbTitle .title svg circle,
-.contentHeader .breadcrumbTitle .title img path,
-.contentHeader .breadcrumbTitle .title img polygon,
-.contentHeader .breadcrumbTitle .title img circle {
-  fill: #648DAC;
+  top: 0;
 }
 .contentHeader .ProfileInfo {
   border-radius: 6px;
@@ -3066,11 +3054,11 @@ hr.BoldHr {
 }
 .contentBody .pageSpecificArea form ul {
   height: 32px;
-  margin: 0 -15px;
+  margin: 0 -2.5px;
   float: left;
 }
 .contentBody .pageSpecificArea form ul li {
-  padding: 0 15px;
+  padding: 0 2.5px;
   float: left;
   height: 32px;
   position: relative;
@@ -3131,6 +3119,7 @@ hr.BoldHr {
   position: relative;
   z-index: 1;
   float: left;
+  font-family: "Poppins", sans-serif;
 }
 .contentBody .pageSpecificArea form ul li input[type=text][name=dateRange], .contentBody .pageSpecificArea form ul li input[type=text].date,
 .contentBody .pageSpecificArea form ul li select[name=dateRange],
@@ -3199,13 +3188,20 @@ hr.BoldHr {
   border-radius: 4px;
   border: 0;
   padding: 0 10px;
-  font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   color: #1C3C4B;
   text-transform: uppercase;
   float: left;
-  margin-left: 30px;
+  margin-left: 10px;
   line-height: 32px;
+}
+.contentBody .pageSpecificArea form > button.green {
+  background-color: #18D784;
+}
+.contentBody .pageSpecificArea form > button ~ button {
+  margin-left: 5px;
 }
 .contentBody .content {
   padding: 10px 20px 10px 10px;
@@ -38838,6 +38834,50 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section.statusTags > ul li:last-child {
   width: 100%;
+}
+.generalListing section > table {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #DDD;
+  border-collapse: separate;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+.generalListing section > table thead th {
+  height: 30px;
+  background-color: #B7E4F8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-align: center;
+}
+.generalListing section > table thead th:first-child {
+  border-radius: 4px 0 0 4px;
+  text-align: left;
+}
+.generalListing section > table thead th:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.generalListing section > table tbody tr td {
+  text-align: center;
+  height: 32px;
+  font-size: 14px;
+  padding: 5px 10px;
+  line-height: 22px;
+}
+.generalListing section > table tbody tr td:first-child {
+  text-align: left;
+}
+.generalListing section > table tbody tr td select, .generalListing section > table tbody tr td input[type=text] {
+  height: 22px;
+  border: 1px solid #DDD;
+  text-align: center;
+  border-radius: 4px;
+  width: 100%;
+}
+.generalListing section > table tbody tr td select {
+  border-color: transparent;
 }
 .generalListing.activities section.withTitle.drawUpwards ul.activities li.helpTip .tTText {
   top: auto;
