@@ -7,6 +7,7 @@
     <link href="images/favicon.png" rel="shortcut icon">
     <title>CareVision - Less Admin, More Caring</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <style>
         .contentBody .scroll-wrapper {
@@ -122,9 +123,17 @@
                             <option>Increase by amount / percentage</option>
                         </select>
                     </li>
-                    <li>
-                        <select>
-                            <option>Select Payrate</option>
+                    <li style="width:300px;">
+                        <select class="select2" multiple="multiple">
+                            <option>Some</option>
+                            <option>Random</option>
+                            <option>Options</option>
+                            <option>Some</option>
+                            <option>Random</option>
+                            <option>Options</option>
+                            <option>Some</option>
+                            <option>Random</option>
+                            <option>Options</option>
                         </select>
                     </li>
                     <li>
@@ -202,6 +211,14 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/custom.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            placeholder: "Select Payrate",
+        });
+    });
+</script>
 </body>
 </html>

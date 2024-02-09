@@ -1105,16 +1105,15 @@ header.colored section .headerIcons img path {
 }
 .contentHeader .breadcrumbTitle ul li:before {
   position: absolute;
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   content: "";
-  background-image: url("../images/left-arrow.svg");
+  background-image: url("../images/rightArrowWeekRotation.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  top: 4px;
-  left: 3px;
-  transform: rotate(180deg);
+  top: 2px;
+  left: 4px;
 }
 .contentHeader .breadcrumbTitle ul li:first-child {
   padding-left: 0;
@@ -1260,14 +1259,17 @@ header.colored section .headerIcons img path {
   line-height: 32px;
   padding: 0 30px 0 10px;
   background-color: #E26D5C;
-  font-size: 14px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
   color: #FFF;
   cursor: pointer;
   background-image: url("../images/headerActionArrow.png");
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: right 10px center;
+}
+.contentHeader .filtersSearch .dropMenu .openDropMenu.blue {
+  background-color: #004e89;
 }
 .contentHeader .filtersSearch .dropMenu ul {
   position: absolute;
@@ -1283,8 +1285,8 @@ header.colored section .headerIcons img path {
 .contentHeader .filtersSearch .dropMenu ul li a {
   display: block;
   white-space: nowrap;
-  font-size: 14px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
   color: #3F4253;
   padding: 0 5px 0 20px;
   background-position: left 3px center;
@@ -1311,6 +1313,17 @@ header.colored section .headerIcons img path {
 }
 .contentHeader .filtersSearch .dropMenu ul li a.dismiss {
   background-image: url("../images/dismiss.png");
+}
+.contentHeader .filtersSearch .dropMenu ul.withOutIcon {
+  border: 0;
+  box-shadow: -3px 3px 3px rgba(0, 69, 103, 0.1);
+}
+.contentHeader .filtersSearch .dropMenu ul.withOutIcon li a {
+  padding: 5px;
+  border-top: 1px solid #EEE;
+}
+.contentHeader .filtersSearch .dropMenu ul.withOutIcon li:first-child a {
+  border-top: 0;
 }
 .contentHeader .filtersSearch .dropMenu:hover ul {
   visibility: visible;
@@ -2830,22 +2843,27 @@ hr.BoldHr {
 
 .counters {
   text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+.counters .title {
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
 }
 .counters ul {
-  margin: 0 -5px;
+  margin: 0 -2.5px;
   display: inline-block;
 }
 .counters ul li {
   float: left;
-  padding: 0 5px;
+  padding: 0 2.5px;
 }
 .counters ul li article {
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
-  color: #828787;
+  color: #000;
   padding: 2px 10px 2px 2px;
-  background-color: #F0EFF4;
-  border: 1px solid #C5C3CA;
+  background-color: #DDD;
+  border: 1px solid #CCC;
   border-radius: 6px;
   height: 36px;
   text-align: left;
@@ -2906,7 +2924,6 @@ hr.BoldHr {
 }
 .counters + .scroll-wrapper {
   top: 50px !important;
-  bottom: 40px;
 }
 
 .weekRotation {
@@ -3052,18 +3069,18 @@ hr.BoldHr {
   padding: 5px;
   margin-left: 10px;
 }
-.contentBody .pageSpecificArea form ul {
+.contentBody .pageSpecificArea form > ul {
   height: 32px;
   margin: 0 -2.5px;
   float: left;
 }
-.contentBody .pageSpecificArea form ul li {
+.contentBody .pageSpecificArea form > ul > li {
   padding: 0 2.5px;
   float: left;
   height: 32px;
   position: relative;
 }
-.contentBody .pageSpecificArea form ul li .title {
+.contentBody .pageSpecificArea form > ul > li .title {
   float: left;
   line-height: 32px;
   font-size: 14px;
@@ -3071,10 +3088,10 @@ hr.BoldHr {
   color: #FFF;
   margin-right: 5px;
 }
-.contentBody .pageSpecificArea form ul li input[type=checkbox] {
+.contentBody .pageSpecificArea form > ul > li input[type=checkbox] {
   float: left;
 }
-.contentBody .pageSpecificArea form ul li input[type=checkbox] + label {
+.contentBody .pageSpecificArea form > ul > li input[type=checkbox] + label {
   border-width: 2px;
   border-color: rgb(161, 173, 176);
   border-style: solid;
@@ -3087,7 +3104,7 @@ hr.BoldHr {
   cursor: pointer;
   margin: 4px 0 0 0;
 }
-.contentBody .pageSpecificArea form ul li input[type=checkbox] + label:before {
+.contentBody .pageSpecificArea form > ul > li input[type=checkbox] + label:before {
   border-radius: 50%;
   background-color: rgb(130, 135, 135);
   position: absolute;
@@ -3097,17 +3114,17 @@ hr.BoldHr {
   left: 2px;
   top: 2px;
 }
-.contentBody .pageSpecificArea form ul li input[type=checkbox]:checked + label {
+.contentBody .pageSpecificArea form > ul > li input[type=checkbox]:checked + label {
   border-color: #6DC77A;
 }
-.contentBody .pageSpecificArea form ul li input[type=checkbox]:checked + label:before {
+.contentBody .pageSpecificArea form > ul > li input[type=checkbox]:checked + label:before {
   background-color: #6DC77A;
   left: 12px;
 }
-.contentBody .pageSpecificArea form ul li input[type=text],
-.contentBody .pageSpecificArea form ul li select,
-.contentBody .pageSpecificArea form ul li textarea,
-.contentBody .pageSpecificArea form ul li .select2 {
+.contentBody .pageSpecificArea form > ul > li input[type=text],
+.contentBody .pageSpecificArea form > ul > li select,
+.contentBody .pageSpecificArea form > ul > li textarea,
+.contentBody .pageSpecificArea form > ul > li .select2 {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -3121,33 +3138,33 @@ hr.BoldHr {
   float: left;
   font-family: "Poppins", sans-serif;
 }
-.contentBody .pageSpecificArea form ul li input[type=text][name=dateRange], .contentBody .pageSpecificArea form ul li input[type=text].date,
-.contentBody .pageSpecificArea form ul li select[name=dateRange],
-.contentBody .pageSpecificArea form ul li select.date,
-.contentBody .pageSpecificArea form ul li textarea[name=dateRange],
-.contentBody .pageSpecificArea form ul li textarea.date,
-.contentBody .pageSpecificArea form ul li .select2[name=dateRange],
-.contentBody .pageSpecificArea form ul li .select2.date {
+.contentBody .pageSpecificArea form > ul > li input[type=text][name=dateRange], .contentBody .pageSpecificArea form > ul > li input[type=text].date,
+.contentBody .pageSpecificArea form > ul > li select[name=dateRange],
+.contentBody .pageSpecificArea form > ul > li select.date,
+.contentBody .pageSpecificArea form > ul > li textarea[name=dateRange],
+.contentBody .pageSpecificArea form > ul > li textarea.date,
+.contentBody .pageSpecificArea form > ul > li .select2[name=dateRange],
+.contentBody .pageSpecificArea form > ul > li .select2.date {
   background-image: url("../images/calendar.png");
   background-position: right 5px center;
   background-repeat: no-repeat;
   background-size: 24px;
 }
-.contentBody .pageSpecificArea form ul li input[type=text]:focus,
-.contentBody .pageSpecificArea form ul li select:focus,
-.contentBody .pageSpecificArea form ul li textarea:focus,
-.contentBody .pageSpecificArea form ul li .select2:focus {
+.contentBody .pageSpecificArea form > ul > li input[type=text]:focus,
+.contentBody .pageSpecificArea form > ul > li select:focus,
+.contentBody .pageSpecificArea form > ul > li textarea:focus,
+.contentBody .pageSpecificArea form > ul > li .select2:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
-.contentBody .pageSpecificArea form ul li input[type=text].disabled,
-.contentBody .pageSpecificArea form ul li select.disabled,
-.contentBody .pageSpecificArea form ul li textarea.disabled,
-.contentBody .pageSpecificArea form ul li .select2.disabled {
+.contentBody .pageSpecificArea form > ul > li input[type=text].disabled,
+.contentBody .pageSpecificArea form > ul > li select.disabled,
+.contentBody .pageSpecificArea form > ul > li textarea.disabled,
+.contentBody .pageSpecificArea form > ul > li .select2.disabled {
   pointer-events: none;
   background-color: #F3F3F3;
 }
-.contentBody .pageSpecificArea form ul li.incrDecr .counterBtn {
+.contentBody .pageSpecificArea form > ul > li.incrDecr .counterBtn {
   position: absolute;
   right: 18px;
   border-radius: 2px;
@@ -3160,19 +3177,19 @@ hr.BoldHr {
   background-size: 26px;
   z-index: 2;
 }
-.contentBody .pageSpecificArea form ul li.incrDecr .counterBtn.plus {
+.contentBody .pageSpecificArea form > ul > li.incrDecr .counterBtn.plus {
   top: 2px;
   background-position: top;
 }
-.contentBody .pageSpecificArea form ul li.incrDecr .counterBtn.minus {
+.contentBody .pageSpecificArea form > ul > li.incrDecr .counterBtn.minus {
   bottom: 2px;
   background-position: bottom;
 }
-.contentBody .pageSpecificArea form ul li.incrDecr input[type=text] {
+.contentBody .pageSpecificArea form > ul > li.incrDecr input[type=text] {
   padding: 0 25px 0 5px;
   width: 100px;
 }
-.contentBody .pageSpecificArea form ul li.incrDecr:before {
+.contentBody .pageSpecificArea form > ul > li.incrDecr:before {
   content: attr(data-unit);
   right: 42px;
   position: absolute;
@@ -3181,6 +3198,33 @@ hr.BoldHr {
   z-index: 2;
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default {
+  padding: 0;
+  border: 0;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--single, .contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--multiple {
+  height: 32px;
+  border: 0;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--single .select2-selection__rendered, .contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  height: 32px;
+  line-height: 32px;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+  height: 22px;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  padding: 0 5px;
+  margin: 5px 0 0 5px;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding: 0;
+}
+.contentBody .pageSpecificArea form > ul > li .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-search--inline .select2-search__field {
+  margin-top: 0;
+  padding: 0 5px;
 }
 .contentBody .pageSpecificArea form > button {
   background-color: #FFCD60;
@@ -28552,6 +28596,7 @@ hr.BoldHr {
   background-color: #1F262A;
   height: 30px;
   margin-bottom: 5px;
+  border: 0;
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotaheader li {
   width: calc((100% - 140px) / 8);
@@ -28586,6 +28631,14 @@ hr.BoldHr {
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotaheader li:last-child {
   display: none;
+}
+.rotaGrid .rotaGridContainer .rotagrid .rotaheader li.lock {
+  background-color: #09b3d4;
+  color: #014565;
+  background-image: url("../images/lock.png");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left 60px center;
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotausertable {
   background-color: transparent;
@@ -38328,7 +38381,8 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section > ul .eye,
 .generalListing section > ul .view,
-.generalListing section > ul .delete, .generalListing section > ul .question {
+.generalListing section > ul .delete, .generalListing section > ul .question,
+.generalListing section > ul .list {
   float: left;
   width: 24px;
   height: 24px;
@@ -38347,6 +38401,9 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing section > ul .question {
   background-image: url("../images/formLabelInfo.png");
+}
+.generalListing section > ul .list {
+  background-image: url("../images/list.png");
 }
 .generalListing section > ul.wrapText {
   white-space: normal;
@@ -41296,6 +41353,259 @@ input[type=checkbox].switch:checked + label:before {
 .newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i {
   font-style: normal;
   font-weight: 300;
+}
+
+.assessmentQuestions {
+  float: left;
+  width: calc(100% - 200px);
+}
+.assessmentQuestions + section {
+  float: right;
+  width: 190px;
+}
+.assessmentQuestions article {
+  background-color: #FFF;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.assessmentQuestions article .question {
+  color: #8D99AE;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.assessmentQuestions article .question .special {
+  font-weight: 600;
+  color: #004663;
+}
+.assessmentQuestions article .question i {
+  font-style: normal;
+  font-weight: 300;
+  color: #D1B8AC;
+}
+.assessmentQuestions article ul {
+  margin: 0 -10px;
+}
+.assessmentQuestions article ul li {
+  float: left;
+  padding: 0 10px;
+}
+.assessmentQuestions article ul li input[type=radio] + label, .assessmentQuestions article ul li input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+  line-height: 18px;
+  position: relative;
+  font-size: 16px;
+  color: #404455;
+  padding-left: 23px;
+  font-weight: 400;
+  margin: 0;
+}
+.assessmentQuestions article ul li input[type=radio] + label:before, .assessmentQuestions article ul li input[type=checkbox] + label:before {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  border: 1px solid #8D99AE;
+  left: 5px;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  background-color: #FFF;
+}
+.assessmentQuestions article ul li input[type=checkbox] + label:before {
+  border-radius: 4px;
+}
+.assessmentQuestions article ul li input[type=radio]:checked + label:before, .assessmentQuestions article ul li input[type=checkbox]:checked + label:before {
+  box-shadow: inset 0 0 0 5px #2AE797;
+  border-color: transparent;
+}
+.assessmentQuestions article ul li input[type=checkbox]:checked + label:before {
+  box-shadow: inset 0 0 0 10px #2AE797;
+}
+.assessmentQuestions article ul li input[type=checkbox]:checked + label:after {
+  background-image: url("../images/accept.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 5px;
+  content: "";
+}
+.assessmentQuestions.custom article {
+  padding: 10px 10px 5px 10px;
+}
+.assessmentQuestions.custom article ul {
+  margin: 0 -5px;
+}
+.assessmentQuestions.custom article ul li {
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+.assessmentQuestions.custom article ul li input[type=radio] + label, .assessmentQuestions.custom article ul li input[type=checkbox] + label {
+  padding: 5px 5px 5px 28px;
+  border-radius: 4px;
+}
+.assessmentQuestions.custom article ul li input[type=radio] + label:before, .assessmentQuestions.custom article ul li input[type=checkbox] + label:before {
+  left: 5px;
+}
+.assessmentQuestions section {
+  background-color: #FFF;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.assessmentQuestions section .title {
+  color: #8D99AE;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.assessmentQuestions section .area {
+  padding: 2.5px 0;
+  border-top: 1px solid #F5F5F5;
+}
+.assessmentQuestions section .area:first-of-type {
+  border-top: 0;
+}
+.assessmentQuestions section .area .areaName {
+  float: left;
+  font-size: 16px;
+  color: #5D6A72;
+  position: relative;
+  padding-top: 5px;
+}
+.assessmentQuestions section .area .areaName:before {
+  display: block;
+  font-size: 12px;
+  color: #828787;
+  line-height: 14px;
+  margin-bottom: 5px;
+  content: attr(data-title);
+}
+.assessmentQuestions section .area ul {
+  float: right;
+  margin: 0;
+}
+.assessmentQuestions section .area ul li {
+  float: left;
+  margin-left: 5px;
+}
+.assessmentQuestions section .area ul li:first-child {
+  margin-left: 0;
+}
+.assessmentQuestions section .area ul li input[type=radio] + label {
+  display: block;
+  border-radius: 4px;
+  padding: 5px 10px 28px 10px;
+  font-size: 12px;
+  color: #404455;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.assessmentQuestions section .area ul li input[type=radio] + label:after {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  border: 1px solid #8D99AE;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: "";
+  transition: all 0.3s ease-in-out;
+  background-color: #FFF;
+  bottom: 5px;
+}
+.assessmentQuestions section .area ul li input[type=radio]:checked + label:after {
+  box-shadow: inset 0 0 0 5px #2AE797;
+  border-color: transparent;
+}
+
+.assessmentScore {
+  margin-bottom: 10px;
+  background-color: #1C3C4B;
+  border-radius: 6px;
+  padding: 10px;
+  color: #EDF2F4;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.assessmentScore .title {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.assessmentScore .score {
+  background-color: #FFCD60;
+  display: inline-block;
+  border-radius: 4px;
+  width: 64px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 5px 0;
+  color: #1C3C4B;
+  margin-bottom: 20px;
+}
+.assessmentScore > div .title {
+  margin-bottom: 5px;
+}
+.assessmentScore > div p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E89B34;
+  margin: 0;
+}
+
+.informSection {
+  border: 1px solid #8D99AE;
+  border-radius: 6px;
+  background-color: #F5F5F5;
+  padding: 10px;
+}
+.informSection ul li {
+  display: flex;
+  margin-top: 10px;
+}
+.informSection ul li:first-child {
+  margin-top: 0;
+}
+.informSection ul li span {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #1C3C4B;
+}
+.informSection ul li span i {
+  font-style: normal;
+  color: #8D99AE;
+  font-size: 10px;
+  font-weight: 400;
+  display: block;
+}
+
+.assessmentLegends {
+  font-family: "Poppins", sans-serif;
+}
+.assessmentLegends li {
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #404455;
 }
 
 .scroll-element.scroll-x {
