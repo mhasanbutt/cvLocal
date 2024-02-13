@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="linksdev.co.uk" id="f1ae793d-23f2-4e4d-b531-e883232cad05" port="32212" nameFormat="DESCRIPTIVE" username="linksdevn" useOpenSSHConfig="false" />
+    </configs>
+  </component>
+</project>

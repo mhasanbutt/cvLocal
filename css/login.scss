@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    font-family: $poppins;
 
     article {
         vertical-align: middle;
@@ -42,7 +43,7 @@
                 background-repeat: no-repeat;
                 background-size: 48px 24px;
                 cursor: pointer;
-                transform: translateY(-42px);
+                transform: translateY(-35px);
 
                 &.revert {
                     background-position: -24px 0;
@@ -54,9 +55,8 @@
             input[type='password'],
             select {
                 width: 100%;
-                margin-bottom: 10px;
-                font-family: $secondaryFont;
-                font-size: 14px;
+                margin-bottom: 5px;
+                font-size: 12px;
                 padding: 10px;
                 border-radius: 4px;
                 background-color: #FFFFFF99;
@@ -73,11 +73,15 @@
                 float: left;
 
                 &:nth-of-type(odd) {
-                    padding-right: 5px;
+                    padding-right: 2.5px;
                 }
 
                 &:nth-of-type(even) {
-                    padding-left: 5px;
+                    padding-left: 2.5px;
+                }
+
+                select {
+                    padding: 10px 6px;
                 }
             }
 
@@ -85,7 +89,6 @@
                 border-radius: 4px;
                 background-color: #00509D;
                 color: #FFF;
-                font-family: $secondaryFont;
                 border: 0;
                 padding: 8px 35px;
                 position: relative;
