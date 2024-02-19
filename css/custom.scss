@@ -6076,7 +6076,7 @@ hr {
 
         &.disabled {
             cursor: not-allowed;
-            background-color: #EEE;
+            background-color: #DDD;
         }
 
         &:focus {
@@ -16295,30 +16295,6 @@ hr {
         transform: translateX(-50%);
         padding: 0 20px;
         cursor: pointer;
-
-        &:before {
-            position: absolute;
-            height: 12px;
-            width: 12px;
-            right: 100%;
-            bottom: 0;
-            background-image: url('../images/warningsCorners.png');
-            background-repeat: no-repeat;
-            background-position: left center;
-            content: "";
-        }
-
-        &:after {
-            position: absolute;
-            height: 12px;
-            width: 12px;
-            left: 100%;
-            bottom: 0;
-            background-image: url('../images/warningsCorners.png');
-            background-repeat: no-repeat;
-            background-position: right center;
-            content: "";
-        }
 
         samp {
             color: #FFF;

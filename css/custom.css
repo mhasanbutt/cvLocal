@@ -6169,7 +6169,7 @@ hr.BoldHr {
 .inBodyForm .graybox.disabled,
 .inBodyForm .gsfPopup.disabled {
   cursor: not-allowed;
-  background-color: #EEE;
+  background-color: #DDD;
 }
 .inBodyForm textarea:focus,
 .inBodyForm input[type=text]:focus,
@@ -14555,28 +14555,6 @@ hr.BoldHr {
   transform: translateX(-50%);
   padding: 0 20px;
   cursor: pointer;
-}
-.warningsRed .title:before {
-  position: absolute;
-  height: 12px;
-  width: 12px;
-  right: 100%;
-  bottom: 0;
-  background-image: url("../images/warningsCorners.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  content: "";
-}
-.warningsRed .title:after {
-  position: absolute;
-  height: 12px;
-  width: 12px;
-  left: 100%;
-  bottom: 0;
-  background-image: url("../images/warningsCorners.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  content: "";
 }
 .warningsRed .title samp {
   color: #FFF;
