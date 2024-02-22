@@ -29885,9 +29885,6 @@ button.newStyle.green {
   float: left;
   font-size: 14px;
   color: #1f262a;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   margin-left: 20px;
   margin-bottom: 10px;
 }
@@ -29898,6 +29895,22 @@ button.newStyle.green {
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
+  position: relative;
+}
+.reportCareRoutines .serviceUser ul li span i.helpTip {
+  padding-right: 20px;
+}
+.reportCareRoutines .serviceUser ul li span i.helpTip:after {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  right: 0;
+  top: -1px;
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/eMarMoreInfo.png");
 }
 .reportCareRoutines .serviceUser ul li span:first-of-type {
   margin-left: 0;
@@ -35715,6 +35728,7 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 500;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
 }
 .helpTip .tTText .scroll-wrapper {
   left: 10px;
