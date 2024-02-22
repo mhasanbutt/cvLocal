@@ -15,16 +15,13 @@
             padding: 0;
             font-family: "Poppins", sans-serif;
             box-sizing: border-box;
-
         }
         .sidenav{
-            width: 115px;
+            width: 100px;
             height: 100vh;
             background-color: #fff;
             box-shadow: inset -6px 0 5px rgba(0, 0, 0, 0.1);
-            position: absolute;
             float: left;
-            overflow: hidden;
         }
         .sidenav ul{
             list-style-type: none;
@@ -52,7 +49,7 @@
             padding-left: 3px;
         }
         .sidenav ul li:first-child{
-            padding: 10px 15px 30px 3px;
+            padding: 10px 15px 30px 0;
         }
         .sidenav ul li .logo{
             width: 70px;
@@ -63,7 +60,7 @@
             height: 32px;
         }
         .sidenav ul li:nth-child(2), .sidenav ul li:nth-child(3), .sidenav ul li:last-child{
-            padding: 0px 20px 30px 15px;
+            padding: 0px 20px 30px 13px;
         }
         .sidenav ul li:nth-child(4) img{
             height: 62px;
@@ -151,7 +148,6 @@
         .order-stats{
             background-color: #F5F5F5;
             height: 175px;
-            width: 69.5%;
             border-radius: 12px;
             padding: 15px 0 15px 15px;
         }
