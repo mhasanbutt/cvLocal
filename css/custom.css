@@ -33480,6 +33480,9 @@ input[type=checkbox].switch:checked + label:before {
 .newSUList .listContainer > ul > li article.freezeHospitalAppointment {
   background-color: #b7e3bd;
 }
+.newSUList .listContainer > ul > li article freezeDayCenter {
+  background-color: #cfe7d3;
+}
 .newSUList .listContainer > ul > li.testProfile article .picture:before {
   border-radius: 4px;
   background-color: rgb(63, 66, 83);
@@ -34890,6 +34893,9 @@ input[type=checkbox].switch:checked + label:before {
 }
 .employeeList > li article.ArchivedUserTerminated {
   background-color: #FB8587;
+}
+.employeeList > li article.ArchivedUserEmployment {
+  background-color: #99d9ea;
 }
 .employeeList > li.testProfile article .picture:before {
   border-radius: 4px;

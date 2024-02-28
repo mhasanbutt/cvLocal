@@ -39475,6 +39475,10 @@ input[type=checkbox].switch {
                     &.freezeHospitalAppointment {
                         background-color: lighten($primaryColor, 20%);
                     }
+
+	                freezeDayCenter {
+		                background-color: #cfe7d3;
+	                }
                 }
 
                 &.testProfile {
@@ -41163,6 +41167,10 @@ input[type=checkbox].switch {
             &.ArchivedUserTerminated {
                 background-color: #FB8587;
             }
+
+	        &.ArchivedUserEmployment {
+		        background-color: #99d9ea;
+	        }
         }
 
         &.testProfile {
