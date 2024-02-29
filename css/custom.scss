@@ -39476,7 +39476,7 @@ input[type=checkbox].switch {
                         background-color: lighten($primaryColor, 20%);
                     }
 
-	                freezeDayCenter {
+	                &.freezeDayCenter {
 		                background-color: #cfe7d3;
 	                }
                 }

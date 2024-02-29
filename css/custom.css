@@ -33480,7 +33480,7 @@ input[type=checkbox].switch:checked + label:before {
 .newSUList .listContainer > ul > li article.freezeHospitalAppointment {
   background-color: #b7e3bd;
 }
-.newSUList .listContainer > ul > li article freezeDayCenter {
+.newSUList .listContainer > ul > li article.freezeDayCenter {
   background-color: #cfe7d3;
 }
 .newSUList .listContainer > ul > li.testProfile article .picture:before {
