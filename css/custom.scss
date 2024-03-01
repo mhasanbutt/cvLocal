@@ -33372,11 +33372,19 @@ hr {
         padding: 0 5px;
 
         .rotagrid {
-            .rotaheader {
+	        padding-top: 35px;
+	        position: relative;
+
+	        .rotaheader {
                 background-color: #1F262A;
                 height: 30px;
                 margin-bottom: 5px;
 	            border: 0;
+		        position: fixed;
+		        left: 85px;
+		        right: 20px;
+		        transform: translateY(-35px);
+		        z-index: 2;
 
                 li {
                     width: calc(calc(100% - 140px) / 8);
@@ -43995,6 +44003,15 @@ input[type=checkbox].switch {
                 .selection {
                     display: block;
                     height: 34px;
+
+	                .select2-selection--single {
+		                height: 32px;
+		                border: 0;
+
+		                .select2-selection__rendered {
+			                line-height: 32px;
+		                }
+	                }
 
                     .select2-selection--multiple {
                         border: 0;

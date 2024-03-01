@@ -28498,11 +28498,20 @@ hr.BoldHr {
 .rotaGrid .rotaGridContainer {
   padding: 0 5px;
 }
+.rotaGrid .rotaGridContainer .rotagrid {
+  padding-top: 35px;
+  position: relative;
+}
 .rotaGrid .rotaGridContainer .rotagrid .rotaheader {
   background-color: #1F262A;
   height: 30px;
   margin-bottom: 5px;
   border: 0;
+  position: fixed;
+  left: 85px;
+  right: 20px;
+  transform: translateY(-35px);
+  z-index: 2;
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotaheader li {
   width: calc((100% - 140px) / 8);
@@ -37273,6 +37282,13 @@ input[type=checkbox].switch:checked + label:before {
 .newForm ul li .select2 .selection {
   display: block;
   height: 34px;
+}
+.newForm ul li .select2 .selection .select2-selection--single {
+  height: 32px;
+  border: 0;
+}
+.newForm ul li .select2 .selection .select2-selection--single .select2-selection__rendered {
+  line-height: 32px;
 }
 .newForm ul li .select2 .selection .select2-selection--multiple {
   border: 0;
