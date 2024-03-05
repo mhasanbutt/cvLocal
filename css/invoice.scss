@@ -490,6 +490,11 @@ body {
 	background: #ffffff !important;
 	.table > tbody > tr > td:first-child{
     	border-left: none !important;
+
+		img {
+			max-height: 120px;
+			max-width: 300px;
+		}
 	}
 	.table > tbody > tr > td:last-child{
     	border-right: none !important;

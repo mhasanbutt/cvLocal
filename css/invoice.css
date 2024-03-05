@@ -343,6 +343,10 @@
     font-size: 9px !important;
   }
   .EmarPrint .marSheetDateInfo span {
+    -moz-transform: translateX(0) translateY(10px);
+    -webkit-transform: translateX(0) translateY(10px);
+    -o-transform: translateX(0) translateY(10px);
+    -ms-transform: translateX(0) translateY(10px);
     transform: translateX(0) translateY(10px);
   }
   .ToDoTaskHistory table tbody tr td ul li span img {
@@ -379,6 +383,10 @@ body {
 }
 .invoicePrintBody .table > tbody > tr > td:first-child {
   border-left: none !important;
+}
+.invoicePrintBody .table > tbody > tr > td:first-child img {
+  max-height: 120px;
+  max-width: 300px;
 }
 .invoicePrintBody .table > tbody > tr > td:last-child {
   border-right: none !important;
@@ -714,8 +722,14 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 16px 16px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .ToDoTaskHistory .careRoutinesIcon li:last-child:before {
   display: none;
-}/*# sourceMappingURL=invoice.css.map */
+}
+
+/*# sourceMappingURL=invoice.css.map */

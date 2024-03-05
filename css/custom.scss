@@ -24346,6 +24346,7 @@ hr {
         border-color: #DDD;
         height: 42px;
         position: relative;
+	    z-index: 2;
 
         li {
             width: calc(calc(100% - 140px) / 8);
@@ -24354,7 +24355,6 @@ hr {
             border-top: 1px solid #DDD;
             height: 100%;
             background-color: #EEE;
-            font-family: $secondaryFont;
             font-size: 12px;
             text-transform: uppercase;
             font-weight: 700;
@@ -24425,6 +24425,7 @@ hr {
         border-color: #DDD;
         height: 120px;
         position: relative;
+	    z-index: 1;
 
         li {
             width: calc(calc(100% - 140px) / 8);
@@ -24434,8 +24435,7 @@ hr {
             background-color: #EEE;
             background-image: url("../images/routaListTexture.gif");
             background-blend-mode: darken;
-            font-family: $secondaryFont;
-            font-size: 12px;
+            font-size: 14px;
             padding: 30px 5px 5px 5px;
             position: relative;
             cursor: pointer;
@@ -24714,6 +24714,7 @@ hr {
                 @include shift(-50%, -50%);
                 position: absolute;
                 content: '';
+	            display: none;
             }
 
             &.filled {
@@ -24743,7 +24744,6 @@ hr {
                     border-radius: 4px;
                     box-shadow: 1px 1.732px 4px 0 rgba(0, 0, 0, 0.2);
                     color: #FFF;
-                    font-family: $secondaryFont;
                     padding: 10px;
                     width: auto;
                     height: auto;
@@ -33367,6 +33367,7 @@ hr {
     height: calc(100% - 42px);
     position: relative;
     z-index: 1;
+	font-family: "Poppins";
 
     .rotaGridContainer {
         padding: 0 5px;
@@ -33396,7 +33397,6 @@ hr {
                     border: 0;
                     padding-left: 5px;
                     font-size: 14px;
-                    font-family: $secondaryFont;
                     font-weight: 400;
                     color: #FFF;
 
@@ -33444,15 +33444,15 @@ hr {
 
                 li {
                     width: calc(calc(100% - 140px) / 8);
-                    border: 0;
                     margin-left: 5px;
-                    background-image: url('../images/rotaGridTexture.png');
                     background-blend-mode: unset;
                     background-color: transparent;
                     padding: 35px 0 0 15px;
+	                border-radius: 6px;
+	                border: 1px solid #DDD;
 
                     .picture {
-                        height: 112px;
+                        height: 108px;
                         width: 60px;
                         background-color: #FFF;
                         border: 0;
@@ -33472,9 +33472,6 @@ hr {
                     .designation {
                         display: block;
                         padding: 0 0 0 65px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
                         margin: 0;
                         border-radius: 0;
                         background-color: transparent;
@@ -33483,7 +33480,6 @@ hr {
                     .name {
                         font-size: 16px;
                         color: #1f262a;
-                        font-family: $secondaryFont;
                         font-weight: 400;
                     }
 
@@ -33508,8 +33504,7 @@ hr {
 
                     &:last-child {
                         background-image: none;
-                        font-size: 12px;
-                        font-family: $secondaryFont;
+                        font-size: 10px;
                         padding: 20px 0 0 10px !important;
                         border: 1px solid #999;
                         line-height: 1.2;
@@ -33554,7 +33549,7 @@ hr {
                     }
 
                     &.filled {
-                        background-color: #9daeb1;
+                        background-color: #EEE;
                         background-image: none;
                     }
 
