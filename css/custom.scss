@@ -45432,7 +45432,7 @@ input[type=checkbox].switch {
                             background-color: #FFF;
                             float: left;
                             border: 1px solid #DDD;
-                            margin-right: 10px;
+                            margin: 0 10px 0 0;
                         }
 
                         input[type="checkBox"] {
@@ -45454,6 +45454,27 @@ input[type=checkbox].switch {
                         }
                     }
                 }
+
+	            &.picture {
+		            & > li {
+			            &:nth-child(2) {
+				            width: 42px;
+				            height: 42px;
+				            border-radius: 4px;
+				            overflow: hidden;
+				            border: 1px solid #DDD;
+				            position: relative;
+				            margin-right: 20px;
+
+				            img {
+					            width: 100%;
+					            height: 100%;
+					            position: absolute;
+					            left: 0;
+				            }
+			            }
+		            }
+	            }
             }
         }
 
@@ -49207,6 +49228,91 @@ input[type=checkbox].switch {
 					font-size: 10px;
 					font-weight: 400;
 					display: block;
+				}
+			}
+		}
+	}
+}
+
+.multiUserSelection {
+	margin: 0 -5px 20px;
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		padding: 0 5px;
+		float: left;
+		width: calc(100% / 8);
+
+		label {
+			display: block;
+			border: 1px solid #BFD6DE;
+			border-radius: 6px;
+			padding: 5px;
+			position: relative;
+			cursor: pointer;
+
+			.img {
+				display: block;
+				padding-top: 100%;
+				position: relative;
+				margin-bottom: 5px;
+
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 6px;
+				}
+			}
+
+			.name {
+				display: block;
+				font-size: 14px;
+				font-family: "Poppins";
+				line-height: 20px;
+				font-weight: 400;
+				text-align: center;
+			}
+
+			&:before {
+				height: 24px;
+				width: 24px;
+				border-radius: 4px;
+				right: 15px;
+				top: 15px;
+				border: 1px solid #979C9D;
+				background-color: rgba(#F5F5F5, 0.8);
+				content: "";
+				position: absolute;
+				z-index: 2;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 200ms linear;
+			}
+
+			&:hover {
+				&:before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		input[type=checkbox] {
+			&:checked {
+				& + label {
+					&:before {
+						background-color: #7FB68E;
+						background-image: url('../images/accept.png');
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: 18px;
+						opacity: 1;
+						visibility: visible;
+					}
 				}
 			}
 		}
