@@ -37129,6 +37129,10 @@ input[type=checkbox].switch:checked + label:before {
   right: 0;
   top: -2px;
 }
+.newForm ul li .text {
+  display: block;
+  line-height: 34px;
+}
 .newForm ul li input[type=text],
 .newForm ul li select,
 .newForm ul li textarea,
@@ -41614,6 +41618,48 @@ input[type=checkbox].switch:checked + label:before {
   background-size: 18px;
   opacity: 1;
   visibility: visible;
+}
+
+.GSFSelection {
+  padding: 10px;
+  background-color: #F5F5F5;
+  border: 1px solid #DDD;
+  border-radius: 6px;
+}
+.GSFSelection article {
+  padding-top: 10px;
+}
+.GSFSelection article:first-of-type {
+  padding-top: 0;
+}
+.GSFSelection article label {
+  font-weight: 400;
+  display: block;
+  padding-left: 28px;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.GSFSelection article label:before {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 4px;
+  content: "";
+  border: 1px solid #999;
+  background-color: #FFF;
+  left: 0;
+  transition: all 200ms linear;
+  background-image: url("../images/accept.png");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.GSFSelection article input[type=checkbox]:checked + label:before {
+  background-color: #6DC77A;
+}
+.GSFSelection article .newForm {
+  display: none;
 }
 
 .assessmentLegends {

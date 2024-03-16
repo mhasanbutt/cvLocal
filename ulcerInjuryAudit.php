@@ -66,6 +66,14 @@
                 </li>
             </ul>
 
+            <div class="newForm">
+                <ul class="list-unstyled clearfix col4">
+                    <li>
+                        <button>Load Record</button>
+                    </li>
+                </ul>
+            </div>
+
             <div class="generalListing">
                 <span class="title">Mr Tim Shermin</span>
 
@@ -124,6 +132,51 @@
                     </ul>
                 </section>
             </div>
+
+            <div class="GSFSelection">
+                <article>
+                    <input type="checkbox" name="gsfOptions" id="opt1" hidden>
+                    <label for="opt1">Recognition of the dying phase by the care home and GP and communicated to all staff.</label>
+
+                    <div class="newForm">
+                        <ul class="list-unstyled clearfix col4">
+                            <li>
+                                <span class="title">Date</span>
+                                <input type="date">
+                            </li>
+                            <li>
+                                <span class="title">Last Reviewed By</span>
+                                <span class="text">Rishi R.</span>
+                            </li>
+                            <li class="textarea" style="width:100%;">
+                                <span class="title">Comments</span>
+                                <textarea></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <input type="checkbox" name="gsfOptions" id="opt2" hidden>
+                    <label for="opt2">GP to review resident</label>
+
+                    <div class="newForm">
+                        <ul class="list-unstyled clearfix col4">
+                            <li>
+                                <span class="title">Date</span>
+                                <input type="date">
+                            </li>
+                            <li>
+                                <span class="title">Last Reviewed By</span>
+                                <span class="text">Rishi R.</span>
+                            </li>
+                            <li class="textarea" style="width:100%;">
+                                <span class="title">Comments</span>
+                                <textarea></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
 
@@ -138,5 +191,14 @@
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    $('.GSFSelection article input[type=checkbox]').click(function(){
+        if ($(this).is(':checked')){
+            $(this).siblings('.newForm').slideDown();
+        } else {
+            $(this).siblings('.newForm').slideUp();
+        }
+    });
+</script>
 </body>
 </html>

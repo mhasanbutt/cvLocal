@@ -43874,6 +43874,11 @@ input[type=checkbox].switch {
                 top: -2px;
             }
 
+	        .text {
+		        display: block;
+		        line-height: 34px;
+	        }
+
             input[type=text],
             select,
             textarea,
@@ -49315,6 +49320,60 @@ input[type=checkbox].switch {
 					}
 				}
 			}
+		}
+	}
+}
+
+.GSFSelection {
+	padding: 10px;
+	background-color: #F5F5F5;
+	border: 1px solid #DDD;
+	border-radius: 6px;
+
+	article {
+		padding-top: 10px;
+
+		&:first-of-type {
+			padding-top: 0;
+		}
+
+		label {
+			font-weight: 400;
+			display: block;
+			padding-left: 28px;
+			position: relative;
+			cursor: pointer;
+			margin: 0;
+
+			&:before {
+				position: absolute;
+				height: 18px;
+				width: 18px;
+				border-radius: 4px;
+				content: "";
+				border: 1px solid #999;
+				background-color: #FFF;
+				left: 0;
+				transition: all 200ms linear;
+				background-image: url('../images/accept.png');
+				background-size: 14px;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		input[type=checkbox] {
+			&:checked {
+				& + label {
+					&:before {
+						background-color: $primaryColor;
+					}
+				}
+			}
+		}
+
+		.newForm {
+			display: none;
 		}
 	}
 }
