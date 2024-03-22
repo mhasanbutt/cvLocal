@@ -103,6 +103,14 @@
                             2.12.2024
                         </li>
                     </ul>
+                    <div class="newForm">
+                        <ul class="list-unstyled clearfix">
+                            <li style="width:100%;">
+                                <span class="title">Title</span>
+                                <textarea></textarea>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <section>
                     <ul class="withCheckbox picture list-unstyled clearfix">

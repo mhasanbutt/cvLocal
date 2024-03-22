@@ -47796,67 +47796,77 @@ input[type=checkbox].switch {
             }
         }
 
-        .sortOrder {
-            border-radius: 6px;
-            padding: 5px;
-            text-align: center;
-            background-color: #AA2478;
-
-            &:before {
-                content: "Sort Order";
-                font-size: 12px;
-                color: #EDF2F4;
-                font-family: $secondaryFont;
-                line-height: 14px;
-                display: inline-block;
-            }
-
-            input[type=number] {
-                width: 100%;
-                height: 26px;
-                border-radius: 4px;
-                background-color: #fff;
-                color: #1C3C4B;
-                font-size: 12px;
-                font-family: $secondaryFont;
-                border: 0;
-                appearance: textfield;
-                text-align: center;
-                box-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.16);
-            }
-        }
-
         .sortButtons {
             position: absolute;
             left: calc(100% + 10px);
-            width: 40px;
+            width: 90px;
             bottom: 0;
 
+	        .sortOrder {
+		        border-radius: 6px;
+		        padding: 5px;
+		        text-align: center;
+		        background-color: #AA2478;
+		        float: left;
+		        width: 40px;
+
+		        &:before {
+			        content: "Sort Order";
+			        font-size: 12px;
+			        color: #EDF2F4;
+			        font-family: $secondaryFont;
+			        line-height: 14px;
+			        display: inline-block;
+		        }
+
+		        input[type=number] {
+			        width: 100%;
+			        height: 26px;
+			        border-radius: 4px;
+			        background-color: #fff;
+			        color: #1C3C4B;
+			        font-size: 12px;
+			        font-family: $secondaryFont;
+			        border: 0;
+			        appearance: textfield;
+			        text-align: center;
+			        box-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.16);
+		        }
+	        }
+
             .buttons {
-                padding-top: 10px;
+	            float: right;
+	            width: 40px;
 
                 button {
                     background-color: $primaryColor;
-                    height: 40px;
-                    width: 40px;
+                    height: 38px;
+                    width: 38px;
                     border: 0;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 24px;
+	                float: left;
 
-                    &:only-of-type {
-                        border-radius: 6px;
-                    }
+	                &.addSectionTitle {
+		                background-image: url("../images/sectionTitle.png");
+	                }
+
+	                &.addSection {
+		                background-image: url("../images/addSection.png");
+	                }
 
                     &:first-of-type {
                         border-radius: 6px 6px 0 0;
-                        background-image: url("../images/sectionTitle.png");
                     }
 
                     &:last-of-type {
                         border-radius: 0 0 6px 6px;
-                        background-image: url("../images/addSection.png");
                     }
+
+	                &:only-of-type {
+		                border-radius: 6px;
+	                }
                 }
             }
         }

@@ -40365,13 +40365,21 @@ input[type=checkbox].switch:checked + label:before {
 .createForm section.columnSelection > ul > li:nth-child(5) input[type=radio] + label ul li {
   width: calc((100% - 8px) / 5);
 }
-.createForm section .sortOrder {
+.createForm section .sortButtons {
+  position: absolute;
+  left: calc(100% + 10px);
+  width: 90px;
+  bottom: 0;
+}
+.createForm section .sortButtons .sortOrder {
   border-radius: 6px;
   padding: 5px;
   text-align: center;
   background-color: #AA2478;
+  float: left;
+  width: 40px;
 }
-.createForm section .sortOrder:before {
+.createForm section .sortButtons .sortOrder:before {
   content: "Sort Order";
   font-size: 12px;
   color: #EDF2F4;
@@ -40379,7 +40387,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 14px;
   display: inline-block;
 }
-.createForm section .sortOrder input[type=number] {
+.createForm section .sortButtons .sortOrder input[type=number] {
   width: 100%;
   height: 26px;
   border-radius: 4px;
@@ -40392,34 +40400,34 @@ input[type=checkbox].switch:checked + label:before {
   text-align: center;
   box-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.16);
 }
-.createForm section .sortButtons {
-  position: absolute;
-  left: calc(100% + 10px);
-  width: 40px;
-  bottom: 0;
-}
 .createForm section .sortButtons .buttons {
-  padding-top: 10px;
+  float: right;
+  width: 40px;
 }
 .createForm section .sortButtons .buttons button {
   background-color: #6DC77A;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   border: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px;
+  float: left;
 }
-.createForm section .sortButtons .buttons button:only-of-type {
-  border-radius: 6px;
+.createForm section .sortButtons .buttons button.addSectionTitle {
+  background-image: url("../images/sectionTitle.png");
+}
+.createForm section .sortButtons .buttons button.addSection {
+  background-image: url("../images/addSection.png");
 }
 .createForm section .sortButtons .buttons button:first-of-type {
   border-radius: 6px 6px 0 0;
-  background-image: url("../images/sectionTitle.png");
 }
 .createForm section .sortButtons .buttons button:last-of-type {
   border-radius: 0 0 6px 6px;
-  background-image: url("../images/addSection.png");
+}
+.createForm section .sortButtons .buttons button:only-of-type {
+  border-radius: 6px;
 }
 .createForm section > ul {
   margin-bottom: 0;

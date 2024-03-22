@@ -79,8 +79,8 @@
                             <div class="sortOrder">
                                 <input type="number" value="1">
                             </div>
+                            
                             <div class="buttons">
-                                <button class="addSectionTitle"></button>
                                 <button class="addSection"></button>
                             </div>
                         </div>
@@ -90,9 +90,6 @@
                                 <input type="text">
                             </li>
                         </ul>
-                        <div class="controls clearfix">
-                            <span class="delete"></span>
-                        </div>
                     </section>
 
                     <section>
@@ -137,6 +134,53 @@
                     </section>
 
                     <section>
+                        <div class="sortButtons">
+                            <div class="sortOrder">
+                                <input type="number" value="1">
+                            </div>
+                            <div class="buttons">
+                                <button class="addSection"></button>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled clearfix">
+                            <li class="elementSelector">
+                                <span class="title">Select form element type</span>
+                                <select>
+                                    <option>Drop-down</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <div class="sortButtons">
+                            <div class="sortOrder">
+                                <input type="number" value="1">
+                            </div>
+                            <div class="buttons">
+                                <button class="addSectionTitle"></button>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled clearfix">
+                            <li>
+                                <span class="title">Section Title</span>
+                                <input type="text">
+                            </li>
+                        </ul>
+                        <div class="controls clearfix">
+                            <span class="delete"></span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="sortButtons">
+                            <div class="sortOrder">
+                                <input type="number" value="1">
+                            </div>
+                            <div class="buttons">
+                                <button class="addSection"></button>
+                            </div>
+                        </div>
                         <ul class="list-unstyled clearfix">
                             <li class="elementSelector">
                                 <span class="title">Select form element type</span>
