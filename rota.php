@@ -102,7 +102,6 @@
                                     <span class="hours">08:00-17:00 <i>9h</i></span>
                                     <span class="location">N-Edwardes Square</span>
                                 </div>
-
                                 <i class="toAdd"></i>
                             </li>
                             <li>
