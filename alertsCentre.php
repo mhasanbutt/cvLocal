@@ -145,7 +145,7 @@
 		</div>
 	</section>
 
-	<div class="newPopup">
+	<div hidden class="newPopup">
 		<article>
 			<div>
 				<div class="popupContainer">
@@ -221,7 +221,7 @@
 		</article>
 	</div>
 
-	<div class="modal fade in toDoListPop" tabindex="-1" role="dialog" style="display:block;">
+	<div hidden class="modal fade in toDoListPop" tabindex="-1" role="dialog" style="display:block;">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">

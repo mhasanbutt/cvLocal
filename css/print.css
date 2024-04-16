@@ -2052,7 +2052,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li:nth-child(9) {
   position: absolute;
-  left: 160px;
+  left: 50px;
   border: 0;
   width: auto;
   height: auto;
@@ -2063,6 +2063,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   padding: 0 5px !important;
   font-size: 6pt;
   height: 100%;
+}
+.rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info img:before {
+  display: none;
 }
 .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .initials {
   display: none;
@@ -2075,6 +2078,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .title {
   font-size: 8pt !important;
   font-weight: 400;
+  margin-top: -15px;
 }
 .rotaPrint .rotaPrintWrapper .board.printRota .board-inner > li .info .designation {
   font-size: 6pt !important;
@@ -2108,7 +2112,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 .rotaPrint .rotaPrintWrapper.nonCompact .board.printRota .board-inner > li:nth-child(9) {
   height: auto;
-  top: 20px;
+  top: 35px;
 }
 
 .thisIsMe {

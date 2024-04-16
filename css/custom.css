@@ -28724,7 +28724,7 @@ hr.BoldHr {
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li {
   height: 50px;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 5px;
   line-height: 1;
   width: calc((100% - 140px) / 8);
 }
@@ -28734,6 +28734,15 @@ hr.BoldHr {
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .name,
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .designation {
   padding: 0;
+}
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .name {
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 2px;
+}
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .designation {
+  font-size: 12px;
+  line-height: 14px;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .remove {
   position: relative;
@@ -28753,7 +28762,7 @@ hr.BoldHr {
   text-transform: uppercase;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:first-child {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 5px;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:last-child {
   font-size: 8px;
@@ -28791,12 +28800,24 @@ hr.BoldHr {
   right: 25px;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .shift {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   padding-right: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 2px;
+}
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .shiftime {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 2px;
+}
+.rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .workingHours {
+  font-size: 10px;
+  line-height: 12px;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li .RotaDuplicateShift {
   right: 25px;
@@ -33663,10 +33684,10 @@ input[type=checkbox].switch:checked + label:before {
   height: 100vh;
   position: fixed;
   z-index: 999999;
-  background-color: rgba(255, 255, 255, 0.9);
   left: 0;
   top: 0;
   display: none;
+  backdrop-filter: blur(7px);
 }
 .pop > div {
   display: table-cell;
@@ -33872,8 +33893,7 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=password],
 .pop > div > section > article ul.form li select,
 .pop > div > section > article ul.form li textarea,
-.pop > div > section > article ul.form li .uploadImg,
-.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered {
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered, .pop > div > section > article ul.form li input[type=date] {
   border-width: 1px;
   border-color: rgba(161, 173, 176, 0.8);
   border-style: solid;
@@ -33890,10 +33910,8 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li select.date,
 .pop > div > section > article ul.form li textarea[name=dateRange],
 .pop > div > section > article ul.form li textarea.date,
-.pop > div > section > article ul.form li .uploadImg[name=dateRange],
-.pop > div > section > article ul.form li .uploadImg.date,
 .pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered[name=dateRange],
-.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.date {
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.date, .pop > div > section > article ul.form li input[type=date][name=dateRange], .pop > div > section > article ul.form li input[type=date].date {
   background-image: url("../images/calendar.png");
   background-position: right 10px center;
   background-repeat: no-repeat;
@@ -33903,8 +33921,7 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=password]:focus,
 .pop > div > section > article ul.form li select:focus,
 .pop > div > section > article ul.form li textarea:focus,
-.pop > div > section > article ul.form li .uploadImg:focus,
-.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered:focus {
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered:focus, .pop > div > section > article ul.form li input[type=date]:focus {
   box-shadow: 0 0 0 4px rgba(100, 141, 172, 0.4);
   border-color: #648DAC;
 }
@@ -33912,8 +33929,7 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article ul.form li input[type=password].disabled,
 .pop > div > section > article ul.form li select.disabled,
 .pop > div > section > article ul.form li textarea.disabled,
-.pop > div > section > article ul.form li .uploadImg.disabled,
-.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.disabled {
+.pop > div > section > article ul.form li .select2 .selection .select2-selection--single .select2-selection__rendered.disabled, .pop > div > section > article ul.form li input[type=date].disabled {
   pointer-events: none;
   background-color: #EEE;
 }
@@ -34086,6 +34102,16 @@ input[type=checkbox].switch:checked + label:before {
 .pop > div > section > article > img {
   width: 100%;
   margin-bottom: 20px;
+}
+.pop > div > section > article .note {
+  display: block;
+  color: #08B3D2;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 20px;
+  background-color: transparent;
+  padding: 0;
+  font-family: "Poppins";
 }
 .pop .warningsList {
   padding-top: 10px;
@@ -39697,7 +39723,7 @@ input[type=checkbox].switch:checked + label:before {
   color: #FFF;
   text-align: center;
   line-height: 24px;
-  background-color: #5B7D62;
+  background-color: #5B7D62 !important;
 }
 .matrixTable tbody tr td .completedDue {
   display: inline-block;
@@ -39708,7 +39734,7 @@ input[type=checkbox].switch:checked + label:before {
   color: #DCDEDE;
   text-align: center;
   line-height: 24px;
-  background-color: #828787;
+  background-color: #828787 !important;
   min-width: 80px;
 }
 .matrixTable tbody tr td .completedDue:nth-of-type(2) {
@@ -39721,14 +39747,14 @@ input[type=checkbox].switch:checked + label:before {
   text-align: center;
   font-size: 12px;
   font-weight: 500;
-  background-color: #FFCD60;
-  color: #1C3C4B;
+  background-color: #FFCD60 !important;
+  color: #1C3C4B !important;
   white-space: nowrap;
   padding: 0 5px;
 }
 .matrixTable tbody tr td .name {
   display: block;
-  color: #3F4253;
+  color: #3F4253 !important;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1;
@@ -39737,7 +39763,7 @@ input[type=checkbox].switch:checked + label:before {
 .matrixTable tbody tr td .designation {
   font-size: 12px;
   font-weight: 500;
-  color: #28A7E6;
+  color: #28A7E6 !important;
   width: 220px;
 }
 .matrixTable tbody tr td.divider {
@@ -39755,15 +39781,15 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 14px;
 }
 .matrixTable tbody tr td.divider.mandatoryTrainings {
-  background-color: #1C3C4B;
-  color: #4BBAED;
+  background-color: #1C3C4B !important;
+  color: #4BBAED !important;
 }
 .matrixTable tbody tr td.divider.mandatoryTrainings:before {
   content: "Mandatory";
 }
 .matrixTable tbody tr td.divider.optionalTrainings {
-  background-color: #DCDEDE;
-  color: #828787;
+  background-color: #DCDEDE !important;
+  color: #828787 !important;
 }
 .matrixTable tbody tr td.divider.optionalTrainings:before {
   content: "Optional";
@@ -39772,7 +39798,7 @@ input[type=checkbox].switch:checked + label:before {
   float: left;
   width: calc((100% - 2px) / 2);
   font-size: 14px;
-  color: #3F4253;
+  color: #3F4253 !important;
   text-align: center;
   line-height: 24px;
   min-width: 80px;
@@ -39788,13 +39814,13 @@ input[type=checkbox].switch:checked + label:before {
   background-size: 16px;
 }
 .matrixTable tbody tr:nth-child(n+3) td {
-  border-bottom: 1px solid #DCDEDE;
+  border-bottom: 1px solid #DCDEDE !important;
 }
 .matrixTable tbody tr:nth-child(n+3) td:first-child {
   background-color: transparent !important;
 }
 .matrixTable tbody tr:nth-child(n+3) td:nth-child(odd) {
-  background-color: #F6F6F6;
+  background-color: #F6F6F6 !important;
 }
 
 .homeBuilderListing {
@@ -40413,21 +40439,14 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   background-size: 24px;
   float: left;
+  border-radius: 6px;
+  margin-top: 2px;
 }
 .createForm section .sortButtons .buttons button.addSectionTitle {
   background-image: url("../images/sectionTitle.png");
 }
 .createForm section .sortButtons .buttons button.addSection {
   background-image: url("../images/addSection.png");
-}
-.createForm section .sortButtons .buttons button:first-of-type {
-  border-radius: 6px 6px 0 0;
-}
-.createForm section .sortButtons .buttons button:last-of-type {
-  border-radius: 0 0 6px 6px;
-}
-.createForm section .sortButtons .buttons button:only-of-type {
-  border-radius: 6px;
 }
 .createForm section > ul {
   margin-bottom: 0;
@@ -41681,6 +41700,74 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 500;
   line-height: 18px;
   color: #404455;
+}
+
+.alertsActiveDeact {
+  padding: 24px 0 0 0;
+  position: relative;
+  font-family: "Poppins";
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.alertsActiveDeact:before {
+  position: absolute;
+  content: attr(data-note);
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8D99AE;
+}
+.alertsActiveDeact li {
+  width: calc((100% - 50px) / 6);
+  padding: 9px 0 0 0;
+}
+.alertsActiveDeact li label {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #DDD;
+  background-color: #FAFAFA;
+  padding: 14px 10px 5px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #404455;
+  position: relative;
+  margin: 0;
+  height: 67px;
+  align-items: baseline;
+}
+.alertsActiveDeact li label span {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+}
+.alertsActiveDeact li label:before {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left: 10px;
+  border-radius: 2px;
+  border: 1px solid #B6BBC0;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+  content: "";
+  top: -9px;
+  background-color: #FFF;
+  background-image: url("../images/accept.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+.alertsActiveDeact li input[type=checkbox]:checked + label {
+  border-color: #28E595;
+}
+.alertsActiveDeact li input[type=checkbox]:checked + label:before {
+  border-color: #1AA266;
+  background-color: #1FDB88;
 }
 
 .scroll-element.scroll-x {

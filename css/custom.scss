@@ -33641,7 +33641,7 @@ hr {
 
                     li {
                         height: 50px;
-                        padding: 0 0 0 15px;
+                        padding: 0 0 0 5px;
                         line-height: 1;
                         width: calc(calc(100% - 140px) / 8);
 
@@ -33653,6 +33653,17 @@ hr {
                         .designation {
                             padding: 0;
                         }
+
+	                    .name {
+		                    font-size: 14px;
+		                    line-height: 16px;
+		                    padding-top: 2px;
+	                    }
+
+	                    .designation {
+		                    font-size: 12px;
+		                    line-height: 14px;
+	                    }
 
                         .remove {
                             position: relative;
@@ -33675,7 +33686,7 @@ hr {
                         }
 
                         &:first-child {
-                            padding: 0 0 0 10px;
+                            padding: 0 0 0 5px;
                         }
 
                         &:last-child {
@@ -33727,13 +33738,27 @@ hr {
                         }
 
                         .shift {
-                            margin-bottom: 5px;
+                            margin-bottom: 0;
                             display: block;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             width: 100%;
                             padding-right: 50px;
+	                        font-size: 14px;
+	                        line-height: 16px;
+	                        padding-top: 2px;
                         }
+
+	                    .shiftime {
+		                    font-size: 12px;
+		                    line-height: 14px;
+		                    margin-bottom: 2px;
+	                    }
+
+	                    .workingHours {
+		                    font-size: 10px;
+		                    line-height: 12px;
+	                    }
 
                         .RotaDuplicateShift {
                             right: 25px;
@@ -39691,10 +39716,10 @@ input[type=checkbox].switch {
     height: 100vh;
     position: fixed;
     z-index: 999999;
-    background-color: rgba(#FFF, 0.9);
     left: 0;
     top: 0;
     display: none;
+	backdrop-filter: blur(7px);
 
     & > div {
         display: table-cell;
@@ -39928,8 +39953,7 @@ input[type=checkbox].switch {
                         input[type=password],
                         select,
                         textarea,
-                        .uploadImg,
-                        .select2 .selection .select2-selection--single .select2-selection__rendered {
+                        .select2 .selection .select2-selection--single .select2-selection__rendered, input[type=date] {
                             border-width: 1px;
                             border-color: rgba(161, 173, 176, .8);
                             border-style: solid;
@@ -40173,6 +40197,17 @@ input[type=checkbox].switch {
                     width: 100%;
                     margin-bottom: 20px;
                 }
+
+	            .note {
+		            display: block;
+		            color: #08B3D2;
+		            font-size: 12px;
+		            line-height: 14px;
+		            margin-top: 20px;
+		            background-color: transparent;
+		            padding: 0;
+		            font-family: "Poppins";
+	            }
             }
         }
 
@@ -46931,7 +46966,7 @@ input[type=checkbox].switch {
                     color: #FFF;
                     text-align: center;
                     line-height: 24px;
-                    background-color: #5B7D62;
+                    background-color: #5B7D62 !important;
                 }
 
                 .completedDue {
@@ -46943,7 +46978,7 @@ input[type=checkbox].switch {
                     color: #DCDEDE;
                     text-align: center;
                     line-height: 24px;
-                    background-color: #828787;
+                    background-color: #828787 !important;
                     min-width: 80px;
 
                     &:nth-of-type(2) {
@@ -46958,15 +46993,15 @@ input[type=checkbox].switch {
                     text-align: center;
                     font-size: 12px;
                     font-weight: 500;
-                    background-color: #FFCD60;
-                    color: #1C3C4B;
+                    background-color: #FFCD60 !important;
+                    color: #1C3C4B !important;
                     white-space: nowrap;
                     padding: 0 5px;
                 }
 
                 .name {
                     display: block;
-                    color: #3F4253;
+                    color: #3F4253 !important;
                     font-size: 14px;
                     font-family: $secondaryFont;
                     line-height: 1;
@@ -46976,7 +47011,7 @@ input[type=checkbox].switch {
                 .designation {
                     font-size: 12px;
                     font-weight: 500;
-                    color: #28A7E6;
+                    color: #28A7E6 !important;
                     width: 220px;
                 }
 
@@ -46996,8 +47031,8 @@ input[type=checkbox].switch {
                     }
 
                     &.mandatoryTrainings {
-                        background-color: #1C3C4B;
-                        color: #4BBAED;
+                        background-color: #1C3C4B !important;
+                        color: #4BBAED !important;
 
                         &:before {
                             content: "Mandatory"
@@ -47005,8 +47040,8 @@ input[type=checkbox].switch {
                     }
 
                     &.optionalTrainings {
-                        background-color: #DCDEDE;
-                        color: #828787;
+                        background-color: #DCDEDE !important;
+                        color: #828787 !important;
 
                         &:before {
                             content: "Optional"
@@ -47019,7 +47054,7 @@ input[type=checkbox].switch {
                         float: left;
                         width: calc((100% - 2px) / 2);
                         font-size: 14px;
-                        color: #3F4253;
+                        color: #3F4253 !important;
                         text-align: center;
                         line-height: 24px;
                         min-width: 80px;
@@ -47044,14 +47079,14 @@ input[type=checkbox].switch {
 
             &:nth-child(n + 3) {
                 td {
-                    border-bottom: 1px solid #DCDEDE;
+                    border-bottom: 1px solid #DCDEDE !important;
 
                     &:first-child {
                         background-color: transparent !important;
                     }
 
                     &:nth-child(odd) {
-                        background-color: #F6F6F6;
+                        background-color: #F6F6F6 !important;
                     }
                 }
             }
@@ -47847,6 +47882,8 @@ input[type=checkbox].switch {
                     background-position: center;
                     background-size: 24px;
 	                float: left;
+	                border-radius: 6px;
+	                margin-top: 2px;
 
 	                &.addSectionTitle {
 		                background-image: url("../images/sectionTitle.png");
@@ -47854,18 +47891,6 @@ input[type=checkbox].switch {
 
 	                &.addSection {
 		                background-image: url("../images/addSection.png");
-	                }
-
-                    &:first-of-type {
-                        border-radius: 6px 6px 0 0;
-                    }
-
-                    &:last-of-type {
-                        border-radius: 0 0 6px 6px;
-                    }
-
-	                &:only-of-type {
-		                border-radius: 6px;
 	                }
                 }
             }
@@ -49399,6 +49424,85 @@ input[type=checkbox].switch {
 		font-weight: 500;
 		line-height: 18px;
 		color: #404455;
+	}
+}
+
+.alertsActiveDeact {
+	padding: 24px 0 0 0;
+	position: relative;
+	font-family: "Poppins";
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	&:before {
+		position: absolute;
+		content: attr(data-note);
+		top: 0;
+		left: 0;
+		font-size: 12px;
+		line-height: 14px;
+		color: #8D99AE;
+	}
+
+	li {
+		width: calc((100% - 50px) / 6);
+		padding: 9px 0 0 0;
+
+		label {
+			display: block;
+			border-radius: 8px;
+			border: 1px solid #DDD;
+			background-color: #FAFAFA;
+			padding: 14px 10px 5px 10px;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			color: #404455;
+			position: relative;
+			margin: 0;
+			height: 67px;
+			align-items: baseline;
+
+			span {
+				position: absolute;
+				left: 10px;
+				bottom: 5px;
+				right: 10px;
+			}
+
+			&:before {
+				height: 18px;
+				width: 18px;
+				position: absolute;
+				left: 10px;
+				border-radius: 2px;
+				border: 1px solid #B6BBC0;
+				box-shadow: inset 0 3px 6px rgba(#000, 0.16);
+				content: "";
+				top: -9px;
+				background-color: #FFF;
+				background-image: url("../images/accept.png");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 14px;
+			}
+		}
+
+		input[type=checkbox] {
+			&:checked {
+				& + label {
+					border-color: #28E595;
+
+					&:before {
+						border-color: #1AA266;
+						background-color: #1FDB88;
+					}
+				}
+			}
+		}
 	}
 }
 
