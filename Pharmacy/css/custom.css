@@ -1,0 +1,1489 @@
+.landing-page .sidenav {
+  width: 100px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: inset -6px 0 5px rgba(0, 0, 0, 0.1);
+  float: left;
+  position: fixed;
+}
+.landing-page .sidenav .logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  padding: 10px 15px 30px 15px;
+}
+.landing-page .sidenav .logo:after {
+  position: absolute;
+  content: "Pharmacy";
+  left: 48%;
+  top: 75%;
+  padding: 0;
+  transform: translateX(-32px);
+  color: #55A716;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.landing-page .sidenav .logo img {
+  width: 70px;
+  height: 59px;
+}
+.landing-page .sidenav ul {
+  list-style-type: none;
+  padding: 10px 15px 0 15px;
+  height: 100%;
+}
+.landing-page .sidenav ul li {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 12px 30px 10px;
+  font-size: 14px;
+  color: #748CAB;
+  cursor: pointer;
+}
+.landing-page .sidenav ul li img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.landing-page .sidenav ul li .dropdown-sec {
+  left: 110px;
+  z-index: 1;
+  position: absolute;
+  bottom: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.landing-page .sidenav ul li .dropdown-sec .dropdown {
+  background-color: #E7ECEF;
+  width: 290px;
+  height: 100%;
+  border-radius: 10px;
+}
+.landing-page .sidenav ul li .dropdown-sec .dropdown ul {
+  height: 98vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 290px;
+}
+.landing-page .sidenav ul li .dropdown-sec .dropdown ul li {
+  list-style-type: none;
+  color: #748CAB;
+  padding: 13px 20px 12px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.landing-page .sidenav ul li .dropdown-sec .dropdown ul li:hover {
+  background-color: #5FB219;
+  color: #fff;
+}
+.landing-page .sidenav .bottom-items {
+  bottom: 0;
+  position: absolute;
+}
+.landing-page .sidenav .bottom-items ul li {
+  margin-left: 0;
+  position: relative;
+  cursor: pointer;
+}
+.landing-page .sidenav .bottom-items ul li:first-child {
+  padding: 0 0 20px 0;
+}
+.landing-page .sidenav .bottom-items ul li:first-child img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.landing-page .sidenav .bottom-items ul li:last-child {
+  position: relative;
+}
+.landing-page .sidenav .bottom-items ul li:last-child img {
+  position: relative;
+  right: 5px;
+}
+
+.stat {
+  background-color: #F5F5F5;
+  width: 98.5%;
+  padding: 15px 10px 15px 15px;
+  border-radius: 10px;
+  border: 0;
+  margin: 0 15px 0 15px;
+}
+.stat .title {
+  color: #7E8E9D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.stat ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+.stat ul li {
+  background-color: #94A7B5;
+  width: calc((100% - 35px) / 5);
+  height: 107px;
+  margin-left: 7px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.stat ul li span {
+  color: #fff;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  position: relative;
+  top: 15px;
+}
+.stat ul li i {
+  font-style: normal;
+  float: right;
+  right: 15px;
+  position: relative;
+  color: #fff;
+  font-size: 11px;
+  top: 17px;
+}
+.stat ul li i.total-med {
+  position: relative;
+  top: 65px;
+}
+.stat ul li b {
+  font-style: normal;
+  color: #F7D59A;
+  font-size: 10px;
+  font-weight: 600;
+  float: right;
+  position: relative;
+  top: 50px;
+  right: 15px;
+}
+.stat ul li:first-child {
+  margin-left: 0;
+}
+.stat ul li:nth-child(1) i, .stat ul li:nth-child(3) i {
+  position: relative;
+  top: 65px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.home-page {
+  width: calc(100% - 100px);
+  height: 100%;
+  float: right;
+}
+.home-page .stats-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 15%;
+}
+.home-page .stats-section .home-stat {
+  width: 40%;
+  margin-bottom: 15px;
+}
+.home-page .stats-section .home-stat ul li {
+  width: calc((100% - 12px) / 2);
+}
+.home-page .stats-section .home-stat ul li:last-child i {
+  position: relative;
+  top: 18px;
+}
+.home-page .statistics {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 1366px) {
+  .order-stat ul li:nth-child(2) i {
+    font-size: 11px;
+    position: relative;
+    top: 66px;
+  }
+  .stat {
+    position: relative;
+    right: 8px;
+  }
+}
+.homes-page aside {
+  width: calc(100% - 115px);
+  color: #94A7B5;
+  float: right;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+}
+.homes-page strong {
+  color: #3D4A5A;
+  font-weight: 500;
+  position: relative;
+  left: 12px;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+  width: calc(100% - 108px);
+  display: block;
+  float: right;
+  z-index: -1;
+}
+.homes-page strong span {
+  width: calc(100% - 115px);
+  color: #94A7B5;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+}
+.homes-page strong i {
+  font-style: normal;
+  color: #3D4A5A;
+}
+.homes-page .profileInfo {
+  display: block;
+  width: 100%;
+}
+.homes-page .profileInfo aside {
+  width: calc(100% - 115px);
+  color: #94A7B5;
+  float: right;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+}
+.homes-page .profileInfo strong {
+  position: relative;
+  left: 117px;
+  top: 8px;
+  color: black;
+  float: left;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+  width: 300px;
+}
+.homes-page .profileInfo strong span {
+  width: calc(100% - 115px);
+  color: #94A7B5;
+  font-size: 12px;
+  margin: 8px 0 15px 0;
+}
+.homes-page .profileInfo ul {
+  float: right;
+  position: relative;
+  right: 16px;
+}
+.homes-page .profileInfo ul li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  height: 32px;
+  padding: 5px;
+  font-weight: 500;
+}
+.homes-page .profileInfo ul li span {
+  color: #99ABB9;
+}
+.homes-page .profileInfo ul li div {
+  color: #4A5767;
+}
+.homes-page .home-section {
+  width: calc(100% - 130px);
+  float: right;
+  position: relative;
+  right: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: #94A7B5 1px solid;
+  padding: 5px;
+  z-index: -1;
+}
+.homes-page .home-section ul {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.homes-page .home-section ul li {
+  width: 14.5%;
+  float: left;
+  list-style-type: none;
+  margin-left: 5px;
+  position: relative;
+  right: 5px;
+}
+.homes-page .home-section ul li .homes-fields select {
+  width: 100%;
+  background-color: #EDF2F4;
+  border-radius: 8px;
+  border: 0;
+  padding: 12px 0 11px 10px;
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.homes-page .home-section ul li .homes-fields input {
+  width: 100%;
+  background-color: #EDF2F4;
+  border-radius: 8px;
+  padding: 12px 0 11px 10px;
+  border: 0;
+  position: relative;
+  left: 10px;
+}
+.homes-page .home-section ul li .homes-fields input:first-child {
+  margin-left: 0;
+}
+.homes-page .home-section ul li:nth-child(2) {
+  margin-left: 0;
+  position: relative;
+  right: 8px;
+}
+.homes-page .home-section .search-button {
+  background-color: #F07167;
+  padding: 6px;
+  border: 0;
+  border-radius: 8px;
+  float: right;
+  cursor: pointer;
+  position: fixed;
+  right: 27px;
+}
+.homes-page .home-section .search-button button[type=submit] {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.homes-page .home-section .search-button .reset-button {
+  margin-left: 8px;
+  border: 0;
+  background-color: #F7D59A;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.homes-page .home-section .keyword form input {
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.homes-page .home-section .keyword select {
+  border-radius: 6px;
+}
+.homes-page .home-section .keyword .search-button {
+  margin-left: auto;
+}
+.homes-page .serviceusers ul li {
+  width: 16.5%;
+}
+.homes-page .user-medicine {
+  width: calc(100% - 130px);
+  float: right;
+  position: relative;
+  right: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: #94A7B5 1px solid;
+  padding: 5px;
+  z-index: -1;
+}
+.homes-page .user-medicine ul {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.homes-page .user-medicine ul li {
+  width: 21%;
+  float: left;
+  list-style-type: none;
+  margin-left: 5px;
+  position: relative;
+  right: 5px;
+}
+.homes-page .user-medicine ul li .homes-fields input {
+  width: 100%;
+  background-color: #EDF2F4;
+  border-radius: 8px;
+  border: 0;
+  position: relative;
+  padding: 12px 0 11px 10px;
+}
+.homes-page .user-medicine ul li .homes-fields select {
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  width: 100%;
+  background-color: #EDF2F4;
+  border-radius: 8px;
+  border: 0;
+  padding: 12px 0 11px 10px;
+}
+.homes-page .user-medicine .search-button {
+  background-color: #F07167;
+  padding: 6px;
+  border: 0;
+  border-radius: 8px;
+  float: right;
+  cursor: pointer;
+  position: fixed;
+  right: 27px;
+}
+.homes-page .user-medicine .search-button button[type=submit] {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.homes-page .user-medicine .search-button .reset-button {
+  margin-left: 8px;
+  border: 0;
+  background-color: #F7D59A;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.alerts-sec {
+  width: calc(100% - 130px);
+  float: right;
+  height: 45px;
+  margin-right: 15px;
+  z-index: -1;
+  position: relative;
+  margin-top: 8px;
+  right: 5px;
+}
+.alerts-sec .user-alerts {
+  background-color: #F5F5F5;
+  border: 0;
+  border-radius: 10px;
+  float: left;
+  padding: 5px;
+}
+.alerts-sec .user-alerts button:first-child {
+  background-color: #F07167;
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  color: #fff;
+  height: 30px;
+}
+.alerts-sec .user-alerts button:nth-child(2) {
+  padding: 7px 10px 7px 28px;
+  background-color: #E7ECEF;
+  border: 0;
+  border-radius: 8px;
+  color: #748CAB;
+  height: 30px;
+}
+.alerts-sec .user-alerts button:nth-child(2):after {
+  content: "";
+  display: block;
+  background-image: url("../images/equipmentalert.png");
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 20%;
+  left: 84px;
+}
+.alerts-sec .user-alerts button:last-child {
+  padding: 7px 10px 7px 28px;
+  background-color: #E7ECEF;
+  border: 0;
+  border-radius: 8px;
+  color: #748CAB;
+  height: 30px;
+}
+.alerts-sec .user-alerts button:last-child:after {
+  content: "";
+  display: block;
+  background-image: url("../images/injection-alert.png");
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 20%;
+  left: 231px;
+}
+.alerts-sec .action-sec {
+  float: right;
+  position: relative;
+  top: 4px;
+}
+.alerts-sec .action-sec span {
+  background-color: #F7D59A;
+  padding: 6px 10px 7px 10px;
+  color: #3C4959;
+  border: 0;
+  border-radius: 7px;
+  font-size: 12px;
+  height: 30px;
+}
+.alerts-sec .action-sec i {
+  background-color: #748CAB;
+  color: #fff;
+  padding: 6px 20px 7px 10px;
+  border: 0;
+  border-radius: 7px;
+  font-style: normal;
+  font-size: 12px;
+  height: 30px;
+  text-transform: uppercase;
+}
+.alerts-sec .action-sec i::after {
+  content: "";
+  display: block;
+  background-image: url("../images/white down-arrow.png");
+  background-size: 10px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 33%;
+  right: 6px;
+}
+.alerts-sec .MedicationSec {
+  width: 100%;
+}
+.alerts-sec .MedicationSec .addMedicine {
+  background-color: #748CAB;
+  border-radius: 10px;
+  padding: 5px;
+  float: left;
+  width: 71%;
+}
+@media only screen and (min-width: 1300px) {
+  .alerts-sec .MedicationSec .addMedicine {
+    width: 74%;
+  }
+}
+.alerts-sec .MedicationSec .addMedicine select {
+  padding: 9px 0 8px 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  font-size: 16px;
+  color: #24313E;
+  font-weight: 400;
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.alerts-sec .MedicationSec .addMedicine button {
+  margin-top: 5px;
+}
+.alerts-sec .MedicationSec .addMedicine button:last-child {
+  background-color: #24313E;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .addMedicine .reset-btn {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .removeMedicine {
+  background-color: #F5F5F5;
+  float: right;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 10px;
+  width: 25.5%;
+}
+.alerts-sec .MedicationSec .removeMedicine span {
+  color: #748CAB;
+}
+.alerts-sec .MedicationSec .removeMedicine ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+.alerts-sec .MedicationSec .removeMedicine ul li {
+  list-style-type: none;
+  padding-bottom: 5.5px;
+  border-bottom: 2px solid #748CAB;
+}
+.alerts-sec .MedicationSec .removeMedicine ul li span {
+  color: #748CAB;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .removeMedicine ul li div {
+  font-size: 16px;
+  color: #24323D;
+}
+.alerts-sec .MedicationSec .removeMedicine ul li:after {
+  content: "";
+  display: block;
+  background-image: url("../images/trash-bin.png");
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 26px;
+  transform: translateY(-260%);
+}
+.alerts-sec .MedicationSec .removeMedicine ul li:before {
+  content: "";
+  display: block;
+  background-image: url("../images/replay.png");
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform: translateY(19%);
+  right: 50px;
+}
+.alerts-sec .MedicationSec .medicineSummary {
+  width: 25.5%;
+  background-color: #F5F5F5;
+  float: right;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+.alerts-sec .MedicationSec .medicineSummary span {
+  color: #24313E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.alerts-sec .MedicationSec .medicineSummary ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li {
+  list-style-type: none;
+  padding-bottom: 5.5px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li span {
+  color: #748CAB;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li i {
+  color: #748CAB;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li p {
+  color: #748CAB;
+  font-size: 12px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li div {
+  background-color: #E7ECEF;
+  font-size: 16px;
+  color: #24313E;
+  padding: 9px 0 8px 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label {
+  float: right;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label input {
+  display: none;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label input:checked + .slider {
+  background-color: #5FB219;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E7ECEF;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li label .slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  top: 1.5px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li.drug-med span {
+  float: left;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li.drug-med i {
+  display: block;
+  text-align: center;
+  position: relative;
+  right: 37px;
+  font-style: normal;
+}
+.alerts-sec .MedicationSec .medicineSummary ul li.drug-med p {
+  float: right;
+  position: relative;
+  bottom: 18px;
+}
+
+.medicines-area {
+  width: 66.5%;
+  position: relative;
+  left: 115px;
+  top: 109px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  z-index: -1;
+}
+.medicines-area .medicine-Info {
+  width: 49.5%;
+}
+.medicines-area .medicine-Info .med-form {
+  min-height: 64px;
+  position: relative;
+  margin-top: 20px;
+}
+.medicines-area .medicine-Info .med-form label {
+  height: 17px;
+  display: block;
+  position: relative;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #748CAB;
+}
+.medicines-area .medicine-Info .med-form label i:before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/info.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.medicines-area .medicine-Info .med-form label span {
+  color: #F07167;
+  margin-left: 3px;
+}
+.medicines-area .medicine-Info .med-form .select {
+  position: relative;
+  margin-top: 5px;
+}
+.medicines-area .medicine-Info .med-form .select select {
+  color: #24313E;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DDDEDE;
+  height: 40px;
+  position: relative;
+  border-radius: 8px;
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.medicines-area .medicine-Info .med-form .select label.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  margin: 0 10px;
+  top: 11px;
+}
+.medicines-area .medicine-Info .med-form .select label input {
+  display: none;
+}
+.medicines-area .medicine-Info .med-form .select label input:checked + .slider {
+  background-color: #5FB219;
+}
+.medicines-area .medicine-Info .med-form .select label input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.medicines-area .medicine-Info .med-form .select label .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+.medicines-area .medicine-Info .med-form .select label .slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  top: 1.5px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.medicines-area .medicine-Info .med-form input {
+  color: #24313E;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DDDEDE;
+  height: 40px;
+  position: relative;
+  border-radius: 8px;
+}
+.medicines-area .medicine-Info .med-form .input-wrapper input {
+  width: 60px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+}
+.medicines-area .medicine-Info .med-form .input-wrapper .up-button:before {
+  content: "";
+  display: block;
+  background-image: url("../images/increase arrow.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 40%;
+  left: 66px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #8495A4;
+  padding: 2px;
+}
+.medicines-area .medicine-Info .med-form .input-wrapper .down-button:after {
+  content: "";
+  display: block;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 75%;
+  left: 66px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #8495A4;
+  padding: 2px;
+}
+
+.stats-sec {
+  position: relative;
+  top: 10px;
+  width: calc(100% - 105px);
+  float: right;
+}
+.stats-sec i {
+  font-style: normal;
+  font-weight: 600;
+  color: #1D3557;
+  margin-left: 3px;
+}
+
+.ContainerList {
+  margin-right: 20px;
+  position: relative;
+  width: calc(100% - 135px);
+  float: right;
+  top: 20px;
+  z-index: -1;
+}
+.ContainerList .serviceUser {
+  display: flex;
+}
+.ContainerList .serviceUser li {
+  width: 20%;
+  list-style-type: none;
+}
+.ContainerList .serviceUser li article {
+  background-color: #24313E;
+  border-radius: 10px;
+  padding: 5px;
+  color: #fff;
+  height: 129px;
+  border: 2px solid #24313E;
+  position: relative;
+}
+.ContainerList .serviceUser li article .userInfo {
+  display: flex;
+}
+.ContainerList .serviceUser li article .userInfo .picture {
+  margin-bottom: 5px;
+  position: relative;
+  margin-right: 10px;
+  float: left;
+  width: 92px;
+  height: 92px;
+  border-radius: 4px;
+}
+.ContainerList .serviceUser li article .userInfo .picture img {
+  height: 100%;
+}
+.ContainerList .serviceUser li article .userInfo ul {
+  width: 100%;
+}
+.ContainerList .serviceUser li article .userInfo ul li {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ContainerList .serviceUser li article .userInfo ul li:first-child {
+  font-size: 16px;
+  height: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.ContainerList .serviceUser li article .userInfo ul li:nth-child(2) {
+  color: #F07167;
+  font-weight: 700;
+  font-size: 14px;
+}
+.ContainerList .serviceUser li article .userInfo ul li:nth-child(2) strong {
+  color: #748CAB;
+  text-transform: uppercase;
+  margin-right: 5px;
+  font-size: 14px;
+}
+.ContainerList .serviceUser li article .userInfo ul li:nth-child(3) {
+  color: #5FB219;
+  font-weight: 700;
+  font-size: 14px;
+}
+.ContainerList .serviceUser li article .userInfo ul li:nth-child(3) strong {
+  color: #E7ECEF;
+  font-weight: 700;
+  margin-right: 5px;
+  font-size: 14px;
+}
+.ContainerList .serviceUser li article .userInfo ul li:nth-child(4) {
+  color: #E7ECEF;
+  font-size: 14px;
+}
+.ContainerList .serviceUser li article .userContainer {
+  display: flex;
+}
+.ContainerList .serviceUser li article .userContainer .newScore {
+  background-color: #fff;
+  color: #748CAB;
+  font-size: 10px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 7px;
+  margin-right: 3px;
+  height: 20px;
+}
+.ContainerList .serviceUser li article .userContainer .dnacpr {
+  background-color: #F07167;
+  color: #fff;
+  padding: 3px 8px 4px 8px;
+  font-size: 10px;
+  border-radius: 7px;
+  height: 20px;
+  text-transform: uppercase;
+}
+.ContainerList .serviceUser li article .userContainer .notifyUser {
+  position: relative;
+  margin-left: auto;
+}
+.ContainerList .serviceUser li article .userContainer .notifyUser img {
+  width: 22px;
+  height: 22px;
+}
+
+.medicineProfile {
+  width: 650px;
+  float: right;
+  position: relative;
+  right: 16px;
+}
+.medicineProfile ul {
+  display: flex;
+  gap: 20px;
+  background-color: #3D4A5A;
+  border: #3D4A5A 1px solid;
+  border-radius: 8px;
+  padding: 6px 10px 7px 10px;
+  list-style-type: none;
+}
+.medicineProfile ul li {
+  color: #F5F5F5;
+  font-size: 12px;
+}
+.medicineProfile ul li span {
+  color: #F5F5F5;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.medicineAlert {
+  position: relative;
+  top: 10px;
+  width: 990px;
+  float: right;
+  margin-bottom: 10px;
+  right: 15px;
+}
+.medicineAlert p {
+  background-color: #F09999;
+  color: #F5F5F5;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.generallisting {
+  height: 100%;
+  position: relative;
+  width: calc(100% - 130px);
+  float: right;
+  border-radius: 6px;
+  border: 2px solid #E7ECEF;
+  background-color: #F5F5F5;
+  padding: 5px 10px;
+  margin: 5px 15px 5px 0;
+  top: 5px;
+  z-index: -1;
+}
+.generallisting section ul {
+  list-style: none;
+  position: relative;
+  padding-left: 40px;
+}
+.generallisting section ul li {
+  float: left;
+  font-size: 18px;
+  color: #5d6a72;
+  padding: 0 5px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generallisting section ul li input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border: #748CAB 1px solid;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+.generallisting section ul li span {
+  color: #748CAB;
+  display: block;
+  font-size: 12px;
+}
+.generallisting section ul li i {
+  color: #24323D;
+  font-style: normal;
+  font-size: 16px;
+}
+.generallisting section ul li input {
+  width: 86px;
+  border-radius: 8px;
+  border: 1px solid #94A7B5;
+  padding: 5px;
+}
+.generallisting section ul li a.eye {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/view.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  cursor: pointer;
+  position: relative;
+}
+.generallisting section ul li:first-child {
+  position: relative;
+  right: 42px;
+  top: 46px;
+  transform: translateY(-50%);
+}
+.generallisting section ul li:nth-child(2) {
+  width: 15%;
+  position: relative;
+  right: 26px;
+}
+.generallisting section ul li:nth-child(3) {
+  width: 80%;
+}
+.generallisting section ul li:nth-child(4) {
+  width: 16.5%;
+}
+.generallisting section ul li:nth-child(5), .generallisting section ul li:nth-child(6), .generallisting section ul li:nth-child(7), .generallisting section ul li:nth-child(8), .generallisting section ul li:nth-child(10) {
+  width: 13%;
+}
+.generallisting section ul li:nth-child(9) {
+  width: 15%;
+}
+.generallisting section ul li:last-child {
+  position: relative;
+  top: -11px;
+}
+
+.styledlists section ul li:nth-child(2) {
+  width: 75%;
+  position: relative;
+  right: 28px;
+}
+.styledlists section ul li:nth-child(3) {
+  width: 17%;
+}
+.styledlists section ul li:nth-child(5), .styledlists section ul li:nth-child(6), .styledlists section ul li:nth-child(7), .styledlists section ul li:nth-child(8), .styledlists section ul li:nth-child(9), .styledlists section ul li:nth-child(10) {
+  width: 13.5%;
+}
+.styledlists section ul li:nth-child(4) {
+  width: 16%;
+}
+.styledlists section ul li:last-child {
+  position: relative;
+  top: 0.5px;
+}
+
+.med-lists section ul li:nth-child(2) {
+  width: 75%;
+  position: relative;
+  right: 28px;
+}
+.med-lists section ul li:nth-child(3) {
+  width: 18%;
+}
+.med-lists section ul li:nth-child(4), .med-lists section ul li:nth-child(5), .med-lists section ul li:nth-child(6), .med-lists section ul li:nth-child(7), .med-lists section ul li:nth-child(8) {
+  width: 16.5%;
+}
+.med-lists section ul li:nth-child(10) {
+  width: 18%;
+}
+.med-lists section ul li:nth-child(11), .med-lists section ul li:nth-child(12) {
+  width: 10%;
+}
+.med-lists section ul li:last-child {
+  width: 10%;
+  position: relative;
+  top: 0.5px;
+}
+
+.active-prescription {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+.active-prescription .med-form {
+  display: flex;
+}
+.active-prescription .med-form label {
+  height: 17px;
+  display: block;
+  position: relative;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #748CAB;
+  top: 13px;
+}
+.active-prescription .med-form .select select {
+  color: #24313E;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DDDEDE;
+  height: 40px;
+  position: relative;
+  border-radius: 8px;
+}
+.active-prescription .med-form .select label.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  margin: 0 10px;
+  top: 11px;
+}
+.active-prescription .med-form .select label input {
+  display: none;
+}
+.active-prescription .med-form .select label input:checked + .slider {
+  background-color: #5FB219;
+}
+.active-prescription .med-form .select label input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.active-prescription .med-form .select label .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+.active-prescription .med-form .select label .slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  top: 1.5px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 11px;
+  display: flex;
+  left: 110px;
+  width: calc(100% - 115px);
+  float: right;
+  z-index: -1;
+}
+footer button:first-child {
+  background-color: #748CAB;
+  color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 0;
+  margin: 0 2px 0 10px;
+  font-weight: 500;
+}
+footer .update-btn, footer .save {
+  background-color: #5FB219;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 12px;
+  border: 0;
+  padding: 10px;
+  margin: 0 2px 0 2px;
+}
+footer .prescription-btn {
+  background-color: #F07167;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 12px;
+  border: 0;
+  padding: 10px;
+  margin-left: 5px;
+}
+footer .print {
+  background-color: #24313E;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+  border: 0;
+  color: #fff;
+}
+footer .selection {
+  color: #748CAB;
+  font-size: 12px;
+  padding: 10px 63px 9px 10px;
+  border-radius: 10px;
+  border: 2px solid #E7ECEF;
+  margin-left: 10px;
+  height: 36px;
+}
+footer .selection::after {
+  content: "";
+  display: block;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 12px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 36%;
+  left: 303px;
+}
+footer select {
+  border: #E7ECEF 1px solid;
+  color: #748CAB;
+  border-radius: 12px;
+  padding: 10px;
+  margin-right: 10px;
+}
+footer .pagination {
+  border-radius: 10px;
+  border: 2px solid #E7ECEF;
+  padding: 8px 20px 8px 20px;
+  height: 41px;
+}
+footer .pagination a {
+  color: #748CAB;
+  text-decoration: none;
+  float: left;
+  padding: 2px 3px;
+  margin-left: 8px;
+  position: relative;
+  bottom: 3px;
+}
+footer .pagination a.active, footer .pagination a:hover, footer .pagination a:focus {
+  background-color: #F7D59A;
+  color: #748CAB;
+  border-radius: 8px;
+  border: 0;
+}
+footer .pagination::before {
+  content: "";
+  display: block;
+  background-image: url("../images/left-arrow.png");
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 36%;
+  left: 8px;
+}
+footer .pagination::after {
+  content: "";
+  display: block;
+  background-image: url("../images/right-arrow.png");
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 35%;
+  left: 162px;
+}
+footer .pages-count {
+  border-radius: 10px;
+  border: 2px solid #E7ECEF;
+  padding: 8px 20px 8px 20px;
+  margin-left: 20px;
+  height: 36px;
+  position: relative;
+  top: 3px;
+}
+footer .pages-count::before {
+  content: "";
+  display: block;
+  background-image: url("../images/left-arrow.png");
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 30%;
+  left: 8px;
+}
+footer .pages-count::after {
+  content: "";
+  display: block;
+  background-image: url("../images/right-arrow.png");
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 29%;
+  left: 162px;
+}
+footer a {
+  color: #748CAB;
+  text-decoration: none;
+  float: left;
+  padding: 2px 3px;
+  margin-left: 8px;
+  position: relative;
+  bottom: 6px;
+}
+footer a.active, footer a:hover, footer a:focus {
+  background-color: #F7D59A;
+  color: #748CAB;
+  border-radius: 8px;
+  border: 0;
+}
+footer select {
+  height: 41px;
+  color: #748CAB;
+  font-size: 12px;
+  padding: 10px 63px 9px 10px;
+  border-radius: 10px;
+  border: 2px solid #E7ECEF;
+  margin-left: 10px;
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.comments {
+  border: #94A7B5 1px solid;
+  background-color: #FFFFFF;
+  width: calc(100% - 130px);
+  float: right;
+  position: fixed;
+  bottom: 68px;
+  left: 115px;
+  padding: 5px;
+  border-radius: 6px;
+  z-index: -1;
+}
+.comments select {
+  background-color: #EDF2F4;
+  width: 10%;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  appearance: none;
+  background-image: url("../images/grey down-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding: 10px;
+  background-position: right 16px center;
+}
+.comments input {
+  background-color: #EDF2F4;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  position: relative;
+  left: 3px;
+  width: 89.5%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=custom.css.map */

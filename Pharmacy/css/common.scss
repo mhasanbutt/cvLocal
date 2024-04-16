@@ -1,0 +1,227 @@
+.landing-page{
+
+  .sidenav{
+    width: 100px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: inset -6px 0 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    position: fixed;
+
+    .logo{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      padding: 10px 15px 30px 15px;
+
+      &:after{
+        position: absolute;
+        content: "Pharmacy";
+        left: 48%;
+        top: 75%;
+        padding: 0;
+        transform: translateX(-32px);
+        color: #55A716;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      img{
+        width: 70px;
+        height: 59px;
+      }
+    }
+
+    ul{
+      list-style-type: none;
+      padding: 10px 15px 0 15px;
+      height: 100%;
+
+      li{
+        text-align: center;
+        text-decoration: none;
+        padding: 0 12px 30px 10px;
+        font-size: 14px;
+        color: #748CAB;
+        cursor: pointer;
+
+        img{
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+        }
+        .dropdown-sec{
+          left: 110px;
+          z-index: 1;
+          position: absolute;
+          bottom: 2px;
+          opacity: 0;
+          visibility: hidden;
+          transition: visibility 0s, opacity 0.5s linear;
+
+          .dropdown{
+            background-color: #E7ECEF;
+            width: 290px;
+            height: 100%;
+            border-radius: 10px;
+
+            ul{
+              height: 98vh;
+              margin-bottom: 10px;
+              margin-top: 10px;
+              width: 290px;
+
+              li{
+                list-style-type: none;
+                color: #748CAB;
+                padding: 13px 20px 12px 20px;
+                font-weight: 600;
+                font-size: 15px;
+                text-align: left;
+                border: 0;
+                border-radius: 8px;
+                cursor: pointer;
+
+                &:hover{
+                  background-color: #5FB219;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-items{
+      bottom: 0;
+      position: absolute;
+
+      ul{
+
+        li{
+          margin-left: 0;
+
+          position: relative;
+          cursor: pointer;
+
+          &:first-child{
+            padding: 0 0 20px 0;
+
+            img{
+              width: 70px;
+              height: 70px;
+              cursor: pointer;
+            }
+          }
+
+          &:last-child{
+              position: relative;
+            img{
+              position: relative;
+              right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.stat{
+  background-color: #F5F5F5;
+  width: 98.5%;
+  padding:15px 10px 15px 15px;
+  border-radius: 10px;
+  border: 0;
+  margin: 0 15px 0 15px;
+
+  .title{
+    color: #7E8E9D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+
+    li{
+      background-color: #94A7B5;
+      width: calc((100% - 35px) / 5);
+      height: 107px;
+      margin-left: 7px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 12px;
+
+      span{
+        color: #fff;
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 32px;
+        font-style: normal;
+        position: relative;
+        top: 15px;
+      }
+
+      i{
+        font-style: normal;
+        float: right;
+        right: 15px;
+        position: relative;
+        color: #fff;
+        font-size: 11px;
+        top: 17px;
+
+        &.total-med{
+          position: relative;
+          top: 65px;
+        }
+      }
+
+
+
+      b{
+        font-style: normal;
+        color: #F7D59A;
+        font-size: 10px;
+        font-weight: 600;
+        float: right;
+        position: relative;
+        top: 50px;
+        right: 15px;
+      }
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3){
+        i{
+          position: relative;
+          top: 65px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
