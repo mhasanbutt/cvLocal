@@ -41770,6 +41770,78 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #1FDB88;
 }
 
+.mealList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mealList li {
+  border-radius: 8px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  width: calc((100% - 40px) / 5);
+  font-family: "Poppins";
+}
+.mealList li .img {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  height: 230px;
+  position: relative;
+  margin-bottom: 5px;
+  display: block;
+  overflow: hidden;
+}
+.mealList li .img i {
+  border-radius: 4px;
+  background-color: rgba(221, 221, 221, 0.2);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 5px;
+  font-style: normal;
+  color: #404455;
+  backdrop-filter: blur(7px);
+  z-index: 2;
+}
+.mealList li .img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+.mealList li .title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #004566;
+  display: block;
+  margin-bottom: 10px;
+}
+.mealList li .title span {
+  border-radius: 4px;
+  background-color: #CEB8AA;
+  font-size: 10px;
+  font-weight: 500;
+  color: #FFF;
+  padding: 0 5px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.mealList li p {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #828787;
+  margin: 0;
+}
+
 .scroll-element.scroll-x {
   display: none !important;
 }
