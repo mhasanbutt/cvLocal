@@ -71,7 +71,7 @@
             <div class="home-page">
                 <div class="stats-section statistics">
                     <div class="stat order-stat">
-                        <span class="title">Order Statistics</span>
+                        <span class="title">3-3 Leander Lodge <p>( 3-3-Jawa Group )</p></span>
                         <ul>
                             <li><span>60</span><i>Number of Total Orders</i></li>
                             <li><span>439</span><i>Number of Total Medications</i></li>
@@ -83,7 +83,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 </body>
 </html>

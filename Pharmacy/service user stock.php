@@ -56,32 +56,14 @@
         <section>
             <div class="homes-page">
                 <div class="profileInfo">
-                    <strong>Homes > <i>Medication > </i><span>Medication Orders</sp></strong>
+                    <strong>Homes > <i>Medication > </i><span>Medication Orders</span></strong>
                     <ul>
-                        <li>
-                            <span>Service User Name</span>
-                            <div>Ms Lab Rat</div>
-                        </li>
-                        <li>
-                            <span>Date of Birth</span>
-                            <div>23.09.1940</div>
-                        </li>
-                        <li>
-                            <span>NHS No.</span>
-                            <div>292398432</div>
-                        </li>
-                        <li>
-                            <span>Company</span>
-                            <div>3-3-Jawa Group</div>
-                        </li>
-                        <li>
-                            <span>Home</span>
-                            <div>3-3 Leander Lodge</div>
-                        </li>
-                        <li>
-                            <span>Room</span>
-                            <div>VIP Room</div>
-                        </li>
+                        <li><span>Service User Name</span><div>Ms Lab Rat</div></li>
+                        <li><span>Date of Birth</span><div>23.09.1940</div></li>
+                        <li><span>NHS No.</span><div>292398432</div></li>
+                        <li><span>Company</span><div>3-3-Jawa Group</div></li>
+                        <li><span>Home</span><div>3-3 Leander Lodge</div></li>
+                        <li><span>Room</span><div>VIP Room</div></li>
                     </ul>
                 </div>
                 <div class="user-medicine">
@@ -132,12 +114,8 @@
                                 </select>
                             </div>
                         </li>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Miss Lab Rat"></div>
-                        </li>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Select Interim"></div>
-                        </li>
+                        <li><div class="homes-fields"><input type="text" placeholder="Miss Lab Rat"></div></li>
+                        <li><div class="homes-fields"><input type="text" placeholder="Select Interim"></div></li>
                     </ul>
                 </div>
             </div>
@@ -180,11 +158,8 @@
                     <li><span>QTY. Adjusted</span><i>0.00</i></li>
                     <li><span>Consumed</span><i>0.00</i></li>
                     <li><span>Current Stock</span><i>0.00</i></li>
-
                 </ul>
-
             </section>
-
         </div>
         <div class="active-prescription">
             <div class="med-form">
@@ -215,8 +190,6 @@
                 <option>opt 2</option>
                 <option>opt 3</option>
             </select>
-
-
         </footer>
     </div>
 

@@ -2,7 +2,7 @@
   width: 100px;
   height: 100vh;
   background-color: #fff;
-  box-shadow: inset -6px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 36px -15px gray;
   float: left;
   position: fixed;
 }
@@ -114,14 +114,13 @@
   padding: 15px 10px 15px 15px;
   border-radius: 10px;
   border: 0;
-  margin: 0 15px 0 15px;
+  margin: 0 15px 0 21px;
 }
 .stat .title {
   color: #7E8E9D;
   font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 .stat ul {
   display: flex;
@@ -136,15 +135,16 @@
   border: none;
   border-radius: 8px;
   margin-top: 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 7px 15px 0;
 }
 .stat ul li span {
   color: #fff;
-  margin-left: 15px;
   font-weight: 600;
   font-size: 32px;
   font-style: normal;
   position: relative;
   top: 15px;
+  left: 15px;
 }
 .stat ul li i {
   font-style: normal;
@@ -152,12 +152,8 @@
   right: 15px;
   position: relative;
   color: #fff;
-  font-size: 11px;
-  top: 17px;
-}
-.stat ul li i.total-med {
-  position: relative;
-  top: 65px;
+  font-size: 12px;
+  top: 25px;
 }
 .stat ul li b {
   font-style: normal;
@@ -166,7 +162,7 @@
   font-weight: 600;
   float: right;
   position: relative;
-  top: 50px;
+  top: 58px;
   right: 15px;
 }
 .stat ul li:first-child {
@@ -174,7 +170,7 @@
 }
 .stat ul li:nth-child(1) i, .stat ul li:nth-child(3) i {
   position: relative;
-  top: 65px;
+  top: 70px;
 }
 
 * {
@@ -188,11 +184,13 @@
   width: calc(100% - 100px);
   height: 100%;
   float: right;
+  position: relative;
 }
 .home-page .stats-section {
-  position: relative;
-  height: 100vh;
-  padding-top: 15%;
+  position: absolute;
+  width: 100%;
+  transform: translate(0, 50%);
+  right: 9px;
 }
 .home-page .stats-section .home-stat {
   width: 40%;
@@ -203,21 +201,22 @@
 }
 .home-page .stats-section .home-stat ul li:last-child i {
   position: relative;
-  top: 18px;
+  top: 25px;
 }
 .home-page .statistics {
   padding-top: 10px;
+  top: -90px;
+  right: 11px;
 }
 
 @media screen and (min-width: 1366px) {
   .order-stat ul li:nth-child(2) i {
-    font-size: 11px;
+    font-size: 12px;
     position: relative;
-    top: 66px;
+    top: 70px;
   }
   .stat {
     position: relative;
-    right: 8px;
   }
 }
 .homes-page aside {
