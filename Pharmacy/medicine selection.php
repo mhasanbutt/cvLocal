@@ -114,6 +114,7 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="med-form">
                     <label>Repeat / Interim</label>
                     <div class="select">
@@ -238,6 +239,7 @@
                 $(this).addClass('active');
             });
         });
+
     </script>
 </body>
 </html>

@@ -32,29 +32,28 @@
             </div>
 
         </section>
-        <section>
-            <div class="home-page">
-                <div class="stats-section">
-                    <div class="stat home-stat">
-                        <span class="title">Home Statistics</span>
-                        <ul>
-                            <li><span>11</span><i>Number of Homes</i></li>
-                            <li class="resident"><span>175</span><b>(Active Orders)</b><br><i>Number of Resident</i></li>
-                        </ul>
-                    </div>
-                    <div class="stat order-stat">
-                        <span class="title">Order Statistics</span>
-                        <ul>
-                            <li><span>60</span><i>Number of Total Orders</i></li>
-                            <li><span>439</span><i>Number of Total Medications</i></li>
-                            <li><span>4</span><i>Interim Prescriptions</i></li>
-                            <li><span>4</span><b>(Active Orders)</b><br><i>Pending Orders</i></li>
-                            <li><span>2</span><b>(Active Orders)</b><br><i>Pending Interim Orders</i></li>
-                        </ul>
-                    </div>
+
+        <div class="home-page">
+            <div class="stats-section">
+                <div class="stat home-stat">
+                    <span class="title">Home Statistics</span>
+                    <ul>
+                        <li><span>11</span><i>Number of Homes</i></li>
+                        <li class="resident"><span>175</span><b>(Active Orders)</b><br><i>Number of Resident</i></li>
+                    </ul>
+                </div>
+                <div class="stat order-stat">
+                    <span class="title">Order Statistics</span>
+                    <ul>
+                        <li><span>60</span><i>Number of Total Orders</i></li>
+                        <li><span>439</span><i>Number of Total Medications</i></li>
+                        <li><span>4</span><i>Interim Prescriptions</i></li>
+                        <li><span>4</span><b>(Active Orders)</b><br><i>Pending Orders</i></li>
+                        <li><span>2</span><b>(Active Orders)</b><br><i>Pending Interim Orders</i></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>

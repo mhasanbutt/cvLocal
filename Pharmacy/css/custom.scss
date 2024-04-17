@@ -9,11 +9,13 @@
     width: calc(100% - 100px);
     height: 100%;
     float: right;
+    position: relative;
 
     .stats-section{
-      position: relative;
-      height: 100vh;
-      padding-top: 15%;
+      position: absolute;
+      width: 100%;
+      transform: translate(0, 50%);
+      right: 9px;
 
       .home-stat{
         width: 40%;
@@ -26,7 +28,7 @@
           li:last-child{
             i{
               position: relative;
-              top: 18px;
+              top: 25px;
             }
           }
         }
@@ -34,17 +36,19 @@
     }
     .statistics{
       padding-top: 10px;
+      top: -90px;
+      right: 11px;
     }
   }
   @media screen and (min-width: 1366px) {
     .order-stat ul li:nth-child(2) i {
-      font-size: 11px;
+      font-size: 12px;
       position: relative;
-      top: 66px;
+      top: 70px;
     }
     .stat {
       position: relative;
-      right: 8px;
+
     }
   }
 
@@ -57,6 +61,7 @@
       font-size: 12px;
       margin: 8px 0 15px 0;
     }
+
     strong{
       color: #3D4A5A;
       font-weight: 500;
@@ -171,7 +176,6 @@
               background-size: 10px;
               background-repeat: no-repeat;
               background-position: right 8px center ;
-
             }
             input{
               width: 100%;
@@ -187,6 +191,7 @@
               }
             }
           }
+
           &:nth-child(2){
             margin-left: 0;
             position: relative;
@@ -194,6 +199,7 @@
           }
         }
       }
+
       .search-button{
         background-color:#F07167;
         padding: 6px;
@@ -220,7 +226,6 @@
           font-weight: 500;
           cursor: pointer;
         }
-
       }
       .keyword{
 
@@ -240,7 +245,9 @@
       }
     }
     .serviceusers{
+
       ul{
+
         li{
           width: 16.5%;
         }

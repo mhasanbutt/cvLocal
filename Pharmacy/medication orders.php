@@ -58,37 +58,17 @@
                 <div class="profileInfo">
                     <strong>Homes > <i>Medication > </i><span>Medication Orders</span></strong>
                     <ul>
-                        <li>
-                            <span>Service User Name</span>
-                            <div>Ms Lab Rat</div>
-                        </li>
-                        <li>
-                            <span>Date of Birth</span>
-                            <div>23.09.1940</div>
-                        </li>
-                        <li>
-                            <span>NHS No.</span>
-                            <div>292398432</div>
-                        </li>
-                        <li>
-                            <span>Company</span>
-                            <div>3-3-Jawa Group</div>
-                        </li>
-                        <li>
-                            <span>Home</span>
-                            <div>3-3 Leander Lodge</div>
-                        </li>
-                        <li>
-                            <span>Room</span>
-                            <div>VIP Room</div>
-                        </li>
+                        <li><span>Service User Name</span><div>Ms Lab Rat</div></li>
+                        <li><span>Date of Birth</span><div>23.09.1940</div></li>
+                        <li><span>NHS No.</span><div>292398432</div></li>
+                        <li><span>Company</span><div>3-3-Jawa Group</div></li>
+                        <li><span>Home</span><div>3-3 Leander Lodge</div></li>
+                        <li><span>Room</span><div>VIP Room</div></li>
                     </ul>
                 </div>
                 <div class="user-medicine">
                     <ul>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Search by keyword"></div>
-                        </li>
+                        <li><div class="homes-fields"><input type="text" placeholder="Search by keyword"></div></li>
                         <li>
                             <div class="homes-fields">
                                 <select>
