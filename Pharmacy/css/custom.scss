@@ -1,4 +1,13 @@
 @import "common";
+
+.clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
   *{
     margin: 0;
     padding: 0;
@@ -13,42 +22,16 @@
 
     .stats-section{
       position: absolute;
-      width: 100%;
-      transform: translate(0, 50%);
-      right: 9px;
-
-      .home-stat{
-        width: 40%;
-        margin-bottom: 15px;
-
-        ul{
-          li{
-            width: calc((100% - 12px) / 2);
-          }
-          li:last-child{
-            i{
-              position: relative;
-              top: 25px;
-            }
-          }
-        }
-      }
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 30px);
     }
+
     .statistics{
       padding-top: 10px;
       top: -90px;
       right: 11px;
-    }
-  }
-  @media screen and (min-width: 1366px) {
-    .order-stat ul li:nth-child(2) i {
-      font-size: 12px;
-      position: relative;
-      top: 70px;
-    }
-    .stat {
-      position: relative;
-
     }
   }
 

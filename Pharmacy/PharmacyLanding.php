@@ -35,21 +35,22 @@
 
         <div class="home-page">
             <div class="stats-section">
-                <div class="stat home-stat">
+                <div class="stat">
                     <span class="title">Home Statistics</span>
-                    <ul>
-                        <li><span>11</span><i>Number of Homes</i></li>
-                        <li class="resident"><span>175</span><b>(Active Orders)</b><br><i>Number of Resident</i></li>
+                    <ul class="clearfix">
+                        <li><span class="number">11</span><span class="category">Number of Homes</span></li>
+                        <li><span class="number">175</span><span class="category"><b>(Active Orders)</b>Number of Resident</span></li>
                     </ul>
                 </div>
-                <div class="stat order-stat">
+                <div class="stat">
                     <span class="title">Order Statistics</span>
-                    <ul>
-                        <li><span>60</span><i>Number of Total Orders</i></li>
-                        <li><span>439</span><i>Number of Total Medications</i></li>
-                        <li><span>4</span><i>Interim Prescriptions</i></li>
-                        <li><span>4</span><b>(Active Orders)</b><br><i>Pending Orders</i></li>
-                        <li><span>2</span><b>(Active Orders)</b><br><i>Pending Interim Orders</i></li>
+                    <ul class="clearfix">
+                        <li><span class="number">60</span><span class="category">Number of Total Orders</span></li>
+                        <li><span class="number">439</span><span class="category">Number of Total Medications</span></li>
+                        <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
+                        <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
+                        <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
+                        <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
                     </ul>
                 </div>
             </div>

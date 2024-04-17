@@ -115,11 +115,13 @@
 
 .stat {
   background-color: #F5F5F5;
-  width: 98.5%;
-  padding: 15px 10px 15px 15px;
+  padding: 15px;
   border-radius: 10px;
-  border: 0;
-  margin: 0 15px 0 21px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.stat:first-of-type {
+  margin-top: 0;
 }
 .stat .title {
   color: #7E8E9D;
@@ -134,47 +136,41 @@
   margin-left: 5px;
 }
 .stat ul {
-  display: flex;
-  list-style-type: none;
-  text-decoration: none;
+  list-style: none;
+  padding-top: 14px;
+  width: auto;
+  margin: 0 -3.5px;
 }
 .stat ul li {
   background-color: #94A7B5;
-  width: calc((100% - 35px) / 5);
+  width: calc((100vw - 100px - 60px - 28px) / 5);
   height: 107px;
-  margin-left: 7px;
+  margin: 0 3.5px;
   border: none;
   border-radius: 8px;
-  margin-top: 12px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 7px 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px 0;
+  padding: 15px;
+  position: relative;
+  float: left;
 }
-.stat ul li span {
+.stat ul li .number {
   color: #fff;
   font-weight: 600;
   font-size: 32px;
-  font-style: normal;
-  position: relative;
-  top: 15px;
-  left: 15px;
 }
-.stat ul li i {
-  font-style: normal;
-  float: right;
+.stat ul li .category {
+  position: absolute;
   right: 15px;
-  position: relative;
+  bottom: 15px;
   color: #fff;
   font-size: 12px;
-  top: 25px;
+  text-align: right;
 }
-.stat ul li b {
-  font-style: normal;
+.stat ul li .category b {
+  display: block;
   color: #F7D59A;
   font-size: 10px;
   font-weight: 600;
-  float: right;
-  position: relative;
-  top: 58px;
-  right: 15px;
 }
 .stat ul li:first-child {
   margin-left: 0;
