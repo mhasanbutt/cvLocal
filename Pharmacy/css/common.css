@@ -145,7 +145,7 @@
   background-color: #94A7B5;
   width: calc((100vw - 100px - 60px - 28px) / 5);
   height: 107px;
-  margin: 0 3.5px;
+  margin: 7px 3.5px 0 3.5px;
   border: none;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px 0;
@@ -172,12 +172,12 @@
   font-size: 10px;
   font-weight: 600;
 }
-.stat ul li:first-child {
-  margin-left: 0;
-}
 .stat ul li:nth-child(1) i, .stat ul li:nth-child(3) i {
   position: relative;
   top: 70px;
+}
+.stat ul li:nth-child(-n+5) {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=common.css.map */

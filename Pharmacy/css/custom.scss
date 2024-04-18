@@ -29,9 +29,7 @@
     }
 
     .statistics{
-      padding-top: 10px;
-      top: -90px;
-      right: 11px;
+      top: 102px;
     }
   }
 
@@ -135,7 +133,7 @@
       z-index: -1;
 
       ul{
-        list-style-type: none;
+        width: auto;
         margin-right: 15px;
 
         li{
@@ -166,19 +164,11 @@
               border-radius: 8px;
               padding: 12px 0 11px 10px;
               border: 0;
-              position: relative;
-              left: 10px;
 
               &:first-child{
                 margin-left: 0;
               }
             }
-          }
-
-          &:nth-child(2){
-            margin-left: 0;
-            position: relative;
-            right: 8px;
           }
         }
       }
@@ -1003,8 +993,6 @@
 
 
   .generallisting{
-
-    height: 100%;
     position: relative;
     width: calc(100% - 130px);
     float: right;

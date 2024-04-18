@@ -204,6 +204,9 @@
           top: 70px;
         }
       }
+      &:nth-child(-n + 5){
+        margin-top: 0;
+      }
     }
   }
 }
