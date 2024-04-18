@@ -176,6 +176,9 @@
   position: relative;
   top: 70px;
 }
+.stat ul li:nth-child(-n+5) {
+  margin-top: 0;
+}
 
 .clearfix:after {
   content: "";
@@ -204,9 +207,7 @@
   width: calc(100% - 30px);
 }
 .home-page .statistics {
-  padding-top: 10px;
-  top: -90px;
-  right: 11px;
+  top: 102px;
 }
 
 .homes-page aside {
@@ -297,7 +298,7 @@
   z-index: -1;
 }
 .homes-page .home-section ul {
-  list-style-type: none;
+  width: auto;
   margin-right: 15px;
 }
 .homes-page .home-section ul li {
@@ -326,16 +327,9 @@
   border-radius: 8px;
   padding: 12px 0 11px 10px;
   border: 0;
-  position: relative;
-  left: 10px;
 }
 .homes-page .home-section ul li .homes-fields input:first-child {
   margin-left: 0;
-}
-.homes-page .home-section ul li:nth-child(2) {
-  margin-left: 0;
-  position: relative;
-  right: 8px;
 }
 .homes-page .home-section .search-button {
   background-color: #F07167;
@@ -1065,7 +1059,6 @@
 }
 
 .generallisting {
-  height: 100%;
   position: relative;
   width: calc(100% - 130px);
   float: right;

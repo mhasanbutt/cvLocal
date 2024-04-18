@@ -31,7 +31,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section style="height: 800px">
             <div class="homes-page">
                 <aside>Homes</aside>
                 <div class="home-section">
@@ -59,6 +59,7 @@
                                 <div class="homes-fields"><input type="text" placeholder="Date of Admission"></div>
                             </li>
                         </ul>
+
                     <div class="search-button">
                         <button type="submit">Search
                             <button type="reset" class="reset-button">Reset</button>
@@ -67,22 +68,20 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="home-page">
-                <div class="stats-section statistics">
-                    <div class="stat order-stat">
-                        <span class="title">3-3 Leander Lodge <p>( 3-3-Jawa Group )</p></span>
-                        <ul>
-                            <li><span>60</span><i>Number of Total Orders</i></li>
-                            <li><span>439</span><i>Number of Total Medications</i></li>
-                            <li><span>4</span><i>Interim Prescriptions</i></li>
-                            <li><span>4</span><b>(Active Orders)</b><br><i>Pending Orders</i></li>
-                            <li><span>2</span><b>(Active Orders)</b><br><i>Pending Interim Orders</i></li>
-                        </ul>
-                    </div>
+        <div class="home-page">
+            <div class="stats-section statistics">
+                <div class="stat ">
+                    <span class="title">3-3 Leander Lodge <p>( 3-3-Jawa Group )</p></span>
+                    <ul class="clearfix">
+                        <li><span class="number">60</span><span class="category">Number of Total Orders</span></li>
+                        <li><span class="number">439</span><span class="category">Number of Total Medications</span></li>
+                        <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
+                        <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
+                        <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>

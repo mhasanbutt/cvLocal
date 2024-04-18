@@ -50,7 +50,7 @@
                         <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
                         <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
                         <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
-                        <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
+
                     </ul>
                 </div>
             </div>
