@@ -4930,7 +4930,7 @@ hr {
 
             & > tr:nth-of-type(2) {
                 & > th {
-                    background-color: $grayColor;
+                    background-color: $grayColor !important;
                     text-align: center;
                     white-space: nowrap;
 
@@ -4974,7 +4974,7 @@ hr {
 
                         span {
                             display: block;
-                            color: $secondaryColor;
+                            color: $secondaryColor !important;
                             font-family: $secondaryFont;
                             font-size: 12px;
                             text-transform: uppercase;
@@ -4991,19 +4991,19 @@ hr {
                     }
 
                     &.green {
-                        color: #78D09F;
+                        color: #78D09F !important;
                     }
 
                     &.orange {
-                        color: $orangeColor;
+                        color: $orangeColor !important;
                     }
 
                     &.red {
-                        color: #F27177;
+                        color: #F27177 !important;
                     }
 
                     &.blue {
-                        color: #899AE4;
+                        color: #899AE4 !important;
                     }
 
                     &:nth-last-child(-n + 4) {

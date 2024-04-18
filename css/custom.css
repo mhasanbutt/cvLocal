@@ -5230,7 +5230,7 @@ hr.BoldHr {
   white-space: nowrap;
 }
 .table.training > thead > tr:nth-of-type(2) > th {
-  background-color: #828787;
+  background-color: #828787 !important;
   text-align: center;
   white-space: nowrap;
 }
@@ -5267,7 +5267,7 @@ hr.BoldHr {
 }
 .table.training > tbody > tr > td:first-child span {
   display: block;
-  color: #648DAC;
+  color: #648DAC !important;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -5278,16 +5278,16 @@ hr.BoldHr {
   width: 18px;
 }
 .table.training > tbody > tr > td.green {
-  color: #78D09F;
+  color: #78D09F !important;
 }
 .table.training > tbody > tr > td.orange {
-  color: #F8931D;
+  color: #F8931D !important;
 }
 .table.training > tbody > tr > td.red {
-  color: #F27177;
+  color: #F27177 !important;
 }
 .table.training > tbody > tr > td.blue {
-  color: #899AE4;
+  color: #899AE4 !important;
 }
 .table.training > tbody > tr > td:nth-last-child(-n+4) .helpTip.forTable .tTText {
   right: 50%;
