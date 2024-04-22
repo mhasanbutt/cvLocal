@@ -59,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="filters">
+            <div class="filters selectors">
                 <ul>
                     <li><input type="text" placeholder="Search by keyword"></li>
                     <li>
@@ -94,6 +94,7 @@
                             </div>
                         </article>
                     </li>
+
                 </ul>
             </div>
         </section>
