@@ -33,7 +33,7 @@
 
         </section>
 
-        <div class="home-page">
+        <div class="contentBody">
             <div class="stats-section">
                 <div class="stat">
                     <span class="title">Home Statistics</span>
@@ -50,7 +50,6 @@
                         <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
                         <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
                         <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
-
                     </ul>
                 </div>
             </div>

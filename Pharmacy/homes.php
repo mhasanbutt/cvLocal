@@ -15,7 +15,6 @@
 <body>
     <div class="landing-page">
         <section class="sidenav">
-
             <div class="logo">
                 <img src="images/pharmacy%20logo.png">
             </div>
@@ -31,57 +30,48 @@
                 </ul>
             </div>
         </section>
-        <section style="height: 800px">
-            <div class="homes-page">
-                <aside>Homes</aside>
-                <div class="home-section">
-                        <ul>
-                            <li>
-                                <div class="homes-fields">
-                                    <select>
-                                        <option>Select Home/Floor</option><option>Option 1</option><option>option 2</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="homes-fields"><input type="text" placeholder="First/Last Name"></div>
-                            </li>
-                            <li>
-                                <div class="homes-fields info"><input type="text" placeholder="Client Number"></div>
-                            </li>
-                            <li>
-                                <div class="homes-fields"><input type="text" placeholder="NHS Number"></div>
-                            </li>
-                            <li>
-                                <div class="homes-fields"><input type="text" placeholder="Date of Birth"></div>
-                            </li>
-                            <li>
-                                <div class="homes-fields"><input type="text" placeholder="Date of Admission"></div>
-                            </li>
-                        </ul>
 
-                    <div class="search-button">
-                        <button type="submit">Search
-                            <button type="reset" class="reset-button">Reset</button>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="home-page">
-            <div class="stats-section statistics">
-                <div class="stat ">
-                    <span class="title">3-3 Leander Lodge <p>( 3-3-Jawa Group )</p></span>
-                    <ul class="clearfix">
-                        <li><span class="number">60</span><span class="category">Number of Total Orders</span></li>
-                        <li><span class="number">439</span><span class="category">Number of Total Medications</span></li>
-                        <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
-                        <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
-                        <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
+        <section class="contentBody">
+            <div class="topBar">
+                <div class="breadCrumb">
+                    <ul>
+                        <li><a href="#">Homes</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+
+
+            <div class="filters">
+                <ul>
+                    <li>
+                        <select>
+                            <option>Select Home/Floor</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li><input type="text" placeholder="First/Last Name"></li>
+                    <li><input type="text" placeholder="Client Number"></li>
+                    <li><input type="text" placeholder="NHS Number"></li>
+                    <li><input type="text" placeholder="Date of Birth"></li>
+                    <li><input type="text" placeholder="Date of Admission"></li>
+
+                </ul>
+                <div class="filter-btn">
+                    <button type="submit">Search
+                        <button type="reset" class="reset-button">Reset</button>
+                    </button>
+                </div>
+            </div>
+            <div class="stat home-statistics">
+                <span class="title">3-3 Leander Lodge<span>( 3-3-Jawa Group )</span></span>
+                <ul class="clearfix">
+                    <li><span class="number">60</span><span class="category">Number of Total Orders</span></li>
+                    <li><span class="number">439</span><span class="category">Number of Total Medications</span></li>
+                    <li><span class="number">4</span><span class="category">Interim Prescriptions</span></li>
+                    <li><span class="number">4</span><span class="category"><b>(Active Orders)</b>Pending Orders</span></li>
+                    <li><span class="number">2</span><span class="category"><b>(Active Orders)</b>Pending Interim Orders</span></li>
+                </ul>
+            </div>
+        </section>
     </div>
 </body>
 </html>
