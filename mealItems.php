@@ -50,7 +50,7 @@
 				</div>
 			</form>
 
-            <a href="#">New Meal With Ingredients</a><a href="#">New Meal Without Ingredients</a>
+            <a href="#" style="background-color: #004e89;">New Meal With Ingredients</a><a href="#" style="background-color: #e28086">New Meal Without Ingredients</a>
 		</div>
 	</section>
 

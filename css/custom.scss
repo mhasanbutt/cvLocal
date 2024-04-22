@@ -161,7 +161,7 @@
             margin-left: 5px;
             float: right;
             cursor: pointer;
-            font-family: $secondaryFont;
+	        font-family: "Poppins";
 
             &.new {
                 background-color: #004E89;
@@ -48448,10 +48448,10 @@ input[type=checkbox].switch {
     }
 }
 
-.newRota {
+.newRota, .mealMenu {
     padding-right: 15px;
 
-    .rotaDays {
+    .rotaDays, .week {
         height: 24px;
         margin-bottom: 5px;
         overflow: hidden;
@@ -48511,7 +48511,7 @@ input[type=checkbox].switch {
         padding-right: 15px;
         margin-bottom: 5px;
 
-        .title {
+        & > .title {
             display: block;
             height: 30px;
             background-color: #004564;
@@ -48642,6 +48642,35 @@ input[type=checkbox].switch {
                         font-weight: 300;
                     }
                 }
+
+	            .meals {
+		            .title {
+			            font-size: 12px;
+			            font-weight: 500;
+			            line-height: 18px;
+			            display: block;
+			            color: #004564;
+			            padding: 3px 4px;
+			            background-color: #19D686;
+			            border-radius: 6px;
+		            }
+
+		            ul {
+			           li {
+				           font-size: 12px;
+				           line-height: 18px;
+				           padding: 5px;
+				           border-top: 1px solid #DDD;
+
+				           &:first-child {
+					           border-top: 0;
+				           }
+			           }
+		            }
+		            & + .toAdd {
+			            height: auto;
+		            }
+	            }
 
                 &:first-child {
                     margin-left: 0;

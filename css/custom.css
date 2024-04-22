@@ -1223,7 +1223,7 @@ header.colored section .headerIcons img path {
   margin-left: 5px;
   float: right;
   cursor: pointer;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins";
 }
 .contentHeader .filtersSearch > a.new {
   background-color: #004E89;
@@ -40913,18 +40913,18 @@ input[type=checkbox].switch:checked + label:before {
   border-top: 0;
 }
 
-.newRota {
+.newRota, .mealMenu {
   padding-right: 15px;
 }
-.newRota .rotaDays {
+.newRota .rotaDays, .newRota .week, .mealMenu .rotaDays, .mealMenu .week {
   height: 24px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-.newRota .rotaDays ul {
+.newRota .rotaDays ul, .newRota .week ul, .mealMenu .rotaDays ul, .mealMenu .week ul {
   margin: 0;
 }
-.newRota .rotaDays ul li {
+.newRota .rotaDays ul li, .newRota .week ul li, .mealMenu .rotaDays ul li, .mealMenu .week ul li {
   float: left;
   margin-left: 5px;
   width: calc((100% - 30px) / 7);
@@ -40939,7 +40939,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 20px;
   transition: all 200ms linear;
 }
-.newRota .rotaDays ul li i {
+.newRota .rotaDays ul li i, .newRota .week ul li i, .mealMenu .rotaDays ul li i, .mealMenu .week ul li i {
   float: left;
   height: 20px;
   border-radius: 4px;
@@ -40954,20 +40954,20 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
   font-weight: 600;
 }
-.newRota .rotaDays ul li.today i {
+.newRota .rotaDays ul li.today i, .newRota .week ul li.today i, .mealMenu .rotaDays ul li.today i, .mealMenu .week ul li.today i {
   background-color: #FFCD60;
 }
-.newRota .rotaDays ul li:first-child {
+.newRota .rotaDays ul li:first-child, .newRota .week ul li:first-child, .mealMenu .rotaDays ul li:first-child, .mealMenu .week ul li:first-child {
   margin-left: 0;
 }
-.newRota .scroll-wrapper {
+.newRota .scroll-wrapper, .mealMenu .scroll-wrapper {
   top: 29px;
 }
-.newRota .openShifts {
+.newRota .openShifts, .mealMenu .openShifts {
   padding-right: 15px;
   margin-bottom: 5px;
 }
-.newRota .openShifts .title {
+.newRota .openShifts > .title, .mealMenu .openShifts > .title {
   display: block;
   height: 30px;
   background-color: #004564;
@@ -40980,7 +40980,7 @@ input[type=checkbox].switch:checked + label:before {
   color: #FFF;
   font-family: "Poppins", sans-serif;
 }
-.newRota .openShifts .title i {
+.newRota .openShifts > .title i, .mealMenu .openShifts > .title i {
   font-size: 10px;
   font-weight: 500;
   color: #778DA9;
@@ -40993,20 +40993,20 @@ input[type=checkbox].switch:checked + label:before {
   background-position: right center;
   background-image: url("../images/showAllArrow.png");
 }
-.newRota .roster {
+.newRota .roster, .mealMenu .roster {
   overflow: hidden;
 }
-.newRota .roster > ul {
+.newRota .roster > ul, .mealMenu .roster > ul {
   margin: 0;
   display: flex;
 }
-.newRota .roster > ul > li {
+.newRota .roster > ul > li, .mealMenu .roster > ul > li {
   margin-left: 5px;
   width: calc((100% - 30px) / 7);
   float: left;
   font-family: "Poppins", sans-serif;
 }
-.newRota .roster > ul > li .shiftInfo {
+.newRota .roster > ul > li .shiftInfo, .mealMenu .roster > ul > li .shiftInfo {
   height: 90px;
   margin-bottom: 5px;
   background-color: #E9EDC9;
@@ -41014,10 +41014,10 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   cursor: pointer;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden {
+.newRota .roster > ul > li .shiftInfo.restHidden, .mealMenu .roster > ul > li .shiftInfo.restHidden {
   margin-bottom: 52.5px;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden:after {
+.newRota .roster > ul > li .shiftInfo.restHidden:after, .mealMenu .roster > ul > li .shiftInfo.restHidden:after {
   height: 42.5px;
   line-height: 42.5px;
   width: 100%;
@@ -41034,10 +41034,10 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 400;
   text-align: center;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden ~ .toAdd {
+.newRota .roster > ul > li .shiftInfo.restHidden ~ .toAdd, .mealMenu .roster > ul > li .shiftInfo.restHidden ~ .toAdd {
   min-height: 42.5px;
 }
-.newRota .roster > ul > li .shiftInfo > .hours {
+.newRota .roster > ul > li .shiftInfo > .hours, .mealMenu .roster > ul > li .shiftInfo > .hours {
   display: block;
   height: 45px;
   padding: 10px;
@@ -41045,12 +41045,12 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 16px;
   font-weight: 500;
 }
-.newRota .roster > ul > li .shiftInfo > .hours i {
+.newRota .roster > ul > li .shiftInfo > .hours i, .mealMenu .roster > ul > li .shiftInfo > .hours i {
   font-weight: 300;
   font-style: normal;
   color: #778DA9;
 }
-.newRota .roster > ul > li .shiftInfo .location {
+.newRota .roster > ul > li .shiftInfo .location, .mealMenu .roster > ul > li .shiftInfo .location {
   height: 45px;
   border-radius: 0 0 6px 6px;
   font-size: 14px;
@@ -41061,10 +41061,10 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #CCD5AE;
   display: block;
 }
-.newRota .roster > ul > li .shiftInfo + .toAdd {
+.newRota .roster > ul > li .shiftInfo + .toAdd, .mealMenu .roster > ul > li .shiftInfo + .toAdd {
   height: auto;
 }
-.newRota .roster > ul > li .toAdd {
+.newRota .roster > ul > li .toAdd, .mealMenu .roster > ul > li .toAdd {
   display: block;
   height: 100%;
   min-height: 90px;
@@ -41075,7 +41075,7 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   cursor: pointer;
 }
-.newRota .roster > ul > li .toAdd:before {
+.newRota .roster > ul > li .toAdd:before, .mealMenu .roster > ul > li .toAdd:before {
   position: absolute;
   content: "+";
   left: 50%;
@@ -41086,13 +41086,35 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
   font-weight: 300;
 }
-.newRota .roster > ul > li:first-child {
+.newRota .roster > ul > li .meals .title, .mealMenu .roster > ul > li .meals .title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  display: block;
+  color: #004564;
+  padding: 3px 4px;
+  background-color: #19D686;
+  border-radius: 6px;
+}
+.newRota .roster > ul > li .meals ul li, .mealMenu .roster > ul > li .meals ul li {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px;
+  border-top: 1px solid #DDD;
+}
+.newRota .roster > ul > li .meals ul li:first-child, .mealMenu .roster > ul > li .meals ul li:first-child {
+  border-top: 0;
+}
+.newRota .roster > ul > li .meals + .toAdd, .mealMenu .roster > ul > li .meals + .toAdd {
+  height: auto;
+}
+.newRota .roster > ul > li:first-child, .mealMenu .roster > ul > li:first-child {
   margin-left: 0;
 }
-.newRota .staffShifts {
+.newRota .staffShifts, .mealMenu .staffShifts {
   padding-right: 15px;
 }
-.newRota .staffShifts .infoPop {
+.newRota .staffShifts .infoPop, .mealMenu .staffShifts .infoPop {
   position: absolute;
   background-color: #EDF2F4;
   border: 2px solid #778DA9;
@@ -41105,21 +41127,21 @@ input[type=checkbox].switch:checked + label:before {
   visibility: hidden;
   opacity: 0;
 }
-.newRota .staffShifts .infoPop ul {
+.newRota .staffShifts .infoPop ul, .mealMenu .staffShifts .infoPop ul {
   margin: 0;
   display: flex;
 }
-.newRota .staffShifts .infoPop ul li {
+.newRota .staffShifts .infoPop ul li, .mealMenu .staffShifts .infoPop ul li {
   display: inline-block;
   padding: 5px 10px;
   text-align: center;
   border-left: 1px solid #BDE0FE;
   white-space: normal;
 }
-.newRota .staffShifts .infoPop ul li:first-child {
+.newRota .staffShifts .infoPop ul li:first-child, .mealMenu .staffShifts .infoPop ul li:first-child {
   border-left: 0;
 }
-.newRota .staffShifts .infoPop ul li > span {
+.newRota .staffShifts .infoPop ul li > span, .mealMenu .staffShifts .infoPop ul li > span {
   display: block;
   font-size: 10px;
   font-weight: 300;
@@ -41127,7 +41149,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 12px;
   text-transform: uppercase;
 }
-.newRota .staffShifts .infoPop ul li > span.hours {
+.newRota .staffShifts .infoPop ul li > span.hours, .mealMenu .staffShifts .infoPop ul li > span.hours {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -41135,22 +41157,22 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   text-transform: none;
 }
-.newRota .staffShifts .infoPop ul li ul {
+.newRota .staffShifts .infoPop ul li ul, .mealMenu .staffShifts .infoPop ul li ul {
   background-color: #778DA9;
   border-radius: 4px;
 }
-.newRota .staffShifts .infoPop ul li ul li > span {
+.newRota .staffShifts .infoPop ul li ul li > span, .mealMenu .staffShifts .infoPop ul li ul li > span {
   color: #EDF2F4;
 }
-.newRota .staffShifts .infoPop ul li ul li:last-child {
+.newRota .staffShifts .infoPop ul li ul li:last-child, .mealMenu .staffShifts .infoPop ul li ul li:last-child {
   padding: 5px 10px;
   border-left: 1px solid #BDE0FE;
 }
-.newRota .staffShifts .infoPop ul > li:last-child {
+.newRota .staffShifts .infoPop ul > li:last-child, .mealMenu .staffShifts .infoPop ul > li:last-child {
   padding: 0;
   border-left: 0;
 }
-.newRota .staffShifts .infoPop:after {
+.newRota .staffShifts .infoPop:after, .mealMenu .staffShifts .infoPop:after {
   position: absolute;
   content: "";
   left: 15px;
@@ -41162,7 +41184,7 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   background-size: 12px;
 }
-.newRota .staffShifts .staffInfo {
+.newRota .staffShifts .staffInfo, .mealMenu .staffShifts .staffInfo {
   background-color: #004564;
   border-radius: 6px;
   height: 50px;
@@ -41171,14 +41193,14 @@ input[type=checkbox].switch:checked + label:before {
   font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
 }
-.newRota .staffShifts .staffInfo .staff {
+.newRota .staffShifts .staffInfo .staff, .mealMenu .staffShifts .staffInfo .staff {
   float: left;
   height: 50px;
   position: relative;
   white-space: nowrap;
   padding-right: 44px;
 }
-.newRota .staffShifts .staffInfo .staff .picture {
+.newRota .staffShifts .staffInfo .staff .picture, .mealMenu .staffShifts .staffInfo .staff .picture {
   float: left;
   height: 50px;
   width: 50px;
@@ -41187,11 +41209,11 @@ input[type=checkbox].switch:checked + label:before {
   overflow: hidden;
   margin-right: 15px;
 }
-.newRota .staffShifts .staffInfo .staff .picture img {
+.newRota .staffShifts .staffInfo .staff .picture img, .mealMenu .staffShifts .staffInfo .staff .picture img {
   width: 50px;
   height: 50px;
 }
-.newRota .staffShifts .staffInfo .staff .name, .newRota .staffShifts .staffInfo .staff .designation {
+.newRota .staffShifts .staffInfo .staff .name, .newRota .staffShifts .staffInfo .staff .designation, .mealMenu .staffShifts .staffInfo .staff .name, .mealMenu .staffShifts .staffInfo .staff .designation {
   float: left;
   width: calc(100% - 65px);
   color: #FFF;
@@ -41200,11 +41222,11 @@ input[type=checkbox].switch:checked + label:before {
   margin-top: 5px;
   text-align: left;
 }
-.newRota .staffShifts .staffInfo .staff .designation {
+.newRota .staffShifts .staffInfo .staff .designation, .mealMenu .staffShifts .staffInfo .staff .designation {
   font-weight: 300;
   margin-top: 0;
 }
-.newRota .staffShifts .staffInfo .staff .moreInfo {
+.newRota .staffShifts .staffInfo .staff .moreInfo, .mealMenu .staffShifts .staffInfo .staff .moreInfo {
   position: absolute;
   right: 0;
   top: 13px;
@@ -41216,19 +41238,19 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   cursor: pointer;
 }
-.newRota .staffShifts .staffInfo .staff .moreInfo:hover .infoPop {
+.newRota .staffShifts .staffInfo .staff .moreInfo:hover .infoPop, .mealMenu .staffShifts .staffInfo .staff .moreInfo:hover .infoPop {
   bottom: 100%;
   visibility: visible;
   opacity: 1;
 }
-.newRota .staffShifts .staffInfo .hoursInfo, .newRota .staffShifts .staffInfo .conflicts {
+.newRota .staffShifts .staffInfo .hoursInfo, .newRota .staffShifts .staffInfo .conflicts, .mealMenu .staffShifts .staffInfo .hoursInfo, .mealMenu .staffShifts .staffInfo .conflicts {
   color: #E26D5C;
   font-size: 14px;
   line-height: 18px;
   padding: 16px 0;
   display: inline-block;
 }
-.newRota .staffShifts .staffInfo .conflicts {
+.newRota .staffShifts .staffInfo .conflicts, .mealMenu .staffShifts .staffInfo .conflicts {
   color: #EDF2F4;
   font-weight: 600;
   margin-left: 50px;
@@ -41238,17 +41260,17 @@ input[type=checkbox].switch:checked + label:before {
   background-position: left center;
   background-size: 24px;
 }
-.newRota .staffShifts .roster ul li .shiftInfo {
+.newRota .staffShifts .roster ul li .shiftInfo, .mealMenu .staffShifts .roster ul li .shiftInfo {
   background-color: #BDE0FE;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .location {
+.newRota .staffShifts .roster ul li .shiftInfo .location, .mealMenu .staffShifts .roster ul li .shiftInfo .location {
   background-color: #A2D2FF;
 }
-.newRota .staffShifts .roster ul li .shiftInfo.onLeave {
+.newRota .staffShifts .roster ul li .shiftInfo.onLeave, .mealMenu .staffShifts .roster ul li .shiftInfo.onLeave {
   position: relative;
   overflow: hidden;
 }
-.newRota .staffShifts .roster ul li .shiftInfo.onLeave:before {
+.newRota .staffShifts .roster ul li .shiftInfo.onLeave:before, .mealMenu .staffShifts .roster ul li .shiftInfo.onLeave:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -41262,37 +41284,37 @@ input[type=checkbox].switch:checked + label:before {
   padding-top: 33px;
   text-align: center;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .infoPop {
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop, .mealMenu .staffShifts .roster ul li .shiftInfo .infoPop {
   left: 155px;
   bottom: auto;
   top: 10px;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .infoPop:after {
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop:after, .mealMenu .staffShifts .roster ul li .shiftInfo .infoPop:after {
   left: auto;
   right: calc(100% - 3px);
   top: 15px;
   transform: rotate(90deg);
 }
-.newRota .staffShifts .roster ul li .shiftInfo:hover .infoPop {
+.newRota .staffShifts .roster ul li .shiftInfo:hover .infoPop, .mealMenu .staffShifts .roster ul li .shiftInfo:hover .infoPop {
   left: 150px;
   visibility: visible;
   opacity: 1;
 }
-.newRota.resident .rotaDays {
+.newRota.resident .rotaDays, .mealMenu.resident .rotaDays {
   padding-left: 205px;
 }
-.newRota.resident .staffShifts .roster > ul {
+.newRota.resident .staffShifts .roster > ul, .mealMenu.resident .staffShifts .roster > ul {
   margin-top: 5px;
 }
-.newRota.resident .staffShifts .roster > ul:first-of-type {
+.newRota.resident .staffShifts .roster > ul:first-of-type, .mealMenu.resident .staffShifts .roster > ul:first-of-type {
   margin-top: 0;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child {
+.newRota.resident .staffShifts .roster > ul > li:first-child, .mealMenu.resident .staffShifts .roster > ul > li:first-child {
   width: calc((100% - 30px) / 7 + 205px);
   padding-left: 205px;
   position: relative;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident {
   position: absolute;
   top: 0;
   left: 0;
@@ -41301,14 +41323,14 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 6px;
   background-color: #004564;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident img {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident img, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident img {
   border-radius: 4px;
   height: 50px;
   width: 50px;
   float: left;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .name {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .name, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .name {
   font-size: 12px;
   font-weight: 500;
   color: #F5F5F5;
@@ -41316,7 +41338,7 @@ input[type=checkbox].switch:checked + label:before {
   float: left;
   margin: 5px 0 5px 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .allocTime {
   font-size: 10px;
   color: #F5F5F5;
   font-weight: 300;
@@ -41324,7 +41346,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 16px;
   margin: 0 0 0 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i {
   display: inline-block;
   font-weight: 500;
   color: #004564;
@@ -41333,7 +41355,7 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 4px;
   padding: 0 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i {
+.newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i, .mealMenu.resident .staffShifts .roster > ul > li .shiftInfo .location i {
   font-style: normal;
   font-weight: 300;
 }
