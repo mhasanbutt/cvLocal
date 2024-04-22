@@ -14,13 +14,13 @@
 </head>
 
 <body>
+
     <div class="landing-page">
         <section class="sidenav">
 
             <div class="logo">
                 <img src="images/pharmacy%20logo.png">
             </div>
-
             <ul>
                 <li class="menu"><img src="images/menus.png">Menu
                     <section class="dropdown-sec">
@@ -50,96 +50,77 @@
                     <li><img src="images/logout.png"> logout</li>
                 </ul>
             </div>
-
         </section>
-
-        <section>
-            <div class="homes-page">
+        <section class="contentBody">
+            <div class="topBar">
+                <div class="breadCrumb">
+                    <ul>
+                        <li><a href="#">Homes</a></li>
+                        <li><a href="#">Service Users</a></li>
+                        <li><a href="#">Medication</a></li>
+                    </ul>
+                </div>
                 <div class="profileInfo">
-                    <strong>Homes > <i>Service User > </i><span>Medication</span></strong>
                     <ul>
-                        <li><span>Service User Name</span><div>Ms Lab Rat</div></li>
-                        <li><span>Date of Birth</span><div>23.09.1940</div></li>
-                        <li><span>NHS No.</span><div>292398432</div></li>
-                        <li><span>Company</span><div>3-3-Jawa Group</div></li>
-                        <li><span>Home</span><div>3-3 Leander Lodge</div></li>
-                        <li><span>Room</span><div>VIP Room</div></li>
-                    </ul>
-                </div>
-
-                <div class="user-medicine">
-                    <ul>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Search by keyword"></div>
-                        </li>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>All (3-3 Leander Lodge)</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>Miss Lab Rat</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>Select Interim</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="search-button">
-                        <button type="submit">Search
-                            <button type="reset" class="reset-button">Reset</button>
-                        </button>
-                    </div>
-                    <br><br>
-                    <ul>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>Select PRN</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>Active</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Miss Lab Rat"></div>
-                        </li>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Select Interim"></div>
-                        </li>
+                        <li>Service User Name<br><span>Ms Lab Rat</span></li>
+                        <li>Date of Birth<br><span>23.09.1940</span></li>
+                        <li>NHS No.<br><span>292398432</span></li>
+                        <li>Company<br><span>3-3-Jawa Group</span></li>
+                        <li>Home<br><span>3-3 Leander Lodge</span></li>
+                        <li>Room<br><span>VIP Room</span></li>
                     </ul>
                 </div>
             </div>
-        </section>
+            <div class="filters selectors">
+                <ul>
+                    <li><input type="text" placeholder="Search by keyword"></li>
+                    <li>
+                        <select>
+                            <option>All (3-3 Leander Lodg</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Miss Lab Rat</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Select Interim</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Select PRN</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Active</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                    <li><input type="text" placeholder="Miss Lab Rat"></li>
+                    <li><input type="text" placeholder="Select Interim"></li>
 
-        <section class="alerts-sec">
-            <div class="user-alerts">
-                <button type="submit">Allergies</button>
-                <button type="button">Equipment Alert</button>
-                <button type="submit">vaccination</button>
+                </ul>
+                <div class="filter-btn">
+                    <button type="submit">Search
+                        <button type="reset" class="reset-button">Reset</button>
+                    </button>
+                </div>
             </div>
-            <div class="action-sec">
-                <span>NEW</span>
-                <i>Action</i>
+            <div class="alertCenter">
+                <div class="user-alerts">
+                    <button type="submit">Allergies</button>
+                    <button type="button">Equipment Alert</button>
+                    <button type="submit">vaccination</button>
+                </div>
+                <div class="alertAction">
+                    <span>NEW</span>
+                    <i>Action</i>
+                </div>
             </div>
-        </section><br>
-        <div class="generallisting">
-
-            <section>
+            <div class="generallisting">
                 <ul>
                     <li><input type="checkbox"><label></label></li>
                     <li><span>Service User Name</span><i>Miss Lab Rat</i></li>
@@ -153,27 +134,25 @@
                     <li><span>Status</span><i>Active</i></li>
                     <li><a class="eye" href=""></a></li>
                 </ul>
-
-            </section>
-        </div>
+            </div>
+            <footer>
+                <div class="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                </div>
+                <select>
+                    <option>50 per page</option>
+                    <option>opt 1</option>
+                    <option>opt 2</option>
+                    <option>opt 3</option>
+                </select>
+            </footer>
+        </section>
     </div>
-    <footer>
-        <div class="pagination">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-        </div>
-        <select>
-            <option>50 per page</option>
-            <option>opt 1</option>
-            <option>opt 2</option>
-            <option>opt 3</option>
-        </select>
-    </footer>
-
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -200,7 +179,6 @@
                 $(this).addClass('active');
             });
         });
-
     </script>
 
 

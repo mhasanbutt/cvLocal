@@ -49,61 +49,55 @@
                     <li><img src="images/logout.png"> logout</li>
                 </ul>
             </div>
-
         </section>
-
-        <section>
-            <div class="homes-page">
-                <strong>Homes > <span>Service Users</span></strong>
-                <div class="home-section serviceusers">
+        <section class="contentBody">
+            <div class="topBar">
+                <div class="breadCrumb">
                     <ul>
-                        <li>
-                            <div class="homes-fields">
-                                <select>
-                                    <option>All (3-3 Leander Lodge)</option><option>Option 1</option><option>option 2</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="homes-fields"><input type="text" placeholder="Search by keyword"></div>
-                        </li>
-
+                        <li><a href="#">Homes</a></li>
+                        <li><a href="#">Service Users</a></li>
                     </ul>
-
-                    <div class="search-button">
-                        <button type="submit">Search<button type="reset" class="reset-button">Reset</button></button>
-                    </div>
                 </div>
             </div>
+            <div class="filters">
+                <ul>
+                    <li><input type="text" placeholder="Search by keyword"></li>
+                    <li>
+                        <select>
+                            <option>All (3-3 Leander Lodge)</option><option>Option 1</option><option>option 2</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="filter-btn">
+                    <button type="submit">Search
+                        <button type="reset" class="reset-button">Reset</button>
+                    </button>
+                </div>
+            </div>
+            <div class="ContainerList">
+                <ul>
+                    <li>
+                        <article>
+                            <div class="userInfo">
+                                <span class="picture"><a href="#"><img src="images/Rectangle%2019.png"></a></span>
+                                <ul>
+                                    <li>Mr Tim Shermin</li>
+                                    <li><strong>Timmy</strong>(78)</li>
+                                    <li><strong>17.07.2019</strong>(5876)</li>
+                                    <li>Floor 1 / Room 1</li>
+                                </ul>
+                            </div>
+                            <div class="userContainer">
+                                <span class="newScore">NEWS2 Score:2</span>
+                                <span class="dnacpr">dnacpr</span>
+                                <div class="notifyUser"><img src="images/warning.png"><img src="images/butterfly.png"></div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
         </section>
-
-        <div class="ContainerList">
-            <ul class="serviceUser">
-                <li>
-                    <article>
-
-                        <div class="userInfo">
-                            <span class="picture"><a href="#"><img src="images/Rectangle%2019.png"></a></span>
-                            <ul>
-                                <li>Mr Tim Shermin</li>
-                                <li><strong>Timmy</strong>(78)</li>
-                                <li><strong>17.07.2019</strong>(5876)</li>
-                                <li>Floor 1 / Room 1</li>
-                            </ul>
-                        </div>
-
-                        <div class="userContainer">
-                            <span class="newScore">NEWS2 Score:2</span>
-                            <span class="dnacpr">dnacpr</span>
-                            <div class="notifyUser"><img src="images/warning.png"><img src="images/butterfly.png"></div>
-                        </div>
-
-                    </article>
-                </li>
-            </ul>
-        </div>
     </div>
-
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -118,6 +112,7 @@
                     submenu.css("opacity", "1");
                 }
             });
+
             var dropdownItems = $(".dropdown-sec li");
             dropdownItems.click(function(event) {
                 event.preventDefault();
