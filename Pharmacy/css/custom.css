@@ -1290,6 +1290,7 @@
   padding: 5px 10px;
   top: 122px;
   left: 17px;
+  height: 100px;
 }
 .generallisting ul {
   list-style: none;
@@ -1322,6 +1323,8 @@
   color: #24323D;
   font-style: normal;
   font-size: 16px;
+  position: relative;
+  bottom: 4px;
 }
 .generallisting ul li input {
   width: 86px;
@@ -1366,6 +1369,7 @@
 .generallisting ul li:last-child {
   position: relative;
   top: -10px;
+  left: 6px;
 }
 
 .styledlists {
@@ -1566,6 +1570,10 @@ footer .pagination a {
   margin-left: 8px;
   position: relative;
   bottom: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  top: 2px;
+  left: -2px;
 }
 footer .pagination a.active, footer .pagination a:hover, footer .pagination a:focus {
   background-color: #F7D59A;
@@ -1581,7 +1589,7 @@ footer .pagination::before {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 36%;
+  top: 40%;
   left: 8px;
 }
 footer .pagination::after {
@@ -1592,8 +1600,8 @@ footer .pagination::after {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 35%;
-  left: 162px;
+  top: 38%;
+  left: 151px;
 }
 footer .pages-count {
   border-radius: 10px;
@@ -1612,8 +1620,8 @@ footer .pages-count::before {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 30%;
-  left: 8px;
+  top: 38%;
+  left: 9px;
 }
 footer .pages-count::after {
   content: "";

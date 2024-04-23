@@ -218,7 +218,7 @@
         }
       }
     }
-    
+
   }
 
 
@@ -1248,6 +1248,7 @@
     padding: 5px 10px;
     top: 122px;
     left: 17px;
+    height: 100px;
 
     ul{
       list-style: none;
@@ -1282,6 +1283,8 @@
           color: #24323D;
           font-style: normal;
           font-size: 16px;
+          position: relative;
+          bottom: 4px;
         }
 
         input{
@@ -1335,6 +1338,7 @@
         &:last-child{
           position: relative;
           top: -10px;
+          left: 6px;
         }
       }
     }
@@ -1569,7 +1573,10 @@
         margin-left: 8px;
         position: relative;
         bottom: 3px;
-
+        font-size: 12px;
+        font-weight: 400;
+        top: 2px;
+        left: -2px;
 
         &.active,
         &:hover,
@@ -1589,7 +1596,7 @@
         width: 12px;
         height: 12px;
         position: absolute;
-        top: 36%;
+        top: 40%;
         left: 8px;
       }
 
@@ -1601,8 +1608,8 @@
         width: 12px;
         height: 12px;
         position: absolute;
-        top: 35%;
-        left: 162px;
+        top: 38%;
+        left: 151px;
       }
     }
 
@@ -1623,8 +1630,8 @@
         width: 12px;
         height: 12px;
         position: absolute;
-        top: 30%;
-        left: 8px;
+        top: 38%;
+        left: 9px;
       }
 
       &::after{
