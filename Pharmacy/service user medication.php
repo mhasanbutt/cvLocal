@@ -57,7 +57,7 @@
                     <ul>
                         <li><a href="#">Homes</a></li>
                         <li><a href="#">Service Users</a></li>
-                        <li><a href="#">Medication</a></li>
+                        <li><a href="#" class="activePage">Medication</a></li>
                     </ul>
                 </div>
                 <div class="profileInfo">

@@ -82,8 +82,8 @@
                                 <span class="picture"><a href="#"><img src="images/Rectangle%2019.png"></a></span>
                                 <ul>
                                     <li>Mr Tim Shermin</li>
-                                    <li><strong>Timmy</strong>(78)</li>
-                                    <li><strong>17.07.2019</strong>(5876)</li>
+                                    <li><strong>Timmy</strong>( 78 )</li>
+                                    <li><strong>17.07.2019</strong>( 5876 )</li>
                                     <li>Floor 1 / Room 1</li>
                                 </ul>
                             </div>
@@ -94,7 +94,6 @@
                             </div>
                         </article>
                     </li>
-
                 </ul>
             </div>
         </section>
