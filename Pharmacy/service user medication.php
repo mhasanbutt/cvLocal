@@ -110,19 +110,26 @@
                 </div>
             </div>
             <div class="alertCenter">
-                <div class="user-alerts">
-                    <button type="submit">Allergies</button>
-                    <button type="button">Equipment Alert</button>
-                    <button type="submit">vaccination</button>
-                </div>
+                <ul class="user-alerts">
+                    <li class="orange">Allergies</li>
+                    <li>Equipment Alert</li>
+                    <li>vaccination</li>
+                </ul>
                 <div class="alertAction">
                     <span>NEW</span>
-                    <i>Action</i>
+                    <div class="dropdownToggle">
+                        <i class="action-btn">Action</i>
+                        <div class="dropdownContent">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="generallisting">
                 <ul>
-                    <li><input type="checkbox"><label></label></li>
+                    <li><input type="checkbox"></li>
                     <li><span>Service User Name</span><i>Miss Lab Rat</i></li>
                     <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
                     <li><span>Source Of Medicine</span><i>Local Pharmacy</i></li>
@@ -136,14 +143,16 @@
                 </ul>
             </div>
             <footer>
-                <div class="pagination">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                </div>
+                <ul class="pageContainer">
+                    <li class="previous-btn"></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li class="next-btn"></li>
+                </ul>
                 <select>
                     <option>50 per page</option>
                     <option>opt 1</option>
@@ -174,9 +183,25 @@
                 submenu.css("opacity", "0");
             });
 
-            $('.pagination a').on('click', function() {
-                $('.pagination a').removeClass('active');
+            $('.pageContainer li').on('click', function() {
+                $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
+                $(".pageContainer .previous-btn").removeClass("active");
+            });
+
+
+
+
+
+
+            $(".action-btn").click(function(){
+                $(".dropdownContent").toggleClass("show");
+            });
+
+            $(document).click(function(event){
+                if (!$(event.target).closest('.dropdownToggle').length) {
+                    $(".dropdown-content").removeClass('show');
+                }
             });
         });
     </script>

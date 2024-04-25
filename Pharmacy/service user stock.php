@@ -56,8 +56,8 @@
             <div class="breadCrumb">
                 <ul>
                     <li><a href="#">Homes</a></li>
-                    <li><a href="#">Service Users</a></li>
-                    <li><a href="#">Medication</a></li>
+                    <li><a href="#">Medications</a></li>
+                    <li><a href="#" class="activePage">Medication Orders</a></li>
                 </ul>
             </div>
             <div class="profileInfo">
@@ -110,20 +110,21 @@
             </div>
         </div>
         <div class="alertCenter">
-            <div class="user-alerts">
-                <button type="submit">Allergies</button>
-                <button type="button">Equipment Alert</button>
-                <button type="submit">vaccination</button>
-            </div>
+            <ul class="user-alerts">
+                <li class="orange">Allergies</li>
+                <li>Equipment Alert</li>
+                <li>vaccination</li>
+            </ul>
         </div>
         <section class="medicineAlert">
-            <p>Not all medication "Counts Down" as it is given. So the "Consumed"
+            <div>Not all medication "Counts Down" as it is given. So the "Consumed"
                 column will not always reflect the administrations. Only the following units count down;
                 Tablets / Capsules / Sachets / Units / Patches / Suppositories / Supplements or ml (if
                 the received unit is set to ml as well)
-            </p>
+            </div>
         </section>
-        <div class="generallisting med-lists">
+
+        <div class="generallisting medicinelist">
             <ul>
                 <li><input type="checkbox"><label></label></li>
                 <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
@@ -133,16 +134,40 @@
                 <li><span>Stock Carried Forward</span><i>0</i></li>
                 <li><span>QTY. Ordered</span><i>150.00</i></li>
                 <li><span>QTY. Received (not from orders)</span><i>150.00</i></li>
-                <li><a class="eye" href=""></a></li>
                 <li><span>Returned / Destroyed</span><i>0.00</i></li>
                 <li><span>QTY. Adjusted</span><i>0.00</i></li>
                 <li><span>Consumed</span><i>0.00</i></li>
                 <li><span>Current Stock</span><i>0.00</i></li>
+                <li><a class="eye" href=""></a></li>
             </ul>
         </div>
-        <div class="active-prescription">
-            <div class="med-form">
-                <label>Requires Dual Signature</label>
+        <footer>
+
+            <button class="back-btn" type="button">Back</button>
+            <button class="update-btn" type="submit">Update</button>
+            <button type="button" class="print">Print</button>
+
+            <ul class="pageContainer">
+                <li class="previous-btn"></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li class="next-btn"></li>
+            </ul>
+
+            <select>
+                <option>50 per page</option>
+                <option>opt 1</option>
+                <option>opt 2</option>
+                <option>opt 3</option>
+            </select>
+
+
+            <div class="active-prescription">
+                <label>Show Active Prescriptions Only</label>
                 <div class="select">
                     <label class="switch">
                         <input type="checkbox" checked>
@@ -150,25 +175,6 @@
                     </label>
                 </div>
             </div>
-        </div>
-        <footer>
-            <button type="button">Back</button>
-            <button class="update-btn" type="submit">Update</button>
-            <button type="button" class="print">Print</button>
-            <div class="pages-count">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-            </div>
-            <select>
-                <option>50 per page</option>
-                <option>opt 1</option>
-                <option>opt 2</option>
-                <option>opt 3</option>
-            </select>
         </footer>
     </section>
 </div>

@@ -55,8 +55,8 @@
                 <div class="breadCrumb">
                     <ul>
                         <li><a href="#">Homes</a></li>
-                        <li><a href="#">Service Users</a></li>
-                        <li><a href="#">Medication</a></li>
+                        <li><a href="#">Medications</a></li>
+                        <li><a href="#" class="activePage">Medication Orders</a></li>
                     </ul>
                 </div>
                 <div class="profileInfo">
@@ -70,6 +70,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="filters selectors">
                 <ul>
                     <li><input type="text" placeholder="Search by keyword"></li>
@@ -109,12 +110,13 @@
                 </div>
             </div>
             <div class="alertCenter">
-                <div class="user-alerts">
-                    <button type="submit">Allergies</button>
-                    <button type="button">Equipment Alert</button>
-                    <button type="submit">vaccination</button>
-                </div>
+                <ul class="user-alerts">
+                    <li class="orange">Allergies</li>
+                    <li>Equipment Alert</li>
+                    <li>vaccination</li>
+                </ul>
             </div>
+
             <section class="medicineProfile">
                 <ul>
                     <li>Date Ordered<span>05.04.2023 09:05</span></li>
@@ -125,7 +127,7 @@
 
             <div class="generallisting styledlists">
                 <ul>
-                    <li><input type="checkbox"><label></label></li>
+                    <li><input type="checkbox"></li>
                     <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
                     <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
                     <li><span>Strength</span><i>0.125mg / 5ml</i></li>
@@ -135,9 +137,9 @@
                     <li><span>Current Stock</span><i>150.00</i></li>
                     <li><span>QTY. Ordered</span><i>150.00</i></li>
                     <li><span>QTY. Already Added</span><i>0.00</i></li>
-                    <li><a class="eye" href=""></a></li>
                     <li><span>QTY. to Send</span><input type="text" placeholder="150.00"></li>
                     <li><span>Containers</span><input type="text" placeholder="1"></li>
+                    <li><a class="eye" href=""></a></li>
                 </ul>
             </div>
             <section class="comments">
@@ -150,17 +152,22 @@
                 <input type="text" placeholder="Comments (optional)">
             </section>
             <footer>
-                <button type="button">Back</button>
+
+                <button class="back-btn" type="button">Back</button>
                 <button class="update-btn" type="submit">Update</button>
                 <button type="button" class="print">Print</button>
-                <div class="pages-count">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                </div>
+
+                <ul class="pageContainer">
+                    <li class="previous-btn"></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li class="next-btn"></li>
+                </ul>
+
                 <select>
                     <option>50 per page</option>
                     <option>opt 1</option>
