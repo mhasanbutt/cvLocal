@@ -634,167 +634,6 @@
         }
       }
     }
-    .MedicationSec{
-      width: 100%;
-
-      .addMedicine{
-        background-color: #748CAB;
-        border-radius: 10px;
-        padding: 5px;
-        float: left;
-        width: 71%;
-
-        @media only screen and (min-width: 1300px) {
-          width: 74%;
-        }
-
-        select{
-          padding: 9px 0 8px 10px;
-          width: 100%;
-          border-radius: 8px;
-          border: 0;
-          font-size: 16px;
-          color: #24313E;
-          font-weight: 400;
-          appearance: none;
-          background-image: url("../images/grey down-arrow.png");
-          background-size: 14px;
-          background-repeat: no-repeat;
-          background-position: right 8px center;
-        }
-        button{
-          margin-top: 5px;
-
-          &:last-child{
-            background-color: #24313E;
-            color: #fff;
-            font-weight:500;
-            padding: 10px;
-            border-radius: 12px;
-            border: 0;
-            cursor: pointer;
-            font-size: 12px;
-          }
-        }
-
-        .reset-btn {
-          background-color: transparent;
-          color: #fff;
-          font-weight: 500;
-          padding: 10px;
-          border: 0;
-          cursor: pointer;
-          font-size: 12px;
-        }
-      }
-
-      .medicineSummary{
-        width: 25.5%;
-        background-color: #F5F5F5;
-        float: right;
-        height: 80vh;
-        padding: 10px;
-        border-radius: 10px;
-
-        span{
-          color: #24313E;
-          font-size: 14px;
-          font-weight: 400;
-        }
-        ul{
-          margin-top: 10px;
-          list-style-type: none;
-
-          li{
-            list-style-type: none;
-            padding-bottom: 5.5px;
-
-            span{
-              color: #748CAB;
-              font-size: 12px;
-            }
-            i{
-              color: #748CAB;
-              font-size: 12px;
-            }
-            p{
-              color: #748CAB;
-              font-size: 12px;
-            }
-            div{
-              background-color: #E7ECEF;
-              font-size: 16px;
-              color: #24313E;
-              padding: 9px 0 8px 10px;
-              margin-bottom: 5px;
-              border-radius: 8px;
-            }
-            label{
-                float: right;
-
-              &.switch{
-                position: relative;
-                display: inline-block;
-                width: 48px;
-                height: 28px;
-              }
-
-              input{
-                display: none;
-
-                &:checked + .slider{
-                  background-color: #5FB219;
-                }
-                &:checked + .slider:before{
-                  transform: translateX(18px);
-                }
-              }
-
-              .slider{
-                position: absolute;
-                cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #E7ECEF;
-                transition: .4s;
-                border-radius: 14px;
-
-                &:before{
-                  position: absolute;
-                  content: "";
-                  height: 25px;
-                  width: 25px;
-                  top: 1.5px;
-                  bottom: 2px;
-                  background-color: white;
-                  transition: 0.4s;
-                  border-radius: 20px;
-                }
-              }
-            }
-            &.drug-med{
-              span{
-                float: left;
-              }
-              i{
-                display: block;
-                text-align: center;
-                position: relative;
-                right: 37px;
-                font-style: normal;
-              }
-              p{
-                float: right;
-                position: relative;
-                bottom: 18px;
-              }
-            }
-          }
-        }
-      }
-    }
   }
   .medicinalZone{
     width: 100%;
@@ -903,25 +742,128 @@
         }
       }
     }
+    .medicineSummary{
+      width: 25.5%;
+      background-color: #F5F5F5;
+      float: right;
+      height: 65vh;
+      padding: 10px;
+      border-radius: 10px;
+
+      span{
+        color: #24313E;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      ul{
+        margin-top: 10px;
+        list-style-type: none;
+
+        li{
+          list-style-type: none;
+          padding-bottom: 5.5px;
+
+          span{
+            color: #748CAB;
+            font-size: 12px;
+          }
+          i{
+            color: #748CAB;
+            font-size: 12px;
+          }
+          p{
+            color: #748CAB;
+            font-size: 12px;
+          }
+          div{
+            background-color: #E7ECEF;
+            font-size: 15px;
+            color: #24313E;
+            padding: 9px 0 8px 10px;
+            margin-bottom: 5px;
+            border-radius: 8px;
+          }
+          label{
+            float: right;
+
+            &.switch{
+              position: relative;
+              display: inline-block;
+              width: 43px;
+              height: 26px;
+            }
+
+            input{
+              display: none;
+
+              &:checked + .slider{
+                background-color: #5FB219;
+              }
+              &:checked + .slider:before{
+                transform: translateX(13px);
+              }
+            }
+
+            .slider{
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #E7ECEF;
+              transition: .4s;
+              border-radius: 14px;
+
+              &:before{
+                position: absolute;
+                content: "";
+                height: 21px;
+                width: 22px;
+                top: 2px;
+                left: 5px;
+                background-color: white;
+                transition: 0.4s;
+                border-radius: 20px;
+              }
+            }
+          }
+
+          &.drug-med{
+            span{
+              float: left;
+            }
+            i{
+              display: block;
+              text-align: center;
+              position: relative;
+              right: 37px;
+              font-style: normal;
+            }
+            p{
+              float: right;
+              position: relative;
+              bottom: 18px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .medicines-area{
-    width: calc(100% - 33.5%);
-    position: relative;
-    left: 115px;
-    top: 109px;
+    width: 74%;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
-    z-index: -1;
+    gap: 10px;
 
     .medicine-Info{
-      width: 49.5%;
+      width: 50%;
 
       .med-form{
         min-height: 64px;
         position: relative;
-        margin-top: 20px;
+        margin-top: 14px;
         label{
           height: 17px;
           display: block;
@@ -971,9 +913,8 @@
             &.switch{
               position: relative;
               display: inline-block;
-              width: 48px;
-              height: 28px;
-              margin: 0 10px;
+              width: 43px;
+              height: 26px;
               top: 11px;
             }
             input{
@@ -983,7 +924,7 @@
                 background-color: #5FB219;
               }
               &:checked + .slider:before{
-                transform: translateX(18px);
+                transform: translateX(13px);
               }
             }
             .slider{
@@ -1000,10 +941,10 @@
               &:before{
                 position: absolute;
                 content: "";
-                height: 25px;
-                width: 25px;
+                height: 21px;
+                width: 22px;
                 top: 1.5px;
-                bottom: 2px;
+                left: 2px;
                 background-color: white;
                 transition: 0.4s;
                 border-radius: 20px;

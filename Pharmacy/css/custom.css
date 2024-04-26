@@ -739,153 +739,6 @@
   top: 33%;
   right: 6px;
 }
-.alerts-sec .MedicationSec {
-  width: 100%;
-}
-.alerts-sec .MedicationSec .addMedicine {
-  background-color: #748CAB;
-  border-radius: 10px;
-  padding: 5px;
-  float: left;
-  width: 71%;
-}
-@media only screen and (min-width: 1300px) {
-  .alerts-sec .MedicationSec .addMedicine {
-    width: 74%;
-  }
-}
-.alerts-sec .MedicationSec .addMedicine select {
-  padding: 9px 0 8px 10px;
-  width: 100%;
-  border-radius: 8px;
-  border: 0;
-  font-size: 16px;
-  color: #24313E;
-  font-weight: 400;
-  appearance: none;
-  background-image: url("../images/grey down-arrow.png");
-  background-size: 14px;
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-}
-.alerts-sec .MedicationSec .addMedicine button {
-  margin-top: 5px;
-}
-.alerts-sec .MedicationSec .addMedicine button:last-child {
-  background-color: #24313E;
-  color: #fff;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 12px;
-  border: 0;
-  cursor: pointer;
-  font-size: 12px;
-}
-.alerts-sec .MedicationSec .addMedicine .reset-btn {
-  background-color: transparent;
-  color: #fff;
-  font-weight: 500;
-  padding: 10px;
-  border: 0;
-  cursor: pointer;
-  font-size: 12px;
-}
-.alerts-sec .MedicationSec .medicineSummary {
-  width: 25.5%;
-  background-color: #F5F5F5;
-  float: right;
-  height: 80vh;
-  padding: 10px;
-  border-radius: 10px;
-}
-.alerts-sec .MedicationSec .medicineSummary span {
-  color: #24313E;
-  font-size: 14px;
-  font-weight: 400;
-}
-.alerts-sec .MedicationSec .medicineSummary ul {
-  margin-top: 10px;
-  list-style-type: none;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li {
-  list-style-type: none;
-  padding-bottom: 5.5px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li span {
-  color: #748CAB;
-  font-size: 12px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li i {
-  color: #748CAB;
-  font-size: 12px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li p {
-  color: #748CAB;
-  font-size: 12px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li div {
-  background-color: #E7ECEF;
-  font-size: 16px;
-  color: #24313E;
-  padding: 9px 0 8px 10px;
-  margin-bottom: 5px;
-  border-radius: 8px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label {
-  float: right;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label.switch {
-  position: relative;
-  display: inline-block;
-  width: 48px;
-  height: 28px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label input {
-  display: none;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label input:checked + .slider {
-  background-color: #5FB219;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label input:checked + .slider:before {
-  transform: translateX(18px);
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #E7ECEF;
-  transition: 0.4s;
-  border-radius: 14px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li label .slider:before {
-  position: absolute;
-  content: "";
-  height: 25px;
-  width: 25px;
-  top: 1.5px;
-  bottom: 2px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 20px;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li.drug-med span {
-  float: left;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li.drug-med i {
-  display: block;
-  text-align: center;
-  position: relative;
-  right: 37px;
-  font-style: normal;
-}
-.alerts-sec .MedicationSec .medicineSummary ul li.drug-med p {
-  float: right;
-  position: relative;
-  bottom: 18px;
-}
 
 .medicinalZone {
   width: 100%;
@@ -989,24 +842,116 @@
   transform: translateY(19%);
   right: 52px;
 }
+.medicinalZone .medicineSummary {
+  width: 25.5%;
+  background-color: #F5F5F5;
+  float: right;
+  height: 65vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+.medicinalZone .medicineSummary span {
+  color: #24313E;
+  font-size: 14px;
+  font-weight: 500;
+}
+.medicinalZone .medicineSummary ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.medicinalZone .medicineSummary ul li {
+  list-style-type: none;
+  padding-bottom: 5.5px;
+}
+.medicinalZone .medicineSummary ul li span {
+  color: #748CAB;
+  font-size: 12px;
+}
+.medicinalZone .medicineSummary ul li i {
+  color: #748CAB;
+  font-size: 12px;
+}
+.medicinalZone .medicineSummary ul li p {
+  color: #748CAB;
+  font-size: 12px;
+}
+.medicinalZone .medicineSummary ul li div {
+  background-color: #E7ECEF;
+  font-size: 15px;
+  color: #24313E;
+  padding: 9px 0 8px 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+.medicinalZone .medicineSummary ul li label {
+  float: right;
+}
+.medicinalZone .medicineSummary ul li label.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 26px;
+}
+.medicinalZone .medicineSummary ul li label input {
+  display: none;
+}
+.medicinalZone .medicineSummary ul li label input:checked + .slider {
+  background-color: #5FB219;
+}
+.medicinalZone .medicineSummary ul li label input:checked + .slider:before {
+  transform: translateX(13px);
+}
+.medicinalZone .medicineSummary ul li label .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E7ECEF;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+.medicinalZone .medicineSummary ul li label .slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 22px;
+  top: 2px;
+  left: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.medicinalZone .medicineSummary ul li.drug-med span {
+  float: left;
+}
+.medicinalZone .medicineSummary ul li.drug-med i {
+  display: block;
+  text-align: center;
+  position: relative;
+  right: 37px;
+  font-style: normal;
+}
+.medicinalZone .medicineSummary ul li.drug-med p {
+  float: right;
+  position: relative;
+  bottom: 18px;
+}
 
 .medicines-area {
-  width: 66.5%;
-  position: relative;
-  left: 115px;
-  top: 109px;
+  width: 74%;
   display: flex;
   justify-content: space-between;
-  gap: 15px;
-  z-index: -1;
+  gap: 10px;
 }
 .medicines-area .medicine-Info {
-  width: 49.5%;
+  width: 50%;
 }
 .medicines-area .medicine-Info .med-form {
   min-height: 64px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .medicines-area .medicine-Info .med-form label {
   height: 17px;
@@ -1056,9 +1001,8 @@
 .medicines-area .medicine-Info .med-form .select label.switch {
   position: relative;
   display: inline-block;
-  width: 48px;
-  height: 28px;
-  margin: 0 10px;
+  width: 43px;
+  height: 26px;
   top: 11px;
 }
 .medicines-area .medicine-Info .med-form .select label input {
@@ -1068,7 +1012,7 @@
   background-color: #5FB219;
 }
 .medicines-area .medicine-Info .med-form .select label input:checked + .slider:before {
-  transform: translateX(18px);
+  transform: translateX(13px);
 }
 .medicines-area .medicine-Info .med-form .select label .slider {
   position: absolute;
@@ -1084,10 +1028,10 @@
 .medicines-area .medicine-Info .med-form .select label .slider:before {
   position: absolute;
   content: "";
-  height: 25px;
-  width: 25px;
+  height: 21px;
+  width: 22px;
   top: 1.5px;
-  bottom: 2px;
+  left: 2px;
   background-color: white;
   transition: 0.4s;
   border-radius: 20px;
