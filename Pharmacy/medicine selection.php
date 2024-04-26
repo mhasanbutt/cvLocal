@@ -207,7 +207,12 @@
                     </div>
                 </section>
             </section>
-
+            <footer>
+                <button class="back-btn" type="button">Back</button>
+                <button class="update-btn" type="submit">Update</button>
+                <button type="button" class="print">Print</button>
+                <button type="button" class="prescription-btn">Change Prescription</button>
+            </footer>
         </section>
     </div>
     <script>
