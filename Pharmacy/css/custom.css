@@ -1272,7 +1272,7 @@
 }
 .medicineProfile ul {
   display: flex;
-  gap: 20px;
+  gap: 26px;
   width: 650px;
   background-color: #3D4A5A;
   border: #3D4A5A 1px solid;
