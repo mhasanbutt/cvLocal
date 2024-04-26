@@ -1307,7 +1307,8 @@
           &:checked::before {
             background-color: #6DC77A;
             background-image: url("../images/accept.png");
-            background-size: contain;
+            background-size: 10px;
+            background-position: left 4px center;
             height: 18px;
             width: 18px;
             background-repeat: no-repeat;
@@ -1590,6 +1591,7 @@
       border-radius: 12px;
       padding: 10px;
       margin-right: 10px;
+      cursor: pointer;
     }
 
     .pagination{
