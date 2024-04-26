@@ -54,8 +54,8 @@
                 <div class="breadCrumb">
                     <ul>
                         <li><a href="#">Service Users</a></li>
-                        <li><a href="#">Medications</a></li>
-                        <li><a href="#" class="activePage">Add</a></li>
+                        <li><span class="arrow"></span><a href="#">Medication</a></li>
+                        <li><span class="arrow"></span><a href="#" class="activePage">Add</a></li>
                     </ul>
                 </div>
                 <div class="profileInfo">
