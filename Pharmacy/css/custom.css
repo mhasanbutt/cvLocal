@@ -218,9 +218,7 @@
 .contentBody .topBar .breadCrumb {
   float: left;
   position: relative;
-  left: 4px;
   top: 17px;
-  z-index: -1;
 }
 .contentBody .topBar .breadCrumb ul li {
   font-size: 12px;
