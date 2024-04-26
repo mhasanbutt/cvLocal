@@ -189,11 +189,6 @@
                 $(".pageContainer .previous-btn").removeClass("active");
             });
 
-
-
-
-
-
             $(".action-btn").click(function(){
                 $(".dropdownContent").toggleClass("show");
             });

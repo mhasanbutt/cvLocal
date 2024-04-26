@@ -200,9 +200,10 @@
                 submenu.css("opacity", "0");
             });
 
-            $('.pagination a').on('click', function() {
-                $('.pagination a').removeClass('active');
+            $('.pageContainer li').on('click', function() {
+                $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
+                $(".pageContainer .previous-btn").removeClass("active");
             });
         });
 
