@@ -53,7 +53,27 @@
                         <span>03 <i>Freeze</i></span>
                     </li>
                     <li>
-                        <span>93 <i>Staff</i></span>
+                        <article class="toolTip">
+                            <div class="infoPop">
+                                <ul class="list-unstyled clearfix">
+                                    <li>
+                                        <span class="hours">12</span>
+                                        <span>Suspended</span>
+                                    </li>
+                                    <li>
+                                        <span class="hours">5</span>
+                                        <span>Agency</span>
+                                    </li>
+                                    <li>
+                                        <span class="hours">72</span>
+                                        <span>Actuall</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <span>
+                            93 <i>Staff</i>
+                        </span>
                         <span>03 <i>Leavers</i></span>
                     </li>
                 </ul>

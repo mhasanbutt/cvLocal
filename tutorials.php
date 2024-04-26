@@ -27,15 +27,18 @@
 	<section class="contentBody noBg noFooter">
 		<div class="scrollArea">
 			<div class="content">
-				<div class="row">
-					<div class="col-md-3">
-						<article class="tutorial-folder text-right">
-							<a href="#">
-								Care Home Builder
-							</a>
-						</article>
-					</div>
-				</div>
+				<ul class="tutorialListing list-unstyled">
+                    <li>
+                        <a href="#">
+                            Admin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Printing / Downloading / Exporting
+                        </a>
+                    </li>
+                </ul>
 			</div>
 		</div>
 	</section>

@@ -36,7 +36,18 @@
 	</section>
 
 	<section class="contentBody noBg noFooter">
-        
+        <ul class="nutritionUsers list-unstyled">
+            <li>
+                <span class="img"><img src="images/temp-picture.jpg"> </span>
+                <ul class="list-unstyled">
+                    <li data-title="name"><strong>Mr Tim Shermin</strong></li>
+                    <li data-title="client no.">1535</li>
+                    <li data-title="dob">01.01.1940 <i>54</i></li>
+                    <li data-title="Room">First floor / room 1</li>
+                    <li data-title="nhs">18431657933</li>
+                </ul>
+            </li>
+        </ul>
 	</section>
  
 	<script src="js/jquery-1.12.4.js"></script>

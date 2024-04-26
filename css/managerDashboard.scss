@@ -112,7 +112,7 @@
                             }
                         }
 
-                        article {
+                        & > article {
                             border-radius: 10px;
                             padding: 10px;
                             position: relative;
@@ -160,7 +160,7 @@
                                 font-weight: 500;
                             }
 
-                            ul {
+                            & > ul {
                                 margin: 0;
                                 width: calc(100% - 20px);
                                 position: absolute;
@@ -168,7 +168,7 @@
                                 top: 50%;
                                 transform: translate(-50%, -50%);
 
-                                li {
+                                & > li {
                                     float: left;
                                     width: 50%;
                                     font-size: 54px;
@@ -187,6 +187,87 @@
                                         font-weight: 300;
                                         font-style: normal;
                                         color: #404455;
+                                    }
+
+                                    .toolTip {
+                                        position: absolute;
+                                        height: 18px;
+                                        width: 18px;
+                                        left: 8px;
+                                        top: 5px;
+                                        background-size: 18px;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-image: url("../images/eMarMoreInfo.png");
+
+                                        .infoPop {
+                                            position: absolute;
+                                            background-color: #EDF2F4;
+                                            border: 2px solid #778DA9;
+                                            border-radius: 6px;
+                                            padding: 5px;
+                                            z-index: 2;
+                                            left: -9px;
+                                            top: 100%;
+                                            transition: all 200ms linear;
+                                            visibility: hidden;
+                                            opacity: 0;
+
+                                            ul {
+                                                margin: 0;
+                                                display: flex;
+
+                                                li {
+                                                    padding: 5px 10px;
+                                                    text-align: center;
+                                                    border-left: 1px solid #BDE0FE;
+                                                    white-space: normal;
+
+                                                    &:first-child {
+                                                        border-left: 0;
+                                                    }
+
+                                                    & > span {
+                                                        display: block;
+                                                        font-size: 10px;
+                                                        font-weight: 300;
+                                                        color: #778DA9;
+                                                        line-height: 12px;
+                                                        text-transform: uppercase;
+
+                                                        &.hours {
+                                                            font-weight: 500;
+                                                            font-size: 14px;
+                                                            line-height: 18px;
+                                                            margin-bottom: 5px;
+                                                            white-space: nowrap;
+                                                            text-transform: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            &:after {
+                                                position: absolute;
+                                                content: "";
+                                                left: 10px;
+                                                bottom: calc(100% - 3px);
+                                                height: 12px;
+                                                width: 12px;
+                                                background-image: url("../images/rotaMoreInfoArrow.png");
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                background-size: 12px;
+                                                transform: rotate(180deg);
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .infoPop {
+                                                visibility: visible;
+                                                opacity: 1;
+                                            }
+                                        }
                                     }
                                 }
                             }
