@@ -48,32 +48,35 @@
                     <li><img src="images/logout.png"> logout</li>
                 </ul>
             </div>
-
         </section>
-
-        <section>
-            <div class="homes-page">
-                <div class="profileInfo">
-                    <strong>Service Users > <i>Medication > </i><span>Add</span></strong>
+        <section class="contentBody">
+            <div class="topBar">
+                <div class="breadCrumb">
                     <ul>
-                        <li><span>Service User Name</span><div>Ms Lab Rat</div></li>
-                        <li><span>Date of Birth</span><div>23.09.1940</div></li>
-                        <li><span>NHS No.</span><div>292398432</div></li>
-                        <li><span>Company</span><div>3-3-Jawa Group</div></li>
-                        <li><span>Home</span><div>3-3 Leander Lodge</div></li>
-                        <li><span>Room</span><div>VIP Room</div></li>
+                        <li><a href="#">Service Users</a></li>
+                        <li><span class="arrow"></span><a href="#">Medication</a></li>
+                        <li><span class="arrow"></span><a href="#" class="activePage">Add</a></li>
+                    </ul>
+                </div>
+                <div class="profileInfo">
+                    <ul>
+                        <li>Service User Name<br><span>Ms Lab Rat</span></li>
+                        <li>Date of Birth<br><span>23.09.1940</span></li>
+                        <li>NHS No.<br><span>292398432</span></li>
+                        <li>Company<br><span>3-3-Jawa Group</span></li>
+                        <li>Home<br><span>3-3 Leander Lodge</span></li>
+                        <li>Room<br><span>VIP Room</span></li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="alerts-sec">
-            <div class="user-alerts">
-                <button type="submit">Allergies</button>
-                <button type="button">Equipment Alert</button>
-                <button type="submit">vaccination</button>
-            </div><br><br>
-            <section class="MedicationSec">
+            <div class="alertCenter">
+                <ul class="user-alerts">
+                    <li class="orange">Allergies</li>
+                    <li>Equipment Alert</li>
+                    <li>vaccination</li>
+                </ul>
+            </div>
+            <section class="medicinalZone">
                 <div class="addMedicine">
                     <select>
                         <option>Select Medicine</option>
@@ -93,12 +96,11 @@
                     </ul>
                 </div>
             </section>
+            <footer>
+                <button class="back-btn" type="button">Back</button>
+                <button type="submit" class="save">Save</button>
+            </footer>
         </section>
-
-        <footer>
-            <button type="button">Back</button>
-            <button type="submit" class="save">Save</button>
-        </footer>
     </div>
 
     <script>

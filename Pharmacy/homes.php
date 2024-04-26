@@ -35,7 +35,7 @@
             <div class="topBar">
                 <div class="breadCrumb">
                     <ul>
-                        <li><a href="#">Homes</a></li>
+                        <li><a href="#" class="activePage">Homes</a></li>
                     </ul>
                 </div>
             </div>

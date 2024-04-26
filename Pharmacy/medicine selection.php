@@ -48,32 +48,35 @@
                     <li><img src="images/logout.png"> logout</li>
                 </ul>
             </div>
-
         </section>
-
-        <section>
-            <div class="homes-page">
-                <div class="profileInfo">
-                    <strong>Service Users > <span>Medication > </span><i>Add</i></strong>
+        <section class="contentBody">
+            <div class="topBar">
+                <div class="breadCrumb">
                     <ul>
-                        <li><span>Service User Name</span><div>Ms Lab Rat</div></li>
-                        <li><span>Date of Birth</span><div>23.09.1940</div></li>
-                        <li><span>NHS No.</span><div>292398432</div></li>
-                        <li><span>Company</span><div>3-3-Jawa Group</div></li>
-                        <li><span>Home</span><div>3-3 Leander Lodge</div></li>
-                        <li><span>Room</span><div>VIP Room</div></li>
+                        <li><a href="#">Service Users</a></li>
+                        <li><span class="arrow"></span><a href="#">Medication</a></li>
+                        <li><span class="arrow"></span><a href="#" class="activePage">Add</a></li>
+                    </ul>
+                </div>
+                <div class="profileInfo">
+                    <ul>
+                        <li>Service User Name<br><span>Ms Lab Rat</span></li>
+                        <li>Date of Birth<br><span>23.09.1940</span></li>
+                        <li>NHS No.<br><span>292398432</span></li>
+                        <li>Company<br><span>3-3-Jawa Group</span></li>
+                        <li>Home<br><span>3-3 Leander Lodge</span></li>
+                        <li>Room<br><span>VIP Room</span></li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="alerts-sec">
-            <div class="user-alerts">
-                <button type="submit">Allergies</button>
-                <button type="button">Equipment Alert</button>
-                <button type="submit">vaccination</button>
-            </div><br><br>
-            <section class="MedicationSec">
+            <div class="alertCenter">
+                <ul class="user-alerts">
+                    <li class="orange">Allergies</li>
+                    <li>Equipment Alert</li>
+                    <li>vaccination</li>
+                </ul>
+            </div>
+            <section class="medicinalZone">
                 <div class="addMedicine">
                     <select>
                         <option>PANADOL ACTIFAST tablets 500mg 8</option>
@@ -99,119 +102,113 @@
                         <li class="drug-med"><span>Drug Tariff</span><i>Price</i><p>Packaging Size</p></li>
                     </ul>
                 </div>
+                <section class="medicines-area">
+                    <div class="medicine-Info">
+                        <div class="med-form">
+                            <label>Medicine Type<i></i></label>
+                            <div class="select">
+                                <select>
+                                    <option>MAR</option>
+                                    <option>opt1</option>
+                                    <option>opt2</option>
+                                    <option>opt3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="med-form">
+                            <label>Repeat / Interim</label>
+                            <div class="select">
+                                <select>
+                                    <option>Interim</option>
+                                    <option>opt1</option>
+                                    <option>opt2</option>
+                                    <option>opt3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="med-form">
+                            <label>Duration<span>Day(s)</span><i></i></label>
+                            <div class="input-wrapper">
+                                <input type="text" id="textInput" placeholder="7">
+                                <button class="up-button" onclick="moveUp()"></button>
+                                <button class="down-button" onclick="moveDown()"></button>
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>Administration Frequency<i></i></label>
+                            <div class="select">
+                                <select>
+                                    <option>Scheduled</option>
+                                    <option>opt1</option>
+                                    <option>opt2</option>
+                                    <option>opt3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>Requires Dual Signature<i></i></label>
+                            <div class="select">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medicine-Info">
+                        <div class="med-form">
+                            <label>Homely Remedy</label>
+                            <div class="select">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>End Date</label>
+                            <div class="select">
+                                <input type="text" placeholder="18.11.2023">
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>Interim Order<i></i></label>
+
+                            <div class="select">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>Controlled Drug</label>
+
+                            <div class="select">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="med-form">
+                            <label>Packaging Type</label>
+                            <div class="select">
+                                <select>
+                                    <option>Original</option>
+                                    <option>opt1</option>
+                                    <option>opt2</option>
+                                    <option>opt3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
+
         </section>
-        <section class="medicines-area">
-            <div class="medicine-Info">
-                <div class="med-form">
-                    <label>Medicine Type<i></i></label>
-                    <div class="select">
-                        <select>
-                            <option>MAR</option>
-                            <option>opt1</option>
-                            <option>opt2</option>
-                            <option>opt3</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="med-form">
-                    <label>Repeat / Interim</label>
-                    <div class="select">
-                        <select>
-                            <option>Interim</option>
-                            <option>opt1</option>
-                            <option>opt2</option>
-                            <option>opt3</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="med-form">
-                    <label>Duration<span>Day(s)</span><i></i></label>
-                    <div class="input-wrapper">
-                        <input type="text" id="textInput" placeholder="7">
-                        <button class="up-button" onclick="moveUp()"></button>
-                        <button class="down-button" onclick="moveDown()"></button>
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>Administration Frequency<i></i></label>
-                    <div class="select">
-                        <select>
-                            <option>Scheduled</option>
-                            <option>opt1</option>
-                            <option>opt2</option>
-                            <option>opt3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>Requires Dual Signature<i></i></label>
-                    <div class="select">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="medicine-Info">
-                <div class="med-form">
-                    <label>Homely Remedy</label>
-                    <div class="select">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>End Date</label>
-                    <div class="select">
-                        <input type="text" placeholder="18.11.2023">
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>Interim Order<i></i></label>
-
-                    <div class="select">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>Controlled Drug</label>
-
-                    <div class="select">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="med-form">
-                    <label>Packaging Type</label>
-                    <div class="select">
-                        <select>
-                            <option>Original</option>
-                            <option>opt1</option>
-                            <option>opt2</option>
-                            <option>opt3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <button type="button">Back</button>
-            <button type="submit" class="save">Save</button>
-            <button type="button" class="print">Print</button>
-            <button type="button" class="prescription-btn">Change Prescription</button>
-        </footer>
     </div>
     <script>
         $(document).ready(function() {
