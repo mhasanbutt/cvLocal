@@ -13,6 +13,7 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    outline: none;
   }
 
   .contentBody{
@@ -20,7 +21,7 @@
     height: 100%;
     float: right;
     position: relative;
-    padding: 15px;
+    padding: 0 15px;
 
     .stats-section{
       position: absolute;
@@ -319,11 +320,7 @@
       border-radius: 10px;
       padding: 5px;
       float: left;
-      width: 71%;
-
-      @media only screen and (min-width: 1300px) {
-        width: 74%;
-      }
+      width: calc(100% - 345px);
 
       select{
         padding:  10px;
@@ -365,10 +362,10 @@
     .removeMedicine{
       background-color: #F5F5F5;
       float: right;
-      height: 80vh;
       padding: 10px;
       border-radius: 10px;
-      width: 25.5%;
+      width: 335px;
+      height: 515px;
       span{
         color: #748CAB;
         font-size: 12px;
@@ -418,10 +415,9 @@
       }
     }
     .medicineSummary{
-      width: 25.5%;
+      width: 335px;
       background-color: #F5F5F5;
       float: right;
-      height: 65vh;
       padding: 10px;
       border-radius: 10px;
 
@@ -527,7 +523,7 @@
   }
 
   .medicines-area{
-    width: 74%;
+    width: calc(100% - 345px);
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -646,7 +642,6 @@
             top: 10px;
           }
           .up-button{
-
             &:before{
               content: "";
               display: block;
@@ -657,8 +652,8 @@
               width: 12px;
               height: 12px;
               position: absolute;
-              top: 40%;
-              left: 66px;
+              top: 28px;
+              left: 63px;
               border-radius: 6px;
               background-color: #FFFFFF;
               border: 1px solid #8495A4;
@@ -676,8 +671,8 @@
               width: 12px;
               height: 12px;
               position: absolute;
-              top: 75%;
-              left: 66px;
+              top: 49px;
+              left: 63px;
               border-radius: 6px;
               background-color: #FFFFFF;
               border: 1px solid #8495A4;
@@ -841,6 +836,7 @@
       display: flex;
       gap: 26px;
       width: 650px;
+      height: 30px;
       background-color: #3D4A5A;
       border: #3D4A5A 1px solid;
       border-radius: 8px;
@@ -862,7 +858,7 @@
   }
 
   .medicineAlert{
-    width: 990px;
+
     float: right;
     margin-bottom: 10px;
 
@@ -889,6 +885,7 @@
       list-style: none;
       position: relative;
       padding-left: 40px;
+      margin-bottom: 10px;
 
       li{
         float: left;
@@ -951,7 +948,6 @@
           border: 1px solid #94A7B5;
           padding: 5px 10px;
 
-
         }
 
         a{
@@ -970,8 +966,10 @@
 
         &:first-child{
           position: absolute;
-          left: -3px;
-          top: 33px;
+          width: 50px;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
         }
         &:nth-child(2){
           width: 15%;
@@ -992,8 +990,10 @@
         }
         &:last-child{
           position: absolute;
-          right: 15px;
-          top: 33px;
+          width: 50px;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }
@@ -1144,6 +1144,7 @@
       padding: 10px;
       border-radius: 10px;
       border: 0;
+      height: 37px;
       float: left;
       cursor: pointer;
     }
@@ -1155,6 +1156,7 @@
       padding: 10px;
       float: left;
       margin-left: 2px;
+      height: 37px;
       cursor: pointer;
     }
 
@@ -1164,6 +1166,7 @@
       border-radius: 10px;
       border: 0;
       padding: 10px;
+      height: 37px;
       float: left;
       cursor: pointer;
     }
@@ -1176,6 +1179,7 @@
       color: #fff;
       float: left;
       margin: 0 5px 0 2px;
+      height: 37px;
       cursor: pointer;
     }
     .selection{

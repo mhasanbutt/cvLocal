@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="alertCenter">
-                <ul class="user-alerts">
+                <ul class="user-alerts clearfix">
                     <li class="orange">Allergies</li>
                     <li>Equipment Alert</li>
                     <li>vaccination</li>
@@ -82,7 +82,7 @@
                         <option>PANADOL ACTIFAST tablets 500mg 8</option>
                         <option>option 1</option>
                         <option>option 2</option>
-                    </select><br>
+                    </select>
                     <button class="reset-btn">Reset</button>
                     <button>Search</button>
                 </div>
@@ -110,8 +110,6 @@
                                 <select>
                                     <option>MAR</option>
                                     <option>opt1</option>
-                                    <option>opt2</option>
-                                    <option>opt3</option>
                                 </select>
                             </div>
                         </div>
@@ -122,8 +120,6 @@
                                 <select>
                                     <option>Interim</option>
                                     <option>opt1</option>
-                                    <option>opt2</option>
-                                    <option>opt3</option>
                                 </select>
                             </div>
                         </div>
@@ -132,8 +128,9 @@
                             <label>Duration<span>Day(s)</span><i></i></label>
                             <div class="input-wrapper">
                                 <input type="text" id="textInput" placeholder="7">
-                                <button class="up-button" onclick="moveUp()"></button>
-                                <button class="down-button" onclick="moveDown()"></button>
+                                <span class="up-button"></span>
+                                <span class="down-button"></span>
+
                             </div>
                         </div>
                         <div class="med-form">
@@ -142,8 +139,6 @@
                                 <select>
                                     <option>Scheduled</option>
                                     <option>opt1</option>
-                                    <option>opt2</option>
-                                    <option>opt3</option>
                                 </select>
                             </div>
                         </div>
@@ -170,7 +165,7 @@
                         <div class="med-form">
                             <label>End Date</label>
                             <div class="select">
-                                <input type="text" placeholder="18.11.2023">
+                                <input type="date" placeholder="">
                             </div>
                         </div>
                         <div class="med-form">
@@ -199,8 +194,6 @@
                                 <select>
                                     <option>Original</option>
                                     <option>opt1</option>
-                                    <option>opt2</option>
-                                    <option>opt3</option>
                                 </select>
                             </div>
                         </div>
@@ -236,9 +229,10 @@
                 submenu.css("opacity", "0");
             });
 
-            $('.pagination a').on('click', function() {
-                $('.pagination a').removeClass('active');
+            $('.pageContainer li').on('click', function() {
+                $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
+                $(".pageContainer .previous-btn").removeClass("active");
             });
         });
 

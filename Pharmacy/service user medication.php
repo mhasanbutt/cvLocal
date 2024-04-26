@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="alertCenter">
-                <ul class="user-alerts">
+                <ul class="user-alerts clearfix">
                     <li class="orange">Allergies</li>
                     <li>Equipment Alert</li>
                     <li>vaccination</li>
@@ -128,7 +128,7 @@
                 </div>
             </div>
             <div class="generallisting">
-                <ul>
+                <ul class="clearfix">
                     <li><input type="checkbox"></li>
                     <li><span>Service User Name</span><i>Miss Lab Rat</i></li>
                     <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>

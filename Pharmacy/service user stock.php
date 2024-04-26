@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="alertCenter">
-            <ul class="user-alerts">
+            <ul class="user-alerts clearfix">
                 <li class="orange">Allergies</li>
                 <li>Equipment Alert</li>
                 <li>vaccination</li>
@@ -125,7 +125,7 @@
         </section>
 
         <div class="generallisting medicinelist">
-            <ul>
+            <ul class="clearfix">
                 <li><input type="checkbox"><label></label></li>
                 <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
                 <li><span>Ingredient</span><i>PYRIDOXINE</i></li>

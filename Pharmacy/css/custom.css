@@ -190,6 +190,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  outline: none;
 }
 
 .contentBody {
@@ -197,7 +198,7 @@
   height: 100%;
   float: right;
   position: relative;
-  padding: 15px;
+  padding: 0 15px;
 }
 .contentBody .stats-section {
   position: absolute;
@@ -463,12 +464,7 @@
   border-radius: 10px;
   padding: 5px;
   float: left;
-  width: 71%;
-}
-@media only screen and (min-width: 1300px) {
-  .medicinalZone .addMedicine {
-    width: 74%;
-  }
+  width: calc(100% - 345px);
 }
 .medicinalZone .addMedicine select {
   padding: 10px;
@@ -508,10 +504,10 @@
 .medicinalZone .removeMedicine {
   background-color: #F5F5F5;
   float: right;
-  height: 80vh;
   padding: 10px;
   border-radius: 10px;
-  width: 25.5%;
+  width: 335px;
+  height: 515px;
 }
 .medicinalZone .removeMedicine span {
   color: #748CAB;
@@ -557,10 +553,9 @@
   right: 52px;
 }
 .medicinalZone .medicineSummary {
-  width: 25.5%;
+  width: 335px;
   background-color: #F5F5F5;
   float: right;
-  height: 65vh;
   padding: 10px;
   border-radius: 10px;
 }
@@ -654,7 +649,7 @@
 }
 
 .medicines-area {
-  width: 74%;
+  width: calc(100% - 345px);
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -776,8 +771,8 @@
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 40%;
-  left: 66px;
+  top: 28px;
+  left: 63px;
   border-radius: 6px;
   background-color: #FFFFFF;
   border: 1px solid #8495A4;
@@ -793,8 +788,8 @@
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 75%;
-  left: 66px;
+  top: 49px;
+  left: 63px;
   border-radius: 6px;
   background-color: #FFFFFF;
   border: 1px solid #8495A4;
@@ -932,6 +927,7 @@
   display: flex;
   gap: 26px;
   width: 650px;
+  height: 30px;
   background-color: #3D4A5A;
   border: #3D4A5A 1px solid;
   border-radius: 8px;
@@ -950,7 +946,6 @@
 }
 
 .medicineAlert {
-  width: 990px;
   float: right;
   margin-bottom: 10px;
 }
@@ -977,6 +972,7 @@
   list-style: none;
   position: relative;
   padding-left: 40px;
+  margin-bottom: 10px;
 }
 .generallisting ul li {
   float: left;
@@ -1048,8 +1044,10 @@
 }
 .generallisting ul li:first-child {
   position: absolute;
-  left: -3px;
-  top: 33px;
+  width: 50px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .generallisting ul li:nth-child(2) {
   width: 15%;
@@ -1065,8 +1063,10 @@
 }
 .generallisting ul li:last-child {
   position: absolute;
-  right: 15px;
-  top: 33px;
+  width: 50px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .styledlists ul li:nth-child(2) {
@@ -1189,6 +1189,7 @@ footer .back-btn {
   padding: 10px;
   border-radius: 10px;
   border: 0;
+  height: 37px;
   float: left;
   cursor: pointer;
 }
@@ -1200,6 +1201,7 @@ footer .update-btn, footer .save {
   padding: 10px;
   float: left;
   margin-left: 2px;
+  height: 37px;
   cursor: pointer;
 }
 footer .prescription-btn {
@@ -1208,6 +1210,7 @@ footer .prescription-btn {
   border-radius: 10px;
   border: 0;
   padding: 10px;
+  height: 37px;
   float: left;
   cursor: pointer;
 }
@@ -1219,6 +1222,7 @@ footer .print {
   color: #fff;
   float: left;
   margin: 0 5px 0 2px;
+  height: 37px;
   cursor: pointer;
 }
 footer .selection {
