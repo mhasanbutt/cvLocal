@@ -91,6 +91,8 @@
                     <ul>
                         <li>
                             <span>Medicine Name</span>
+                            <span class="delete-btn"></span>
+                            <span class="fillUp-btn"></span>
                             <div>TROSYL nail solution 28% w/w 12ml</div>
                         </li>
                     </ul>

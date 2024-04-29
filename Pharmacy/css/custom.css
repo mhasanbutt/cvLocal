@@ -530,27 +530,25 @@
   font-size: 16px;
   color: #24323D;
 }
-.medicinalZone .removeMedicine ul li:after {
-  content: "";
+.medicinalZone .removeMedicine ul li .delete-btn {
   display: block;
   background-image: url("../images/trash-bin.png");
   background-size: 18px;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 26px;
-  transform: translateY(-260%);
+  width: 25px;
+  height: 25px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: top 5px center;
 }
-.medicinalZone .removeMedicine ul li:before {
-  content: "";
+.medicinalZone .removeMedicine ul li .fillUp-btn {
   display: block;
   background-image: url("../images/replay.png");
   background-size: 18px;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  transform: translateY(19%);
-  right: 52px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  float: right;
+  background-position: top 5px center;
 }
 .medicinalZone .medicineSummary {
   width: 335px;
@@ -600,6 +598,7 @@
   display: inline-block;
   width: 43px;
   height: 26px;
+  top: 11px;
 }
 .medicinalZone .medicineSummary ul li label input {
   display: none;
@@ -608,7 +607,7 @@
   background-color: #5FB219;
 }
 .medicinalZone .medicineSummary ul li label input:checked + .slider:before {
-  transform: translateX(13px);
+  transform: translateX(15px);
 }
 .medicinalZone .medicineSummary ul li label .slider {
   position: absolute;
@@ -620,17 +619,19 @@
   background-color: #E7ECEF;
   transition: 0.4s;
   border-radius: 14px;
+  box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.2);
 }
 .medicinalZone .medicineSummary ul li label .slider:before {
   position: absolute;
   content: "";
   height: 21px;
   width: 22px;
-  top: 2.5px;
-  left: 5px;
+  top: 2px;
+  left: 2px;
   background-color: white;
   transition: 0.4s;
   border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .medicinalZone .medicineSummary ul li.drug-med span {
   float: left;
@@ -730,20 +731,22 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #E7ECEF;
   transition: 0.4s;
   border-radius: 14px;
+  box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.2);
 }
 .medicines-area .medicine-Info .med-form .select label .slider:before {
   position: absolute;
   content: "";
   height: 21px;
   width: 22px;
-  top: 1.5px;
+  top: 2px;
   left: 2px;
   background-color: white;
   transition: 0.4s;
   border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .medicines-area .medicine-Info .med-form input {
   color: #24313E;
@@ -1159,13 +1162,14 @@
 .active-prescription .select label .slider {
   position: absolute;
   cursor: pointer;
-  top: -1px;
+  top: 0;
   left: 3px;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #E7ECEF;
   transition: 0.4s;
   border-radius: 14px;
+  box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.3);
 }
 .active-prescription .select label .slider:before {
   position: absolute;
@@ -1177,6 +1181,7 @@
   background-color: white;
   transition: 0.4s;
   border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -1298,52 +1303,6 @@ footer .pagination .next-btn {
   top: 38%;
   left: 151px;
 }
-footer .pages-count {
-  border-radius: 10px;
-  border: 2px solid #E7ECEF;
-  padding: 8px 20px 8px 20px;
-  margin-left: 20px;
-  height: 36px;
-  position: relative;
-  top: 3px;
-}
-footer .pages-count::before {
-  content: "";
-  display: block;
-  background-image: url("../images/left-arrow.png");
-  background-size: 12px;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 38%;
-  left: 9px;
-}
-footer .pages-count::after {
-  content: "";
-  display: block;
-  background-image: url("../images/right-arrow.png");
-  background-size: 12px;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 29%;
-  left: 162px;
-}
-footer a {
-  color: #748CAB;
-  text-decoration: none;
-  float: left;
-  padding: 2px 3px;
-  margin-left: 8px;
-  position: relative;
-  bottom: 6px;
-}
-footer a.active, footer a:hover, footer a:focus {
-  background-color: #F7D59A;
-  color: #748CAB;
-  border-radius: 8px;
-  border: 0;
-}
 footer select {
   height: 41px;
   color: #748CAB;
@@ -1401,6 +1360,12 @@ footer ul li.active, footer ul li:hover, footer ul li:focus {
   color: #748CAB;
   border-radius: 8px;
   border: 0;
+}
+footer ul li:first-child, footer ul li:last-child {
+  background-color: transparent;
+}
+footer ul li:first-child:focus, footer ul li:last-child:focus {
+  outline: none;
 }
 
 .comments {
