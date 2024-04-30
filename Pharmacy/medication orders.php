@@ -171,7 +171,6 @@
                     <li>6</li>
                     <li class="next-btn"></li>
                 </ul>
-
                 <select>
                     <option>50 per page</option>
                     <option>opt 1</option>
