@@ -142,7 +142,6 @@
             </ul>
         </div>
         <footer>
-
             <button class="back-btn" type="button">Back</button>
             <button class="update-btn" type="submit">Update</button>
             <button type="button" class="print">Print</button>
@@ -164,7 +163,6 @@
                 <option>opt 2</option>
                 <option>opt 3</option>
             </select>
-
 
             <div class="active-prescription">
                 <label>Show Active Prescriptions Only</label>

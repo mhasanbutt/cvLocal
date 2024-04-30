@@ -40,7 +40,6 @@
                 </div>
             </div>
 
-
             <div class="filters">
                 <ul>
                     <li>
@@ -53,7 +52,6 @@
                     <li><input type="text" placeholder="NHS Number"></li>
                     <li><input type="text" placeholder="Date of Birth"></li>
                     <li><input type="text" placeholder="Date of Admission"></li>
-
                 </ul>
                 <div class="filter-btn">
                     <button type="submit">Search

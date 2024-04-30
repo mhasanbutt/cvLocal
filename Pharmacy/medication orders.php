@@ -10,6 +10,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/scripts.bundle.js"></script>
 
 </head>
 
@@ -124,24 +126,26 @@
                     <li>Source of Medicine<span>Pharmacy - Online Order</span></li>
                 </ul>
             </section>
+            <section class="hover-scroll h-300px px-5">
+                <div class="generallisting styledlists">
+                    <ul class="clearfix">
+                        <li><input type="checkbox"></li>
+                        <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
+                        <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
+                        <li><span>Strength</span><i>0.125mg / 5ml</i></li>
+                        <li><span>Frequency of Administration</span><i>Daily</i></li>
+                        <li><span>Amount of Rounds</span><i>0</i></li>
+                        <li><span>Dosage per Round</span><i>10 ml</i></li>
+                        <li><span>Current Stock</span><i>150.00</i></li>
+                        <li><span>QTY. Ordered</span><i>150.00</i></li>
+                        <li><span>QTY. Already Added</span><i>0.00</i></li>
+                        <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
+                        <li><span>Containers</span><input type="text" placeholder=""></li>
+                        <li><a class="eye" href=""></a></li>
+                    </ul>
+                </div>
+            </section>
 
-            <div class="generallisting styledlists">
-                <ul class="clearfix">
-                    <li><input type="checkbox"></li>
-                    <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                    <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                    <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                    <li><span>Frequency of Administration</span><i>Daily</i></li>
-                    <li><span>Amount of Rounds</span><i>0</i></li>
-                    <li><span>Dosage per Round</span><i>10 ml</i></li>
-                    <li><span>Current Stock</span><i>150.00</i></li>
-                    <li><span>QTY. Ordered</span><i>150.00</i></li>
-                    <li><span>QTY. Already Added</span><i>0.00</i></li>
-                    <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
-                    <li><span>Containers</span><input type="text" placeholder=""></li>
-                    <li><a class="eye" href=""></a></li>
-                </ul>
-            </div>
             <section class="comments">
                 <select>
                     <option>Status</option>
