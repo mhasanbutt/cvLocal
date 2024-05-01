@@ -9,6 +9,7 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -77,128 +78,131 @@
                 </ul>
             </div>
             <section class="medicinalZone">
-                <div class="addMedicine">
-                    <select>
-                        <option>PANADOL ACTIFAST tablets 500mg 8</option>
-                        <option>option 1</option>
-                        <option>option 2</option>
-                    </select>
-                    <button class="reset-btn">Reset</button>
-                    <button>Search</button>
-                </div>
-                <div class="medicineSummary">
-                    <span>Medicine Summary</span>
-                    <ul>
-                        <li><span>Medicine Name</span><div>PANADOL ACTIFAST tablets 500mg 8</div></li>
-                        <li><span>Description</span><div>Tablets</div></li>
-                        <li><span>Category</span><div>OTC</div><div>Analgesics Oral</div><div>Pain Relief</div></li>
-                        <li><span>Generic Drug?</span>
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider"></span>
-                            </label>
-                        </li>
-                        <li><span>Branded Name</span><div>PANADOL ACTIFAST</div></li>
-                        <li class="drug-med"><span>Drug Tariff</span><i>Price</i><p>Packaging Size</p></li>
-                    </ul>
-                </div>
-                <section class="medicines-area">
-                    <div class="medicine-Info">
-                        <div class="med-form">
-                            <label>Medicine Type<i></i></label>
-                            <div class="select">
-                                <select>
-                                    <option>MAR</option>
-                                    <option>opt1</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="med-form">
-                            <label>Repeat / Interim</label>
-                            <div class="select">
-                                <select>
-                                    <option>Interim</option>
-                                    <option>opt1</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="med-form">
-                            <label>Duration<span>Day(s)</span><i></i></label>
-                            <div class="input-wrapper">
-                                <input type="text" id="textInput" placeholder="7">
-                                <span class="up-button"></span>
-                                <span class="down-button"></span>
-
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>Administration Frequency<i></i></label>
-                            <div class="select">
-                                <select>
-                                    <option>Scheduled</option>
-                                    <option>opt1</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>Requires Dual Signature<i></i></label>
-                            <div class="select">
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
+                <div class="scrollbar-outer scrollArea">
+                    <div class="addMedicine">
+                        <select>
+                            <option>PANADOL ACTIFAST tablets 500mg 8</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                        </select>
+                        <button class="reset-btn">Reset</button>
+                        <button>Search</button>
                     </div>
-                    <div class="medicine-Info">
-                        <div class="med-form">
-                            <label>Homely Remedy</label>
-                            <div class="select">
+                    <div class="medicineSummary">
+                        <span>Medicine Summary</span>
+                        <ul>
+                            <li><span>Medicine Name</span><div>PANADOL ACTIFAST tablets 500mg 8</div></li>
+                            <li><span>Description</span><div>Tablets</div></li>
+                            <li><span>Category</span><div>OTC</div><div>Analgesics Oral</div><div>Pain Relief</div></li>
+                            <li><span>Generic Drug?</span>
                                 <label class="switch">
                                     <input type="checkbox" checked>
                                     <span class="slider"></span>
                                 </label>
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>End Date</label>
-                            <div class="select">
-                                <input type="date" placeholder="">
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>Interim Order<i></i></label>
-
-                            <div class="select">
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>Controlled Drug</label>
-
-                            <div class="select">
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="med-form">
-                            <label>Packaging Type</label>
-                            <div class="select">
-                                <select>
-                                    <option>Original</option>
-                                    <option>opt1</option>
-                                </select>
-                            </div>
-                        </div>
+                            </li>
+                            <li><span>Branded Name</span><div>PANADOL ACTIFAST</div></li>
+                            <li class="drug-med"><span>Drug Tariff</span><i>Price</i><p>Packaging Size</p></li>
+                        </ul>
                     </div>
-                </section>
+                    <section class="medicines-area">
+                        <div class="medicine-Info">
+                            <div class="med-form">
+                                <label>Medicine Type<i></i></label>
+                                <div class="select">
+                                    <select>
+                                        <option>MAR</option>
+                                        <option>opt1</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="med-form">
+                                <label>Repeat / Interim</label>
+                                <div class="select">
+                                    <select>
+                                        <option>Interim</option>
+                                        <option>opt1</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="med-form">
+                                <label>Duration<span>Day(s)</span><i></i></label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="textInput" placeholder="7">
+                                    <span class="up-button"></span>
+                                    <span class="down-button"></span>
+
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>Administration Frequency<i></i></label>
+                                <div class="select">
+                                    <select>
+                                        <option>Scheduled</option>
+                                        <option>opt1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>Requires Dual Signature<i></i></label>
+                                <div class="select">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medicine-Info">
+                            <div class="med-form">
+                                <label>Homely Remedy</label>
+                                <div class="select">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>End Date</label>
+                                <div class="select">
+                                    <input type="date" placeholder="">
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>Interim Order<i></i></label>
+
+                                <div class="select">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>Controlled Drug</label>
+
+                                <div class="select">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="med-form">
+                                <label>Packaging Type</label>
+                                <div class="select">
+                                    <select>
+                                        <option>Original</option>
+                                        <option>opt1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
             </section>
             <footer>
                 <button class="back-btn" type="button">Back</button>
@@ -208,6 +212,7 @@
             </footer>
         </section>
     </div>
+    <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -233,6 +238,9 @@
                 $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
                 $(".pageContainer .previous-btn").removeClass("active");
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
 

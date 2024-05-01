@@ -355,16 +355,25 @@
 .contentBody .selectors ul li:nth-child(n+6) {
   margin-top: 5px;
 }
-.contentBody .ContainerList {
-  float: left;
+.contentBody .serviceUser-Container {
+  width: calc(100% - 30px);
+  height: auto;
+  position: absolute;
+  top: 110px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
 }
-.contentBody .ContainerList ul li {
-  width: 269px;
+.contentBody .serviceUser-Container .ContainerList {
+  float: left;
+  width: 100%;
+}
+.contentBody .serviceUser-Container .ContainerList ul li {
+  width: calc((100% - 15px) / 4);
   list-style-type: none;
   display: inline-block;
-  margin-left: 5px;
 }
-.contentBody .ContainerList ul li article {
+.contentBody .serviceUser-Container .ContainerList ul li article {
   background-color: #24313E;
   border-radius: 10px;
   padding: 5px;
@@ -373,11 +382,11 @@
   border: 2px solid #24313E;
   position: relative;
 }
-.contentBody .ContainerList ul li article .userInfo {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo {
   height: 97px;
   display: flex;
 }
-.contentBody .ContainerList ul li article .userInfo .picture {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo .picture {
   margin-bottom: 5px;
   position: relative;
   margin-right: 10px;
@@ -386,13 +395,13 @@
   height: 92px;
   border-radius: 4px;
 }
-.contentBody .ContainerList ul li article .userInfo .picture img {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo .picture img {
   height: 100%;
 }
-.contentBody .ContainerList ul li article .userInfo ul {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul {
   width: 150px;
 }
-.contentBody .ContainerList ul li article .userInfo ul li {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li {
   width: 140px;
   font-size: 16px;
   line-height: 22px;
@@ -400,44 +409,44 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:first-child {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:first-child {
   font-size: 14px;
   height: 20px;
   color: #fff;
   font-weight: 600;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:nth-child(2) {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:nth-child(2) {
   color: #F07167;
   font-weight: 600;
   font-size: 12px;
   margin-bottom: 6px;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:nth-child(2) strong {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:nth-child(2) strong {
   color: #748CAB;
   text-transform: uppercase;
   margin-right: 5px;
   font-size: 12px;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:nth-child(3) {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:nth-child(3) {
   color: #5FB219;
   font-weight: 700;
   font-size: 12px;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:nth-child(3) strong {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:nth-child(3) strong {
   color: #E7ECEF;
   font-weight: 700;
   margin-right: 5px;
   font-size: 12px;
 }
-.contentBody .ContainerList ul li article .userInfo ul li:nth-child(4) {
+.contentBody .serviceUser-Container .ContainerList ul li article .userInfo ul li:nth-child(4) {
   color: #E7ECEF;
   font-size: 12px;
 }
-.contentBody .ContainerList ul li article .userContainer {
+.contentBody .serviceUser-Container .ContainerList ul li article .userContainer {
   display: flex;
   height: 22px;
 }
-.contentBody .ContainerList ul li article .userContainer .newScore {
+.contentBody .serviceUser-Container .ContainerList ul li article .userContainer .newScore {
   background-color: #fff;
   color: #748CAB;
   font-size: 10px;
@@ -446,7 +455,7 @@
   margin-right: 3px;
   height: 20px;
 }
-.contentBody .ContainerList ul li article .userContainer .dnacpr {
+.contentBody .serviceUser-Container .ContainerList ul li article .userContainer .dnacpr {
   background-color: #F07167;
   color: #fff;
   padding: 3px 8px 3px 8px;
@@ -455,13 +464,16 @@
   height: 20px;
   text-transform: uppercase;
 }
-.contentBody .ContainerList ul li article .userContainer .notifyUser {
+.contentBody .serviceUser-Container .ContainerList ul li article .userContainer .notifyUser {
   position: relative;
   margin-left: auto;
 }
-.contentBody .ContainerList ul li article .userContainer .notifyUser img {
+.contentBody .serviceUser-Container .ContainerList ul li article .userContainer .notifyUser img {
   width: 22px;
   height: 22px;
+}
+.contentBody .serviceUser-Container .ContainerList ul li:nth-child(n+5) {
+  margin-top: 5px;
 }
 .contentBody .alertCenter {
   float: left;
@@ -739,36 +751,50 @@
 .contentBody .medicineOrders-container .styledlists ul li:nth-child(4) {
   width: 15%;
 }
-.contentBody .medicinelist ul li:nth-child(2) {
+.contentBody .userStock-container {
+  height: auto;
+  position: absolute;
+  top: 276px;
+  right: 15px;
+  left: 15px;
+  bottom: 70px;
+}
+.contentBody .userStock-container .medicinelist ul li:nth-child(2) {
   width: 75%;
 }
-.contentBody .medicinelist ul li:nth-child(3) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(3) {
   width: 19%;
 }
-.contentBody .medicinelist ul li:nth-child(4) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(4) {
   width: 16.5%;
 }
-.contentBody .medicinelist ul li:nth-child(5) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(5) {
   width: 17.7%;
 }
-.contentBody .medicinelist ul li:nth-child(6) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(6) {
   width: 15%;
 }
-.contentBody .medicinelist ul li:nth-child(7) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(7) {
   width: 12%;
 }
-.contentBody .medicinelist ul li:nth-child(8) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(8) {
   width: 25.5%;
 }
-.contentBody .medicinelist ul li:nth-child(10) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(10) {
   width: 10%;
 }
-.contentBody .medicinelist ul li:nth-child(11), .contentBody .medicinelist ul li:nth-child(12) {
+.contentBody .userStock-container .medicinelist ul li:nth-child(11), .contentBody .userStock-container .medicinelist ul li:nth-child(12) {
   width: 8%;
 }
 .contentBody .medicinalZone {
-  width: 100%;
   float: left;
+  width: calc(100% - 30px);
+  height: auto;
+  position: absolute;
+  top: 96px;
+  right: 15px;
+  left: 15px;
+  bottom: 60px;
 }
 .contentBody .medicinalZone .addMedicine {
   background-color: #748CAB;
@@ -1327,6 +1353,15 @@
   transition: 0.4s;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.contentBody .usermedicine-container {
+  width: calc(100% - 30px);
+  height: auto;
+  position: absolute;
+  top: 210px;
+  right: 15px;
+  left: 15px;
+  bottom: 60px;
 }
 
 /*# sourceMappingURL=custom.css.map */

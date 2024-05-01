@@ -193,130 +193,142 @@
         }
       }
     }
-    .ContainerList{
-      float: left;
+    .serviceUser-Container{
+      width: calc(100% - 30px);
+      height: auto;
+      position: absolute;
+      top: 110px;
+      right: 15px;
+      left: 15px;
+      bottom: 15px;
+      .ContainerList{
+        float: left;
+        width: 100%;
 
-      ul{
+        ul{
 
-        li{
-          width: 269px;
-          list-style-type: none;
-          display: inline-block;
-          margin-left: 5px;
+          li{
+            width: calc((100% - 15px) / 4);
+            list-style-type: none;
+            display: inline-block;
 
-          article{
-            background-color: #24313E;
-            border-radius: 10px;
-            padding: 5px;
-            color: #fff;
-            height: 129px;
-            border: 2px solid #24313E;
-            position: relative;
+            article{
+              background-color: #24313E;
+              border-radius: 10px;
+              padding: 5px;
+              color: #fff;
+              height: 129px;
+              border: 2px solid #24313E;
+              position: relative;
 
-            .userInfo{
-              height: 97px;
-              display: flex;
+              .userInfo{
+                height: 97px;
+                display: flex;
 
-              .picture{
-                margin-bottom: 5px;
-                position: relative;
-                margin-right: 10px;
-                float: left;
-                width: 92px;
-                height: 92px;
-                border-radius: 4px;
+                .picture{
+                  margin-bottom: 5px;
+                  position: relative;
+                  margin-right: 10px;
+                  float: left;
+                  width: 92px;
+                  height: 92px;
+                  border-radius: 4px;
 
-                img{
-                  height: 100%;
+                  img{
+                    height: 100%;
+                  }
+                }
+
+                ul{
+                  width: 150px;
+
+                  li{
+                    width: 140px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+
+                  li:first-child{
+                    font-size: 14px;
+                    height: 20px;
+                    color: #fff;
+                    font-weight: 600;
+                  }
+
+                  li:nth-child(2){
+                    color: #F07167;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin-bottom: 6px;
+
+                    strong{
+                      color: #748CAB;
+                      text-transform: uppercase;
+                      margin-right: 5px;
+                      font-size: 12px;
+                    }
+                  }
+
+                  li:nth-child(3){
+                    color: #5FB219;
+                    font-weight: 700;
+                    font-size: 12px;
+
+                    strong{
+                      color: #E7ECEF;
+                      font-weight: 700;
+                      margin-right: 5px;
+                      font-size: 12px;
+                    }
+                  }
+
+                  li:nth-child(4){
+                    color: #E7ECEF;
+                    font-size: 12px;
+                  }
                 }
               }
 
-              ul{
-                width: 150px;
+              .userContainer{
+                display: flex;
+                height: 22px;
 
-                li{
-                  width: 140px;
-                  font-size: 16px;
-                  line-height: 22px;
-                  display: block;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                }
-
-                li:first-child{
-                  font-size: 14px;
+                .newScore{
+                  background-color: #fff;
+                  color: #748CAB;
+                  font-size: 10px;
+                  padding: 3px 8px 3px 8px;
+                  border-radius: 7px;
+                  margin-right: 3px;
                   height: 20px;
+                }
+
+                .dnacpr{
+                  background-color: #F07167;
                   color: #fff;
-                  font-weight: 600;
+                  padding: 3px 8px 3px 8px;
+                  font-size: 10px;
+                  border-radius: 7px;
+                  height: 20px;
+                  text-transform: uppercase;
                 }
 
-                li:nth-child(2){
-                  color: #F07167;
-                  font-weight: 600;
-                  font-size: 12px;
-                  margin-bottom: 6px;
+                .notifyUser{
+                  position: relative;
+                  margin-left: auto;
 
-                  strong{
-                    color: #748CAB;
-                    text-transform: uppercase;
-                    margin-right: 5px;
-                    font-size: 12px;
+                  img{
+                    width: 22px;
+                    height: 22px;
                   }
-                }
-
-                li:nth-child(3){
-                  color: #5FB219;
-                  font-weight: 700;
-                  font-size: 12px;
-
-                  strong{
-                    color: #E7ECEF;
-                    font-weight: 700;
-                    margin-right: 5px;
-                    font-size: 12px;
-                  }
-                }
-
-                li:nth-child(4){
-                  color: #E7ECEF;
-                  font-size: 12px;
                 }
               }
             }
-
-            .userContainer{
-              display: flex;
-              height: 22px;
-
-              .newScore{
-                background-color: #fff;
-                color: #748CAB;
-                font-size: 10px;
-                padding: 3px 8px 3px 8px;
-                border-radius: 7px;
-                margin-right: 3px;
-                height: 20px;
-              }
-
-              .dnacpr{
-                background-color: #F07167;
-                color: #fff;
-                padding: 3px 8px 3px 8px;
-                font-size: 10px;
-                border-radius: 7px;
-                height: 20px;
-                text-transform: uppercase;
-              }
-
-              .notifyUser{
-                position: relative;
-                margin-left: auto;
-
-                img{
-                  width: 22px;
-                  height: 22px;
-                }
-              }
+            &:nth-child(n + 5){
+              margin-top: 5px;
             }
           }
         }
@@ -639,44 +651,59 @@
         }
       }
     }
+    .userStock-container{
+      height: auto;
+      position: absolute;
+      top: 276px;
+      right: 15px;
+      left: 15px;
+      bottom: 70px;
 
-    .medicinelist{
+      .medicinelist{
 
-      ul{
-        li{
-          &:nth-child(2){
-            width: 75%;
-          }
-          &:nth-child(3){
-            width: 19%;
-          }
-          &:nth-child(4){
-            width: 16.5%;
-          }
-          &:nth-child(5){
-            width: 17.7%;
-          }
-          &:nth-child(6){
-            width: 15%;
-          }
-          &:nth-child(7){
-            width: 12%;
-          }
-          &:nth-child(8){
-            width: 25.5%;
-          }
-          &:nth-child(10){
-            width: 10%;
-          }
-          &:nth-child(11), &:nth-child(12) {
-            width: 8%;
+        ul{
+          li{
+            &:nth-child(2){
+              width: 75%;
+            }
+            &:nth-child(3){
+              width: 19%;
+            }
+            &:nth-child(4){
+              width: 16.5%;
+            }
+            &:nth-child(5){
+              width: 17.7%;
+            }
+            &:nth-child(6){
+              width: 15%;
+            }
+            &:nth-child(7){
+              width: 12%;
+            }
+            &:nth-child(8){
+              width: 25.5%;
+            }
+            &:nth-child(10){
+              width: 10%;
+            }
+            &:nth-child(11), &:nth-child(12) {
+              width: 8%;
+            }
           }
         }
       }
     }
+
     .medicinalZone{
-      width: 100%;
       float: left;
+      width: calc(100% - 30px);
+      height: auto;
+      position: absolute;
+      top: 96px;
+      right: 15px;
+      left: 15px;
+      bottom: 60px;
 
       .addMedicine{
         background-color: #748CAB;
@@ -1293,5 +1320,14 @@
           }
         }
       }
+    }
+    .usermedicine-container{
+      width: calc(100% - 30px);
+      height: auto;
+      position: absolute;
+      top: 210px;
+      right: 15px;
+      left: 15px;
+      bottom: 60px;
     }
   }

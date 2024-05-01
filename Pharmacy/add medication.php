@@ -9,6 +9,7 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -77,26 +78,29 @@
                 </ul>
             </div>
             <section class="medicinalZone">
-                <div class="addMedicine">
-                    <select>
-                        <option>Select Medicine</option>
-                        <option>option 1</option>
-                        <option>option 2</option>
-                    </select><br>
-                    <button class="reset-btn">Reset</button>
-                    <button>Search</button>
+                <div class="scrollbar-outer scrollArea">
+                    <div class="addMedicine">
+                        <select>
+                            <option>Select Medicine</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                        </select><br>
+                        <button class="reset-btn">Reset</button>
+                        <button>Search</button>
+                    </div>
+                    <div class="removeMedicine">
+                        <span>This list remembers 100 medications that you use in the home</span>
+                        <ul>
+                            <li>
+                                <span>Medicine Name</span>
+                                <span class="delete-btn"></span>
+                                <span class="fillUp-btn"></span>
+                                <div>TROSYL nail solution 28% w/w 12ml</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="removeMedicine">
-                    <span>This list remembers 100 medications that you use in the home</span>
-                    <ul>
-                        <li>
-                            <span>Medicine Name</span>
-                            <span class="delete-btn"></span>
-                            <span class="fillUp-btn"></span>
-                            <div>TROSYL nail solution 28% w/w 12ml</div>
-                        </li>
-                    </ul>
-                </div>
+
             </section>
             <footer>
                 <button class="back-btn" type="button">Back</button>
@@ -105,6 +109,7 @@
         </section>
     </div>
 
+    <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -129,6 +134,9 @@
             $('.pagination a').on('click', function() {
                 $('.pagination a').removeClass('active');
                 $(this).addClass('active');
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
 

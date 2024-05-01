@@ -9,6 +9,7 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -127,21 +128,26 @@
                     </div>
                 </div>
             </div>
-            <div class="generallisting">
-                <ul class="clearfix">
-                    <li><input type="checkbox"></li>
-                    <li><span>Service User Name</span><i>Miss Lab Rat</i></li>
-                    <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                    <li><span>Source Of Medicine</span><i>Local Pharmacy</i></li>
-                    <li><span>Date Received</span><i>25.10.2022</i></li>
-                    <li><span>Expiry Date</span><i>25.11.2022</i></li>
-                    <li><span>Packaging Type</span><i>Original</i></li>
-                    <li><span>Date</span><i>(14:05) 22.12.2022</i></li>
-                    <li><span>Updated By</span><i>-</i></li>
-                    <li><span>Status</span><i>Active</i></li>
-                    <li><a class="eye" href=""></a></li>
-                </ul>
+            <div class="usermedicine-container">
+                <div class="scrollbar-outer scrollArea">
+                    <div class="generallisting ">
+                        <ul class="clearfix">
+                            <li><input type="checkbox"></li>
+                            <li><span>Service User Name</span><i>Miss Lab Rat</i></li>
+                            <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
+                            <li><span>Source Of Medicine</span><i>Local Pharmacy</i></li>
+                            <li><span>Date Received</span><i>25.10.2022</i></li>
+                            <li><span>Expiry Date</span><i>25.11.2022</i></li>
+                            <li><span>Packaging Type</span><i>Original</i></li>
+                            <li><span>Date</span><i>(14:05) 22.12.2022</i></li>
+                            <li><span>Updated By</span><i>-</i></li>
+                            <li><span>Status</span><i>Active</i></li>
+                            <li><a class="eye" href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
             <footer>
                 <ul class="pageContainer">
                     <li class="previous-btn"></li>
@@ -162,6 +168,7 @@
             </footer>
         </section>
     </div>
+    <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -197,6 +204,9 @@
                 if (!$(event.target).closest('.dropdownToggle').length) {
                     $(".dropdown-content").removeClass('show');
                 }
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
     </script>
