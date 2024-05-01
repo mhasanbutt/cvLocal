@@ -607,29 +607,39 @@
         }
       }
     }
-    .styledlists{
+    .medicineOrders-container{
+      height: auto;
+      position: absolute;
+      top: 248px;
+      right: 15px;
+      left: 15px;
+      bottom: 130px;
 
-      ul{
+      .styledlists{
 
-        li{
-          &:nth-child(2){
-            width: 80%;
-            position: relative;
-          }
+        ul{
 
-          &:nth-child(3){
-            width: 16%;
-          }
+          li{
+            &:nth-child(2){
+              width: 80%;
+              position: relative;
+            }
 
-          &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
-            width: 13.5%;
-          }
-          &:nth-child(4){
-            width: 15%;
+            &:nth-child(3){
+              width: 16%;
+            }
+
+            &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
+              width: 13.5%;
+            }
+            &:nth-child(4){
+              width: 15%;
+            }
           }
         }
       }
     }
+
     .medicinelist{
 
       ul{
@@ -1044,8 +1054,10 @@
       float: left;
       padding: 5px;
       border-radius: 10px;
-      width: 100%;
+      width: calc(100% - 30px);
       margin-bottom: 10px;
+      position: absolute;
+      bottom: 58px;
 
       select{
         background-color: #EDF2F4;
@@ -1065,14 +1077,16 @@
         background-color: #EDF2F4;
         border: 0;
         border-radius:8px;
-        width: 89.6%;
+        width: 89.7%;
         padding: 10px;
       }
     }
 
     footer{
       float: left;
-      width: 100%;
+      width: calc(100% - 30px);
+      position: absolute;
+      bottom: 15px;
 
       .back-btn{
         background-color: #748CAB;

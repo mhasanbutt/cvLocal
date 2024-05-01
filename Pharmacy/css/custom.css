@@ -153,6 +153,7 @@
   padding: 15px;
   position: relative;
   float: left;
+  cursor: pointer;
 }
 .stat ul li .number {
   color: #fff;
@@ -179,6 +180,11 @@
 }
 .stat ul li:nth-child(-n+5) {
   margin-top: 0;
+}
+
+.scrollArea {
+  position: relative;
+  height: 100%;
 }
 
 .clearfix:after {
@@ -712,17 +718,25 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.contentBody .styledlists ul li:nth-child(2) {
+.contentBody .medicineOrders-container {
+  height: auto;
+  position: absolute;
+  top: 248px;
+  right: 15px;
+  left: 15px;
+  bottom: 130px;
+}
+.contentBody .medicineOrders-container .styledlists ul li:nth-child(2) {
   width: 80%;
   position: relative;
 }
-.contentBody .styledlists ul li:nth-child(3) {
+.contentBody .medicineOrders-container .styledlists ul li:nth-child(3) {
   width: 16%;
 }
-.contentBody .styledlists ul li:nth-child(5), .contentBody .styledlists ul li:nth-child(6), .contentBody .styledlists ul li:nth-child(7), .contentBody .styledlists ul li:nth-child(8), .contentBody .styledlists ul li:nth-child(9), .contentBody .styledlists ul li:nth-child(10) {
+.contentBody .medicineOrders-container .styledlists ul li:nth-child(5), .contentBody .medicineOrders-container .styledlists ul li:nth-child(6), .contentBody .medicineOrders-container .styledlists ul li:nth-child(7), .contentBody .medicineOrders-container .styledlists ul li:nth-child(8), .contentBody .medicineOrders-container .styledlists ul li:nth-child(9), .contentBody .medicineOrders-container .styledlists ul li:nth-child(10) {
   width: 13.5%;
 }
-.contentBody .styledlists ul li:nth-child(4) {
+.contentBody .medicineOrders-container .styledlists ul li:nth-child(4) {
   width: 15%;
 }
 .contentBody .medicinelist ul li:nth-child(2) {
@@ -1100,8 +1114,10 @@
   float: left;
   padding: 5px;
   border-radius: 10px;
-  width: 100%;
+  width: calc(100% - 30px);
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 58px;
 }
 .contentBody .comments select {
   background-color: #EDF2F4;
@@ -1120,12 +1136,14 @@
   background-color: #EDF2F4;
   border: 0;
   border-radius: 8px;
-  width: 89.6%;
+  width: 89.7%;
   padding: 10px;
 }
 .contentBody footer {
   float: left;
-  width: 100%;
+  width: calc(100% - 30px);
+  position: absolute;
+  bottom: 15px;
 }
 .contentBody footer .back-btn {
   background-color: #748CAB;

@@ -182,4 +182,9 @@
   margin-top: 0;
 }
 
+.scrollArea {
+  position: relative;
+  height: 100%;
+}
+
 /*# sourceMappingURL=common.css.map */
