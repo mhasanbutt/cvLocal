@@ -318,6 +318,9 @@
   border: 0;
   color: #404D5D;
 }
+.contentBody .filters ul li:nth-child(n+7) {
+  margin-top: 5px;
+}
 .contentBody .filters .filter-btn {
   background-color: #F07167;
   padding: 6px;
@@ -961,7 +964,7 @@
 .contentBody .medicinalZone .medicineSummary ul li label .slider:before {
   position: absolute;
   content: "";
-  height: 21px;
+  height: 22px;
   width: 22px;
   top: 2px;
   left: 2px;
@@ -1075,7 +1078,7 @@
 .contentBody .medicinalZone .medicines-area .medicine-Info .med-form .select label .slider:before {
   position: absolute;
   content: "";
-  height: 21px;
+  height: 22px;
   width: 22px;
   top: 2px;
   left: 2px;
@@ -1345,7 +1348,7 @@
 .contentBody footer .active-prescription .select label .slider:before {
   position: absolute;
   content: "";
-  height: 21px;
+  height: 22px;
   width: 22px;
   top: 2.5px;
   left: 2px;

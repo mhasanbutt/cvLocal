@@ -145,57 +145,6 @@
                                 <li><a class="eye" href=""></a></li>
                             </ul>
                         </div>
-                        <div class="generallisting styledlists">
-                            <ul class="clearfix">
-                                <li><input type="checkbox"></li>
-                                <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                                <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                                <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                                <li><span>Frequency of Administration</span><i>Daily</i></li>
-                                <li><span>Amount of Rounds</span><i>0</i></li>
-                                <li><span>Dosage per Round</span><i>10 ml</i></li>
-                                <li><span>Current Stock</span><i>150.00</i></li>
-                                <li><span>QTY. Ordered</span><i>150.00</i></li>
-                                <li><span>QTY. Already Added</span><i>0.00</i></li>
-                                <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
-                                <li><span>Containers</span><input type="text" placeholder=""></li>
-                                <li><a class="eye" href=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="generallisting styledlists">
-                            <ul class="clearfix">
-                                <li><input type="checkbox"></li>
-                                <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                                <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                                <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                                <li><span>Frequency of Administration</span><i>Daily</i></li>
-                                <li><span>Amount of Rounds</span><i>0</i></li>
-                                <li><span>Dosage per Round</span><i>10 ml</i></li>
-                                <li><span>Current Stock</span><i>150.00</i></li>
-                                <li><span>QTY. Ordered</span><i>150.00</i></li>
-                                <li><span>QTY. Already Added</span><i>0.00</i></li>
-                                <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
-                                <li><span>Containers</span><input type="text" placeholder=""></li>
-                                <li><a class="eye" href=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="generallisting styledlists">
-                            <ul class="clearfix">
-                                <li><input type="checkbox"></li>
-                                <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                                <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                                <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                                <li><span>Frequency of Administration</span><i>Daily</i></li>
-                                <li><span>Amount of Rounds</span><i>0</i></li>
-                                <li><span>Dosage per Round</span><i>10 ml</i></li>
-                                <li><span>Current Stock</span><i>150.00</i></li>
-                                <li><span>QTY. Ordered</span><i>150.00</i></li>
-                                <li><span>QTY. Already Added</span><i>0.00</i></li>
-                                <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
-                                <li><span>Containers</span><input type="text" placeholder=""></li>
-                                <li><a class="eye" href=""></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             <section class="comments">

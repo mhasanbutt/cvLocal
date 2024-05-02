@@ -147,6 +147,9 @@
             border: 0;
             color: #404D5D;
           }
+          &:nth-child(n + 7){
+            margin-top: 5px;
+          }
         }
       }
       .filter-btn{
@@ -877,7 +880,7 @@
                 &:before{
                   position: absolute;
                   content: "";
-                  height: 21px;
+                  height: 22px;
                   width: 22px;
                   top: 2px;
                   left: 2px;
@@ -1001,7 +1004,7 @@
                   &:before{
                     position: absolute;
                     content: "";
-                    height: 21px;
+                    height: 22px;
                     width: 22px;
                     top: 2px;
                     left: 2px;
@@ -1307,7 +1310,7 @@
               &:before{
                 position: absolute;
                 content: "";
-                height: 21px;
+                height: 22px;
                 width: 22px;
                 top: 2.5px;
                 left: 2px;

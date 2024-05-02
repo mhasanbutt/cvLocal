@@ -132,9 +132,9 @@
                                     <input type="text" id="textInput" placeholder="7">
                                     <span class="up-button"></span>
                                     <span class="down-button"></span>
-
                                 </div>
                             </div>
+
                             <div class="med-form">
                                 <label>Administration Frequency<i></i></label>
                                 <div class="select">
