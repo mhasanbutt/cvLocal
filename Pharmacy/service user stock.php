@@ -9,6 +9,7 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -110,7 +111,7 @@
             </div>
         </div>
         <div class="alertCenter">
-            <ul class="user-alerts">
+            <ul class="user-alerts clearfix">
                 <li class="orange">Allergies</li>
                 <li>Equipment Alert</li>
                 <li>vaccination</li>
@@ -124,25 +125,29 @@
             </div>
         </section>
 
-        <div class="generallisting medicinelist">
-            <ul>
-                <li><input type="checkbox"><label></label></li>
-                <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                <li><span>Stock Remaining (previous)</span><i>-</i></li>
-                <li><span>Stock Carried Forward</span><i>0</i></li>
-                <li><span>QTY. Ordered</span><i>150.00</i></li>
-                <li><span>QTY. Received (not from orders)</span><i>150.00</i></li>
-                <li><span>Returned / Destroyed</span><i>0.00</i></li>
-                <li><span>QTY. Adjusted</span><i>0.00</i></li>
-                <li><span>Consumed</span><i>0.00</i></li>
-                <li><span>Current Stock</span><i>0.00</i></li>
-                <li><a class="eye" href=""></a></li>
-            </ul>
+        <div class="userStock-container">
+            <div class="scrollbar-outer scrollArea">
+                <div class="generallisting medicinelist">
+                    <ul class="clearfix">
+                        <li><input type="checkbox"><label></label></li>
+                        <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
+                        <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
+                        <li><span>Strength</span><i>0.125mg / 5ml</i></li>
+                        <li><span>Stock Remaining (previous)</span><i>-</i></li>
+                        <li><span>Stock Carried Forward</span><i>0</i></li>
+                        <li><span>QTY. Ordered</span><i>150.00</i></li>
+                        <li><span>QTY. Received (not from orders)</span><i>150.00</i></li>
+                        <li><span>Returned / Destroyed</span><i>0.00</i></li>
+                        <li><span>QTY. Adjusted</span><i>0.00</i></li>
+                        <li><span>Consumed</span><i>0.00</i></li>
+                        <li><span>Current Stock</span><i>0.00</i></li>
+                        <li><a class="eye" href=""></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <footer>
 
+        <footer>
             <button class="back-btn" type="button">Back</button>
             <button class="update-btn" type="submit">Update</button>
             <button type="button" class="print">Print</button>
@@ -165,7 +170,6 @@
                 <option>opt 3</option>
             </select>
 
-
             <div class="active-prescription">
                 <label>Show Active Prescriptions Only</label>
                 <div class="select">
@@ -178,7 +182,7 @@
         </footer>
     </section>
 </div>
-
+<script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -204,6 +208,9 @@
                 $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
                 $(".pageContainer .previous-btn").removeClass("active");
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
 

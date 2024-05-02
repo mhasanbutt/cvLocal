@@ -1,7 +1,8 @@
 .landing-page{
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 
   .sidenav{
     width: 100px;
@@ -129,8 +130,6 @@
     }
   }
 }
-
-
 .stat{
   background-color: #F5F5F5;
   padding: 15px;
@@ -148,12 +147,11 @@
     font-style: normal;
     font-weight: 400;
 
-
-
     span{
       color: #1D3557;
       font-weight: 600;
       margin-left: 5px;
+      font-size: 14px;
     }
   }
 
@@ -174,6 +172,7 @@
       padding: 15px;
       position: relative;
       float: left;
+      cursor: pointer;
 
       .number {
         color: #fff;
@@ -186,7 +185,7 @@
         right: 15px;
         bottom: 15px;
         color: #fff;
-        font-size: 12px;
+        font-size: 14px;
         text-align: right;
 
         b {
@@ -209,6 +208,10 @@
       }
     }
   }
+}
+.scrollArea{
+  position: relative;
+  height: 100%;
 }
 
 

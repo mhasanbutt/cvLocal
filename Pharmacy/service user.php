@@ -9,6 +9,7 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -74,30 +75,36 @@
                     </button>
                 </div>
             </div>
-            <div class="ContainerList">
-                <ul>
-                    <li>
-                        <article>
-                            <div class="userInfo">
-                                <span class="picture"><a href="#"><img src="images/Rectangle%2019.png"></a></span>
-                                <ul>
-                                    <li>Mr Tim Shermin</li>
-                                    <li><strong>Timmy</strong>( 78 )</li>
-                                    <li><strong>17.07.2019</strong>( 5876 )</li>
-                                    <li>Floor 1 / Room 1</li>
-                                </ul>
-                            </div>
-                            <div class="userContainer">
-                                <span class="newScore">NEWS2 Score:2</span>
-                                <span class="dnacpr">dnacpr</span>
-                                <div class="notifyUser"><img src="images/warning.png"><img src="images/butterfly.png"></div>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+            <div class="serviceUser-Container">
+                <div class="scrollbar-outer scrollArea">
+                    <div class="ContainerList">
+                        <ul>
+                            <li>
+                                <article>
+                                    <div class="userInfo">
+                                        <span class="picture"><a href="#"><img src="images/Rectangle%2019.png"></a></span>
+                                        <ul>
+                                            <li>Mr Tim Shermin</li>
+                                            <li><strong>Timmy</strong>( 78 )</li>
+                                            <li><strong>17.07.2019</strong>( 5876 )</li>
+                                            <li>Floor 1 / Room 1</li>
+                                        </ul>
+                                    </div>
+                                    <div class="userContainer">
+                                        <span class="newScore">NEWS2 Score:2</span>
+                                        <span class="dnacpr">dnacpr</span>
+                                        <div class="notifyUser"><img src="images/warning.png"><img src="images/butterfly.png"></div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </section>
     </div>
+    <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -118,6 +125,9 @@
                 event.preventDefault();
                 submenu.css("visibility", "hidden");
                 submenu.css("opacity", "0");
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
     </script>

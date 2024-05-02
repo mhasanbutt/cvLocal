@@ -30,7 +30,6 @@
                     <li><img src="images/logout.png"> logout</li>
                 </ul>
             </div>
-
         </section>
 
         <div class="contentBody">

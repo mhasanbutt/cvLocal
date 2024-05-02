@@ -9,10 +9,12 @@
 	<title>CareVision - Less Admin, More Caring</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/scripts.bundle.js"></script>
 
 </head>
-
 <body>
     <div class="landing-page">
         <section class="sidenav">
@@ -110,7 +112,7 @@
                 </div>
             </div>
             <div class="alertCenter">
-                <ul class="user-alerts">
+                <ul class="user-alerts clearfix">
                     <li class="orange">Allergies</li>
                     <li>Equipment Alert</li>
                     <li>vaccination</li>
@@ -124,24 +126,27 @@
                     <li>Source of Medicine<span>Pharmacy - Online Order</span></li>
                 </ul>
             </section>
-
-            <div class="generallisting styledlists">
-                <ul>
-                    <li><input type="checkbox"></li>
-                    <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
-                    <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
-                    <li><span>Strength</span><i>0.125mg / 5ml</i></li>
-                    <li><span>Frequency of Administration</span><i>Daily</i></li>
-                    <li><span>Amount of Rounds</span><i>0</i></li>
-                    <li><span>Dosage per Round</span><i>10 ml</i></li>
-                    <li><span>Current Stock</span><i>150.00</i></li>
-                    <li><span>QTY. Ordered</span><i>150.00</i></li>
-                    <li><span>QTY. Already Added</span><i>0.00</i></li>
-                    <li><span>QTY. to Send</span><input type="text" placeholder="150.00"></li>
-                    <li><span>Containers</span><input type="text" placeholder="1"></li>
-                    <li><a class="eye" href=""></a></li>
-                </ul>
-            </div>
+                <div class="medicineOrders-container">
+                    <div class="scrollbar-outer scrollArea">
+                        <div class="generallisting styledlists">
+                            <ul class="clearfix">
+                                <li><input type="checkbox"></li>
+                                <li><span>Medicine</span><i>CLOPIXOL ACUPHASE solution for injection ampoules 50mg/1ml 5</i></li>
+                                <li><span>Ingredient</span><i>PYRIDOXINE</i></li>
+                                <li><span>Strength</span><i>0.125mg / 5ml</i></li>
+                                <li><span>Frequency of Administration</span><i>Daily</i></li>
+                                <li><span>Amount of Rounds</span><i>0</i></li>
+                                <li><span>Dosage per Round</span><i>10 ml</i></li>
+                                <li><span>Current Stock</span><i>150.00</i></li>
+                                <li><span>QTY. Ordered</span><i>150.00</i></li>
+                                <li><span>QTY. Already Added</span><i>0.00</i></li>
+                                <li><span>QTY. to Send</span><input type="text" placeholder=""></li>
+                                <li><span>Containers</span><input type="text" placeholder=""></li>
+                                <li><a class="eye" href=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             <section class="comments">
                 <select>
                     <option>Status</option>
@@ -167,7 +172,6 @@
                     <li>6</li>
                     <li class="next-btn"></li>
                 </ul>
-
                 <select>
                     <option>50 per page</option>
                     <option>opt 1</option>
@@ -177,7 +181,7 @@
             </footer>
         </section>
     </div>
-
+    <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -203,6 +207,9 @@
                 $('.pageContainer li').removeClass('active');
                 $(this).addClass('active');
                 $(".pageContainer .previous-btn").removeClass("active");
+            });
+            jQuery(document).ready(function () {
+                jQuery('.scrollArea').scrollbar();
             });
         });
 
