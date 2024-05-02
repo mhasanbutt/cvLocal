@@ -8260,7 +8260,7 @@ hr.BoldHr {
   background-color: #63D4A0;
 }
 .medAuth > li ul li.notAllowed {
-  background-color: #de568d;
+  background-color: #9eadb2;
   color: #FFF;
 }
 
@@ -19497,10 +19497,18 @@ hr.BoldHr {
   left: 50%;
   top: 0;
   display: inline-block;
-  color: #333;
+  color: #FFF;
   font-size: 12px;
   transform: translateX(-50%) translateY(0);
-  line-height: 1;
+  line-height: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.progress.fullWidth {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 24px;
 }
 
 .GpFileUploadName .progress {
@@ -23484,7 +23492,7 @@ hr.BoldHr {
   color: #404455;
   font-family: "Poppins";
 }
-.videoCategorylisting aside iframe {
+.videoCategorylisting aside iframe, .videoCategorylisting aside embed {
   height: calc(100% - 64px);
 }
 
@@ -28566,7 +28574,7 @@ hr.BoldHr {
   margin-bottom: 5px;
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotausertable li {
-  width: calc((100% - 140px) / 8);
+  width: calc((100% - 141px) / 8);
   margin-left: 5px;
   background-blend-mode: unset;
   background-color: transparent;
@@ -37133,6 +37141,7 @@ input[type=checkbox].switch:checked + label:before {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 5px;
+  position: relative;
 }
 .newForm ul li .title i {
   font-style: normal;
@@ -37148,7 +37157,6 @@ input[type=checkbox].switch:checked + label:before {
 }
 .newForm ul li .info {
   position: absolute;
-  display: block;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -37156,8 +37164,7 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
-  right: 0;
-  top: -2px;
+  top: -3px;
 }
 .newForm ul li .text {
   display: block;
@@ -41924,6 +41931,116 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #ceb8ab;
   font-style: normal;
   color: #FFF;
+}
+
+.addMedication {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  font-family: "Poppins";
+}
+.addMedication .formSection {
+  width: calc(100% - 340px);
+}
+.addMedication .formSection .searchMedicine {
+  background-color: #748CAB;
+  border-radius: 10px;
+  padding: 5px;
+}
+.addMedication .formSection .searchMedicine .select2-container--default {
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  background-image: url("../images/selectBoxArrow.png");
+  background-size: 14px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+.addMedication .formSection .searchMedicine .select2-container--default .selection .select2-selection--single {
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  background-color: transparent;
+}
+.addMedication .formSection .searchMedicine .select2-container--default .selection .select2-selection--single .select2-selection__rendered {
+  font-size: 16px;
+  line-height: 24px;
+  color: #24313E;
+  padding: 8px 10px;
+}
+.addMedication .formSection .searchMedicine button {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #E7ECEF;
+  border-radius: 10px;
+  border: 0;
+  background-color: transparent;
+}
+.addMedication .formSection .searchMedicine button.search {
+  background-color: #24313E;
+  color: #FFF;
+}
+.addMedication .commonList {
+  background-color: #F5F5F5;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #748CAB;
+  width: 330px;
+}
+.addMedication .commonList > ul {
+  padding-top: 20px;
+  margin: 0;
+}
+.addMedication .commonList > ul > li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #24323D;
+  position: relative;
+  padding: 29px 0 5px;
+  border-top: 1px solid #748CAB;
+}
+.addMedication .commonList > ul > li:before {
+  content: "Medicine Name";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #748CAB;
+}
+.addMedication .commonList > ul > li i {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.addMedication .commonList > ul > li i:first-of-type {
+  right: 34px;
+}
+.addMedication .commonList > ul > li i.useThis {
+  background-image: url("../images/useThisIcon.png");
+}
+.addMedication .commonList > ul > li i.delete {
+  background-image: url("../images/trash-bin.png");
+}
+.addMedication .commonList > ul > li:first-child {
+  border-top: 0;
+  padding-top: 24px;
+}
+.addMedication .commonList > ul > li:first-child:before {
+  top: 0;
+}
+.addMedication .commonList > ul > li:first-child i {
+  top: 0;
 }
 
 .scroll-element.scroll-x {
