@@ -42111,6 +42111,9 @@ input[type=checkbox].switch:checked + label:before {
   margin-left: 10px;
   font-style: normal;
 }
+.mealUserDetail > section > div ul li p:only-of-type {
+  border-top: 0;
+}
 .mealUserDetail > section > div.likes, .mealUserDetail > section > div.dislikes {
   border: 0;
   background-size: 150px;
@@ -42129,6 +42132,8 @@ input[type=checkbox].switch:checked + label:before {
   width: 400px;
   margin-left: 10px;
   float: right;
+  position: relative;
+  height: 100%;
 }
 .mealUserDetail aside > .title {
   font-size: 14px;
@@ -42138,8 +42143,16 @@ input[type=checkbox].switch:checked + label:before {
   display: block;
   margin-bottom: 10px;
 }
+.mealUserDetail aside .scroll-wrapper {
+  top: 28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}
 .mealUserDetail aside ul {
   margin: 0;
+  padding-right: 20px;
 }
 .mealUserDetail aside ul li {
   background-color: #FAFAFA;

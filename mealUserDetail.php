@@ -93,12 +93,14 @@
             <aside>
                 <span class="title">Food Allergies</span>
                 
-                <ul class="list-unstyled">
-                    <li>
-                        <span class="title">Glorbs</span>
-                        <p>Fink has a food allergy from Its been, pharmacy was informed via Phone</p>
-                    </li>
-                </ul>
+                <div class="scrollArea">
+                    <ul class="list-unstyled">
+                        <li>
+                            <span class="title">Glorbs</span>
+                            <p>Fink has a food allergy from Its been, pharmacy was informed via Phone</p>
+                        </li>
+                    </ul>
+                </div>
             </aside>
         </div>
 	</section>

@@ -49899,6 +49899,12 @@ input[type=checkbox].switch {
 							margin-left: 10px;
 							font-style: normal;
 						}
+
+
+
+						&:only-of-type {
+							border-top: 0;
+						}
 					}
 				}
 			}
@@ -49926,6 +49932,8 @@ input[type=checkbox].switch {
 		width: 400px;
 		margin-left: 10px;
 		float: right;
+		position: relative;
+		height: 100%;
 
 		& > .title {
 			font-size: 14px;
@@ -49936,8 +49944,17 @@ input[type=checkbox].switch {
 			margin-bottom: 10px;
 		}
 
+		.scroll-wrapper {
+			top: 28px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: auto;
+		}
+
 		ul {
 			margin: 0;
+			padding-right: 20px;
 
 			li {
 				background-color: #FAFAFA;
