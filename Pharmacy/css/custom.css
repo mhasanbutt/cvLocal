@@ -806,18 +806,32 @@
   float: left;
   width: calc(100% - 345px);
 }
-.contentBody .medicinalZone .addMedicine select {
-  padding: 10px;
+.contentBody .medicinalZone .addMedicine .select2 {
+  width: 100%;
+}
+.contentBody .medicinalZone .addMedicine .select2 .selection {
+  width: 100%;
+}
+.contentBody .medicinalZone .addMedicine .select2 .selection .select2-selection--single {
+  padding: 8px 10px;
   width: 100%;
   border-radius: 8px;
   border: 0;
   font-size: 16px;
   color: #24313E;
-  appearance: none;
   background-image: url("../images/grey down-arrow.png");
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: right 10px center;
+  line-height: 24px;
+  height: 40px;
+}
+.contentBody .medicinalZone .addMedicine .select2 .selection .select2-selection--single .select2-selection__rendered {
+  padding: 0;
+  line-height: inherit;
+}
+.contentBody .medicinalZone .addMedicine .select2 .selection .select2-selection--single .select2-selection__arrow {
+  display: none;
 }
 .contentBody .medicinalZone .addMedicine button {
   margin-top: 5px;

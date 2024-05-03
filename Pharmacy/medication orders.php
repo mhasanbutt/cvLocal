@@ -10,7 +10,6 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
     <script src="assets/js/scripts.bundle.js"></script>
 
@@ -181,6 +180,7 @@
             </footer>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
