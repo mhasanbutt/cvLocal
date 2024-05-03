@@ -14,40 +14,9 @@
 
 <body>
     <div class="landing-page">
-        <section class="sidenav">
 
-            <div class="logo"><img src="images/pharmacy%20logo.png"></div>
+        <?php include('sideNav.php');?>
 
-            <ul>
-                <li class="menu"><img src="images/menus.png">Menu
-                    <section class="dropdown-sec">
-                        <div class="dropdown">
-                            <ul>
-                                <li>Service User Register</li>
-                                <li>Service User</li>
-                                <li>eMar Cycles</li>
-                                <li>eMar</li>
-                                <li>Service User Medication</li>
-                                <li>Homely Remedy Medication</li>
-                                <li>Service User Stock</li>
-                                <li>Return & Destroy</li>
-                                <li>Convert Medication</li>
-                                <li>Medicine Room</li>
-                            </ul>
-                        </div>
-                    </section>
-                </li>
-                <li><img src="images/orders-list.png">Orders</li>
-                <li><img src="images/home-page.png"> Homes</li>
-            </ul>
-
-            <div class="bottom-items">
-                <ul>
-                    <li><img src="images/Ellipse%201.png"></li>
-                    <li><img src="images/logout.png"> logout</li>
-                </ul>
-            </div>
-        </section>
         <section class="contentBody">
             <div class="topBar">
                 <div class="breadCrumb">
