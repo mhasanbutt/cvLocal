@@ -874,7 +874,7 @@
                 background-color: #E7ECEF;
                 transition: .4s;
                 border-radius: 14px;
-                box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.2);
+                box-shadow: -2px -1px 6px rgba(0, 0, 0, 0.2);
 
 
                 &:before{
@@ -883,7 +883,7 @@
                   height: 22px;
                   width: 22px;
                   top: 2px;
-                  left: 2px;
+                  left: 2.5px;
                   background-color: white;
                   transition: 0.4s;
                   border-radius: 20px;
@@ -920,11 +920,11 @@
 
         .medicine-Info{
           width: 50%;
-
-          .med-form{
-            min-height: 64px;
+          list-style-type: none;
+          li{
+            min-height: 67px;
             position: relative;
-            margin-top: 14px;
+            margin-top: 10px;
             label{
               height: 17px;
               display: block;
@@ -933,89 +933,112 @@
               font-size:12px ;
               font-weight: 400 ;
               color: #748CAB;
+              i{
+                .medicineHistory{
+                  background-color: #748CAB;
+                  z-index: 1;
+                  position: absolute;
+                  left: 116px;
+                  padding: 8px;
+                  border-radius: 8px;
+                  opacity: 0;
+                  visibility: hidden;
 
-              i:before{
-                content: "";
-                position: absolute;
-                background-image: url("../images/info.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                cursor: pointer;
-                background-size: 18px;
-                width: 18px;
-                height: 18px;
-                margin-left: 10px;
-                cursor: pointer;
+                  p{
+                    font-weight: 500;
+                    color: #E7ECEF;
+                    background-color: transparent;
+                    height: auto;
+                  }
+                }
+
+                &:before{
+                  content: "";
+                  position: absolute;
+                  background-image: url("../images/info.png");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  cursor: pointer;
+                  background-size: 18px;
+                  width: 18px;
+                  height: 18px;
+                  margin-left: 10px;
+                  cursor: pointer;
+
+                }
               }
+              &:hover .medicineHistory{
+                visibility: visible;
+                opacity: 1;
+              }
+
               span{
                 color: #F07167;
                 margin-left: 3px;
               }
             }
-            .select{
+            select{
+              color:#24313E;
+              background-color: #F5F5F5;
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #DDDEDE;
+              height: 40px;
               position: relative;
+              border-radius: 8px;
               margin-top: 5px;
-              select{
-                color:#24313E;
-                background-color: #F5F5F5;
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #DDDEDE;
-                height: 40px;
+              appearance: none;
+              background-image: url("../images/grey down-arrow.png");
+              background-size: 10px;
+              background-repeat: no-repeat;
+              background-position: right 8px center;
+            }
+            label{
+              &.switch{
                 position: relative;
-                border-radius: 8px;
-                appearance: none;
-                background-image: url("../images/grey down-arrow.png");
-                background-size: 10px;
-                background-repeat: no-repeat;
-                background-position: right 8px center;
+                display: inline-block;
+                width: 43px;
+                height: 26px;
+                top: 11px;
               }
-              label{
-                &.switch{
-                  position: relative;
-                  display: inline-block;
-                  width: 43px;
-                  height: 26px;
-                  top: 11px;
-                }
-                input{
-                  display: none;
+              input{
+                display: none;
 
-                  &:checked + .slider{
-                    background-color: #5FB219;
-                  }
-                  &:checked + .slider:before{
-                    transform: translateX(13px);
-                  }
+                &:checked + .slider{
+                  background-color: #5FB219;
                 }
-                .slider{
+                &:checked + .slider:before{
+                  transform: translateX(13px);
+                }
+              }
+              .slider{
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #E7ECEF;
+                transition: .4s;
+                border-radius: 14px;
+                box-shadow: -2px -1px 6px rgba(0, 0, 0, 0.2);
+
+
+                &:before{
                   position: absolute;
-                  cursor: pointer;
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  background-color: #E7ECEF;
-                  transition: .4s;
-                  border-radius: 14px;
-                  box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.2);
-
-
-                  &:before{
-                    position: absolute;
-                    content: "";
-                    height: 22px;
-                    width: 22px;
-                    top: 2px;
-                    left: 2px;
-                    background-color: white;
-                    transition: 0.4s;
-                    border-radius: 20px;
-                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-                  }
+                  content: "";
+                  height: 22px;
+                  width: 22px;
+                  top: 2px;
+                  left: 2px;
+                  background-color: white;
+                  transition: 0.4s;
+                  border-radius: 20px;
+                  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
                 }
               }
             }
+
             input{
               color:#24313E;
               background-color: #F5F5F5;
@@ -1025,6 +1048,7 @@
               height: 40px;
               position: relative;
               border-radius: 8px;
+              margin-top: 5px;
             }
             .input-wrapper{
 
@@ -1033,6 +1057,7 @@
                 height: 40px;
                 position: relative;
                 top: 10px;
+                margin-top: 0;
               }
               .up-button{
                 &:before{
@@ -1070,6 +1095,33 @@
                   background-color: #FFFFFF;
                   border: 1px solid #8495A4;
                   padding: 2px;
+                }
+              }
+            }
+            &:nth-child(1){
+              label{
+                i{
+                  .medicineHistory{
+                    left: 115px;
+                  }
+                }
+              }
+            }
+            &:nth-child(4){
+              label{
+                i{
+                  .medicineHistory{
+                    left: 180px;
+                  }
+                }
+              }
+            }
+            &:nth-child(5){
+              label{
+                i{
+                  .medicineHistory{
+                    left: 165px;
+                  }
                 }
               }
             }
@@ -1124,7 +1176,7 @@
         padding: 10px;
         border-radius: 10px;
         border: 0;
-        height: 37px;
+        height: 38.5px;
         float: left;
         cursor: pointer;
       }
@@ -1136,7 +1188,7 @@
         padding: 10px;
         float: left;
         margin-left: 2px;
-        height: 37px;
+        height: 38.5px;
         cursor: pointer;
       }
 
@@ -1146,7 +1198,7 @@
         border-radius: 10px;
         border: 0;
         padding: 10px;
-        height: 37px;
+        height: 38.5px;
         float: left;
         cursor: pointer;
       }
@@ -1159,7 +1211,7 @@
         color: #fff;
         float: left;
         margin: 0 5px 0 2px;
-        height: 37px;
+        height: 38.5px;
         cursor: pointer;
       }
 
@@ -1305,7 +1357,7 @@
               background-color: #E7ECEF;
               transition: .4s;
               border-radius: 14px;
-              box-shadow: -3px -2px 6px rgba(0, 0, 0, 0.3);
+              box-shadow: -2px -1px 6px rgba(0, 0, 0, 0.3);
 
               &:before{
                 position: absolute;
@@ -1332,5 +1384,9 @@
       right: 15px;
       left: 15px;
       bottom: 60px;
+    }
+    .select2-Area{
+      width: 100%;
+      
     }
   }

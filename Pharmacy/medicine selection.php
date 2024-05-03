@@ -10,6 +10,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -80,11 +81,13 @@
             <section class="medicinalZone">
                 <div class="scrollbar-outer scrollArea">
                     <div class="addMedicine">
-                        <select>
-                            <option>PANADOL ACTIFAST tablets 500mg 8</option>
-                            <option>option 1</option>
-                            <option>option 2</option>
-                        </select>
+                        <div class="select2-container select2-Area">
+                            <select>
+                                <option>PANADOL ACTIFAST tablets 500mg 8</option>
+                                <option>option 1</option>
+                                <option>option 2</option>
+                            </select>
+                        </div>
                         <button class="reset-btn">Reset</button>
                         <button>Search</button>
                     </div>
@@ -105,104 +108,148 @@
                         </ul>
                     </div>
                     <section class="medicines-area">
-                        <div class="medicine-Info">
-                            <div class="med-form">
-                                <label>Medicine Type<i></i></label>
-                                <div class="select">
-                                    <select>
-                                        <option>MAR</option>
-                                        <option>opt1</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <ul class="medicine-Info">
+                            <li>
+                                <label>Medicine Type
+                                    <i>
+                                        <div class="medicineHistory" style="width: 190px; height:70px">
+                                            <div class="scrollbar-inner scrollArea">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <select>
+                                    <option>MAR</option>
+                                    <option>opt1</option>
+                                </select>
+                            </li>
 
-                            <div class="med-form">
+                            <li>
                                 <label>Repeat / Interim</label>
-                                <div class="select">
-                                    <select>
-                                        <option>Interim</option>
-                                        <option>opt1</option>
-                                    </select>
-                                </div>
-                            </div>
+                                <select>
+                                    <option>Interim</option>
+                                    <option>opt1</option>
+                                </select>
+                            </li>
 
-                            <div class="med-form">
-                                <label>Duration<span>Day(s)</span><i></i></label>
+                            <li>
+                                <label>Duration<span>Day(s)</span>
+                                    <i>
+                                        <div class="medicineHistory" style="width: 190px; height:70px">
+                                            <div class="scrollbar-inner scrollArea">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
                                 <div class="input-wrapper">
-                                    <input type="text" id="textInput" placeholder="7">
+                                    <input type="text" id="textInput" placeholder="1">
                                     <span class="up-button"></span>
                                     <span class="down-button"></span>
                                 </div>
-                            </div>
+                            </li>
 
-                            <div class="med-form">
-                                <label>Administration Frequency<i></i></label>
-                                <div class="select">
-                                    <select>
-                                        <option>Scheduled</option>
-                                        <option>opt1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="med-form">
-                                <label>Requires Dual Signature<i></i></label>
-                                <div class="select">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="medicine-Info">
-                            <div class="med-form">
+                            <li>
+                                <label>Administration Frequency
+                                    <i>
+                                        <div class="medicineHistory" style="width: 190px; height: 70px">
+                                            <div class="scrollbar-inner scrollArea">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <select>
+                                    <option>Scheduled</option>
+                                    <option>opt1</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>Requires Dual Signature
+                                    <i>
+                                        <div class="medicineHistory" style="width: 190px; height:70px">
+                                            <div class="scrollbar-inner scrollArea">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="medicine-Info">
+                            <li>
                                 <label>Homely Remedy</label>
-                                <div class="select">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="med-form">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                            <li>
                                 <label>End Date</label>
-                                <div class="select">
-                                    <input type="date" placeholder="">
-                                </div>
-                            </div>
-                            <div class="med-form">
-                                <label>Interim Order<i></i></label>
-
-                                <div class="select">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="med-form">
+                                <input type="date" placeholder="">
+                            </li>
+                            <li>
+                                <label>Interim Order
+                                    <i>
+                                        <div class="medicineHistory" style="width: 190px; height:70px">
+                                            <div class="scrollbar-inner scrollArea">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                            <li>
                                 <label>Controlled Drug</label>
-
-                                <div class="select">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="med-form">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                            <li>
                                 <label>Packaging Type</label>
-                                <div class="select">
-                                    <select>
-                                        <option>Original</option>
-                                        <option>opt1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                                <select>
+                                    <option>Original</option>
+                                    <option>opt1</option>
+                                </select>
+                            </li>
+                        </ul>
                     </section>
                 </div>
-
             </section>
             <footer>
                 <button class="back-btn" type="button">Back</button>
@@ -213,6 +260,7 @@
         </section>
     </div>
     <script src="../js/jquery.scrollbar.min.js"></script>
+    <script src="../js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
             var menu = $(".menu");
@@ -242,6 +290,29 @@
             jQuery(document).ready(function () {
                 jQuery('.scrollArea').scrollbar();
             });
+
+            jQuery(document).ready(function () {
+                jQuery('.select2-Area').select2();
+            });
+
+            $(".up-button").click(function(){
+                var value = parseInt($("#textInput").val(), 10);
+                value = isNaN(value) ? 1 : value;
+                if (value < 7) {
+                    value++;
+                }
+                $("#textInput").val(value);
+            });
+
+            $(".down-button").click(function(){
+                var value = parseInt($("#textInput").val(), 10);
+                value = isNaN(value) ? 1 : value;
+                if (value > 1) {
+                    value--;
+                }
+                $("#textInput").val(value);
+            });
+
         });
 
     </script>
