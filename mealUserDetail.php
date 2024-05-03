@@ -35,7 +35,72 @@
 	</section>
 
 	<section class="contentBody noBg noFooter">
-        
+        <div class="mealUserDetail">
+            <section>
+                <div>
+                    <span class="title">Food intake</span>
+                    <div class="scrollArea">
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="title">Breakfast</span>
+                                <p><i>22.02.2023</i> Cereal, Fried Egg, Scrambled Eggs, Poached Egg, Boiled Eggs, Porridge, Coffee, Tea, Fruit Juice</p>
+                            </li>
+                            <li>
+                                <span class="title">Lunch</span>
+                                <p><i>22.02.2023</i> Cereal, Fried Egg, Scrambled Eggs, Poached Egg, Boiled Eggs, Porridge, Coffee, Tea, Fruit Juice</p>
+                            </li>
+                            <li>
+                                <p><i>22.02.2023</i> Cereal, Fried Egg, Scrambled Eggs</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="likes">
+                    <span class="title">Likes</span>
+                    <div class="scrollArea">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>He like to have Tea with 2 Tea spoon honey.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="title">5 Recent Orders</span>
+                    <div class="scrollArea">
+                        <ul class="list-unstyled">
+                            <li>
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dislikes">
+                    <span class="title">Dislikes</span>
+                    <div class="scrollArea">
+                        <ul class="list-unstyled">
+                            <li>
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <aside>
+                <span class="title">Food Allergies</span>
+                
+                <ul class="list-unstyled">
+                    <li>
+                        <span class="title">Glorbs</span>
+                        <p>Fink has a food allergy from Its been, pharmacy was informed via Phone</p>
+                    </li>
+                </ul>
+            </aside>
+        </div>
 	</section>
 
     <div class="pop" style="display: none;">

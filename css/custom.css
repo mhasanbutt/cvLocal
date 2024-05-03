@@ -42043,6 +42043,129 @@ input[type=checkbox].switch:checked + label:before {
   top: 0;
 }
 
+.mealUserDetail {
+  font-family: "Poppins";
+  height: 100%;
+}
+.mealUserDetail > section {
+  width: calc(100% - 410px);
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+}
+.mealUserDetail > section > div {
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #DDD;
+  padding: 10px;
+  position: relative;
+  width: calc((100% - 10px) / 2);
+  height: calc((100% - 10px) / 2);
+}
+.mealUserDetail > section > div > .title {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #004565;
+  margin-bottom: 5px;
+}
+.mealUserDetail > section > div .scroll-wrapper {
+  left: 10px;
+  right: 10px;
+  top: 38px;
+  bottom: 10px;
+  width: auto;
+}
+.mealUserDetail > section > div ul {
+  margin: 0;
+  padding-right: 20px;
+}
+.mealUserDetail > section > div ul li .title {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFF;
+  display: block;
+  border-radius: 4px;
+  background-color: #CEB7AB;
+  padding: 3px 5px;
+}
+.mealUserDetail > section > div ul li .title + p {
+  border-top: 0;
+}
+.mealUserDetail > section > div ul li p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #404455;
+  padding: 5px 0;
+  margin: 0;
+  border-top: 1px solid #DDD;
+}
+.mealUserDetail > section > div ul li p i {
+  float: right;
+  color: #8D99AE;
+  font-weight: 500;
+  margin-left: 10px;
+  font-style: normal;
+}
+.mealUserDetail > section > div.likes, .mealUserDetail > section > div.dislikes {
+  border: 0;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 10px;
+}
+.mealUserDetail > section > div.likes {
+  background-color: #CCD5AE;
+  background-image: url("../images/like.png");
+}
+.mealUserDetail > section > div.dislikes {
+  background-color: #F5CAC3;
+  background-image: url("../images/dislike.png");
+}
+.mealUserDetail aside {
+  width: 400px;
+  margin-left: 10px;
+  float: right;
+}
+.mealUserDetail aside > .title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #004565;
+  display: block;
+  margin-bottom: 10px;
+}
+.mealUserDetail aside ul {
+  margin: 0;
+}
+.mealUserDetail aside ul li {
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin-top: 10px;
+}
+.mealUserDetail aside ul li:first-child {
+  margin-top: 0;
+}
+.mealUserDetail aside ul li .title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #404455;
+  display: block;
+  margin-bottom: 5px;
+}
+.mealUserDetail aside ul li p {
+  font-size: 12px;
+  line-height: 16px;
+  font-style: italic;
+  color: #8D99AE;
+  margin: 0;
+}
+
 .scroll-element.scroll-x {
   display: none !important;
 }
