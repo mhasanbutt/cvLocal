@@ -7,11 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="images/favicon.png" rel="shortcut icon">
 	<title>CareVision - Less Admin, More Caring</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -80,11 +78,11 @@
             <section class="medicinalZone">
                 <div class="scrollbar-outer scrollArea">
                     <div class="addMedicine">
-                        <select>
-                            <option>Select Medicine</option>
+                        <select class="select2">
+                            <option>PANADOL ACTIFAST tablets 500mg 8</option>
                             <option>option 1</option>
                             <option>option 2</option>
-                        </select><br>
+                        </select>
                         <button class="reset-btn">Reset</button>
                         <button>Search</button>
                     </div>
@@ -108,7 +106,8 @@
             </footer>
         </section>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/select2.min.js"></script>
     <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -137,6 +136,9 @@
             });
             jQuery(document).ready(function () {
                 jQuery('.scrollArea').scrollbar();
+            });
+            jQuery(document).ready(function () {
+                jQuery('.select2').select2();
             });
         });
 

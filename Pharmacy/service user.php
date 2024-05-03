@@ -7,11 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="images/favicon.png" rel="shortcut icon">
 	<title>CareVision - Less Admin, More Caring</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -104,6 +101,7 @@
 
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
