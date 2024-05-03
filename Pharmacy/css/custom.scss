@@ -1386,7 +1386,16 @@
       bottom: 60px;
     }
     .select2-Area{
-      width: 100%;
+
       
     }
   }
+.select2-container--default .select2-selection__arrow {
+  display: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+
+}
+.select2-container--default .select2-selection--single{
+
+}

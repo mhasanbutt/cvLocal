@@ -298,7 +298,7 @@
             $(".up-button").click(function(){
                 var value = parseInt($("#textInput").val(), 10);
                 value = isNaN(value) ? 1 : value;
-                if (value < 7) {
+                if (value < 30) {
                     value++;
                 }
                 $("#textInput").val(value);
