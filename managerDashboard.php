@@ -29,7 +29,7 @@
         </section>
     </div>
 
-    <div class="pop" style="display:table;">
+    <div class="pop">
         <div>
             <section>
                 <article style="width:550px;">
@@ -106,7 +106,27 @@
                                 <span class="subTitle">Employees</span>
                                 <div class="extraStat"><span>17</span> Attendance<br>Warnings</div>
                                 <ul class="list-unstyled clearfix">
-                                    <li>77 <i>Active</i></li>
+                                    <li>
+                                        <article class="toolTip">
+                                            <div class="infoPop">
+                                                <ul class="list-unstyled clearfix">
+                                                    <li>
+                                                        <span class="hours">12</span>
+                                                        <span>Suspended</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="hours">5</span>
+                                                        <span>Agency</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="hours">72</span>
+                                                        <span>Actuall</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        77 <i>Active</i>
+                                    </li>
                                     <li>02 <i>Leavers</i></li>
                                 </ul>
                                 <a href="#" data-text="Go To Employees Listing"></a>

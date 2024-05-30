@@ -10,13 +10,45 @@
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <link href="css/select2.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="landing-page">
+        <section class="sidenav">
 
-        <?php include('sideNav.php');?>
-        
+            <div class="logo"><img src="images/pharmacy%20logo.png"></div>
+
+            <ul>
+                <li class="menu"><img src="images/menus.png">Menu
+                    <section class="dropdown-sec">
+                        <div class="dropdown">
+                            <ul>
+                                <li>Service User Register</li>
+                                <li>Service User</li>
+                                <li>eMar Cycles</li>
+                                <li>eMar</li>
+                                <li>Service User Medication</li>
+                                <li>Homely Remedy Medication</li>
+                                <li>Service User Stock</li>
+                                <li>Return & Destroy</li>
+                                <li>Convert Medication</li>
+                                <li>Medicine Room</li>
+                            </ul>
+                        </div>
+                    </section>
+                </li>
+                <li><img src="images/orders-list.png">Orders</li>
+                <li><img src="images/home-page.png"> Homes</li>
+            </ul>
+
+            <div class="bottom-items">
+                <ul>
+                    <li><img src="images/Ellipse%201.png"></li>
+                    <li><img src="images/logout.png"> logout</li>
+                </ul>
+            </div>
+        </section>
         <section class="contentBody">
             <div class="topBar">
                 <div class="breadCrumb">
@@ -37,6 +69,7 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="alertCenter">
                 <ul class="user-alerts clearfix">
                     <li class="orange">Allergies</li>
@@ -44,6 +77,7 @@
                     <li>vaccination</li>
                 </ul>
             </div>
+            
             <section class="medicinalZone">
                 <div class="scrollbar-outer scrollArea">
                     <div class="addMedicine">

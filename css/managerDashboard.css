@@ -85,13 +85,13 @@
 .managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(8) article {
   background-color: #EDDCD2;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article {
   border-radius: 10px;
   padding: 10px;
   position: relative;
   height: 100%;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article .subTitle {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article .subTitle {
   color: #404455;
   display: block;
   text-align: left;
@@ -99,7 +99,7 @@
   font-size: 14px;
   font-weight: 400;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article .extraStat {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article .extraStat {
   background-color: #ED1C24;
   border-radius: 6px;
   padding: 5px;
@@ -111,7 +111,7 @@
   top: 10px;
   line-height: 14px;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article .extraStat span {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article .extraStat span {
   float: left;
   border-radius: 4px;
   background-color: #EDF2F4;
@@ -123,13 +123,13 @@
   color: #404455;
   margin-right: 5px;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article p {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article p {
   text-align: left;
   color: #00509D;
   font-size: 11px;
   font-weight: 500;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article ul {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul {
   margin: 0;
   width: calc(100% - 20px);
   position: absolute;
@@ -137,7 +137,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article ul li {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li {
   float: left;
   width: 50%;
   font-size: 54px;
@@ -146,17 +146,87 @@
   font-weight: 600;
   position: relative;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article ul li:first-child {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li:first-child {
   border-right: 1px solid #EDF2F4;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article ul li i {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li i {
   display: block;
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
   color: #404455;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article a {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 8px;
+  top: 5px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/eMarMoreInfo.png");
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop {
+  position: absolute;
+  background-color: #EDF2F4;
+  border: 2px solid #778DA9;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 2;
+  left: -9px;
+  top: 100%;
+  transition: all 200ms linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop ul {
+  margin: 0;
+  display: flex;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop ul li {
+  padding: 5px 10px;
+  text-align: center;
+  border-left: 1px solid #BDE0FE;
+  white-space: normal;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop ul li:first-child {
+  border-left: 0;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop ul li > span {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  color: #778DA9;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop ul li > span.hours {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-transform: none;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip .infoPop:after {
+  position: absolute;
+  content: "";
+  left: 10px;
+  bottom: calc(100% - 3px);
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/rotaMoreInfoArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  transform: rotate(180deg);
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article > ul > li .toolTip:hover .infoPop {
+  visibility: visible;
+  opacity: 1;
+}
+.managerDashSimplified .dashContainer > section .sections > ul > li > article a {
   background-color: #00509D;
   border-radius: 6px;
   display: block;
@@ -173,7 +243,7 @@
   transition: color 0.5s, transform 0.2s;
   font-weight: 400;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article a:before {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article a:before {
   display: block;
   content: attr(data-text);
   position: absolute;
@@ -187,7 +257,7 @@
   transition: opacity 0.3s;
   z-index: 2;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article a:after {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article a:after {
   display: block;
   content: "";
   position: absolute;
@@ -202,14 +272,14 @@
   transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
   z-index: 1;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article a:hover:before {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article a:hover:before {
   color: #00509D;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article a:hover:after {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article a:hover:after {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article.subSections ul {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article.subSections ul {
   top: 10px;
   bottom: 10px;
   left: 10px;
@@ -217,17 +287,17 @@
   transform: none;
   width: auto;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article.subSections ul li {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article.subSections ul li {
   width: calc((100% - 10px) / 2);
   background-color: #FFF;
   border-radius: 8px;
   height: 100%;
   padding: 10px;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article.subSections ul li:first-child {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article.subSections ul li:first-child {
   margin-right: 10px;
 }
-.managerDashSimplified .dashContainer > section .sections > ul > li article.subSections ul li i {
+.managerDashSimplified .dashContainer > section .sections > ul > li > article.subSections ul li i {
   font-size: 14px;
 }
 .managerDashSimplified .dashContainer > section .sections > ul > li:nth-child(3) article ul {
@@ -323,8 +393,7 @@
   display: table;
   z-index: 1002;
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   opacity: 0;
   visibility: hidden;
 }
@@ -376,4 +445,6 @@
 .dashboardOverlay.showOverlay {
   opacity: 1;
   visibility: visible;
-}/*# sourceMappingURL=managerDashboard.css.map */
+}
+
+/*# sourceMappingURL=managerDashboard.css.map */

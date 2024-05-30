@@ -1213,7 +1213,7 @@ header.colored section .headerIcons img path {
   float: right;
   width: 100%;
 }
-.contentHeader .filtersSearch > a {
+.contentHeader .filtersSearch > a, .contentHeader .filtersSearch button {
   background-color: #697979;
   font-size: 14px;
   color: #FFF;
@@ -1223,13 +1223,16 @@ header.colored section .headerIcons img path {
   margin-left: 5px;
   float: right;
   cursor: pointer;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins";
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left 6px top 7px;
 }
-.contentHeader .filtersSearch > a.new {
+.contentHeader .filtersSearch > a.new, .contentHeader .filtersSearch button.new {
   background-color: #004E89;
   position: relative;
 }
-.contentHeader .filtersSearch > a.new:before {
+.contentHeader .filtersSearch > a.new:before, .contentHeader .filtersSearch button.new:before {
   display: block;
   height: 16px;
   width: 16px;
@@ -1245,8 +1248,11 @@ header.colored section .headerIcons img path {
   font-size: 18px;
   font-weight: 500;
 }
-.contentHeader .filtersSearch > a.icon {
+.contentHeader .filtersSearch > a.icon, .contentHeader .filtersSearch button.icon {
   padding-left: 30px;
+}
+.contentHeader .filtersSearch > button {
+  border: 0;
 }
 .contentHeader .filtersSearch .dropMenu {
   float: right;
@@ -5230,7 +5236,7 @@ hr.BoldHr {
   white-space: nowrap;
 }
 .table.training > thead > tr:nth-of-type(2) > th {
-  background-color: #828787;
+  background-color: #828787 !important;
   text-align: center;
   white-space: nowrap;
 }
@@ -5267,7 +5273,7 @@ hr.BoldHr {
 }
 .table.training > tbody > tr > td:first-child span {
   display: block;
-  color: #648DAC;
+  color: #648DAC !important;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -5278,16 +5284,16 @@ hr.BoldHr {
   width: 18px;
 }
 .table.training > tbody > tr > td.green {
-  color: #78D09F;
+  color: #78D09F !important;
 }
 .table.training > tbody > tr > td.orange {
-  color: #F8931D;
+  color: #F8931D !important;
 }
 .table.training > tbody > tr > td.red {
-  color: #F27177;
+  color: #F27177 !important;
 }
 .table.training > tbody > tr > td.blue {
-  color: #899AE4;
+  color: #899AE4 !important;
 }
 .table.training > tbody > tr > td:nth-last-child(-n+4) .helpTip.forTable .tTText {
   right: 50%;
@@ -8157,39 +8163,6 @@ hr.BoldHr {
   content: "";
   border: 2px solid #6DC77A;
 }
-.serviceUsers.medAuth > li {
-  width: 50%;
-}
-@media screen and (min-width: 1500px) {
-  .serviceUsers.medAuth > li {
-    width: 33.3333333333%;
-  }
-}
-.serviceUsers.medAuth > li article {
-  padding: 15px;
-  border-radius: 4px;
-}
-.serviceUsers.medAuth > li article .picture {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 150px;
-  height: 150px;
-  display: block;
-  overflow: hidden;
-  float: left;
-  margin-right: 15px;
-  border-radius: 4px;
-  border: 0;
-}
-.serviceUsers.medAuth > li article .picture img {
-  position: relative;
-  border-radius: 4px;
-}
-.serviceUsers.medAuth > li article .title {
-  display: inline-block;
-  width: calc(100% - 165px);
-}
 .serviceUsers ul {
   margin: 0;
   padding: 5px 0 0 0;
@@ -8230,6 +8203,71 @@ hr.BoldHr {
 .serviceUsers ul li.allowed > span svg path,
 .serviceUsers ul li.allowed > span img path {
   fill: #6DC77A;
+}
+
+.medAuth {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+.medAuth > li {
+  width: calc((100% - 20px) / 3);
+  padding: 10px;
+  background-color: #FFF;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.medAuth > li .picture {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(63, 66, 83, 0.4);
+  background-color: rgba(63, 66, 83, 0.1);
+  overflow: hidden;
+}
+.medAuth > li .picture img {
+  width: 100%;
+  height: 100%;
+}
+.medAuth > li .title {
+  float: left;
+  width: calc(100% - 160px);
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.medAuth > li .title small {
+  color: #828787;
+}
+.medAuth > li ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  float: left;
+  width: calc(100% - 160px);
+}
+.medAuth > li ul li {
+  width: calc((100% - 5px) / 2);
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-family: "Poppins";
+}
+.medAuth > li ul li.allowed {
+  background-color: #63D4A0;
+}
+.medAuth > li ul li.notAllowed {
+  background-color: #9eadb2;
+  color: #FFF;
 }
 
 .RSDashboardInfo .profilePicture {
@@ -13789,11 +13827,11 @@ hr.BoldHr {
   float: right;
   width: 600px;
 }
-.dashboard .statLinks .stats ul {
+.dashboard .statLinks .stats > ul {
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
 }
-.dashboard .statLinks .stats ul li {
+.dashboard .statLinks .stats > ul > li {
   border-radius: 8px;
   height: 64px;
   background-color: #404455;
@@ -13802,26 +13840,26 @@ hr.BoldHr {
   padding: 5px;
   position: relative;
 }
-.dashboard .statLinks .stats ul li:first-child {
+.dashboard .statLinks .stats > ul > li:first-child {
   margin-left: 0;
   background-color: #08B2D3;
 }
-.dashboard .statLinks .stats ul li:first-child > span:first-of-type {
+.dashboard .statLinks .stats > ul > li:first-child > span:first-of-type {
   color: #16191B;
 }
-.dashboard .statLinks .stats ul li:first-child > span:first-of-type i {
+.dashboard .statLinks .stats > ul > li:first-child > span:first-of-type i {
   color: #16191B;
 }
-.dashboard .statLinks .stats ul li.medicationOrder {
+.dashboard .statLinks .stats > ul > li.medicationOrder {
   margin-right: 5px;
 }
-.dashboard .statLinks .stats ul li.medicationOrder > span i {
+.dashboard .statLinks .stats > ul > li.medicationOrder > span i {
   color: #DCDEDE;
 }
-.dashboard .statLinks .stats ul li.medicationOrder > span:nth-of-type(2) {
+.dashboard .statLinks .stats > ul > li.medicationOrder > span:nth-of-type(2) {
   background-color: #CCB7A8;
 }
-.dashboard .statLinks .stats ul li.medicationOrder:before {
+.dashboard .statLinks .stats > ul > li.medicationOrder:before {
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -13833,7 +13871,7 @@ hr.BoldHr {
   top: 50%;
   transform: translateY(-50%);
 }
-.dashboard .statLinks .stats ul li > span {
+.dashboard .statLinks .stats > ul > li > span {
   padding: 5px 10px;
   float: left;
   height: 100%;
@@ -13843,22 +13881,95 @@ hr.BoldHr {
   color: #404455;
   line-height: 1;
 }
-.dashboard .statLinks .stats ul li > span:first-of-type {
+.dashboard .statLinks .stats > ul > li > span:first-of-type {
   color: #FFF;
 }
-.dashboard .statLinks .stats ul li > span:nth-of-type(2) {
+.dashboard .statLinks .stats > ul > li > span:nth-of-type(2) {
   background-color: #DCDEDE;
 }
-.dashboard .statLinks .stats ul li > span:nth-of-type(2) i {
+.dashboard .statLinks .stats > ul > li > span:nth-of-type(2) i {
   color: #16191B;
 }
-.dashboard .statLinks .stats ul li > span i {
+.dashboard .statLinks .stats > ul > li > span i {
   display: block;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   color: #FFF;
   font-style: normal;
+}
+.dashboard .statLinks .stats > ul > li:last-child {
+  padding-left: 20px;
+}
+.dashboard .statLinks .stats > ul > li .toolTip {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 8px;
+  top: 5px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/eMarMoreInfo.png");
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop {
+  position: absolute;
+  background-color: #EDF2F4;
+  border: 2px solid #778DA9;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 2;
+  right: -9px;
+  top: 100%;
+  transition: all 200ms linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop ul {
+  margin: 0;
+  display: flex;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop ul li {
+  padding: 5px 10px;
+  text-align: center;
+  border-left: 1px solid #BDE0FE;
+  white-space: normal;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop ul li:first-child {
+  border-left: 0;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop ul li > span {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  color: #778DA9;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop ul li > span.hours {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-transform: none;
+}
+.dashboard .statLinks .stats > ul > li .toolTip .infoPop:after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  bottom: calc(100% - 3px);
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/rotaMoreInfoArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  transform: rotate(180deg);
+}
+.dashboard .statLinks .stats > ul > li .toolTip:hover .infoPop {
+  visibility: visible;
+  opacity: 1;
 }
 .dashboard .moreStats {
   height: calc(100% - 262px);
@@ -19392,10 +19503,18 @@ hr.BoldHr {
   left: 50%;
   top: 0;
   display: inline-block;
-  color: #333;
+  color: #FFF;
   font-size: 12px;
   transform: translateX(-50%) translateY(0);
-  line-height: 1;
+  line-height: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.progress.fullWidth {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 24px;
 }
 
 .GpFileUploadName .progress {
@@ -19454,43 +19573,6 @@ hr.BoldHr {
 .fundingDetails .removeType svg path,
 .fundingDetails .removeType img path {
   fill: #CB0000;
-}
-
-.VideoWrap {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-}
-.VideoWrap .VideoWrapItem {
-  float: left;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 30px;
-}
-.VideoWrap .VideoWrapItem h4 {
-  color: #F8931D;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 0 10px 0;
-}
-.VideoWrap .VideoWrapItem p {
-  font-size: 13px;
-  font-family: "Roboto Condensed", sans-serif;
-  height: 37px;
-  overflow: hidden;
-}
-.VideoWrap .VideoWrapItem .btn {
-  border-radius: 4px;
-  background-color: #648DAC;
-  color: #FFF;
-  font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
-  display: inline-block;
-  padding: 9px 15px;
-  text-transform: none;
-  cursor: pointer;
 }
 
 .pageNotFound {
@@ -22723,93 +22805,6 @@ hr.BoldHr {
   border-right: 0;
 }
 
-.VideoWrap {
-  float: left;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.VideoWrap .VideoItem {
-  float: left;
-  width: calc((100% - 60px) / 3);
-  list-style: none;
-  background: #fff;
-  border-radius: 4px;
-  padding: 10px 10px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  height: 100%;
-}
-.VideoWrap .VideoItem:nth-child(3n+3) {
-  margin-right: 0;
-}
-.VideoWrap .VideoItem a {
-  float: left;
-  width: 100%;
-}
-.VideoWrap .VideoItem img {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  display: block;
-}
-.VideoWrap .VideoItem h4 {
-  color: #F8931D;
-  padding: 0;
-  border-radius: 4px 4px 0 0;
-  font-size: 20px;
-  font-weight: 400;
-  float: left;
-  margin: 10px 0 10px 0;
-  width: 100%;
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.VideoWrap.VideoList {
-  float: left;
-  width: 100%;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.VideoWrap.VideoList .VideoItem h4 {
-  text-align: left;
-  color: #F8931D;
-  font-size: 16px;
-  font-weight: 500;
-  float: left;
-  margin: 0 0 10px 0;
-  width: 100%;
-  text-align: left;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.VideoWrap.VideoList .VideoItem p {
-  font-size: 13px;
-  height: 37px;
-  overflow: hidden;
-  color: #666;
-  float: left;
-  width: 100%;
-  margin: 0;
-}
-.VideoWrap.VideoList .VideoItem .playBtn {
-  float: left;
-  clear: both;
-  font-size: 14px;
-  margin: 8px 0 0 0;
-  width: auto;
-  cursor: pointer;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #000;
-}
-.VideoWrap.VideoList .VideoItem img {
-  float: left;
-  width: 15px;
-  height: 15px;
-  margin: 2px 5px 0 0;
-}
-
 .ticket_list {
   right: 15px;
   bottom: 15px;
@@ -23432,56 +23427,79 @@ hr.BoldHr {
   top: 201px;
 }
 
-.tutorial-folder {
-  border-radius: 0 6px 6px 6px;
-  padding: 15px;
-  background: #ebb930;
-  background: -moz-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
-  background: -webkit-linear-gradient(top, #ebb930 0%, #ffd96a 100%);
-  background: linear-gradient(to bottom, #ebb930 0%, #ffd96a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebb930", endColorstr="#ffd96a", GradientType=0);
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.35);
-  position: relative;
-  display: table;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
-  width: 100%;
-  margin-bottom: 30px;
+.tutorialListing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.tutorial-folder > a {
-  vertical-align: bottom;
-  height: 100px;
-  display: table-cell;
-  color: #333;
+.tutorialListing li {
+  width: calc((100% - 50px) / 6);
 }
-.tutorial-folder span {
+.tutorialListing li a {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #DDD;
+  background-color: #FAFAFA;
+  padding: 66px 10px 10px 10px;
+  background-image: url("../images/folder.png");
+  background-position: left 10px top 10px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  color: #404455;
   font-size: 14px;
-  color: rgb(97, 112, 115);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+  line-height: 18px;
+  font-family: "Poppins";
+  height: 100%;
+}
+
+.videoCategorylisting {
+  height: 100%;
+}
+.videoCategorylisting .scroll-wrapper {
+  width: 410px;
+}
+.videoCategorylisting .scroll-wrapper ul {
+  float: left;
+  width: 390px;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  border: 1px solid #DDD;
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  padding: 10px;
+}
+.videoCategorylisting .scroll-wrapper ul li {
+  border-top: 1px solid #DDD;
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ADAFB4;
+  font-family: "Poppins";
+}
+.videoCategorylisting .scroll-wrapper ul li .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #063E59;
   display: block;
 }
-.tutorial-folder:before {
-  position: absolute;
-  content: "";
-  width: 116px;
-  height: 17px;
-  display: block;
-  background-image: url("../images/video-tutorials-img1.png");
-  left: -2px;
-  bottom: 100%;
+.videoCategorylisting .scroll-wrapper ul li:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
-.tutorial-folder:after {
-  position: absolute;
-  content: "";
-  width: 120px;
-  height: 120px;
-  background-image: url("../images/video-img.png");
-  background-size: contain;
-  left: 5px;
-  bottom: 10px;
-  opacity: 0.5;
-  pointer-events: none;
+.videoCategorylisting aside {
+  float: right;
+  height: 100%;
+  text-align: center;
+  width: calc(100% - 420px);
+  font-size: 24px;
+  line-height: 32px;
+  color: #404455;
+  font-family: "Poppins";
+}
+.videoCategorylisting aside iframe, .videoCategorylisting aside embed {
+  height: calc(100% - 64px);
 }
 
 .handoverSearch li:first-child {
@@ -28562,7 +28580,7 @@ hr.BoldHr {
   margin-bottom: 5px;
 }
 .rotaGrid .rotaGridContainer .rotagrid .rotausertable li {
-  width: calc((100% - 140px) / 8);
+  width: calc((100% - 141px) / 8);
   margin-left: 5px;
   background-blend-mode: unset;
   background-color: transparent;
@@ -28767,7 +28785,7 @@ hr.BoldHr {
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:last-child {
   font-size: 8px;
   line-height: 1.2;
-  width: 100px;
+  width: 99px;
   padding: 0 0 0 10px !important;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:last-child:before {
@@ -33213,16 +33231,13 @@ input[type=checkbox].switch:checked + label:before {
   margin-right: 20px;
 }
 .newSUList .listContainer > ul {
-  margin: 0 -5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .newSUList .listContainer > ul > li {
-  padding: 0 5px;
-  float: left;
-  width: 25%;
-  margin-top: 10px;
-}
-.newSUList .listContainer > ul > li:nth-child(-n+4) {
-  margin-top: 0;
+  width: calc((100% - 30px) / 4);
 }
 .newSUList .listContainer > ul > li article {
   border-width: 2px;
@@ -33232,8 +33247,8 @@ input[type=checkbox].switch:checked + label:before {
   background-color: rgb(255, 255, 255);
   padding: 10px;
   color: #3f4253;
-  height: 304px;
   position: relative;
+  height: 100%;
 }
 .newSUList .listContainer > ul > li article .picture {
   border-width: 2px;
@@ -33329,6 +33344,16 @@ input[type=checkbox].switch:checked + label:before {
 }
 .newSUList .listContainer > ul > li article .respect {
   background-color: #bd043d;
+}
+.newSUList .listContainer > ul > li article .pronounce {
+  float: left;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0 5px;
+  border-radius: 4px;
+  color: #333;
+  background-color: #ceb6a8;
+  font-weight: 500;
 }
 .newSUList .listContainer > ul > li article .gsf {
   position: absolute;
@@ -33450,6 +33475,7 @@ input[type=checkbox].switch:checked + label:before {
   width: 24px;
   margin-right: 5px;
   animation: blink-animation 1s steps(5, start) infinite;
+  text-indent: -9999px;
 }
 .newSUList .listContainer > ul > li article .postFallAlert img,
 .newSUList .listContainer > ul > li article .fluidAlert img,
@@ -33760,7 +33786,7 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 500;
   background-color: #697979;
   color: #FFF;
-  padding: 2px 10px;
+  padding: 5px 10px;
 }
 .pop > div > section > article .alertDetail {
   border: 0;
@@ -37129,6 +37155,7 @@ input[type=checkbox].switch:checked + label:before {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 5px;
+  position: relative;
 }
 .newForm ul li .title i {
   font-style: normal;
@@ -37144,7 +37171,6 @@ input[type=checkbox].switch:checked + label:before {
 }
 .newForm ul li .info {
   position: absolute;
-  display: block;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -37152,8 +37178,7 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
-  right: 0;
-  top: -2px;
+  top: -3px;
 }
 .newForm ul li .text {
   display: block;
@@ -38924,6 +38949,37 @@ input[type=checkbox].switch:checked + label:before {
 }
 .generalListing.doubleShade section:nth-of-type(even) {
   background-color: #E8E8E4;
+}
+.generalListing.subSections section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 23px 10px 5px 10px;
+}
+.generalListing.subSections section ul {
+  float: left;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #093d5a;
+  margin: 0;
+}
+.generalListing.subSections section ul.noTitle {
+  border: 0;
+}
+.generalListing.subSections section ul li i {
+  position: absolute;
+  content: attr(data-title);
+  left: -1px;
+  top: -20px;
+  border-radius: 6px;
+  background-color: #093d5b;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 5px;
+  font-style: normal;
+  font-family: "Poppins";
 }
 
 .surveyQuestions {
@@ -40913,18 +40969,18 @@ input[type=checkbox].switch:checked + label:before {
   border-top: 0;
 }
 
-.newRota {
+.newRota, .mealMenu {
   padding-right: 15px;
 }
-.newRota .rotaDays {
+.newRota .rotaDays, .newRota .week, .mealMenu .rotaDays, .mealMenu .week {
   height: 24px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-.newRota .rotaDays ul {
+.newRota .rotaDays ul, .newRota .week ul, .mealMenu .rotaDays ul, .mealMenu .week ul {
   margin: 0;
 }
-.newRota .rotaDays ul li {
+.newRota .rotaDays ul li, .newRota .week ul li, .mealMenu .rotaDays ul li, .mealMenu .week ul li {
   float: left;
   margin-left: 5px;
   width: calc((100% - 30px) / 7);
@@ -40939,7 +40995,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 20px;
   transition: all 200ms linear;
 }
-.newRota .rotaDays ul li i {
+.newRota .rotaDays ul li i, .newRota .week ul li i, .mealMenu .rotaDays ul li i, .mealMenu .week ul li i {
   float: left;
   height: 20px;
   border-radius: 4px;
@@ -40954,20 +41010,20 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
   font-weight: 600;
 }
-.newRota .rotaDays ul li.today i {
+.newRota .rotaDays ul li.today i, .newRota .week ul li.today i, .mealMenu .rotaDays ul li.today i, .mealMenu .week ul li.today i {
   background-color: #FFCD60;
 }
-.newRota .rotaDays ul li:first-child {
+.newRota .rotaDays ul li:first-child, .newRota .week ul li:first-child, .mealMenu .rotaDays ul li:first-child, .mealMenu .week ul li:first-child {
   margin-left: 0;
 }
-.newRota .scroll-wrapper {
+.newRota .scroll-wrapper, .mealMenu .scroll-wrapper {
   top: 29px;
 }
-.newRota .openShifts {
+.newRota .openShifts, .mealMenu .openShifts {
   padding-right: 15px;
   margin-bottom: 5px;
 }
-.newRota .openShifts .title {
+.newRota .openShifts > .title, .mealMenu .openShifts > .title {
   display: block;
   height: 30px;
   background-color: #004564;
@@ -40980,7 +41036,7 @@ input[type=checkbox].switch:checked + label:before {
   color: #FFF;
   font-family: "Poppins", sans-serif;
 }
-.newRota .openShifts .title i {
+.newRota .openShifts > .title i, .mealMenu .openShifts > .title i {
   font-size: 10px;
   font-weight: 500;
   color: #778DA9;
@@ -40993,20 +41049,20 @@ input[type=checkbox].switch:checked + label:before {
   background-position: right center;
   background-image: url("../images/showAllArrow.png");
 }
-.newRota .roster {
+.newRota .roster, .mealMenu .roster {
   overflow: hidden;
 }
-.newRota .roster > ul {
+.newRota .roster > ul, .mealMenu .roster > ul {
   margin: 0;
   display: flex;
 }
-.newRota .roster > ul > li {
+.newRota .roster > ul > li, .mealMenu .roster > ul > li {
   margin-left: 5px;
   width: calc((100% - 30px) / 7);
   float: left;
   font-family: "Poppins", sans-serif;
 }
-.newRota .roster > ul > li .shiftInfo {
+.newRota .roster > ul > li .shiftInfo, .mealMenu .roster > ul > li .shiftInfo {
   height: 90px;
   margin-bottom: 5px;
   background-color: #E9EDC9;
@@ -41014,10 +41070,10 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   cursor: pointer;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden {
+.newRota .roster > ul > li .shiftInfo.restHidden, .mealMenu .roster > ul > li .shiftInfo.restHidden {
   margin-bottom: 52.5px;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden:after {
+.newRota .roster > ul > li .shiftInfo.restHidden:after, .mealMenu .roster > ul > li .shiftInfo.restHidden:after {
   height: 42.5px;
   line-height: 42.5px;
   width: 100%;
@@ -41034,10 +41090,10 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 400;
   text-align: center;
 }
-.newRota .roster > ul > li .shiftInfo.restHidden ~ .toAdd {
+.newRota .roster > ul > li .shiftInfo.restHidden ~ .toAdd, .mealMenu .roster > ul > li .shiftInfo.restHidden ~ .toAdd {
   min-height: 42.5px;
 }
-.newRota .roster > ul > li .shiftInfo > .hours {
+.newRota .roster > ul > li .shiftInfo > .hours, .mealMenu .roster > ul > li .shiftInfo > .hours {
   display: block;
   height: 45px;
   padding: 10px;
@@ -41045,12 +41101,12 @@ input[type=checkbox].switch:checked + label:before {
   font-size: 16px;
   font-weight: 500;
 }
-.newRota .roster > ul > li .shiftInfo > .hours i {
+.newRota .roster > ul > li .shiftInfo > .hours i, .mealMenu .roster > ul > li .shiftInfo > .hours i {
   font-weight: 300;
   font-style: normal;
   color: #778DA9;
 }
-.newRota .roster > ul > li .shiftInfo .location {
+.newRota .roster > ul > li .shiftInfo .location, .mealMenu .roster > ul > li .shiftInfo .location {
   height: 45px;
   border-radius: 0 0 6px 6px;
   font-size: 14px;
@@ -41061,10 +41117,10 @@ input[type=checkbox].switch:checked + label:before {
   background-color: #CCD5AE;
   display: block;
 }
-.newRota .roster > ul > li .shiftInfo + .toAdd {
+.newRota .roster > ul > li .shiftInfo + .toAdd, .mealMenu .roster > ul > li .shiftInfo + .toAdd {
   height: auto;
 }
-.newRota .roster > ul > li .toAdd {
+.newRota .roster > ul > li .toAdd, .mealMenu .roster > ul > li .toAdd {
   display: block;
   height: 100%;
   min-height: 90px;
@@ -41075,7 +41131,7 @@ input[type=checkbox].switch:checked + label:before {
   position: relative;
   cursor: pointer;
 }
-.newRota .roster > ul > li .toAdd:before {
+.newRota .roster > ul > li .toAdd:before, .mealMenu .roster > ul > li .toAdd:before {
   position: absolute;
   content: "+";
   left: 50%;
@@ -41086,13 +41142,35 @@ input[type=checkbox].switch:checked + label:before {
   font-style: normal;
   font-weight: 300;
 }
-.newRota .roster > ul > li:first-child {
+.newRota .roster > ul > li .meals .title, .mealMenu .roster > ul > li .meals .title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  display: block;
+  color: #004564;
+  padding: 3px 4px;
+  background-color: #19D686;
+  border-radius: 6px;
+}
+.newRota .roster > ul > li .meals ul li, .mealMenu .roster > ul > li .meals ul li {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px;
+  border-top: 1px solid #DDD;
+}
+.newRota .roster > ul > li .meals ul li:first-child, .mealMenu .roster > ul > li .meals ul li:first-child {
+  border-top: 0;
+}
+.newRota .roster > ul > li .meals + .toAdd, .mealMenu .roster > ul > li .meals + .toAdd {
+  height: auto;
+}
+.newRota .roster > ul > li:first-child, .mealMenu .roster > ul > li:first-child {
   margin-left: 0;
 }
-.newRota .staffShifts {
+.newRota .staffShifts, .mealMenu .staffShifts {
   padding-right: 15px;
 }
-.newRota .staffShifts .infoPop {
+.newRota .staffShifts .infoPop, .mealMenu .staffShifts .infoPop {
   position: absolute;
   background-color: #EDF2F4;
   border: 2px solid #778DA9;
@@ -41105,21 +41183,21 @@ input[type=checkbox].switch:checked + label:before {
   visibility: hidden;
   opacity: 0;
 }
-.newRota .staffShifts .infoPop ul {
+.newRota .staffShifts .infoPop ul, .mealMenu .staffShifts .infoPop ul {
   margin: 0;
   display: flex;
 }
-.newRota .staffShifts .infoPop ul li {
+.newRota .staffShifts .infoPop ul li, .mealMenu .staffShifts .infoPop ul li {
   display: inline-block;
   padding: 5px 10px;
   text-align: center;
   border-left: 1px solid #BDE0FE;
   white-space: normal;
 }
-.newRota .staffShifts .infoPop ul li:first-child {
+.newRota .staffShifts .infoPop ul li:first-child, .mealMenu .staffShifts .infoPop ul li:first-child {
   border-left: 0;
 }
-.newRota .staffShifts .infoPop ul li > span {
+.newRota .staffShifts .infoPop ul li > span, .mealMenu .staffShifts .infoPop ul li > span {
   display: block;
   font-size: 10px;
   font-weight: 300;
@@ -41127,7 +41205,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 12px;
   text-transform: uppercase;
 }
-.newRota .staffShifts .infoPop ul li > span.hours {
+.newRota .staffShifts .infoPop ul li > span.hours, .mealMenu .staffShifts .infoPop ul li > span.hours {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -41135,22 +41213,22 @@ input[type=checkbox].switch:checked + label:before {
   white-space: nowrap;
   text-transform: none;
 }
-.newRota .staffShifts .infoPop ul li ul {
+.newRota .staffShifts .infoPop ul li ul, .mealMenu .staffShifts .infoPop ul li ul {
   background-color: #778DA9;
   border-radius: 4px;
 }
-.newRota .staffShifts .infoPop ul li ul li > span {
+.newRota .staffShifts .infoPop ul li ul li > span, .mealMenu .staffShifts .infoPop ul li ul li > span {
   color: #EDF2F4;
 }
-.newRota .staffShifts .infoPop ul li ul li:last-child {
+.newRota .staffShifts .infoPop ul li ul li:last-child, .mealMenu .staffShifts .infoPop ul li ul li:last-child {
   padding: 5px 10px;
   border-left: 1px solid #BDE0FE;
 }
-.newRota .staffShifts .infoPop ul > li:last-child {
+.newRota .staffShifts .infoPop ul > li:last-child, .mealMenu .staffShifts .infoPop ul > li:last-child {
   padding: 0;
   border-left: 0;
 }
-.newRota .staffShifts .infoPop:after {
+.newRota .staffShifts .infoPop:after, .mealMenu .staffShifts .infoPop:after {
   position: absolute;
   content: "";
   left: 15px;
@@ -41162,7 +41240,7 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   background-size: 12px;
 }
-.newRota .staffShifts .staffInfo {
+.newRota .staffShifts .staffInfo, .mealMenu .staffShifts .staffInfo {
   background-color: #004564;
   border-radius: 6px;
   height: 50px;
@@ -41171,14 +41249,14 @@ input[type=checkbox].switch:checked + label:before {
   font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
 }
-.newRota .staffShifts .staffInfo .staff {
+.newRota .staffShifts .staffInfo .staff, .mealMenu .staffShifts .staffInfo .staff {
   float: left;
   height: 50px;
   position: relative;
   white-space: nowrap;
   padding-right: 44px;
 }
-.newRota .staffShifts .staffInfo .staff .picture {
+.newRota .staffShifts .staffInfo .staff .picture, .mealMenu .staffShifts .staffInfo .staff .picture {
   float: left;
   height: 50px;
   width: 50px;
@@ -41187,11 +41265,11 @@ input[type=checkbox].switch:checked + label:before {
   overflow: hidden;
   margin-right: 15px;
 }
-.newRota .staffShifts .staffInfo .staff .picture img {
+.newRota .staffShifts .staffInfo .staff .picture img, .mealMenu .staffShifts .staffInfo .staff .picture img {
   width: 50px;
   height: 50px;
 }
-.newRota .staffShifts .staffInfo .staff .name, .newRota .staffShifts .staffInfo .staff .designation {
+.newRota .staffShifts .staffInfo .staff .name, .newRota .staffShifts .staffInfo .staff .designation, .mealMenu .staffShifts .staffInfo .staff .name, .mealMenu .staffShifts .staffInfo .staff .designation {
   float: left;
   width: calc(100% - 65px);
   color: #FFF;
@@ -41200,11 +41278,11 @@ input[type=checkbox].switch:checked + label:before {
   margin-top: 5px;
   text-align: left;
 }
-.newRota .staffShifts .staffInfo .staff .designation {
+.newRota .staffShifts .staffInfo .staff .designation, .mealMenu .staffShifts .staffInfo .staff .designation {
   font-weight: 300;
   margin-top: 0;
 }
-.newRota .staffShifts .staffInfo .staff .moreInfo {
+.newRota .staffShifts .staffInfo .staff .moreInfo, .mealMenu .staffShifts .staffInfo .staff .moreInfo {
   position: absolute;
   right: 0;
   top: 13px;
@@ -41216,19 +41294,19 @@ input[type=checkbox].switch:checked + label:before {
   background-position: center;
   cursor: pointer;
 }
-.newRota .staffShifts .staffInfo .staff .moreInfo:hover .infoPop {
+.newRota .staffShifts .staffInfo .staff .moreInfo:hover .infoPop, .mealMenu .staffShifts .staffInfo .staff .moreInfo:hover .infoPop {
   bottom: 100%;
   visibility: visible;
   opacity: 1;
 }
-.newRota .staffShifts .staffInfo .hoursInfo, .newRota .staffShifts .staffInfo .conflicts {
+.newRota .staffShifts .staffInfo .hoursInfo, .newRota .staffShifts .staffInfo .conflicts, .mealMenu .staffShifts .staffInfo .hoursInfo, .mealMenu .staffShifts .staffInfo .conflicts {
   color: #E26D5C;
   font-size: 14px;
   line-height: 18px;
   padding: 16px 0;
   display: inline-block;
 }
-.newRota .staffShifts .staffInfo .conflicts {
+.newRota .staffShifts .staffInfo .conflicts, .mealMenu .staffShifts .staffInfo .conflicts {
   color: #EDF2F4;
   font-weight: 600;
   margin-left: 50px;
@@ -41238,17 +41316,17 @@ input[type=checkbox].switch:checked + label:before {
   background-position: left center;
   background-size: 24px;
 }
-.newRota .staffShifts .roster ul li .shiftInfo {
+.newRota .staffShifts .roster ul li .shiftInfo, .mealMenu .staffShifts .roster ul li .shiftInfo {
   background-color: #BDE0FE;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .location {
+.newRota .staffShifts .roster ul li .shiftInfo .location, .mealMenu .staffShifts .roster ul li .shiftInfo .location {
   background-color: #A2D2FF;
 }
-.newRota .staffShifts .roster ul li .shiftInfo.onLeave {
+.newRota .staffShifts .roster ul li .shiftInfo.onLeave, .mealMenu .staffShifts .roster ul li .shiftInfo.onLeave {
   position: relative;
   overflow: hidden;
 }
-.newRota .staffShifts .roster ul li .shiftInfo.onLeave:before {
+.newRota .staffShifts .roster ul li .shiftInfo.onLeave:before, .mealMenu .staffShifts .roster ul li .shiftInfo.onLeave:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -41262,37 +41340,37 @@ input[type=checkbox].switch:checked + label:before {
   padding-top: 33px;
   text-align: center;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .infoPop {
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop, .mealMenu .staffShifts .roster ul li .shiftInfo .infoPop {
   left: 155px;
   bottom: auto;
   top: 10px;
 }
-.newRota .staffShifts .roster ul li .shiftInfo .infoPop:after {
+.newRota .staffShifts .roster ul li .shiftInfo .infoPop:after, .mealMenu .staffShifts .roster ul li .shiftInfo .infoPop:after {
   left: auto;
   right: calc(100% - 3px);
   top: 15px;
   transform: rotate(90deg);
 }
-.newRota .staffShifts .roster ul li .shiftInfo:hover .infoPop {
+.newRota .staffShifts .roster ul li .shiftInfo:hover .infoPop, .mealMenu .staffShifts .roster ul li .shiftInfo:hover .infoPop {
   left: 150px;
   visibility: visible;
   opacity: 1;
 }
-.newRota.resident .rotaDays {
+.newRota.resident .rotaDays, .mealMenu.resident .rotaDays {
   padding-left: 205px;
 }
-.newRota.resident .staffShifts .roster > ul {
+.newRota.resident .staffShifts .roster > ul, .mealMenu.resident .staffShifts .roster > ul {
   margin-top: 5px;
 }
-.newRota.resident .staffShifts .roster > ul:first-of-type {
+.newRota.resident .staffShifts .roster > ul:first-of-type, .mealMenu.resident .staffShifts .roster > ul:first-of-type {
   margin-top: 0;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child {
+.newRota.resident .staffShifts .roster > ul > li:first-child, .mealMenu.resident .staffShifts .roster > ul > li:first-child {
   width: calc((100% - 30px) / 7 + 205px);
   padding-left: 205px;
   position: relative;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident {
   position: absolute;
   top: 0;
   left: 0;
@@ -41301,14 +41379,14 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 6px;
   background-color: #004564;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident img {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident img, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident img {
   border-radius: 4px;
   height: 50px;
   width: 50px;
   float: left;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .name {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .name, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .name {
   font-size: 12px;
   font-weight: 500;
   color: #F5F5F5;
@@ -41316,7 +41394,7 @@ input[type=checkbox].switch:checked + label:before {
   float: left;
   margin: 5px 0 5px 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .allocTime {
   font-size: 10px;
   color: #F5F5F5;
   font-weight: 300;
@@ -41324,7 +41402,7 @@ input[type=checkbox].switch:checked + label:before {
   line-height: 16px;
   margin: 0 0 0 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i {
+.newRota.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i, .mealMenu.resident .staffShifts .roster > ul > li:first-child .resident .allocTime i {
   display: inline-block;
   font-weight: 500;
   color: #004564;
@@ -41333,7 +41411,7 @@ input[type=checkbox].switch:checked + label:before {
   border-radius: 4px;
   padding: 0 5px;
 }
-.newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i {
+.newRota.resident .staffShifts .roster > ul > li .shiftInfo .location i, .mealMenu.resident .staffShifts .roster > ul > li .shiftInfo .location i {
   font-style: normal;
   font-weight: 300;
 }
@@ -41840,6 +41918,612 @@ input[type=checkbox].switch:checked + label:before {
   font-weight: 500;
   color: #828787;
   margin: 0;
+}
+
+.nutritionUsers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nutritionUsers > li {
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  padding: 10px;
+  width: calc((100% - 50px) / 6);
+}
+.nutritionUsers > li .img {
+  height: 180px;
+  display: block;
+  position: relative;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.nutritionUsers > li .img img {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nutritionUsers > li ul li {
+  padding-left: 60px;
+  position: relative;
+  line-height: 24px;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+.nutritionUsers > li ul li:before {
+  position: absolute;
+  left: 0;
+  content: attr(data-title);
+  font-size: 10px;
+  font-weight: 600;
+  color: #CCB7A9;
+  text-transform: uppercase;
+}
+.nutritionUsers > li ul li i {
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 4px;
+  background-color: #ceb8ab;
+  font-style: normal;
+  color: #FFF;
+}
+
+.addMedication {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  font-family: "Poppins";
+}
+.addMedication .formSection {
+  width: calc(100% - 340px);
+}
+.addMedication .formSection .searchMedicine {
+  background-color: #748CAB;
+  border-radius: 10px;
+  padding: 5px;
+}
+.addMedication .formSection .searchMedicine .select2-container--default {
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  background-image: url("../images/selectBoxArrow.png");
+  background-size: 14px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+.addMedication .formSection .searchMedicine .select2-container--default .selection .select2-selection--single {
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  background-color: transparent;
+}
+.addMedication .formSection .searchMedicine .select2-container--default .selection .select2-selection--single .select2-selection__rendered {
+  font-size: 16px;
+  line-height: 24px;
+  color: #24313E;
+  padding: 8px 10px;
+}
+.addMedication .formSection .searchMedicine button {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #E7ECEF;
+  border-radius: 10px;
+  border: 0;
+  background-color: transparent;
+}
+.addMedication .formSection .searchMedicine button.search {
+  background-color: #24313E;
+  color: #FFF;
+}
+.addMedication .commonList {
+  background-color: #F5F5F5;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #748CAB;
+  width: 330px;
+}
+.addMedication .commonList > ul {
+  padding-top: 20px;
+  margin: 0;
+}
+.addMedication .commonList > ul > li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #24323D;
+  position: relative;
+  padding: 29px 0 5px;
+  border-top: 1px solid #748CAB;
+}
+.addMedication .commonList > ul > li:before {
+  content: "Medicine Name";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #748CAB;
+}
+.addMedication .commonList > ul > li i {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.addMedication .commonList > ul > li i:first-of-type {
+  right: 34px;
+}
+.addMedication .commonList > ul > li i.useThis {
+  background-image: url("../images/useThisIcon.png");
+}
+.addMedication .commonList > ul > li i.delete {
+  background-image: url("../images/trash-bin.png");
+}
+.addMedication .commonList > ul > li:first-child {
+  border-top: 0;
+  padding-top: 24px;
+}
+.addMedication .commonList > ul > li:first-child:before {
+  top: 0;
+}
+.addMedication .commonList > ul > li:first-child i {
+  top: 0;
+}
+
+.mealUserDetail {
+  font-family: "Poppins";
+  height: 100%;
+}
+.mealUserDetail > section {
+  width: calc(100% - 410px);
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+}
+.mealUserDetail > section > div {
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #DDD;
+  padding: 10px;
+  position: relative;
+  width: calc((100% - 10px) / 2);
+  height: calc((100% - 10px) / 2);
+}
+.mealUserDetail > section > div > .title {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #004565;
+  margin-bottom: 5px;
+}
+.mealUserDetail > section > div .scroll-wrapper {
+  left: 10px;
+  right: 10px;
+  top: 38px;
+  bottom: 10px;
+  width: auto;
+}
+.mealUserDetail > section > div ul {
+  margin: 0;
+  padding-right: 20px;
+}
+.mealUserDetail > section > div ul li .title {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFF;
+  display: block;
+  border-radius: 4px;
+  background-color: #CEB7AB;
+  padding: 3px 5px;
+}
+.mealUserDetail > section > div ul li .title + p {
+  border-top: 0;
+}
+.mealUserDetail > section > div ul li p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #404455;
+  padding: 5px 0;
+  margin: 0;
+  border-top: 1px solid #DDD;
+}
+.mealUserDetail > section > div ul li p i {
+  float: right;
+  color: #8D99AE;
+  font-weight: 500;
+  margin-left: 10px;
+  font-style: normal;
+}
+.mealUserDetail > section > div ul li p:only-of-type {
+  border-top: 0;
+}
+.mealUserDetail > section > div.likes, .mealUserDetail > section > div.dislikes {
+  border: 0;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 10px;
+}
+.mealUserDetail > section > div.likes {
+  background-color: #CCD5AE;
+  background-image: url("../images/like.png");
+}
+.mealUserDetail > section > div.dislikes {
+  background-color: #F5CAC3;
+  background-image: url("../images/dislike.png");
+}
+.mealUserDetail aside {
+  width: 400px;
+  margin-left: 10px;
+  float: right;
+  position: relative;
+  height: 100%;
+}
+.mealUserDetail aside > .title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #004565;
+  display: block;
+  margin-bottom: 10px;
+}
+.mealUserDetail aside .scroll-wrapper {
+  top: 28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}
+.mealUserDetail aside ul {
+  margin: 0;
+  padding-right: 20px;
+}
+.mealUserDetail aside ul li {
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin-top: 10px;
+}
+.mealUserDetail aside ul li:first-child {
+  margin-top: 0;
+}
+.mealUserDetail aside ul li .title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #404455;
+  display: block;
+  margin-bottom: 5px;
+}
+.mealUserDetail aside ul li p {
+  font-size: 12px;
+  line-height: 16px;
+  font-style: italic;
+  color: #8D99AE;
+  margin: 0;
+}
+
+.hygieneReport {
+  padding: 0 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  font-family: "Poppins";
+  margin-top: 10px;
+}
+.hygieneReport:first-of-type {
+  margin-top: 0;
+}
+.hygieneReport .profile {
+  width: 160px;
+}
+.hygieneReport .profile .picture {
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  height: 160px;
+  overflow: hidden;
+  display: block;
+  margin: 0 0 5px 0;
+}
+.hygieneReport .profile .picture img {
+  width: 100%;
+  height: 100%;
+}
+.hygieneReport .profile .name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #404455;
+  margin: 0 0 5px 0;
+}
+.hygieneReport .profile .location {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #778DA9;
+}
+.hygieneReport .profile .location i {
+  font-style: normal;
+  color: #04B1D5;
+  display: block;
+}
+.hygieneReport .calendar {
+  width: calc(100% - 170px);
+}
+.hygieneReport .calendar .days, .hygieneReport .calendar .record {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: 0;
+}
+.hygieneReport .calendar .days li, .hygieneReport .calendar .record li {
+  width: calc((100% - 20px) / 3);
+}
+.hygieneReport .calendar .days {
+  margin: 0 0 5px 0;
+}
+.hygieneReport .calendar .days li {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 3px;
+  color: #EDF2F4;
+  background-color: #778DA9;
+  border-radius: 6px;
+}
+.hygieneReport .calendar .days li i {
+  float: left;
+  background-color: #EDF2F4;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 3px 5px;
+  margin: 0 5px 0 0;
+  color: #1C3C4B;
+}
+.hygieneReport .calendar .record {
+  margin: 0;
+  height: calc(100% - 29px);
+}
+.hygieneReport .calendar .record li > div {
+  background-color: #fff;
+  border: 1px solid #D2DDE2;
+  border-radius: 6px;
+  float: left;
+  padding: 5px;
+  width: calc((100% - 10px) / 2);
+  height: 100%;
+  position: relative;
+}
+.hygieneReport .calendar .record li > div:first-of-type {
+  margin-right: 10px;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(2) {
+  height: 120px;
+  margin-bottom: 10px;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) {
+  height: calc(100% - 130px);
+  margin-bottom: 10px;
+  background-color: #CEB7AA;
+  border: 0;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) .title {
+  color: #FFF;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) .timeBased .time {
+  color: #FFF;
+}
+.hygieneReport .calendar .record li > div .scroll-wrapper {
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  top: 28px;
+  width: auto;
+}
+.hygieneReport .calendar .record li > div .title {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #707070;
+}
+.hygieneReport .calendar .record li > div .timeBased {
+  padding-right: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+}
+.hygieneReport .calendar .record li > div .timeBased:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+.hygieneReport .calendar .record li > div .timeBased .time {
+  display: block;
+  color: #778DA9;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.hygieneReport .calendar .record li > div .timeBased ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hygieneReport .calendar .record li > div .timeBased ul li {
+  font-size: 12px;
+  line-height: 24px;
+  color: #707070;
+  padding-left: 24px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left top 3px;
+}
+.hygieneReport .calendar .record li > div .timeBased ul li.refused {
+  background-image: url("../images/cross.png");
+}
+.hygieneReport .calendar .record li > div .timeBased ul li.done {
+  background-image: url("../images/checked.png");
+}
+
+.videoPop {
+  width: 500px;
+  right: 0;
+  bottom: 0;
+  top: 60px;
+  position: fixed;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 1px solid #DDDDDD;
+  box-shadow: -2px 2px 4px rgba(69, 85, 109, 0.3);
+  backdrop-filter: blur(7px);
+  z-index: 1001;
+  padding: 10px;
+  font-family: "Poppins";
+  transform: translateX(100%);
+  transition: 200ms all linear;
+}
+.videoPop.active {
+  transform: translateX(0);
+}
+.videoPop .closePop {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-image: url("../images/closeChat.png");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+.videoPop > .title {
+  position: relative;
+  z-index: 1;
+  color: #373C46;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding-right: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.videoPop .videoPlaceHolder {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 292px;
+  border: 2px solid #373C46;
+  margin-bottom: 20px;
+}
+.videoPop .videoTabs {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+  border-bottom: 1px solid #8A7971;
+  display: flex;
+  gap: 10px;
+}
+.videoPop .videoTabs li {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #8A7971;
+  padding: 0 5px;
+}
+.videoPop .videoTabs li.active {
+  color: #373C46;
+  position: relative;
+}
+.videoPop .videoTabs li.active:after {
+  height: 3px;
+  width: 100%;
+  bottom: -1px;
+  position: absolute;
+  content: "";
+  background-color: #373C46;
+  left: 0;
+}
+.videoPop .videoTabSection {
+  height: calc(100% - 391px);
+  position: relative;
+}
+.videoPop .videoTabSection .scroll-wrapper {
+  top: 0;
+}
+.videoPop .videoTabSection ul {
+  margin: 0;
+  padding: 0 15px 0 0;
+  list-style: none;
+  transition: 200ms all linear;
+  display: none;
+}
+.videoPop .videoTabSection ul.active {
+  display: block;
+}
+.videoPop .videoTabSection ul li {
+  margin-top: 10px;
+  overflow: hidden;
+}
+.videoPop .videoTabSection ul li:first-child {
+  margin-top: 0;
+}
+.videoPop .videoTabSection ul li .title {
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #093D57;
+  font-weight: 500;
+  width: calc(100% - 62px);
+  margin-bottom: 10px;
+}
+.videoPop .videoTabSection ul li p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #697979;
+  float: left;
+  width: calc(100% - 62px);
+}
+.videoPop .videoTabSection ul.videoList li .img {
+  float: left;
+  width: 170px;
+  height: 102px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  border: 2px solid #373C46;
+  background-color: #FFF;
+}
+.videoPop .videoTabSection ul.videoList li .title, .videoPop .videoTabSection ul.videoList li p {
+  width: calc(100% - 180px);
 }
 
 .scroll-element.scroll-x {
