@@ -1213,7 +1213,7 @@ header.colored section .headerIcons img path {
   float: right;
   width: 100%;
 }
-.contentHeader .filtersSearch > a {
+.contentHeader .filtersSearch > a, .contentHeader .filtersSearch button {
   background-color: #697979;
   font-size: 14px;
   color: #FFF;
@@ -1224,12 +1224,15 @@ header.colored section .headerIcons img path {
   float: right;
   cursor: pointer;
   font-family: "Poppins";
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left 6px top 7px;
 }
-.contentHeader .filtersSearch > a.new {
+.contentHeader .filtersSearch > a.new, .contentHeader .filtersSearch button.new {
   background-color: #004E89;
   position: relative;
 }
-.contentHeader .filtersSearch > a.new:before {
+.contentHeader .filtersSearch > a.new:before, .contentHeader .filtersSearch button.new:before {
   display: block;
   height: 16px;
   width: 16px;
@@ -1245,8 +1248,11 @@ header.colored section .headerIcons img path {
   font-size: 18px;
   font-weight: 500;
 }
-.contentHeader .filtersSearch > a.icon {
+.contentHeader .filtersSearch > a.icon, .contentHeader .filtersSearch button.icon {
   padding-left: 30px;
+}
+.contentHeader .filtersSearch > button {
+  border: 0;
 }
 .contentHeader .filtersSearch .dropMenu {
   float: right;
@@ -28779,7 +28785,7 @@ hr.BoldHr {
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:last-child {
   font-size: 8px;
   line-height: 1.2;
-  width: 100px;
+  width: 99px;
   padding: 0 0 0 10px !important;
 }
 .rotaGrid .rotaGridContainer .rotagrid.compact .rotausertable li:last-child:before {
@@ -33225,16 +33231,13 @@ input[type=checkbox].switch:checked + label:before {
   margin-right: 20px;
 }
 .newSUList .listContainer > ul {
-  margin: 0 -5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .newSUList .listContainer > ul > li {
-  padding: 0 5px;
-  float: left;
-  width: 25%;
-  margin-top: 10px;
-}
-.newSUList .listContainer > ul > li:nth-child(-n+4) {
-  margin-top: 0;
+  width: calc((100% - 30px) / 4);
 }
 .newSUList .listContainer > ul > li article {
   border-width: 2px;
@@ -33244,8 +33247,8 @@ input[type=checkbox].switch:checked + label:before {
   background-color: rgb(255, 255, 255);
   padding: 10px;
   color: #3f4253;
-  height: 304px;
   position: relative;
+  height: 100%;
 }
 .newSUList .listContainer > ul > li article .picture {
   border-width: 2px;
@@ -33341,6 +33344,16 @@ input[type=checkbox].switch:checked + label:before {
 }
 .newSUList .listContainer > ul > li article .respect {
   background-color: #bd043d;
+}
+.newSUList .listContainer > ul > li article .pronounce {
+  float: left;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0 5px;
+  border-radius: 4px;
+  color: #333;
+  background-color: #ceb6a8;
+  font-weight: 500;
 }
 .newSUList .listContainer > ul > li article .gsf {
   position: absolute;
@@ -33462,6 +33475,7 @@ input[type=checkbox].switch:checked + label:before {
   width: 24px;
   margin-right: 5px;
   animation: blink-animation 1s steps(5, start) infinite;
+  text-indent: -9999px;
 }
 .newSUList .listContainer > ul > li article .postFallAlert img,
 .newSUList .listContainer > ul > li article .fluidAlert img,
@@ -38936,6 +38950,37 @@ input[type=checkbox].switch:checked + label:before {
 .generalListing.doubleShade section:nth-of-type(even) {
   background-color: #E8E8E4;
 }
+.generalListing.subSections section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 23px 10px 5px 10px;
+}
+.generalListing.subSections section ul {
+  float: left;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #093d5a;
+  margin: 0;
+}
+.generalListing.subSections section ul.noTitle {
+  border: 0;
+}
+.generalListing.subSections section ul li i {
+  position: absolute;
+  content: attr(data-title);
+  left: -1px;
+  top: -20px;
+  border-radius: 6px;
+  background-color: #093d5b;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 5px;
+  font-style: normal;
+  font-family: "Poppins";
+}
 
 .surveyQuestions {
   padding: 0 0 0 30px;
@@ -42177,6 +42222,308 @@ input[type=checkbox].switch:checked + label:before {
   font-style: italic;
   color: #8D99AE;
   margin: 0;
+}
+
+.hygieneReport {
+  padding: 0 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  font-family: "Poppins";
+  margin-top: 10px;
+}
+.hygieneReport:first-of-type {
+  margin-top: 0;
+}
+.hygieneReport .profile {
+  width: 160px;
+}
+.hygieneReport .profile .picture {
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  height: 160px;
+  overflow: hidden;
+  display: block;
+  margin: 0 0 5px 0;
+}
+.hygieneReport .profile .picture img {
+  width: 100%;
+  height: 100%;
+}
+.hygieneReport .profile .name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #404455;
+  margin: 0 0 5px 0;
+}
+.hygieneReport .profile .location {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #778DA9;
+}
+.hygieneReport .profile .location i {
+  font-style: normal;
+  color: #04B1D5;
+  display: block;
+}
+.hygieneReport .calendar {
+  width: calc(100% - 170px);
+}
+.hygieneReport .calendar .days, .hygieneReport .calendar .record {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: 0;
+}
+.hygieneReport .calendar .days li, .hygieneReport .calendar .record li {
+  width: calc((100% - 20px) / 3);
+}
+.hygieneReport .calendar .days {
+  margin: 0 0 5px 0;
+}
+.hygieneReport .calendar .days li {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 3px;
+  color: #EDF2F4;
+  background-color: #778DA9;
+  border-radius: 6px;
+}
+.hygieneReport .calendar .days li i {
+  float: left;
+  background-color: #EDF2F4;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 3px 5px;
+  margin: 0 5px 0 0;
+  color: #1C3C4B;
+}
+.hygieneReport .calendar .record {
+  margin: 0;
+  height: calc(100% - 29px);
+}
+.hygieneReport .calendar .record li > div {
+  background-color: #fff;
+  border: 1px solid #D2DDE2;
+  border-radius: 6px;
+  float: left;
+  padding: 5px;
+  width: calc((100% - 10px) / 2);
+  height: 100%;
+  position: relative;
+}
+.hygieneReport .calendar .record li > div:first-of-type {
+  margin-right: 10px;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(2) {
+  height: 120px;
+  margin-bottom: 10px;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) {
+  height: calc(100% - 130px);
+  margin-bottom: 10px;
+  background-color: #CEB7AA;
+  border: 0;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) .title {
+  color: #FFF;
+}
+.hygieneReport .calendar .record li > div:nth-of-type(3) .timeBased .time {
+  color: #FFF;
+}
+.hygieneReport .calendar .record li > div .scroll-wrapper {
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  top: 28px;
+  width: auto;
+}
+.hygieneReport .calendar .record li > div .title {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #707070;
+}
+.hygieneReport .calendar .record li > div .timeBased {
+  padding-right: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+}
+.hygieneReport .calendar .record li > div .timeBased:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+.hygieneReport .calendar .record li > div .timeBased .time {
+  display: block;
+  color: #778DA9;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.hygieneReport .calendar .record li > div .timeBased ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hygieneReport .calendar .record li > div .timeBased ul li {
+  font-size: 12px;
+  line-height: 24px;
+  color: #707070;
+  padding-left: 24px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left top 3px;
+}
+.hygieneReport .calendar .record li > div .timeBased ul li.refused {
+  background-image: url("../images/cross.png");
+}
+.hygieneReport .calendar .record li > div .timeBased ul li.done {
+  background-image: url("../images/checked.png");
+}
+
+.videoPop {
+  width: 500px;
+  right: 0;
+  bottom: 0;
+  top: 60px;
+  position: fixed;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 1px solid #DDDDDD;
+  box-shadow: -2px 2px 4px rgba(69, 85, 109, 0.3);
+  backdrop-filter: blur(7px);
+  z-index: 1001;
+  padding: 10px;
+  font-family: "Poppins";
+  transform: translateX(100%);
+  transition: 200ms all linear;
+}
+.videoPop.active {
+  transform: translateX(0);
+}
+.videoPop .closePop {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-image: url("../images/closeChat.png");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+.videoPop > .title {
+  position: relative;
+  z-index: 1;
+  color: #373C46;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding-right: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.videoPop .videoPlaceHolder {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 292px;
+  border: 2px solid #373C46;
+  margin-bottom: 20px;
+}
+.videoPop .videoTabs {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+  border-bottom: 1px solid #8A7971;
+  display: flex;
+  gap: 10px;
+}
+.videoPop .videoTabs li {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #8A7971;
+  padding: 0 5px;
+}
+.videoPop .videoTabs li.active {
+  color: #373C46;
+  position: relative;
+}
+.videoPop .videoTabs li.active:after {
+  height: 3px;
+  width: 100%;
+  bottom: -1px;
+  position: absolute;
+  content: "";
+  background-color: #373C46;
+  left: 0;
+}
+.videoPop .videoTabSection {
+  height: calc(100% - 391px);
+  position: relative;
+}
+.videoPop .videoTabSection .scroll-wrapper {
+  top: 0;
+}
+.videoPop .videoTabSection ul {
+  margin: 0;
+  padding: 0 15px 0 0;
+  list-style: none;
+  transition: 200ms all linear;
+  display: none;
+}
+.videoPop .videoTabSection ul.active {
+  display: block;
+}
+.videoPop .videoTabSection ul li {
+  margin-top: 10px;
+  overflow: hidden;
+}
+.videoPop .videoTabSection ul li:first-child {
+  margin-top: 0;
+}
+.videoPop .videoTabSection ul li .title {
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #093D57;
+  font-weight: 500;
+  width: calc(100% - 62px);
+  margin-bottom: 10px;
+}
+.videoPop .videoTabSection ul li p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #697979;
+  float: left;
+  width: calc(100% - 62px);
+}
+.videoPop .videoTabSection ul.videoList li .img {
+  float: left;
+  width: 170px;
+  height: 102px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  border: 2px solid #373C46;
+  background-color: #FFF;
+}
+.videoPop .videoTabSection ul.videoList li .title, .videoPop .videoTabSection ul.videoList li p {
+  width: calc(100% - 180px);
 }
 
 .scroll-element.scroll-x {

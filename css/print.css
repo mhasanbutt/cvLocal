@@ -162,6 +162,9 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 .header .title > span button.back {
   background-image: url("../images/back.png");
 }
+.header .title > span button.export {
+  background-image: url("../images/export-new.png");
+}
 .header .title > span button.downloadPDF {
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;

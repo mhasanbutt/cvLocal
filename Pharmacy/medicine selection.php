@@ -7,11 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="images/favicon.png" rel="shortcut icon">
 	<title>CareVision - Less Admin, More Caring</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
     <link href="css/select2.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -71,6 +69,7 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="alertCenter">
                 <ul class="user-alerts clearfix">
                     <li class="orange">Allergies</li>
@@ -78,16 +77,15 @@
                     <li>vaccination</li>
                 </ul>
             </div>
+            
             <section class="medicinalZone">
                 <div class="scrollbar-outer scrollArea">
                     <div class="addMedicine">
-                        <div class="select2-container select2-Area">
-                            <select>
-                                <option>PANADOL ACTIFAST tablets 500mg 8</option>
-                                <option>option 1</option>
-                                <option>option 2</option>
-                            </select>
-                        </div>
+                        <select class="select2">
+                            <option>PANADOL ACTIFAST tablets 500mg 8</option>
+                            <option>option 1</option>
+                            <option>option 2</option>
+                        </select>
                         <button class="reset-btn">Reset</button>
                         <button>Search</button>
                     </div>
@@ -259,6 +257,7 @@
             </footer>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/jquery.scrollbar.min.js"></script>
     <script src="../js/select2.min.js"></script>
     <script>
@@ -292,7 +291,7 @@
             });
 
             jQuery(document).ready(function () {
-                jQuery('.select2-Area').select2();
+                jQuery('.select2').select2();
             });
 
             $(".up-button").click(function(){

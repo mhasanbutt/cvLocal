@@ -22,7 +22,7 @@
             <span class="title"><img src="images/service-users.png" alt=""> Service User Listing</span>
         </div>
 
-        <div class="filtersSearch showSelection clearfix pull-right" style="margin-right:20px;">
+        <div class="filtersSearch autoWidth showSelection clearfix">
             <form class="search" style="margin-left:10px;">
                 <div class="selection">
                     <span>Home: <strong>Care Home 1</strong></span> | 
@@ -52,10 +52,6 @@
 					<button class="green">Search</button> <button>Reset Filters</button>
 				</div>
 			</form>
-            
-            <a href="#" style="background-image:url('images/print-icon.png');">Show All / Print QR</a>
-            <a href="#" style="background-image:url('images/group-allocation.png');">Group Allocation</a>
-            <a href="#" class="addServiceUser" style="color:#1f262a;background-color:#6DC77A;background-image:url('images/rotaAddEmployeeIcon.png');margin-left:10px;">Add Service User</a>
 		</div>
     </section>
 
@@ -84,6 +80,9 @@
 
                                 <span class="postFallAlert">Post Fall Alert</span>
                                 <span class="fluidAlert fAlert">Fluid Alert</span>
+                                
+                                <span class="pronounce">(He/him) Pronouns</span>
+                                <span class="gsf"><img src="/images/alerticon/gsf-red.png" width="30" height="30" class="png"></span>
                             </article>
                         </li>
 
@@ -102,7 +101,8 @@
                                     <li>Floor 1 / Room 2</li>
                                     <li>33498492948</li>
                                 </ul>
-
+                                
+                                <span>(He/him) Pronouns</span>
                                 <span class="suspended">Hospital</span>
                             </article>
                         </li>
