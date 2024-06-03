@@ -2333,8 +2333,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li,
-.andireport .dates ul li,
-.andireport .total ul li {
+  .andireport .dates ul li,
+  .andireport .total ul li {
     height: 22px;
     line-height: 22px;
   }
@@ -2346,8 +2346,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
 }
 @media print {
   .andireport .occurance ul li:nth-child(odd),
-.andireport .dates ul li:nth-child(odd),
-.andireport .total ul li:nth-child(odd) {
+  .andireport .dates ul li:nth-child(odd),
+  .andireport .total ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
 }
@@ -2868,6 +2868,230 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-size: 8px;
   color: #F5F5F5 !important;
   margin-bottom: 5px;
+}
+
+.forHospitalTransfer .title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.forHospitalTransfer .title span .downloadPDF {
+  background-image: url("../images/print.png");
+}
+
+.hospitalTransfer {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -48px;
+}
+.hospitalTransfer .ServiceUserDetails {
+  width: 725px;
+  height: 115px;
+}
+.hospitalTransfer .ServiceUserDetails .title {
+  height: 18px;
+  display: block;
+  font-size: 10px;
+  color: #223E4C;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #FFCC60;
+  padding: 2px 6px;
+  line-height: 16px;
+  position: relative;
+  font-weight: 500;
+}
+.hospitalTransfer .ServiceUserDetails .ServiceuserImg {
+  float: right;
+  margin-top: 10px;
+}
+.hospitalTransfer .ServiceUserDetails .ServiceuserImg img {
+  width: 65px;
+  height: 65px;
+  border-radius: 4px;
+}
+.hospitalTransfer .ServiceUserDetails .userinfo {
+  width: calc(100% - 70px);
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.hospitalTransfer .ServiceUserDetails .userinfo li {
+  float: left;
+  display: inline-block;
+  width: 160px;
+  margin-left: 3px;
+  font-size: 11px;
+  color: #828787;
+  font-weight: 500;
+  line-height: 22px;
+}
+.hospitalTransfer .ServiceUserDetails .userinfo li span {
+  text-transform: uppercase;
+  color: #828787;
+  font-size: 8px;
+  font-weight: 500;
+  display: block;
+  line-height: 12px;
+}
+.hospitalTransfer .ServiceUserinfo {
+  width: 100%;
+  height: 115px;
+}
+.hospitalTransfer .ServiceUserinfo .title {
+  height: 18px;
+  display: block;
+  font-size: 10px;
+  color: #223E4C;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #FFCC60;
+  padding: 2px 6px;
+  line-height: 16px;
+  position: relative;
+  font-weight: 500;
+}
+.hospitalTransfer .ServiceUserinfo .user-address {
+  width: calc(100% - 80px);
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.hospitalTransfer .ServiceUserinfo .user-address li {
+  float: left;
+  display: inline-block;
+  width: 159px;
+  margin-left: 3px;
+  font-size: 11px;
+  color: #828787;
+  font-weight: 500;
+  line-height: 22px;
+}
+.hospitalTransfer .ServiceUserinfo .user-address li span {
+  text-transform: uppercase;
+  color: #828787;
+  font-size: 8px;
+  font-weight: 500;
+  display: block;
+  line-height: 12px;
+}
+.hospitalTransfer .allergiesInfo {
+  height: 86px;
+}
+.hospitalTransfer .allergiesInfo .statusLables {
+  width: 100%;
+  border-radius: 6px;
+  padding: 5px 3px;
+  background-color: #FFBEBE;
+  position: relative;
+  border: 2px solid #d93f3f;
+  display: block;
+  height: 51px;
+  float: left;
+}
+.hospitalTransfer .allergiesInfo .statusLables .title {
+  display: block;
+  font-size: 10px;
+  color: #223E4C;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 2px;
+  line-height: 16px;
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+}
+.hospitalTransfer .allergiesInfo .statusLables span {
+  position: absolute;
+  text-orientation: mixed;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+  background-color: #246582;
+  left: 10px;
+  top: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  right: 10px;
+  border: 1px solid #707070;
+}
+.hospitalTransfer .allergiesInfo .statusLables .allergyList {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hospitalTransfer .allergiesInfo .statusLables .allergyList li {
+  list-style-type: none;
+  margin-top: 0;
+  background-color: #8D99AE;
+  padding: 3px 5px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 8px;
+}
+.hospitalTransfer .woundtitle {
+  height: 18px;
+  display: block;
+  font-size: 10px;
+  color: #223E4C;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #FFCC60;
+  padding: 2px 6px;
+  line-height: 16px;
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hospitalTransfer .woundlists {
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.hospitalTransfer .woundlists li {
+  float: left;
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 10px;
+  color: #5D6A72;
+  font-weight: 500;
+  line-height: 14px;
+}
+.hospitalTransfer .woundlists li span {
+  color: #828787;
+  font-size: 8px;
+  font-weight: 500;
+  display: block;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.hospitalTransfer .woundlists li:nth-child(1) {
+  width: 160px;
+}
+.hospitalTransfer .woundlists li:nth-child(2) {
+  width: 300px;
+}
+.hospitalTransfer .woundlists li:nth-child(3) {
+  width: 150px;
+}
+.hospitalTransfer .woundlists li:nth-child(4) {
+  width: 90px;
+}
+.hospitalTransfer .woundDetail {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.hospitalTransfer .woundDetail .wound-Img {
+  width: 270px;
+  height: 360px;
+}
+.hospitalTransfer .woundDetail .injuryInfo {
+  width: 262px;
+  height: 51px;
 }
 
 /*# sourceMappingURL=print.css.map */
