@@ -51,100 +51,100 @@
     </div>
 </section>
 
-    <section class="contentBody noFooter">
+    <section class="contentBody">
         <div class="scrollArea">
-            <div class="serviceUserSummary clearfix">
-                <div class="content">
-                    <div class="diseasesAlert">
-                        'DNACPR' has been updated from 'Alert Centre' Previous Value was 'No' and New Value is 'Yes' By 'Rishi R_' At '20-05-2024'
-                        <button type="button">Ignore</button>
-                    </div>
-                    <aside class="ServiceuserImg">
+            <div class="content">
+                <div class="diseasesAlert">
+                    'DNACPR' has been updated from 'Alert Centre' Previous Value was 'No' and New Value is 'Yes' By 'Rishi R_' At '20-05-2024'
+                    <button type="button">Ignore</button>
+                </div>
+                <aside class="ServiceuserImg">
                         <span class="picture">
                             <img src="images/temp-picture.jpg">
                         </span>
-                    </aside>
-                    <div class=" formBlock">
-                        <form class="newForm">
-                            <span class="title">Personal Details</span>
-                            <ul class="col4 list-unstyled clearfix">
-                                <li>
-                                    <label class="title">FULL NAME</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Likes to be known as</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Date of Birth</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Age</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Gender</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">NHS No.</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Religion</label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                    <div class=" formSegment">
-                        <form class="newForm">
-                            <span class="title">Home Details</span>
-                            <ul class="col4 list-unstyled clearfix">
-                                <li>
-                                    <label class="title">Name</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">address</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">post code</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">telephone</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">floor</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Room</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label class="title">Aware of transfer?</label>
-                                    <input type="checkbox" id="no-fluid-restriction" hidden>
-                                    <label for="no-fluid-restriction"></label>
-                                </li>
-                            </ul>
-                        </form>
-                        <span class="Allergytitle">Key Indicators</span>
-                        <section class="statusLables">
-                            <i class="title">Allergies</i>
-                            <span>S.L.T     Level 3 - Liquidised. Level 2 - Mildly Thick</span>
-                            <ul class="allergyList">
-                                <li>Plate Size - Medium</li>
-                            </ul>
-                        </section>
-                        <span class="Allergytitle">Wounds & Bruises</span>
-                        <div class="woundArea">
-                            <div class="content generalListing bruisesListing">
+                </aside>
+                <div class=" formBlock">
+                    <form class="newForm">
+                        <span class="title">Personal Details</span>
+                        <ul class="col4 list-unstyled clearfix">
+                            <li>
+                                <label class="title">FULL NAME</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Likes to be known as</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Date of Birth</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Age</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Gender</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">NHS No.</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Religion</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class=" formSegment">
+                    <form class="newForm">
+                        <span class="title">Home Details</span>
+                        <ul class="col4 list-unstyled clearfix">
+                            <li>
+                                <label class="title">Name</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">address</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">post code</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">telephone</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">floor</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Room</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label class="title">Aware of transfer?</label>
+                                <input type="checkbox" id="no-fluid-restriction" hidden>
+                                <label for="no-fluid-restriction"></label>
+                            </li>
+                        </ul>
+                    </form>
+                    <span class="Allergytitle">Key Indicators</span>
+                    <section class="statusLables">
+                        <i class="title">Allergies</i>
+                        <span>S.L.T     Level 3 - Liquidised. Level 2 - Mildly Thick</span>
+                        <ul class="allergyList">
+                            <li>Plate Size - Medium</li>
+                        </ul>
+                    </section>
+                    <span class="Allergytitle">Wounds & Bruises</span>
+                    <div class="woundArea clearfix">
+                        <div class="generalListing">
+                            <div class="scrollArea">
                                 <section>
                                     <ul class="list-unstyled clearfix">
                                         <li>
@@ -166,19 +166,20 @@
                                     </ul>
                                 </section>
                             </div>
-                            <div class="woundImage">
-                                <img src="./images/Image%202.png">
-                            </div>
-                            <div class="woundInfoImg">
-                                <img src="images/bodyMapLegendsimg.png">
-                            </div>
+                        </div>
+                        <div class="woundImage">
+                            <img src="./images/Image%202.png">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+        <div class="ctas hosTransferFooter">
+            <button class="print pull-left">Print</button>
+          <button class="back-Button">Back</button>
+        </div>
     </section>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="js/jquery.scrollbar.min.js"></script>

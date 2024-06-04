@@ -42611,7 +42611,7 @@ input[type=checkbox].switch:checked + label:before {
 }
 .statusLables .allergyList li {
   list-style-type: none;
-  margin-top: 0;
+  margin-top: 3px;
   background-color: #8D99AE;
   padding: 3px 5px;
   display: inline-block;
@@ -42635,51 +42635,40 @@ input[type=checkbox].switch:checked + label:before {
 }
 
 .woundArea {
-  display: inline-block;
+  display: flex;
   width: 100%;
+  background-image: url("../images/bodyMapLegendsimg.png");
+  background-repeat: no-repeat;
+  background-size: 625px 125px;
+  background-position: bottom 10px right 617px;
 }
 .woundArea .woundImage {
-  position: relative;
-  top: -78px;
   float: right;
 }
 .woundArea .woundImage img {
   width: 626px;
   height: 832px;
 }
-.woundArea .woundInfoImg {
-  position: absolute;
-  bottom: 110px;
-  right: 600px;
-}
-.woundArea .woundInfoImg img {
-  width: 640px;
-  height: 125px;
-  float: left;
-}
-
-.bruisesListing {
+.woundArea .generalListing {
   width: calc(100% - 626px);
-  background-color: #F5F5F5;
   margin-top: 10px;
   border-radius: 6px;
+  height: 665px;
+  position: relative;
 }
-.bruisesListing section {
-  background-color: transparent;
+.woundArea .generalListing section {
+  background-color: #F5F5F5;
 }
-.bruisesListing section ul li {
-  background-color: transparent;
-}
-.bruisesListing section ul li:nth-child(1) {
+.woundArea .generalListing section ul li:nth-child(1) {
   width: 19%;
 }
-.bruisesListing section ul li:nth-child(2) {
+.woundArea .generalListing section ul li:nth-child(2) {
   width: 45%;
 }
-.bruisesListing section ul li:nth-child(3) {
+.woundArea .generalListing section ul li:nth-child(3) {
   width: 20%;
 }
-.bruisesListing section ul li:nth-child(4) {
+.woundArea .generalListing section ul li:nth-child(4) {
   width: 10%;
 }
 
@@ -42702,6 +42691,14 @@ input[type=checkbox].switch:checked + label:before {
 .ServiceuserImg .picture img {
   width: 100%;
   height: 100%;
+}
+
+.hosTransferFooter {
+  bottom: 20px;
+  position: inherit;
+}
+.hosTransferFooter .print {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=custom.css.map */
