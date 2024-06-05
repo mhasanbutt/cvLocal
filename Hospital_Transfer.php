@@ -50,7 +50,6 @@
         </ul>
     </div>
 </section>
-
     <section class="contentBody">
         <div class="scrollArea">
             <div class="content">

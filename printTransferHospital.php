@@ -9,35 +9,34 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
 </head>
-<body>
-    <div class="header forHospitalTransfer">
-        <div class="logo">
-            <img src="images/horizontalCVLogo.png">
+    <body>
+        <div class="header forHospitalTransfer">
+            <div class="logo">
+                <img src="images/horizontalCVLogo.png">
+            </div>
+            <div class="title">
+                <span>
+                    Service Users QR Code
+                    <button onclick="window.print();"></button>
+                </span>
+            </div>
         </div>
-        <div class="title">
-            <span>
-                Service Users QR Code
-                <button class="downloadPDF"></button>
-            </span>
-        </div>
-    </div>
 
-    <table class="printBody">
-        <thead>
-            <tr>
-                <td><div class="headerSpacer invoiceDetail"></div></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="hospitalTransfer">
-                        <div class="ServiceUserDetails">
+        <table class="printBody">
+            <thead>
+                <tr>
+                    <td><div class="headerSpacer"></div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <article class="userProfile">
                             <span class="title">Personal Details</span>
                             <div class="ServiceuserImg">
                                 <img src="images/temp-picture.jpg">
                             </div>
-                            <ul class="userinfo clearfix">
+                            <ul class="list-unstyled clearfix">
                                 <li>
                                     <span>Full Name</span>
                                     Mr Tim Shermin
@@ -67,10 +66,10 @@
                                     -
                                 </li>
                             </ul>
-                        </div>
-                        <div class="ServiceUserinfo">
+                        </article>
+                        <article class="userProfile">
                             <span class="title">Personal Details</span>
-                            <ul class="user-address clearfix">
+                            <ul class="list-unstyled clearfix">
                                 <li>
                                     <span>Name</span>
                                     -
@@ -100,7 +99,7 @@
                                     yes
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                         <div class="allergiesInfo">
                             <div class="statusLables">
                                 <i class="title">Allergies</i>
@@ -130,26 +129,24 @@
                             </li>
                         </ul>
                         <div class="woundDetail">
-                            <img class="wound-Img" src="images/Image%202.png"><br>
-                            <img class="injuryInfo" src="images/bodyMapLegendsimg.png">
-                        </div>`
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td><div class="footerSpacer"></div></td>
-            </tr>
-        </tfoot>
-    </table>
+                            <img class="wound-Img" src="images/Image%202.png">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><div class="footerSpacer"></div></td>
+                </tr>
+            </tfoot>
+        </table>
 
-    <div class="footer forInvoice">
-	    <i><?php echo date('M dS, Y - H:i');?></i>
-        &copy; <?php echo date('Y');?> CareVision Management Ltd. All Rights Reserved.
-    </div>
+        <div class="footer">
+            <i><?php echo date('M dS, Y - H:i');?></i>
+            &copy; <?php echo date('Y');?> CareVision Management Ltd. All Rights Reserved.
+        </div>
 
-    <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/custom.js"></script>
-</body>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>

@@ -3457,163 +3457,9 @@ body {
         }
     }
 }
-.hospitalTransfer{
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    top: -48px;
-    .ServiceUserDetails{
-        width: 725px;
-        height: 115px;
-        .title{
-            height: 18px;
-            display: block;
-            font-size: 10px;
-            color: #223E4C;
-            text-transform: uppercase;
-            border-radius: 4px;
-            background-color: #FFCC60;
-            padding: 2px 6px;
-            line-height: 16px;
-            position: relative;
-            font-weight: 500;
-        }
-        .ServiceuserImg{
-            float: right;
-            margin-top: 10px;
-            img{
-                width: 65px;
-                height: 65px;
-                border-radius: 4px;
-            }
-        }
-        .userinfo{
-            width: calc(100% - 70px);
-            float: left;
-            margin-top: 10px;
-            margin-bottom: 20px;
-
-            li{
-                float: left;
-                display: inline-block;
-                width: 160px;
-                margin-left: 3px;
-                font-size: 11px;
-                color: #828787;
-                font-weight: 500;
-                line-height: 22px;
-
-                span{
-                    text-transform: uppercase;
-                    color: #828787;
-                    font-size: 8px;
-                    font-weight: 500;
-                    display: block;
-                    line-height: 12px;
-                }
-            }
-        }
-    }
-    .ServiceUserinfo{
-        width: 100%;
-        height: 115px;
-        .title{
-            height: 18px;
-            display: block;
-            font-size: 10px;
-            color: #223E4C;
-            text-transform: uppercase;
-            border-radius: 4px;
-            background-color: #FFCC60;
-            padding: 2px 6px;
-            line-height: 16px;
-            position: relative;
-            font-weight: 500;
-        }
-        .user-address{
-            width: calc(100% - 80px);
-            float: left;
-            margin-top: 10px;
-            margin-bottom: 20px;
-
-            li{
-                float: left;
-                display: inline-block;
-                width: 159px;
-                margin-left: 3px;
-                font-size: 11px;
-                color: #828787;
-                font-weight: 500;
-                line-height: 22px;
-
-                span{
-                    text-transform: uppercase;
-                    color: #828787;
-                    font-size: 8px;
-                    font-weight: 500;
-                    display: block;
-                    line-height: 12px;
-                }
-            }
-        }
-    }
-    .allergiesInfo{
-        height: 86px;
-        .statusLables{
-            width: 100%;
-            border-radius: 6px;
-            padding: 5px 3px;
-            background-color: #FFBEBE;
-            position: relative;
-            border: 2px solid #d93f3f;
-            display: block;
-            height: 51px;
-            float: left;
-            .title{
-                display: block;
-                font-size: 10px;
-                color: #223E4C;
-                text-transform: uppercase;
-                border-radius: 4px;
-                font-family: "Roboto Condensed", sans-serif;
-                padding: 2px;
-                line-height: 16px;
-                position: relative;
-                font-style: normal;
-                font-weight: 600 ;
-            }
-            span{
-                position: absolute;
-                text-orientation: mixed;
-                font-size: 12px;
-                color: #fff;
-                text-align: center;
-                border-radius: 0 0 6px 6px;
-                background-color: #246582;
-                left: 10px;
-                top: 100%;
-                font-family: "Poppins", sans-serif;
-                font-weight: 400;
-                right: 10px;
-                border: 1px solid #707070;
-            }
-            .allergyList{
-                overflow: hidden;
-                margin-bottom: 0;
-                li{
-                    list-style-type: none;
-                    margin-top: 0;
-                    background-color: #8D99AE;
-                    padding: 3px 5px;
-                    display: inline-block;
-                    color: #fff;
-                    border-radius: 4px;
-                    font-weight: 500;
-                    font-size: 8px;
-                }
-            }
-        }
-    }
-    .woundtitle{
+.userProfile{
+    height: 110px;
+    .title{
         height: 18px;
         display: block;
         font-size: 10px;
@@ -3621,59 +3467,161 @@ body {
         text-transform: uppercase;
         border-radius: 4px;
         background-color: #FFCC60;
-        padding: 2px 6px;
+        padding: 2px 0 2px 6px;
         line-height: 16px;
-        position: relative;
         font-weight: 500;
         margin-bottom: 10px;
     }
-
-    .woundlists{
-        background-color: #F5F5F5;
-        border-radius: 6px;
-        padding: 5px;
-        margin-bottom: 10px;
+    .ServiceuserImg{
+        float: right;
+        img{
+            width: 65px;
+            height: 65px;
+            border-radius: 4px;
+        }
+    }
+    ul{
+        width: calc(100% - 70px);
+        float: left;
+        
         li{
-            float: left;
             display: inline-block;
+            width: 160px;
             margin-left: 3px;
             font-size: 10px;
-            color: #5D6A72;
+            color: #828787;
             font-weight: 500;
-            line-height: 14px;
+            line-height: 24px;
+            
             span{
+                text-transform: uppercase;
                 color: #828787;
                 font-size: 8px;
                 font-weight: 500;
                 display: block;
                 line-height: 12px;
-                text-transform: uppercase;
-            }
-            &:nth-child(1){
-                width: 160px;
-            }
-            &:nth-child(2){
-                width: 300px;
-            }
-            &:nth-child(3){
-                width: 150px;
-            }
-            &:nth-child(4){
-                width: 90px;
             }
         }
     }
-    .woundDetail{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        .wound-Img{
-            width: 270px;
-            height: 360px;
+}
+.allergiesInfo{
+    height: 79px;
+    .statusLables{
+        width: 100%;
+        border-radius: 6px;
+        padding: 5px 3px;
+        background-color: #FFBEBE;
+        position: relative;
+        display: block;
+        height: 45px;
+        .title{
+            display: block;
+            font-size: 10px;
+            color: #223E4C;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-family: "Roboto Condensed", sans-serif;
+            padding: 2px;
+            line-height: 16px;
+            position: relative;
+            font-style: normal;
+            font-weight: 600 ;
         }
-        .injuryInfo{
-            width: 262px;
-            height: 51px;
+        span{
+            position: absolute;
+            text-orientation: mixed;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            border-radius: 0 0 6px 6px;
+            background-color: #246582;
+            left: 10px;
+            top: 100%;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            right: 10px;
+            border: 1px solid #707070;
         }
+        .allergyList{
+            overflow: hidden;
+            margin-bottom: 0;
+            li{
+                list-style-type: none;
+                margin-top: 0;
+                background-color: #8D99AE;
+                padding: 3px 5px;
+                display: inline-block;
+                color: #fff;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: 8px;
+            }
+        }
+    }
+}
+.woundtitle{
+    height: 18px;
+    display: block;
+    font-size: 10px;
+    color: #223E4C;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #FFCC60;
+    padding: 2px 6px;
+    line-height: 16px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.woundlists{
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 10px;
+    li{
+        float: left;
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 10px;
+        color: #5D6A72;
+        font-weight: 500;
+        line-height: 14px;
+        span{
+            color: #828787;
+            font-size: 8px;
+            font-weight: 500;
+            display: block;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+        &:nth-child(1){
+            width: 160px;
+        }
+        &:nth-child(2){
+            width: 300px;
+        }
+        &:nth-child(3){
+            width: 150px;
+        }
+        &:nth-child(4){
+            width: 90px;
+        }
+    }
+}
+.woundDetail{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: url("../images/bodyMapLegendsimg.png");
+    background-repeat: no-repeat;
+    background-position: bottom 10px ;
+    background-size: 625px 125px;
+    .wound-Img{
+        width: 270px;
+        height: 360px;
+    }
+    .injuryInfo{
+        width: 262px;
+        height: 51px;
     }
 }

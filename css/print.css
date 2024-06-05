@@ -2878,16 +2878,10 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   background-image: url("../images/print.png");
 }
 
-.hospitalTransfer {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  top: -48px;
+.userProfile {
+  height: 110px;
 }
-.hospitalTransfer .ServiceUserDetails {
-  width: 725px;
-  height: 115px;
-}
-.hospitalTransfer .ServiceUserDetails .title {
+.userProfile .title {
   height: 18px;
   display: block;
   font-size: 10px;
@@ -2895,78 +2889,33 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   text-transform: uppercase;
   border-radius: 4px;
   background-color: #FFCC60;
-  padding: 2px 6px;
+  padding: 2px 0 2px 6px;
   line-height: 16px;
-  position: relative;
   font-weight: 500;
+  margin-bottom: 10px;
 }
-.hospitalTransfer .ServiceUserDetails .ServiceuserImg {
+.userProfile .ServiceuserImg {
   float: right;
-  margin-top: 10px;
 }
-.hospitalTransfer .ServiceUserDetails .ServiceuserImg img {
+.userProfile .ServiceuserImg img {
   width: 65px;
   height: 65px;
   border-radius: 4px;
 }
-.hospitalTransfer .ServiceUserDetails .userinfo {
+.userProfile ul {
   width: calc(100% - 70px);
   float: left;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
-.hospitalTransfer .ServiceUserDetails .userinfo li {
-  float: left;
+.userProfile ul li {
   display: inline-block;
   width: 160px;
   margin-left: 3px;
-  font-size: 11px;
-  color: #828787;
-  font-weight: 500;
-  line-height: 22px;
-}
-.hospitalTransfer .ServiceUserDetails .userinfo li span {
-  text-transform: uppercase;
-  color: #828787;
-  font-size: 8px;
-  font-weight: 500;
-  display: block;
-  line-height: 12px;
-}
-.hospitalTransfer .ServiceUserinfo {
-  width: 100%;
-  height: 115px;
-}
-.hospitalTransfer .ServiceUserinfo .title {
-  height: 18px;
-  display: block;
   font-size: 10px;
-  color: #223E4C;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #FFCC60;
-  padding: 2px 6px;
-  line-height: 16px;
-  position: relative;
-  font-weight: 500;
-}
-.hospitalTransfer .ServiceUserinfo .user-address {
-  width: calc(100% - 80px);
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.hospitalTransfer .ServiceUserinfo .user-address li {
-  float: left;
-  display: inline-block;
-  width: 159px;
-  margin-left: 3px;
-  font-size: 11px;
   color: #828787;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 24px;
 }
-.hospitalTransfer .ServiceUserinfo .user-address li span {
+.userProfile ul li span {
   text-transform: uppercase;
   color: #828787;
   font-size: 8px;
@@ -2974,21 +2923,20 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   display: block;
   line-height: 12px;
 }
-.hospitalTransfer .allergiesInfo {
-  height: 86px;
+
+.allergiesInfo {
+  height: 79px;
 }
-.hospitalTransfer .allergiesInfo .statusLables {
+.allergiesInfo .statusLables {
   width: 100%;
   border-radius: 6px;
   padding: 5px 3px;
   background-color: #FFBEBE;
   position: relative;
-  border: 2px solid #d93f3f;
   display: block;
-  height: 51px;
-  float: left;
+  height: 45px;
 }
-.hospitalTransfer .allergiesInfo .statusLables .title {
+.allergiesInfo .statusLables .title {
   display: block;
   font-size: 10px;
   color: #223E4C;
@@ -3001,7 +2949,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-style: normal;
   font-weight: 600;
 }
-.hospitalTransfer .allergiesInfo .statusLables span {
+.allergiesInfo .statusLables span {
   position: absolute;
   text-orientation: mixed;
   font-size: 12px;
@@ -3016,11 +2964,11 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   right: 10px;
   border: 1px solid #707070;
 }
-.hospitalTransfer .allergiesInfo .statusLables .allergyList {
+.allergiesInfo .statusLables .allergyList {
   overflow: hidden;
   margin-bottom: 0;
 }
-.hospitalTransfer .allergiesInfo .statusLables .allergyList li {
+.allergiesInfo .statusLables .allergyList li {
   list-style-type: none;
   margin-top: 0;
   background-color: #8D99AE;
@@ -3031,7 +2979,8 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-weight: 500;
   font-size: 8px;
 }
-.hospitalTransfer .woundtitle {
+
+.woundtitle {
   height: 18px;
   display: block;
   font-size: 10px;
@@ -3045,13 +2994,14 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-weight: 500;
   margin-bottom: 10px;
 }
-.hospitalTransfer .woundlists {
+
+.woundlists {
   background-color: #F5F5F5;
   border-radius: 6px;
   padding: 5px;
   margin-bottom: 10px;
 }
-.hospitalTransfer .woundlists li {
+.woundlists li {
   float: left;
   display: inline-block;
   margin-left: 3px;
@@ -3060,7 +3010,7 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   font-weight: 500;
   line-height: 14px;
 }
-.hospitalTransfer .woundlists li span {
+.woundlists li span {
   color: #828787;
   font-size: 8px;
   font-weight: 500;
@@ -3068,28 +3018,33 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   line-height: 12px;
   text-transform: uppercase;
 }
-.hospitalTransfer .woundlists li:nth-child(1) {
+.woundlists li:nth-child(1) {
   width: 160px;
 }
-.hospitalTransfer .woundlists li:nth-child(2) {
+.woundlists li:nth-child(2) {
   width: 300px;
 }
-.hospitalTransfer .woundlists li:nth-child(3) {
+.woundlists li:nth-child(3) {
   width: 150px;
 }
-.hospitalTransfer .woundlists li:nth-child(4) {
+.woundlists li:nth-child(4) {
   width: 90px;
 }
-.hospitalTransfer .woundDetail {
+
+.woundDetail {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  background-image: url("../images/bodyMapLegendsimg.png");
+  background-repeat: no-repeat;
+  background-position: bottom 10px;
+  background-size: 625px 125px;
 }
-.hospitalTransfer .woundDetail .wound-Img {
+.woundDetail .wound-Img {
   width: 270px;
   height: 360px;
 }
-.hospitalTransfer .woundDetail .injuryInfo {
+.woundDetail .injuryInfo {
   width: 262px;
   height: 51px;
 }
