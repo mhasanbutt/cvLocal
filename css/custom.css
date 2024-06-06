@@ -42641,7 +42641,7 @@ input[type=checkbox].switch:checked + label:before {
   background-image: url("../images/bodyMapLegendsimg.png");
   background-repeat: no-repeat;
   background-size: 625px 125px;
-  background-position: bottom 10px right 630px;
+  background-position: bottom 10px right 618px;
 }
 .woundArea .woundImage {
   float: right;
@@ -42675,7 +42675,7 @@ input[type=checkbox].switch:checked + label:before {
 
 .ServiceuserImg {
   float: right;
-  width: 150px;
+  width: 160px;
   position: relative;
   top: 44px;
   border-radius: 6px;
@@ -42684,8 +42684,8 @@ input[type=checkbox].switch:checked + label:before {
   border: 2px solid rgb(175, 192, 207);
   border-radius: 6px;
   background-color: rgba(131, 144, 155, 0.2);
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   display: block;
   position: relative;
 }
