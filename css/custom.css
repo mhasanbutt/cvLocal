@@ -42555,6 +42555,7 @@ input[type=checkbox].switch:checked + label:before {
 
 .formBlock {
   width: calc(100% - 170px);
+  height: 210px;
 }
 .formBlock .newForm {
   position: relative;
@@ -42564,7 +42565,7 @@ input[type=checkbox].switch:checked + label:before {
 .formSegment {
   width: 100%;
   position: relative;
-  top: 43px;
+  top: 20px;
 }
 
 .statusLables {
@@ -42640,7 +42641,7 @@ input[type=checkbox].switch:checked + label:before {
   background-image: url("../images/bodyMapLegendsimg.png");
   background-repeat: no-repeat;
   background-size: 625px 125px;
-  background-position: bottom 10px right 617px;
+  background-position: bottom 10px right 630px;
 }
 .woundArea .woundImage {
   float: right;

@@ -130,6 +130,7 @@
                         </ul>
                         <div class="woundDetail">
                             <img class="wound-Img" src="images/Image%202.png">
+                            <img class="injuryInfo" src="images/bodyMapLegendsimg.png">
                         </div>
                     </td>
                 </tr>

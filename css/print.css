@@ -3035,16 +3035,14 @@ body.landscape .header, body.landscape .footer, body.landscape .printBody {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  background-image: url("../images/bodyMapLegendsimg.png");
-  background-repeat: no-repeat;
-  background-position: bottom 10px;
-  background-size: 625px 125px;
 }
 .woundDetail .wound-Img {
   width: 270px;
   height: 360px;
+  display: block;
 }
 .woundDetail .injuryInfo {
+  display: block;
   width: 262px;
   height: 51px;
 }

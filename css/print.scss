@@ -3612,15 +3612,13 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    background-image: url("../images/bodyMapLegendsimg.png");
-    background-repeat: no-repeat;
-    background-position: bottom 10px ;
-    background-size: 625px 125px;
     .wound-Img{
         width: 270px;
         height: 360px;
+        display: block;
     }
     .injuryInfo{
+        display: block;
         width: 262px;
         height: 51px;
     }

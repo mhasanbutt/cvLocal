@@ -50427,7 +50427,7 @@ input[type=checkbox].switch {
 
 .formBlock {
 	width: calc(100% - 170px);
-	
+	height: 210px;
 	.newForm {
 		position: relative;
 		top: 43px;
@@ -50437,7 +50437,7 @@ input[type=checkbox].switch {
 .formSegment {
 	width: 100%;
 	position: relative;
-	top: 43px;
+	top: 20px;
 }
 
 .statusLables {
@@ -50518,7 +50518,7 @@ input[type=checkbox].switch {
 	background-image: url("../images/bodyMapLegendsimg.png");
 	background-repeat: no-repeat;
 	background-size: 625px 125px;
-	background-position: bottom 10px right 617px;
+	background-position: bottom 10px right 630px;
 	
 	.woundImage {
 		float: right;
