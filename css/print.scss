@@ -3609,15 +3609,16 @@ body {
     }
 }
 .woundDetail{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
     .wound-Img{
         width: 270px;
         height: 360px;
+        display: block;
+        margin: 0 auto;
     }
     .injuryInfo{
         width: 262px;
         height: 51px;
+        display: block;
+        margin: 0 auto;
     }
 }
