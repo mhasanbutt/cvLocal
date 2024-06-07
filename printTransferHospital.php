@@ -107,7 +107,7 @@
                                 <ul class="allergyList">
                                     <li>Plate Size - Medium</li>
                                 </ul>
-                            </div> 
+                            </div>
                         </div>
                         <span class="woundtitle">Wounds & Bruises</span>
                         <ul class="woundlists clearfix">
@@ -128,8 +128,8 @@
                                 Active
                             </li>
                         </ul>
-                        <div class="woundDetail clearfix">
-                            <img class="wound-Img" src="images/Image%202.png"><br>
+                        <div class="woundDetail">
+                            <img class="wound-Img" src="images/Image%202.png">
                             <img class="injuryInfo" src="images/bodyMapLegendsimg.png">
                         </div>
                     </td>
