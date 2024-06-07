@@ -7,51 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="images/favicon.png" rel="shortcut icon">
 	<title>CareVision - Less Admin, More Caring</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
     <link href="css/jquery.scrollbar.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
     <script src="assets/js/scripts.bundle.js"></script>
+    <link href="css/custom.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="landing-page">
-        <section class="sidenav">
 
-            <div class="logo">
-                <img src="images/pharmacy%20logo.png">
-            </div>
-            <ul>
-                <li class="menu"><img src="images/menus.png">Menu
-                    <section class="dropdown-sec">
-                        <div class="dropdown">
-                            <ul>
-                                <li>Service User Register</li>
-                                <li>Service User</li>
-                                <li>eMar Cycles</li>
-                                <li>eMar</li>
-                                <li>Service User Medication</li>
-                                <li>Homely Remedy Medication</li>
-                                <li>Service User Stock</li>
-                                <li>Return & Destroy</li>
-                                <li>Convert Medication</li>
-                                <li>Medicine Room</li>
-                            </ul>
-                        </div>
-                    </section>
-                </li>
-                <li><img src="images/orders-list.png">Orders</li>
-                <li><img src="images/home-page.png"> Homes</li>
-            </ul>
+        <?php include('sideNav.php');?>
 
-            <div class="bottom-items">
-                <ul>
-                    <li><img src="images/Ellipse%201.png"></li>
-                    <li><img src="images/logout.png"> logout</li>
-                </ul>
-            </div>
-        </section>
         <section class="contentBody">
             <div class="topBar">
                 <div class="breadCrumb">
@@ -181,6 +147,7 @@
             </footer>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/jquery.scrollbar.min.js"></script>
     <script>
         $(document).ready(function() {
