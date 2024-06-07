@@ -42526,6 +42526,53 @@ input[type=checkbox].switch:checked + label:before {
   width: calc(100% - 180px);
 }
 
+.oralMap {
+  height: 100%;
+  font-family: "Poppins";
+}
+.oralMap aside {
+  float: right;
+  width: 320px;
+  position: relative;
+}
+.oralMap aside img {
+  width: 320px;
+  height: 470.5882352941px;
+}
+.oralMap aside .map {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.oralMap .scroll-wrapper {
+  width: calc(100% - 340px);
+}
+.oralMap .scroll-wrapper section {
+  padding-right: 15px;
+}
+.oralMap .scroll-wrapper section article {
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 6px;
+}
+.oralMap .scroll-wrapper section article .title {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #8D99AE;
+}
+.oralMap .scroll-wrapper section article textarea {
+  border: 1px solid #A1ADB0;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  resize: none;
+  height: 60px;
+  padding: 5px;
+}
+
 .scroll-element.scroll-x {
   display: none !important;
 }

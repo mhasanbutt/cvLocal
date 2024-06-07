@@ -50398,6 +50398,61 @@ input[type=checkbox].switch {
 	}
 }
 
+.oralMap {
+	height: 100%;
+	font-family: "Poppins";
+
+	aside {
+		float: right;
+		width: 320px;
+		position: relative;
+
+		img {
+			width: 320px;
+			height: calc(320px / 0.68);
+		}
+
+		.map {
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.scroll-wrapper {
+		width: calc(100% - 340px);
+
+		section {
+			padding-right: 15px;
+
+			article {
+				background-color: #FFF;
+				padding: 10px;
+				border-radius: 6px;
+
+				.title {
+					display: block;
+					font-size: 12px;
+					line-height: 18px;
+					margin-bottom: 5px;
+					text-transform: uppercase;
+					font-weight: 500;
+					color: #8D99AE;
+				}
+
+				textarea {
+					border: 1px solid #A1ADB0;
+					border-radius: 4px;
+					box-shadow: 0 0 4px rgba(0,0,0,.15);
+					width: 100%;
+					resize: none;
+					height: 60px;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+
 .scroll-element.scroll-x {
     display: none !important;
 }
