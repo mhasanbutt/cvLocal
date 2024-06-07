@@ -174,8 +174,8 @@
             </div>
         </div>
         <div class="ctas hosTransferFooter">
+            <button class="back-Button">Back</button>
             <button class="print pull-left">Print</button>
-          <button class="back-Button">Back</button>
         </div>
     </section>
 
