@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">employeeStat.php
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="images/favicon.png" rel="shortcut icon">
@@ -18,7 +18,7 @@
         <ul class="list-unstyled">
             <li><a href="#">Reports</a></li>
         </ul>
-        <span class="title"><img src="https://jawa.linksdev.co.uk/imgaes/pie-chart.png"> Employee Stat</span>
+        <span class="title"><img src="https://jawa.linksdev.co.uk/images/pie-chart.png"> Employee Stat</span>
     </div>
 
     <div class="filtersSearch clearfix autoWidth">
@@ -72,140 +72,93 @@
 <section class="contentBody noBg noFooter">
     <div class="counters clearfix">
         <ul class="list-unstyled clearfix pull-right">
-            <li><article><span>12</span><div class="title"><i>Staff with 100%</i></div> </article></li>
-            <li><article><span>12</span><div class="title"><i>Staff with less then 75%</i></div> </article></li>
-            <li><article><span>12</span><div class="title"><i> Staff with less then 50%</i></div> </article></li>
-            <li><article><span>12</span><div class="title"><i>Staff with less then 25%</i></div> </article></li>
+            <li>
+                <article><span>12</span>
+                    <div class="title"><i>Staff with 100%</i></div>
+                </article>
+            </li>
+            <li>
+                <article><span>12</span>
+                    <div class="title"><i>Staff with less then 75%</i></div>
+                </article>
+            </li>
+            <li>
+                <article><span>12</span>
+                    <div class="title"><i> Staff with less then 50%</i></div>
+                </article>
+            </li>
+            <li>
+                <article><span>12</span>
+                    <div class="title"><i>Staff with less then 25%</i></div>
+                </article>
+            </li>
         </ul>
     </div>
+
     <div class="scrollArea">
-            <div class="generalListing ">
-                <section class="clearfix">
-                    <ul class="list-unstyled employeeStats clearfix">
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                </section>
-                <section class="clearfix">
-                    <ul class="list-unstyled employeeStats clearfix">
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="percentageBar">
-                            <i>47%</i>
-                            </span>
-                            <span class="empNames">Kahsu Adhina
-                            <span class="smallName">(Kahsu)</span>
-                            </span>
-
-                        </li>
-                </section>
-            </div>
+        <ul class="list-unstyled employeeStats">
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+            <li>
+                <span class="percentageBar"><i>47%</i></span>
+                <span class="picture"></span>
+                <span class="empNames">Kahsu Adhina <span class="smallName">(Kahsu)</span></span>
+            </li>
+        </ul>
     </div>
 
     <div class="pagingSorting">
-        <ul class="list-unstyled paging">
-            <li><a href="#">Prev</a></li>
-            <li class="current"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Next</a></li>
-        </ul>
+    <ul class="list-unstyled paging">
+        <li><a href="#">Prev</a></li>
+        <li class="current"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
 
-        <div class="sorting">
-            <div class="select">
-                <select name="" id="">
-                    <option value="">Sort By</option>
-                </select>
-            </div>
-
-            <button type="button" style="background-color:#6B7884">A-Z</button><button type="button" style="margin-right:20px;background-color:#6B7884">Z-A</button>
-
-            <div class="select">
-                <select name="" id="">
-                    <option value="">50 per page</option>
-                </select>
-            </div>
-
-            <button type="button" style="background-color:#3DA492;">Apply</button><button type="button">Reset Sorting</button>
+    <div class="sorting">
+        <div class="select">
+            <select name="" id="">
+                <option value="">Sort By</option>
+            </select>
         </div>
+
+        <button type="button" style="background-color:#6B7884">A-Z</button>
+        <button type="button" style="margin-right:20px;background-color:#6B7884">Z-A</button>
+
+        <div class="select">
+            <select name="" id="">
+                <option value="">50 per page</option>
+            </select>
+        </div>
+
+        <button type="button" style="background-color:#3DA492;">Apply</button>
+        <button type="button">Reset Sorting</button>
     </div>
+</div>
 </section>
 
 <script src="js/jquery-1.12.4.js"></script>
@@ -214,7 +167,7 @@
 <script src="js/autosize.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
-    $(".question").on('click', function(){
+    $(".question").on('click', function () {
         $(".question").next('ul').not($(this).next('ul')).hide();
         let offset = $(this).offset();
         $(this).next('ul').css({top: offset.top, left: offset.left}).fadeToggle();
